@@ -1,0 +1,21 @@
+ 
+****************************************
+Report : resources
+Design : pcm_slv_top
+Version: W-2024.09-SP4-1
+Date   : Tue Apr 29 11:25:41 2025
+****************************************
+
+Resource Sharing Report for design pcm_slv_top in file
+        ../rtl/ss_pcm/pcm_slv_top.v
+
+===============================================================================
+|          |              |            | Contained     |                      |
+| Resource | Module       | Parameters | Resources     | Contained Operations |
+===============================================================================
+| r64      | DW01_inc     | width=4    |               | add_185_S2           |
+===============================================================================
+
+
+No implementations to report
+1

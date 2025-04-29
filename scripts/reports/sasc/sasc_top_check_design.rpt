@@ -1,0 +1,21 @@
+ 
+****************************************
+check_design summary:
+Version:     W-2024.09-SP4-1
+Date:        Tue Apr 29 11:25:59 2025
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Cells                                                               4
+    Cells do not drive (LINT-1)                                     2
+    Connected to power or ground (LINT-32)                          2
+--------------------------------------------------------------------------------
+
+Warning: In design 'sasc_top', cell 'C360' does not drive any nets. (LINT-1)
+Warning: In design 'sasc_top', cell 'C384' does not drive any nets. (LINT-1)
+Warning: In design 'sasc_top', a pin on submodule 'tx_fifo' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'clr' is connected to logic 0. 
+Warning: In design 'sasc_top', a pin on submodule 'rx_fifo' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'clr' is connected to logic 0. 
+1

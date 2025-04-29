@@ -1,0 +1,36 @@
+ 
+****************************************
+Report : resources
+Design : wb_dma_top
+Version: W-2024.09-SP4-1
+Date   : Tue Apr 29 13:05:04 2025
+****************************************
+
+
+Resource Report for this hierarchy in file ../rtl/wb_dma/wb_dma_ch_rf.v
+=============================================================================
+| Cell           | Module         | Parameters | Contained Operations       |
+=============================================================================
+| sub_x_273      | DW01_dec       | width=9    | u2/sub_353_S2 (wb_dma_de.v:353) |
+| sub_x_276      | DW01_dec       | width=12   | u2/sub_364_S2 (wb_dma_de.v:364) |
+| add_x_296      | DW01_inc       | width=17   | u2/u0/add_90 (wb_dma_inc30r.v:90) |
+| add_x_297      | DW01_add       | width=14   | u2/u0/add_92 (wb_dma_inc30r.v:92) |
+| add_x_298      | DW01_inc       | width=17   | u2/u1/add_90 (wb_dma_inc30r.v:90) |
+| add_x_299      | DW01_add       | width=14   | u2/u1/add_92 (wb_dma_inc30r.v:92) |
+=============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| sub_x_273          | DW01_dec         | apparch (area)     |                |
+| sub_x_276          | DW01_dec         | apparch (area)     |                |
+| add_x_296          | DW01_inc         | apparch (area)     |                |
+| add_x_297          | DW01_add         | apparch (area)     |                |
+| add_x_298          | DW01_inc         | apparch (area)     |                |
+| add_x_299          | DW01_add         | apparch (area)     |                |
+===============================================================================
+
+1

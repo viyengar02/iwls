@@ -1,0 +1,1397 @@
+Info: [VCS_SAVE_RESTORE_INFO] ASLR (Address Space Layout Randomization) is detected on the machine. To enable $save functionality, ASLR will be switched off and simv re-executed.
+Please use '-no_save' simv switch to avoid this.
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+              Version W-2024.09-SP4-1 for linux64 - Mar 20, 2025 
+
+                    Copyright (c) 1988 - 2025 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+Initializing...
+Current time:       Tue Apr 29 11:13:51 2025
+Hostname:           xunil-03.coe.drexel.edu
+CPU Model:          AMD Opteron(tm) Processor 6344
+CPU Details:        Cores = 24 : Sockets = 2 : Cache Size = 2048 KB : Freq = 1.40 GHz
+OS:                 Linux 3.10.0-1160.119.1.el7.x86_64
+RAM:                125 GB (Free   0 GB)
+Swap:                15 GB (Free  15 GB)
+Work Filesystem:    /home mounted to ozark.coe.drexel.edu:/volume2/XunilNFS2/home
+Tmp Filesystem:     / mounted to /dev/mapper/vg_xunil03-lv_root
+Work Disk:          8034 GB (Free 4330 GB)
+Tmp Disk:           442 GB (Free 136 GB)
+
+CPU Load: 3%, Ram Free: 0 GB, Swap Free: 15 GB, Work Disk Free: 4330 GB, Tmp Disk Free: 136 GB
+# Auto-generated synthesis script for ac97_top
+# Source files from: ac97_ctrl
+lappend search_path ../src/
+. /mnt/class_data/ecec574-w2019/tools/synopsys/syn/W-2024.09-SP4-1/libraries/syn /mnt/class_data/ecec574-w2019/tools/synopsys/syn/W-2024.09-SP4-1/dw/syn_ver /mnt/class_data/ecec574-w2019/tools/synopsys/syn/W-2024.09-SP4-1/dw/sim_ver ../src/
+define_design_lib WORK -path "work"
+1
+# Library setup
+set link_library [ list /mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v125c.db /mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v25c.db /mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95vn40c.db]
+/mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v125c.db /mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v25c.db /mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95vn40c.db
+set target_library [ list /mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v25c.db ]
+/mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v25c.db
+# Analyze all Verilog files
+analyze -library WORK -format verilog ../rtl/ac97_ctrl/ac97_cra.v
+Running PRESTO HDLC
+Compiling source file ../rtl/ac97_ctrl/ac97_cra.v
+Opening include file ../rtl/ac97_ctrl/ac97_defines.v
+Warning:  ../rtl/ac97_ctrl/ac97_cra.v:134: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_cra.v:136: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_cra.v:147: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_cra.v:150: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_cra.v:152: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_cra.v:154: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_cra.v:159: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_cra.v:161: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_cra.v:163: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_cra.v:166: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_cra.v:168: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_cra.v:170: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_cra.v:173: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_cra.v:175: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_cra.v:177: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_cra.v:180: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_cra.v:182: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_cra.v:184: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_cra.v:187: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_cra.v:190: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Presto compilation completed successfully.
+Loading db file '/mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v125c.db'
+Information: Using CCS timing libraries. (TIM-024)
+Warning: Error occured in ccs delay calculation, results may not be accurate.
+Loading db file '/mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v25c.db'
+Loading db file '/mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95vn40c.db'
+1
+analyze -library WORK -format verilog ../rtl/ac97_ctrl/ac97_defines.v
+Running PRESTO HDLC
+Compiling source file ../rtl/ac97_ctrl/ac97_defines.v
+Presto compilation completed successfully.
+1
+analyze -library WORK -format verilog ../rtl/ac97_ctrl/ac97_dma_if.v
+Running PRESTO HDLC
+Compiling source file ../rtl/ac97_ctrl/ac97_dma_if.v
+Opening include file ../rtl/ac97_ctrl/ac97_defines.v
+Presto compilation completed successfully.
+1
+analyze -library WORK -format verilog ../rtl/ac97_ctrl/ac97_dma_req.v
+Running PRESTO HDLC
+Compiling source file ../rtl/ac97_ctrl/ac97_dma_req.v
+Opening include file ../rtl/ac97_ctrl/ac97_defines.v
+Warning:  ../rtl/ac97_ctrl/ac97_dma_req.v:109: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_dma_req.v:112: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_dma_req.v:114: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_dma_req.v:116: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Presto compilation completed successfully.
+1
+analyze -library WORK -format verilog ../rtl/ac97_ctrl/ac97_fifo_ctrl.v
+Running PRESTO HDLC
+Compiling source file ../rtl/ac97_ctrl/ac97_fifo_ctrl.v
+Opening include file ../rtl/ac97_ctrl/ac97_defines.v
+Warning:  ../rtl/ac97_ctrl/ac97_fifo_ctrl.v:103: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_fifo_ctrl.v:107: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_fifo_ctrl.v:110: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_fifo_ctrl.v:113: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Presto compilation completed successfully.
+1
+analyze -library WORK -format verilog ../rtl/ac97_ctrl/ac97_in_fifo.v
+Running PRESTO HDLC
+Compiling source file ../rtl/ac97_ctrl/ac97_in_fifo.v
+Opening include file ../rtl/ac97_ctrl/ac97_defines.v
+Warning:  ../rtl/ac97_ctrl/ac97_in_fifo.v:127: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_in_fifo.v:129: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_in_fifo.v:134: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_in_fifo.v:136: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_in_fifo.v:139: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_in_fifo.v:142: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_in_fifo.v:145: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_in_fifo.v:149: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_in_fifo.v:153: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_in_fifo.v:163: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Presto compilation completed successfully.
+1
+analyze -library WORK -format verilog ../rtl/ac97_ctrl/ac97_int.v
+Running PRESTO HDLC
+Compiling source file ../rtl/ac97_ctrl/ac97_int.v
+Opening include file ../rtl/ac97_ctrl/ac97_defines.v
+Warning:  ../rtl/ac97_ctrl/ac97_int.v:104: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_int.v:108: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_int.v:110: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_int.v:112: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_int.v:113: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_int.v:117: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_int.v:119: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_int.v:122: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_int.v:124: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Presto compilation completed successfully.
+1
+analyze -library WORK -format verilog ../rtl/ac97_ctrl/ac97_out_fifo.v
+Running PRESTO HDLC
+Compiling source file ../rtl/ac97_ctrl/ac97_out_fifo.v
+Opening include file ../rtl/ac97_ctrl/ac97_defines.v
+Warning:  ../rtl/ac97_ctrl/ac97_out_fifo.v:119: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_out_fifo.v:121: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_out_fifo.v:126: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_out_fifo.v:128: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_out_fifo.v:130: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_out_fifo.v:133: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_out_fifo.v:138: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_out_fifo.v:149: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_out_fifo.v:153: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_out_fifo.v:154: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_out_fifo.v:155: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_out_fifo.v:159: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Presto compilation completed successfully.
+1
+analyze -library WORK -format verilog ../rtl/ac97_ctrl/ac97_prc.v
+Running PRESTO HDLC
+Compiling source file ../rtl/ac97_ctrl/ac97_prc.v
+Opening include file ../rtl/ac97_ctrl/ac97_defines.v
+Warning:  ../rtl/ac97_ctrl/ac97_prc.v:186: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_prc.v:189: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Presto compilation completed successfully.
+1
+analyze -library WORK -format verilog ../rtl/ac97_ctrl/ac97_rf.v
+Running PRESTO HDLC
+Compiling source file ../rtl/ac97_ctrl/ac97_rf.v
+Opening include file ../rtl/ac97_ctrl/ac97_defines.v
+Warning:  ../rtl/ac97_ctrl/ac97_rf.v:186: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_rf.v:188: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_rf.v:191: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_rf.v:192: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_rf.v:195: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_rf.v:196: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_rf.v:199: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_rf.v:201: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_rf.v:204: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_rf.v:206: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_rf.v:209: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_rf.v:211: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_rf.v:216: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_rf.v:218: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_rf.v:221: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_rf.v:224: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_rf.v:226: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_rf.v:230: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_rf.v:232: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_rf.v:235: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_rf.v:236: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_rf.v:237: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_rf.v:238: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_rf.v:239: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_rf.v:240: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_rf.v:241: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_rf.v:242: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_rf.v:244: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_rf.v:245: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_rf.v:246: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_rf.v:250: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_rf.v:251: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_rf.v:252: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_rf.v:253: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_rf.v:254: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_rf.v:255: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_rf.v:259: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_rf.v:260: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_rf.v:261: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_rf.v:265: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_rf.v:266: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_rf.v:267: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_rf.v:268: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_rf.v:269: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_rf.v:270: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_rf.v:274: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_rf.v:275: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_rf.v:276: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_rf.v:304: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Presto compilation completed successfully.
+1
+analyze -library WORK -format verilog ../rtl/ac97_ctrl/ac97_rst.v
+Running PRESTO HDLC
+Compiling source file ../rtl/ac97_ctrl/ac97_rst.v
+Opening include file ../rtl/ac97_ctrl/ac97_defines.v
+Warning:  ../rtl/ac97_ctrl/ac97_rst.v:78: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_rst.v:80: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_rst.v:82: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_rst.v:87: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_rst.v:89: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_rst.v:91: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_rst.v:96: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_rst.v:98: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_rst.v:99: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Presto compilation completed successfully.
+1
+analyze -library WORK -format verilog ../rtl/ac97_ctrl/ac97_sin.v
+Running PRESTO HDLC
+Compiling source file ../rtl/ac97_ctrl/ac97_sin.v
+Opening include file ../rtl/ac97_ctrl/ac97_defines.v
+Warning:  ../rtl/ac97_ctrl/ac97_sin.v:115: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_sin.v:118: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_sin.v:121: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_sin.v:124: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_sin.v:127: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_sin.v:130: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_sin.v:138: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_sin.v:141: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Presto compilation completed successfully.
+1
+analyze -library WORK -format verilog ../rtl/ac97_ctrl/ac97_soc.v
+Running PRESTO HDLC
+Compiling source file ../rtl/ac97_ctrl/ac97_soc.v
+Opening include file ../rtl/ac97_ctrl/ac97_defines.v
+Warning:  ../rtl/ac97_ctrl/ac97_soc.v:119: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_soc.v:121: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_soc.v:122: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_soc.v:125: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_soc.v:128: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_soc.v:131: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_soc.v:134: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_soc.v:137: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_soc.v:140: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_soc.v:143: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_soc.v:146: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_soc.v:149: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_soc.v:152: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_soc.v:155: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_soc.v:158: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_soc.v:166: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_soc.v:169: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_soc.v:172: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_soc.v:175: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_soc.v:180: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_soc.v:182: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_soc.v:184: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_soc.v:192: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_soc.v:194: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_soc.v:196: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_soc.v:201: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_soc.v:203: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Presto compilation completed successfully.
+1
+analyze -library WORK -format verilog ../rtl/ac97_ctrl/ac97_sout.v
+Running PRESTO HDLC
+Compiling source file ../rtl/ac97_ctrl/ac97_sout.v
+Opening include file ../rtl/ac97_ctrl/ac97_defines.v
+Warning:  ../rtl/ac97_ctrl/ac97_sout.v:131: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_sout.v:132: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_sout.v:135: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_sout.v:136: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_sout.v:139: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_sout.v:140: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_sout.v:143: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_sout.v:144: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_sout.v:147: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_sout.v:148: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_sout.v:151: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_sout.v:152: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_sout.v:155: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_sout.v:156: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_sout.v:159: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_sout.v:160: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_sout.v:163: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_sout.v:164: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_sout.v:167: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_sout.v:168: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_sout.v:171: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_sout.v:172: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_sout.v:175: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_sout.v:176: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_sout.v:179: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_sout.v:180: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Presto compilation completed successfully.
+1
+analyze -library WORK -format verilog ../rtl/ac97_ctrl/ac97_top.v
+Running PRESTO HDLC
+Compiling source file ../rtl/ac97_ctrl/ac97_top.v
+Opening include file ../rtl/ac97_ctrl/ac97_defines.v
+Warning:  ../rtl/ac97_ctrl/ac97_top.v:220: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_top.v:223: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_top.v:226: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_top.v:229: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Presto compilation completed successfully.
+1
+analyze -library WORK -format verilog ../rtl/ac97_ctrl/ac97_wb_if.v
+Running PRESTO HDLC
+Compiling source file ../rtl/ac97_ctrl/ac97_wb_if.v
+Opening include file ../rtl/ac97_ctrl/ac97_defines.v
+Warning:  ../rtl/ac97_ctrl/ac97_wb_if.v:143: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_wb_if.v:147: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_wb_if.v:148: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_wb_if.v:149: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_wb_if.v:150: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_wb_if.v:154: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_wb_if.v:157: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_wb_if.v:164: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_wb_if.v:167: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_wb_if.v:172: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_wb_if.v:175: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_wb_if.v:178: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_wb_if.v:181: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_wb_if.v:184: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_wb_if.v:187: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_wb_if.v:190: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_wb_if.v:193: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_wb_if.v:196: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_wb_if.v:199: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/ac97_ctrl/ac97_wb_if.v:202: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Presto compilation completed successfully.
+1
+# Elaborate the top design
+elaborate ac97_top
+Loading db file '/mnt/class_data/ecec574-w2019/tools/synopsys/syn/W-2024.09-SP4-1/libraries/syn/gtech.db'
+Loading db file '/mnt/class_data/ecec574-w2019/tools/synopsys/syn/W-2024.09-SP4-1/libraries/syn/standard.sldb'
+  Loading link library 'saed32rvt_ss0p95v125c'
+  Loading link library 'saed32rvt_ss0p95v25c'
+  Loading link library 'saed32rvt_ss0p95vn40c'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+
+Inferred memory devices in process in routine 'ac97_top' in file
+	 ../rtl/ac97_ctrl/ac97_top.v'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|    valid_s1_reg     | Flip-flop |   1   |  N  | N  | None  | None  | N  | 219  |
+|     valid_s_reg     | Flip-flop |   1   |  N  | N  | None  | None  | N  | 222  |
+|   in_valid_s1_reg   | Flip-flop |   3   |  Y  | N  | None  | None  | N  | 225  |
+|   in_valid_s_reg    | Flip-flop |   3   |  Y  | N  | None  | None  | N  | 228  |
+==================================================================================
+Presto compilation completed successfully. (ac97_top)
+Module: ac97_top, Ports: 132, Input: 84, Output: 48, Inout: 0
+Module: ac97_top, Registers: 8, Async set/reset: 0, Sync set/reset: 0
+Information: Module ac97_top report end. (ELAB-965)
+Elaborated 1 design.
+Current design is now 'ac97_top'.
+Information: Building the design 'ac97_sout'. (HDL-193)
+
+Inferred memory devices in process in routine 'ac97_sout' in file
+	 ../rtl/ac97_ctrl/ac97_sout.v'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|     slt0_r_reg      | Flip-flop |  16   |  Y  | N  | None  | None  | N  | 130  |
+|     slt1_r_reg      | Flip-flop |  20   |  Y  | N  | None  | None  | N  | 134  |
+|     slt2_r_reg      | Flip-flop |  20   |  Y  | N  | None  | None  | N  | 138  |
+|     slt3_r_reg      | Flip-flop |  20   |  Y  | N  | None  | None  | N  | 142  |
+|     slt4_r_reg      | Flip-flop |  20   |  Y  | N  | None  | None  | N  | 146  |
+|     slt5_r_reg      | Flip-flop |  20   |  Y  | N  | None  | None  | N  | 150  |
+|     slt6_r_reg      | Flip-flop |  20   |  Y  | N  | None  | None  | N  | 154  |
+|     slt7_r_reg      | Flip-flop |  20   |  Y  | N  | None  | None  | N  | 158  |
+|     slt8_r_reg      | Flip-flop |  20   |  Y  | N  | None  | None  | N  | 162  |
+|     slt9_r_reg      | Flip-flop |  20   |  Y  | N  | None  | None  | N  | 166  |
+|     slt10_r_reg     | Flip-flop |  20   |  Y  | N  | None  | None  | N  | 170  |
+|     slt11_r_reg     | Flip-flop |  20   |  Y  | N  | None  | None  | N  | 174  |
+|     slt12_r_reg     | Flip-flop |  20   |  Y  | N  | None  | None  | N  | 178  |
+==================================================================================
+Presto compilation completed successfully. (ac97_sout)
+Module: ac97_sout, Ports: 180, Input: 179, Output: 1, Inout: 0
+Module: ac97_sout, Registers: 256, Async set/reset: 0, Sync set/reset: 0
+Information: Module ac97_sout report end. (ELAB-965)
+Information: Building the design 'ac97_sin'. (HDL-193)
+
+Inferred memory devices in process in routine 'ac97_sin' in file
+	 ../rtl/ac97_ctrl/ac97_sin.v'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|      slt0_reg       | Flip-flop |  16   |  Y  | N  | None  | None  | N  | 114  |
+|      slt1_reg       | Flip-flop |  20   |  Y  | N  | None  | None  | N  | 117  |
+|      slt2_reg       | Flip-flop |  20   |  Y  | N  | None  | None  | N  | 120  |
+|      slt3_reg       | Flip-flop |  20   |  Y  | N  | None  | None  | N  | 123  |
+|      slt4_reg       | Flip-flop |  20   |  Y  | N  | None  | None  | N  | 126  |
+|      slt6_reg       | Flip-flop |  20   |  Y  | N  | None  | None  | N  | 129  |
+|   sdata_in_r_reg    | Flip-flop |   1   |  N  | N  | None  | None  | N  | 137  |
+|       sr_reg        | Flip-flop |  20   |  Y  | N  | None  | None  | N  | 140  |
+==================================================================================
+Presto compilation completed successfully. (ac97_sin)
+Module: ac97_sin, Ports: 125, Input: 9, Output: 116, Inout: 0
+Module: ac97_sin, Registers: 137, Async set/reset: 0, Sync set/reset: 0
+Information: Module ac97_sin report end. (ELAB-965)
+Information: Building the design 'ac97_soc'. (HDL-193)
+
+Inferred memory devices in process in routine 'ac97_soc' in file
+	 ../rtl/ac97_ctrl/ac97_soc.v'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|       cnt_reg       | Flip-flop |   8   |  Y  | N  | Async | None  | N  | 118  |
+|       ld_reg        | Flip-flop |   1   |  N  | N  | None  | None  | N  | 124  |
+|    sync_beat_reg    | Flip-flop |   1   |  N  | N  | None  | None  | N  | 127  |
+|      valid_reg      | Flip-flop |   1   |  N  | N  | None  | None  | N  | 130  |
+|     out_le_reg      | Flip-flop |   1   |  N  | N  | None  | None  | N  | 133  |
+|     out_le_reg      | Flip-flop |   1   |  N  | N  | None  | None  | N  | 136  |
+|     out_le_reg      | Flip-flop |   1   |  N  | N  | None  | None  | N  | 139  |
+|     out_le_reg      | Flip-flop |   1   |  N  | N  | None  | None  | N  | 142  |
+|     out_le_reg      | Flip-flop |   1   |  N  | N  | None  | None  | N  | 145  |
+|     out_le_reg      | Flip-flop |   1   |  N  | N  | None  | None  | N  | 148  |
+|    in_valid_reg     | Flip-flop |   1   |  N  | N  | None  | None  | N  | 151  |
+|    in_valid_reg     | Flip-flop |   1   |  N  | N  | None  | None  | N  | 154  |
+|    in_valid_reg     | Flip-flop |   1   |  N  | N  | None  | None  | N  | 157  |
+|    bit_clk_r_reg    | Flip-flop |   1   |  N  | N  | None  | None  | N  | 165  |
+|   bit_clk_r1_reg    | Flip-flop |   1   |  N  | N  | None  | None  | N  | 168  |
+|    bit_clk_e_reg    | Flip-flop |   1   |  N  | N  | None  | None  | N  | 171  |
+|    suspended_reg    | Flip-flop |   1   |  N  | N  | None  | None  | N  | 174  |
+|     to_cnt_reg      | Flip-flop |   6   |  Y  | N  | None  | Async | N  | 179  |
+|   sync_resume_reg   | Flip-flop |   1   |  N  | N  | None  | Async | N  | 191  |
+|     res_cnt_reg     | Flip-flop |   4   |  Y  | N  | None  | None  | N  | 200  |
+==================================================================================
+Presto compilation completed successfully. (ac97_soc)
+Module: ac97_soc, Ports: 18, Input: 5, Output: 13, Inout: 0
+Module: ac97_soc, Registers: 35, Async set/reset: 15, Sync set/reset: 0
+Information: Module ac97_soc report end. (ELAB-965)
+Information: Building the design 'ac97_out_fifo'. (HDL-193)
+Warning:  ../rtl/ac97_ctrl/ac97_out_fifo.v:152: Case statement is not a full case. (ELAB-909)
+Warning:  ../rtl/ac97_ctrl/ac97_out_fifo.v:152: Case statement is not a full case. (ELAB-909)
+
+Statistics for case statements in always block in file
+	'../rtl/ac97_ctrl/ac97_out_fifo.v'
+============================================================
+|    Line    |  full/ parallel  |      block location      |
+============================================================
+|    152     |    user/user     | always block at line 148 |
+============================================================
+
+Inferred memory devices in process in routine 'ac97_out_fifo' in file
+	 ../rtl/ac97_ctrl/ac97_out_fifo.v'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|       wp_reg        | Flip-flop |   3   |  Y  | N  | None  | None  | N  | 118  |
+|       rp_reg        | Flip-flop |   4   |  Y  | N  | None  | None  | N  | 125  |
+|     status_reg      | Flip-flop |   2   |  Y  | N  | None  | None  | N  | 132  |
+|      empty_reg      | Flip-flop |   1   |  N  | N  | None  | None  | N  | 137  |
+|      dout_reg       | Flip-flop |  20   |  Y  | N  | None  | None  | N  | 148  |
+|       mem_reg       | Flip-flop |  128  |  Y  | N  | None  | None  | N  | 158  |
+==================================================================================
+Statistics for MUX_OPs
+=======================================================
+| block name/line   | Inputs | Outputs | # sel inputs |
+=======================================================
+| ac97_out_fifo/143 |   4    |   32    |      2       |
+=======================================================
+Presto compilation completed successfully. (ac97_out_fifo)
+Module: ac97_out_fifo, Ports: 63, Input: 39, Output: 24, Inout: 0
+Module: ac97_out_fifo, Registers: 158, Async set/reset: 0, Sync set/reset: 0
+Information: Module ac97_out_fifo report end. (ELAB-965)
+Information: Building the design 'ac97_in_fifo'. (HDL-193)
+Warning:  ../rtl/ac97_ctrl/ac97_in_fifo.v:156: Case statement is not a full case. (ELAB-909)
+Warning:  ../rtl/ac97_ctrl/ac97_in_fifo.v:156: Case statement is not a full case. (ELAB-909)
+
+Statistics for case statements in always block in file
+	'../rtl/ac97_ctrl/ac97_in_fifo.v'
+============================================================
+|    Line    |  full/ parallel  |      block location      |
+============================================================
+|    156     |    user/user     | always block at line 155 |
+============================================================
+
+Inferred memory devices in process in routine 'ac97_in_fifo' in file
+	 ../rtl/ac97_ctrl/ac97_in_fifo.v'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|       wp_reg        | Flip-flop |   4   |  Y  | N  | None  | None  | N  | 126  |
+|       rp_reg        | Flip-flop |   3   |  Y  | N  | None  | None  | N  | 133  |
+|     status_reg      | Flip-flop |   2   |  Y  | N  | None  | None  | N  | 138  |
+|      empty_reg      | Flip-flop |   1   |  N  | N  | None  | None  | N  | 141  |
+|      full_reg       | Flip-flop |   1   |  N  | N  | None  | None  | N  | 144  |
+|      dout_reg       | Flip-flop |  32   |  Y  | N  | None  | None  | N  | 148  |
+|    din_tmp1_reg     | Flip-flop |  16   |  Y  | N  | None  | None  | N  | 152  |
+|       mem_reg       | Flip-flop |  128  |  Y  | N  | None  | None  | N  | 162  |
+==================================================================================
+Statistics for MUX_OPs
+======================================================
+| block name/line  | Inputs | Outputs | # sel inputs |
+======================================================
+| ac97_in_fifo/149 |   4    |   32    |      2       |
+======================================================
+Presto compilation completed successfully. (ac97_in_fifo)
+Module: ac97_in_fifo, Ports: 63, Input: 27, Output: 36, Inout: 0
+Module: ac97_in_fifo, Registers: 187, Async set/reset: 0, Sync set/reset: 0
+Information: Module ac97_in_fifo report end. (ELAB-965)
+Information: Building the design 'ac97_wb_if'. (HDL-193)
+
+Statistics for case statements in always block in file
+	'../rtl/ac97_ctrl/ac97_wb_if.v'
+============================================================
+|    Line    |  full/ parallel  |      block location      |
+============================================================
+|    146     |    user/user     | always block at line 145 |
+============================================================
+
+Inferred memory devices in process in routine 'ac97_wb_if' in file
+	 ../rtl/ac97_ctrl/ac97_wb_if.v'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|      dout_reg       | Flip-flop |  32   |  Y  | N  | None  | None  | N  | 142  |
+|    wb_data_o_reg    | Flip-flop |  32   |  Y  | N  | None  | None  | N  | 145  |
+|       re1_reg       | Flip-flop |   1   |  N  | N  | None  | None  | N  | 153  |
+|       re2_reg       | Flip-flop |   1   |  N  | N  | None  | None  | N  | 156  |
+|       we1_reg       | Flip-flop |   1   |  N  | N  | None  | None  | N  | 163  |
+|       we2_reg       | Flip-flop |   1   |  N  | N  | None  | None  | N  | 166  |
+|    wb_ack_o_reg     | Flip-flop |   1   |  N  | N  | None  | None  | N  | 171  |
+|      rf_we_reg      | Flip-flop |   1   |  N  | N  | None  | None  | N  | 174  |
+|      o3_we_reg      | Flip-flop |   1   |  N  | N  | None  | None  | N  | 177  |
+|      o4_we_reg      | Flip-flop |   1   |  N  | N  | None  | None  | N  | 180  |
+|      o6_we_reg      | Flip-flop |   1   |  N  | N  | None  | None  | N  | 183  |
+|      o7_we_reg      | Flip-flop |   1   |  N  | N  | None  | None  | N  | 186  |
+|      o8_we_reg      | Flip-flop |   1   |  N  | N  | None  | None  | N  | 189  |
+|      o9_we_reg      | Flip-flop |   1   |  N  | N  | None  | None  | N  | 192  |
+|      i3_re_reg      | Flip-flop |   1   |  N  | N  | None  | None  | N  | 195  |
+|      i4_re_reg      | Flip-flop |   1   |  N  | N  | None  | None  | N  | 198  |
+|      i6_re_reg      | Flip-flop |   1   |  N  | N  | None  | None  | N  | 201  |
+==================================================================================
+Presto compilation completed successfully. (ac97_wb_if)
+Module: ac97_wb_if, Ports: 282, Input: 201, Output: 81, Inout: 0
+Module: ac97_wb_if, Registers: 79, Async set/reset: 0, Sync set/reset: 0
+Information: Module ac97_wb_if report end. (ELAB-965)
+Information: Building the design 'ac97_rf'. (HDL-193)
+Warning:  ../rtl/ac97_ctrl/ac97_rf.v:175: Case statement is not a full case. (ELAB-909)
+Warning:  ../rtl/ac97_ctrl/ac97_rf.v:175: Case statement is not a full case. (ELAB-909)
+
+Statistics for case statements in always block in file
+	'../rtl/ac97_ctrl/ac97_rf.v'
+============================================================
+|    Line    |  full/ parallel  |      block location      |
+============================================================
+|    175     |    user/user     | always block at line 174 |
+============================================================
+
+Inferred memory devices in process in routine 'ac97_rf' in file
+	 ../rtl/ac97_ctrl/ac97_rf.v'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+| ac97_rst_force_reg  | Flip-flop |   1   |  N  | N  | None  | None  | N  | 190  |
+|   resume_req_reg    | Flip-flop |   1   |  N  | N  | None  | None  | N  | 194  |
+|     occ0_r_reg      | Flip-flop |  32   |  Y  | N  | None  | Async | N  | 198  |
+|     occ1_r_reg      | Flip-flop |  16   |  Y  | N  | None  | Async | N  | 203  |
+|      icc_r_reg      | Flip-flop |  24   |  Y  | N  | None  | Async | N  | 208  |
+|     crac_r_reg      | Flip-flop |   8   |  Y  | N  | None  | Async | N  | 215  |
+|   crac_dout_r_reg   | Flip-flop |  16   |  Y  | N  | None  | None  | N  | 220  |
+|     intm_r_reg      | Flip-flop |  29   |  Y  | N  | None  | Async | N  | 223  |
+|     ints_r_reg      | Flip-flop |  29   |  Y  | N  | None  | Async | N  | 229  |
+|       int_reg       | Flip-flop |   1   |  N  | N  | None  | None  | N  | 303  |
+==================================================================================
+Presto compilation completed successfully. (ac97_rf)
+Module: ac97_rf, Ports: 226, Input: 86, Output: 140, Inout: 0
+Module: ac97_rf, Registers: 157, Async set/reset: 138, Sync set/reset: 0
+Information: Module ac97_rf report end. (ELAB-965)
+Information: Building the design 'ac97_prc'. (HDL-193)
+
+Inferred memory devices in process in routine 'ac97_prc' in file
+	 ../rtl/ac97_ctrl/ac97_prc.v'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|  crac_valid_r_reg   | Flip-flop |   1   |  N  | N  | None  | None  | N  | 185  |
+|    crac_wr_r_reg    | Flip-flop |   1   |  N  | N  | None  | None  | N  | 188  |
+==================================================================================
+Presto compilation completed successfully. (ac97_prc)
+Module: ac97_prc, Ports: 150, Input: 125, Output: 25, Inout: 0
+Module: ac97_prc, Registers: 2, Async set/reset: 0, Sync set/reset: 0
+Information: Module ac97_prc report end. (ELAB-965)
+Information: Building the design 'ac97_cra'. (HDL-193)
+
+Inferred memory devices in process in routine 'ac97_cra' in file
+	 ../rtl/ac97_ctrl/ac97_cra.v'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|    crac_din_reg     | Flip-flop |  16   |  Y  | N  | None  | Async | N  | 132  |
+|    crac_we_r_reg    | Flip-flop |   1   |  N  | N  | None  | None  | N  | 146  |
+|     crac_wr_reg     | Flip-flop |   1   |  N  | N  | None  | Async | N  | 149  |
+|     crac_rd_reg     | Flip-flop |   1   |  N  | N  | None  | Async | N  | 158  |
+|      rdd1_reg       | Flip-flop |   1   |  N  | N  | None  | Async | N  | 165  |
+|      rdd2_reg       | Flip-flop |   1   |  N  | N  | None  | Async | N  | 172  |
+|      rdd3_reg       | Flip-flop |   1   |  N  | N  | None  | Async | N  | 179  |
+|  crac_rd_done_reg   | Flip-flop |   1   |  N  | N  | None  | None  | N  | 186  |
+|     valid_r_reg     | Flip-flop |   1   |  N  | N  | None  | None  | N  | 189  |
+==================================================================================
+Presto compilation completed successfully. (ac97_cra)
+Module: ac97_cra, Ports: 116, Input: 56, Output: 60, Inout: 0
+Module: ac97_cra, Registers: 24, Async set/reset: 21, Sync set/reset: 0
+Information: Module ac97_cra report end. (ELAB-965)
+Information: Building the design 'ac97_dma_if'. (HDL-193)
+Presto compilation completed successfully. (ac97_dma_if)
+Module: ac97_dma_if, Ports: 119, Input: 110, Output: 9, Inout: 0
+Module: ac97_dma_if, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Module ac97_dma_if report end. (ELAB-965)
+Information: Building the design 'ac97_int'. (HDL-193)
+
+Statistics for case statements in always block in file
+	'../rtl/ac97_ctrl/ac97_int.v'
+============================================================
+|    Line    |  full/ parallel  |      block location      |
+============================================================
+|    106     |    user/user     | always block at line 103 |
+============================================================
+
+Inferred memory devices in process in routine 'ac97_int' in file
+	 ../rtl/ac97_ctrl/ac97_int.v'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|     int_set_reg     | Flip-flop |   1   |  N  | N  | None  | Async | N  | 103  |
+|     int_set_reg     | Flip-flop |   1   |  N  | N  | None  | Async | N  | 116  |
+|     int_set_reg     | Flip-flop |   1   |  N  | N  | None  | Async | N  | 121  |
+==================================================================================
+Presto compilation completed successfully. (ac97_int)
+Module: ac97_int, Ports: 20, Input: 17, Output: 3, Inout: 0
+Module: ac97_int, Registers: 3, Async set/reset: 3, Sync set/reset: 0
+Information: Module ac97_int report end. (ELAB-965)
+Information: Building the design 'ac97_rst'. (HDL-193)
+
+Inferred memory devices in process in routine 'ac97_rst' in file
+	 ../rtl/ac97_ctrl/ac97_rst.v'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|    ac97_rst__reg    | Flip-flop |   1   |  N  | N  | None  | Async | N  |  77  |
+|       cnt_reg       | Flip-flop |   3   |  Y  | N  | None  | Async | N  |  86  |
+|     ps_cnt_reg      | Flip-flop |   6   |  Y  | N  | None  | Async | N  |  95  |
+==================================================================================
+Presto compilation completed successfully. (ac97_rst)
+Module: ac97_rst, Ports: 5, Input: 3, Output: 2, Inout: 0
+Module: ac97_rst, Registers: 10, Async set/reset: 10, Sync set/reset: 0
+Information: Module ac97_rst report end. (ELAB-965)
+Information: Building the design 'ac97_fifo_ctrl'. (HDL-193)
+
+Inferred memory devices in process in routine 'ac97_fifo_ctrl' in file
+	 ../rtl/ac97_ctrl/ac97_fifo_ctrl.v'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|  full_empty_r_reg   | Flip-flop |   1   |  N  | N  | None  | None  | N  | 102  |
+|    en_out_l_reg     | Flip-flop |   1   |  N  | N  | None  | None  | N  | 105  |
+|    en_out_l2_reg    | Flip-flop |   1   |  N  | N  | None  | None  | N  | 112  |
+==================================================================================
+Presto compilation completed successfully. (ac97_fifo_ctrl)
+Module: ac97_fifo_ctrl, Ports: 9, Input: 7, Output: 2, Inout: 0
+Module: ac97_fifo_ctrl, Registers: 3, Async set/reset: 0, Sync set/reset: 0
+Information: Module ac97_fifo_ctrl report end. (ELAB-965)
+Information: Building the design 'ac97_dma_req'. (HDL-193)
+
+Statistics for case statements in always block in file
+	'../rtl/ac97_ctrl/ac97_dma_req.v'
+===========================================================
+|    Line    |  full/ parallel  |      block location     |
+===========================================================
+|     97     |    user/user     | always block at line 96 |
+===========================================================
+
+Inferred memory devices in process in routine 'ac97_dma_req' in file
+	 ../rtl/ac97_ctrl/ac97_dma_req.v'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|   dma_req_r1_reg    | Flip-flop |   1   |  N  | N  | None  | None  | N  | 108  |
+|     dma_req_reg     | Flip-flop |   1   |  N  | N  | None  | Async | N  | 111  |
+==================================================================================
+Presto compilation completed successfully. (ac97_dma_req)
+Module: ac97_dma_req, Ports: 15, Input: 14, Output: 1, Inout: 0
+Module: ac97_dma_req, Registers: 2, Async set/reset: 1, Sync set/reset: 0
+Information: Module ac97_dma_req report end. (ELAB-965)
+1
+link
+
+  Linking design 'ac97_top'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  saed32rvt_ss0p95v125c (library) /mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v125c.db
+  saed32rvt_ss0p95v25c (library) /mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v25c.db
+  saed32rvt_ss0p95vn40c (library) /mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95vn40c.db
+
+1
+# Output files
+write -hier -f ddc -output ./outputs/ac97_ctrl/ac97_top.ddc
+Writing ddc file './outputs/ac97_ctrl/ac97_top.ddc'.
+1
+# Clock and constraints
+create_clock -name "clk" -period 10 [get_ports clk_i] 
+1
+set_input_delay 0.01 -clock clk [all_inputs] 
+1
+set_output_delay 0.01 -clock clk [all_outputs] 
+1
+set_clock_uncertainty 0.2 clk
+1
+set_max_area 0.0 
+1
+# Checks and compilation
+check_design  > ./reports/ac97_ctrl/ac97_top_check_design.rpt 
+uniquify 
+Information: Uniquified 6 instances of design 'ac97_out_fifo'. (OPT-1056)
+Information: Uniquified 3 instances of design 'ac97_in_fifo'. (OPT-1056)
+Information: Uniquified 9 instances of design 'ac97_int'. (OPT-1056)
+Information: Uniquified 9 instances of design 'ac97_fifo_ctrl'. (OPT-1056)
+Information: Uniquified 9 instances of design 'ac97_dma_req'. (OPT-1056)
+1
+check_timing 
+Information: Changed wire load model for 'ac97_rst' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'ac97_int_0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'ac97_int_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'ac97_int_2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'ac97_int_3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'ac97_int_4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'ac97_int_5' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'ac97_int_6' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'ac97_int_7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'ac97_int_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'ac97_dma_req_0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'ac97_dma_req_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'ac97_dma_req_2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'ac97_dma_req_3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'ac97_dma_req_4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'ac97_dma_req_5' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'ac97_dma_req_6' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'ac97_dma_req_7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'ac97_dma_req_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'ac97_dma_if' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'ac97_cra' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'ac97_fifo_ctrl_0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'ac97_fifo_ctrl_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'ac97_fifo_ctrl_2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'ac97_fifo_ctrl_3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'ac97_fifo_ctrl_4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'ac97_fifo_ctrl_5' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'ac97_fifo_ctrl_6' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'ac97_fifo_ctrl_7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'ac97_fifo_ctrl_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'ac97_prc' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'ac97_rf' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'ac97_wb_if' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'ac97_in_fifo_0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'ac97_in_fifo_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'ac97_in_fifo_2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'ac97_out_fifo_0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'ac97_out_fifo_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'ac97_out_fifo_2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'ac97_out_fifo_3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'ac97_out_fifo_4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'ac97_out_fifo_5' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'ac97_soc' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'ac97_sin' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'ac97_sout' from '(none)' to 'ForQA'. (OPT-170)
+Module: DW01_inc_width8, Ports: 16, Input: 8, Output: 8, Inout: 0
+Module: DW01_inc_width8, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_cmp2_width8, Ports: 20, Input: 18, Output: 2, Inout: 0
+Module: DW01_cmp2_width8, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_inc_width6, Ports: 12, Input: 6, Output: 6, Inout: 0
+Module: DW01_inc_width6, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_inc_width4, Ports: 8, Input: 4, Output: 4, Inout: 0
+Module: DW01_inc_width4, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_inc_width3, Ports: 6, Input: 3, Output: 3, Inout: 0
+Module: DW01_inc_width3, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_add_width4, Ports: 14, Input: 9, Output: 5, Inout: 0
+Module: DW01_add_width4, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_add_width4, Ports: 14, Input: 9, Output: 5, Inout: 0
+Module: DW01_add_width4, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_sub_width2, Ports: 8, Input: 5, Output: 3, Inout: 0
+Module: DW01_sub_width2, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_sub_width2, Ports: 8, Input: 5, Output: 3, Inout: 0
+Module: DW01_sub_width2, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_dec_width2, Ports: 4, Input: 2, Output: 2, Inout: 0
+Module: DW01_dec_width2, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_cmp6_width3, Ports: 13, Input: 7, Output: 6, Inout: 0
+Module: DW01_cmp6_width3, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_cmp6_width2, Ports: 11, Input: 5, Output: 6, Inout: 0
+Module: DW01_cmp6_width2, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_cmp2_width2, Ports: 8, Input: 6, Output: 2, Inout: 0
+Module: DW01_cmp2_width2, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Changed wire load model for 'DW01_inc_width3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_3_1_3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width6' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_6_1_6' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*LT_UNS_OP_2_2_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*LT_UNS_OP_2_2_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*LT_UNS_OP_2_2_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*LT_UNS_OP_2_2_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*LT_UNS_OP_2_2_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*LT_UNS_OP_2_2_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*LT_UNS_OP_2_2_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*LT_UNS_OP_2_2_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*LT_UNS_OP_2_2_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*LT_UNS_OP_2_2_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*LT_UNS_OP_2_2_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*LT_UNS_OP_2_2_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*LT_UNS_OP_2_2_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*LT_UNS_OP_2_2_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*LT_UNS_OP_2_2_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*LT_UNS_OP_2_2_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*LT_UNS_OP_2_2_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*LT_UNS_OP_2_2_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_3_1_3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_4_2_4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_4_1_4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_dec_width2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_2_1_2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_2_2_2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp6_width2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*EQ_UNS_OP_2_2_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp6_width3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*EQ_UNS_OP_3_3_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_3_1_3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_4_2_4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_4_1_4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_dec_width2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_2_1_2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_2_2_2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp6_width2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*EQ_UNS_OP_2_2_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp6_width3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*EQ_UNS_OP_3_3_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_3_1_3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_4_2_4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_4_1_4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_dec_width2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_2_1_2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_2_2_2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp6_width2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*EQ_UNS_OP_2_2_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp6_width3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*EQ_UNS_OP_3_3_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_4_2_4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_4_1_4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_4_1_4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_3_1_3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_dec_width2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_2_1_2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_2_2_2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp6_width2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*EQ_UNS_OP_2_2_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp6_width3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*EQ_UNS_OP_3_3_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_4_2_4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_4_1_4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_4_1_4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_3_1_3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_dec_width2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_2_1_2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_2_2_2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp6_width2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*EQ_UNS_OP_2_2_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp6_width3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*EQ_UNS_OP_3_3_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_4_2_4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_4_1_4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_4_1_4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_3_1_3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_dec_width2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_2_1_2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_2_2_2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp6_width2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*EQ_UNS_OP_2_2_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp6_width3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*EQ_UNS_OP_3_3_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_4_2_4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_4_1_4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_4_1_4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_3_1_3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_dec_width2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_2_1_2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_2_2_2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp6_width2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*EQ_UNS_OP_2_2_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp6_width3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*EQ_UNS_OP_3_3_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_4_2_4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_4_1_4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_4_1_4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_3_1_3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_dec_width2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_2_1_2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_2_2_2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp6_width2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*EQ_UNS_OP_2_2_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp6_width3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*EQ_UNS_OP_3_3_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_4_2_4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_4_1_4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_4_1_4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_3_1_3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_dec_width2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_2_1_2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_2_2_2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp6_width2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*EQ_UNS_OP_2_2_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp6_width3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*EQ_UNS_OP_3_3_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width6' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_6_1_6' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_4_1_4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_8_1_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*GT_UNS_OP_8_8_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*GT_UNS_OP_8_7_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*GT_UNS_OP_8_7_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*GT_UNS_OP_8_6_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*GT_UNS_OP_8_1_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Updating design information... (UID-85)
+Warning: Design 'ac97_top' contains 12 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+
+Information: Checking generated_clocks...
+
+Information: Checking loops...
+
+Information: Checking no_input_delay...
+
+Information: Checking unconstrained_endpoints...
+
+Warning: There are 597 end-points which are not constrained for maximum delay.
+
+Information: Checking pulse_clock_cell_type...
+
+Information: Checking no_driving_cell...
+
+Information: Checking partial_input_delay...
+1
+compile -area_effort medium -map_effort medium 
+CPU Load: 4%, Ram Free: 0 GB, Swap Free: 15 GB, Work Disk Free: 4330 GB, Tmp Disk Free: 136 GB
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | W-2024.09-DWBB_202409.4 |     *     |
+| Licensed DW Building Blocks        |                         |           |
+============================================================================
+
+====================================================================================================
+| Flow Information                                                                                 |
+----------------------------------------------------------------------------------------------------
+| Flow         | Design Compiler                                                                   |
+====================================================================================================
+| Design Information                                      | Value                                  |
+====================================================================================================
+| Number of Scenarios                                     | 0                                      |
+| Leaf Cell Count                                         | 4158                                   |
+| Number of User Hierarchies                              | 45                                     |
+| Sequential Cell Count                                   | 2289                                   |
+| Macro Count                                             | 0                                      |
+| Pad Count                                               | 0                                      |
+| Number of Power Domains                                 | 0                                      |
+| Number of Path Groups                                   | 2                                      |
+| Number of VT Class                                      | 1                                      |
+| Number of Clocks                                        | 1                                      |
+| Number of Dont Touch Cells                              | 560                                    |
+| Number of Dont Touch Nets                               | 0                                      |
+| Number of Size Only Cells                               | 0                                      |
+| Design with Target Library Subset (with clock_path)     | false  (false )                        |
+| Design with UPF Data                                    | false                                  |
+====================================================================================================
+
+Information: There are 356 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'ac97_rst'
+Module: DW01_inc_width3, Ports: 6, Input: 3, Output: 3, Inout: 0
+Module: DW01_inc_width3, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+  Processing 'ac97_int_0'
+Module: DW01_cmp2_width2, Ports: 8, Input: 6, Output: 2, Inout: 0
+Module: DW01_cmp2_width2, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+  Processing 'ac97_dma_req_0'
+  Processing 'ac97_dma_if'
+  Processing 'ac97_cra'
+  Processing 'ac97_fifo_ctrl_0'
+  Processing 'ac97_prc'
+  Processing 'ac97_rf'
+  Processing 'ac97_wb_if'
+  Processing 'ac97_in_fifo_0'
+Module: DW01_cmp6_width2, Ports: 11, Input: 5, Output: 6, Inout: 0
+Module: DW01_cmp6_width2, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_cmp6_width3, Ports: 13, Input: 7, Output: 6, Inout: 0
+Module: DW01_cmp6_width3, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_add_width4, Ports: 14, Input: 9, Output: 5, Inout: 0
+Module: DW01_add_width4, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_inc_width4, Ports: 8, Input: 4, Output: 4, Inout: 0
+Module: DW01_inc_width4, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+  Processing 'ac97_out_fifo_0'
+  Processing 'ac97_soc'
+  Processing 'ac97_sin'
+  Processing 'ac97_sout'
+Information: The register 'slt12_r_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'slt12_r_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'slt12_r_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'slt12_r_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'slt12_r_reg[4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'slt12_r_reg[5]' is a constant and will be removed. (OPT-1206)
+Information: The register 'slt12_r_reg[6]' is a constant and will be removed. (OPT-1206)
+Information: The register 'slt12_r_reg[7]' is a constant and will be removed. (OPT-1206)
+Information: The register 'slt12_r_reg[8]' is a constant and will be removed. (OPT-1206)
+Information: The register 'slt12_r_reg[9]' is a constant and will be removed. (OPT-1206)
+Information: The register 'slt12_r_reg[10]' is a constant and will be removed. (OPT-1206)
+Information: The register 'slt12_r_reg[11]' is a constant and will be removed. (OPT-1206)
+Information: The register 'slt12_r_reg[12]' is a constant and will be removed. (OPT-1206)
+Information: The register 'slt12_r_reg[13]' is a constant and will be removed. (OPT-1206)
+Information: The register 'slt12_r_reg[14]' is a constant and will be removed. (OPT-1206)
+Information: The register 'slt12_r_reg[15]' is a constant and will be removed. (OPT-1206)
+Information: The register 'slt12_r_reg[16]' is a constant and will be removed. (OPT-1206)
+Information: The register 'slt12_r_reg[17]' is a constant and will be removed. (OPT-1206)
+Information: The register 'slt12_r_reg[18]' is a constant and will be removed. (OPT-1206)
+Information: The register 'slt12_r_reg[19]' is a constant and will be removed. (OPT-1206)
+Information: The register 'slt11_r_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'slt11_r_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'slt11_r_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'slt11_r_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'slt11_r_reg[4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'slt11_r_reg[5]' is a constant and will be removed. (OPT-1206)
+Information: The register 'slt11_r_reg[6]' is a constant and will be removed. (OPT-1206)
+Information: The register 'slt11_r_reg[7]' is a constant and will be removed. (OPT-1206)
+Information: The register 'slt11_r_reg[8]' is a constant and will be removed. (OPT-1206)
+Information: The register 'slt11_r_reg[9]' is a constant and will be removed. (OPT-1206)
+Information: The register 'slt11_r_reg[10]' is a constant and will be removed. (OPT-1206)
+Information: The register 'slt11_r_reg[11]' is a constant and will be removed. (OPT-1206)
+Information: The register 'slt11_r_reg[12]' is a constant and will be removed. (OPT-1206)
+Information: The register 'slt11_r_reg[13]' is a constant and will be removed. (OPT-1206)
+Information: The register 'slt11_r_reg[14]' is a constant and will be removed. (OPT-1206)
+Information: The register 'slt11_r_reg[15]' is a constant and will be removed. (OPT-1206)
+Information: The register 'slt11_r_reg[16]' is a constant and will be removed. (OPT-1206)
+Information: The register 'slt11_r_reg[17]' is a constant and will be removed. (OPT-1206)
+Information: The register 'slt11_r_reg[18]' is a constant and will be removed. (OPT-1206)
+Information: The register 'slt11_r_reg[19]' is a constant and will be removed. (OPT-1206)
+Information: The register 'slt10_r_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'slt10_r_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'slt10_r_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'slt10_r_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'slt10_r_reg[4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'slt10_r_reg[5]' is a constant and will be removed. (OPT-1206)
+Information: The register 'slt10_r_reg[6]' is a constant and will be removed. (OPT-1206)
+Information: The register 'slt10_r_reg[7]' is a constant and will be removed. (OPT-1206)
+Information: The register 'slt10_r_reg[8]' is a constant and will be removed. (OPT-1206)
+Information: The register 'slt10_r_reg[9]' is a constant and will be removed. (OPT-1206)
+Information: The register 'slt10_r_reg[10]' is a constant and will be removed. (OPT-1206)
+Information: The register 'slt10_r_reg[11]' is a constant and will be removed. (OPT-1206)
+Information: The register 'slt10_r_reg[12]' is a constant and will be removed. (OPT-1206)
+Information: The register 'slt10_r_reg[13]' is a constant and will be removed. (OPT-1206)
+Information: The register 'slt10_r_reg[14]' is a constant and will be removed. (OPT-1206)
+Information: The register 'slt10_r_reg[15]' is a constant and will be removed. (OPT-1206)
+Information: The register 'slt10_r_reg[16]' is a constant and will be removed. (OPT-1206)
+Information: The register 'slt10_r_reg[17]' is a constant and will be removed. (OPT-1206)
+Information: The register 'slt10_r_reg[18]' is a constant and will be removed. (OPT-1206)
+Information: The register 'slt10_r_reg[19]' is a constant and will be removed. (OPT-1206)
+  Processing 'ac97_top'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+Module: DW01_inc_width6, Ports: 12, Input: 6, Output: 6, Inout: 0
+Module: DW01_inc_width6, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+  Processing 'ac97_rst_DW01_inc_0_DW01_inc_6'
+  Processing 'ac97_soc_DW01_inc_0_DW01_inc_7'
+Module: DW01_cmp2_width8, Ports: 20, Input: 18, Output: 2, Inout: 0
+Module: DW01_cmp2_width8, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+  Processing 'ac97_soc_DW01_cmp2_0_DW01_cmp2_2'
+  Processing 'ac97_soc_DW01_cmp2_1_DW01_cmp2_3'
+  Processing 'ac97_soc_DW01_cmp2_2_DW01_cmp2_4'
+  Processing 'ac97_soc_DW01_cmp2_3_DW01_cmp2_5'
+  Processing 'ac97_soc_DW01_cmp2_4_DW01_cmp2_6'
+Module: DW01_inc_width8, Ports: 16, Input: 8, Output: 8, Inout: 0
+Module: DW01_inc_width8, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+  Processing 'ac97_soc_DW01_inc_1_DW01_inc_8'
+Module: DW01_sub_width2, Ports: 8, Input: 5, Output: 3, Inout: 0
+Module: DW01_sub_width2, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_NAND2, Ports: 3, Input: 2, Output: 1, Inout: 0
+Module: DW01_NAND2, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+  Building model 'DW01_NAND2'
+  Processing 'DW01_NAND2'
+  Building model 'DW01_sub_width2' (rpl)
+  Processing 'DW01_sub_width2'
+Module: DW01_sub_width2, Ports: 8, Input: 5, Output: 3, Inout: 0
+Module: DW01_sub_width2, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+  Building model 'DW01_sub_width2' (cla)
+  Processing 'DW01_sub_width2'
+Module: DW01_dec_width2, Ports: 4, Input: 2, Output: 2, Inout: 0
+Module: DW01_dec_width2, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+  Building model 'DW01_dec_width2' (rpl)
+  Processing 'DW01_dec_width2'
+  Processing 'DW01_dec_width2_DW01_dec_0'
+  Processing 'DW01_sub_width2_DW01_sub_0'
+  Processing 'DW01_dec_width2_DW01_dec_1'
+  Processing 'DW01_sub_width2_DW01_sub_1'
+  Processing 'DW01_dec_width2_DW01_dec_2'
+  Processing 'DW01_sub_width2_DW01_sub_2'
+  Processing 'DW01_dec_width2_DW01_dec_3'
+  Processing 'DW01_sub_width2_DW01_sub_3'
+  Processing 'DW01_dec_width2_DW01_dec_4'
+  Processing 'DW01_sub_width2_DW01_sub_4'
+  Processing 'DW01_dec_width2_DW01_dec_5'
+  Processing 'DW01_sub_width2_DW01_sub_5'
+  Processing 'DW01_dec_width2_DW01_dec_6'
+  Processing 'DW01_sub_width2_DW01_sub_6'
+  Processing 'DW01_dec_width2_DW01_dec_7'
+  Processing 'DW01_sub_width2_DW01_sub_7'
+  Processing 'DW01_dec_width2_DW01_dec_8'
+  Processing 'DW01_sub_width2_DW01_sub_8'
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:17   30254.6  14774.62  363548.9       0.0                          
+    0:00:17   30254.6  14774.62  363548.9       0.0                          
+    0:00:17   30250.5  14774.62  363087.6       0.0                          
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+  Mapping Optimization (Phase 1)
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:19   30547.6    256.82  249703.7       8.5                          
+    0:00:19   30547.6    256.82  249703.7       8.5                          
+    0:00:39   32910.1      0.00      -0.0     686.0                          
+    0:00:39   32910.1      0.00      -0.0     686.0                          
+    0:00:39   32910.1      0.00      -0.0     686.0                          
+    0:00:40   32910.1      0.00      -0.0     686.0                          
+    0:00:40   32910.1      0.00      -0.0     686.0                          
+    0:00:45   26870.9      0.34       5.7       0.0                          
+    0:00:46   26922.0      0.00      -0.0       0.0                          
+    0:00:47   26870.9      0.14       2.0       0.0                          
+    0:00:47   26916.9      0.00      -0.0       0.0                          
+    0:00:47   26870.9      0.03       0.3       0.0                          
+    0:00:48   26890.0      0.00      -0.0       0.0                          
+    0:00:48   26870.9      0.03       0.3       0.0                          
+    0:00:48   26890.0      0.00      -0.0       0.0                          
+    0:00:48   26870.9      0.03       0.3       0.0                          
+    0:00:49   26890.0      0.00      -0.0       0.0                          
+    0:00:49   26890.0      0.00      -0.0       0.0                          
+    0:00:49   26889.5      0.00      -0.0       0.0                          
+    0:00:49   26889.5      0.00      -0.0       0.0                          
+    0:00:49   26889.5      0.00      -0.0       0.0                          
+    0:00:49   26889.5      0.00      -0.0       0.0                          
+    0:00:49   26889.5      0.00      -0.0       0.0                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:49   26889.5      0.00      -0.0       0.0                          
+    0:00:49   26889.5      0.00      -0.0       0.0                          
+    0:00:49   26889.5      0.00      -0.0       0.0                          
+    0:00:49   26889.5      0.00      -0.0       0.0                          
+    0:00:50   26805.8      0.00      -0.0       0.0                          
+    0:00:51   26669.1      0.00      -0.0       0.0                          
+
+
+  Beginning Area-Recovery Phase  (max_area 0)
+  -----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:51   26669.1      0.00      -0.0       0.0                          
+    0:00:51   26669.1      0.00      -0.0       0.0                          
+    0:00:52   26424.6      0.00      -0.0       0.0                          
+    0:00:52   26302.9      0.00       0.0       0.0                          
+    0:00:53   26215.5      0.00       0.0       0.0                          
+    0:00:53   26155.5      0.00       0.0       0.0                          
+    0:00:53   26104.7      0.00       0.0       0.0                          
+    0:00:53   26058.9      0.00       0.0       0.0                          
+    0:00:53   26013.2      0.00       0.0       0.0                          
+    0:00:53   25967.4      0.00       0.0       0.0                          
+    0:00:53   25921.7      0.00       0.0       0.0                          
+    0:00:54   25879.7      0.00       0.0       0.0                          
+    0:00:54   25839.1      0.00       0.0       0.0                          
+    0:00:54   25799.7      0.00       0.0       0.0                          
+    0:00:54   25770.5      0.00       0.0       0.0                          
+    0:00:54   25747.6      0.00       0.0       0.0                          
+    0:00:54   25719.6      0.00       0.0       0.0                          
+    0:00:54   25691.7      0.00       0.0       0.0                          
+    0:00:54   25663.7      0.00       0.0       0.0                          
+    0:00:55   25635.8      0.00       0.0       0.0                          
+    0:00:55   25607.8      0.00       0.0       0.0                          
+    0:00:55   25579.8      0.00       0.0       0.0                          
+    0:00:55   25551.9      0.00       0.0       0.0                          
+    0:00:55   25523.9      0.00       0.0       0.0                          
+    0:00:55   25501.1      0.00       0.0       0.0                          
+    0:00:55   25478.2      0.00       0.0       0.0                          
+    0:00:55   25460.4      0.00       0.0       0.0                          
+    0:00:55   25442.6      0.00       0.0       0.0                          
+    0:00:56   25424.8      0.00       0.0       0.0                          
+    0:00:56   25407.0      0.00       0.0       0.0                          
+    0:00:56   25389.2      0.00       0.0       0.0                          
+    0:00:56   25371.5      0.00       0.0       0.0                          
+    0:00:56   25353.7      0.00       0.0       0.0                          
+    0:00:56   25335.9      0.00       0.0       0.0                          
+    0:00:56   25318.1      0.00       0.0       0.0                          
+    0:00:56   25305.4      0.00       0.0       0.0                          
+    0:00:56   25292.7      0.00       0.0       0.0                          
+    0:00:56   25292.7      0.00       0.0       0.0                          
+    0:00:56   25292.4      0.00      -0.0       0.0                          
+    0:00:57   25252.8      0.00      -0.0       0.0                          
+    0:00:57   25252.8      0.00      -0.0       0.0                          
+    0:00:57   25252.8      0.00      -0.0       0.0                          
+    0:00:57   25252.8      0.00      -0.0       0.0                          
+    0:00:57   25252.8      0.00      -0.0       0.0                          
+    0:00:57   25252.8      0.00      -0.0       0.0                          
+    0:00:57   25161.5      0.00      -0.0       0.0                          
+    0:00:58   25131.8      0.00      -0.0       0.0                          
+    0:01:00   25107.4      0.00      -0.0       0.0                          
+    0:01:00   25107.4      0.00      -0.0       0.0                          
+    0:01:00   25107.4      0.00      -0.0       0.0                          
+    0:01:00   25107.4      0.00      -0.0       0.0                          
+    0:01:00   25107.4      0.00      -0.0       0.0                          
+    0:01:00   25107.4      0.00      -0.0       0.0                          
+    0:01:01   25107.4      0.00      -0.0       0.0                          
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Warning: Design 'ac97_top' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+     Net 'u16/u1/clk': 1876 load(s), 1 driver(s)
+CPU Load: 22%, Ram Free: 0 GB, Swap Free: 15 GB, Work Disk Free: 4330 GB, Tmp Disk Free: 136 GB
+Information: Total number of MV cells in the design.
+----------------------------------------------------------------------------------------------------
+ MV Cells                                           Total Number                                   
+----------------------------------------------------------------------------------------------------
+ Level Shifter:                                     0                                             
+ Enable Level Shifter:                              0                                             
+ Isolation Cell:                                    0                                             
+ Retention Cell:                                    0                                             
+ Retention Clamp Cell:                              0                                             
+ Switch Cell:                                       0                                             
+ Always-On Cell:                                    0                                             
+ Repeater Cell:                                     0                                             
+
+----------------------------------------------------------------------------------------------------
+Unmapped MV Cells 
+----------------------------------------------------------------------------------------------------
+0 Isolation Cells are unmapped 
+0 Retention Clamp Cells are unmapped 
+----------------------------------------------------------------------------------------------------
+1
+# Reports
+report_constraints -all > ./reports/ac97_ctrl/ac97_top_constraints.rpt
+report_area > ./reports/ac97_ctrl/ac97_top_area.rpt
+report_power > ./reports/ac97_ctrl/ac97_top_power.rpt
+report_qor  > ./reports/ac97_ctrl/ac97_top_qor.rpt
+report_cell > ./reports/ac97_ctrl/ac97_top_cells.rpt
+report_resources > ./reports/ac97_ctrl/ac97_top_resources.rpt
+report_timing -max_paths 10 > ./reports/ac97_ctrl/ac97_top_timing.rpt
+# Output files
+write_sdc ./outputs/ac97_ctrl/ac97_top.sdc
+1
+write -hier -f ddc -output ./outputs/ac97_ctrl/ac97_top.ddc
+Writing ddc file './outputs/ac97_ctrl/ac97_top.ddc'.
+1
+write -hierarchy -format verilog -output ./outputs/ac97_ctrl/ac97_top.v
+Writing verilog file '/home/vi44@drexel.edu/iwls/scripts/outputs/ac97_ctrl/ac97_top.v'.
+Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
+Warning: Verilog writer has added 31 nets to module ac97_top using SYNOPSYS_UNCONNECTED_ as prefix.  Please use the change_names command to make the correct changes before invoking the verilog writer.  (VO-11)
+1
+quit
+
+Memory usage for this session 441 Mbytes.
+Memory usage for this session including child processes 441 Mbytes.
+CPU usage for this session 77 seconds ( 0.02 hours ).
+Elapsed time for this session 83 seconds ( 0.02 hours ).
+
+Thank you...

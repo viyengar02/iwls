@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : pci_bridge32
+Version: W-2024.09-SP4-1
+Date   : Tue Apr 29 11:25:16 2025
+****************************************
+
+Library(s) Used:
+
+    saed32rvt_ss0p95v25c (File: /mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v25c.db)
+
+Number of ports:                         8589
+Number of nets:                         19642
+Number of cells:                        12594
+Number of combinational cells:           8333
+Number of sequential cells:              3582
+Number of macros/black boxes:               0
+Number of buf/inv:                       1816
+Number of references:                      12
+
+Combinational area:              19660.834083
+Buf/Inv area:                     2442.832154
+Noncombinational area:           24432.388221
+Macro/Black Box area:                0.000000
+Net Interconnect area:           11073.332592
+
+Total cell area:                 44093.222304
+Total area:                      55166.554896
+1

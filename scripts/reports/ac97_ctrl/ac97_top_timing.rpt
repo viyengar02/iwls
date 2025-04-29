@@ -1,0 +1,447 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 10
+Design : ac97_top
+Version: W-2024.09-SP4-1
+Date   : Tue Apr 29 11:15:07 2025
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: ss0p95v25c   Library: saed32rvt_ss0p95v25c
+Wire Load Model Mode: enclosed
+
+  Startpoint: wb_addr_i[4]
+              (input port clocked by clk)
+  Endpoint: u13/intm_r_reg[9]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ac97_top           35000                 saed32rvt_ss0p95v25c
+  ac97_rf            8000                  saed32rvt_ss0p95v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 r
+  wb_addr_i[4] (in)                        0.00       0.01 r
+  u12/wb_addr_i[4] (ac97_wb_if)            0.00       0.01 r
+  u12/adr[2] (ac97_wb_if)                  0.00       0.01 r
+  u13/adr[2] (ac97_rf)                     0.00       0.01 r
+  u13/U195/Y (INVX0_RVT)                   0.91       0.92 f
+  u13/U198/Y (NOR2X0_RVT)                  0.14       1.06 r
+  u13/U199/Y (NAND3X0_RVT)                 0.16       1.22 f
+  u13/U32/Y (INVX1_RVT)                    1.09       2.31 r
+  u13/U22/Y (INVX1_RVT)                    3.68       5.99 f
+  u13/U211/Y (AO22X1_RVT)                  3.71       9.70 f
+  u13/intm_r_reg[9]/D (DFFARX1_RVT)        0.01       9.71 f
+  data arrival time                                   9.71
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  u13/intm_r_reg[9]/CLK (DFFARX1_RVT)      0.00       9.80 r
+  library setup time                      -0.06       9.74
+  data required time                                  9.74
+  -----------------------------------------------------------
+  data required time                                  9.74
+  data arrival time                                  -9.71
+  -----------------------------------------------------------
+  slack (MET)                                         0.03
+
+
+  Startpoint: wb_addr_i[4]
+              (input port clocked by clk)
+  Endpoint: u13/intm_r_reg[8]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ac97_top           35000                 saed32rvt_ss0p95v25c
+  ac97_rf            8000                  saed32rvt_ss0p95v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 r
+  wb_addr_i[4] (in)                        0.00       0.01 r
+  u12/wb_addr_i[4] (ac97_wb_if)            0.00       0.01 r
+  u12/adr[2] (ac97_wb_if)                  0.00       0.01 r
+  u13/adr[2] (ac97_rf)                     0.00       0.01 r
+  u13/U195/Y (INVX0_RVT)                   0.91       0.92 f
+  u13/U198/Y (NOR2X0_RVT)                  0.14       1.06 r
+  u13/U199/Y (NAND3X0_RVT)                 0.16       1.22 f
+  u13/U32/Y (INVX1_RVT)                    1.09       2.31 r
+  u13/U22/Y (INVX1_RVT)                    3.68       5.99 f
+  u13/U210/Y (AO22X1_RVT)                  3.71       9.70 f
+  u13/intm_r_reg[8]/D (DFFARX1_RVT)        0.01       9.71 f
+  data arrival time                                   9.71
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  u13/intm_r_reg[8]/CLK (DFFARX1_RVT)      0.00       9.80 r
+  library setup time                      -0.06       9.74
+  data required time                                  9.74
+  -----------------------------------------------------------
+  data required time                                  9.74
+  data arrival time                                  -9.71
+  -----------------------------------------------------------
+  slack (MET)                                         0.03
+
+
+  Startpoint: wb_addr_i[4]
+              (input port clocked by clk)
+  Endpoint: u13/intm_r_reg[7]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ac97_top           35000                 saed32rvt_ss0p95v25c
+  ac97_rf            8000                  saed32rvt_ss0p95v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 r
+  wb_addr_i[4] (in)                        0.00       0.01 r
+  u12/wb_addr_i[4] (ac97_wb_if)            0.00       0.01 r
+  u12/adr[2] (ac97_wb_if)                  0.00       0.01 r
+  u13/adr[2] (ac97_rf)                     0.00       0.01 r
+  u13/U195/Y (INVX0_RVT)                   0.91       0.92 f
+  u13/U198/Y (NOR2X0_RVT)                  0.14       1.06 r
+  u13/U199/Y (NAND3X0_RVT)                 0.16       1.22 f
+  u13/U32/Y (INVX1_RVT)                    1.09       2.31 r
+  u13/U22/Y (INVX1_RVT)                    3.68       5.99 f
+  u13/U209/Y (AO22X1_RVT)                  3.71       9.70 f
+  u13/intm_r_reg[7]/D (DFFARX1_RVT)        0.01       9.71 f
+  data arrival time                                   9.71
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  u13/intm_r_reg[7]/CLK (DFFARX1_RVT)      0.00       9.80 r
+  library setup time                      -0.06       9.74
+  data required time                                  9.74
+  -----------------------------------------------------------
+  data required time                                  9.74
+  data arrival time                                  -9.71
+  -----------------------------------------------------------
+  slack (MET)                                         0.03
+
+
+  Startpoint: wb_addr_i[4]
+              (input port clocked by clk)
+  Endpoint: u13/intm_r_reg[6]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ac97_top           35000                 saed32rvt_ss0p95v25c
+  ac97_rf            8000                  saed32rvt_ss0p95v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 r
+  wb_addr_i[4] (in)                        0.00       0.01 r
+  u12/wb_addr_i[4] (ac97_wb_if)            0.00       0.01 r
+  u12/adr[2] (ac97_wb_if)                  0.00       0.01 r
+  u13/adr[2] (ac97_rf)                     0.00       0.01 r
+  u13/U195/Y (INVX0_RVT)                   0.91       0.92 f
+  u13/U198/Y (NOR2X0_RVT)                  0.14       1.06 r
+  u13/U199/Y (NAND3X0_RVT)                 0.16       1.22 f
+  u13/U32/Y (INVX1_RVT)                    1.09       2.31 r
+  u13/U22/Y (INVX1_RVT)                    3.68       5.99 f
+  u13/U208/Y (AO22X1_RVT)                  3.71       9.70 f
+  u13/intm_r_reg[6]/D (DFFARX1_RVT)        0.01       9.71 f
+  data arrival time                                   9.71
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  u13/intm_r_reg[6]/CLK (DFFARX1_RVT)      0.00       9.80 r
+  library setup time                      -0.06       9.74
+  data required time                                  9.74
+  -----------------------------------------------------------
+  data required time                                  9.74
+  data arrival time                                  -9.71
+  -----------------------------------------------------------
+  slack (MET)                                         0.03
+
+
+  Startpoint: wb_addr_i[4]
+              (input port clocked by clk)
+  Endpoint: u13/intm_r_reg[5]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ac97_top           35000                 saed32rvt_ss0p95v25c
+  ac97_rf            8000                  saed32rvt_ss0p95v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 r
+  wb_addr_i[4] (in)                        0.00       0.01 r
+  u12/wb_addr_i[4] (ac97_wb_if)            0.00       0.01 r
+  u12/adr[2] (ac97_wb_if)                  0.00       0.01 r
+  u13/adr[2] (ac97_rf)                     0.00       0.01 r
+  u13/U195/Y (INVX0_RVT)                   0.91       0.92 f
+  u13/U198/Y (NOR2X0_RVT)                  0.14       1.06 r
+  u13/U199/Y (NAND3X0_RVT)                 0.16       1.22 f
+  u13/U32/Y (INVX1_RVT)                    1.09       2.31 r
+  u13/U22/Y (INVX1_RVT)                    3.68       5.99 f
+  u13/U207/Y (AO22X1_RVT)                  3.71       9.70 f
+  u13/intm_r_reg[5]/D (DFFARX1_RVT)        0.01       9.71 f
+  data arrival time                                   9.71
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  u13/intm_r_reg[5]/CLK (DFFARX1_RVT)      0.00       9.80 r
+  library setup time                      -0.06       9.74
+  data required time                                  9.74
+  -----------------------------------------------------------
+  data required time                                  9.74
+  data arrival time                                  -9.71
+  -----------------------------------------------------------
+  slack (MET)                                         0.03
+
+
+  Startpoint: wb_addr_i[4]
+              (input port clocked by clk)
+  Endpoint: u13/intm_r_reg[4]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ac97_top           35000                 saed32rvt_ss0p95v25c
+  ac97_rf            8000                  saed32rvt_ss0p95v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 r
+  wb_addr_i[4] (in)                        0.00       0.01 r
+  u12/wb_addr_i[4] (ac97_wb_if)            0.00       0.01 r
+  u12/adr[2] (ac97_wb_if)                  0.00       0.01 r
+  u13/adr[2] (ac97_rf)                     0.00       0.01 r
+  u13/U195/Y (INVX0_RVT)                   0.91       0.92 f
+  u13/U198/Y (NOR2X0_RVT)                  0.14       1.06 r
+  u13/U199/Y (NAND3X0_RVT)                 0.16       1.22 f
+  u13/U32/Y (INVX1_RVT)                    1.09       2.31 r
+  u13/U22/Y (INVX1_RVT)                    3.68       5.99 f
+  u13/U206/Y (AO22X1_RVT)                  3.71       9.70 f
+  u13/intm_r_reg[4]/D (DFFARX1_RVT)        0.01       9.71 f
+  data arrival time                                   9.71
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  u13/intm_r_reg[4]/CLK (DFFARX1_RVT)      0.00       9.80 r
+  library setup time                      -0.06       9.74
+  data required time                                  9.74
+  -----------------------------------------------------------
+  data required time                                  9.74
+  data arrival time                                  -9.71
+  -----------------------------------------------------------
+  slack (MET)                                         0.03
+
+
+  Startpoint: wb_addr_i[4]
+              (input port clocked by clk)
+  Endpoint: u13/intm_r_reg[3]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ac97_top           35000                 saed32rvt_ss0p95v25c
+  ac97_rf            8000                  saed32rvt_ss0p95v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 r
+  wb_addr_i[4] (in)                        0.00       0.01 r
+  u12/wb_addr_i[4] (ac97_wb_if)            0.00       0.01 r
+  u12/adr[2] (ac97_wb_if)                  0.00       0.01 r
+  u13/adr[2] (ac97_rf)                     0.00       0.01 r
+  u13/U195/Y (INVX0_RVT)                   0.91       0.92 f
+  u13/U198/Y (NOR2X0_RVT)                  0.14       1.06 r
+  u13/U199/Y (NAND3X0_RVT)                 0.16       1.22 f
+  u13/U32/Y (INVX1_RVT)                    1.09       2.31 r
+  u13/U22/Y (INVX1_RVT)                    3.68       5.99 f
+  u13/U205/Y (AO22X1_RVT)                  3.71       9.70 f
+  u13/intm_r_reg[3]/D (DFFARX1_RVT)        0.01       9.71 f
+  data arrival time                                   9.71
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  u13/intm_r_reg[3]/CLK (DFFARX1_RVT)      0.00       9.80 r
+  library setup time                      -0.06       9.74
+  data required time                                  9.74
+  -----------------------------------------------------------
+  data required time                                  9.74
+  data arrival time                                  -9.71
+  -----------------------------------------------------------
+  slack (MET)                                         0.03
+
+
+  Startpoint: wb_addr_i[4]
+              (input port clocked by clk)
+  Endpoint: u13/intm_r_reg[2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ac97_top           35000                 saed32rvt_ss0p95v25c
+  ac97_rf            8000                  saed32rvt_ss0p95v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 r
+  wb_addr_i[4] (in)                        0.00       0.01 r
+  u12/wb_addr_i[4] (ac97_wb_if)            0.00       0.01 r
+  u12/adr[2] (ac97_wb_if)                  0.00       0.01 r
+  u13/adr[2] (ac97_rf)                     0.00       0.01 r
+  u13/U195/Y (INVX0_RVT)                   0.91       0.92 f
+  u13/U198/Y (NOR2X0_RVT)                  0.14       1.06 r
+  u13/U199/Y (NAND3X0_RVT)                 0.16       1.22 f
+  u13/U32/Y (INVX1_RVT)                    1.09       2.31 r
+  u13/U22/Y (INVX1_RVT)                    3.68       5.99 f
+  u13/U204/Y (AO22X1_RVT)                  3.71       9.70 f
+  u13/intm_r_reg[2]/D (DFFARX1_RVT)        0.01       9.71 f
+  data arrival time                                   9.71
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  u13/intm_r_reg[2]/CLK (DFFARX1_RVT)      0.00       9.80 r
+  library setup time                      -0.06       9.74
+  data required time                                  9.74
+  -----------------------------------------------------------
+  data required time                                  9.74
+  data arrival time                                  -9.71
+  -----------------------------------------------------------
+  slack (MET)                                         0.03
+
+
+  Startpoint: wb_addr_i[4]
+              (input port clocked by clk)
+  Endpoint: u13/intm_r_reg[1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ac97_top           35000                 saed32rvt_ss0p95v25c
+  ac97_rf            8000                  saed32rvt_ss0p95v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 r
+  wb_addr_i[4] (in)                        0.00       0.01 r
+  u12/wb_addr_i[4] (ac97_wb_if)            0.00       0.01 r
+  u12/adr[2] (ac97_wb_if)                  0.00       0.01 r
+  u13/adr[2] (ac97_rf)                     0.00       0.01 r
+  u13/U195/Y (INVX0_RVT)                   0.91       0.92 f
+  u13/U198/Y (NOR2X0_RVT)                  0.14       1.06 r
+  u13/U199/Y (NAND3X0_RVT)                 0.16       1.22 f
+  u13/U32/Y (INVX1_RVT)                    1.09       2.31 r
+  u13/U22/Y (INVX1_RVT)                    3.68       5.99 f
+  u13/U203/Y (AO22X1_RVT)                  3.71       9.70 f
+  u13/intm_r_reg[1]/D (DFFARX1_RVT)        0.01       9.71 f
+  data arrival time                                   9.71
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  u13/intm_r_reg[1]/CLK (DFFARX1_RVT)      0.00       9.80 r
+  library setup time                      -0.06       9.74
+  data required time                                  9.74
+  -----------------------------------------------------------
+  data required time                                  9.74
+  data arrival time                                  -9.71
+  -----------------------------------------------------------
+  slack (MET)                                         0.03
+
+
+  Startpoint: wb_addr_i[4]
+              (input port clocked by clk)
+  Endpoint: u13/intm_r_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ac97_top           35000                 saed32rvt_ss0p95v25c
+  ac97_rf            8000                  saed32rvt_ss0p95v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 r
+  wb_addr_i[4] (in)                        0.00       0.01 r
+  u12/wb_addr_i[4] (ac97_wb_if)            0.00       0.01 r
+  u12/adr[2] (ac97_wb_if)                  0.00       0.01 r
+  u13/adr[2] (ac97_rf)                     0.00       0.01 r
+  u13/U195/Y (INVX0_RVT)                   0.91       0.92 f
+  u13/U198/Y (NOR2X0_RVT)                  0.14       1.06 r
+  u13/U199/Y (NAND3X0_RVT)                 0.16       1.22 f
+  u13/U32/Y (INVX1_RVT)                    1.09       2.31 r
+  u13/U22/Y (INVX1_RVT)                    3.68       5.99 f
+  u13/U202/Y (AO22X1_RVT)                  3.71       9.70 f
+  u13/intm_r_reg[0]/D (DFFARX1_RVT)        0.01       9.71 f
+  data arrival time                                   9.71
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  u13/intm_r_reg[0]/CLK (DFFARX1_RVT)      0.00       9.80 r
+  library setup time                      -0.06       9.74
+  data required time                                  9.74
+  -----------------------------------------------------------
+  data required time                                  9.74
+  data arrival time                                  -9.71
+  -----------------------------------------------------------
+  slack (MET)                                         0.03
+
+
+1

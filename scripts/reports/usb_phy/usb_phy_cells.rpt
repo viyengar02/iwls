@@ -1,0 +1,73 @@
+ 
+****************************************
+Report : cell
+Design : usb_phy
+Version: W-2024.09-SP4-1
+Date   : Tue Apr 29 11:32:10 2025
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+   mo - map_only
+    n - noncombinational
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+U16                       INVX1_RVT       saed32rvt_ss0p95v25c
+                                                          1.270720  
+U17                       AO22X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U18                       AO22X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U19                       AO22X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U20                       AO22X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U21                       AO22X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U22                       NAND4X0_RVT     saed32rvt_ss0p95v25c
+                                                          2.033152  
+U23                       NOR2X0_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U24                       AND4X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U25                       INVX1_RVT       saed32rvt_ss0p95v25c
+                                                          1.270720  
+U26                       INVX1_RVT       saed32rvt_ss0p95v25c
+                                                          1.270720  
+U27                       HADDX1_RVT      saed32rvt_ss0p95v25c
+                                                          3.303872  mo, r
+U28                       HADDX1_RVT      saed32rvt_ss0p95v25c
+                                                          3.303872  mo, r
+U29                       HADDX1_RVT      saed32rvt_ss0p95v25c
+                                                          3.303872  mo, r
+U30                       AND3X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.287296  
+U31                       AND3X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.287296  
+U32                       NBUFFX2_RVT     saed32rvt_ss0p95v25c
+                                                          2.033152  
+U33                       XOR2X1_RVT      saed32rvt_ss0p95v25c
+                                                          4.320448  
+i_rx_phy                  usb_rx_phy                      516.928906
+                                                                    h, n
+i_tx_phy                  usb_tx_phy                      524.553228
+                                                                    h, n
+rst_cnt_reg[0]            DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+rst_cnt_reg[1]            DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+rst_cnt_reg[2]            DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+rst_cnt_reg[3]            DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+rst_cnt_reg[4]            DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+usb_rst_reg               DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+--------------------------------------------------------------------------------
+Total 26 cells                                            1125.603801
+1

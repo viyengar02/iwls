@@ -1,0 +1,63 @@
+ 
+****************************************
+Report : cell
+Design : usbf_top
+Version: W-2024.09-SP4-1
+Date   : Tue Apr 29 11:31:36 2025
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    p - parameterized
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+LineState_r_reg[0]        DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+LineState_r_reg[1]        DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+U5                        AND3X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.287296  
+U6                        OR2X1_RVT       saed32rvt_ss0p95v25c
+                                                          2.033152  
+U8                        NBUFFX2_RVT     saed32rvt_ss0p95v25c
+                                                          2.033152  
+VStatus_r_reg[0]          DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+VStatus_r_reg[1]          DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+VStatus_r_reg[2]          DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+VStatus_r_reg[3]          DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+VStatus_r_reg[4]          DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+VStatus_r_reg[5]          DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+VStatus_r_reg[6]          DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+VStatus_r_reg[7]          DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+resume_req_r_reg          DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+susp_o_reg                DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+suspend_clr_wr_reg        DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+u0                        usbf_utmi_if                    1363.482594
+                                                                    h, n
+u1                        usbf_pl_SSRAM_HADR14            7329.767239
+                                                                    h, n, p
+u2                        usbf_mem_arb_SSRAM_HADR14       150.453249
+                                                                    h, n, p
+u4                        usbf_rf                         15434.419526
+                                                                    h, n
+u5                        usbf_wb                         452.884619
+                                                                    h, n
+--------------------------------------------------------------------------------
+Total 21 cells                                            24823.261502
+1

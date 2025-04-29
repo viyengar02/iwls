@@ -1,0 +1,797 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 10
+Design : pci_bridge32
+Version: W-2024.09-SP4-1
+Date   : Tue Apr 29 11:25:19 2025
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: ss0p95v25c   Library: saed32rvt_ss0p95v25c
+Wire Load Model Mode: enclosed
+
+  Startpoint: i_pci_wbs_wbb3_2_wbb2/wbs_adr_o_reg[31]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: wishbone_slave_unit/fifos/wbw_fifo_storage/mem_reg[10][7]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pci_bridge32       70000                 saed32rvt_ss0p95v25c
+  pci_wb_addr_mux    ForQA                 saed32rvt_ss0p95v25c
+  pci_wb_decoder_decode_len1_0
+                     ForQA                 saed32rvt_ss0p95v25c
+  pci_wb_slave_unit  35000                 saed32rvt_ss0p95v25c
+  pci_wb_tpram_aw4_dw40_1
+                     8000                  saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  i_pci_wbs_wbb3_2_wbb2/wbs_adr_o_reg[31]/CLK (DFFARX1_RVT)
+                                                          0.00 #     0.00 r
+  i_pci_wbs_wbb3_2_wbb2/wbs_adr_o_reg[31]/Q (DFFARX1_RVT)
+                                                          0.17       0.17 f
+  i_pci_wbs_wbb3_2_wbb2/wbs_adr_o[31] (pci_wbs_wbb3_2_wbb2)
+                                                          0.00       0.17 f
+  wishbone_slave_unit/ADDR_I[31] (pci_wb_slave_unit)      0.00       0.17 f
+  wishbone_slave_unit/wb_addr_dec/address_in[31] (pci_wb_addr_mux)
+                                                          0.00       0.17 f
+  wishbone_slave_unit/wb_addr_dec/U20/Y (INVX0_RVT)       1.52       1.69 r
+  wishbone_slave_unit/wb_addr_dec/U21/Y (INVX1_RVT)       0.06       1.75 f
+  wishbone_slave_unit/wb_addr_dec/dec2/addr_in[31] (pci_wb_decoder_decode_len1_0)
+                                                          0.00       1.75 f
+  wishbone_slave_unit/wb_addr_dec/dec2/U4/Y (XOR2X1_RVT)
+                                                          0.50       2.25 r
+  wishbone_slave_unit/wb_addr_dec/dec2/U3/Y (NOR2X0_RVT)
+                                                          0.10       2.35 f
+  wishbone_slave_unit/wb_addr_dec/dec2/hit (pci_wb_decoder_decode_len1_0)
+                                                          0.00       2.35 f
+  wishbone_slave_unit/wb_addr_dec/U10/Y (INVX1_RVT)       0.16       2.51 r
+  wishbone_slave_unit/wb_addr_dec/U4/Y (AO22X1_RVT)       5.21       7.72 r
+  wishbone_slave_unit/wb_addr_dec/address_out[7] (pci_wb_addr_mux)
+                                                          0.00       7.72 r
+  wishbone_slave_unit/wishbone_slave/wb_addr_in[7] (pci_wb_slave)
+                                                          0.00       7.72 r
+  wishbone_slave_unit/wishbone_slave/U156/Y (AO22X1_RVT)
+                                                          0.80       8.52 r
+  wishbone_slave_unit/wishbone_slave/wb_data_out[7] (pci_wb_slave)
+                                                          0.00       8.52 r
+  wishbone_slave_unit/fifos/wbw_addr_data_in[7] (pci_wbw_wbr_fifos)
+                                                          0.00       8.52 r
+  wishbone_slave_unit/fifos/wbw_fifo_storage/di_a[7] (pci_wb_tpram_aw4_dw40_1)
+                                                          0.00       8.52 r
+  wishbone_slave_unit/fifos/wbw_fifo_storage/U316/Y (INVX1_RVT)
+                                                          0.10       8.62 f
+  wishbone_slave_unit/fifos/wbw_fifo_storage/U256/Y (INVX1_RVT)
+                                                          0.37       8.99 r
+  wishbone_slave_unit/fifos/wbw_fifo_storage/U1326/Y (AO22X1_RVT)
+                                                          0.74       9.73 r
+  wishbone_slave_unit/fifos/wbw_fifo_storage/mem_reg[10][7]/D (DFFX1_RVT)
+                                                          0.01       9.74 r
+  data arrival time                                                  9.74
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  wishbone_slave_unit/fifos/wbw_fifo_storage/mem_reg[10][7]/CLK (DFFX1_RVT)
+                                                          0.00       9.80 r
+  library setup time                                     -0.06       9.74
+  data required time                                                 9.74
+  --------------------------------------------------------------------------
+  data required time                                                 9.74
+  data arrival time                                                 -9.74
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: i_pci_wbs_wbb3_2_wbb2/wbs_adr_o_reg[31]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: wishbone_slave_unit/fifos/wbw_fifo_storage/mem_reg[6][8]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pci_bridge32       70000                 saed32rvt_ss0p95v25c
+  pci_wb_addr_mux    ForQA                 saed32rvt_ss0p95v25c
+  pci_wb_decoder_decode_len1_0
+                     ForQA                 saed32rvt_ss0p95v25c
+  pci_wb_slave_unit  35000                 saed32rvt_ss0p95v25c
+  pci_wb_tpram_aw4_dw40_1
+                     8000                  saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  i_pci_wbs_wbb3_2_wbb2/wbs_adr_o_reg[31]/CLK (DFFARX1_RVT)
+                                                          0.00 #     0.00 r
+  i_pci_wbs_wbb3_2_wbb2/wbs_adr_o_reg[31]/Q (DFFARX1_RVT)
+                                                          0.17       0.17 f
+  i_pci_wbs_wbb3_2_wbb2/wbs_adr_o[31] (pci_wbs_wbb3_2_wbb2)
+                                                          0.00       0.17 f
+  wishbone_slave_unit/ADDR_I[31] (pci_wb_slave_unit)      0.00       0.17 f
+  wishbone_slave_unit/wb_addr_dec/address_in[31] (pci_wb_addr_mux)
+                                                          0.00       0.17 f
+  wishbone_slave_unit/wb_addr_dec/U20/Y (INVX0_RVT)       1.52       1.69 r
+  wishbone_slave_unit/wb_addr_dec/U21/Y (INVX1_RVT)       0.06       1.75 f
+  wishbone_slave_unit/wb_addr_dec/dec2/addr_in[31] (pci_wb_decoder_decode_len1_0)
+                                                          0.00       1.75 f
+  wishbone_slave_unit/wb_addr_dec/dec2/U4/Y (XOR2X1_RVT)
+                                                          0.50       2.25 r
+  wishbone_slave_unit/wb_addr_dec/dec2/U3/Y (NOR2X0_RVT)
+                                                          0.10       2.35 f
+  wishbone_slave_unit/wb_addr_dec/dec2/hit (pci_wb_decoder_decode_len1_0)
+                                                          0.00       2.35 f
+  wishbone_slave_unit/wb_addr_dec/U10/Y (INVX1_RVT)       0.16       2.51 r
+  wishbone_slave_unit/wb_addr_dec/U8/Y (AO22X1_RVT)       5.21       7.72 r
+  wishbone_slave_unit/wb_addr_dec/address_out[8] (pci_wb_addr_mux)
+                                                          0.00       7.72 r
+  wishbone_slave_unit/wishbone_slave/wb_addr_in[8] (pci_wb_slave)
+                                                          0.00       7.72 r
+  wishbone_slave_unit/wishbone_slave/U157/Y (AO22X1_RVT)
+                                                          0.80       8.52 r
+  wishbone_slave_unit/wishbone_slave/wb_data_out[8] (pci_wb_slave)
+                                                          0.00       8.52 r
+  wishbone_slave_unit/fifos/wbw_addr_data_in[8] (pci_wbw_wbr_fifos)
+                                                          0.00       8.52 r
+  wishbone_slave_unit/fifos/wbw_fifo_storage/di_a[8] (pci_wb_tpram_aw4_dw40_1)
+                                                          0.00       8.52 r
+  wishbone_slave_unit/fifos/wbw_fifo_storage/U317/Y (INVX1_RVT)
+                                                          0.10       8.62 f
+  wishbone_slave_unit/fifos/wbw_fifo_storage/U257/Y (INVX1_RVT)
+                                                          0.37       8.99 r
+  wishbone_slave_unit/fifos/wbw_fifo_storage/U1194/Y (AO22X1_RVT)
+                                                          0.74       9.73 r
+  wishbone_slave_unit/fifos/wbw_fifo_storage/mem_reg[6][8]/D (DFFX1_RVT)
+                                                          0.01       9.74 r
+  data arrival time                                                  9.74
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  wishbone_slave_unit/fifos/wbw_fifo_storage/mem_reg[6][8]/CLK (DFFX1_RVT)
+                                                          0.00       9.80 r
+  library setup time                                     -0.06       9.74
+  data required time                                                 9.74
+  --------------------------------------------------------------------------
+  data required time                                                 9.74
+  data arrival time                                                 -9.74
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: i_pci_wbs_wbb3_2_wbb2/wbs_adr_o_reg[31]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: wishbone_slave_unit/fifos/wbw_fifo_storage/mem_reg[12][8]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pci_bridge32       70000                 saed32rvt_ss0p95v25c
+  pci_wb_addr_mux    ForQA                 saed32rvt_ss0p95v25c
+  pci_wb_decoder_decode_len1_0
+                     ForQA                 saed32rvt_ss0p95v25c
+  pci_wb_slave_unit  35000                 saed32rvt_ss0p95v25c
+  pci_wb_tpram_aw4_dw40_1
+                     8000                  saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  i_pci_wbs_wbb3_2_wbb2/wbs_adr_o_reg[31]/CLK (DFFARX1_RVT)
+                                                          0.00 #     0.00 r
+  i_pci_wbs_wbb3_2_wbb2/wbs_adr_o_reg[31]/Q (DFFARX1_RVT)
+                                                          0.17       0.17 f
+  i_pci_wbs_wbb3_2_wbb2/wbs_adr_o[31] (pci_wbs_wbb3_2_wbb2)
+                                                          0.00       0.17 f
+  wishbone_slave_unit/ADDR_I[31] (pci_wb_slave_unit)      0.00       0.17 f
+  wishbone_slave_unit/wb_addr_dec/address_in[31] (pci_wb_addr_mux)
+                                                          0.00       0.17 f
+  wishbone_slave_unit/wb_addr_dec/U20/Y (INVX0_RVT)       1.52       1.69 r
+  wishbone_slave_unit/wb_addr_dec/U21/Y (INVX1_RVT)       0.06       1.75 f
+  wishbone_slave_unit/wb_addr_dec/dec2/addr_in[31] (pci_wb_decoder_decode_len1_0)
+                                                          0.00       1.75 f
+  wishbone_slave_unit/wb_addr_dec/dec2/U4/Y (XOR2X1_RVT)
+                                                          0.50       2.25 r
+  wishbone_slave_unit/wb_addr_dec/dec2/U3/Y (NOR2X0_RVT)
+                                                          0.10       2.35 f
+  wishbone_slave_unit/wb_addr_dec/dec2/hit (pci_wb_decoder_decode_len1_0)
+                                                          0.00       2.35 f
+  wishbone_slave_unit/wb_addr_dec/U10/Y (INVX1_RVT)       0.16       2.51 r
+  wishbone_slave_unit/wb_addr_dec/U8/Y (AO22X1_RVT)       5.21       7.72 r
+  wishbone_slave_unit/wb_addr_dec/address_out[8] (pci_wb_addr_mux)
+                                                          0.00       7.72 r
+  wishbone_slave_unit/wishbone_slave/wb_addr_in[8] (pci_wb_slave)
+                                                          0.00       7.72 r
+  wishbone_slave_unit/wishbone_slave/U157/Y (AO22X1_RVT)
+                                                          0.80       8.52 r
+  wishbone_slave_unit/wishbone_slave/wb_data_out[8] (pci_wb_slave)
+                                                          0.00       8.52 r
+  wishbone_slave_unit/fifos/wbw_addr_data_in[8] (pci_wbw_wbr_fifos)
+                                                          0.00       8.52 r
+  wishbone_slave_unit/fifos/wbw_fifo_storage/di_a[8] (pci_wb_tpram_aw4_dw40_1)
+                                                          0.00       8.52 r
+  wishbone_slave_unit/fifos/wbw_fifo_storage/U317/Y (INVX1_RVT)
+                                                          0.10       8.62 f
+  wishbone_slave_unit/fifos/wbw_fifo_storage/U257/Y (INVX1_RVT)
+                                                          0.37       8.99 r
+  wishbone_slave_unit/fifos/wbw_fifo_storage/U1258/Y (AO22X1_RVT)
+                                                          0.74       9.73 r
+  wishbone_slave_unit/fifos/wbw_fifo_storage/mem_reg[12][8]/D (DFFX1_RVT)
+                                                          0.01       9.74 r
+  data arrival time                                                  9.74
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  wishbone_slave_unit/fifos/wbw_fifo_storage/mem_reg[12][8]/CLK (DFFX1_RVT)
+                                                          0.00       9.80 r
+  library setup time                                     -0.06       9.74
+  data required time                                                 9.74
+  --------------------------------------------------------------------------
+  data required time                                                 9.74
+  data arrival time                                                 -9.74
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: i_pci_wbs_wbb3_2_wbb2/wbs_adr_o_reg[31]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: wishbone_slave_unit/fifos/wbw_fifo_storage/mem_reg[12][7]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pci_bridge32       70000                 saed32rvt_ss0p95v25c
+  pci_wb_addr_mux    ForQA                 saed32rvt_ss0p95v25c
+  pci_wb_decoder_decode_len1_0
+                     ForQA                 saed32rvt_ss0p95v25c
+  pci_wb_slave_unit  35000                 saed32rvt_ss0p95v25c
+  pci_wb_tpram_aw4_dw40_1
+                     8000                  saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  i_pci_wbs_wbb3_2_wbb2/wbs_adr_o_reg[31]/CLK (DFFARX1_RVT)
+                                                          0.00 #     0.00 r
+  i_pci_wbs_wbb3_2_wbb2/wbs_adr_o_reg[31]/Q (DFFARX1_RVT)
+                                                          0.17       0.17 f
+  i_pci_wbs_wbb3_2_wbb2/wbs_adr_o[31] (pci_wbs_wbb3_2_wbb2)
+                                                          0.00       0.17 f
+  wishbone_slave_unit/ADDR_I[31] (pci_wb_slave_unit)      0.00       0.17 f
+  wishbone_slave_unit/wb_addr_dec/address_in[31] (pci_wb_addr_mux)
+                                                          0.00       0.17 f
+  wishbone_slave_unit/wb_addr_dec/U20/Y (INVX0_RVT)       1.52       1.69 r
+  wishbone_slave_unit/wb_addr_dec/U21/Y (INVX1_RVT)       0.06       1.75 f
+  wishbone_slave_unit/wb_addr_dec/dec2/addr_in[31] (pci_wb_decoder_decode_len1_0)
+                                                          0.00       1.75 f
+  wishbone_slave_unit/wb_addr_dec/dec2/U4/Y (XOR2X1_RVT)
+                                                          0.50       2.25 r
+  wishbone_slave_unit/wb_addr_dec/dec2/U3/Y (NOR2X0_RVT)
+                                                          0.10       2.35 f
+  wishbone_slave_unit/wb_addr_dec/dec2/hit (pci_wb_decoder_decode_len1_0)
+                                                          0.00       2.35 f
+  wishbone_slave_unit/wb_addr_dec/U10/Y (INVX1_RVT)       0.16       2.51 r
+  wishbone_slave_unit/wb_addr_dec/U4/Y (AO22X1_RVT)       5.21       7.72 r
+  wishbone_slave_unit/wb_addr_dec/address_out[7] (pci_wb_addr_mux)
+                                                          0.00       7.72 r
+  wishbone_slave_unit/wishbone_slave/wb_addr_in[7] (pci_wb_slave)
+                                                          0.00       7.72 r
+  wishbone_slave_unit/wishbone_slave/U156/Y (AO22X1_RVT)
+                                                          0.80       8.52 r
+  wishbone_slave_unit/wishbone_slave/wb_data_out[7] (pci_wb_slave)
+                                                          0.00       8.52 r
+  wishbone_slave_unit/fifos/wbw_addr_data_in[7] (pci_wbw_wbr_fifos)
+                                                          0.00       8.52 r
+  wishbone_slave_unit/fifos/wbw_fifo_storage/di_a[7] (pci_wb_tpram_aw4_dw40_1)
+                                                          0.00       8.52 r
+  wishbone_slave_unit/fifos/wbw_fifo_storage/U316/Y (INVX1_RVT)
+                                                          0.10       8.62 f
+  wishbone_slave_unit/fifos/wbw_fifo_storage/U256/Y (INVX1_RVT)
+                                                          0.37       8.99 r
+  wishbone_slave_unit/fifos/wbw_fifo_storage/U1257/Y (AO22X1_RVT)
+                                                          0.74       9.73 r
+  wishbone_slave_unit/fifos/wbw_fifo_storage/mem_reg[12][7]/D (DFFX1_RVT)
+                                                          0.01       9.74 r
+  data arrival time                                                  9.74
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  wishbone_slave_unit/fifos/wbw_fifo_storage/mem_reg[12][7]/CLK (DFFX1_RVT)
+                                                          0.00       9.80 r
+  library setup time                                     -0.06       9.74
+  data required time                                                 9.74
+  --------------------------------------------------------------------------
+  data required time                                                 9.74
+  data arrival time                                                 -9.74
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: i_pci_wbs_wbb3_2_wbb2/wbs_adr_o_reg[31]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: wishbone_slave_unit/fifos/wbw_fifo_storage/mem_reg[8][7]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pci_bridge32       70000                 saed32rvt_ss0p95v25c
+  pci_wb_addr_mux    ForQA                 saed32rvt_ss0p95v25c
+  pci_wb_decoder_decode_len1_0
+                     ForQA                 saed32rvt_ss0p95v25c
+  pci_wb_slave_unit  35000                 saed32rvt_ss0p95v25c
+  pci_wb_tpram_aw4_dw40_1
+                     8000                  saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  i_pci_wbs_wbb3_2_wbb2/wbs_adr_o_reg[31]/CLK (DFFARX1_RVT)
+                                                          0.00 #     0.00 r
+  i_pci_wbs_wbb3_2_wbb2/wbs_adr_o_reg[31]/Q (DFFARX1_RVT)
+                                                          0.17       0.17 f
+  i_pci_wbs_wbb3_2_wbb2/wbs_adr_o[31] (pci_wbs_wbb3_2_wbb2)
+                                                          0.00       0.17 f
+  wishbone_slave_unit/ADDR_I[31] (pci_wb_slave_unit)      0.00       0.17 f
+  wishbone_slave_unit/wb_addr_dec/address_in[31] (pci_wb_addr_mux)
+                                                          0.00       0.17 f
+  wishbone_slave_unit/wb_addr_dec/U20/Y (INVX0_RVT)       1.52       1.69 r
+  wishbone_slave_unit/wb_addr_dec/U21/Y (INVX1_RVT)       0.06       1.75 f
+  wishbone_slave_unit/wb_addr_dec/dec2/addr_in[31] (pci_wb_decoder_decode_len1_0)
+                                                          0.00       1.75 f
+  wishbone_slave_unit/wb_addr_dec/dec2/U4/Y (XOR2X1_RVT)
+                                                          0.50       2.25 r
+  wishbone_slave_unit/wb_addr_dec/dec2/U3/Y (NOR2X0_RVT)
+                                                          0.10       2.35 f
+  wishbone_slave_unit/wb_addr_dec/dec2/hit (pci_wb_decoder_decode_len1_0)
+                                                          0.00       2.35 f
+  wishbone_slave_unit/wb_addr_dec/U10/Y (INVX1_RVT)       0.16       2.51 r
+  wishbone_slave_unit/wb_addr_dec/U4/Y (AO22X1_RVT)       5.21       7.72 r
+  wishbone_slave_unit/wb_addr_dec/address_out[7] (pci_wb_addr_mux)
+                                                          0.00       7.72 r
+  wishbone_slave_unit/wishbone_slave/wb_addr_in[7] (pci_wb_slave)
+                                                          0.00       7.72 r
+  wishbone_slave_unit/wishbone_slave/U156/Y (AO22X1_RVT)
+                                                          0.80       8.52 r
+  wishbone_slave_unit/wishbone_slave/wb_data_out[7] (pci_wb_slave)
+                                                          0.00       8.52 r
+  wishbone_slave_unit/fifos/wbw_addr_data_in[7] (pci_wbw_wbr_fifos)
+                                                          0.00       8.52 r
+  wishbone_slave_unit/fifos/wbw_fifo_storage/di_a[7] (pci_wb_tpram_aw4_dw40_1)
+                                                          0.00       8.52 r
+  wishbone_slave_unit/fifos/wbw_fifo_storage/U316/Y (INVX1_RVT)
+                                                          0.10       8.62 f
+  wishbone_slave_unit/fifos/wbw_fifo_storage/U256/Y (INVX1_RVT)
+                                                          0.37       8.99 r
+  wishbone_slave_unit/fifos/wbw_fifo_storage/U1343/Y (AO22X1_RVT)
+                                                          0.74       9.73 r
+  wishbone_slave_unit/fifos/wbw_fifo_storage/mem_reg[8][7]/D (DFFX1_RVT)
+                                                          0.01       9.74 r
+  data arrival time                                                  9.74
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  wishbone_slave_unit/fifos/wbw_fifo_storage/mem_reg[8][7]/CLK (DFFX1_RVT)
+                                                          0.00       9.80 r
+  library setup time                                     -0.06       9.74
+  data required time                                                 9.74
+  --------------------------------------------------------------------------
+  data required time                                                 9.74
+  data arrival time                                                 -9.74
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: i_pci_wbs_wbb3_2_wbb2/wbs_adr_o_reg[31]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: wishbone_slave_unit/fifos/wbw_fifo_storage/mem_reg[8][8]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pci_bridge32       70000                 saed32rvt_ss0p95v25c
+  pci_wb_addr_mux    ForQA                 saed32rvt_ss0p95v25c
+  pci_wb_decoder_decode_len1_0
+                     ForQA                 saed32rvt_ss0p95v25c
+  pci_wb_slave_unit  35000                 saed32rvt_ss0p95v25c
+  pci_wb_tpram_aw4_dw40_1
+                     8000                  saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  i_pci_wbs_wbb3_2_wbb2/wbs_adr_o_reg[31]/CLK (DFFARX1_RVT)
+                                                          0.00 #     0.00 r
+  i_pci_wbs_wbb3_2_wbb2/wbs_adr_o_reg[31]/Q (DFFARX1_RVT)
+                                                          0.17       0.17 f
+  i_pci_wbs_wbb3_2_wbb2/wbs_adr_o[31] (pci_wbs_wbb3_2_wbb2)
+                                                          0.00       0.17 f
+  wishbone_slave_unit/ADDR_I[31] (pci_wb_slave_unit)      0.00       0.17 f
+  wishbone_slave_unit/wb_addr_dec/address_in[31] (pci_wb_addr_mux)
+                                                          0.00       0.17 f
+  wishbone_slave_unit/wb_addr_dec/U20/Y (INVX0_RVT)       1.52       1.69 r
+  wishbone_slave_unit/wb_addr_dec/U21/Y (INVX1_RVT)       0.06       1.75 f
+  wishbone_slave_unit/wb_addr_dec/dec2/addr_in[31] (pci_wb_decoder_decode_len1_0)
+                                                          0.00       1.75 f
+  wishbone_slave_unit/wb_addr_dec/dec2/U4/Y (XOR2X1_RVT)
+                                                          0.50       2.25 r
+  wishbone_slave_unit/wb_addr_dec/dec2/U3/Y (NOR2X0_RVT)
+                                                          0.10       2.35 f
+  wishbone_slave_unit/wb_addr_dec/dec2/hit (pci_wb_decoder_decode_len1_0)
+                                                          0.00       2.35 f
+  wishbone_slave_unit/wb_addr_dec/U10/Y (INVX1_RVT)       0.16       2.51 r
+  wishbone_slave_unit/wb_addr_dec/U8/Y (AO22X1_RVT)       5.21       7.72 r
+  wishbone_slave_unit/wb_addr_dec/address_out[8] (pci_wb_addr_mux)
+                                                          0.00       7.72 r
+  wishbone_slave_unit/wishbone_slave/wb_addr_in[8] (pci_wb_slave)
+                                                          0.00       7.72 r
+  wishbone_slave_unit/wishbone_slave/U157/Y (AO22X1_RVT)
+                                                          0.80       8.52 r
+  wishbone_slave_unit/wishbone_slave/wb_data_out[8] (pci_wb_slave)
+                                                          0.00       8.52 r
+  wishbone_slave_unit/fifos/wbw_addr_data_in[8] (pci_wbw_wbr_fifos)
+                                                          0.00       8.52 r
+  wishbone_slave_unit/fifos/wbw_fifo_storage/di_a[8] (pci_wb_tpram_aw4_dw40_1)
+                                                          0.00       8.52 r
+  wishbone_slave_unit/fifos/wbw_fifo_storage/U317/Y (INVX1_RVT)
+                                                          0.10       8.62 f
+  wishbone_slave_unit/fifos/wbw_fifo_storage/U257/Y (INVX1_RVT)
+                                                          0.37       8.99 r
+  wishbone_slave_unit/fifos/wbw_fifo_storage/U1344/Y (AO22X1_RVT)
+                                                          0.74       9.73 r
+  wishbone_slave_unit/fifos/wbw_fifo_storage/mem_reg[8][8]/D (DFFX1_RVT)
+                                                          0.01       9.74 r
+  data arrival time                                                  9.74
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  wishbone_slave_unit/fifos/wbw_fifo_storage/mem_reg[8][8]/CLK (DFFX1_RVT)
+                                                          0.00       9.80 r
+  library setup time                                     -0.06       9.74
+  data required time                                                 9.74
+  --------------------------------------------------------------------------
+  data required time                                                 9.74
+  data arrival time                                                 -9.74
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: i_pci_wbs_wbb3_2_wbb2/wbs_adr_o_reg[31]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: wishbone_slave_unit/fifos/wbw_fifo_storage/mem_reg[10][8]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pci_bridge32       70000                 saed32rvt_ss0p95v25c
+  pci_wb_addr_mux    ForQA                 saed32rvt_ss0p95v25c
+  pci_wb_decoder_decode_len1_0
+                     ForQA                 saed32rvt_ss0p95v25c
+  pci_wb_slave_unit  35000                 saed32rvt_ss0p95v25c
+  pci_wb_tpram_aw4_dw40_1
+                     8000                  saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  i_pci_wbs_wbb3_2_wbb2/wbs_adr_o_reg[31]/CLK (DFFARX1_RVT)
+                                                          0.00 #     0.00 r
+  i_pci_wbs_wbb3_2_wbb2/wbs_adr_o_reg[31]/Q (DFFARX1_RVT)
+                                                          0.17       0.17 f
+  i_pci_wbs_wbb3_2_wbb2/wbs_adr_o[31] (pci_wbs_wbb3_2_wbb2)
+                                                          0.00       0.17 f
+  wishbone_slave_unit/ADDR_I[31] (pci_wb_slave_unit)      0.00       0.17 f
+  wishbone_slave_unit/wb_addr_dec/address_in[31] (pci_wb_addr_mux)
+                                                          0.00       0.17 f
+  wishbone_slave_unit/wb_addr_dec/U20/Y (INVX0_RVT)       1.52       1.69 r
+  wishbone_slave_unit/wb_addr_dec/U21/Y (INVX1_RVT)       0.06       1.75 f
+  wishbone_slave_unit/wb_addr_dec/dec2/addr_in[31] (pci_wb_decoder_decode_len1_0)
+                                                          0.00       1.75 f
+  wishbone_slave_unit/wb_addr_dec/dec2/U4/Y (XOR2X1_RVT)
+                                                          0.50       2.25 r
+  wishbone_slave_unit/wb_addr_dec/dec2/U3/Y (NOR2X0_RVT)
+                                                          0.10       2.35 f
+  wishbone_slave_unit/wb_addr_dec/dec2/hit (pci_wb_decoder_decode_len1_0)
+                                                          0.00       2.35 f
+  wishbone_slave_unit/wb_addr_dec/U10/Y (INVX1_RVT)       0.16       2.51 r
+  wishbone_slave_unit/wb_addr_dec/U8/Y (AO22X1_RVT)       5.21       7.72 r
+  wishbone_slave_unit/wb_addr_dec/address_out[8] (pci_wb_addr_mux)
+                                                          0.00       7.72 r
+  wishbone_slave_unit/wishbone_slave/wb_addr_in[8] (pci_wb_slave)
+                                                          0.00       7.72 r
+  wishbone_slave_unit/wishbone_slave/U157/Y (AO22X1_RVT)
+                                                          0.80       8.52 r
+  wishbone_slave_unit/wishbone_slave/wb_data_out[8] (pci_wb_slave)
+                                                          0.00       8.52 r
+  wishbone_slave_unit/fifos/wbw_addr_data_in[8] (pci_wbw_wbr_fifos)
+                                                          0.00       8.52 r
+  wishbone_slave_unit/fifos/wbw_fifo_storage/di_a[8] (pci_wb_tpram_aw4_dw40_1)
+                                                          0.00       8.52 r
+  wishbone_slave_unit/fifos/wbw_fifo_storage/U317/Y (INVX1_RVT)
+                                                          0.10       8.62 f
+  wishbone_slave_unit/fifos/wbw_fifo_storage/U257/Y (INVX1_RVT)
+                                                          0.37       8.99 r
+  wishbone_slave_unit/fifos/wbw_fifo_storage/U1327/Y (AO22X1_RVT)
+                                                          0.74       9.73 r
+  wishbone_slave_unit/fifos/wbw_fifo_storage/mem_reg[10][8]/D (DFFX1_RVT)
+                                                          0.01       9.74 r
+  data arrival time                                                  9.74
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  wishbone_slave_unit/fifos/wbw_fifo_storage/mem_reg[10][8]/CLK (DFFX1_RVT)
+                                                          0.00       9.80 r
+  library setup time                                     -0.06       9.74
+  data required time                                                 9.74
+  --------------------------------------------------------------------------
+  data required time                                                 9.74
+  data arrival time                                                 -9.74
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: i_pci_wbs_wbb3_2_wbb2/wbs_adr_o_reg[31]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: wishbone_slave_unit/fifos/wbw_fifo_storage/mem_reg[14][8]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pci_bridge32       70000                 saed32rvt_ss0p95v25c
+  pci_wb_addr_mux    ForQA                 saed32rvt_ss0p95v25c
+  pci_wb_decoder_decode_len1_0
+                     ForQA                 saed32rvt_ss0p95v25c
+  pci_wb_slave_unit  35000                 saed32rvt_ss0p95v25c
+  pci_wb_tpram_aw4_dw40_1
+                     8000                  saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  i_pci_wbs_wbb3_2_wbb2/wbs_adr_o_reg[31]/CLK (DFFARX1_RVT)
+                                                          0.00 #     0.00 r
+  i_pci_wbs_wbb3_2_wbb2/wbs_adr_o_reg[31]/Q (DFFARX1_RVT)
+                                                          0.17       0.17 f
+  i_pci_wbs_wbb3_2_wbb2/wbs_adr_o[31] (pci_wbs_wbb3_2_wbb2)
+                                                          0.00       0.17 f
+  wishbone_slave_unit/ADDR_I[31] (pci_wb_slave_unit)      0.00       0.17 f
+  wishbone_slave_unit/wb_addr_dec/address_in[31] (pci_wb_addr_mux)
+                                                          0.00       0.17 f
+  wishbone_slave_unit/wb_addr_dec/U20/Y (INVX0_RVT)       1.52       1.69 r
+  wishbone_slave_unit/wb_addr_dec/U21/Y (INVX1_RVT)       0.06       1.75 f
+  wishbone_slave_unit/wb_addr_dec/dec2/addr_in[31] (pci_wb_decoder_decode_len1_0)
+                                                          0.00       1.75 f
+  wishbone_slave_unit/wb_addr_dec/dec2/U4/Y (XOR2X1_RVT)
+                                                          0.50       2.25 r
+  wishbone_slave_unit/wb_addr_dec/dec2/U3/Y (NOR2X0_RVT)
+                                                          0.10       2.35 f
+  wishbone_slave_unit/wb_addr_dec/dec2/hit (pci_wb_decoder_decode_len1_0)
+                                                          0.00       2.35 f
+  wishbone_slave_unit/wb_addr_dec/U10/Y (INVX1_RVT)       0.16       2.51 r
+  wishbone_slave_unit/wb_addr_dec/U8/Y (AO22X1_RVT)       5.21       7.72 r
+  wishbone_slave_unit/wb_addr_dec/address_out[8] (pci_wb_addr_mux)
+                                                          0.00       7.72 r
+  wishbone_slave_unit/wishbone_slave/wb_addr_in[8] (pci_wb_slave)
+                                                          0.00       7.72 r
+  wishbone_slave_unit/wishbone_slave/U157/Y (AO22X1_RVT)
+                                                          0.80       8.52 r
+  wishbone_slave_unit/wishbone_slave/wb_data_out[8] (pci_wb_slave)
+                                                          0.00       8.52 r
+  wishbone_slave_unit/fifos/wbw_addr_data_in[8] (pci_wbw_wbr_fifos)
+                                                          0.00       8.52 r
+  wishbone_slave_unit/fifos/wbw_fifo_storage/di_a[8] (pci_wb_tpram_aw4_dw40_1)
+                                                          0.00       8.52 r
+  wishbone_slave_unit/fifos/wbw_fifo_storage/U317/Y (INVX1_RVT)
+                                                          0.10       8.62 f
+  wishbone_slave_unit/fifos/wbw_fifo_storage/U257/Y (INVX1_RVT)
+                                                          0.37       8.99 r
+  wishbone_slave_unit/fifos/wbw_fifo_storage/U1249/Y (AO22X1_RVT)
+                                                          0.74       9.73 r
+  wishbone_slave_unit/fifos/wbw_fifo_storage/mem_reg[14][8]/D (DFFX1_RVT)
+                                                          0.01       9.74 r
+  data arrival time                                                  9.74
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  wishbone_slave_unit/fifos/wbw_fifo_storage/mem_reg[14][8]/CLK (DFFX1_RVT)
+                                                          0.00       9.80 r
+  library setup time                                     -0.06       9.74
+  data required time                                                 9.74
+  --------------------------------------------------------------------------
+  data required time                                                 9.74
+  data arrival time                                                 -9.74
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: i_pci_wbs_wbb3_2_wbb2/wbs_adr_o_reg[31]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: wishbone_slave_unit/fifos/wbw_fifo_storage/mem_reg[14][7]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pci_bridge32       70000                 saed32rvt_ss0p95v25c
+  pci_wb_addr_mux    ForQA                 saed32rvt_ss0p95v25c
+  pci_wb_decoder_decode_len1_0
+                     ForQA                 saed32rvt_ss0p95v25c
+  pci_wb_slave_unit  35000                 saed32rvt_ss0p95v25c
+  pci_wb_tpram_aw4_dw40_1
+                     8000                  saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  i_pci_wbs_wbb3_2_wbb2/wbs_adr_o_reg[31]/CLK (DFFARX1_RVT)
+                                                          0.00 #     0.00 r
+  i_pci_wbs_wbb3_2_wbb2/wbs_adr_o_reg[31]/Q (DFFARX1_RVT)
+                                                          0.17       0.17 f
+  i_pci_wbs_wbb3_2_wbb2/wbs_adr_o[31] (pci_wbs_wbb3_2_wbb2)
+                                                          0.00       0.17 f
+  wishbone_slave_unit/ADDR_I[31] (pci_wb_slave_unit)      0.00       0.17 f
+  wishbone_slave_unit/wb_addr_dec/address_in[31] (pci_wb_addr_mux)
+                                                          0.00       0.17 f
+  wishbone_slave_unit/wb_addr_dec/U20/Y (INVX0_RVT)       1.52       1.69 r
+  wishbone_slave_unit/wb_addr_dec/U21/Y (INVX1_RVT)       0.06       1.75 f
+  wishbone_slave_unit/wb_addr_dec/dec2/addr_in[31] (pci_wb_decoder_decode_len1_0)
+                                                          0.00       1.75 f
+  wishbone_slave_unit/wb_addr_dec/dec2/U4/Y (XOR2X1_RVT)
+                                                          0.50       2.25 r
+  wishbone_slave_unit/wb_addr_dec/dec2/U3/Y (NOR2X0_RVT)
+                                                          0.10       2.35 f
+  wishbone_slave_unit/wb_addr_dec/dec2/hit (pci_wb_decoder_decode_len1_0)
+                                                          0.00       2.35 f
+  wishbone_slave_unit/wb_addr_dec/U10/Y (INVX1_RVT)       0.16       2.51 r
+  wishbone_slave_unit/wb_addr_dec/U4/Y (AO22X1_RVT)       5.21       7.72 r
+  wishbone_slave_unit/wb_addr_dec/address_out[7] (pci_wb_addr_mux)
+                                                          0.00       7.72 r
+  wishbone_slave_unit/wishbone_slave/wb_addr_in[7] (pci_wb_slave)
+                                                          0.00       7.72 r
+  wishbone_slave_unit/wishbone_slave/U156/Y (AO22X1_RVT)
+                                                          0.80       8.52 r
+  wishbone_slave_unit/wishbone_slave/wb_data_out[7] (pci_wb_slave)
+                                                          0.00       8.52 r
+  wishbone_slave_unit/fifos/wbw_addr_data_in[7] (pci_wbw_wbr_fifos)
+                                                          0.00       8.52 r
+  wishbone_slave_unit/fifos/wbw_fifo_storage/di_a[7] (pci_wb_tpram_aw4_dw40_1)
+                                                          0.00       8.52 r
+  wishbone_slave_unit/fifos/wbw_fifo_storage/U316/Y (INVX1_RVT)
+                                                          0.10       8.62 f
+  wishbone_slave_unit/fifos/wbw_fifo_storage/U256/Y (INVX1_RVT)
+                                                          0.37       8.99 r
+  wishbone_slave_unit/fifos/wbw_fifo_storage/U1248/Y (AO22X1_RVT)
+                                                          0.74       9.73 r
+  wishbone_slave_unit/fifos/wbw_fifo_storage/mem_reg[14][7]/D (DFFX1_RVT)
+                                                          0.01       9.74 r
+  data arrival time                                                  9.74
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  wishbone_slave_unit/fifos/wbw_fifo_storage/mem_reg[14][7]/CLK (DFFX1_RVT)
+                                                          0.00       9.80 r
+  library setup time                                     -0.06       9.74
+  data required time                                                 9.74
+  --------------------------------------------------------------------------
+  data required time                                                 9.74
+  data arrival time                                                 -9.74
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: i_pci_wbs_wbb3_2_wbb2/wbs_adr_o_reg[31]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: wishbone_slave_unit/fifos/wbw_fifo_storage/mem_reg[6][7]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pci_bridge32       70000                 saed32rvt_ss0p95v25c
+  pci_wb_addr_mux    ForQA                 saed32rvt_ss0p95v25c
+  pci_wb_decoder_decode_len1_0
+                     ForQA                 saed32rvt_ss0p95v25c
+  pci_wb_slave_unit  35000                 saed32rvt_ss0p95v25c
+  pci_wb_tpram_aw4_dw40_1
+                     8000                  saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  i_pci_wbs_wbb3_2_wbb2/wbs_adr_o_reg[31]/CLK (DFFARX1_RVT)
+                                                          0.00 #     0.00 r
+  i_pci_wbs_wbb3_2_wbb2/wbs_adr_o_reg[31]/Q (DFFARX1_RVT)
+                                                          0.17       0.17 f
+  i_pci_wbs_wbb3_2_wbb2/wbs_adr_o[31] (pci_wbs_wbb3_2_wbb2)
+                                                          0.00       0.17 f
+  wishbone_slave_unit/ADDR_I[31] (pci_wb_slave_unit)      0.00       0.17 f
+  wishbone_slave_unit/wb_addr_dec/address_in[31] (pci_wb_addr_mux)
+                                                          0.00       0.17 f
+  wishbone_slave_unit/wb_addr_dec/U20/Y (INVX0_RVT)       1.52       1.69 r
+  wishbone_slave_unit/wb_addr_dec/U21/Y (INVX1_RVT)       0.06       1.75 f
+  wishbone_slave_unit/wb_addr_dec/dec2/addr_in[31] (pci_wb_decoder_decode_len1_0)
+                                                          0.00       1.75 f
+  wishbone_slave_unit/wb_addr_dec/dec2/U4/Y (XOR2X1_RVT)
+                                                          0.50       2.25 r
+  wishbone_slave_unit/wb_addr_dec/dec2/U3/Y (NOR2X0_RVT)
+                                                          0.10       2.35 f
+  wishbone_slave_unit/wb_addr_dec/dec2/hit (pci_wb_decoder_decode_len1_0)
+                                                          0.00       2.35 f
+  wishbone_slave_unit/wb_addr_dec/U10/Y (INVX1_RVT)       0.16       2.51 r
+  wishbone_slave_unit/wb_addr_dec/U4/Y (AO22X1_RVT)       5.21       7.72 r
+  wishbone_slave_unit/wb_addr_dec/address_out[7] (pci_wb_addr_mux)
+                                                          0.00       7.72 r
+  wishbone_slave_unit/wishbone_slave/wb_addr_in[7] (pci_wb_slave)
+                                                          0.00       7.72 r
+  wishbone_slave_unit/wishbone_slave/U156/Y (AO22X1_RVT)
+                                                          0.80       8.52 r
+  wishbone_slave_unit/wishbone_slave/wb_data_out[7] (pci_wb_slave)
+                                                          0.00       8.52 r
+  wishbone_slave_unit/fifos/wbw_addr_data_in[7] (pci_wbw_wbr_fifos)
+                                                          0.00       8.52 r
+  wishbone_slave_unit/fifos/wbw_fifo_storage/di_a[7] (pci_wb_tpram_aw4_dw40_1)
+                                                          0.00       8.52 r
+  wishbone_slave_unit/fifos/wbw_fifo_storage/U316/Y (INVX1_RVT)
+                                                          0.10       8.62 f
+  wishbone_slave_unit/fifos/wbw_fifo_storage/U256/Y (INVX1_RVT)
+                                                          0.37       8.99 r
+  wishbone_slave_unit/fifos/wbw_fifo_storage/U1193/Y (AO22X1_RVT)
+                                                          0.74       9.73 r
+  wishbone_slave_unit/fifos/wbw_fifo_storage/mem_reg[6][7]/D (DFFX1_RVT)
+                                                          0.01       9.74 r
+  data arrival time                                                  9.74
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  wishbone_slave_unit/fifos/wbw_fifo_storage/mem_reg[6][7]/CLK (DFFX1_RVT)
+                                                          0.00       9.80 r
+  library setup time                                     -0.06       9.74
+  data required time                                                 9.74
+  --------------------------------------------------------------------------
+  data required time                                                 9.74
+  data arrival time                                                 -9.74
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

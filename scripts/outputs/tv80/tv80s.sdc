@@ -1,0 +1,57 @@
+###################################################################
+
+# Created by write_sdc on Tue Apr 29 11:29:12 2025
+
+###################################################################
+set sdc_version 2.1
+
+set_units -time ns -resistance MOhm -capacitance fF -voltage V -current uA
+set_max_area 0
+create_clock [get_ports clk]  -period 10  -waveform {0 5}
+set_clock_uncertainty 0.2  [get_clocks clk]
+set_input_delay -clock clk  0.01  [get_ports clk]
+set_input_delay -clock clk  0.01  [get_ports reset_n]
+set_input_delay -clock clk  0.01  [get_ports wait_n]
+set_input_delay -clock clk  0.01  [get_ports int_n]
+set_input_delay -clock clk  0.01  [get_ports nmi_n]
+set_input_delay -clock clk  0.01  [get_ports busrq_n]
+set_input_delay -clock clk  0.01  [get_ports {di[7]}]
+set_input_delay -clock clk  0.01  [get_ports {di[6]}]
+set_input_delay -clock clk  0.01  [get_ports {di[5]}]
+set_input_delay -clock clk  0.01  [get_ports {di[4]}]
+set_input_delay -clock clk  0.01  [get_ports {di[3]}]
+set_input_delay -clock clk  0.01  [get_ports {di[2]}]
+set_input_delay -clock clk  0.01  [get_ports {di[1]}]
+set_input_delay -clock clk  0.01  [get_ports {di[0]}]
+set_output_delay -clock clk  0.01  [get_ports m1_n]
+set_output_delay -clock clk  0.01  [get_ports mreq_n]
+set_output_delay -clock clk  0.01  [get_ports iorq_n]
+set_output_delay -clock clk  0.01  [get_ports rd_n]
+set_output_delay -clock clk  0.01  [get_ports wr_n]
+set_output_delay -clock clk  0.01  [get_ports rfsh_n]
+set_output_delay -clock clk  0.01  [get_ports halt_n]
+set_output_delay -clock clk  0.01  [get_ports busak_n]
+set_output_delay -clock clk  0.01  [get_ports {A[15]}]
+set_output_delay -clock clk  0.01  [get_ports {A[14]}]
+set_output_delay -clock clk  0.01  [get_ports {A[13]}]
+set_output_delay -clock clk  0.01  [get_ports {A[12]}]
+set_output_delay -clock clk  0.01  [get_ports {A[11]}]
+set_output_delay -clock clk  0.01  [get_ports {A[10]}]
+set_output_delay -clock clk  0.01  [get_ports {A[9]}]
+set_output_delay -clock clk  0.01  [get_ports {A[8]}]
+set_output_delay -clock clk  0.01  [get_ports {A[7]}]
+set_output_delay -clock clk  0.01  [get_ports {A[6]}]
+set_output_delay -clock clk  0.01  [get_ports {A[5]}]
+set_output_delay -clock clk  0.01  [get_ports {A[4]}]
+set_output_delay -clock clk  0.01  [get_ports {A[3]}]
+set_output_delay -clock clk  0.01  [get_ports {A[2]}]
+set_output_delay -clock clk  0.01  [get_ports {A[1]}]
+set_output_delay -clock clk  0.01  [get_ports {A[0]}]
+set_output_delay -clock clk  0.01  [get_ports {do[7]}]
+set_output_delay -clock clk  0.01  [get_ports {do[6]}]
+set_output_delay -clock clk  0.01  [get_ports {do[5]}]
+set_output_delay -clock clk  0.01  [get_ports {do[4]}]
+set_output_delay -clock clk  0.01  [get_ports {do[3]}]
+set_output_delay -clock clk  0.01  [get_ports {do[2]}]
+set_output_delay -clock clk  0.01  [get_ports {do[1]}]
+set_output_delay -clock clk  0.01  [get_ports {do[0]}]

@@ -1,0 +1,15 @@
+#!/bin/bash
+
+source ../../../../sensei_new
+
+TCL_DIR="./dc"
+
+mkdir -p "${TCL_DIR}/logs"
+
+for tcl_file in "${TCL_DIR}"/*_dc.tcl; do
+    echo "Running: ${tcl_file}"
+    log_file="${TCL_DIR}/logs/$(basename "${tcl_file}").log"
+    dc_shell -f "${tcl_file}" | tee "${log_file}"
+done
+
+echo "All synthesis scripts completed."

@@ -1,0 +1,83 @@
+ 
+****************************************
+Report : qor
+Design : spi_top
+Version: W-2024.09-SP4-1
+Date   : Tue Apr 29 11:27:09 2025
+****************************************
+
+
+  Timing Path Group 'clk'
+  -----------------------------------
+  Levels of Logic:               8.00
+  Critical Path Length:          9.73
+  Critical Path Slack:           0.01
+  Critical Path Clk Period:     10.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:         -0.08
+  Total Hold Violation:         -1.14
+  No. of Hold Violations:       36.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:          6
+  Hierarchical Port Count:        304
+  Leaf Cell Count:               1366
+  Buf/Inv Cell Count:             292
+  Buf Cell Count:                  14
+  Inv Cell Count:                 278
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:      1137
+  Sequential Cell Count:          229
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:     2576.003597
+  Noncombinational Area:  1662.101790
+  Buf/Inv Area:            381.724291
+  Total Buffer Area:            28.46
+  Total Inverter Area:         353.26
+  Macro/Black Box Area:      0.000000
+  Net Area:                993.732816
+  -----------------------------------
+  Cell Area:              4238.105387
+  Design Area:            5231.838203
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:          1443
+  Nets With Violations:             0
+  Max Trans Violations:             0
+  Max Cap Violations:               0
+  -----------------------------------
+
+
+  Hostname: xunil-03.coe.drexel.edu
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                    1.49
+  Logic Optimization:                  5.46
+  Mapping Optimization:                5.89
+  -----------------------------------------
+  Overall Compile Time:               15.02
+  Overall Compile Wall Clock Time:    16.20
+
+  --------------------------------------------------------------------
+
+  Design  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+
+  Design (Hold)  WNS: 0.08  TNS: 1.14  Number of Violating Paths: 36
+
+  --------------------------------------------------------------------
+
+
+1

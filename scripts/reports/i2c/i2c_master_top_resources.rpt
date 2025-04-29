@@ -1,0 +1,14 @@
+Warning: Design 'i2c_master_top' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : resources
+Design : i2c_master_top
+Version: W-2024.09-SP4-1
+Date   : Tue Apr 29 11:20:44 2025
+****************************************
+
+
+No resource sharing information to report.
+
+No implementations to report
+1

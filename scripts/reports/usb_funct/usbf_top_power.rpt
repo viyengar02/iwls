@@ -1,0 +1,159 @@
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : usbf_top
+Version: W-2024.09-SP4-1
+Date   : Tue Apr 29 11:31:35 2025
+****************************************
+
+
+Library(s) Used:
+
+    saed32rvt_ss0p95v25c (File: /mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v25c.db)
+
+
+Operating Conditions: ss0p95v25c   Library: saed32rvt_ss0p95v25c
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+usbf_top               35000             saed32rvt_ss0p95v25c
+usbf_utmi_if           8000              saed32rvt_ss0p95v25c
+usbf_pl_SSRAM_HADR14   8000              saed32rvt_ss0p95v25c
+usbf_mem_arb_SSRAM_HADR14
+                       ForQA             saed32rvt_ss0p95v25c
+usbf_rf                16000             saed32rvt_ss0p95v25c
+usbf_wb                8000              saed32rvt_ss0p95v25c
+usbf_utmi_ls           8000              saed32rvt_ss0p95v25c
+usbf_pd                8000              saed32rvt_ss0p95v25c
+usbf_pa                8000              saed32rvt_ss0p95v25c
+usbf_idma_SSRAM_HADR14 8000              saed32rvt_ss0p95v25c
+usbf_pe_SSRAM_HADR14   8000              saed32rvt_ss0p95v25c
+usbf_ep_rf_3           8000              saed32rvt_ss0p95v25c
+usbf_ep_rf_dummy_11    ForQA             saed32rvt_ss0p95v25c
+usbf_crc5              ForQA             saed32rvt_ss0p95v25c
+usbf_crc16_1           ForQA             saed32rvt_ss0p95v25c
+usbf_ep_rf_0           8000              saed32rvt_ss0p95v25c
+usbf_ep_rf_1           8000              saed32rvt_ss0p95v25c
+usbf_ep_rf_2           8000              saed32rvt_ss0p95v25c
+usbf_ep_rf_dummy_0     ForQA             saed32rvt_ss0p95v25c
+usbf_ep_rf_dummy_1     ForQA             saed32rvt_ss0p95v25c
+usbf_ep_rf_dummy_2     ForQA             saed32rvt_ss0p95v25c
+usbf_ep_rf_dummy_3     ForQA             saed32rvt_ss0p95v25c
+usbf_ep_rf_dummy_4     ForQA             saed32rvt_ss0p95v25c
+usbf_ep_rf_dummy_5     ForQA             saed32rvt_ss0p95v25c
+usbf_ep_rf_dummy_6     ForQA             saed32rvt_ss0p95v25c
+usbf_ep_rf_dummy_7     ForQA             saed32rvt_ss0p95v25c
+usbf_ep_rf_dummy_8     ForQA             saed32rvt_ss0p95v25c
+usbf_ep_rf_dummy_9     ForQA             saed32rvt_ss0p95v25c
+usbf_ep_rf_dummy_10    ForQA             saed32rvt_ss0p95v25c
+usbf_crc16_0           ForQA             saed32rvt_ss0p95v25c
+usbf_ep_rf_0_DW01_sub_1
+                       ForQA             saed32rvt_ss0p95v25c
+usbf_ep_rf_0_DW01_sub_2
+                       ForQA             saed32rvt_ss0p95v25c
+usbf_ep_rf_0_DW01_inc_0_DW01_inc_5
+                       ForQA             saed32rvt_ss0p95v25c
+usbf_ep_rf_0_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v25c
+usbf_ep_rf_0_DW01_dec_0
+                       ForQA             saed32rvt_ss0p95v25c
+usbf_ep_rf_1_DW01_sub_1_DW01_sub_4
+                       ForQA             saed32rvt_ss0p95v25c
+usbf_ep_rf_1_DW01_sub_2_DW01_sub_5
+                       ForQA             saed32rvt_ss0p95v25c
+usbf_ep_rf_1_DW01_inc_0_DW01_inc_6
+                       ForQA             saed32rvt_ss0p95v25c
+usbf_ep_rf_1_DW01_add_0_DW01_add_1
+                       ForQA             saed32rvt_ss0p95v25c
+usbf_ep_rf_1_DW01_dec_0_DW01_dec_1
+                       ForQA             saed32rvt_ss0p95v25c
+usbf_ep_rf_2_DW01_sub_1_DW01_sub_7
+                       ForQA             saed32rvt_ss0p95v25c
+usbf_ep_rf_2_DW01_sub_2_DW01_sub_8
+                       ForQA             saed32rvt_ss0p95v25c
+usbf_ep_rf_2_DW01_inc_0_DW01_inc_7
+                       ForQA             saed32rvt_ss0p95v25c
+usbf_ep_rf_2_DW01_add_0_DW01_add_2
+                       ForQA             saed32rvt_ss0p95v25c
+usbf_ep_rf_2_DW01_dec_0_DW01_dec_2
+                       ForQA             saed32rvt_ss0p95v25c
+usbf_ep_rf_3_DW01_sub_1_DW01_sub_10
+                       ForQA             saed32rvt_ss0p95v25c
+usbf_ep_rf_3_DW01_sub_2_DW01_sub_11
+                       ForQA             saed32rvt_ss0p95v25c
+usbf_ep_rf_3_DW01_inc_0_DW01_inc_8
+                       ForQA             saed32rvt_ss0p95v25c
+usbf_ep_rf_3_DW01_add_0_DW01_add_3
+                       ForQA             saed32rvt_ss0p95v25c
+usbf_ep_rf_3_DW01_dec_0_DW01_dec_3
+                       ForQA             saed32rvt_ss0p95v25c
+usbf_pl_SSRAM_HADR14_DW01_inc_1_DW01_inc_10
+                       ForQA             saed32rvt_ss0p95v25c
+usbf_pe_SSRAM_HADR14_DW01_inc_0_DW01_inc_11
+                       ForQA             saed32rvt_ss0p95v25c
+usbf_pe_SSRAM_HADR14_DW01_inc_1_DW01_inc_12
+                       ForQA             saed32rvt_ss0p95v25c
+usbf_pe_SSRAM_HADR14_DW01_add_0_DW01_add_4
+                       ForQA             saed32rvt_ss0p95v25c
+usbf_pe_SSRAM_HADR14_DW01_sub_0_DW01_sub_12
+                       ForQA             saed32rvt_ss0p95v25c
+usbf_pe_SSRAM_HADR14_DW01_cmp6_2_DW01_cmp6_6
+                       ForQA             saed32rvt_ss0p95v25c
+usbf_idma_SSRAM_HADR14_DW01_inc_0_DW01_inc_13
+                       ForQA             saed32rvt_ss0p95v25c
+usbf_idma_SSRAM_HADR14_DW01_dec_0_DW01_dec_4
+                       ForQA             saed32rvt_ss0p95v25c
+usbf_idma_SSRAM_HADR14_DW01_inc_1_DW01_inc_14
+                       ForQA             saed32rvt_ss0p95v25c
+usbf_idma_SSRAM_HADR14_DW01_add_0_DW01_add_5
+                       ForQA             saed32rvt_ss0p95v25c
+usbf_utmi_ls_DW01_inc_0_DW01_inc_15
+                       ForQA             saed32rvt_ss0p95v25c
+usbf_utmi_ls_DW01_inc_1_DW01_inc_16
+                       ForQA             saed32rvt_ss0p95v25c
+usbf_utmi_ls_DW01_inc_2_DW01_inc_17
+                       ForQA             saed32rvt_ss0p95v25c
+usbf_utmi_ls_DW01_inc_3_DW01_inc_18
+                       ForQA             saed32rvt_ss0p95v25c
+
+
+Global Operating Voltage = 0.95 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+Attributes
+----------
+i - Including register clock pin internal power
+
+
+  Cell Internal Power  = 182.4062 uW   (94%)
+  Net Switching Power  =  11.1337 uW    (6%)
+                         ---------
+Total Dynamic Power    = 193.5399 uW  (100%)
+
+Cell Leakage Power     = 620.4337 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network    127.4788            0.0000            0.0000          127.4788  (  15.66%)  i
+register       -7.9424e-01        7.9829e-02        3.1475e+07           30.7606 (   3.78%)
+sequential        43.8915            0.1895        2.1447e+08          258.5551  (  31.76%)
+combinational     11.8301           10.8645        3.7448e+08          397.1792  (  48.80%)
+--------------------------------------------------------------------------------------------------
+Total            182.4062 uW        11.1338 uW     6.2043e+08 pW       813.9738 uW
+1

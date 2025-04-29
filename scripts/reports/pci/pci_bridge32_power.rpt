@@ -1,0 +1,266 @@
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : pci_bridge32
+Version: W-2024.09-SP4-1
+Date   : Tue Apr 29 11:25:19 2025
+****************************************
+
+
+Library(s) Used:
+
+    saed32rvt_ss0p95v25c (File: /mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v25c.db)
+
+
+Operating Conditions: ss0p95v25c   Library: saed32rvt_ss0p95v25c
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+pci_bridge32           70000             saed32rvt_ss0p95v25c
+pci_rst_int            ForQA             saed32rvt_ss0p95v25c
+pci_wbs_wbb3_2_wbb2    8000              saed32rvt_ss0p95v25c
+pci_wb_slave_unit      35000             saed32rvt_ss0p95v25c
+pci_target_unit        16000             saed32rvt_ss0p95v25c
+pci_conf_space         8000              saed32rvt_ss0p95v25c
+pci_io_mux             8000              saed32rvt_ss0p95v25c
+pci_cur_out_reg        8000              saed32rvt_ss0p95v25c
+pci_parity_check       8000              saed32rvt_ss0p95v25c
+pci_in_reg             8000              saed32rvt_ss0p95v25c
+pci_out_reg_45         ForQA             saed32rvt_ss0p95v25c
+pci_wb_slave           8000              saed32rvt_ss0p95v25c
+pci_wbw_wbr_fifos      35000             saed32rvt_ss0p95v25c
+pci_wb_addr_mux        ForQA             saed32rvt_ss0p95v25c
+pci_delayed_sync_1     8000              saed32rvt_ss0p95v25c
+pci_delayed_write_reg  8000              saed32rvt_ss0p95v25c
+pci_master32_sm_if     8000              saed32rvt_ss0p95v25c
+pci_master32_sm        8000              saed32rvt_ss0p95v25c
+pci_wb_master          8000              saed32rvt_ss0p95v25c
+pci_pciw_pcir_fifos    16000             saed32rvt_ss0p95v25c
+pci_target32_interface 8000              saed32rvt_ss0p95v25c
+pci_target32_sm        8000              saed32rvt_ss0p95v25c
+pci_synchronizer_flop_width1_reset_val0_19
+                       ForQA             saed32rvt_ss0p95v25c
+pci_sync_module_1      ForQA             saed32rvt_ss0p95v25c
+pci_synchronizer_flop_width7_reset_val0
+                       ForQA             saed32rvt_ss0p95v25c
+pci_io_mux_ad_en_crit_3
+                       ForQA             saed32rvt_ss0p95v25c
+pci_io_mux_ad_load_crit_3
+                       ForQA             saed32rvt_ss0p95v25c
+pci_par_crit           ForQA             saed32rvt_ss0p95v25c
+pci_perr_crit          ForQA             saed32rvt_ss0p95v25c
+pci_perr_en_crit       ForQA             saed32rvt_ss0p95v25c
+pci_serr_en_crit       ForQA             saed32rvt_ss0p95v25c
+pci_serr_crit          ForQA             saed32rvt_ss0p95v25c
+pci_async_reset_flop_1 ForQA             saed32rvt_ss0p95v25c
+pci_wb_tpram_aw4_dw40_1
+                       8000              saed32rvt_ss0p95v25c
+pci_wbw_fifo_control_ADDR_LENGTH4
+                       8000              saed32rvt_ss0p95v25c
+pci_wbr_fifo_control_ADDR_LENGTH4
+                       8000              saed32rvt_ss0p95v25c
+pci_synchronizer_flop_width3_reset_val0_3
+                       ForQA             saed32rvt_ss0p95v25c
+pci_wb_decoder_decode_len1_1
+                       ForQA             saed32rvt_ss0p95v25c
+pci_frame_crit         ForQA             saed32rvt_ss0p95v25c
+pci_frame_load_crit    ForQA             saed32rvt_ss0p95v25c
+pci_irdy_out_crit      ForQA             saed32rvt_ss0p95v25c
+pci_mas_ad_load_crit   ForQA             saed32rvt_ss0p95v25c
+pci_mas_ch_state_crit  ForQA             saed32rvt_ss0p95v25c
+pci_mas_ad_en_crit     ForQA             saed32rvt_ss0p95v25c
+pci_cbe_en_crit        ForQA             saed32rvt_ss0p95v25c
+pci_frame_en_crit      ForQA             saed32rvt_ss0p95v25c
+pci_pci_tpram_aw3_dw40_1
+                       8000              saed32rvt_ss0p95v25c
+pci_pciw_fifo_control_ADDR_LENGTH3
+                       8000              saed32rvt_ss0p95v25c
+pci_pcir_fifo_control_ADDR_LENGTH3
+                       8000              saed32rvt_ss0p95v25c
+pci_synchronizer_flop_width2_reset_val0
+                       ForQA             saed32rvt_ss0p95v25c
+pci_pci_decoder_decode_len20
+                       ForQA             saed32rvt_ss0p95v25c
+pci_pci_decoder_decode_len24
+                       8000              saed32rvt_ss0p95v25c
+pci_target32_clk_en    ForQA             saed32rvt_ss0p95v25c
+pci_target32_trdy_crit ForQA             saed32rvt_ss0p95v25c
+pci_target32_stop_crit ForQA             saed32rvt_ss0p95v25c
+pci_target32_devs_crit ForQA             saed32rvt_ss0p95v25c
+pci_synchronizer_flop_width4_reset_val0_1
+                       ForQA             saed32rvt_ss0p95v25c
+pci_synchronizer_flop_width4_reset_val3
+                       ForQA             saed32rvt_ss0p95v25c
+pci_synchronizer_flop_width3_reset_val3
+                       ForQA             saed32rvt_ss0p95v25c
+pci_out_reg_0          ForQA             saed32rvt_ss0p95v25c
+pci_out_reg_1          ForQA             saed32rvt_ss0p95v25c
+pci_out_reg_2          ForQA             saed32rvt_ss0p95v25c
+pci_out_reg_3          ForQA             saed32rvt_ss0p95v25c
+pci_out_reg_4          ForQA             saed32rvt_ss0p95v25c
+pci_out_reg_5          ForQA             saed32rvt_ss0p95v25c
+pci_out_reg_6          ForQA             saed32rvt_ss0p95v25c
+pci_out_reg_7          ForQA             saed32rvt_ss0p95v25c
+pci_out_reg_8          ForQA             saed32rvt_ss0p95v25c
+pci_out_reg_9          ForQA             saed32rvt_ss0p95v25c
+pci_out_reg_10         ForQA             saed32rvt_ss0p95v25c
+pci_out_reg_11         ForQA             saed32rvt_ss0p95v25c
+pci_out_reg_12         ForQA             saed32rvt_ss0p95v25c
+pci_out_reg_13         ForQA             saed32rvt_ss0p95v25c
+pci_out_reg_14         ForQA             saed32rvt_ss0p95v25c
+pci_out_reg_15         ForQA             saed32rvt_ss0p95v25c
+pci_out_reg_16         ForQA             saed32rvt_ss0p95v25c
+pci_out_reg_17         ForQA             saed32rvt_ss0p95v25c
+pci_out_reg_18         ForQA             saed32rvt_ss0p95v25c
+pci_out_reg_19         ForQA             saed32rvt_ss0p95v25c
+pci_out_reg_20         ForQA             saed32rvt_ss0p95v25c
+pci_out_reg_21         ForQA             saed32rvt_ss0p95v25c
+pci_out_reg_22         ForQA             saed32rvt_ss0p95v25c
+pci_out_reg_23         ForQA             saed32rvt_ss0p95v25c
+pci_out_reg_24         ForQA             saed32rvt_ss0p95v25c
+pci_out_reg_25         ForQA             saed32rvt_ss0p95v25c
+pci_out_reg_26         ForQA             saed32rvt_ss0p95v25c
+pci_out_reg_27         ForQA             saed32rvt_ss0p95v25c
+pci_out_reg_28         ForQA             saed32rvt_ss0p95v25c
+pci_out_reg_29         ForQA             saed32rvt_ss0p95v25c
+pci_out_reg_30         ForQA             saed32rvt_ss0p95v25c
+pci_out_reg_31         ForQA             saed32rvt_ss0p95v25c
+pci_out_reg_32         ForQA             saed32rvt_ss0p95v25c
+pci_out_reg_33         ForQA             saed32rvt_ss0p95v25c
+pci_out_reg_34         ForQA             saed32rvt_ss0p95v25c
+pci_out_reg_35         ForQA             saed32rvt_ss0p95v25c
+pci_out_reg_36         ForQA             saed32rvt_ss0p95v25c
+pci_out_reg_37         ForQA             saed32rvt_ss0p95v25c
+pci_out_reg_38         ForQA             saed32rvt_ss0p95v25c
+pci_out_reg_39         ForQA             saed32rvt_ss0p95v25c
+pci_out_reg_40         ForQA             saed32rvt_ss0p95v25c
+pci_out_reg_41         ForQA             saed32rvt_ss0p95v25c
+pci_out_reg_42         ForQA             saed32rvt_ss0p95v25c
+pci_out_reg_43         ForQA             saed32rvt_ss0p95v25c
+pci_out_reg_44         ForQA             saed32rvt_ss0p95v25c
+pci_delayed_sync_0     8000              saed32rvt_ss0p95v25c
+pci_synchronizer_flop_width1_reset_val0_0
+                       ForQA             saed32rvt_ss0p95v25c
+pci_synchronizer_flop_width1_reset_val0_1
+                       ForQA             saed32rvt_ss0p95v25c
+pci_synchronizer_flop_width1_reset_val0_2
+                       ForQA             saed32rvt_ss0p95v25c
+pci_synchronizer_flop_width1_reset_val0_3
+                       ForQA             saed32rvt_ss0p95v25c
+pci_synchronizer_flop_width1_reset_val0_4
+                       ForQA             saed32rvt_ss0p95v25c
+pci_synchronizer_flop_width1_reset_val0_5
+                       ForQA             saed32rvt_ss0p95v25c
+pci_synchronizer_flop_width1_reset_val0_6
+                       ForQA             saed32rvt_ss0p95v25c
+pci_synchronizer_flop_width1_reset_val0_7
+                       ForQA             saed32rvt_ss0p95v25c
+pci_synchronizer_flop_width1_reset_val0_8
+                       ForQA             saed32rvt_ss0p95v25c
+pci_synchronizer_flop_width1_reset_val0_9
+                       ForQA             saed32rvt_ss0p95v25c
+pci_synchronizer_flop_width1_reset_val0_10
+                       ForQA             saed32rvt_ss0p95v25c
+pci_synchronizer_flop_width1_reset_val0_11
+                       ForQA             saed32rvt_ss0p95v25c
+pci_synchronizer_flop_width1_reset_val0_12
+                       ForQA             saed32rvt_ss0p95v25c
+pci_synchronizer_flop_width1_reset_val0_13
+                       ForQA             saed32rvt_ss0p95v25c
+pci_synchronizer_flop_width1_reset_val0_14
+                       ForQA             saed32rvt_ss0p95v25c
+pci_synchronizer_flop_width1_reset_val0_15
+                       ForQA             saed32rvt_ss0p95v25c
+pci_synchronizer_flop_width1_reset_val0_16
+                       ForQA             saed32rvt_ss0p95v25c
+pci_synchronizer_flop_width1_reset_val0_17
+                       ForQA             saed32rvt_ss0p95v25c
+pci_synchronizer_flop_width1_reset_val0_18
+                       ForQA             saed32rvt_ss0p95v25c
+pci_sync_module_0      ForQA             saed32rvt_ss0p95v25c
+pci_io_mux_ad_en_crit_0
+                       ForQA             saed32rvt_ss0p95v25c
+pci_io_mux_ad_en_crit_1
+                       ForQA             saed32rvt_ss0p95v25c
+pci_io_mux_ad_en_crit_2
+                       ForQA             saed32rvt_ss0p95v25c
+pci_io_mux_ad_load_crit_0
+                       ForQA             saed32rvt_ss0p95v25c
+pci_io_mux_ad_load_crit_1
+                       ForQA             saed32rvt_ss0p95v25c
+pci_io_mux_ad_load_crit_2
+                       ForQA             saed32rvt_ss0p95v25c
+pci_async_reset_flop_0 ForQA             saed32rvt_ss0p95v25c
+pci_wb_tpram_aw4_dw40_0
+                       8000              saed32rvt_ss0p95v25c
+pci_synchronizer_flop_width3_reset_val0_0
+                       ForQA             saed32rvt_ss0p95v25c
+pci_synchronizer_flop_width3_reset_val0_1
+                       ForQA             saed32rvt_ss0p95v25c
+pci_synchronizer_flop_width3_reset_val0_2
+                       ForQA             saed32rvt_ss0p95v25c
+pci_wb_decoder_decode_len1_0
+                       ForQA             saed32rvt_ss0p95v25c
+pci_pci_tpram_aw3_dw40_0
+                       8000              saed32rvt_ss0p95v25c
+pci_synchronizer_flop_width4_reset_val0_0
+                       ForQA             saed32rvt_ss0p95v25c
+pci_target32_interface_DW01_cmp6_0_DW01_cmp6_19
+                       ForQA             saed32rvt_ss0p95v25c
+pci_delayed_sync_0_DW01_inc_0_DW01_inc_13
+                       ForQA             saed32rvt_ss0p95v25c
+pci_wb_master_DW01_add_0
+                       8000              saed32rvt_ss0p95v25c
+pci_wb_master_DW01_inc_0_DW01_inc_14
+                       ForQA             saed32rvt_ss0p95v25c
+pci_master32_sm_if_DW01_inc_0_DW01_inc_15
+                       ForQA             saed32rvt_ss0p95v25c
+pci_delayed_sync_1_DW01_inc_0_DW01_inc_16
+                       ForQA             saed32rvt_ss0p95v25c
+pci_wb_slave_DW01_cmp6_0_DW01_cmp6_22
+                       ForQA             saed32rvt_ss0p95v25c
+pci_wbs_wbb3_2_wbb2_DW01_inc_0_DW01_inc_17
+                       ForQA             saed32rvt_ss0p95v25c
+
+
+Global Operating Voltage = 0.95 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+Attributes
+----------
+i - Including register clock pin internal power
+
+
+  Cell Internal Power  = 611.5938 uW   (98%)
+  Net Switching Power  =  14.8842 uW    (2%)
+                         ---------
+Total Dynamic Power    = 626.4780 uW  (100%)
+
+Cell Leakage Power     =   1.0984 mW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network    843.3705            0.0000            0.0000          843.3705  (  48.89%)  i
+register       -2.6665e+02            0.5762        2.4468e+08        -2.1391e+01
+                                                                                 (  -1.24%)
+sequential        32.3882        4.8655e-02        2.9386e+08          326.2968  (  18.92%)
+combinational      2.4884           14.2593        5.5990e+08          576.6456  (  33.43%)
+--------------------------------------------------------------------------------------------------
+Total            611.5960 uW        14.8842 uW     1.0984e+09 pW     1.7249e+03 uW
+1

@@ -1,0 +1,73 @@
+ 
+****************************************
+Report : cell
+Design : pci_bridge32
+Version: W-2024.09-SP4-1
+Date   : Tue Apr 29 11:25:19 2025
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+U18                       NBUFFX2_RVT     saed32rvt_ss0p95v25c
+                                                          2.033152  
+U19                       INVX1_RVT       saed32rvt_ss0p95v25c
+                                                          1.270720  
+U20                       INVX1_RVT       saed32rvt_ss0p95v25c
+                                                          1.270720  
+U21                       AO22X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U22                       AO22X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U23                       AO22X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U24                       INVX1_RVT       saed32rvt_ss0p95v25c
+                                                          1.270720  
+U25                       AO22X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U26                       INVX1_RVT       saed32rvt_ss0p95v25c
+                                                          1.270720  
+U27                       AO22X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U28                       AO22X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U29                       INVX1_RVT       saed32rvt_ss0p95v25c
+                                                          1.270720  
+U30                       AO22X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U31                       AO22X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U32                       AO22X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U33                       AO22X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U34                       AO22X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U35                       INVX1_RVT       saed32rvt_ss0p95v25c
+                                                          1.270720  
+configuration             pci_conf_space                  4191.088752
+                                                                    h, n
+i_pci_wbs_wbb3_2_wbb2     pci_wbs_wbb3_2_wbb2             1252.929941
+                                                                    h, n
+input_register            pci_in_reg                      435.602822
+                                                                    h, n
+output_backup             pci_cur_out_reg                 529.636106
+                                                                    h, n
+parity_checker            pci_parity_check                369.525371
+                                                                    h, n
+pci_io_mux                pci_io_mux                      1215.824905
+                                                                    h, n
+pci_resets_and_interrupts pci_rst_int                     28.464128 h, n
+pci_target_unit           pci_target_unit                 14494.849134
+                                                                    h, n
+wishbone_slave_unit       pci_wb_slave_unit               21537.687831
+                                                                    h, n
+--------------------------------------------------------------------------------
+Total 27 cells                                            44093.222304
+1

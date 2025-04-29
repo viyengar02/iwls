@@ -1,0 +1,434 @@
+ 
+****************************************
+Report : cell
+Design : simple_spi_top
+Version: W-2024.09-SP4-1
+Date   : Tue Apr 29 11:26:31 2025
+****************************************
+
+Attributes:
+   BO - reference allows boundary optimization
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    p - parameterized
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+U125                      NOR4X1_RVT      saed32rvt_ss0p95v25c
+                                                          3.049728  
+U127                      NOR4X1_RVT      saed32rvt_ss0p95v25c
+                                                          3.049728  
+U147                      AO221X2_RVT     saed32rvt_ss0p95v25c
+                                                          3.303872  
+U148                      AND2X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.033152  
+U149                      AND2X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.033152  
+U150                      INVX0_RVT       saed32rvt_ss0p95v25c
+                                                          1.270720  
+U151                      AND2X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.033152  
+U153                      INVX1_RVT       saed32rvt_ss0p95v25c
+                                                          1.270720  
+U154                      INVX1_RVT       saed32rvt_ss0p95v25c
+                                                          1.270720  
+U155                      INVX1_RVT       saed32rvt_ss0p95v25c
+                                                          1.270720  
+U156                      AND2X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.033152  
+U157                      AO21X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U158                      AND3X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.287296  
+U159                      AND3X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.287296  
+U160                      INVX1_RVT       saed32rvt_ss0p95v25c
+                                                          1.270720  
+U161                      OR2X1_RVT       saed32rvt_ss0p95v25c
+                                                          2.033152  
+U162                      NAND2X0_RVT     saed32rvt_ss0p95v25c
+                                                          1.524864  
+U163                      AND3X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.287296  
+U164                      INVX1_RVT       saed32rvt_ss0p95v25c
+                                                          1.270720  
+U165                      AND2X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.033152  
+U166                      NAND2X0_RVT     saed32rvt_ss0p95v25c
+                                                          1.524864  
+U167                      INVX1_RVT       saed32rvt_ss0p95v25c
+                                                          1.270720  
+U168                      INVX1_RVT       saed32rvt_ss0p95v25c
+                                                          1.270720  
+U169                      AND2X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.033152  
+U170                      INVX1_RVT       saed32rvt_ss0p95v25c
+                                                          1.270720  
+U171                      INVX1_RVT       saed32rvt_ss0p95v25c
+                                                          1.270720  
+U172                      OR2X1_RVT       saed32rvt_ss0p95v25c
+                                                          2.033152  
+U173                      INVX1_RVT       saed32rvt_ss0p95v25c
+                                                          1.270720  
+U174                      AND2X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.033152  
+U175                      INVX1_RVT       saed32rvt_ss0p95v25c
+                                                          1.270720  
+U176                      AO21X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U177                      INVX1_RVT       saed32rvt_ss0p95v25c
+                                                          1.270720  
+U178                      INVX1_RVT       saed32rvt_ss0p95v25c
+                                                          1.270720  
+U179                      INVX1_RVT       saed32rvt_ss0p95v25c
+                                                          1.270720  
+U180                      INVX1_RVT       saed32rvt_ss0p95v25c
+                                                          1.270720  
+U181                      AO221X1_RVT     saed32rvt_ss0p95v25c
+                                                          3.049728  
+U182                      AO21X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U183                      AO21X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U184                      AO21X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U185                      AO221X1_RVT     saed32rvt_ss0p95v25c
+                                                          3.049728  
+U186                      NOR2X0_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U187                      AO221X1_RVT     saed32rvt_ss0p95v25c
+                                                          3.049728  
+U188                      AO222X1_RVT     saed32rvt_ss0p95v25c
+                                                          3.303872  
+U189                      AO222X1_RVT     saed32rvt_ss0p95v25c
+                                                          3.303872  
+U190                      AO222X1_RVT     saed32rvt_ss0p95v25c
+                                                          3.303872  
+U191                      AO222X1_RVT     saed32rvt_ss0p95v25c
+                                                          3.303872  
+U192                      AO222X1_RVT     saed32rvt_ss0p95v25c
+                                                          3.303872  
+U193                      AO222X1_RVT     saed32rvt_ss0p95v25c
+                                                          3.303872  
+U194                      AO222X1_RVT     saed32rvt_ss0p95v25c
+                                                          3.303872  
+U195                      AO222X1_RVT     saed32rvt_ss0p95v25c
+                                                          3.303872  
+U196                      AND2X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.033152  
+U197                      AO22X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U198                      AO22X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U199                      AO22X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U200                      AO22X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U201                      AO22X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U202                      AO22X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U203                      AO22X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U204                      AO22X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U205                      AO22X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U206                      AND2X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.033152  
+U207                      AO22X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U208                      AO22X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U209                      AO21X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U210                      AO22X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U211                      AO22X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U212                      AO22X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U213                      AO22X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U214                      AO22X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U215                      AO22X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U216                      AO22X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U217                      AO22X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U218                      OR2X1_RVT       saed32rvt_ss0p95v25c
+                                                          2.033152  
+U219                      INVX1_RVT       saed32rvt_ss0p95v25c
+                                                          1.270720  
+U220                      AND2X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.033152  
+U221                      NAND2X0_RVT     saed32rvt_ss0p95v25c
+                                                          1.524864  
+U222                      OR3X2_RVT       saed32rvt_ss0p95v25c
+                                                          2.541440  
+U223                      OR3X2_RVT       saed32rvt_ss0p95v25c
+                                                          2.541440  
+U224                      AND3X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.287296  
+U225                      INVX1_RVT       saed32rvt_ss0p95v25c
+                                                          1.270720  
+U226                      AND2X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.033152  
+U227                      AND2X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.033152  
+U228                      NAND2X0_RVT     saed32rvt_ss0p95v25c
+                                                          1.524864  
+U229                      INVX1_RVT       saed32rvt_ss0p95v25c
+                                                          1.270720  
+U230                      AO22X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U231                      AO22X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U232                      AO22X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U233                      AO22X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U234                      AO22X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U235                      AO22X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U236                      AO22X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U237                      AND2X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.033152  
+U238                      AO221X1_RVT     saed32rvt_ss0p95v25c
+                                                          3.049728  
+U239                      AO21X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U240                      OAI22X1_RVT     saed32rvt_ss0p95v25c
+                                                          3.049728  
+U241                      NAND2X0_RVT     saed32rvt_ss0p95v25c
+                                                          1.524864  
+U242                      NOR2X0_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U243                      OAI22X1_RVT     saed32rvt_ss0p95v25c
+                                                          3.049728  
+U244                      NAND2X0_RVT     saed32rvt_ss0p95v25c
+                                                          1.524864  
+U245                      AO22X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U246                      AO22X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U247                      INVX1_RVT       saed32rvt_ss0p95v25c
+                                                          1.270720  
+U248                      AND2X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.033152  
+U249                      AND4X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U250                      INVX1_RVT       saed32rvt_ss0p95v25c
+                                                          1.270720  
+U251                      AO221X1_RVT     saed32rvt_ss0p95v25c
+                                                          3.049728  
+U252                      AO21X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U253                      AND3X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.287296  
+U254                      OR2X1_RVT       saed32rvt_ss0p95v25c
+                                                          2.033152  
+U255                      AO22X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U256                      AO21X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U257                      AO21X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U258                      AO222X1_RVT     saed32rvt_ss0p95v25c
+                                                          3.303872  
+U259                      AO221X1_RVT     saed32rvt_ss0p95v25c
+                                                          3.049728  
+U260                      AO22X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U261                      AO221X1_RVT     saed32rvt_ss0p95v25c
+                                                          3.049728  
+U262                      AO22X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U263                      AO221X1_RVT     saed32rvt_ss0p95v25c
+                                                          3.049728  
+U264                      AO22X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U265                      AO221X1_RVT     saed32rvt_ss0p95v25c
+                                                          3.049728  
+U266                      AO22X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U267                      AO221X1_RVT     saed32rvt_ss0p95v25c
+                                                          3.049728  
+U268                      AO22X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U269                      AO221X1_RVT     saed32rvt_ss0p95v25c
+                                                          3.049728  
+U270                      AO22X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U271                      AO22X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U272                      AO22X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U273                      NAND2X0_RVT     saed32rvt_ss0p95v25c
+                                                          1.524864  
+U274                      AO21X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U275                      AO21X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U276                      AO21X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U277                      OR2X1_RVT       saed32rvt_ss0p95v25c
+                                                          2.033152  
+U278                      OR2X1_RVT       saed32rvt_ss0p95v25c
+                                                          2.033152  
+U279                      AND2X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.033152  
+U280                      AND3X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.287296  
+U281                      NAND3X0_RVT     saed32rvt_ss0p95v25c
+                                                          1.779008  
+U282                      AO21X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U283                      OA221X1_RVT     saed32rvt_ss0p95v25c
+                                                          3.049728  
+U284                      NAND2X0_RVT     saed32rvt_ss0p95v25c
+                                                          1.524864  
+U285                      AND2X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.033152  
+U286                      NAND2X0_RVT     saed32rvt_ss0p95v25c
+                                                          1.524864  
+U287                      AND2X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.033152  
+U288                      NAND2X0_RVT     saed32rvt_ss0p95v25c
+                                                          1.524864  
+U289                      OR3X2_RVT       saed32rvt_ss0p95v25c
+                                                          2.541440  
+U290                      OR2X1_RVT       saed32rvt_ss0p95v25c
+                                                          2.033152  
+U291                      AND2X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.033152  
+ack_o_reg                 DFFARX1_RVT     saed32rvt_ss0p95v25c
+                                                          7.116032  n
+bcnt_reg[0]               DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+bcnt_reg[1]               DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+bcnt_reg[2]               DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+clkcnt_reg[0]             DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+clkcnt_reg[1]             DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+clkcnt_reg[2]             DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+clkcnt_reg[3]             DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+clkcnt_reg[4]             DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+clkcnt_reg[5]             DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+clkcnt_reg[6]             DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+clkcnt_reg[7]             DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+clkcnt_reg[8]             DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+clkcnt_reg[9]             DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+clkcnt_reg[10]            DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+clkcnt_reg[11]            DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+dat_o_reg[0]              DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+dat_o_reg[1]              DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+dat_o_reg[2]              DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+dat_o_reg[3]              DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+dat_o_reg[4]              DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+dat_o_reg[5]              DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+dat_o_reg[6]              DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+dat_o_reg[7]              DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+inta_o_reg                DFFSSRX1_RVT    saed32rvt_ss0p95v25c
+                                                          7.116032  n
+rfifo                     fifo4_dw8_1                     451.613896
+                                                                    h, n, p
+rfwe_reg                  DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+sck_o_reg                 DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+spcr_reg[0]               DFFARX1_RVT     saed32rvt_ss0p95v25c
+                                                          7.116032  n
+spcr_reg[1]               DFFARX1_RVT     saed32rvt_ss0p95v25c
+                                                          7.116032  n
+spcr_reg[2]               DFFARX1_RVT     saed32rvt_ss0p95v25c
+                                                          7.116032  n
+spcr_reg[3]               DFFARX1_RVT     saed32rvt_ss0p95v25c
+                                                          7.116032  n
+spcr_reg[5]               DFFARX1_RVT     saed32rvt_ss0p95v25c
+                                                          7.116032  n
+spcr_reg[6]               DFFARX1_RVT     saed32rvt_ss0p95v25c
+                                                          7.116032  n
+spcr_reg[7]               DFFARX1_RVT     saed32rvt_ss0p95v25c
+                                                          7.116032  n
+sper_reg[0]               DFFARX1_RVT     saed32rvt_ss0p95v25c
+                                                          7.116032  n
+sper_reg[1]               DFFARX1_RVT     saed32rvt_ss0p95v25c
+                                                          7.116032  n
+sper_reg[2]               DFFARX1_RVT     saed32rvt_ss0p95v25c
+                                                          7.116032  n
+sper_reg[3]               DFFARX1_RVT     saed32rvt_ss0p95v25c
+                                                          7.116032  n
+sper_reg[4]               DFFARX1_RVT     saed32rvt_ss0p95v25c
+                                                          7.116032  n
+sper_reg[5]               DFFARX1_RVT     saed32rvt_ss0p95v25c
+                                                          7.116032  n
+sper_reg[6]               DFFARX1_RVT     saed32rvt_ss0p95v25c
+                                                          7.116032  n
+sper_reg[7]               DFFARX1_RVT     saed32rvt_ss0p95v25c
+                                                          7.116032  n
+spif_reg                  DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+state_reg[0]              DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+state_reg[1]              DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+sub_237                   simple_spi_top_DW01_dec_0_DW01_dec_2
+                                                          64.552577 BO, h
+tcnt_reg[0]               DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+tcnt_reg[1]               DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+treg_reg[0]               DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+treg_reg[1]               DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+treg_reg[2]               DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+treg_reg[3]               DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+treg_reg[4]               DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+treg_reg[5]               DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+treg_reg[6]               DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+treg_reg[7]               DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+wcol_reg                  DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+wfifo                     fifo4_dw8_0                     451.613896
+                                                                    h, n, p
+wfre_reg                  DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+--------------------------------------------------------------------------------
+Total 206 cells                                           1688.024479
+1

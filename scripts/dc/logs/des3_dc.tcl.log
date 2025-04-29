@@ -1,0 +1,603 @@
+Info: [VCS_SAVE_RESTORE_INFO] ASLR (Address Space Layout Randomization) is detected on the machine. To enable $save functionality, ASLR will be switched off and simv re-executed.
+Please use '-no_save' simv switch to avoid this.
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+              Version W-2024.09-SP4-1 for linux64 - Mar 20, 2025 
+
+                    Copyright (c) 1988 - 2025 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+Initializing...
+Current time:       Tue Apr 29 11:18:27 2025
+Hostname:           xunil-03.coe.drexel.edu
+CPU Model:          AMD Opteron(tm) Processor 6344
+CPU Details:        Cores = 24 : Sockets = 2 : Cache Size = 2048 KB : Freq = 2.60 GHz
+OS:                 Linux 3.10.0-1160.119.1.el7.x86_64
+RAM:                125 GB (Free   1 GB)
+Swap:                15 GB (Free  15 GB)
+Work Filesystem:    /home mounted to ozark.coe.drexel.edu:/volume2/XunilNFS2/home
+Tmp Filesystem:     / mounted to /dev/mapper/vg_xunil03-lv_root
+Work Disk:          8034 GB (Free 4330 GB)
+Tmp Disk:           442 GB (Free 136 GB)
+
+CPU Load: 104%, Ram Free: 1 GB, Swap Free: 15 GB, Work Disk Free: 4330 GB, Tmp Disk Free: 136 GB
+# Auto-generated synthesis script for des3
+# Source files from: des3_area
+lappend search_path ../src/
+. /mnt/class_data/ecec574-w2019/tools/synopsys/syn/W-2024.09-SP4-1/libraries/syn /mnt/class_data/ecec574-w2019/tools/synopsys/syn/W-2024.09-SP4-1/dw/syn_ver /mnt/class_data/ecec574-w2019/tools/synopsys/syn/W-2024.09-SP4-1/dw/sim_ver ../src/
+define_design_lib WORK -path "work"
+1
+# Library setup
+set link_library [ list /mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v125c.db /mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v25c.db /mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95vn40c.db]
+/mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v125c.db /mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v25c.db /mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95vn40c.db
+set target_library [ list /mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v25c.db ]
+/mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v25c.db
+# Analyze all Verilog files
+analyze -library WORK -format verilog ../rtl/des3_area/des3.v
+Running PRESTO HDLC
+Compiling source file ../rtl/des3_area/des3.v
+Warning:  ../rtl/des3_area/des3.v:89: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/des3_area/des3.v:97: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/des3_area/des3.v:100: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Presto compilation completed successfully.
+Loading db file '/mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v125c.db'
+Information: Using CCS timing libraries. (TIM-024)
+Warning: Error occured in ccs delay calculation, results may not be accurate.
+Loading db file '/mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v25c.db'
+Loading db file '/mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95vn40c.db'
+1
+analyze -library WORK -format verilog ../rtl/des3_area/des.v
+Running PRESTO HDLC
+Compiling source file ../rtl/des3_area/des.v
+Warning:  ../rtl/des3_area/des.v:58: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/des3_area/des.v:61: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Presto compilation completed successfully.
+1
+analyze -library WORK -format verilog ../rtl/des3_area/key_sel3.v
+Running PRESTO HDLC
+Compiling source file ../rtl/des3_area/key_sel3.v
+Presto compilation completed successfully.
+1
+analyze -library WORK -format verilog ../rtl/des3_area/key_sel.v
+Running PRESTO HDLC
+Compiling source file ../rtl/des3_area/key_sel.v
+Presto compilation completed successfully.
+1
+analyze -library WORK -format verilog ../rtl/des3_area/crp.v
+Running PRESTO HDLC
+Compiling source file ../rtl/des3_area/crp.v
+Presto compilation completed successfully.
+1
+analyze -library WORK -format verilog ../rtl/des3_area/sbox1.v
+Running PRESTO HDLC
+Compiling source file ../rtl/des3_area/sbox1.v
+Presto compilation completed successfully.
+1
+analyze -library WORK -format verilog ../rtl/des3_area/sbox2.v
+Running PRESTO HDLC
+Compiling source file ../rtl/des3_area/sbox2.v
+Presto compilation completed successfully.
+1
+analyze -library WORK -format verilog ../rtl/des3_area/sbox3.v
+Running PRESTO HDLC
+Compiling source file ../rtl/des3_area/sbox3.v
+Presto compilation completed successfully.
+1
+analyze -library WORK -format verilog ../rtl/des3_area/sbox4.v
+Running PRESTO HDLC
+Compiling source file ../rtl/des3_area/sbox4.v
+Presto compilation completed successfully.
+1
+analyze -library WORK -format verilog ../rtl/des3_area/sbox5.v
+Running PRESTO HDLC
+Compiling source file ../rtl/des3_area/sbox5.v
+Presto compilation completed successfully.
+1
+analyze -library WORK -format verilog ../rtl/des3_area/sbox6.v
+Running PRESTO HDLC
+Compiling source file ../rtl/des3_area/sbox6.v
+Presto compilation completed successfully.
+1
+analyze -library WORK -format verilog ../rtl/des3_area/sbox7.v
+Running PRESTO HDLC
+Compiling source file ../rtl/des3_area/sbox7.v
+Presto compilation completed successfully.
+1
+analyze -library WORK -format verilog ../rtl/des3_area/sbox8.v
+Running PRESTO HDLC
+Compiling source file ../rtl/des3_area/sbox8.v
+Presto compilation completed successfully.
+1
+# Elaborate the top design
+elaborate des3
+Loading db file '/mnt/class_data/ecec574-w2019/tools/synopsys/syn/W-2024.09-SP4-1/libraries/syn/gtech.db'
+Loading db file '/mnt/class_data/ecec574-w2019/tools/synopsys/syn/W-2024.09-SP4-1/libraries/syn/standard.sldb'
+  Loading link library 'saed32rvt_ss0p95v125c'
+  Loading link library 'saed32rvt_ss0p95v25c'
+  Loading link library 'saed32rvt_ss0p95vn40c'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+
+Inferred memory devices in process in routine 'des3' in file
+	 ../rtl/des3_area/des3.v'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|      FP_R_reg       | Flip-flop |  64   |  Y  | N  | None  | None  | N  |  88  |
+|        L_reg        | Flip-flop |  32   |  Y  | N  | None  | None  | N  |  96  |
+|        R_reg        | Flip-flop |  32   |  Y  | N  | None  | None  | N  |  99  |
+==================================================================================
+Presto compilation completed successfully. (des3)
+Module: des3, Ports: 304, Input: 240, Output: 64, Inout: 0
+Module: des3, Registers: 128, Async set/reset: 0, Sync set/reset: 0
+Information: Module des3 report end. (ELAB-965)
+Elaborated 1 design.
+Current design is now 'des3'.
+Information: Building the design 'crp'. (HDL-193)
+Presto compilation completed successfully. (crp)
+Module: crp, Ports: 112, Input: 80, Output: 32, Inout: 0
+Module: crp, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Module crp report end. (ELAB-965)
+Information: Building the design 'key_sel3'. (HDL-193)
+Warning:  ../rtl/des3_area/key_sel3.v:48: Case statement is not a full case. (ELAB-909)
+
+Statistics for case statements in always block in file
+	'../rtl/des3_area/key_sel3.v'
+===========================================================
+|    Line    |  full/ parallel  |      block location     |
+===========================================================
+|     48     |    user/user     | always block at line 47 |
+|     61     |    user/user     | always block at line 59 |
+===========================================================
+Presto compilation completed successfully. (key_sel3)
+Module: key_sel3, Ports: 223, Input: 175, Output: 48, Inout: 0
+Module: key_sel3, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Module key_sel3 report end. (ELAB-965)
+Information: Building the design 'sbox1'. (HDL-193)
+
+Statistics for case statements in always block in file
+	'../rtl/des3_area/sbox1.v'
+===========================================================
+|    Line    |  full/ parallel  |      block location     |
+===========================================================
+|     41     |    user/user     | always block at line 40 |
+===========================================================
+Presto compilation completed successfully. (sbox1)
+Module: sbox1, Ports: 10, Input: 6, Output: 4, Inout: 0
+Module: sbox1, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Module sbox1 report end. (ELAB-965)
+Information: Building the design 'sbox2'. (HDL-193)
+
+Statistics for case statements in always block in file
+	'../rtl/des3_area/sbox2.v'
+===========================================================
+|    Line    |  full/ parallel  |      block location     |
+===========================================================
+|     41     |    user/user     | always block at line 40 |
+===========================================================
+Presto compilation completed successfully. (sbox2)
+Module: sbox2, Ports: 10, Input: 6, Output: 4, Inout: 0
+Module: sbox2, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Module sbox2 report end. (ELAB-965)
+Information: Building the design 'sbox3'. (HDL-193)
+
+Statistics for case statements in always block in file
+	'../rtl/des3_area/sbox3.v'
+===========================================================
+|    Line    |  full/ parallel  |      block location     |
+===========================================================
+|     41     |    user/user     | always block at line 40 |
+===========================================================
+Presto compilation completed successfully. (sbox3)
+Module: sbox3, Ports: 10, Input: 6, Output: 4, Inout: 0
+Module: sbox3, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Module sbox3 report end. (ELAB-965)
+Information: Building the design 'sbox4'. (HDL-193)
+
+Statistics for case statements in always block in file
+	'../rtl/des3_area/sbox4.v'
+===========================================================
+|    Line    |  full/ parallel  |      block location     |
+===========================================================
+|     41     |    user/user     | always block at line 40 |
+===========================================================
+Presto compilation completed successfully. (sbox4)
+Module: sbox4, Ports: 10, Input: 6, Output: 4, Inout: 0
+Module: sbox4, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Module sbox4 report end. (ELAB-965)
+Information: Building the design 'sbox5'. (HDL-193)
+
+Statistics for case statements in always block in file
+	'../rtl/des3_area/sbox5.v'
+===========================================================
+|    Line    |  full/ parallel  |      block location     |
+===========================================================
+|     41     |    user/user     | always block at line 40 |
+===========================================================
+Presto compilation completed successfully. (sbox5)
+Module: sbox5, Ports: 10, Input: 6, Output: 4, Inout: 0
+Module: sbox5, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Module sbox5 report end. (ELAB-965)
+Information: Building the design 'sbox6'. (HDL-193)
+
+Statistics for case statements in always block in file
+	'../rtl/des3_area/sbox6.v'
+===========================================================
+|    Line    |  full/ parallel  |      block location     |
+===========================================================
+|     41     |    user/user     | always block at line 40 |
+===========================================================
+Presto compilation completed successfully. (sbox6)
+Module: sbox6, Ports: 10, Input: 6, Output: 4, Inout: 0
+Module: sbox6, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Module sbox6 report end. (ELAB-965)
+Information: Building the design 'sbox7'. (HDL-193)
+
+Statistics for case statements in always block in file
+	'../rtl/des3_area/sbox7.v'
+===========================================================
+|    Line    |  full/ parallel  |      block location     |
+===========================================================
+|     41     |    user/user     | always block at line 40 |
+===========================================================
+Presto compilation completed successfully. (sbox7)
+Module: sbox7, Ports: 10, Input: 6, Output: 4, Inout: 0
+Module: sbox7, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Module sbox7 report end. (ELAB-965)
+Information: Building the design 'sbox8'. (HDL-193)
+
+Statistics for case statements in always block in file
+	'../rtl/des3_area/sbox8.v'
+===========================================================
+|    Line    |  full/ parallel  |      block location     |
+===========================================================
+|     41     |    user/user     | always block at line 40 |
+===========================================================
+Presto compilation completed successfully. (sbox8)
+Module: sbox8, Ports: 10, Input: 6, Output: 4, Inout: 0
+Module: sbox8, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Module sbox8 report end. (ELAB-965)
+1
+link
+
+  Linking design 'des3'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  saed32rvt_ss0p95v125c (library) /mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v125c.db
+  saed32rvt_ss0p95v25c (library) /mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v25c.db
+  saed32rvt_ss0p95vn40c (library) /mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95vn40c.db
+
+1
+# Output files
+write -hier -f ddc -output ./outputs/des3_area/des3.ddc
+Writing ddc file './outputs/des3_area/des3.ddc'.
+1
+# Clock and constraints
+create_clock -name "clk" -period 10 [get_ports clk] 
+1
+set_input_delay 0.01 -clock clk [all_inputs] 
+1
+set_output_delay 0.01 -clock clk [all_outputs] 
+1
+set_clock_uncertainty 0.2 clk
+1
+set_max_area 0.0 
+1
+# Checks and compilation
+check_design  > ./reports/des3_area/des3_check_design.rpt 
+uniquify 
+1
+check_timing 
+Information: Changed wire load model for 'key_sel3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox6' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox5' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'crp' from '(none)' to 'ForQA'. (OPT-170)
+Information: Updating graph... (UID-83)
+Information: Updating design information... (UID-85)
+
+Information: Checking generated_clocks...
+
+Information: Checking loops...
+
+Information: Checking no_input_delay...
+
+Information: Checking unconstrained_endpoints...
+
+Information: Checking pulse_clock_cell_type...
+
+Information: Checking no_driving_cell...
+
+Information: Checking partial_input_delay...
+1
+compile -area_effort medium -map_effort medium 
+CPU Load: 113%, Ram Free: 0 GB, Swap Free: 15 GB, Work Disk Free: 4330 GB, Tmp Disk Free: 136 GB
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | W-2024.09-DWBB_202409.4 |     *     |
+| Licensed DW Building Blocks        |                         |           |
+============================================================================
+
+====================================================================================================
+| Flow Information                                                                                 |
+----------------------------------------------------------------------------------------------------
+| Flow         | Design Compiler                                                                   |
+====================================================================================================
+| Design Information                                      | Value                                  |
+====================================================================================================
+| Number of Scenarios                                     | 0                                      |
+| Leaf Cell Count                                         | 2987                                   |
+| Number of User Hierarchies                              | 10                                     |
+| Sequential Cell Count                                   | 128                                    |
+| Macro Count                                             | 0                                      |
+| Pad Count                                               | 0                                      |
+| Number of Power Domains                                 | 0                                      |
+| Number of Path Groups                                   | 2                                      |
+| Number of VT Class                                      | 1                                      |
+| Number of Clocks                                        | 1                                      |
+| Number of Dont Touch Cells                              | 1078                                   |
+| Number of Dont Touch Nets                               | 0                                      |
+| Number of Size Only Cells                               | 0                                      |
+| Design with Target Library Subset (with clock_path)     | false  (false )                        |
+| Design with UPF Data                                    | false                                  |
+====================================================================================================
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'key_sel3'
+  Processing 'sbox8'
+  Processing 'sbox7'
+  Processing 'sbox6'
+  Processing 'sbox5'
+  Processing 'sbox4'
+  Processing 'sbox3'
+  Processing 'sbox2'
+  Processing 'sbox1'
+  Processing 'crp'
+  Processing 'des3'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:21    6271.8      0.81      59.3       0.0                          
+    0:00:21    6266.7      0.81      59.3       0.0                          
+    0:00:21    6266.7      0.81      59.3       0.0                          
+    0:00:21    6265.9      0.81      59.3       0.0                          
+    0:00:21    6265.9      0.81      59.3       0.0                          
+    0:00:23    4843.0      3.54     158.4       0.0                          
+    0:00:24    4884.4      1.63      48.2       0.0                          
+    0:00:24    4779.4      0.70      35.9       0.0                          
+    0:00:25    4770.8      0.61      31.8       0.0                          
+    0:00:25    4775.4      0.61      27.5       0.0                          
+    0:00:25    4784.5      0.59      26.9       0.0                          
+    0:00:25    4787.8      0.55      26.6       0.0                          
+    0:00:25    4799.8      0.56      26.6       0.0                          
+    0:00:26    4803.8      0.49      25.8       0.0                          
+    0:00:26    4804.3      0.45      19.2       0.0                          
+    0:00:26    4805.6      0.44      17.3       0.0                          
+    0:00:26    4810.2      0.40      16.2       0.0                          
+    0:00:26    4808.4      0.37      16.8       0.0                          
+    0:00:26    4808.4      0.37      16.8       0.0                          
+    0:00:26    4808.4      0.37      16.8       0.0                          
+    0:00:26    4808.4      0.37      16.8       0.0                          
+    0:00:26    4808.4      0.37      16.8       0.0                          
+    0:00:26    4808.4      0.37      16.8       0.0                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:26    4808.4      0.56      21.3       0.0                          
+    0:00:26    4808.4      0.56      21.3       0.0                          
+    0:00:26    4808.4      0.56      21.3       0.0                          
+    0:00:27    4823.1      0.08       1.0       0.0 R_reg[24]/D              
+    0:00:27    4829.2      0.04       0.1       0.0 R_reg[24]/D              
+    0:00:27    4830.5      0.00       0.0       0.0                          
+    0:00:27    4830.5      0.00       0.0       0.0                          
+
+
+  Beginning Area-Recovery Phase  (max_area 0)
+  -----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:27    4830.5      0.00       0.0       0.0                          
+    0:00:27    4830.5      0.00       0.0       0.0                          
+    0:00:28    4780.2      0.00       0.0       0.0                          
+    0:00:28    4743.3      0.71      27.7       0.0                          
+    0:00:28    4729.9      0.62      23.3       0.0                          
+    0:00:28    4727.3      0.62      23.3       0.0                          
+    0:00:28    4724.8      0.18       5.4       0.0                          
+    0:00:28    4724.8      0.18       5.4       0.0                          
+    0:00:29    4762.7      0.11       2.2       0.0 R_reg[2]/D               
+    0:00:31    4865.8      0.03       0.4       0.0                          
+    0:00:31    4869.9      0.00       0.0       0.0                          
+    0:00:31    4869.9      0.00       0.0       0.0                          
+    0:00:31    4784.0      0.05       0.5       0.0                          
+    0:00:31    4718.2      0.05       0.7       0.0                          
+    0:00:32    4702.9      0.09       1.3       0.0                          
+    0:00:32    4702.9      0.09       1.3       0.0                          
+    0:00:32    4702.9      0.09       1.3       0.0                          
+    0:00:32    4702.9      0.09       1.3       0.0                          
+    0:00:32    4702.9      0.09       1.3       0.0                          
+    0:00:32    4702.9      0.09       1.3       0.0                          
+    0:00:33    4730.4      0.00       0.0       0.0                          
+    0:00:33    4690.7      0.00       0.0       0.0                          
+    0:00:34    4668.4      0.00       0.0       0.0                          
+    0:00:34    4668.4      0.00       0.0       0.0                          
+    0:00:34    4650.8      0.06       0.4       0.0                          
+    0:00:34    4644.7      0.08       1.1       0.0                          
+    0:00:34    4640.2      0.09       1.2       0.0                          
+    0:00:34    4640.2      0.09       1.2       0.0                          
+    0:00:34    4640.2      0.09       1.2       0.0                          
+    0:00:34    4640.2      0.09       1.2       0.0                          
+    0:00:34    4640.2      0.09       1.2       0.0                          
+    0:00:34    4640.2      0.09       1.2       0.0                          
+    0:00:35    4660.0      0.00       0.0       0.0                          
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+CPU Load: 126%, Ram Free: 0 GB, Swap Free: 15 GB, Work Disk Free: 4330 GB, Tmp Disk Free: 136 GB
+Information: Total number of MV cells in the design.
+----------------------------------------------------------------------------------------------------
+ MV Cells                                           Total Number                                   
+----------------------------------------------------------------------------------------------------
+ Level Shifter:                                     0                                             
+ Enable Level Shifter:                              0                                             
+ Isolation Cell:                                    0                                             
+ Retention Cell:                                    0                                             
+ Retention Clamp Cell:                              0                                             
+ Switch Cell:                                       0                                             
+ Always-On Cell:                                    0                                             
+ Repeater Cell:                                     0                                             
+
+----------------------------------------------------------------------------------------------------
+Unmapped MV Cells 
+----------------------------------------------------------------------------------------------------
+0 Isolation Cells are unmapped 
+0 Retention Clamp Cells are unmapped 
+----------------------------------------------------------------------------------------------------
+1
+# Reports
+report_constraints -all > ./reports/des3_area/des3_constraints.rpt
+report_area > ./reports/des3_area/des3_area.rpt
+report_power > ./reports/des3_area/des3_power.rpt
+report_qor  > ./reports/des3_area/des3_qor.rpt
+report_cell > ./reports/des3_area/des3_cells.rpt
+report_resources > ./reports/des3_area/des3_resources.rpt
+report_timing -max_paths 10 > ./reports/des3_area/des3_timing.rpt
+# Output files
+write_sdc ./outputs/des3_area/des3.sdc
+1
+write -hier -f ddc -output ./outputs/des3_area/des3.ddc
+Writing ddc file './outputs/des3_area/des3.ddc'.
+1
+write -hierarchy -format verilog -output ./outputs/des3_area/des3.v
+Writing verilog file '/home/vi44@drexel.edu/iwls/scripts/outputs/des3_area/des3.v'.
+Warning: Changed wire name desOut[0] to desOut_0 in module des3.  Please use the change_names command to make the correct changes before invoking the verilog writer. (VO-2)
+Warning: Changed wire name desOut[1] to desOut_1 in module des3.  Please use the change_names command to make the correct changes before invoking the verilog writer. (VO-2)
+Warning: Changed wire name desOut[2] to desOut_2 in module des3.  Please use the change_names command to make the correct changes before invoking the verilog writer. (VO-2)
+Warning: Changed wire name desOut[3] to desOut_3 in module des3.  Please use the change_names command to make the correct changes before invoking the verilog writer. (VO-2)
+Warning: Changed wire name desOut[4] to desOut_4 in module des3.  Please use the change_names command to make the correct changes before invoking the verilog writer. (VO-2)
+Warning: Changed wire name desOut[5] to desOut_5 in module des3.  Please use the change_names command to make the correct changes before invoking the verilog writer. (VO-2)
+Warning: Changed wire name desOut[6] to desOut_6 in module des3.  Please use the change_names command to make the correct changes before invoking the verilog writer. (VO-2)
+Warning: Changed wire name desOut[7] to desOut_7 in module des3.  Please use the change_names command to make the correct changes before invoking the verilog writer. (VO-2)
+Warning: Changed wire name desOut[8] to desOut_8 in module des3.  Please use the change_names command to make the correct changes before invoking the verilog writer. (VO-2)
+Warning: Changed wire name desOut[9] to desOut_9 in module des3.  Please use the change_names command to make the correct changes before invoking the verilog writer. (VO-2)
+Warning: Changed wire name desOut[10] to desOut_10 in module des3.  Please use the change_names command to make the correct changes before invoking the verilog writer. (VO-2)
+Warning: Changed wire name desOut[11] to desOut_11 in module des3.  Please use the change_names command to make the correct changes before invoking the verilog writer. (VO-2)
+Warning: Changed wire name desOut[12] to desOut_12 in module des3.  Please use the change_names command to make the correct changes before invoking the verilog writer. (VO-2)
+Warning: Changed wire name desOut[13] to desOut_13 in module des3.  Please use the change_names command to make the correct changes before invoking the verilog writer. (VO-2)
+Warning: Changed wire name desOut[14] to desOut_14 in module des3.  Please use the change_names command to make the correct changes before invoking the verilog writer. (VO-2)
+Warning: Changed wire name desOut[15] to desOut_15 in module des3.  Please use the change_names command to make the correct changes before invoking the verilog writer. (VO-2)
+Warning: Changed wire name desOut[16] to desOut_16 in module des3.  Please use the change_names command to make the correct changes before invoking the verilog writer. (VO-2)
+Warning: Changed wire name desOut[17] to desOut_17 in module des3.  Please use the change_names command to make the correct changes before invoking the verilog writer. (VO-2)
+Warning: Changed wire name desOut[18] to desOut_18 in module des3.  Please use the change_names command to make the correct changes before invoking the verilog writer. (VO-2)
+Warning: Changed wire name desOut[19] to desOut_19 in module des3.  Please use the change_names command to make the correct changes before invoking the verilog writer. (VO-2)
+Warning: Changed wire name desOut[20] to desOut_20 in module des3.  Please use the change_names command to make the correct changes before invoking the verilog writer. (VO-2)
+Warning: Changed wire name desOut[21] to desOut_21 in module des3.  Please use the change_names command to make the correct changes before invoking the verilog writer. (VO-2)
+Warning: Changed wire name desOut[22] to desOut_22 in module des3.  Please use the change_names command to make the correct changes before invoking the verilog writer. (VO-2)
+Warning: Changed wire name desOut[23] to desOut_23 in module des3.  Please use the change_names command to make the correct changes before invoking the verilog writer. (VO-2)
+Warning: Changed wire name desOut[24] to desOut_24 in module des3.  Please use the change_names command to make the correct changes before invoking the verilog writer. (VO-2)
+Warning: Changed wire name desOut[25] to desOut_25 in module des3.  Please use the change_names command to make the correct changes before invoking the verilog writer. (VO-2)
+Warning: Changed wire name desOut[26] to desOut_26 in module des3.  Please use the change_names command to make the correct changes before invoking the verilog writer. (VO-2)
+Warning: Changed wire name desOut[27] to desOut_27 in module des3.  Please use the change_names command to make the correct changes before invoking the verilog writer. (VO-2)
+Warning: Changed wire name desOut[28] to desOut_28 in module des3.  Please use the change_names command to make the correct changes before invoking the verilog writer. (VO-2)
+Warning: Changed wire name desOut[29] to desOut_29 in module des3.  Please use the change_names command to make the correct changes before invoking the verilog writer. (VO-2)
+Warning: Changed wire name desOut[30] to desOut_30 in module des3.  Please use the change_names command to make the correct changes before invoking the verilog writer. (VO-2)
+Warning: Changed wire name desOut[31] to desOut_31 in module des3.  Please use the change_names command to make the correct changes before invoking the verilog writer. (VO-2)
+Warning: Changed wire name desOut[32] to desOut_32 in module des3.  Please use the change_names command to make the correct changes before invoking the verilog writer. (VO-2)
+Warning: Changed wire name desOut[33] to desOut_33 in module des3.  Please use the change_names command to make the correct changes before invoking the verilog writer. (VO-2)
+Warning: Changed wire name desOut[34] to desOut_34 in module des3.  Please use the change_names command to make the correct changes before invoking the verilog writer. (VO-2)
+Warning: Changed wire name desOut[35] to desOut_35 in module des3.  Please use the change_names command to make the correct changes before invoking the verilog writer. (VO-2)
+Warning: Changed wire name desOut[36] to desOut_36 in module des3.  Please use the change_names command to make the correct changes before invoking the verilog writer. (VO-2)
+Warning: Changed wire name desOut[37] to desOut_37 in module des3.  Please use the change_names command to make the correct changes before invoking the verilog writer. (VO-2)
+Warning: Changed wire name desOut[38] to desOut_38 in module des3.  Please use the change_names command to make the correct changes before invoking the verilog writer. (VO-2)
+Warning: Changed wire name desOut[39] to desOut_39 in module des3.  Please use the change_names command to make the correct changes before invoking the verilog writer. (VO-2)
+Warning: Changed wire name desOut[40] to desOut_40 in module des3.  Please use the change_names command to make the correct changes before invoking the verilog writer. (VO-2)
+Warning: Changed wire name desOut[41] to desOut_41 in module des3.  Please use the change_names command to make the correct changes before invoking the verilog writer. (VO-2)
+Warning: Changed wire name desOut[42] to desOut_42 in module des3.  Please use the change_names command to make the correct changes before invoking the verilog writer. (VO-2)
+Warning: Changed wire name desOut[43] to desOut_43 in module des3.  Please use the change_names command to make the correct changes before invoking the verilog writer. (VO-2)
+Warning: Changed wire name desOut[44] to desOut_44 in module des3.  Please use the change_names command to make the correct changes before invoking the verilog writer. (VO-2)
+Warning: Changed wire name desOut[45] to desOut_45 in module des3.  Please use the change_names command to make the correct changes before invoking the verilog writer. (VO-2)
+Warning: Changed wire name desOut[46] to desOut_46 in module des3.  Please use the change_names command to make the correct changes before invoking the verilog writer. (VO-2)
+Warning: Changed wire name desOut[47] to desOut_47 in module des3.  Please use the change_names command to make the correct changes before invoking the verilog writer. (VO-2)
+Warning: Changed wire name desOut[48] to desOut_48 in module des3.  Please use the change_names command to make the correct changes before invoking the verilog writer. (VO-2)
+Warning: Changed wire name desOut[49] to desOut_49 in module des3.  Please use the change_names command to make the correct changes before invoking the verilog writer. (VO-2)
+Warning: Changed wire name desOut[50] to desOut_50 in module des3.  Please use the change_names command to make the correct changes before invoking the verilog writer. (VO-2)
+Warning: Changed wire name desOut[51] to desOut_51 in module des3.  Please use the change_names command to make the correct changes before invoking the verilog writer. (VO-2)
+Warning: Changed wire name desOut[52] to desOut_52 in module des3.  Please use the change_names command to make the correct changes before invoking the verilog writer. (VO-2)
+Warning: Changed wire name desOut[53] to desOut_53 in module des3.  Please use the change_names command to make the correct changes before invoking the verilog writer. (VO-2)
+Warning: Changed wire name desOut[54] to desOut_54 in module des3.  Please use the change_names command to make the correct changes before invoking the verilog writer. (VO-2)
+Warning: Changed wire name desOut[55] to desOut_55 in module des3.  Please use the change_names command to make the correct changes before invoking the verilog writer. (VO-2)
+Warning: Changed wire name desOut[56] to desOut_56 in module des3.  Please use the change_names command to make the correct changes before invoking the verilog writer. (VO-2)
+Warning: Changed wire name desOut[57] to desOut_57 in module des3.  Please use the change_names command to make the correct changes before invoking the verilog writer. (VO-2)
+Warning: Changed wire name desOut[58] to desOut_58 in module des3.  Please use the change_names command to make the correct changes before invoking the verilog writer. (VO-2)
+Warning: Changed wire name desOut[59] to desOut_59 in module des3.  Please use the change_names command to make the correct changes before invoking the verilog writer. (VO-2)
+Warning: Changed wire name desOut[60] to desOut_60 in module des3.  Please use the change_names command to make the correct changes before invoking the verilog writer. (VO-2)
+Warning: Changed wire name desOut[61] to desOut_61 in module des3.  Please use the change_names command to make the correct changes before invoking the verilog writer. (VO-2)
+Warning: Changed wire name desOut[62] to desOut_62 in module des3.  Please use the change_names command to make the correct changes before invoking the verilog writer. (VO-2)
+Warning: Changed wire name desOut[63] to desOut_63 in module des3.  Please use the change_names command to make the correct changes before invoking the verilog writer. (VO-2)
+Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
+1
+quit
+
+Memory usage for this session 436 Mbytes.
+Memory usage for this session including child processes 436 Mbytes.
+CPU usage for this session 52 seconds ( 0.01 hours ).
+Elapsed time for this session 63 seconds ( 0.02 hours ).
+
+Thank you...

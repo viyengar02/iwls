@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : usb_phy
+Version: W-2024.09-SP4-1
+Date   : Tue Apr 29 11:32:10 2025
+****************************************
+
+Library(s) Used:
+
+    saed32rvt_ss0p95v25c (File: /mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v25c.db)
+
+Number of ports:                           70
+Number of nets:                           396
+Number of cells:                          315
+Number of combinational cells:            215
+Number of sequential cells:                98
+Number of macros/black boxes:               0
+Number of buf/inv:                         29
+Number of references:                      12
+
+Combinational area:                478.044867
+Buf/Inv area:                       37.613312
+Noncombinational area:             647.558933
+Macro/Black Box area:                0.000000
+Net Interconnect area:             207.397611
+
+Total cell area:                  1125.603801
+Total area:                       1333.001411
+1

@@ -1,0 +1,110 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'ac97_top' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : ac97_top
+Version: W-2024.09-SP4-1
+Date   : Tue Apr 29 11:15:06 2025
+****************************************
+
+
+   min_delay/hold ('clk' group)
+
+                             Required        Actual
+   Endpoint                 Path Delay     Path Delay        Slack
+   -----------------------------------------------------------------
+   u12/dout_reg[0]/D            0.20           0.02 f        -0.17  (VIOLATED)
+   u12/dout_reg[1]/D            0.20           0.02 f        -0.17  (VIOLATED)
+   u12/dout_reg[2]/D            0.20           0.02 f        -0.17  (VIOLATED)
+   u12/dout_reg[3]/D            0.20           0.02 f        -0.17  (VIOLATED)
+   u12/dout_reg[4]/D            0.20           0.02 f        -0.17  (VIOLATED)
+   u12/dout_reg[5]/D            0.20           0.02 f        -0.17  (VIOLATED)
+   u12/dout_reg[6]/D            0.20           0.02 f        -0.17  (VIOLATED)
+   u12/dout_reg[7]/D            0.20           0.02 f        -0.17  (VIOLATED)
+   u12/dout_reg[8]/D            0.20           0.02 f        -0.17  (VIOLATED)
+   u12/dout_reg[9]/D            0.20           0.02 f        -0.17  (VIOLATED)
+   u12/dout_reg[10]/D           0.20           0.02 f        -0.17  (VIOLATED)
+   u12/dout_reg[11]/D           0.20           0.02 f        -0.17  (VIOLATED)
+   u12/dout_reg[12]/D           0.20           0.02 f        -0.17  (VIOLATED)
+   u12/dout_reg[13]/D           0.20           0.02 f        -0.17  (VIOLATED)
+   u12/dout_reg[14]/D           0.20           0.02 f        -0.17  (VIOLATED)
+   u12/dout_reg[15]/D           0.20           0.02 f        -0.17  (VIOLATED)
+   u12/dout_reg[16]/D           0.20           0.02 f        -0.17  (VIOLATED)
+   u12/dout_reg[17]/D           0.20           0.02 f        -0.17  (VIOLATED)
+   u12/dout_reg[18]/D           0.20           0.02 f        -0.17  (VIOLATED)
+   u12/dout_reg[19]/D           0.20           0.02 f        -0.17  (VIOLATED)
+   u12/dout_reg[20]/D           0.20           0.02 f        -0.17  (VIOLATED)
+   u12/dout_reg[21]/D           0.20           0.02 f        -0.17  (VIOLATED)
+   u12/dout_reg[22]/D           0.20           0.02 f        -0.17  (VIOLATED)
+   u12/dout_reg[23]/D           0.20           0.02 f        -0.17  (VIOLATED)
+   u12/dout_reg[24]/D           0.20           0.02 f        -0.17  (VIOLATED)
+   u12/dout_reg[25]/D           0.20           0.02 f        -0.17  (VIOLATED)
+   u12/dout_reg[26]/D           0.20           0.02 f        -0.17  (VIOLATED)
+   u12/dout_reg[27]/D           0.20           0.02 f        -0.17  (VIOLATED)
+   u12/dout_reg[28]/D           0.20           0.02 f        -0.17  (VIOLATED)
+   u12/dout_reg[29]/D           0.20           0.02 f        -0.17  (VIOLATED)
+   u12/dout_reg[30]/D           0.20           0.02 f        -0.17  (VIOLATED)
+   u12/dout_reg[31]/D           0.20           0.02 f        -0.17  (VIOLATED)
+   int_o                        0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[0]                 0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[1]                 0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[2]                 0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[3]                 0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[4]                 0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[5]                 0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[6]                 0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[7]                 0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[8]                 0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[9]                 0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[10]                0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[11]                0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[12]                0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[13]                0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[14]                0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[15]                0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[16]                0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[17]                0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[18]                0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[19]                0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[20]                0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[21]                0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[22]                0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[23]                0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[24]                0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[25]                0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[26]                0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[27]                0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[28]                0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[29]                0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[30]                0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[31]                0.19           0.14 r        -0.05  (VIOLATED)
+   in_valid_s_reg[0]/D          0.18           0.16 f        -0.03  (VIOLATED)
+   in_valid_s_reg[1]/D          0.18           0.16 f        -0.03  (VIOLATED)
+   in_valid_s_reg[2]/D          0.18           0.16 f        -0.03  (VIOLATED)
+   valid_s_reg/D                0.18           0.16 f        -0.03  (VIOLATED)
+   u2/bit_clk_r1_reg/D          0.18           0.16 f        -0.02  (VIOLATED)
+   wb_ack_o                     0.19           0.17 r        -0.02  (VIOLATED)
+   ac97_reset_pad_o_            0.19           0.18 f        -0.01  (VIOLATED)
+   dma_req_o[0]                 0.19           0.18 f        -0.01  (VIOLATED)
+   dma_req_o[1]                 0.19           0.18 f        -0.01  (VIOLATED)
+   dma_req_o[2]                 0.19           0.18 f        -0.01  (VIOLATED)
+   dma_req_o[3]                 0.19           0.18 f        -0.01  (VIOLATED)
+   dma_req_o[4]                 0.19           0.18 f        -0.01  (VIOLATED)
+   dma_req_o[5]                 0.19           0.18 f        -0.01  (VIOLATED)
+   dma_req_o[6]                 0.19           0.18 f        -0.01  (VIOLATED)
+   dma_req_o[7]                 0.19           0.18 f        -0.01  (VIOLATED)
+   dma_req_o[8]                 0.19           0.18 f        -0.01  (VIOLATED)
+   sync_pad_o                   0.19           0.18 r        -0.01  (VIOLATED)
+
+
+   max_area
+
+                             Required        Actual
+   Design                      Area           Area           Slack
+   -----------------------------------------------------------------
+   ac97_top                     0.00       31575.05       -31575.05 (VIOLATED)
+
+
+1

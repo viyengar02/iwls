@@ -1,0 +1,40 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : wb_dma_top
+Version: W-2024.09-SP4-1
+Date   : Tue Apr 29 13:05:04 2025
+****************************************
+
+
+   min_delay/hold ('clk' group)
+
+                             Required        Actual
+   Endpoint                 Path Delay     Path Delay        Slack
+   -----------------------------------------------------------------
+   u2/u0/out_r_reg[0]/D         0.18           0.15 f        -0.02  (VIOLATED)
+   u2/u0/out_r_reg[1]/D         0.19           0.17 f        -0.02  (VIOLATED)
+   u2/u1/out_r_reg[1]/D         0.19           0.17 f        -0.02  (VIOLATED)
+   u0/u0/ch_done_reg/D          0.18           0.18 f         0.00  (VIOLATED: increase significant digits)
+
+
+   max_area
+
+                             Required        Actual
+   Design                      Area           Area           Slack
+   -----------------------------------------------------------------
+   wb_dma_top                   0.00        8669.53       -8669.53  (VIOLATED)
+
+
+   max_leakage_power
+
+                             Required        Actual
+   Design                   Leakage Power  Leakage Power     Slack
+   -----------------------------------------------------------------
+   wb_dma_top                   0.00       167792208.00   -167792208.00
+                                                                    (VIOLATED)
+
+
+1

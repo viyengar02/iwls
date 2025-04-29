@@ -1,0 +1,19 @@
+ 
+****************************************
+check_design summary:
+Version:     W-2024.09-SP4-1
+Date:        Tue Apr 29 11:32:02 2025
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Cells                                                               5
+    Cells do not drive (LINT-1)                                     5
+--------------------------------------------------------------------------------
+
+Warning: In design 'usb_phy', cell 'C62' does not drive any nets. (LINT-1)
+Warning: In design 'usb_tx_phy', cell 'C693' does not drive any nets. (LINT-1)
+Warning: In design 'usb_tx_phy', cell 'C743' does not drive any nets. (LINT-1)
+Warning: In design 'usb_rx_phy', cell 'C604' does not drive any nets. (LINT-1)
+Warning: In design 'usb_rx_phy', cell 'C633' does not drive any nets. (LINT-1)
+1

@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : ac97_top
+Version: W-2024.09-SP4-1
+Date   : Tue Apr 29 11:15:06 2025
+****************************************
+
+Library(s) Used:
+
+    saed32rvt_ss0p95v25c (File: /mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v25c.db)
+
+Number of ports:                         2332
+Number of nets:                          8829
+Number of cells:                         6673
+Number of combinational cells:           4361
+Number of sequential cells:              2229
+Number of macros/black boxes:               0
+Number of buf/inv:                        873
+Number of references:                      30
+
+Combinational area:              10266.401056
+Buf/Inv area:                     1120.775046
+Noncombinational area:           14840.993487
+Macro/Black Box area:                0.000000
+Net Interconnect area:            6467.660870
+
+Total cell area:                 25107.394543
+Total area:                      31575.055414
+1

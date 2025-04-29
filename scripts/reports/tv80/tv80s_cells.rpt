@@ -1,0 +1,118 @@
+ 
+****************************************
+Report : cell
+Design : tv80s
+Version: W-2024.09-SP4-1
+Date   : Tue Apr 29 11:29:12 2025
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+U38                       INVX1_RVT       saed32rvt_ss0p95v25c
+                                                          1.270720  
+U39                       NOR3X0_RVT      saed32rvt_ss0p95v25c
+                                                          2.795584  
+U40                       AO22X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U41                       AO21X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U42                       INVX1_RVT       saed32rvt_ss0p95v25c
+                                                          1.270720  
+U43                       INVX1_RVT       saed32rvt_ss0p95v25c
+                                                          1.270720  
+U44                       AND2X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.033152  
+U45                       AO221X1_RVT     saed32rvt_ss0p95v25c
+                                                          3.049728  
+U46                       AND3X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.287296  
+U47                       INVX1_RVT       saed32rvt_ss0p95v25c
+                                                          1.270720  
+U48                       INVX1_RVT       saed32rvt_ss0p95v25c
+                                                          1.270720  
+U49                       NAND3X0_RVT     saed32rvt_ss0p95v25c
+                                                          1.779008  
+U50                       OR3X1_RVT       saed32rvt_ss0p95v25c
+                                                          2.541440  
+U51                       NAND2X0_RVT     saed32rvt_ss0p95v25c
+                                                          1.524864  
+U52                       INVX1_RVT       saed32rvt_ss0p95v25c
+                                                          1.270720  
+U53                       INVX1_RVT       saed32rvt_ss0p95v25c
+                                                          1.270720  
+U54                       INVX1_RVT       saed32rvt_ss0p95v25c
+                                                          1.270720  
+U55                       NOR2X0_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U56                       AO221X1_RVT     saed32rvt_ss0p95v25c
+                                                          3.049728  
+U57                       OR2X1_RVT       saed32rvt_ss0p95v25c
+                                                          2.033152  
+U58                       AO22X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U59                       AO22X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U60                       AO22X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U61                       AO22X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U62                       AO22X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U63                       AO22X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U64                       AO22X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U65                       AO22X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.541440  
+U66                       AND2X1_RVT      saed32rvt_ss0p95v25c
+                                                          2.033152  
+U67                       INVX1_RVT       saed32rvt_ss0p95v25c
+                                                          1.270720  
+U68                       NAND2X0_RVT     saed32rvt_ss0p95v25c
+                                                          1.524864  
+U69                       AO221X1_RVT     saed32rvt_ss0p95v25c
+                                                          3.049728  
+U70                       OR3X1_RVT       saed32rvt_ss0p95v25c
+                                                          2.541440  
+U71                       NAND2X0_RVT     saed32rvt_ss0p95v25c
+                                                          1.524864  
+U72                       INVX1_RVT       saed32rvt_ss0p95v25c
+                                                          1.270720  
+U73                       OR3X2_RVT       saed32rvt_ss0p95v25c
+                                                          2.541440  
+di_reg_reg[0]             DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+di_reg_reg[1]             DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+di_reg_reg[2]             DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+di_reg_reg[3]             DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+di_reg_reg[4]             DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+di_reg_reg[5]             DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+di_reg_reg[6]             DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+di_reg_reg[7]             DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+i_tv80_core               tv80_core                       9007.117610
+                                                                    h, n
+iorq_n_reg                DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+mreq_n_reg                DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+rd_n_reg                  DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+wr_n_reg                  DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+--------------------------------------------------------------------------------
+Total 49 cells                                            9161.383020
+1

@@ -1,0 +1,667 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 10
+Design : tv80s
+Version: W-2024.09-SP4-1
+Date   : Tue Apr 29 11:29:12 2025
+****************************************
+
+Operating Conditions: ss0p95v25c   Library: saed32rvt_ss0p95v25c
+Wire Load Model Mode: enclosed
+
+  Startpoint: i_tv80_core/ISet_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: i_tv80_core/i_reg/RegsH_reg[3][7]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  tv80s              16000                 saed32rvt_ss0p95v25c
+  tv80_core          16000                 saed32rvt_ss0p95v25c
+  tv80_mcode_Mode1_Flag_C0_Flag_N1_Flag_P2_Flag_X3_Flag_H4_Flag_Y5_Flag_Z6_Flag_S7
+                     8000                  saed32rvt_ss0p95v25c
+  tv80_reg           8000                  saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  i_tv80_core/ISet_reg[1]/CLK (DFFX1_RVT)                 0.00       0.00 r
+  i_tv80_core/ISet_reg[1]/Q (DFFX1_RVT)                   0.15       0.15 r
+  i_tv80_core/i_mcode/ISet[1] (tv80_mcode_Mode1_Flag_C0_Flag_N1_Flag_P2_Flag_X3_Flag_H4_Flag_Y5_Flag_Z6_Flag_S7)
+                                                          0.00       0.15 r
+  i_tv80_core/i_mcode/U662/Y (INVX1_RVT)                  0.10       0.25 f
+  i_tv80_core/i_mcode/U198/Y (INVX0_RVT)                  1.74       2.00 r
+  i_tv80_core/i_mcode/U676/Y (NAND2X0_RVT)                1.68       3.68 f
+  i_tv80_core/i_mcode/U573/Y (INVX0_RVT)                  0.11       3.79 r
+  i_tv80_core/i_mcode/U605/Y (NAND2X0_RVT)                0.45       4.24 f
+  i_tv80_core/i_mcode/U276/Y (INVX0_RVT)                  0.17       4.41 r
+  i_tv80_core/i_mcode/U604/Y (OR3X1_RVT)                  0.22       4.63 r
+  i_tv80_core/i_mcode/IncDec_16[1] (tv80_mcode_Mode1_Flag_C0_Flag_N1_Flag_P2_Flag_X3_Flag_H4_Flag_Y5_Flag_Z6_Flag_S7)
+                                                          0.00       4.63 r
+  i_tv80_core/U376/Y (NAND3X0_RVT)                        0.43       5.06 f
+  i_tv80_core/U377/Y (INVX0_RVT)                          0.17       5.24 r
+  i_tv80_core/U723/Y (OR2X1_RVT)                          0.19       5.42 r
+  i_tv80_core/U971/Y (OA22X1_RVT)                         0.08       5.51 r
+  i_tv80_core/U98/Y (OAI22X1_RVT)                         0.10       5.61 f
+  i_tv80_core/i_reg/AddrA[2] (tv80_reg)                   0.00       5.61 f
+  i_tv80_core/i_reg/U118/Y (INVX0_RVT)                    0.44       6.05 r
+  i_tv80_core/i_reg/U259/Y (AND2X1_RVT)                   0.11       6.17 r
+  i_tv80_core/i_reg/U260/Y (AND2X1_RVT)                   0.12       6.28 r
+  i_tv80_core/i_reg/U316/Y (NBUFFX2_RVT)                  0.19       6.47 r
+  i_tv80_core/i_reg/U328/Y (NBUFFX2_RVT)                  0.30       6.77 r
+  i_tv80_core/i_reg/U281/Y (AO221X1_RVT)                  0.50       7.28 r
+  i_tv80_core/i_reg/U335/Y (OR2X2_RVT)                    0.08       7.36 r
+  i_tv80_core/i_reg/DOAL[3] (tv80_reg)                    0.00       7.36 r
+  i_tv80_core/U1253/CO (FADDX1_RVT)                       0.32       7.68 r
+  i_tv80_core/U1167/CO (FADDX1_RVT)                       0.13       7.81 r
+  i_tv80_core/U1249/CO (FADDX1_RVT)                       0.13       7.94 r
+  i_tv80_core/U1169/CO (FADDX1_RVT)                       0.13       8.07 r
+  i_tv80_core/U1190/CO (FADDX1_RVT)                       0.13       8.20 r
+  i_tv80_core/U1248/CO (FADDX1_RVT)                       0.13       8.33 r
+  i_tv80_core/U1247/CO (FADDX1_RVT)                       0.13       8.46 r
+  i_tv80_core/U1160/CO (FADDX1_RVT)                       0.13       8.59 r
+  i_tv80_core/U1252/CO (FADDX1_RVT)                       0.13       8.72 r
+  i_tv80_core/U1161/CO (FADDX1_RVT)                       0.13       8.85 r
+  i_tv80_core/U1165/CO (FADDX1_RVT)                       0.13       8.98 r
+  i_tv80_core/U1115/CO (FADDX1_RVT)                       0.12       9.10 r
+  i_tv80_core/U1163/Y (XOR3X2_RVT)                        0.10       9.21 f
+  i_tv80_core/U1251/Y (AO221X1_RVT)                       0.16       9.36 f
+  i_tv80_core/i_reg/DIH[7] (tv80_reg)                     0.00       9.36 f
+  i_tv80_core/i_reg/U550/Y (NBUFFX2_RVT)                  0.18       9.54 f
+  i_tv80_core/i_reg/U556/Y (AO22X1_RVT)                   0.19       9.73 f
+  i_tv80_core/i_reg/RegsH_reg[3][7]/D (DFFX1_RVT)         0.01       9.75 f
+  data arrival time                                                  9.75
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  i_tv80_core/i_reg/RegsH_reg[3][7]/CLK (DFFX1_RVT)       0.00       9.80 r
+  library setup time                                     -0.05       9.75
+  data required time                                                 9.75
+  --------------------------------------------------------------------------
+  data required time                                                 9.75
+  data arrival time                                                 -9.75
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: i_tv80_core/ISet_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: i_tv80_core/i_reg/RegsH_reg[1][7]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  tv80s              16000                 saed32rvt_ss0p95v25c
+  tv80_core          16000                 saed32rvt_ss0p95v25c
+  tv80_mcode_Mode1_Flag_C0_Flag_N1_Flag_P2_Flag_X3_Flag_H4_Flag_Y5_Flag_Z6_Flag_S7
+                     8000                  saed32rvt_ss0p95v25c
+  tv80_reg           8000                  saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  i_tv80_core/ISet_reg[1]/CLK (DFFX1_RVT)                 0.00       0.00 r
+  i_tv80_core/ISet_reg[1]/Q (DFFX1_RVT)                   0.15       0.15 r
+  i_tv80_core/i_mcode/ISet[1] (tv80_mcode_Mode1_Flag_C0_Flag_N1_Flag_P2_Flag_X3_Flag_H4_Flag_Y5_Flag_Z6_Flag_S7)
+                                                          0.00       0.15 r
+  i_tv80_core/i_mcode/U662/Y (INVX1_RVT)                  0.10       0.25 f
+  i_tv80_core/i_mcode/U198/Y (INVX0_RVT)                  1.74       2.00 r
+  i_tv80_core/i_mcode/U676/Y (NAND2X0_RVT)                1.68       3.68 f
+  i_tv80_core/i_mcode/U573/Y (INVX0_RVT)                  0.11       3.79 r
+  i_tv80_core/i_mcode/U605/Y (NAND2X0_RVT)                0.45       4.24 f
+  i_tv80_core/i_mcode/U276/Y (INVX0_RVT)                  0.17       4.41 r
+  i_tv80_core/i_mcode/U604/Y (OR3X1_RVT)                  0.22       4.63 r
+  i_tv80_core/i_mcode/IncDec_16[1] (tv80_mcode_Mode1_Flag_C0_Flag_N1_Flag_P2_Flag_X3_Flag_H4_Flag_Y5_Flag_Z6_Flag_S7)
+                                                          0.00       4.63 r
+  i_tv80_core/U376/Y (NAND3X0_RVT)                        0.43       5.06 f
+  i_tv80_core/U377/Y (INVX0_RVT)                          0.17       5.24 r
+  i_tv80_core/U723/Y (OR2X1_RVT)                          0.19       5.42 r
+  i_tv80_core/U971/Y (OA22X1_RVT)                         0.08       5.51 r
+  i_tv80_core/U98/Y (OAI22X1_RVT)                         0.10       5.61 f
+  i_tv80_core/i_reg/AddrA[2] (tv80_reg)                   0.00       5.61 f
+  i_tv80_core/i_reg/U118/Y (INVX0_RVT)                    0.44       6.05 r
+  i_tv80_core/i_reg/U259/Y (AND2X1_RVT)                   0.11       6.17 r
+  i_tv80_core/i_reg/U260/Y (AND2X1_RVT)                   0.12       6.28 r
+  i_tv80_core/i_reg/U316/Y (NBUFFX2_RVT)                  0.19       6.47 r
+  i_tv80_core/i_reg/U328/Y (NBUFFX2_RVT)                  0.30       6.77 r
+  i_tv80_core/i_reg/U281/Y (AO221X1_RVT)                  0.50       7.28 r
+  i_tv80_core/i_reg/U335/Y (OR2X2_RVT)                    0.08       7.36 r
+  i_tv80_core/i_reg/DOAL[3] (tv80_reg)                    0.00       7.36 r
+  i_tv80_core/U1253/CO (FADDX1_RVT)                       0.32       7.68 r
+  i_tv80_core/U1167/CO (FADDX1_RVT)                       0.13       7.81 r
+  i_tv80_core/U1249/CO (FADDX1_RVT)                       0.13       7.94 r
+  i_tv80_core/U1169/CO (FADDX1_RVT)                       0.13       8.07 r
+  i_tv80_core/U1190/CO (FADDX1_RVT)                       0.13       8.20 r
+  i_tv80_core/U1248/CO (FADDX1_RVT)                       0.13       8.33 r
+  i_tv80_core/U1247/CO (FADDX1_RVT)                       0.13       8.46 r
+  i_tv80_core/U1160/CO (FADDX1_RVT)                       0.13       8.59 r
+  i_tv80_core/U1252/CO (FADDX1_RVT)                       0.13       8.72 r
+  i_tv80_core/U1161/CO (FADDX1_RVT)                       0.13       8.85 r
+  i_tv80_core/U1165/CO (FADDX1_RVT)                       0.13       8.98 r
+  i_tv80_core/U1115/CO (FADDX1_RVT)                       0.12       9.10 r
+  i_tv80_core/U1163/Y (XOR3X2_RVT)                        0.10       9.21 f
+  i_tv80_core/U1251/Y (AO221X1_RVT)                       0.16       9.36 f
+  i_tv80_core/i_reg/DIH[7] (tv80_reg)                     0.00       9.36 f
+  i_tv80_core/i_reg/U550/Y (NBUFFX2_RVT)                  0.18       9.54 f
+  i_tv80_core/i_reg/U558/Y (AO22X1_RVT)                   0.19       9.73 f
+  i_tv80_core/i_reg/RegsH_reg[1][7]/D (DFFX1_RVT)         0.01       9.75 f
+  data arrival time                                                  9.75
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  i_tv80_core/i_reg/RegsH_reg[1][7]/CLK (DFFX1_RVT)       0.00       9.80 r
+  library setup time                                     -0.05       9.75
+  data required time                                                 9.75
+  --------------------------------------------------------------------------
+  data required time                                                 9.75
+  data arrival time                                                 -9.75
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: i_tv80_core/ISet_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: i_tv80_core/i_reg/RegsH_reg[6][7]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  tv80s              16000                 saed32rvt_ss0p95v25c
+  tv80_core          16000                 saed32rvt_ss0p95v25c
+  tv80_mcode_Mode1_Flag_C0_Flag_N1_Flag_P2_Flag_X3_Flag_H4_Flag_Y5_Flag_Z6_Flag_S7
+                     8000                  saed32rvt_ss0p95v25c
+  tv80_reg           8000                  saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  i_tv80_core/ISet_reg[1]/CLK (DFFX1_RVT)                 0.00       0.00 r
+  i_tv80_core/ISet_reg[1]/Q (DFFX1_RVT)                   0.15       0.15 r
+  i_tv80_core/i_mcode/ISet[1] (tv80_mcode_Mode1_Flag_C0_Flag_N1_Flag_P2_Flag_X3_Flag_H4_Flag_Y5_Flag_Z6_Flag_S7)
+                                                          0.00       0.15 r
+  i_tv80_core/i_mcode/U662/Y (INVX1_RVT)                  0.10       0.25 f
+  i_tv80_core/i_mcode/U198/Y (INVX0_RVT)                  1.74       2.00 r
+  i_tv80_core/i_mcode/U676/Y (NAND2X0_RVT)                1.68       3.68 f
+  i_tv80_core/i_mcode/U573/Y (INVX0_RVT)                  0.11       3.79 r
+  i_tv80_core/i_mcode/U605/Y (NAND2X0_RVT)                0.45       4.24 f
+  i_tv80_core/i_mcode/U276/Y (INVX0_RVT)                  0.17       4.41 r
+  i_tv80_core/i_mcode/U604/Y (OR3X1_RVT)                  0.22       4.63 r
+  i_tv80_core/i_mcode/IncDec_16[1] (tv80_mcode_Mode1_Flag_C0_Flag_N1_Flag_P2_Flag_X3_Flag_H4_Flag_Y5_Flag_Z6_Flag_S7)
+                                                          0.00       4.63 r
+  i_tv80_core/U376/Y (NAND3X0_RVT)                        0.43       5.06 f
+  i_tv80_core/U377/Y (INVX0_RVT)                          0.17       5.24 r
+  i_tv80_core/U723/Y (OR2X1_RVT)                          0.19       5.42 r
+  i_tv80_core/U971/Y (OA22X1_RVT)                         0.08       5.51 r
+  i_tv80_core/U98/Y (OAI22X1_RVT)                         0.10       5.61 f
+  i_tv80_core/i_reg/AddrA[2] (tv80_reg)                   0.00       5.61 f
+  i_tv80_core/i_reg/U118/Y (INVX0_RVT)                    0.44       6.05 r
+  i_tv80_core/i_reg/U259/Y (AND2X1_RVT)                   0.11       6.17 r
+  i_tv80_core/i_reg/U260/Y (AND2X1_RVT)                   0.12       6.28 r
+  i_tv80_core/i_reg/U316/Y (NBUFFX2_RVT)                  0.19       6.47 r
+  i_tv80_core/i_reg/U328/Y (NBUFFX2_RVT)                  0.30       6.77 r
+  i_tv80_core/i_reg/U281/Y (AO221X1_RVT)                  0.50       7.28 r
+  i_tv80_core/i_reg/U335/Y (OR2X2_RVT)                    0.08       7.36 r
+  i_tv80_core/i_reg/DOAL[3] (tv80_reg)                    0.00       7.36 r
+  i_tv80_core/U1253/CO (FADDX1_RVT)                       0.32       7.68 r
+  i_tv80_core/U1167/CO (FADDX1_RVT)                       0.13       7.81 r
+  i_tv80_core/U1249/CO (FADDX1_RVT)                       0.13       7.94 r
+  i_tv80_core/U1169/CO (FADDX1_RVT)                       0.13       8.07 r
+  i_tv80_core/U1190/CO (FADDX1_RVT)                       0.13       8.20 r
+  i_tv80_core/U1248/CO (FADDX1_RVT)                       0.13       8.33 r
+  i_tv80_core/U1247/CO (FADDX1_RVT)                       0.13       8.46 r
+  i_tv80_core/U1160/CO (FADDX1_RVT)                       0.13       8.59 r
+  i_tv80_core/U1252/CO (FADDX1_RVT)                       0.13       8.72 r
+  i_tv80_core/U1161/CO (FADDX1_RVT)                       0.13       8.85 r
+  i_tv80_core/U1165/CO (FADDX1_RVT)                       0.13       8.98 r
+  i_tv80_core/U1115/CO (FADDX1_RVT)                       0.12       9.10 r
+  i_tv80_core/U1163/Y (XOR3X2_RVT)                        0.10       9.21 f
+  i_tv80_core/U1251/Y (AO221X1_RVT)                       0.16       9.36 f
+  i_tv80_core/i_reg/DIH[7] (tv80_reg)                     0.00       9.36 f
+  i_tv80_core/i_reg/U550/Y (NBUFFX2_RVT)                  0.18       9.54 f
+  i_tv80_core/i_reg/U554/Y (AO22X1_RVT)                   0.19       9.73 f
+  i_tv80_core/i_reg/RegsH_reg[6][7]/D (DFFX1_RVT)         0.01       9.75 f
+  data arrival time                                                  9.75
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  i_tv80_core/i_reg/RegsH_reg[6][7]/CLK (DFFX1_RVT)       0.00       9.80 r
+  library setup time                                     -0.05       9.75
+  data required time                                                 9.75
+  --------------------------------------------------------------------------
+  data required time                                                 9.75
+  data arrival time                                                 -9.75
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: i_tv80_core/ISet_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: i_tv80_core/i_reg/RegsH_reg[2][7]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  tv80s              16000                 saed32rvt_ss0p95v25c
+  tv80_core          16000                 saed32rvt_ss0p95v25c
+  tv80_mcode_Mode1_Flag_C0_Flag_N1_Flag_P2_Flag_X3_Flag_H4_Flag_Y5_Flag_Z6_Flag_S7
+                     8000                  saed32rvt_ss0p95v25c
+  tv80_reg           8000                  saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  i_tv80_core/ISet_reg[1]/CLK (DFFX1_RVT)                 0.00       0.00 r
+  i_tv80_core/ISet_reg[1]/Q (DFFX1_RVT)                   0.15       0.15 r
+  i_tv80_core/i_mcode/ISet[1] (tv80_mcode_Mode1_Flag_C0_Flag_N1_Flag_P2_Flag_X3_Flag_H4_Flag_Y5_Flag_Z6_Flag_S7)
+                                                          0.00       0.15 r
+  i_tv80_core/i_mcode/U662/Y (INVX1_RVT)                  0.10       0.25 f
+  i_tv80_core/i_mcode/U198/Y (INVX0_RVT)                  1.74       2.00 r
+  i_tv80_core/i_mcode/U676/Y (NAND2X0_RVT)                1.68       3.68 f
+  i_tv80_core/i_mcode/U573/Y (INVX0_RVT)                  0.11       3.79 r
+  i_tv80_core/i_mcode/U605/Y (NAND2X0_RVT)                0.45       4.24 f
+  i_tv80_core/i_mcode/U276/Y (INVX0_RVT)                  0.17       4.41 r
+  i_tv80_core/i_mcode/U604/Y (OR3X1_RVT)                  0.22       4.63 r
+  i_tv80_core/i_mcode/IncDec_16[1] (tv80_mcode_Mode1_Flag_C0_Flag_N1_Flag_P2_Flag_X3_Flag_H4_Flag_Y5_Flag_Z6_Flag_S7)
+                                                          0.00       4.63 r
+  i_tv80_core/U376/Y (NAND3X0_RVT)                        0.43       5.06 f
+  i_tv80_core/U377/Y (INVX0_RVT)                          0.17       5.24 r
+  i_tv80_core/U723/Y (OR2X1_RVT)                          0.19       5.42 r
+  i_tv80_core/U971/Y (OA22X1_RVT)                         0.08       5.51 r
+  i_tv80_core/U98/Y (OAI22X1_RVT)                         0.10       5.61 f
+  i_tv80_core/i_reg/AddrA[2] (tv80_reg)                   0.00       5.61 f
+  i_tv80_core/i_reg/U118/Y (INVX0_RVT)                    0.44       6.05 r
+  i_tv80_core/i_reg/U259/Y (AND2X1_RVT)                   0.11       6.17 r
+  i_tv80_core/i_reg/U260/Y (AND2X1_RVT)                   0.12       6.28 r
+  i_tv80_core/i_reg/U316/Y (NBUFFX2_RVT)                  0.19       6.47 r
+  i_tv80_core/i_reg/U328/Y (NBUFFX2_RVT)                  0.30       6.77 r
+  i_tv80_core/i_reg/U281/Y (AO221X1_RVT)                  0.50       7.28 r
+  i_tv80_core/i_reg/U335/Y (OR2X2_RVT)                    0.08       7.36 r
+  i_tv80_core/i_reg/DOAL[3] (tv80_reg)                    0.00       7.36 r
+  i_tv80_core/U1253/CO (FADDX1_RVT)                       0.32       7.68 r
+  i_tv80_core/U1167/CO (FADDX1_RVT)                       0.13       7.81 r
+  i_tv80_core/U1249/CO (FADDX1_RVT)                       0.13       7.94 r
+  i_tv80_core/U1169/CO (FADDX1_RVT)                       0.13       8.07 r
+  i_tv80_core/U1190/CO (FADDX1_RVT)                       0.13       8.20 r
+  i_tv80_core/U1248/CO (FADDX1_RVT)                       0.13       8.33 r
+  i_tv80_core/U1247/CO (FADDX1_RVT)                       0.13       8.46 r
+  i_tv80_core/U1160/CO (FADDX1_RVT)                       0.13       8.59 r
+  i_tv80_core/U1252/CO (FADDX1_RVT)                       0.13       8.72 r
+  i_tv80_core/U1161/CO (FADDX1_RVT)                       0.13       8.85 r
+  i_tv80_core/U1165/CO (FADDX1_RVT)                       0.13       8.98 r
+  i_tv80_core/U1115/CO (FADDX1_RVT)                       0.12       9.10 r
+  i_tv80_core/U1163/Y (XOR3X2_RVT)                        0.10       9.21 f
+  i_tv80_core/U1251/Y (AO221X1_RVT)                       0.16       9.36 f
+  i_tv80_core/i_reg/DIH[7] (tv80_reg)                     0.00       9.36 f
+  i_tv80_core/i_reg/U549/Y (NBUFFX2_RVT)                  0.18       9.54 f
+  i_tv80_core/i_reg/U557/Y (AO22X1_RVT)                   0.19       9.73 f
+  i_tv80_core/i_reg/RegsH_reg[2][7]/D (DFFX1_RVT)         0.01       9.75 f
+  data arrival time                                                  9.75
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  i_tv80_core/i_reg/RegsH_reg[2][7]/CLK (DFFX1_RVT)       0.00       9.80 r
+  library setup time                                     -0.05       9.75
+  data required time                                                 9.75
+  --------------------------------------------------------------------------
+  data required time                                                 9.75
+  data arrival time                                                 -9.75
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: i_tv80_core/ISet_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: i_tv80_core/i_reg/RegsH_reg[5][7]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  tv80s              16000                 saed32rvt_ss0p95v25c
+  tv80_core          16000                 saed32rvt_ss0p95v25c
+  tv80_mcode_Mode1_Flag_C0_Flag_N1_Flag_P2_Flag_X3_Flag_H4_Flag_Y5_Flag_Z6_Flag_S7
+                     8000                  saed32rvt_ss0p95v25c
+  tv80_reg           8000                  saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  i_tv80_core/ISet_reg[1]/CLK (DFFX1_RVT)                 0.00       0.00 r
+  i_tv80_core/ISet_reg[1]/Q (DFFX1_RVT)                   0.15       0.15 r
+  i_tv80_core/i_mcode/ISet[1] (tv80_mcode_Mode1_Flag_C0_Flag_N1_Flag_P2_Flag_X3_Flag_H4_Flag_Y5_Flag_Z6_Flag_S7)
+                                                          0.00       0.15 r
+  i_tv80_core/i_mcode/U662/Y (INVX1_RVT)                  0.10       0.25 f
+  i_tv80_core/i_mcode/U198/Y (INVX0_RVT)                  1.74       2.00 r
+  i_tv80_core/i_mcode/U676/Y (NAND2X0_RVT)                1.68       3.68 f
+  i_tv80_core/i_mcode/U573/Y (INVX0_RVT)                  0.11       3.79 r
+  i_tv80_core/i_mcode/U605/Y (NAND2X0_RVT)                0.45       4.24 f
+  i_tv80_core/i_mcode/U276/Y (INVX0_RVT)                  0.17       4.41 r
+  i_tv80_core/i_mcode/U604/Y (OR3X1_RVT)                  0.22       4.63 r
+  i_tv80_core/i_mcode/IncDec_16[1] (tv80_mcode_Mode1_Flag_C0_Flag_N1_Flag_P2_Flag_X3_Flag_H4_Flag_Y5_Flag_Z6_Flag_S7)
+                                                          0.00       4.63 r
+  i_tv80_core/U376/Y (NAND3X0_RVT)                        0.43       5.06 f
+  i_tv80_core/U377/Y (INVX0_RVT)                          0.17       5.24 r
+  i_tv80_core/U723/Y (OR2X1_RVT)                          0.19       5.42 r
+  i_tv80_core/U971/Y (OA22X1_RVT)                         0.08       5.51 r
+  i_tv80_core/U98/Y (OAI22X1_RVT)                         0.10       5.61 f
+  i_tv80_core/i_reg/AddrA[2] (tv80_reg)                   0.00       5.61 f
+  i_tv80_core/i_reg/U118/Y (INVX0_RVT)                    0.44       6.05 r
+  i_tv80_core/i_reg/U259/Y (AND2X1_RVT)                   0.11       6.17 r
+  i_tv80_core/i_reg/U260/Y (AND2X1_RVT)                   0.12       6.28 r
+  i_tv80_core/i_reg/U316/Y (NBUFFX2_RVT)                  0.19       6.47 r
+  i_tv80_core/i_reg/U328/Y (NBUFFX2_RVT)                  0.30       6.77 r
+  i_tv80_core/i_reg/U281/Y (AO221X1_RVT)                  0.50       7.28 r
+  i_tv80_core/i_reg/U335/Y (OR2X2_RVT)                    0.08       7.36 r
+  i_tv80_core/i_reg/DOAL[3] (tv80_reg)                    0.00       7.36 r
+  i_tv80_core/U1253/CO (FADDX1_RVT)                       0.32       7.68 r
+  i_tv80_core/U1167/CO (FADDX1_RVT)                       0.13       7.81 r
+  i_tv80_core/U1249/CO (FADDX1_RVT)                       0.13       7.94 r
+  i_tv80_core/U1169/CO (FADDX1_RVT)                       0.13       8.07 r
+  i_tv80_core/U1190/CO (FADDX1_RVT)                       0.13       8.20 r
+  i_tv80_core/U1248/CO (FADDX1_RVT)                       0.13       8.33 r
+  i_tv80_core/U1247/CO (FADDX1_RVT)                       0.13       8.46 r
+  i_tv80_core/U1160/CO (FADDX1_RVT)                       0.13       8.59 r
+  i_tv80_core/U1252/CO (FADDX1_RVT)                       0.13       8.72 r
+  i_tv80_core/U1161/CO (FADDX1_RVT)                       0.13       8.85 r
+  i_tv80_core/U1165/CO (FADDX1_RVT)                       0.13       8.98 r
+  i_tv80_core/U1115/CO (FADDX1_RVT)                       0.12       9.10 r
+  i_tv80_core/U1163/Y (XOR3X2_RVT)                        0.10       9.21 f
+  i_tv80_core/U1251/Y (AO221X1_RVT)                       0.16       9.36 f
+  i_tv80_core/i_reg/DIH[7] (tv80_reg)                     0.00       9.36 f
+  i_tv80_core/i_reg/U549/Y (NBUFFX2_RVT)                  0.18       9.54 f
+  i_tv80_core/i_reg/U555/Y (AO22X1_RVT)                   0.19       9.73 f
+  i_tv80_core/i_reg/RegsH_reg[5][7]/D (DFFX1_RVT)         0.01       9.75 f
+  data arrival time                                                  9.75
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  i_tv80_core/i_reg/RegsH_reg[5][7]/CLK (DFFX1_RVT)       0.00       9.80 r
+  library setup time                                     -0.05       9.75
+  data required time                                                 9.75
+  --------------------------------------------------------------------------
+  data required time                                                 9.75
+  data arrival time                                                 -9.75
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: i_tv80_core/ISet_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: i_tv80_core/i_reg/RegsH_reg[7][7]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  tv80s              16000                 saed32rvt_ss0p95v25c
+  tv80_core          16000                 saed32rvt_ss0p95v25c
+  tv80_mcode_Mode1_Flag_C0_Flag_N1_Flag_P2_Flag_X3_Flag_H4_Flag_Y5_Flag_Z6_Flag_S7
+                     8000                  saed32rvt_ss0p95v25c
+  tv80_reg           8000                  saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  i_tv80_core/ISet_reg[1]/CLK (DFFX1_RVT)                 0.00       0.00 r
+  i_tv80_core/ISet_reg[1]/Q (DFFX1_RVT)                   0.15       0.15 r
+  i_tv80_core/i_mcode/ISet[1] (tv80_mcode_Mode1_Flag_C0_Flag_N1_Flag_P2_Flag_X3_Flag_H4_Flag_Y5_Flag_Z6_Flag_S7)
+                                                          0.00       0.15 r
+  i_tv80_core/i_mcode/U662/Y (INVX1_RVT)                  0.10       0.25 f
+  i_tv80_core/i_mcode/U198/Y (INVX0_RVT)                  1.74       2.00 r
+  i_tv80_core/i_mcode/U676/Y (NAND2X0_RVT)                1.68       3.68 f
+  i_tv80_core/i_mcode/U573/Y (INVX0_RVT)                  0.11       3.79 r
+  i_tv80_core/i_mcode/U605/Y (NAND2X0_RVT)                0.45       4.24 f
+  i_tv80_core/i_mcode/U276/Y (INVX0_RVT)                  0.17       4.41 r
+  i_tv80_core/i_mcode/U604/Y (OR3X1_RVT)                  0.22       4.63 r
+  i_tv80_core/i_mcode/IncDec_16[1] (tv80_mcode_Mode1_Flag_C0_Flag_N1_Flag_P2_Flag_X3_Flag_H4_Flag_Y5_Flag_Z6_Flag_S7)
+                                                          0.00       4.63 r
+  i_tv80_core/U376/Y (NAND3X0_RVT)                        0.43       5.06 f
+  i_tv80_core/U377/Y (INVX0_RVT)                          0.17       5.24 r
+  i_tv80_core/U723/Y (OR2X1_RVT)                          0.19       5.42 r
+  i_tv80_core/U971/Y (OA22X1_RVT)                         0.08       5.51 r
+  i_tv80_core/U98/Y (OAI22X1_RVT)                         0.10       5.61 f
+  i_tv80_core/i_reg/AddrA[2] (tv80_reg)                   0.00       5.61 f
+  i_tv80_core/i_reg/U118/Y (INVX0_RVT)                    0.44       6.05 r
+  i_tv80_core/i_reg/U259/Y (AND2X1_RVT)                   0.11       6.17 r
+  i_tv80_core/i_reg/U260/Y (AND2X1_RVT)                   0.12       6.28 r
+  i_tv80_core/i_reg/U316/Y (NBUFFX2_RVT)                  0.19       6.47 r
+  i_tv80_core/i_reg/U328/Y (NBUFFX2_RVT)                  0.30       6.77 r
+  i_tv80_core/i_reg/U281/Y (AO221X1_RVT)                  0.50       7.28 r
+  i_tv80_core/i_reg/U335/Y (OR2X2_RVT)                    0.08       7.36 r
+  i_tv80_core/i_reg/DOAL[3] (tv80_reg)                    0.00       7.36 r
+  i_tv80_core/U1253/CO (FADDX1_RVT)                       0.32       7.68 r
+  i_tv80_core/U1167/CO (FADDX1_RVT)                       0.13       7.81 r
+  i_tv80_core/U1249/CO (FADDX1_RVT)                       0.13       7.94 r
+  i_tv80_core/U1169/CO (FADDX1_RVT)                       0.13       8.07 r
+  i_tv80_core/U1190/CO (FADDX1_RVT)                       0.13       8.20 r
+  i_tv80_core/U1248/CO (FADDX1_RVT)                       0.13       8.33 r
+  i_tv80_core/U1247/CO (FADDX1_RVT)                       0.13       8.46 r
+  i_tv80_core/U1160/CO (FADDX1_RVT)                       0.13       8.59 r
+  i_tv80_core/U1252/CO (FADDX1_RVT)                       0.13       8.72 r
+  i_tv80_core/U1161/CO (FADDX1_RVT)                       0.13       8.85 r
+  i_tv80_core/U1165/CO (FADDX1_RVT)                       0.13       8.98 r
+  i_tv80_core/U1115/CO (FADDX1_RVT)                       0.12       9.10 r
+  i_tv80_core/U1163/Y (XOR3X2_RVT)                        0.10       9.21 f
+  i_tv80_core/U1251/Y (AO221X1_RVT)                       0.16       9.36 f
+  i_tv80_core/i_reg/DIH[7] (tv80_reg)                     0.00       9.36 f
+  i_tv80_core/i_reg/U549/Y (NBUFFX2_RVT)                  0.18       9.54 f
+  i_tv80_core/i_reg/U553/Y (AO22X1_RVT)                   0.19       9.73 f
+  i_tv80_core/i_reg/RegsH_reg[7][7]/D (DFFX1_RVT)         0.01       9.74 f
+  data arrival time                                                  9.74
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  i_tv80_core/i_reg/RegsH_reg[7][7]/CLK (DFFX1_RVT)       0.00       9.80 r
+  library setup time                                     -0.05       9.75
+  data required time                                                 9.75
+  --------------------------------------------------------------------------
+  data required time                                                 9.75
+  data arrival time                                                 -9.74
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: reset_n (input port clocked by clk)
+  Endpoint: i_tv80_core/A_reg[12]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  tv80s              16000                 saed32rvt_ss0p95v25c
+  tv80_core          16000                 saed32rvt_ss0p95v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 f
+  reset_n (in)                             0.00       0.01 f
+  i_tv80_core/reset_n (tv80_core)          0.00       0.01 f
+  i_tv80_core/U327/Y (INVX1_RVT)           0.98       0.99 r
+  i_tv80_core/U328/Y (NOR2X0_RVT)          0.56       1.55 f
+  i_tv80_core/U1183/Y (INVX0_RVT)          0.88       2.43 r
+  i_tv80_core/U458/Y (INVX0_RVT)           0.72       3.14 f
+  i_tv80_core/U318/Y (INVX1_RVT)           1.71       4.85 r
+  i_tv80_core/U375/Y (INVX0_RVT)           0.70       5.55 f
+  i_tv80_core/U60/Y (NAND3X0_RVT)          1.23       6.78 r
+  i_tv80_core/U31/Y (AND2X1_RVT)           1.61       8.40 r
+  i_tv80_core/U36/Y (OA222X1_RVT)          1.24       9.63 r
+  i_tv80_core/U430/Y (NAND4X0_RVT)         0.07       9.70 f
+  i_tv80_core/A_reg[12]/D (DFFX1_RVT)      0.01       9.72 f
+  data arrival time                                   9.72
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  i_tv80_core/A_reg[12]/CLK (DFFX1_RVT)
+                                           0.00       9.80 r
+  library setup time                      -0.07       9.73
+  data required time                                  9.73
+  -----------------------------------------------------------
+  data required time                                  9.73
+  data arrival time                                  -9.72
+  -----------------------------------------------------------
+  slack (MET)                                         0.01
+
+
+  Startpoint: reset_n (input port clocked by clk)
+  Endpoint: i_tv80_core/A_reg[10]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  tv80s              16000                 saed32rvt_ss0p95v25c
+  tv80_core          16000                 saed32rvt_ss0p95v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 f
+  reset_n (in)                             0.00       0.01 f
+  i_tv80_core/reset_n (tv80_core)          0.00       0.01 f
+  i_tv80_core/U327/Y (INVX1_RVT)           0.98       0.99 r
+  i_tv80_core/U328/Y (NOR2X0_RVT)          0.56       1.55 f
+  i_tv80_core/U1183/Y (INVX0_RVT)          0.88       2.43 r
+  i_tv80_core/U458/Y (INVX0_RVT)           0.72       3.14 f
+  i_tv80_core/U318/Y (INVX1_RVT)           1.71       4.85 r
+  i_tv80_core/U375/Y (INVX0_RVT)           0.70       5.55 f
+  i_tv80_core/U60/Y (NAND3X0_RVT)          1.23       6.78 r
+  i_tv80_core/U31/Y (AND2X1_RVT)           1.61       8.40 r
+  i_tv80_core/U35/Y (OA222X1_RVT)          1.24       9.63 r
+  i_tv80_core/U431/Y (NAND4X0_RVT)         0.07       9.70 f
+  i_tv80_core/A_reg[10]/D (DFFX1_RVT)      0.01       9.72 f
+  data arrival time                                   9.72
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  i_tv80_core/A_reg[10]/CLK (DFFX1_RVT)
+                                           0.00       9.80 r
+  library setup time                      -0.07       9.73
+  data required time                                  9.73
+  -----------------------------------------------------------
+  data required time                                  9.73
+  data arrival time                                  -9.72
+  -----------------------------------------------------------
+  slack (MET)                                         0.01
+
+
+  Startpoint: reset_n (input port clocked by clk)
+  Endpoint: i_tv80_core/A_reg[9]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  tv80s              16000                 saed32rvt_ss0p95v25c
+  tv80_core          16000                 saed32rvt_ss0p95v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 f
+  reset_n (in)                             0.00       0.01 f
+  i_tv80_core/reset_n (tv80_core)          0.00       0.01 f
+  i_tv80_core/U327/Y (INVX1_RVT)           0.98       0.99 r
+  i_tv80_core/U328/Y (NOR2X0_RVT)          0.56       1.55 f
+  i_tv80_core/U1183/Y (INVX0_RVT)          0.88       2.43 r
+  i_tv80_core/U458/Y (INVX0_RVT)           0.72       3.14 f
+  i_tv80_core/U318/Y (INVX1_RVT)           1.71       4.85 r
+  i_tv80_core/U375/Y (INVX0_RVT)           0.70       5.55 f
+  i_tv80_core/U60/Y (NAND3X0_RVT)          1.23       6.78 r
+  i_tv80_core/U31/Y (AND2X1_RVT)           1.61       8.40 r
+  i_tv80_core/U34/Y (OA222X1_RVT)          1.24       9.63 r
+  i_tv80_core/U432/Y (NAND4X0_RVT)         0.07       9.70 f
+  i_tv80_core/A_reg[9]/D (DFFX1_RVT)       0.01       9.72 f
+  data arrival time                                   9.72
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  i_tv80_core/A_reg[9]/CLK (DFFX1_RVT)     0.00       9.80 r
+  library setup time                      -0.07       9.73
+  data required time                                  9.73
+  -----------------------------------------------------------
+  data required time                                  9.73
+  data arrival time                                  -9.72
+  -----------------------------------------------------------
+  slack (MET)                                         0.01
+
+
+  Startpoint: reset_n (input port clocked by clk)
+  Endpoint: i_tv80_core/A_reg[8]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  tv80s              16000                 saed32rvt_ss0p95v25c
+  tv80_core          16000                 saed32rvt_ss0p95v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 f
+  reset_n (in)                             0.00       0.01 f
+  i_tv80_core/reset_n (tv80_core)          0.00       0.01 f
+  i_tv80_core/U327/Y (INVX1_RVT)           0.98       0.99 r
+  i_tv80_core/U328/Y (NOR2X0_RVT)          0.56       1.55 f
+  i_tv80_core/U1183/Y (INVX0_RVT)          0.88       2.43 r
+  i_tv80_core/U458/Y (INVX0_RVT)           0.72       3.14 f
+  i_tv80_core/U318/Y (INVX1_RVT)           1.71       4.85 r
+  i_tv80_core/U375/Y (INVX0_RVT)           0.70       5.55 f
+  i_tv80_core/U60/Y (NAND3X0_RVT)          1.23       6.78 r
+  i_tv80_core/U31/Y (AND2X1_RVT)           1.61       8.40 r
+  i_tv80_core/U33/Y (OA222X1_RVT)          1.24       9.63 r
+  i_tv80_core/U433/Y (NAND4X0_RVT)         0.07       9.70 f
+  i_tv80_core/A_reg[8]/D (DFFX1_RVT)       0.01       9.72 f
+  data arrival time                                   9.72
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  i_tv80_core/A_reg[8]/CLK (DFFX1_RVT)     0.00       9.80 r
+  library setup time                      -0.07       9.73
+  data required time                                  9.73
+  -----------------------------------------------------------
+  data required time                                  9.73
+  data arrival time                                  -9.72
+  -----------------------------------------------------------
+  slack (MET)                                         0.01
+
+
+1
