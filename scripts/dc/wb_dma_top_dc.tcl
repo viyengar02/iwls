@@ -32,6 +32,7 @@ write -hier -f ddc -output ./outputs/wb_dma/wb_dma_top.ddc
 
 # Clock and constraints
 ungroup -all -flatten
+#Reduces synthesis runtime by simplifying the design structure.
 create_clock -name "clk" -period 10 [get_ports clk_i] 
 set_input_delay -clock clk 2.5 [remove_from_collection [all_inputs] [get_ports clk_i]]
 set_output_delay -clock clk 2.5 [all_outputs]
@@ -41,7 +42,9 @@ set_max_area 0.0
 set_critical_range 1.0 [current_design]
 set_max_fanout 12 [current_design]
 set compile_ultra_enable_multibit_selection true
+#auto selection of multi bit flip flops
 set compile_ultra_enable_low_vt_opt true
+#low voltage threshold for speed
 set physopt_enable_critical_range_physopt true
 
 # Checks and compilation
@@ -50,6 +53,7 @@ uniquify
 check_timing 
 compile_ultra -retime -no_autoungroup -no_boundary_optimization
 compile_ultra -retime -no_autoungroup -incremental
+#refines first compilation, hopefully keeping old optimizations while fixing timing violations
 physopt -preserve_footprint -critical_range 0.5
 
 # Reports
