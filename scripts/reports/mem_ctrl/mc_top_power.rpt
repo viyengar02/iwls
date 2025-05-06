@@ -1,0 +1,86 @@
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : mc_top
+Version: M-2016.12-SP1
+Date   : Tue Apr 15 10:28:08 2025
+****************************************
+
+
+Library(s) Used:
+
+    saed32rvt_ss0p95v25c (File: /mnt/class_data/ecec574-w2019/PDKs/SAED32nm/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v25c.db)
+
+
+Operating Conditions: ss0p95v25c   Library: saed32rvt_ss0p95v25c
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+mc_top                 16000             saed32rvt_ss0p95v25c
+mc_rf                  8000              saed32rvt_ss0p95v25c
+mc_adr_sel             8000              saed32rvt_ss0p95v25c
+mc_obct_top            8000              saed32rvt_ss0p95v25c
+mc_dp                  8000              saed32rvt_ss0p95v25c
+mc_refresh             8000              saed32rvt_ss0p95v25c
+mc_timing              8000              saed32rvt_ss0p95v25c
+mc_wb_if               8000              saed32rvt_ss0p95v25c
+mc_mem_if              8000              saed32rvt_ss0p95v25c
+mc_cs_rf_0             8000              saed32rvt_ss0p95v25c
+mc_cs_rf_1             8000              saed32rvt_ss0p95v25c
+mc_cs_rf_dummy_2       ForQA             saed32rvt_ss0p95v25c
+mc_cs_rf_dummy_3       ForQA             saed32rvt_ss0p95v25c
+mc_cs_rf_dummy_4       ForQA             saed32rvt_ss0p95v25c
+mc_cs_rf_dummy_5       ForQA             saed32rvt_ss0p95v25c
+mc_cs_rf_dummy_6       ForQA             saed32rvt_ss0p95v25c
+mc_cs_rf_dummy_7       ForQA             saed32rvt_ss0p95v25c
+mc_incn_r_incN_width24 ForQA             saed32rvt_ss0p95v25c
+mc_obct_1              8000              saed32rvt_ss0p95v25c
+mc_obct_dummy_5        ForQA             saed32rvt_ss0p95v25c
+mc_rd_fifo             8000              saed32rvt_ss0p95v25c
+mc_obct_0              8000              saed32rvt_ss0p95v25c
+mc_obct_dummy_0        ForQA             saed32rvt_ss0p95v25c
+mc_obct_dummy_1        ForQA             saed32rvt_ss0p95v25c
+mc_obct_dummy_2        ForQA             saed32rvt_ss0p95v25c
+mc_obct_dummy_3        ForQA             saed32rvt_ss0p95v25c
+mc_obct_dummy_4        ForQA             saed32rvt_ss0p95v25c
+mc_refresh_DW01_inc_0  ForQA             saed32rvt_ss0p95v25c
+mc_refresh_DW01_inc_1  ForQA             saed32rvt_ss0p95v25c
+mc_incn_r_incN_width24_DW01_inc_0
+                       ForQA             saed32rvt_ss0p95v25c
+
+
+Global Operating Voltage = 0.95 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  =   0.0000 uW    (0%)
+  Net Switching Power  =   5.5989 uW  (100%)
+                         ---------
+Total Dynamic Power    =   5.5989 uW  (100%)
+
+Cell Leakage Power     = 408.3314 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           0.0000            0.7595        1.4892e+08          149.6830  (  36.16%)
+sequential         0.0000            0.1363        1.7389e+07           17.5249  (   4.23%)
+combinational      0.0000            4.7031        2.4202e+08          246.7224  (  59.60%)
+--------------------------------------------------------------------------------------------------
+Total              0.0000 uW         5.5989 uW     4.0833e+08 pW       413.9303 uW
+1

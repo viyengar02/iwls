@@ -1,0 +1,658 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 10
+Design : wb_dma_top
+Version: W-2024.09-SP2
+Date   : Tue May  6 10:02:15 2025
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+Operating Conditions: ss0p95v125c   Library: saed32rvt_ss0p95v125c
+	Parasitic source    : LPE
+	Parasitic mode      : RealRC
+	Extraction mode     : MAX
+	Extraction derating : 125/125/125
+
+Information: Percent of Arnoldi-based delays =  6.48%
+
+Information: Percent of CCS-based delays =  5.13%
+
+  Startpoint: u2/state_reg[4]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u2/mast0_adr_reg[11]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u2/state_reg[4]/CLK (DFFASRX2_RVT)                      0.00       0.00 r
+  u2/state_reg[4]/Q (DFFASRX2_RVT)                        0.23       0.23 f
+  u2/U396/Y (OR2X1_RVT)                                   0.07 &     0.30 f
+  u2/U380/Y (INVX0_RVT)                                   0.04 &     0.34 r
+  u2/U307/Y (AND3X1_RVT)                                  0.07 &     0.41 r
+  u2/U355/Y (AND2X1_RVT)                                  0.05 &     0.47 r
+  u2/U718/Y (NAND4X1_RVT)                                 0.18 &     0.64 f
+  u2/dma_busy (wb_dma_de)                                 0.00       0.64 f
+  u1/dma_busy (wb_dma_ch_sel_0_1_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0)
+                                                          0.00       0.64 f
+  u1/U3/Y (INVX0_RVT)                                     0.12 &     0.76 r
+  u1/U799/Y (AO22X1_RVT)                                  0.15 &     0.91 r
+  u1/U164/Y (DELLN1X2_RVT)                                0.26 &     1.17 r
+  u1/U2410/Y (AND2X1_RVT)                                 0.06 &     1.23 r
+  u1/U1969/Y (NBUFFX2_RVT)                                0.05 &     1.28 r
+  u1/U2034/Y (NBUFFX2_RVT)                                0.05 &     1.33 r
+  u1/U1460/Y (NBUFFX2_RVT)                                0.05 &     1.38 r
+  u1/U1449/Y (AND2X1_RVT)                                 0.06 &     1.44 r
+  u1/U1157/Y (NBUFFX2_RVT)                                0.05 &     1.49 r
+  u1/U2022/Y (AND2X2_RVT)                                 0.14 c     1.63 r
+  u1/U240/Y (NBUFFX2_RVT)                                 0.18 c     1.81 r
+  u1/U241/Y (INVX1_RVT)                                   0.12 c     1.93 f
+  u1/U2221/Y (OA221X1_RVT)                                0.18 &     2.11 f
+  u1/U2219/Y (AND4X1_RVT)                                 0.15 &     2.26 f
+  u1/U2807/Y (NAND2X0_RVT)                                0.08 &     2.33 r
+  u1/ndr (wb_dma_ch_sel_0_1_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0)
+                                                          0.00       2.33 r
+  u2/nd (wb_dma_de)                                       0.00       2.33 r
+  u2/U377/Y (NBUFFX2_RVT)                                 0.10 &     2.43 r
+  u2/U302/Y (NBUFFX2_RVT)                                 0.07 &     2.50 r
+  u2/U290/Y (NAND2X0_RVT)                                 0.06 &     2.56 f
+  u2/U356/Y (NAND4X0_RVT)                                 0.08 &     2.64 r
+  u2/U85/Y (NBUFFX2_RVT)                                  0.08 &     2.72 r
+  u2/U411/Y (INVX0_RVT)                                   0.08 &     2.80 f
+  u2/U905/Y (AND2X1_RVT)                                  0.22 &     3.02 f
+  u2/U891/Y (AO221X1_RVT)                                 0.24 &     3.26 f
+  u2/mast0_adr_reg[11]/D (DFFX1_RVT)                      0.00 &     3.27 f
+  data arrival time                                                  3.27
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  u2/mast0_adr_reg[11]/CLK (DFFX1_RVT)                    0.00       9.80 r
+  library setup time                                     -0.10       9.70
+  data required time                                                 9.70
+  --------------------------------------------------------------------------
+  data required time                                                 9.70
+  data arrival time                                                 -3.27
+  --------------------------------------------------------------------------
+  slack (MET)                                                        6.44
+
+
+  Startpoint: u2/state_reg[4]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u2/mast0_adr_reg[6]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u2/state_reg[4]/CLK (DFFASRX2_RVT)                      0.00       0.00 r
+  u2/state_reg[4]/Q (DFFASRX2_RVT)                        0.23       0.23 f
+  u2/U396/Y (OR2X1_RVT)                                   0.07 &     0.30 f
+  u2/U380/Y (INVX0_RVT)                                   0.04 &     0.34 r
+  u2/U307/Y (AND3X1_RVT)                                  0.07 &     0.41 r
+  u2/U355/Y (AND2X1_RVT)                                  0.05 &     0.47 r
+  u2/U718/Y (NAND4X1_RVT)                                 0.18 &     0.64 f
+  u2/dma_busy (wb_dma_de)                                 0.00       0.64 f
+  u1/dma_busy (wb_dma_ch_sel_0_1_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0)
+                                                          0.00       0.64 f
+  u1/U3/Y (INVX0_RVT)                                     0.12 &     0.76 r
+  u1/U799/Y (AO22X1_RVT)                                  0.15 &     0.91 r
+  u1/U164/Y (DELLN1X2_RVT)                                0.26 &     1.17 r
+  u1/U2410/Y (AND2X1_RVT)                                 0.06 &     1.23 r
+  u1/U1969/Y (NBUFFX2_RVT)                                0.05 &     1.28 r
+  u1/U2034/Y (NBUFFX2_RVT)                                0.05 &     1.33 r
+  u1/U1460/Y (NBUFFX2_RVT)                                0.05 &     1.38 r
+  u1/U1449/Y (AND2X1_RVT)                                 0.06 &     1.44 r
+  u1/U1157/Y (NBUFFX2_RVT)                                0.05 &     1.49 r
+  u1/U2022/Y (AND2X2_RVT)                                 0.14 c     1.63 r
+  u1/U240/Y (NBUFFX2_RVT)                                 0.18 c     1.81 r
+  u1/U241/Y (INVX1_RVT)                                   0.12 c     1.93 f
+  u1/U2221/Y (OA221X1_RVT)                                0.18 &     2.11 f
+  u1/U2219/Y (AND4X1_RVT)                                 0.15 &     2.26 f
+  u1/U2807/Y (NAND2X0_RVT)                                0.08 &     2.33 r
+  u1/ndr (wb_dma_ch_sel_0_1_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0)
+                                                          0.00       2.33 r
+  u2/nd (wb_dma_de)                                       0.00       2.33 r
+  u2/U377/Y (NBUFFX2_RVT)                                 0.10 &     2.43 r
+  u2/U302/Y (NBUFFX2_RVT)                                 0.07 &     2.50 r
+  u2/U290/Y (NAND2X0_RVT)                                 0.06 &     2.56 f
+  u2/U356/Y (NAND4X0_RVT)                                 0.08 &     2.64 r
+  u2/U85/Y (NBUFFX2_RVT)                                  0.08 &     2.72 r
+  u2/U411/Y (INVX0_RVT)                                   0.08 &     2.80 f
+  u2/U905/Y (AND2X1_RVT)                                  0.22 &     3.02 f
+  u2/U569/Y (AO221X1_RVT)                                 0.24 &     3.26 f
+  u2/mast0_adr_reg[6]/D (DFFX1_RVT)                       0.00 &     3.26 f
+  data arrival time                                                  3.26
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  u2/mast0_adr_reg[6]/CLK (DFFX1_RVT)                     0.00       9.80 r
+  library setup time                                     -0.09       9.71
+  data required time                                                 9.71
+  --------------------------------------------------------------------------
+  data required time                                                 9.71
+  data arrival time                                                 -3.26
+  --------------------------------------------------------------------------
+  slack (MET)                                                        6.44
+
+
+  Startpoint: u2/state_reg[4]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u2/mast0_adr_reg[7]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u2/state_reg[4]/CLK (DFFASRX2_RVT)                      0.00       0.00 r
+  u2/state_reg[4]/Q (DFFASRX2_RVT)                        0.23       0.23 f
+  u2/U396/Y (OR2X1_RVT)                                   0.07 &     0.30 f
+  u2/U380/Y (INVX0_RVT)                                   0.04 &     0.34 r
+  u2/U307/Y (AND3X1_RVT)                                  0.07 &     0.41 r
+  u2/U355/Y (AND2X1_RVT)                                  0.05 &     0.47 r
+  u2/U718/Y (NAND4X1_RVT)                                 0.18 &     0.64 f
+  u2/dma_busy (wb_dma_de)                                 0.00       0.64 f
+  u1/dma_busy (wb_dma_ch_sel_0_1_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0)
+                                                          0.00       0.64 f
+  u1/U3/Y (INVX0_RVT)                                     0.12 &     0.76 r
+  u1/U799/Y (AO22X1_RVT)                                  0.15 &     0.91 r
+  u1/U164/Y (DELLN1X2_RVT)                                0.26 &     1.17 r
+  u1/U2410/Y (AND2X1_RVT)                                 0.06 &     1.23 r
+  u1/U1969/Y (NBUFFX2_RVT)                                0.05 &     1.28 r
+  u1/U2034/Y (NBUFFX2_RVT)                                0.05 &     1.33 r
+  u1/U1460/Y (NBUFFX2_RVT)                                0.05 &     1.38 r
+  u1/U1449/Y (AND2X1_RVT)                                 0.06 &     1.44 r
+  u1/U1157/Y (NBUFFX2_RVT)                                0.05 &     1.49 r
+  u1/U2022/Y (AND2X2_RVT)                                 0.14 c     1.63 r
+  u1/U240/Y (NBUFFX2_RVT)                                 0.18 c     1.81 r
+  u1/U241/Y (INVX1_RVT)                                   0.12 c     1.93 f
+  u1/U2221/Y (OA221X1_RVT)                                0.18 &     2.11 f
+  u1/U2219/Y (AND4X1_RVT)                                 0.15 &     2.26 f
+  u1/U2807/Y (NAND2X0_RVT)                                0.08 &     2.33 r
+  u1/ndr (wb_dma_ch_sel_0_1_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0)
+                                                          0.00       2.33 r
+  u2/nd (wb_dma_de)                                       0.00       2.33 r
+  u2/U377/Y (NBUFFX2_RVT)                                 0.10 &     2.43 r
+  u2/U302/Y (NBUFFX2_RVT)                                 0.07 &     2.50 r
+  u2/U290/Y (NAND2X0_RVT)                                 0.06 &     2.56 f
+  u2/U356/Y (NAND4X0_RVT)                                 0.08 &     2.64 r
+  u2/U85/Y (NBUFFX2_RVT)                                  0.08 &     2.72 r
+  u2/U411/Y (INVX0_RVT)                                   0.08 &     2.80 f
+  u2/U905/Y (AND2X1_RVT)                                  0.22 &     3.02 f
+  u2/U550/Y (AO221X1_RVT)                                 0.24 &     3.26 f
+  u2/mast0_adr_reg[7]/D (DFFX1_RVT)                       0.00 &     3.26 f
+  data arrival time                                                  3.26
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  u2/mast0_adr_reg[7]/CLK (DFFX1_RVT)                     0.00       9.80 r
+  library setup time                                     -0.09       9.71
+  data required time                                                 9.71
+  --------------------------------------------------------------------------
+  data required time                                                 9.71
+  data arrival time                                                 -3.26
+  --------------------------------------------------------------------------
+  slack (MET)                                                        6.45
+
+
+  Startpoint: u2/state_reg[4]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u2/adr0_cnt_reg[14]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u2/state_reg[4]/CLK (DFFASRX2_RVT)                      0.00       0.00 r
+  u2/state_reg[4]/Q (DFFASRX2_RVT)                        0.23       0.23 f
+  u2/U396/Y (OR2X1_RVT)                                   0.07 &     0.30 f
+  u2/U380/Y (INVX0_RVT)                                   0.04 &     0.34 r
+  u2/U307/Y (AND3X1_RVT)                                  0.07 &     0.41 r
+  u2/U355/Y (AND2X1_RVT)                                  0.05 &     0.47 r
+  u2/U718/Y (NAND4X1_RVT)                                 0.18 &     0.64 f
+  u2/dma_busy (wb_dma_de)                                 0.00       0.64 f
+  u1/dma_busy (wb_dma_ch_sel_0_1_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0)
+                                                          0.00       0.64 f
+  u1/U3/Y (INVX0_RVT)                                     0.12 &     0.76 r
+  u1/U918/Y (AOI22X1_RVT)                                 0.16 &     0.93 f
+  u1/U2000/Y (INVX0_RVT)                                  0.06 &     0.99 r
+  u1/U810/Y (INVX0_RVT)                                   0.04 &     1.03 f
+  u1/U800/Y (AND2X1_RVT)                                  0.07 &     1.10 f
+  u1/U805/Y (AND2X1_RVT)                                  0.07 &     1.16 f
+  u1/U803/Y (NBUFFX2_RVT)                                 0.05 &     1.22 f
+  u1/U806/Y (NBUFFX2_RVT)                                 0.05 &     1.26 f
+  u1/U814/Y (AND2X1_RVT)                                  0.19 &     1.45 f
+  u1/U210/Y (NBUFFX2_RVT)                                 0.17 &     1.62 f
+  u1/U6154/Y (AO222X1_RVT)                                0.10 &     1.72 f
+  u1/U2025/Y (NOR4X1_RVT)                                 0.10 &     1.83 r
+  u1/U2413/Y (NAND2X0_RVT)                                0.12 &     1.95 f
+  u1/csr[2] (wb_dma_ch_sel_0_1_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0)
+                                                          0.00       1.95 f
+  u2/csr[2] (wb_dma_de)                                   0.00       1.95 f
+  u2/U20/Y (NBUFFX2_RVT)                                  0.14 &     2.09 f
+  u2/U21/Y (INVX1_RVT)                                    0.10 &     2.18 r
+  u2/U205/Y (AOI22X1_RVT)                                 0.12 &     2.31 f
+  u2/U876/Y (INVX0_RVT)                                   0.06 &     2.37 r
+  u2/U33/Y (NAND4X1_RVT)                                  0.20 &     2.57 f
+  u2/U805/Y (NAND2X1_RVT)                                 0.24 &     2.80 r
+  u2/U773/Y (AND2X1_RVT)                                  0.20 &     3.00 r
+  u2/U37/Y (INVX0_RVT)                                    0.05 &     3.05 f
+  u2/U295/Y (OA21X1_RVT)                                  0.12 &     3.17 f
+  u2/U294/Y (INVX0_RVT)                                   0.04 &     3.22 r
+  u2/U462/Y (AO22X1_RVT)                                  0.07 &     3.29 r
+  u2/adr0_cnt_reg[14]/D (DFFX1_RVT)                       0.00 &     3.29 r
+  data arrival time                                                  3.29
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  u2/adr0_cnt_reg[14]/CLK (DFFX1_RVT)                     0.00       9.80 r
+  library setup time                                     -0.06       9.74
+  data required time                                                 9.74
+  --------------------------------------------------------------------------
+  data required time                                                 9.74
+  data arrival time                                                 -3.29
+  --------------------------------------------------------------------------
+  slack (MET)                                                        6.45
+
+
+  Startpoint: u2/state_reg[4]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u2/mast0_adr_reg[9]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u2/state_reg[4]/CLK (DFFASRX2_RVT)                      0.00       0.00 r
+  u2/state_reg[4]/Q (DFFASRX2_RVT)                        0.23       0.23 f
+  u2/U396/Y (OR2X1_RVT)                                   0.07 &     0.30 f
+  u2/U380/Y (INVX0_RVT)                                   0.04 &     0.34 r
+  u2/U307/Y (AND3X1_RVT)                                  0.07 &     0.41 r
+  u2/U355/Y (AND2X1_RVT)                                  0.05 &     0.47 r
+  u2/U718/Y (NAND4X1_RVT)                                 0.18 &     0.64 f
+  u2/dma_busy (wb_dma_de)                                 0.00       0.64 f
+  u1/dma_busy (wb_dma_ch_sel_0_1_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0)
+                                                          0.00       0.64 f
+  u1/U3/Y (INVX0_RVT)                                     0.12 &     0.76 r
+  u1/U799/Y (AO22X1_RVT)                                  0.15 &     0.91 r
+  u1/U164/Y (DELLN1X2_RVT)                                0.26 &     1.17 r
+  u1/U2410/Y (AND2X1_RVT)                                 0.06 &     1.23 r
+  u1/U1969/Y (NBUFFX2_RVT)                                0.05 &     1.28 r
+  u1/U2034/Y (NBUFFX2_RVT)                                0.05 &     1.33 r
+  u1/U1460/Y (NBUFFX2_RVT)                                0.05 &     1.38 r
+  u1/U1449/Y (AND2X1_RVT)                                 0.06 &     1.44 r
+  u1/U1157/Y (NBUFFX2_RVT)                                0.05 &     1.49 r
+  u1/U2022/Y (AND2X2_RVT)                                 0.14 c     1.63 r
+  u1/U240/Y (NBUFFX2_RVT)                                 0.18 c     1.81 r
+  u1/U241/Y (INVX1_RVT)                                   0.12 c     1.93 f
+  u1/U2221/Y (OA221X1_RVT)                                0.18 &     2.11 f
+  u1/U2219/Y (AND4X1_RVT)                                 0.15 &     2.26 f
+  u1/U2807/Y (NAND2X0_RVT)                                0.08 &     2.33 r
+  u1/ndr (wb_dma_ch_sel_0_1_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0)
+                                                          0.00       2.33 r
+  u2/nd (wb_dma_de)                                       0.00       2.33 r
+  u2/U377/Y (NBUFFX2_RVT)                                 0.10 &     2.43 r
+  u2/U302/Y (NBUFFX2_RVT)                                 0.07 &     2.50 r
+  u2/U290/Y (NAND2X0_RVT)                                 0.06 &     2.56 f
+  u2/U356/Y (NAND4X0_RVT)                                 0.08 &     2.64 r
+  u2/U85/Y (NBUFFX2_RVT)                                  0.08 &     2.72 r
+  u2/U411/Y (INVX0_RVT)                                   0.08 &     2.80 f
+  u2/U905/Y (AND2X1_RVT)                                  0.22 &     3.02 f
+  u2/U889/Y (AO221X1_RVT)                                 0.23 &     3.26 f
+  u2/mast0_adr_reg[9]/D (DFFX1_RVT)                       0.00 &     3.26 f
+  data arrival time                                                  3.26
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  u2/mast0_adr_reg[9]/CLK (DFFX1_RVT)                     0.00       9.80 r
+  library setup time                                     -0.09       9.71
+  data required time                                                 9.71
+  --------------------------------------------------------------------------
+  data required time                                                 9.71
+  data arrival time                                                 -3.26
+  --------------------------------------------------------------------------
+  slack (MET)                                                        6.45
+
+
+  Startpoint: u2/state_reg[4]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u2/mast0_adr_reg[3]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u2/state_reg[4]/CLK (DFFASRX2_RVT)                      0.00       0.00 r
+  u2/state_reg[4]/Q (DFFASRX2_RVT)                        0.23       0.23 f
+  u2/U396/Y (OR2X1_RVT)                                   0.07 &     0.30 f
+  u2/U380/Y (INVX0_RVT)                                   0.04 &     0.34 r
+  u2/U307/Y (AND3X1_RVT)                                  0.07 &     0.41 r
+  u2/U355/Y (AND2X1_RVT)                                  0.05 &     0.47 r
+  u2/U718/Y (NAND4X1_RVT)                                 0.18 &     0.64 f
+  u2/dma_busy (wb_dma_de)                                 0.00       0.64 f
+  u1/dma_busy (wb_dma_ch_sel_0_1_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0)
+                                                          0.00       0.64 f
+  u1/U3/Y (INVX0_RVT)                                     0.12 &     0.76 r
+  u1/U799/Y (AO22X1_RVT)                                  0.15 &     0.91 r
+  u1/U164/Y (DELLN1X2_RVT)                                0.26 &     1.17 r
+  u1/U2410/Y (AND2X1_RVT)                                 0.06 &     1.23 r
+  u1/U1969/Y (NBUFFX2_RVT)                                0.05 &     1.28 r
+  u1/U2034/Y (NBUFFX2_RVT)                                0.05 &     1.33 r
+  u1/U1460/Y (NBUFFX2_RVT)                                0.05 &     1.38 r
+  u1/U1449/Y (AND2X1_RVT)                                 0.06 &     1.44 r
+  u1/U1157/Y (NBUFFX2_RVT)                                0.05 &     1.49 r
+  u1/U2022/Y (AND2X2_RVT)                                 0.14 c     1.63 r
+  u1/U240/Y (NBUFFX2_RVT)                                 0.18 c     1.81 r
+  u1/U241/Y (INVX1_RVT)                                   0.12 c     1.93 f
+  u1/U2221/Y (OA221X1_RVT)                                0.18 &     2.11 f
+  u1/U2219/Y (AND4X1_RVT)                                 0.15 &     2.26 f
+  u1/U2807/Y (NAND2X0_RVT)                                0.08 &     2.33 r
+  u1/ndr (wb_dma_ch_sel_0_1_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0)
+                                                          0.00       2.33 r
+  u2/nd (wb_dma_de)                                       0.00       2.33 r
+  u2/U377/Y (NBUFFX2_RVT)                                 0.10 &     2.43 r
+  u2/U302/Y (NBUFFX2_RVT)                                 0.07 &     2.50 r
+  u2/U290/Y (NAND2X0_RVT)                                 0.06 &     2.56 f
+  u2/U356/Y (NAND4X0_RVT)                                 0.08 &     2.64 r
+  u2/U85/Y (NBUFFX2_RVT)                                  0.08 &     2.72 r
+  u2/U411/Y (INVX0_RVT)                                   0.08 &     2.80 f
+  u2/U905/Y (AND2X1_RVT)                                  0.22 &     3.02 f
+  u2/U545/Y (AO221X1_RVT)                                 0.23 &     3.25 f
+  u2/mast0_adr_reg[3]/D (DFFX1_RVT)                       0.00 &     3.25 f
+  data arrival time                                                  3.25
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  u2/mast0_adr_reg[3]/CLK (DFFX1_RVT)                     0.00       9.80 r
+  library setup time                                     -0.09       9.71
+  data required time                                                 9.71
+  --------------------------------------------------------------------------
+  data required time                                                 9.71
+  data arrival time                                                 -3.25
+  --------------------------------------------------------------------------
+  slack (MET)                                                        6.46
+
+
+  Startpoint: u2/state_reg[4]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u2/mast0_adr_reg[10]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u2/state_reg[4]/CLK (DFFASRX2_RVT)                      0.00       0.00 r
+  u2/state_reg[4]/Q (DFFASRX2_RVT)                        0.23       0.23 f
+  u2/U396/Y (OR2X1_RVT)                                   0.07 &     0.30 f
+  u2/U380/Y (INVX0_RVT)                                   0.04 &     0.34 r
+  u2/U307/Y (AND3X1_RVT)                                  0.07 &     0.41 r
+  u2/U355/Y (AND2X1_RVT)                                  0.05 &     0.47 r
+  u2/U718/Y (NAND4X1_RVT)                                 0.18 &     0.64 f
+  u2/dma_busy (wb_dma_de)                                 0.00       0.64 f
+  u1/dma_busy (wb_dma_ch_sel_0_1_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0)
+                                                          0.00       0.64 f
+  u1/U3/Y (INVX0_RVT)                                     0.12 &     0.76 r
+  u1/U799/Y (AO22X1_RVT)                                  0.15 &     0.91 r
+  u1/U164/Y (DELLN1X2_RVT)                                0.26 &     1.17 r
+  u1/U2410/Y (AND2X1_RVT)                                 0.06 &     1.23 r
+  u1/U1969/Y (NBUFFX2_RVT)                                0.05 &     1.28 r
+  u1/U2034/Y (NBUFFX2_RVT)                                0.05 &     1.33 r
+  u1/U1460/Y (NBUFFX2_RVT)                                0.05 &     1.38 r
+  u1/U1449/Y (AND2X1_RVT)                                 0.06 &     1.44 r
+  u1/U1157/Y (NBUFFX2_RVT)                                0.05 &     1.49 r
+  u1/U2022/Y (AND2X2_RVT)                                 0.14 c     1.63 r
+  u1/U240/Y (NBUFFX2_RVT)                                 0.18 c     1.81 r
+  u1/U241/Y (INVX1_RVT)                                   0.12 c     1.93 f
+  u1/U2221/Y (OA221X1_RVT)                                0.18 &     2.11 f
+  u1/U2219/Y (AND4X1_RVT)                                 0.15 &     2.26 f
+  u1/U2807/Y (NAND2X0_RVT)                                0.08 &     2.33 r
+  u1/ndr (wb_dma_ch_sel_0_1_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0)
+                                                          0.00       2.33 r
+  u2/nd (wb_dma_de)                                       0.00       2.33 r
+  u2/U377/Y (NBUFFX2_RVT)                                 0.10 &     2.43 r
+  u2/U302/Y (NBUFFX2_RVT)                                 0.07 &     2.50 r
+  u2/U290/Y (NAND2X0_RVT)                                 0.06 &     2.56 f
+  u2/U356/Y (NAND4X0_RVT)                                 0.08 &     2.64 r
+  u2/U85/Y (NBUFFX2_RVT)                                  0.08 &     2.72 r
+  u2/U411/Y (INVX0_RVT)                                   0.08 &     2.80 f
+  u2/U905/Y (AND2X1_RVT)                                  0.22 &     3.02 f
+  u2/U890/Y (AO221X1_RVT)                                 0.23 &     3.25 f
+  u2/mast0_adr_reg[10]/D (DFFX1_RVT)                      0.00 &     3.25 f
+  data arrival time                                                  3.25
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  u2/mast0_adr_reg[10]/CLK (DFFX1_RVT)                    0.00       9.80 r
+  library setup time                                     -0.09       9.71
+  data required time                                                 9.71
+  --------------------------------------------------------------------------
+  data required time                                                 9.71
+  data arrival time                                                 -3.25
+  --------------------------------------------------------------------------
+  slack (MET)                                                        6.46
+
+
+  Startpoint: u2/state_reg[4]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u2/mast0_adr_reg[4]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u2/state_reg[4]/CLK (DFFASRX2_RVT)                      0.00       0.00 r
+  u2/state_reg[4]/Q (DFFASRX2_RVT)                        0.23       0.23 f
+  u2/U396/Y (OR2X1_RVT)                                   0.07 &     0.30 f
+  u2/U380/Y (INVX0_RVT)                                   0.04 &     0.34 r
+  u2/U307/Y (AND3X1_RVT)                                  0.07 &     0.41 r
+  u2/U355/Y (AND2X1_RVT)                                  0.05 &     0.47 r
+  u2/U718/Y (NAND4X1_RVT)                                 0.18 &     0.64 f
+  u2/dma_busy (wb_dma_de)                                 0.00       0.64 f
+  u1/dma_busy (wb_dma_ch_sel_0_1_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0)
+                                                          0.00       0.64 f
+  u1/U3/Y (INVX0_RVT)                                     0.12 &     0.76 r
+  u1/U799/Y (AO22X1_RVT)                                  0.15 &     0.91 r
+  u1/U164/Y (DELLN1X2_RVT)                                0.26 &     1.17 r
+  u1/U2410/Y (AND2X1_RVT)                                 0.06 &     1.23 r
+  u1/U1969/Y (NBUFFX2_RVT)                                0.05 &     1.28 r
+  u1/U2034/Y (NBUFFX2_RVT)                                0.05 &     1.33 r
+  u1/U1460/Y (NBUFFX2_RVT)                                0.05 &     1.38 r
+  u1/U1449/Y (AND2X1_RVT)                                 0.06 &     1.44 r
+  u1/U1157/Y (NBUFFX2_RVT)                                0.05 &     1.49 r
+  u1/U2022/Y (AND2X2_RVT)                                 0.14 c     1.63 r
+  u1/U240/Y (NBUFFX2_RVT)                                 0.18 c     1.81 r
+  u1/U241/Y (INVX1_RVT)                                   0.12 c     1.93 f
+  u1/U2221/Y (OA221X1_RVT)                                0.18 &     2.11 f
+  u1/U2219/Y (AND4X1_RVT)                                 0.15 &     2.26 f
+  u1/U2807/Y (NAND2X0_RVT)                                0.08 &     2.33 r
+  u1/ndr (wb_dma_ch_sel_0_1_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0)
+                                                          0.00       2.33 r
+  u2/nd (wb_dma_de)                                       0.00       2.33 r
+  u2/U377/Y (NBUFFX2_RVT)                                 0.10 &     2.43 r
+  u2/U302/Y (NBUFFX2_RVT)                                 0.07 &     2.50 r
+  u2/U290/Y (NAND2X0_RVT)                                 0.06 &     2.56 f
+  u2/U356/Y (NAND4X0_RVT)                                 0.08 &     2.64 r
+  u2/U85/Y (NBUFFX2_RVT)                                  0.08 &     2.72 r
+  u2/U411/Y (INVX0_RVT)                                   0.08 &     2.80 f
+  u2/U905/Y (AND2X1_RVT)                                  0.22 &     3.02 f
+  u2/U726/Y (AO221X1_RVT)                                 0.23 &     3.25 f
+  u2/mast0_adr_reg[4]/D (DFFX1_RVT)                       0.00 &     3.25 f
+  data arrival time                                                  3.25
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  u2/mast0_adr_reg[4]/CLK (DFFX1_RVT)                     0.00       9.80 r
+  library setup time                                     -0.09       9.71
+  data required time                                                 9.71
+  --------------------------------------------------------------------------
+  data required time                                                 9.71
+  data arrival time                                                 -3.25
+  --------------------------------------------------------------------------
+  slack (MET)                                                        6.46
+
+
+  Startpoint: u2/state_reg[4]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u2/mast0_adr_reg[8]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u2/state_reg[4]/CLK (DFFASRX2_RVT)                      0.00       0.00 r
+  u2/state_reg[4]/Q (DFFASRX2_RVT)                        0.23       0.23 f
+  u2/U396/Y (OR2X1_RVT)                                   0.07 &     0.30 f
+  u2/U380/Y (INVX0_RVT)                                   0.04 &     0.34 r
+  u2/U307/Y (AND3X1_RVT)                                  0.07 &     0.41 r
+  u2/U355/Y (AND2X1_RVT)                                  0.05 &     0.47 r
+  u2/U718/Y (NAND4X1_RVT)                                 0.18 &     0.64 f
+  u2/dma_busy (wb_dma_de)                                 0.00       0.64 f
+  u1/dma_busy (wb_dma_ch_sel_0_1_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0)
+                                                          0.00       0.64 f
+  u1/U3/Y (INVX0_RVT)                                     0.12 &     0.76 r
+  u1/U799/Y (AO22X1_RVT)                                  0.15 &     0.91 r
+  u1/U164/Y (DELLN1X2_RVT)                                0.26 &     1.17 r
+  u1/U2410/Y (AND2X1_RVT)                                 0.06 &     1.23 r
+  u1/U1969/Y (NBUFFX2_RVT)                                0.05 &     1.28 r
+  u1/U2034/Y (NBUFFX2_RVT)                                0.05 &     1.33 r
+  u1/U1460/Y (NBUFFX2_RVT)                                0.05 &     1.38 r
+  u1/U1449/Y (AND2X1_RVT)                                 0.06 &     1.44 r
+  u1/U1157/Y (NBUFFX2_RVT)                                0.05 &     1.49 r
+  u1/U2022/Y (AND2X2_RVT)                                 0.14 c     1.63 r
+  u1/U240/Y (NBUFFX2_RVT)                                 0.18 c     1.81 r
+  u1/U241/Y (INVX1_RVT)                                   0.12 c     1.93 f
+  u1/U2221/Y (OA221X1_RVT)                                0.18 &     2.11 f
+  u1/U2219/Y (AND4X1_RVT)                                 0.15 &     2.26 f
+  u1/U2807/Y (NAND2X0_RVT)                                0.08 &     2.33 r
+  u1/ndr (wb_dma_ch_sel_0_1_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0)
+                                                          0.00       2.33 r
+  u2/nd (wb_dma_de)                                       0.00       2.33 r
+  u2/U377/Y (NBUFFX2_RVT)                                 0.10 &     2.43 r
+  u2/U302/Y (NBUFFX2_RVT)                                 0.07 &     2.50 r
+  u2/U290/Y (NAND2X0_RVT)                                 0.06 &     2.56 f
+  u2/U356/Y (NAND4X0_RVT)                                 0.08 &     2.64 r
+  u2/U85/Y (NBUFFX2_RVT)                                  0.08 &     2.72 r
+  u2/U411/Y (INVX0_RVT)                                   0.08 &     2.80 f
+  u2/U905/Y (AND2X1_RVT)                                  0.22 &     3.02 f
+  u2/U888/Y (AO221X1_RVT)                                 0.23 &     3.25 f
+  u2/mast0_adr_reg[8]/D (DFFX1_RVT)                       0.00 &     3.25 f
+  data arrival time                                                  3.25
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  u2/mast0_adr_reg[8]/CLK (DFFX1_RVT)                     0.00       9.80 r
+  library setup time                                     -0.09       9.71
+  data required time                                                 9.71
+  --------------------------------------------------------------------------
+  data required time                                                 9.71
+  data arrival time                                                 -3.25
+  --------------------------------------------------------------------------
+  slack (MET)                                                        6.46
+
+
+  Startpoint: u2/state_reg[4]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: wb0s_data_o[8]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u2/state_reg[4]/CLK (DFFASRX2_RVT)                      0.00       0.00 r
+  u2/state_reg[4]/Q (DFFASRX2_RVT)                        0.23       0.23 f
+  u2/U396/Y (OR2X1_RVT)                                   0.07 &     0.30 f
+  u2/U380/Y (INVX0_RVT)                                   0.04 &     0.34 r
+  u2/U307/Y (AND3X1_RVT)                                  0.07 &     0.41 r
+  u2/U355/Y (AND2X1_RVT)                                  0.05 &     0.47 r
+  u2/U718/Y (NAND4X1_RVT)                                 0.18 &     0.64 f
+  u2/dma_busy (wb_dma_de)                                 0.00       0.64 f
+  u1/dma_busy (wb_dma_ch_sel_0_1_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0)
+                                                          0.00       0.64 f
+  u1/U3/Y (INVX0_RVT)                                     0.12 &     0.76 r
+  u1/U799/Y (AO22X1_RVT)                                  0.15 &     0.91 r
+  u1/U164/Y (DELLN1X2_RVT)                                0.26 &     1.17 r
+  u1/U2410/Y (AND2X1_RVT)                                 0.06 &     1.23 r
+  u1/U1969/Y (NBUFFX2_RVT)                                0.05 &     1.28 r
+  u1/U2034/Y (NBUFFX2_RVT)                                0.05 &     1.33 r
+  u1/U1460/Y (NBUFFX2_RVT)                                0.05 &     1.38 r
+  u1/U1449/Y (AND2X1_RVT)                                 0.06 &     1.44 r
+  u1/U1157/Y (NBUFFX2_RVT)                                0.05 &     1.49 r
+  u1/U2022/Y (AND2X2_RVT)                                 0.14 c     1.63 r
+  u1/U240/Y (NBUFFX2_RVT)                                 0.18 c     1.81 r
+  u1/U241/Y (INVX1_RVT)                                   0.12 c     1.93 f
+  u1/U2221/Y (OA221X1_RVT)                                0.18 &     2.11 f
+  u1/U2219/Y (AND4X1_RVT)                                 0.15 &     2.26 f
+  u1/U2807/Y (NAND2X0_RVT)                                0.08 &     2.33 r
+  u1/ndr (wb_dma_ch_sel_0_1_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0)
+                                                          0.00       2.33 r
+  u2/nd (wb_dma_de)                                       0.00       2.33 r
+  u2/U377/Y (NBUFFX2_RVT)                                 0.10 &     2.43 r
+  u2/U320/Y (INVX0_RVT)                                   0.06 &     2.49 f
+  u2/U219/Y (OR2X1_RVT)                                   0.07 &     2.56 f
+  u2/U544/Y (AND2X1_RVT)                                  0.07 &     2.63 f
+  u2/U346/Y (AND2X1_RVT)                                  0.20 &     2.83 f
+  u2/U716/Y (AO222X1_RVT)                                 0.29 &     3.11 f
+  u2/mast0_dout[8] (wb_dma_de)                            0.00       3.11 f
+  u3/mast_din[8] (wb_dma_wb_if_rf_addr0_1)                0.00       3.11 f
+  u3/u0/mast_din[8] (wb_dma_wb_mast_1)                    0.00       3.11 f
+  u3/u0/U69/Y (AO22X1_RVT)                                0.20 c     3.32 f
+  u3/u0/wb_data_o[8] (wb_dma_wb_mast_1)                   0.00       3.32 f
+  u3/wbs_data_o[8] (wb_dma_wb_if_rf_addr0_1)              0.00       3.32 f
+  wb0s_data_o[8] (out)                                    0.01 c     3.33 f
+  data arrival time                                                  3.33
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  output external delay                                  -0.01       9.79
+  data required time                                                 9.79
+  --------------------------------------------------------------------------
+  data required time                                                 9.79
+  data arrival time                                                 -3.33
+  --------------------------------------------------------------------------
+  slack (MET)                                                        6.46
+
+
+1

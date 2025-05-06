@@ -1,0 +1,56 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : usb_phy
+Version: M-2016.12-SP1
+Date   : Tue Apr 15 10:33:39 2025
+****************************************
+
+
+   min_delay/hold ('clk' group)
+
+                             Required        Actual
+   Endpoint                 Path Delay     Path Delay        Slack
+   -----------------------------------------------------------------
+   i_rx_phy/rxd_s0_reg/D        0.20           0.02 f        -0.17  (VIOLATED)
+   i_rx_phy/rxdn_s0_reg/D       0.20           0.02 f        -0.17  (VIOLATED)
+   i_rx_phy/rxdp_s0_reg/D       0.20           0.02 f        -0.17  (VIOLATED)
+   i_tx_phy/hold_reg_reg[0]/D
+                                0.19           0.09 f        -0.10  (VIOLATED)
+   i_tx_phy/hold_reg_reg[1]/D
+                                0.19           0.09 f        -0.10  (VIOLATED)
+   i_tx_phy/hold_reg_reg[2]/D
+                                0.19           0.09 f        -0.10  (VIOLATED)
+   i_tx_phy/hold_reg_reg[3]/D
+                                0.19           0.09 f        -0.10  (VIOLATED)
+   i_tx_phy/hold_reg_reg[4]/D
+                                0.19           0.09 f        -0.10  (VIOLATED)
+   i_tx_phy/hold_reg_reg[5]/D
+                                0.19           0.09 f        -0.10  (VIOLATED)
+   i_tx_phy/hold_reg_reg[6]/D
+                                0.19           0.09 f        -0.10  (VIOLATED)
+   i_tx_phy/hold_reg_reg[7]/D
+                                0.18           0.10 f        -0.08  (VIOLATED)
+   TxReady_o                    0.19           0.14 r        -0.05  (VIOLATED)
+   RxError_o                    0.19           0.14 r        -0.05  (VIOLATED)
+   txdn                         0.19           0.16 r        -0.03  (VIOLATED)
+   txdp                         0.19           0.16 r        -0.03  (VIOLATED)
+   DataIn_o[0]                  0.19           0.16 r        -0.03  (VIOLATED)
+   i_rx_phy/fs_ce_reg/D         0.18           0.16 f        -0.02  (VIOLATED)
+   usb_rst                      0.19           0.17 r        -0.02  (VIOLATED)
+   i_rx_phy/fs_ce_r2_reg/D      0.18           0.17 f        -0.01  (VIOLATED)
+   RxValid_o                    0.19           0.18 r        -0.01  (VIOLATED)
+   i_tx_phy/txdn_reg/D          0.19           0.19 f         0.00  (VIOLATED: increase significant digits)
+
+
+   max_area
+
+                             Required        Actual
+   Design                      Area           Area           Slack
+   -----------------------------------------------------------------
+   usb_phy                      0.00        1326.98       -1326.98  (VIOLATED)
+
+
+1

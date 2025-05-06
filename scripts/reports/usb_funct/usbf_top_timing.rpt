@@ -1,0 +1,488 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 10
+Design : usbf_top
+Version: M-2016.12-SP1
+Date   : Tue Apr 15 10:33:25 2025
+****************************************
+
+Operating Conditions: ss0p95v25c   Library: saed32rvt_ss0p95v25c
+Wire Load Model Mode: enclosed
+
+  Startpoint: wb_addr_i[3]
+              (input port clocked by clk)
+  Endpoint: u4/dout_reg[9]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  usbf_top           35000                 saed32rvt_ss0p95v25c
+  usbf_ep_rf_1       8000                  saed32rvt_ss0p95v25c
+  usbf_rf            16000                 saed32rvt_ss0p95v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 r
+  wb_addr_i[3] (in)                        0.00       0.01 r
+  u5/wb_addr_i[3] (usbf_wb)                0.00       0.01 r
+  u5/ma_adr[3] (usbf_wb)                   0.00       0.01 r
+  u4/adr[1] (usbf_rf)                      0.00       0.01 r
+  u4/u2/adr[1] (usbf_ep_rf_1)              0.00       0.01 r
+  u4/u2/U105/Y (NAND2X0_RVT)               7.30       7.31 f
+  u4/u2/U38/Y (INVX1_RVT)                  0.42       7.74 r
+  u4/u2/U448/Y (AO222X1_RVT)               1.74       9.48 r
+  u4/u2/dout[9] (usbf_ep_rf_1)             0.00       9.48 r
+  u4/U716/Y (AO22X1_RVT)                   0.08       9.55 r
+  u4/U731/Y (AOI221X1_RVT)                 0.10       9.65 f
+  u4/U730/Y (NAND2X0_RVT)                  0.05       9.70 r
+  u4/dout_reg[9]/D (DFFX1_RVT)             0.01       9.71 r
+  data arrival time                                   9.71
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  u4/dout_reg[9]/CLK (DFFX1_RVT)           0.00       9.80 r
+  library setup time                      -0.06       9.74
+  data required time                                  9.74
+  -----------------------------------------------------------
+  data required time                                  9.74
+  data arrival time                                  -9.71
+  -----------------------------------------------------------
+  slack (MET)                                         0.03
+
+
+  Startpoint: wb_addr_i[3]
+              (input port clocked by clk)
+  Endpoint: u4/dout_reg[11]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  usbf_top           35000                 saed32rvt_ss0p95v25c
+  usbf_ep_rf_1       8000                  saed32rvt_ss0p95v25c
+  usbf_rf            16000                 saed32rvt_ss0p95v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 r
+  wb_addr_i[3] (in)                        0.00       0.01 r
+  u5/wb_addr_i[3] (usbf_wb)                0.00       0.01 r
+  u5/ma_adr[3] (usbf_wb)                   0.00       0.01 r
+  u4/adr[1] (usbf_rf)                      0.00       0.01 r
+  u4/u2/adr[1] (usbf_ep_rf_1)              0.00       0.01 r
+  u4/u2/U105/Y (NAND2X0_RVT)               7.30       7.31 f
+  u4/u2/U38/Y (INVX1_RVT)                  0.42       7.74 r
+  u4/u2/U485/Y (AO222X1_RVT)               1.74       9.48 r
+  u4/u2/dout[11] (usbf_ep_rf_1)            0.00       9.48 r
+  u4/U148/Y (AO22X1_RVT)                   0.08       9.55 r
+  u4/U735/Y (AOI221X1_RVT)                 0.10       9.65 f
+  u4/U734/Y (NAND2X0_RVT)                  0.05       9.70 r
+  u4/dout_reg[11]/D (DFFX1_RVT)            0.01       9.71 r
+  data arrival time                                   9.71
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  u4/dout_reg[11]/CLK (DFFX1_RVT)          0.00       9.80 r
+  library setup time                      -0.06       9.74
+  data required time                                  9.74
+  -----------------------------------------------------------
+  data required time                                  9.74
+  data arrival time                                  -9.71
+  -----------------------------------------------------------
+  slack (MET)                                         0.03
+
+
+  Startpoint: wb_addr_i[3]
+              (input port clocked by clk)
+  Endpoint: u4/dout_reg[15]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  usbf_top           35000                 saed32rvt_ss0p95v25c
+  usbf_ep_rf_1       8000                  saed32rvt_ss0p95v25c
+  usbf_rf            16000                 saed32rvt_ss0p95v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 r
+  wb_addr_i[3] (in)                        0.00       0.01 r
+  u5/wb_addr_i[3] (usbf_wb)                0.00       0.01 r
+  u5/ma_adr[3] (usbf_wb)                   0.00       0.01 r
+  u4/adr[1] (usbf_rf)                      0.00       0.01 r
+  u4/u2/adr[1] (usbf_ep_rf_1)              0.00       0.01 r
+  u4/u2/U105/Y (NAND2X0_RVT)               7.30       7.31 f
+  u4/u2/U38/Y (INVX1_RVT)                  0.42       7.74 r
+  u4/u2/U481/Y (AO222X1_RVT)               1.74       9.48 r
+  u4/u2/dout[15] (usbf_ep_rf_1)            0.00       9.48 r
+  u4/U715/Y (AO22X1_RVT)                   0.08       9.55 r
+  u4/U740/Y (AOI221X1_RVT)                 0.10       9.65 f
+  u4/U739/Y (NAND2X0_RVT)                  0.05       9.70 r
+  u4/dout_reg[15]/D (DFFX1_RVT)            0.01       9.71 r
+  data arrival time                                   9.71
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  u4/dout_reg[15]/CLK (DFFX1_RVT)          0.00       9.80 r
+  library setup time                      -0.06       9.74
+  data required time                                  9.74
+  -----------------------------------------------------------
+  data required time                                  9.74
+  data arrival time                                  -9.71
+  -----------------------------------------------------------
+  slack (MET)                                         0.03
+
+
+  Startpoint: wb_addr_i[3]
+              (input port clocked by clk)
+  Endpoint: u4/dout_reg[8]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  usbf_top           35000                 saed32rvt_ss0p95v25c
+  usbf_ep_rf_3       8000                  saed32rvt_ss0p95v25c
+  usbf_rf            16000                 saed32rvt_ss0p95v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 r
+  wb_addr_i[3] (in)                        0.00       0.01 r
+  u5/wb_addr_i[3] (usbf_wb)                0.00       0.01 r
+  u5/ma_adr[3] (usbf_wb)                   0.00       0.01 r
+  u4/adr[1] (usbf_rf)                      0.00       0.01 r
+  u4/u0/adr[1] (usbf_ep_rf_3)              0.00       0.01 r
+  u4/u0/U111/Y (NAND2X0_RVT)               7.30       7.31 f
+  u4/u0/U30/Y (INVX1_RVT)                  0.42       7.74 r
+  u4/u0/U453/Y (AO222X1_RVT)               1.75       9.49 r
+  u4/u0/dout[8] (usbf_ep_rf_3)             0.00       9.49 r
+  u4/U240/Y (AOI221X1_RVT)                 0.15       9.63 f
+  u4/U239/Y (NAND2X0_RVT)                  0.05       9.68 r
+  u4/dout_reg[8]/D (DFFX1_RVT)             0.01       9.69 r
+  data arrival time                                   9.69
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  u4/dout_reg[8]/CLK (DFFX1_RVT)           0.00       9.80 r
+  library setup time                      -0.06       9.74
+  data required time                                  9.74
+  -----------------------------------------------------------
+  data required time                                  9.74
+  data arrival time                                  -9.69
+  -----------------------------------------------------------
+  slack (MET)                                         0.05
+
+
+  Startpoint: wb_addr_i[3]
+              (input port clocked by clk)
+  Endpoint: u4/dout_reg[12]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  usbf_top           35000                 saed32rvt_ss0p95v25c
+  usbf_ep_rf_3       8000                  saed32rvt_ss0p95v25c
+  usbf_rf            16000                 saed32rvt_ss0p95v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 r
+  wb_addr_i[3] (in)                        0.00       0.01 r
+  u5/wb_addr_i[3] (usbf_wb)                0.00       0.01 r
+  u5/ma_adr[3] (usbf_wb)                   0.00       0.01 r
+  u4/adr[1] (usbf_rf)                      0.00       0.01 r
+  u4/u0/adr[1] (usbf_ep_rf_3)              0.00       0.01 r
+  u4/u0/U111/Y (NAND2X0_RVT)               7.30       7.31 f
+  u4/u0/U30/Y (INVX1_RVT)                  0.42       7.74 r
+  u4/u0/U485/Y (AO222X1_RVT)               1.75       9.49 r
+  u4/u0/dout[12] (usbf_ep_rf_3)            0.00       9.49 r
+  u4/U737/Y (AOI221X1_RVT)                 0.15       9.63 f
+  u4/U736/Y (NAND2X0_RVT)                  0.05       9.68 r
+  u4/dout_reg[12]/D (DFFX1_RVT)            0.01       9.69 r
+  data arrival time                                   9.69
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  u4/dout_reg[12]/CLK (DFFX1_RVT)          0.00       9.80 r
+  library setup time                      -0.06       9.74
+  data required time                                  9.74
+  -----------------------------------------------------------
+  data required time                                  9.74
+  data arrival time                                  -9.69
+  -----------------------------------------------------------
+  slack (MET)                                         0.05
+
+
+  Startpoint: wb_addr_i[17]
+              (input port clocked by clk)
+  Endpoint: sram_adr_o[4]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  usbf_top           35000                 saed32rvt_ss0p95v25c
+  usbf_wb            8000                  saed32rvt_ss0p95v25c
+  usbf_mem_arb_SSRAM_HADR14
+                     ForQA                 saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.01       0.01 r
+  wb_addr_i[17] (in)                                      0.00       0.01 r
+  u5/wb_addr_i[17] (usbf_wb)                              0.00       0.01 r
+  u5/U18/Y (INVX1_RVT)                                    0.04       0.05 f
+  u5/U8/Y (INVX1_RVT)                                     0.59       0.63 r
+  u5/U22/Y (NAND3X0_RVT)                                  3.77       4.41 f
+  u5/U9/Y (INVX1_RVT)                                     0.20       4.60 r
+  u5/U19/Y (AO221X1_RVT)                                  0.16       4.76 r
+  u5/ma_req (usbf_wb)                                     0.00       4.76 r
+  u2/wreq (usbf_mem_arb_SSRAM_HADR14)                     0.00       4.76 r
+  u2/U14/Y (AO21X1_RVT)                                   0.22       4.99 r
+  u2/U12/Y (INVX1_RVT)                                    0.58       5.57 f
+  u2/U7/Y (INVX1_RVT)                                     0.89       6.46 r
+  u2/U6/Y (INVX1_RVT)                                     0.67       7.13 f
+  u2/U49/Y (AO22X1_RVT)                                   2.60       9.73 f
+  u2/sram_adr[4] (usbf_mem_arb_SSRAM_HADR14)              0.00       9.73 f
+  sram_adr_o[4] (out)                                     0.00       9.73 f
+  data arrival time                                                  9.73
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  output external delay                                  -0.01       9.79
+  data required time                                                 9.79
+  --------------------------------------------------------------------------
+  data required time                                                 9.79
+  data arrival time                                                 -9.73
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.06
+
+
+  Startpoint: wb_addr_i[17]
+              (input port clocked by clk)
+  Endpoint: sram_adr_o[3]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  usbf_top           35000                 saed32rvt_ss0p95v25c
+  usbf_wb            8000                  saed32rvt_ss0p95v25c
+  usbf_mem_arb_SSRAM_HADR14
+                     ForQA                 saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.01       0.01 r
+  wb_addr_i[17] (in)                                      0.00       0.01 r
+  u5/wb_addr_i[17] (usbf_wb)                              0.00       0.01 r
+  u5/U18/Y (INVX1_RVT)                                    0.04       0.05 f
+  u5/U8/Y (INVX1_RVT)                                     0.59       0.63 r
+  u5/U22/Y (NAND3X0_RVT)                                  3.77       4.41 f
+  u5/U9/Y (INVX1_RVT)                                     0.20       4.60 r
+  u5/U19/Y (AO221X1_RVT)                                  0.16       4.76 r
+  u5/ma_req (usbf_wb)                                     0.00       4.76 r
+  u2/wreq (usbf_mem_arb_SSRAM_HADR14)                     0.00       4.76 r
+  u2/U14/Y (AO21X1_RVT)                                   0.22       4.99 r
+  u2/U12/Y (INVX1_RVT)                                    0.58       5.57 f
+  u2/U7/Y (INVX1_RVT)                                     0.89       6.46 r
+  u2/U6/Y (INVX1_RVT)                                     0.67       7.13 f
+  u2/U48/Y (AO22X1_RVT)                                   2.60       9.73 f
+  u2/sram_adr[3] (usbf_mem_arb_SSRAM_HADR14)              0.00       9.73 f
+  sram_adr_o[3] (out)                                     0.00       9.73 f
+  data arrival time                                                  9.73
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  output external delay                                  -0.01       9.79
+  data required time                                                 9.79
+  --------------------------------------------------------------------------
+  data required time                                                 9.79
+  data arrival time                                                 -9.73
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.06
+
+
+  Startpoint: wb_addr_i[17]
+              (input port clocked by clk)
+  Endpoint: sram_adr_o[2]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  usbf_top           35000                 saed32rvt_ss0p95v25c
+  usbf_wb            8000                  saed32rvt_ss0p95v25c
+  usbf_mem_arb_SSRAM_HADR14
+                     ForQA                 saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.01       0.01 r
+  wb_addr_i[17] (in)                                      0.00       0.01 r
+  u5/wb_addr_i[17] (usbf_wb)                              0.00       0.01 r
+  u5/U18/Y (INVX1_RVT)                                    0.04       0.05 f
+  u5/U8/Y (INVX1_RVT)                                     0.59       0.63 r
+  u5/U22/Y (NAND3X0_RVT)                                  3.77       4.41 f
+  u5/U9/Y (INVX1_RVT)                                     0.20       4.60 r
+  u5/U19/Y (AO221X1_RVT)                                  0.16       4.76 r
+  u5/ma_req (usbf_wb)                                     0.00       4.76 r
+  u2/wreq (usbf_mem_arb_SSRAM_HADR14)                     0.00       4.76 r
+  u2/U14/Y (AO21X1_RVT)                                   0.22       4.99 r
+  u2/U12/Y (INVX1_RVT)                                    0.58       5.57 f
+  u2/U7/Y (INVX1_RVT)                                     0.89       6.46 r
+  u2/U6/Y (INVX1_RVT)                                     0.67       7.13 f
+  u2/U47/Y (AO22X1_RVT)                                   2.60       9.73 f
+  u2/sram_adr[2] (usbf_mem_arb_SSRAM_HADR14)              0.00       9.73 f
+  sram_adr_o[2] (out)                                     0.00       9.73 f
+  data arrival time                                                  9.73
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  output external delay                                  -0.01       9.79
+  data required time                                                 9.79
+  --------------------------------------------------------------------------
+  data required time                                                 9.79
+  data arrival time                                                 -9.73
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.06
+
+
+  Startpoint: wb_addr_i[17]
+              (input port clocked by clk)
+  Endpoint: sram_adr_o[1]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  usbf_top           35000                 saed32rvt_ss0p95v25c
+  usbf_wb            8000                  saed32rvt_ss0p95v25c
+  usbf_mem_arb_SSRAM_HADR14
+                     ForQA                 saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.01       0.01 r
+  wb_addr_i[17] (in)                                      0.00       0.01 r
+  u5/wb_addr_i[17] (usbf_wb)                              0.00       0.01 r
+  u5/U18/Y (INVX1_RVT)                                    0.04       0.05 f
+  u5/U8/Y (INVX1_RVT)                                     0.59       0.63 r
+  u5/U22/Y (NAND3X0_RVT)                                  3.77       4.41 f
+  u5/U9/Y (INVX1_RVT)                                     0.20       4.60 r
+  u5/U19/Y (AO221X1_RVT)                                  0.16       4.76 r
+  u5/ma_req (usbf_wb)                                     0.00       4.76 r
+  u2/wreq (usbf_mem_arb_SSRAM_HADR14)                     0.00       4.76 r
+  u2/U14/Y (AO21X1_RVT)                                   0.22       4.99 r
+  u2/U12/Y (INVX1_RVT)                                    0.58       5.57 f
+  u2/U7/Y (INVX1_RVT)                                     0.89       6.46 r
+  u2/U6/Y (INVX1_RVT)                                     0.67       7.13 f
+  u2/U46/Y (AO22X1_RVT)                                   2.60       9.73 f
+  u2/sram_adr[1] (usbf_mem_arb_SSRAM_HADR14)              0.00       9.73 f
+  sram_adr_o[1] (out)                                     0.00       9.73 f
+  data arrival time                                                  9.73
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  output external delay                                  -0.01       9.79
+  data required time                                                 9.79
+  --------------------------------------------------------------------------
+  data required time                                                 9.79
+  data arrival time                                                 -9.73
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.06
+
+
+  Startpoint: wb_addr_i[17]
+              (input port clocked by clk)
+  Endpoint: sram_adr_o[0]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  usbf_top           35000                 saed32rvt_ss0p95v25c
+  usbf_wb            8000                  saed32rvt_ss0p95v25c
+  usbf_mem_arb_SSRAM_HADR14
+                     ForQA                 saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.01       0.01 r
+  wb_addr_i[17] (in)                                      0.00       0.01 r
+  u5/wb_addr_i[17] (usbf_wb)                              0.00       0.01 r
+  u5/U18/Y (INVX1_RVT)                                    0.04       0.05 f
+  u5/U8/Y (INVX1_RVT)                                     0.59       0.63 r
+  u5/U22/Y (NAND3X0_RVT)                                  3.77       4.41 f
+  u5/U9/Y (INVX1_RVT)                                     0.20       4.60 r
+  u5/U19/Y (AO221X1_RVT)                                  0.16       4.76 r
+  u5/ma_req (usbf_wb)                                     0.00       4.76 r
+  u2/wreq (usbf_mem_arb_SSRAM_HADR14)                     0.00       4.76 r
+  u2/U14/Y (AO21X1_RVT)                                   0.22       4.99 r
+  u2/U12/Y (INVX1_RVT)                                    0.58       5.57 f
+  u2/U7/Y (INVX1_RVT)                                     0.89       6.46 r
+  u2/U6/Y (INVX1_RVT)                                     0.67       7.13 f
+  u2/U66/Y (AO22X1_RVT)                                   2.60       9.73 f
+  u2/sram_adr[0] (usbf_mem_arb_SSRAM_HADR14)              0.00       9.73 f
+  sram_adr_o[0] (out)                                     0.00       9.73 f
+  data arrival time                                                  9.73
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  output external delay                                  -0.01       9.79
+  data required time                                                 9.79
+  --------------------------------------------------------------------------
+  data required time                                                 9.79
+  data arrival time                                                 -9.73
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.06
+
+
+1

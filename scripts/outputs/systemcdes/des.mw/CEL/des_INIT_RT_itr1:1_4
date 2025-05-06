@@ -1,0 +1,10 @@
+set_object_boundary -boundary {  { 31.4320 66.0120 } { 41.9200 66.0120 } { 41.9200 44.2760 } { 31.4320 44.2760 } } [get_plan_groups { sbox7 } ]
+set_object_boundary -boundary {  { 20.9440 66.0120 } { 31.4320 66.0120 } { 31.4320 44.2760 } { 20.9440 44.2760 } } [get_plan_groups { sbox5 } ]
+set_object_boundary -boundary {  { 55.9040 82.7320 } { 70.0400 82.7320 } { 70.0400 64.3400 } { 55.9040 64.3400 } } [get_plan_groups { sbox4 } ]
+set_object_boundary -boundary {  { 41.9200 82.7320 } { 55.9040 82.7320 } { 55.9040 64.3400 } { 41.9200 64.3400 } } [get_plan_groups { sbox1 } ]
+set_object_boundary -boundary {  { 25.9600 82.7320 } { 41.9200 82.7320 } { 41.9200 66.0120 } { 25.9600 66.0120 } } [get_plan_groups { sbox2 } ]
+set_object_boundary -boundary {  { 10.0000 82.7320 } { 25.9600 82.7320 } { 25.9600 66.0120 } { 10.0000 66.0120 } } [get_plan_groups { sbox8 } ]
+set_object_boundary -boundary {  { 10.0000 66.0120 } { 20.9440 66.0120 } { 20.9440 44.2760 } { 10.0000 44.2760 } } [get_plan_groups { sbox6 } ]
+set_object_boundary -boundary {  { 70.0400 82.7320 } { 84.6320 82.7320 } { 84.6320 64.3400 } { 70.0400 64.3400 } } [get_plan_groups { sbox3 } ]
+set_object_boundary -boundary {  { 41.9200 64.3400 } { 84.6320 64.3400 } { 84.6320 10.8360 } { 41.9200 10.8360 } } [get_plan_groups { rd1 } ]
+

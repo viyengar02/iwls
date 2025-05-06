@@ -1,0 +1,1342 @@
+Info: [VCS_SAVE_RESTORE_INFO] ASLR (Address Space Layout Randomization) is detected on the machine. To enable $save functionality, ASLR will be switched off and simv re-executed.
+Please use '-no_save' simv switch to avoid this.
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+              Version W-2024.09-SP4-1 for linux64 - Mar 20, 2025 
+
+                    Copyright (c) 1988 - 2025 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+Initializing...
+Current time:       Tue Apr 29 11:29:25 2025
+Hostname:           xunil-03.coe.drexel.edu
+CPU Model:          AMD Opteron(tm) Processor 6344
+CPU Details:        Cores = 24 : Sockets = 2 : Cache Size = 2048 KB : Freq = 2.60 GHz
+OS:                 Linux 3.10.0-1160.119.1.el7.x86_64
+RAM:                125 GB (Free   1 GB)
+Swap:                15 GB (Free  15 GB)
+Work Filesystem:    /home mounted to ozark.coe.drexel.edu:/volume2/XunilNFS2/home
+Tmp Filesystem:     / mounted to /dev/mapper/vg_xunil03-lv_root
+Work Disk:          8034 GB (Free 4330 GB)
+Tmp Disk:           442 GB (Free 136 GB)
+
+CPU Load: 103%, Ram Free: 1 GB, Swap Free: 15 GB, Work Disk Free: 4330 GB, Tmp Disk Free: 136 GB
+# Auto-generated synthesis script for usbf_top
+# Source files from: usb_funct
+lappend search_path ../src/
+. /mnt/class_data/ecec574-w2019/tools/synopsys/syn/W-2024.09-SP4-1/libraries/syn /mnt/class_data/ecec574-w2019/tools/synopsys/syn/W-2024.09-SP4-1/dw/syn_ver /mnt/class_data/ecec574-w2019/tools/synopsys/syn/W-2024.09-SP4-1/dw/sim_ver ../src/
+define_design_lib WORK -path "work"
+1
+# Library setup
+set link_library [ list /mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v125c.db /mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v25c.db /mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95vn40c.db]
+/mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v125c.db /mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v25c.db /mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95vn40c.db
+set target_library [ list /mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v25c.db ]
+/mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v25c.db
+# Analyze all Verilog files
+analyze -library WORK -format verilog ../rtl/usb_funct/usbf_crc16.v
+Running PRESTO HDLC
+Compiling source file ../rtl/usb_funct/usbf_crc16.v
+Opening include file ../rtl/usb_funct/usbf_defines.v
+Presto compilation completed successfully.
+Loading db file '/mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v125c.db'
+Information: Using CCS timing libraries. (TIM-024)
+Warning: Error occured in ccs delay calculation, results may not be accurate.
+Loading db file '/mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v25c.db'
+Loading db file '/mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95vn40c.db'
+1
+analyze -library WORK -format verilog ../rtl/usb_funct/usbf_crc5.v
+Running PRESTO HDLC
+Compiling source file ../rtl/usb_funct/usbf_crc5.v
+Opening include file ../rtl/usb_funct/usbf_defines.v
+Presto compilation completed successfully.
+1
+analyze -library WORK -format verilog ../rtl/usb_funct/usbf_defines.v
+Running PRESTO HDLC
+Compiling source file ../rtl/usb_funct/usbf_defines.v
+Presto compilation completed successfully.
+1
+analyze -library WORK -format verilog ../rtl/usb_funct/usbf_ep_rf.v
+Running PRESTO HDLC
+Compiling source file ../rtl/usb_funct/usbf_ep_rf.v
+Opening include file ../rtl/usb_funct/usbf_defines.v
+Presto compilation completed successfully.
+1
+analyze -library WORK -format verilog ../rtl/usb_funct/usbf_ep_rf_dummy.v
+Running PRESTO HDLC
+Compiling source file ../rtl/usb_funct/usbf_ep_rf_dummy.v
+Opening include file ../rtl/usb_funct/usbf_defines.v
+Presto compilation completed successfully.
+1
+analyze -library WORK -format verilog ../rtl/usb_funct/usbf_idma.v
+Running PRESTO HDLC
+Compiling source file ../rtl/usb_funct/usbf_idma.v
+Opening include file ../rtl/usb_funct/usbf_defines.v
+Warning:  ../rtl/usb_funct/usbf_idma.v:180: Found an unknown pragma 'state_vector'; it will be ignored. (ELAB-994)
+Presto compilation completed successfully.
+1
+analyze -library WORK -format verilog ../rtl/usb_funct/usbf_mem_arb.v
+Running PRESTO HDLC
+Compiling source file ../rtl/usb_funct/usbf_mem_arb.v
+Opening include file ../rtl/usb_funct/usbf_defines.v
+Presto compilation completed successfully.
+1
+analyze -library WORK -format verilog ../rtl/usb_funct/usbf_pa.v
+Running PRESTO HDLC
+Compiling source file ../rtl/usb_funct/usbf_pa.v
+Opening include file ../rtl/usb_funct/usbf_defines.v
+Warning:  ../rtl/usb_funct/usbf_pa.v:144: Found an unknown pragma 'state_vector'; it will be ignored. (ELAB-994)
+Presto compilation completed successfully.
+1
+analyze -library WORK -format verilog ../rtl/usb_funct/usbf_pd.v
+Running PRESTO HDLC
+Compiling source file ../rtl/usb_funct/usbf_pd.v
+Opening include file ../rtl/usb_funct/usbf_defines.v
+Warning:  ../rtl/usb_funct/usbf_pd.v:165: Found an unknown pragma 'state_vector'; it will be ignored. (ELAB-994)
+Presto compilation completed successfully.
+1
+analyze -library WORK -format verilog ../rtl/usb_funct/usbf_pe.v
+Running PRESTO HDLC
+Compiling source file ../rtl/usb_funct/usbf_pe.v
+Opening include file ../rtl/usb_funct/usbf_defines.v
+Warning:  ../rtl/usb_funct/usbf_pe.v:279: Found an unknown pragma 'state_vector'; it will be ignored. (ELAB-994)
+Presto compilation completed successfully.
+1
+analyze -library WORK -format verilog ../rtl/usb_funct/usbf_pl.v
+Running PRESTO HDLC
+Compiling source file ../rtl/usb_funct/usbf_pl.v
+Opening include file ../rtl/usb_funct/usbf_defines.v
+Warning:  ../rtl/usb_funct/usbf_pl.v:384: the undeclared symbol 'send_zero_length' assumed to have the default net type, which is 'wire'. (VER-936)
+Presto compilation completed successfully.
+1
+analyze -library WORK -format verilog ../rtl/usb_funct/usbf_rf.v
+Running PRESTO HDLC
+Compiling source file ../rtl/usb_funct/usbf_rf.v
+Opening include file ../rtl/usb_funct/usbf_defines.v
+Presto compilation completed successfully.
+1
+analyze -library WORK -format verilog ../rtl/usb_funct/usbf_top.v
+Running PRESTO HDLC
+Compiling source file ../rtl/usb_funct/usbf_top.v
+Opening include file ../rtl/usb_funct/usbf_defines.v
+Presto compilation completed successfully.
+1
+analyze -library WORK -format verilog ../rtl/usb_funct/usbf_utmi_if.v
+Running PRESTO HDLC
+Compiling source file ../rtl/usb_funct/usbf_utmi_if.v
+Opening include file ../rtl/usb_funct/usbf_defines.v
+Presto compilation completed successfully.
+1
+analyze -library WORK -format verilog ../rtl/usb_funct/usbf_utmi_ls.v
+Running PRESTO HDLC
+Compiling source file ../rtl/usb_funct/usbf_utmi_ls.v
+Opening include file ../rtl/usb_funct/usbf_defines.v
+Warning:  ../rtl/usb_funct/usbf_utmi_ls.v:164: Found an unknown pragma 'state_vector'; it will be ignored. (ELAB-994)
+Presto compilation completed successfully.
+1
+analyze -library WORK -format verilog ../rtl/usb_funct/usbf_wb.v
+Running PRESTO HDLC
+Compiling source file ../rtl/usb_funct/usbf_wb.v
+Opening include file ../rtl/usb_funct/usbf_defines.v
+Warning:  ../rtl/usb_funct/usbf_wb.v:145: Found an unknown pragma 'state_vector'; it will be ignored. (ELAB-994)
+Presto compilation completed successfully.
+1
+# Elaborate the top design
+elaborate usbf_top
+Loading db file '/mnt/class_data/ecec574-w2019/tools/synopsys/syn/W-2024.09-SP4-1/libraries/syn/gtech.db'
+Loading db file '/mnt/class_data/ecec574-w2019/tools/synopsys/syn/W-2024.09-SP4-1/libraries/syn/standard.sldb'
+  Loading link library 'saed32rvt_ss0p95v125c'
+  Loading link library 'saed32rvt_ss0p95v25c'
+  Loading link library 'saed32rvt_ss0p95vn40c'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+
+Inferred memory devices in process in routine 'usbf_top' in file
+	 ../rtl/usb_funct/usbf_top.v'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|     susp_o_reg      | Flip-flop |   1   |  N  | N  | None  | None  | N  | 262  |
+|   LineState_r_reg   | Flip-flop |   2   |  Y  | N  | None  | None  | N  | 265  |
+|    VStatus_r_reg    | Flip-flop |   8   |  Y  | N  | None  | None  | N  | 268  |
+| suspend_clr_wr_reg  | Flip-flop |   1   |  N  | N  | None  | None  | N  | 280  |
+|  resume_req_r_reg   | Flip-flop |   1   |  N  | N  | None  | None  | N  | 286  |
+==================================================================================
+Presto compilation completed successfully. (usbf_top)
+Module: usbf_top, Ports: 249, Input: 128, Output: 121, Inout: 0
+Module: usbf_top, Registers: 13, Async set/reset: 0, Sync set/reset: 0
+Information: Module usbf_top report end. (ELAB-965)
+Elaborated 1 design.
+Current design is now 'usbf_top'.
+Information: Building the design 'usbf_utmi_if'. (HDL-193)
+
+Inferred memory devices in process in routine 'usbf_utmi_if' in file
+	 ../rtl/usb_funct/usbf_utmi_if.v'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|    rx_valid_reg     | Flip-flop |   1   |  N  | N  | None  | None  | N  | 182  |
+|    rx_active_reg    | Flip-flop |   1   |  N  | N  | None  | None  | N  | 190  |
+|     rx_err_reg      | Flip-flop |   1   |  N  | N  | None  | None  | N  | 198  |
+|     rx_data_reg     | Flip-flop |   8   |  Y  | N  | None  | None  | N  | 203  |
+|     DataOut_reg     | Flip-flop |   8   |  Y  | N  | None  | None  | N  | 211  |
+|    tx_ready_reg     | Flip-flop |   1   |  N  | N  | None  | None  | N  | 216  |
+|    drive_k_r_reg    | Flip-flop |   1   |  N  | N  | None  | None  | N  | 219  |
+|     TxValid_reg     | Flip-flop |   1   |  N  | N  | None  | None  | N  | 226  |
+==================================================================================
+Presto compilation completed successfully. (usbf_utmi_if)
+Module: usbf_utmi_if, Ports: 60, Input: 29, Output: 31, Inout: 0
+Module: usbf_utmi_if, Registers: 22, Async set/reset: 0, Sync set/reset: 0
+Information: Module usbf_utmi_if report end. (ELAB-965)
+Information: Building the design 'usbf_pl' instantiated from design 'usbf_top' with
+	the parameters "14". (HDL-193)
+
+Inferred memory devices in process in routine 'usbf_pl_SSRAM_HADR14' in file
+	 ../rtl/usb_funct/usbf_pl.v'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|  frame_no_we_r_reg  | Flip-flop |   1   |  N  | N  | None  | None  | N  | 273  |
+|   frame_no_r_reg    | Flip-flop |  11   |  Y  | N  | None  | None  | N  | 279  |
+|  frame_no_same_reg  | Flip-flop |   1   |  N  | N  | None  | None  | N  | 286  |
+|     mfm_cnt_reg     | Flip-flop |   4   |  Y  | N  | None  | None  | N  | 292  |
+|  clr_sof_time_reg   | Flip-flop |   1   |  N  | N  | None  | None  | N  | 302  |
+|    sof_time_reg     | Flip-flop |  12   |  Y  | N  | None  | None  | N  | 305  |
+|     hms_cnt_reg     | Flip-flop |   5   |  Y  | N  | None  | None  | N  | 316  |
+|     hms_clk_reg     | Flip-flop |   1   |  N  | N  | None  | None  | N  | 323  |
+==================================================================================
+Presto compilation completed successfully. (usbf_pl_SSRAM_HADR14)
+Module: usbf_pl_SSRAM_HADR14, Ports: 301, Input: 158, Output: 143, Inout: 0
+Module: usbf_pl_SSRAM_HADR14, Registers: 36, Async set/reset: 0, Sync set/reset: 0
+Information: Module usbf_pl_SSRAM_HADR14 report end. (ELAB-965)
+Information: Building the design 'usbf_mem_arb' instantiated from design 'usbf_top' with
+	the parameters "14". (HDL-193)
+
+Inferred memory devices in process in routine 'usbf_mem_arb_SSRAM_HADR14' in file
+	 ../rtl/usb_funct/usbf_mem_arb.v'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|     wack_r_reg      | Flip-flop |   1   |  N  | N  | None  | None  | N  | 190  |
+==================================================================================
+Presto compilation completed successfully. (usbf_mem_arb_SSRAM_HADR14)
+Module: usbf_mem_arb_SSRAM_HADR14, Ports: 248, Input: 133, Output: 115, Inout: 0
+Module: usbf_mem_arb_SSRAM_HADR14, Registers: 1, Async set/reset: 0, Sync set/reset: 0
+Information: Module usbf_mem_arb_SSRAM_HADR14 report end. (ELAB-965)
+Information: Building the design 'usbf_rf'. (HDL-193)
+Warning:  ../rtl/usb_funct/usbf_rf.v:307: Case statement is not a full case. (ELAB-909)
+Warning:  ../rtl/usb_funct/usbf_rf.v:391: Case statement is not a full case. (ELAB-909)
+
+Statistics for case statements in always block in file
+	'../rtl/usb_funct/usbf_rf.v'
+============================================================
+|    Line    |  full/ parallel  |      block location      |
+============================================================
+|    307     |    user/user     | always block at line 305 |
+|    391     |    user/user     | always block at line 390 |
+============================================================
+
+Inferred memory devices in process in routine 'usbf_rf' in file
+	 ../rtl/usb_funct/usbf_rf.v'.
+====================================================================================
+|     Register Name     |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+====================================================================================
+|    int_src_re_reg     | Flip-flop |   1   |  N  | N  | None  | None  | N  | 317  |
+| utmi_vend_stat_r_reg  | Flip-flop |   8   |  Y  | N  | None  | None  | N  | 321  |
+|  utmi_vend_wr_r_reg   | Flip-flop |   1   |  N  | N  | None  | None  | N  | 328  |
+|   utmi_vend_wr_reg    | Flip-flop |   1   |  N  | N  | None  | None  | N  | 336  |
+| utmi_vend_ctrl_r_reg  | Flip-flop |   4   |  Y  | N  | None  | None  | N  | 341  |
+|  utmi_vend_ctrl_reg   | Flip-flop |   4   |  Y  | N  | None  | None  | N  | 344  |
+|  rf_resume_req_r_reg  | Flip-flop |   1   |  N  | N  | None  | None  | N  | 351  |
+|   rf_resume_req_reg   | Flip-flop |   1   |  N  | N  | None  | None  | N  | 359  |
+|     funct_adr_reg     | Flip-flop |   7   |  Y  | N  | None  | None  | N  | 366  |
+|     inta_msk_reg      | Flip-flop |   9   |  Y  | N  | None  | None  | N  | 376  |
+|     intb_msk_reg      | Flip-flop |   9   |  Y  | N  | None  | None  | N  | 376  |
+|       dout_reg        | Flip-flop |  32   |  Y  | N  | None  | None  | N  | 390  |
+|     match_r1_reg      | Flip-flop |   1   |  N  | N  | None  | None  | N  | 455  |
+|        csr_reg        | Flip-flop |  32   |  Y  | N  | None  | None  | N  | 461  |
+|       buf0_reg        | Flip-flop |  32   |  Y  | N  | None  | None  | N  | 494  |
+|       buf1_reg        | Flip-flop |  32   |  Y  | N  | None  | None  | N  | 527  |
+|  dma_in_buf_sz1_reg   | Flip-flop |   1   |  N  | N  | None  | None  | N  | 560  |
+| dma_out_buf_avail_reg | Flip-flop |   1   |  N  | N  | None  | None  | N  | 593  |
+|     attach_r_reg      | Flip-flop |   1   |  N  | N  | None  | None  | N  | 632  |
+|     attach_r1_reg     | Flip-flop |   1   |  N  | N  | None  | None  | N  | 635  |
+|     suspend_r_reg     | Flip-flop |   1   |  N  | N  | None  | None  | N  | 638  |
+|    suspend_r1_reg     | Flip-flop |   1   |  N  | N  | None  | None  | N  | 641  |
+|    usb_reset_r_reg    | Flip-flop |   1   |  N  | N  | None  | None  | N  | 644  |
+|     rx_err_r_reg      | Flip-flop |   1   |  N  | N  | None  | None  | N  | 647  |
+|     nse_err_r_reg     | Flip-flop |   1   |  N  | N  | None  | None  | N  | 650  |
+|   pid_cs_err_r_reg    | Flip-flop |   1   |  N  | N  | None  | None  | N  | 653  |
+|    crc5_err_r_reg     | Flip-flop |   1   |  N  | N  | None  | None  | N  | 656  |
+|     int_srcb_reg      | Flip-flop |   1   |  N  | N  | None  | None  | N  | 667  |
+|     int_srcb_reg      | Flip-flop |   1   |  N  | N  | None  | None  | N  | 678  |
+|     int_srcb_reg      | Flip-flop |   1   |  N  | N  | None  | None  | N  | 689  |
+|     int_srcb_reg      | Flip-flop |   1   |  N  | N  | None  | None  | N  | 700  |
+|     int_srcb_reg      | Flip-flop |   1   |  N  | N  | None  | None  | N  | 711  |
+|     int_srcb_reg      | Flip-flop |   1   |  N  | N  | None  | None  | N  | 722  |
+|     int_srcb_reg      | Flip-flop |   1   |  N  | N  | None  | None  | N  | 733  |
+|     int_srcb_reg      | Flip-flop |   1   |  N  | N  | None  | None  | N  | 744  |
+|     int_srcb_reg      | Flip-flop |   1   |  N  | N  | None  | None  | N  | 755  |
+|     int_srca_reg      | Flip-flop |  16   |  Y  | N  | None  | None  | N  | 763  |
+|       inta_reg        | Flip-flop |   1   |  N  | N  | None  | None  | N  | 796  |
+|       intb_reg        | Flip-flop |   1   |  N  | N  | None  | None  | N  | 799  |
+====================================================================================
+Presto compilation completed successfully. (usbf_rf)
+Module: usbf_rf, Ports: 321, Input: 159, Output: 162, Inout: 0
+Module: usbf_rf, Registers: 213, Async set/reset: 0, Sync set/reset: 0
+Information: Module usbf_rf report end. (ELAB-965)
+Information: Building the design 'usbf_wb'. (HDL-193)
+Warning:  ../rtl/usb_funct/usbf_wb.v:209: Case statement is not a full case. (ELAB-909)
+Warning:  ../rtl/usb_funct/usbf_wb.v:209: Case statement is not a full case. (ELAB-909)
+
+Statistics for case statements in always block in file
+	'../rtl/usb_funct/usbf_wb.v'
+============================================================
+|    Line    |  full/ parallel  |      block location      |
+============================================================
+|    209     |    user/user     | always block at line 200 |
+============================================================
+
+Inferred memory devices in process in routine 'usbf_wb' in file
+	 ../rtl/usb_funct/usbf_wb.v'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|    wb_data_o_reg    | Flip-flop |  32   |  Y  | N  | None  | None  | N  | 164  |
+|    wb_req_s1_reg    | Flip-flop |   1   |  N  | N  | None  | None  | N  | 169  |
+|    wb_ack_s1_reg    | Flip-flop |   1   |  N  | N  | None  | None  | N  | 173  |
+|    wb_ack_o_reg     | Flip-flop |   1   |  N  | N  | None  | None  | N  | 176  |
+|   wb_ack_s1a_reg    | Flip-flop |   1   |  N  | N  | None  | None  | N  | 179  |
+|    wb_ack_s2_reg    | Flip-flop |   1   |  N  | N  | None  | None  | N  | 182  |
+|      state_reg      | Flip-flop |   6   |  Y  | N  | None  | None  | N  | 195  |
+==================================================================================
+Presto compilation completed successfully. (usbf_wb)
+Module: usbf_wb, Ports: 240, Input: 121, Output: 119, Inout: 0
+Module: usbf_wb, Registers: 43, Async set/reset: 0, Sync set/reset: 0
+Information: Module usbf_wb report end. (ELAB-965)
+Information: Building the design 'usbf_utmi_ls'. (HDL-193)
+Warning:  ../rtl/usb_funct/usbf_utmi_ls.v:448: Case statement is not a full case. (ELAB-909)
+Warning:  ../rtl/usb_funct/usbf_utmi_ls.v:448: Case statement is not a full case. (ELAB-909)
+
+Statistics for case statements in always block in file
+	'../rtl/usb_funct/usbf_utmi_ls.v'
+============================================================
+|    Line    |  full/ parallel  |      block location      |
+============================================================
+|    448     |    user/user     | always block at line 419 |
+============================================================
+
+Inferred memory devices in process in routine 'usbf_utmi_ls' in file
+	 ../rtl/usb_funct/usbf_utmi_ls.v'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|     drive_k_reg     | Flip-flop |   1   |  N  | N  | None  | None  | N  | 215  |
+|  resume_req_s1_reg  | Flip-flop |   1   |  N  | N  | None  | None  | N  | 220  |
+|  resume_req_s_reg   | Flip-flop |   1   |  N  | N  | None  | None  | N  | 223  |
+|     mode_hs_reg     | Flip-flop |   1   |  N  | N  | None  | None  | N  | 228  |
+|   usb_suspend_reg   | Flip-flop |   1   |  N  | N  | None  | None  | N  | 233  |
+|  usb_attached_reg   | Flip-flop |   1   |  N  | N  | None  | None  | N  | 238  |
+|     TermSel_reg     | Flip-flop |   1   |  N  | N  | None  | None  | N  | 243  |
+|    XcvSelect_reg    | Flip-flop |   1   |  N  | N  | None  | None  | N  | 248  |
+|     OpMode_reg      | Flip-flop |   2   |  Y  | N  | None  | None  | N  | 253  |
+|    usb_reset_reg    | Flip-flop |   1   |  N  | N  | None  | None  | N  | 258  |
+|  line_state_r_reg   | Flip-flop |   2   |  Y  | N  | None  | None  | N  | 264  |
+|    ls_idle_r_reg    | Flip-flop |   1   |  N  | N  | None  | None  | N  | 277  |
+|    idle_long_reg    | Flip-flop |   1   |  N  | N  | None  | None  | N  | 286  |
+|     ls_k_r_reg      | Flip-flop |   1   |  N  | N  | None  | None  | N  | 295  |
+|     ls_j_r_reg      | Flip-flop |   1   |  N  | N  | None  | None  | N  | 298  |
+|    ls_se0_r_reg     | Flip-flop |   1   |  N  | N  | None  | None  | N  | 301  |
+|     ps_cnt_reg      | Flip-flop |   4   |  Y  | N  | None  | None  | N  | 318  |
+|   ps_cnt_clr_reg    | Flip-flop |   1   |  N  | N  | None  | None  | N  | 322  |
+|    idle_cnt1_reg    | Flip-flop |   8   |  Y  | N  | None  | None  | N  | 326  |
+| idle_cnt1_next_reg  | Flip-flop |   8   |  Y  | N  | None  | None  | N  | 331  |
+|  idle_cnt1_clr_reg  | Flip-flop |   1   |  N  | N  | None  | None  | N  | 334  |
+|  T1_gt_2_5_uS_reg   | Flip-flop |   1   |  N  | N  | None  | None  | N  | 337  |
+|  T1_st_3_0_mS_reg   | Flip-flop |   1   |  N  | N  | None  | None  | N  | 340  |
+|  T1_gt_3_0_mS_reg   | Flip-flop |   1   |  N  | N  | None  | None  | N  | 343  |
+|  T1_gt_5_0_mS_reg   | Flip-flop |   1   |  N  | N  | None  | None  | N  | 349  |
+|      me_ps_reg      | Flip-flop |   8   |  Y  | N  | None  | None  | N  | 356  |
+|  me_ps_2_5_us_reg   | Flip-flop |   1   |  N  | N  | None  | None  | N  | 360  |
+|     me_ps2_reg      | Flip-flop |   8   |  Y  | N  | None  | None  | N  | 364  |
+|  me_ps2_0_5_ms_reg  | Flip-flop |   1   |  N  | N  | None  | None  | N  | 369  |
+|     me_cnt_reg      | Flip-flop |   8   |  Y  | N  | None  | None  | N  | 373  |
+|  T2_gt_100_uS_reg   | Flip-flop |   1   |  N  | N  | None  | None  | N  | 378  |
+|    T2_wakeup_reg    | Flip-flop |   1   |  N  | N  | None  | None  | N  | 381  |
+|  T2_gt_1_0_mS_reg   | Flip-flop |   1   |  N  | N  | None  | None  | N  | 384  |
+|  T2_gt_1_2_mS_reg   | Flip-flop |   1   |  N  | N  | None  | None  | N  | 387  |
+|  me_cnt_100_ms_reg  | Flip-flop |   1   |  N  | N  | None  | None  | N  | 390  |
+|    chirp_cnt_reg    | Flip-flop |   3   |  Y  | N  | None  | None  | N  | 396  |
+| chirp_cnt_is_6_reg  | Flip-flop |   1   |  N  | N  | None  | None  | N  | 401  |
+|      state_reg      | Flip-flop |  15   |  Y  | N  | None  | None  | N  | 412  |
+==================================================================================
+Presto compilation completed successfully. (usbf_utmi_ls)
+Module: usbf_utmi_ls, Ports: 19, Input: 8, Output: 11, Inout: 0
+Module: usbf_utmi_ls, Registers: 94, Async set/reset: 0, Sync set/reset: 0
+Information: Module usbf_utmi_ls report end. (ELAB-965)
+Information: Building the design 'usbf_pd'. (HDL-193)
+Warning:  ../rtl/usb_funct/usbf_pd.v:373: Case statement is not a full case. (ELAB-909)
+Warning:  ../rtl/usb_funct/usbf_pd.v:373: Case statement is not a full case. (ELAB-909)
+
+Statistics for case statements in always block in file
+	'../rtl/usb_funct/usbf_pd.v'
+============================================================
+|    Line    |  full/ parallel  |      block location      |
+============================================================
+|    373     |    user/user     | always block at line 362 |
+============================================================
+
+Inferred memory devices in process in routine 'usbf_pd' in file
+	 ../rtl/usb_funct/usbf_pd.v'.
+===================================================================================
+|    Register Name     |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+===================================================================================
+|       pid_reg        | Flip-flop |   8   |  Y  | N  | None  | None  | N  | 217  |
+|      token0_reg      | Flip-flop |   8   |  Y  | N  | None  | None  | N  | 247  |
+|      token1_reg      | Flip-flop |   8   |  Y  | N  | None  | None  | N  | 250  |
+|  token_valid_r1_reg  | Flip-flop |   1   |  N  | N  | None  | None  | N  | 253  |
+| token_valid_str1_reg | Flip-flop |   1   |  N  | N  | None  | None  | N  | 256  |
+|       rxv1_reg       | Flip-flop |   1   |  N  | N  | None  | None  | N  | 294  |
+|       rxv2_reg       | Flip-flop |   1   |  N  | N  | None  | None  | N  | 305  |
+|   data_valid0_reg    | Flip-flop |   1   |  N  | N  | None  | None  | N  | 313  |
+|        d2_reg        | Flip-flop |   8   |  Y  | N  | None  | None  | N  | 316  |
+|        d1_reg        | Flip-flop |   8   |  Y  | N  | None  | None  | N  | 316  |
+|        d0_reg        | Flip-flop |   8   |  Y  | N  | None  | None  | N  | 316  |
+|   rx_active_r_reg    | Flip-flop |   1   |  N  | N  | None  | None  | N  | 330  |
+|    crc16_sum_reg     | Flip-flop |  16   |  Y  | N  | None  | None  | N  | 335  |
+|      state_reg       | Flip-flop |   4   |  Y  | N  | None  | None  | N  | 357  |
+===================================================================================
+Presto compilation completed successfully. (usbf_pd)
+Module: usbf_pd, Ports: 66, Input: 13, Output: 53, Inout: 0
+Module: usbf_pd, Registers: 74, Async set/reset: 0, Sync set/reset: 0
+Information: Module usbf_pd report end. (ELAB-965)
+Information: Building the design 'usbf_pa'. (HDL-193)
+Warning:  ../rtl/usb_funct/usbf_pa.v:314: Case statement is not a full case. (ELAB-909)
+Warning:  ../rtl/usb_funct/usbf_pa.v:314: Case statement is not a full case. (ELAB-909)
+
+Statistics for case statements in always block in file
+	'../rtl/usb_funct/usbf_pa.v'
+============================================================
+|    Line    |  full/ parallel  |      block location      |
+============================================================
+|    208     |    user/user     | always block at line 207 |
+|    216     |    user/user     | always block at line 215 |
+|    314     |    user/user     | always block at line 305 |
+============================================================
+
+Inferred memory devices in process in routine 'usbf_pa' in file
+	 ../rtl/usb_funct/usbf_pa.v'.
+=====================================================================================
+|     Register Name      |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+=====================================================================================
+| send_zero_length_r_reg | Flip-flop |   1   |  N  | N  | None  | None  | N  | 175  |
+|   zero_length_r_reg    | Flip-flop |   1   |  N  | N  | None  | None  | N  | 181  |
+|    tx_valid_r1_reg     | Flip-flop |   1   |  N  | N  | None  | None  | N  | 189  |
+|     tx_valid_r_reg     | Flip-flop |   1   |  N  | N  | None  | None  | N  | 192  |
+|    send_token_r_reg    | Flip-flop |   1   |  N  | N  | None  | None  | N  | 198  |
+|     tx_first_r_reg     | Flip-flop |   1   |  N  | N  | None  | None  | N  | 245  |
+|    send_data_r_reg     | Flip-flop |   1   |  N  | N  | None  | None  | N  | 251  |
+|    send_data_r2_reg    | Flip-flop |   1   |  N  | N  | None  | None  | N  | 254  |
+|       crc16_reg        | Flip-flop |  16   |  Y  | N  | None  | None  | N  | 261  |
+|       state_reg        | Flip-flop |   5   |  Y  | N  | None  | None  | N  | 300  |
+=====================================================================================
+Presto compilation completed successfully. (usbf_pa)
+Module: usbf_pa, Ports: 30, Input: 18, Output: 12, Inout: 0
+Module: usbf_pa, Registers: 29, Async set/reset: 0, Sync set/reset: 0
+Information: Module usbf_pa report end. (ELAB-965)
+Information: Building the design 'usbf_idma' instantiated from design 'usbf_pl_SSRAM_HADR14' with
+	the parameters "14". (HDL-193)
+Warning:  ../rtl/usb_funct/usbf_idma.v:462: Case statement is not a full case. (ELAB-909)
+Warning:  ../rtl/usb_funct/usbf_idma.v:462: Case statement is not a full case. (ELAB-909)
+
+Statistics for case statements in always block in file
+	'../rtl/usb_funct/usbf_idma.v'
+============================================================
+|    Line    |  full/ parallel  |      block location      |
+============================================================
+|    406     |    user/user     | always block at line 405 |
+|    462     |    user/user     | always block at line 451 |
+============================================================
+
+Inferred memory devices in process in routine 'usbf_idma_SSRAM_HADR14' in file
+	 ../rtl/usb_funct/usbf_idma.v'.
+=====================================================================================
+|     Register Name      |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+=====================================================================================
+|        mwe_reg         | Flip-flop |   1   |  N  | N  | None  | None  | N  | 250  |
+|       mack_r_reg       | Flip-flop |   1   |  N  | N  | None  | None  | N  | 253  |
+|  rx_data_valid_r_reg   | Flip-flop |   1   |  N  | N  | None  | None  | N  | 261  |
+|    rx_data_st_r_reg    | Flip-flop |   8   |  Y  | N  | None  | None  | N  | 264  |
+|   rx_data_done_r_reg   | Flip-flop |   1   |  N  | N  | None  | None  | N  | 267  |
+|  rx_data_done_r2_reg   | Flip-flop |   1   |  N  | N  | None  | None  | N  | 270  |
+|    tx_dma_en_r_reg     | Flip-flop |   1   |  N  | N  | None  | None  | N  | 274  |
+|    rx_dma_en_r_reg     | Flip-flop |   1   |  N  | N  | None  | None  | N  | 277  |
+| send_zero_length_r_reg | Flip-flop |   1   |  N  | N  | None  | None  | N  | 280  |
+|       adr_cw_reg       | Flip-flop |  15   |  Y  | N  | None  | None  | N  | 284  |
+|    last_buf_adr_reg    | Flip-flop |  15   |  Y  | N  | None  | None  | N  | 288  |
+|       adr_cb_reg       | Flip-flop |   3   |  Y  | N  | None  | None  | N  | 302  |
+|       sizd_c_reg       | Flip-flop |  14   |  Y  | N  | None  | None  | N  | 320  |
+|    sizd_is_zero_reg    | Flip-flop |   1   |  N  | N  | None  | None  | N  | 332  |
+|       sizu_c_reg       | Flip-flop |  11   |  Y  | N  | None  | None  | N  | 339  |
+|     idma_done_reg      | Flip-flop |   1   |  N  | N  | None  | None  | N  | 351  |
+|     dtmp_sel_r_reg     | Flip-flop |   1   |  N  | N  | None  | None  | N  | 359  |
+|       dtmp_r_reg       | Flip-flop |  32   |  Y  | N  | None  | None  | N  | 363  |
+|     word_done_reg      | Flip-flop |   1   |  N  | N  | None  | None  | N  | 374  |
+|    word_done_r_reg     | Flip-flop |   1   |  N  | N  | None  | None  | N  | 377  |
+|       dout_r_reg       | Flip-flop |  32   |  Y  | N  | None  | None  | N  | 381  |
+|      wr_last_reg       | Flip-flop |   1   |  N  | N  | None  | None  | N  | 384  |
+|     wr_done_r_reg      | Flip-flop |   1   |  N  | N  | None  | None  | N  | 387  |
+|      wr_done_reg       | Flip-flop |   1   |  N  | N  | None  | None  | N  | 390  |
+|      rd_buf0_reg       | Flip-flop |  32   |  Y  | N  | None  | None  | N  | 399  |
+|      rd_buf1_reg       | Flip-flop |  32   |  Y  | N  | None  | None  | N  | 402  |
+|    send_data_r_reg     | Flip-flop |   1   |  N  | N  | None  | None  | N  | 425  |
+|       state_reg        | Flip-flop |   8   |  Y  | N  | None  | None  | N  | 446  |
+=====================================================================================
+Presto compilation completed successfully. (usbf_idma_SSRAM_HADR14)
+Module: usbf_idma_SSRAM_HADR14, Ports: 166, Input: 96, Output: 70, Inout: 0
+Module: usbf_idma_SSRAM_HADR14, Registers: 219, Async set/reset: 0, Sync set/reset: 0
+Information: Module usbf_idma_SSRAM_HADR14 report end. (ELAB-965)
+Information: Building the design 'usbf_pe' instantiated from design 'usbf_pl_SSRAM_HADR14' with
+	the parameters "14". (HDL-193)
+Warning:  ../rtl/usb_funct/usbf_pe.v:438: Case statement is not a full case. (ELAB-909)
+Warning:  ../rtl/usb_funct/usbf_pe.v:446: Case statement is not a full case. (ELAB-909)
+Warning:  ../rtl/usb_funct/usbf_pe.v:453: Case statement is not a full case. (ELAB-909)
+Warning:  ../rtl/usb_funct/usbf_pe.v:460: Case statement is not a full case. (ELAB-909)
+Warning:  ../rtl/usb_funct/usbf_pe.v:479: Case statement is not a full case. (ELAB-909)
+Warning:  ../rtl/usb_funct/usbf_pe.v:424: Case statement is not a full case. (ELAB-909)
+Warning:  ../rtl/usb_funct/usbf_pe.v:493: Case statement is not a full case. (ELAB-909)
+Warning:  ../rtl/usb_funct/usbf_pe.v:532: Case statement is not a full case. (ELAB-909)
+Warning:  ../rtl/usb_funct/usbf_pe.v:501: Case statement is not a full case. (ELAB-909)
+Warning:  ../rtl/usb_funct/usbf_pe.v:845: Case statement is not a full case. (ELAB-909)
+Warning:  ../rtl/usb_funct/usbf_pe.v:424: Case statement is not a full case. (ELAB-909)
+Warning:  ../rtl/usb_funct/usbf_pe.v:438: Case statement is not a full case. (ELAB-909)
+Warning:  ../rtl/usb_funct/usbf_pe.v:446: Case statement is not a full case. (ELAB-909)
+Warning:  ../rtl/usb_funct/usbf_pe.v:453: Case statement is not a full case. (ELAB-909)
+Warning:  ../rtl/usb_funct/usbf_pe.v:460: Case statement is not a full case. (ELAB-909)
+Warning:  ../rtl/usb_funct/usbf_pe.v:479: Case statement is not a full case. (ELAB-909)
+Warning:  ../rtl/usb_funct/usbf_pe.v:493: Case statement is not a full case. (ELAB-909)
+Warning:  ../rtl/usb_funct/usbf_pe.v:501: Case statement is not a full case. (ELAB-909)
+Warning:  ../rtl/usb_funct/usbf_pe.v:532: Case statement is not a full case. (ELAB-909)
+Warning:  ../rtl/usb_funct/usbf_pe.v:845: Case statement is not a full case. (ELAB-909)
+
+Statistics for case statements in always block in file
+	'../rtl/usb_funct/usbf_pe.v'
+============================================================
+|    Line    |  full/ parallel  |      block location      |
+============================================================
+|    424     |    user/user     | always block at line 423 |
+|    438     |    user/user     | always block at line 423 |
+|    446     |    user/user     | always block at line 423 |
+|    453     |    user/user     | always block at line 423 |
+|    460     |    user/user     | always block at line 423 |
+|    479     |    user/user     | always block at line 423 |
+|    493     |    user/user     | always block at line 492 |
+|    501     |    user/user     | always block at line 500 |
+|    532     |    user/user     | always block at line 500 |
+|    845     |    user/user     | always block at line 825 |
+============================================================
+
+Inferred memory devices in process in routine 'usbf_pe_SSRAM_HADR14' in file
+	 ../rtl/usb_funct/usbf_pe.v'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|     buf0_na_reg     | Flip-flop |   1   |  N  | N  | None  | None  | N  | 390  |
+|     buf1_na_reg     | Flip-flop |   1   |  N  | N  | None  | None  | N  | 393  |
+|  buf0_not_aloc_reg  | Flip-flop |   1   |  N  | N  | None  | None  | N  | 397  |
+|  buf1_not_aloc_reg  | Flip-flop |   1   |  N  | N  | None  | None  | N  | 400  |
+|     match_r_reg     | Flip-flop |   1   |  N  | N  | None  | None  | N  | 403  |
+|     nse_err_reg     | Flip-flop |   1   |  N  | N  | None  | None  | N  | 407  |
+|   send_token_reg    | Flip-flop |   1   |  N  | N  | None  | None  | N  | 410  |
+|  token_pid_sel_reg  | Flip-flop |   2   |  Y  | N  | None  | None  | N  | 413  |
+|    next_dpid_reg    | Flip-flop |   2   |  Y  | N  | None  | None  | N  | 423  |
+|    this_dpid_reg    | Flip-flop |   2   |  Y  | N  | None  | None  | N  | 500  |
+|   pid_seq_err_reg   | Flip-flop |   1   |  N  | N  | None  | None  | N  | 545  |
+|    in_token_reg     | Flip-flop |   1   |  N  | N  | None  | None  | N  | 564  |
+|    out_token_reg    | Flip-flop |   1   |  N  | N  | None  | None  | N  | 575  |
+|   setup_token_reg   | Flip-flop |   1   |  N  | N  | None  | None  | N  | 586  |
+|       adr_reg       | Flip-flop |  17   |  Y  | N  | None  | None  | N  | 604  |
+|   buffer_full_reg   | Flip-flop |   1   |  N  | N  | None  | None  | N  | 621  |
+|  buffer_empty_reg   | Flip-flop |   1   |  N  | N  | None  | None  | N  | 626  |
+|   buffer_done_reg   | Flip-flop |   1   |  N  | N  | None  | None  | N  | 630  |
+|   buf0_st_max_reg   | Flip-flop |   1   |  N  | N  | None  | None  | N  | 637  |
+|   buf1_st_max_reg   | Flip-flop |   1   |  N  | N  | None  | None  | N  | 640  |
+|    no_bufs0_reg     | Flip-flop |   1   |  N  | N  | None  | None  | N  | 643  |
+|    no_bufs1_reg     | Flip-flop |   1   |  N  | N  | None  | None  | N  | 647  |
+|    new_sizeb_reg    | Flip-flop |  14   |  Y  | N  | None  | None  | N  | 653  |
+|    new_size_reg     | Flip-flop |  14   |  Y  | N  | None  | None  | N  | 656  |
+|      adr_r_reg      | Flip-flop |  17   |  Y  | N  | None  | None  | N  | 661  |
+|   size_next_r_reg   | Flip-flop |  14   |  Y  | N  | None  | None  | N  | 664  |
+| buffer_overflow_reg | Flip-flop |   1   |  N  | N  | None  | None  | N  | 673  |
+| out_to_small_r_reg  | Flip-flop |   1   |  N  | N  | None  | None  | N  | 678  |
+|  out_to_small_reg   | Flip-flop |   1   |  N  | N  | None  | None  | N  | 681  |
+|    to_small_reg     | Flip-flop |   1   |  N  | N  | None  | None  | N  | 690  |
+|    to_large_reg     | Flip-flop |   1   |  N  | N  | None  | None  | N  | 693  |
+|      idin_reg       | Flip-flop |  15   |  Y  | N  | None  | None  | N  | 703  |
+|      idin_reg       | Flip-flop |  13   |  Y  | N  | None  | None  | N  | 706  |
+|      idin_reg       | Flip-flop |   4   |  Y  | N  | None  | None  | N  | 710  |
+|    buf0_set_reg     | Flip-flop |   1   |  N  | N  | None  | None  | N  | 716  |
+|    buf1_set_reg     | Flip-flop |   1   |  N  | N  | None  | None  | N  | 719  |
+|   uc_bsel_set_reg   | Flip-flop |   1   |  N  | N  | None  | None  | N  | 722  |
+|   uc_dpd_set_reg    | Flip-flop |   1   |  N  | N  | None  | None  | N  | 725  |
+|     buf0_rl_reg     | Flip-flop |   1   |  N  | N  | None  | None  | N  | 728  |
+|      abort_reg      | Flip-flop |   1   |  N  | N  | None  | None  | N  | 732  |
+|  rx_ack_to_clr_reg  | Flip-flop |   1   |  N  | N  | None  | None  | N  | 746  |
+|  rx_ack_to_cnt_reg  | Flip-flop |   8   |  Y  | N  | None  | None  | N  | 749  |
+|    rx_ack_to_reg    | Flip-flop |   1   |  N  | N  | None  | None  | N  | 753  |
+| tx_data_to_cnt_reg  | Flip-flop |   8   |  Y  | N  | None  | None  | N  | 766  |
+|   tx_data_to_reg    | Flip-flop |   1   |  N  | N  | None  | None  | N  | 770  |
+|    pid_OUT_r_reg    | Flip-flop |   1   |  N  | N  | None  | None  | N  | 784  |
+|    pid_IN_r_reg     | Flip-flop |   1   |  N  | N  | None  | None  | N  | 787  |
+|   pid_PING_r_reg    | Flip-flop |   1   |  N  | N  | None  | None  | N  | 790  |
+|   pid_SETUP_r_reg   | Flip-flop |   1   |  N  | N  | None  | None  | N  | 793  |
+|  int_upid_set_reg   | Flip-flop |   1   |  N  | N  | None  | None  | N  | 796  |
+| int_seqerr_set_reg  | Flip-flop |   1   |  N  | N  | None  | None  | N  | 807  |
+|      state_reg      | Flip-flop |  10   |  Y  | N  | None  | None  | N  | 818  |
+==================================================================================
+Presto compilation completed successfully. (usbf_pe_SSRAM_HADR14)
+Module: usbf_pe_SSRAM_HADR14, Ports: 242, Input: 142, Output: 100, Inout: 0
+Module: usbf_pe_SSRAM_HADR14, Registers: 178, Async set/reset: 0, Sync set/reset: 0
+Information: Module usbf_pe_SSRAM_HADR14 report end. (ELAB-965)
+Information: Building the design 'usbf_ep_rf'. (HDL-193)
+
+Statistics for case statements in always block in file
+	'../rtl/usb_funct/usbf_ep_rf.v'
+============================================================
+|    Line    |  full/ parallel  |      block location      |
+============================================================
+|    217     |    user/user     | always block at line 216 |
+============================================================
+
+Inferred memory devices in process in routine 'usbf_ep_rf' in file
+	 ../rtl/usb_funct/usbf_ep_rf.v'.
+====================================================================================
+|     Register Name     |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+====================================================================================
+|       csr1_reg        | Flip-flop |  13   |  Y  | N  | None  | None  | N  | 233  |
+|     ots_stop_reg      | Flip-flop |   1   |  N  | N  | None  | None  | N  | 233  |
+|       csr0_reg        | Flip-flop |  13   |  Y  | N  | None  | None  | N  | 233  |
+|       ienb_reg        | Flip-flop |   6   |  Y  | N  | None  | None  | N  | 256  |
+|       iena_reg        | Flip-flop |   6   |  Y  | N  | None  | None  | N  | 256  |
+|       buf0_reg        | Flip-flop |  32   |  Y  | N  | None  | None  | N  | 274  |
+|       buf1_reg        | Flip-flop |  32   |  Y  | N  | None  | None  | N  | 287  |
+|     buf0_orig_reg     | Flip-flop |  32   |  Y  | N  | None  | None  | N  | 299  |
+|    ep_match_r_reg     | Flip-flop |   1   |  N  | N  | None  | None  | N  | 315  |
+|      int_re_reg       | Flip-flop |   1   |  N  | N  | None  | None  | N  | 318  |
+|     int_stat_reg      | Flip-flop |   7   |  Y  | N  | None  | None  | N  | 325  |
+|      uc_dpd_reg       | Flip-flop |   2   |  Y  | N  | None  | None  | N  | 346  |
+|      uc_bsel_reg      | Flip-flop |   2   |  Y  | N  | None  | None  | N  | 356  |
+|       inta_reg        | Flip-flop |   1   |  N  | N  | None  | None  | N  | 367  |
+|       intb_reg        | Flip-flop |   1   |  N  | N  | None  | None  | N  | 376  |
+|    dma_out_cnt_reg    | Flip-flop |  12   |  Y  | N  | None  | None  | N  | 391  |
+|       set_r_reg       | Flip-flop |   1   |  N  | N  | None  | None  | N  | 401  |
+| dma_req_out_hold_reg  | Flip-flop |   1   |  N  | N  | None  | None  | N  | 410  |
+|    dma_in_cnt_reg     | Flip-flop |  12   |  Y  | N  | None  | None  | N  | 416  |
+|  dma_in_buf_sz1_reg   | Flip-flop |   1   |  N  | N  | None  | None  | N  | 426  |
+|   dma_out_left_reg    | Flip-flop |  12   |  Y  | N  | None  | None  | N  | 432  |
+| dma_out_buf_avail_reg | Flip-flop |   1   |  N  | N  | None  | None  | N  | 435  |
+|   buf0_orig_m3_reg    | Flip-flop |  12   |  Y  | N  | None  | None  | N  | 448  |
+| dma_req_in_hold2_reg  | Flip-flop |   1   |  N  | N  | None  | None  | N  | 453  |
+|  dma_req_in_hold_reg  | Flip-flop |   1   |  N  | N  | None  | None  | N  | 456  |
+|     dma_req_r_reg     | Flip-flop |   1   |  N  | N  | None  | None  | N  | 467  |
+|        r1_reg         | Flip-flop |   1   |  N  | N  | None  | None  | N  | 475  |
+|        r2_reg         | Flip-flop |   1   |  N  | N  | None  | None  | N  | 481  |
+|    dma_ack_wr1_reg    | Flip-flop |   1   |  N  | N  | None  | None  | N  | 496  |
+|   dma_ack_clr1_reg    | Flip-flop |   1   |  N  | N  | None  | None  | N  | 504  |
+|        r4_reg         | Flip-flop |   1   |  N  | N  | None  | None  | N  | 507  |
+|        r5_reg         | Flip-flop |   1   |  N  | N  | None  | None  | N  | 510  |
+====================================================================================
+Presto compilation completed successfully. (usbf_ep_rf)
+Module: usbf_ep_rf, Ports: 222, Input: 88, Output: 134, Inout: 0
+Module: usbf_ep_rf, Registers: 211, Async set/reset: 0, Sync set/reset: 0
+Information: Module usbf_ep_rf report end. (ELAB-965)
+Information: Building the design 'usbf_ep_rf_dummy'. (HDL-193)
+Presto compilation completed successfully. (usbf_ep_rf_dummy)
+Module: usbf_ep_rf_dummy, Ports: 222, Input: 88, Output: 134, Inout: 0
+Module: usbf_ep_rf_dummy, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Module usbf_ep_rf_dummy report end. (ELAB-965)
+Information: Building the design 'usbf_crc5'. (HDL-193)
+Presto compilation completed successfully. (usbf_crc5)
+Module: usbf_crc5, Ports: 21, Input: 16, Output: 5, Inout: 0
+Module: usbf_crc5, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Module usbf_crc5 report end. (ELAB-965)
+Information: Building the design 'usbf_crc16'. (HDL-193)
+Presto compilation completed successfully. (usbf_crc16)
+Module: usbf_crc16, Ports: 40, Input: 24, Output: 16, Inout: 0
+Module: usbf_crc16, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Module usbf_crc16 report end. (ELAB-965)
+1
+link
+
+  Linking design 'usbf_top'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  saed32rvt_ss0p95v125c (library) /mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v125c.db
+  saed32rvt_ss0p95v25c (library) /mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v25c.db
+  saed32rvt_ss0p95vn40c (library) /mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95vn40c.db
+
+1
+# Output files
+write -hier -f ddc -output ./outputs/usb_funct/usbf_top.ddc
+Writing ddc file './outputs/usb_funct/usbf_top.ddc'.
+1
+# Clock and constraints
+create_clock -name "clk" -period 10 [get_ports clk_i] 
+1
+set_input_delay 0.01 -clock clk [all_inputs] 
+1
+set_output_delay 0.01 -clock clk [all_outputs] 
+1
+set_clock_uncertainty 0.2 clk
+1
+set_max_area 0.0 
+1
+# Checks and compilation
+check_design  > ./reports/usb_funct/usbf_top_check_design.rpt 
+uniquify 
+Information: Uniquified 4 instances of design 'usbf_ep_rf'. (OPT-1056)
+Information: Uniquified 12 instances of design 'usbf_ep_rf_dummy'. (OPT-1056)
+Information: Uniquified 2 instances of design 'usbf_crc16'. (OPT-1056)
+1
+check_timing 
+Information: Changed wire load model for 'usbf_wb' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'usbf_ep_rf_dummy_0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'usbf_ep_rf_dummy_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'usbf_ep_rf_dummy_2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'usbf_ep_rf_dummy_3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'usbf_ep_rf_dummy_4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'usbf_ep_rf_dummy_5' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'usbf_ep_rf_dummy_6' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'usbf_ep_rf_dummy_7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'usbf_ep_rf_dummy_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'usbf_ep_rf_dummy_9' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'usbf_ep_rf_dummy_10' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'usbf_ep_rf_dummy_11' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'usbf_ep_rf_0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'usbf_ep_rf_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'usbf_ep_rf_2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'usbf_ep_rf_3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'usbf_rf' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'usbf_mem_arb_SSRAM_HADR14' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'usbf_pe_SSRAM_HADR14' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'usbf_idma_SSRAM_HADR14' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'usbf_crc16_0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'usbf_pa' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'usbf_crc16_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'usbf_crc5' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'usbf_pd' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'usbf_pl_SSRAM_HADR14' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'usbf_utmi_ls' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'usbf_utmi_if' from '(none)' to 'ForQA'. (OPT-170)
+Module: DW01_cmp6_width11, Ports: 29, Input: 23, Output: 6, Inout: 0
+Module: DW01_cmp6_width11, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_inc_width4, Ports: 8, Input: 4, Output: 4, Inout: 0
+Module: DW01_inc_width4, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_inc_width12, Ports: 24, Input: 12, Output: 12, Inout: 0
+Module: DW01_inc_width12, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_inc_width5, Ports: 10, Input: 5, Output: 5, Inout: 0
+Module: DW01_inc_width5, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_cmp6_width7, Ports: 21, Input: 15, Output: 6, Inout: 0
+Module: DW01_cmp6_width7, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_inc_width8, Ports: 16, Input: 8, Output: 8, Inout: 0
+Module: DW01_inc_width8, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_cmp2_width8, Ports: 20, Input: 18, Output: 2, Inout: 0
+Module: DW01_cmp2_width8, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_inc_width3, Ports: 6, Input: 3, Output: 3, Inout: 0
+Module: DW01_inc_width3, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_cmp6_width4, Ports: 15, Input: 9, Output: 6, Inout: 0
+Module: DW01_cmp6_width4, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_cmp6_width5, Ports: 17, Input: 11, Output: 6, Inout: 0
+Module: DW01_cmp6_width5, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_add_width15, Ports: 47, Input: 31, Output: 16, Inout: 0
+Module: DW01_add_width15, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_add_width15, Ports: 47, Input: 31, Output: 16, Inout: 0
+Module: DW01_add_width15, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_cmp6_width15, Ports: 37, Input: 31, Output: 6, Inout: 0
+Module: DW01_cmp6_width15, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_inc_width15, Ports: 30, Input: 15, Output: 15, Inout: 0
+Module: DW01_inc_width15, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_dec_width14, Ports: 28, Input: 14, Output: 14, Inout: 0
+Module: DW01_dec_width14, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_inc_width11, Ports: 22, Input: 11, Output: 11, Inout: 0
+Module: DW01_inc_width11, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_cmp2_width14, Ports: 32, Input: 30, Output: 2, Inout: 0
+Module: DW01_cmp2_width14, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_sub_width14, Ports: 44, Input: 29, Output: 15, Inout: 0
+Module: DW01_sub_width14, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_sub_width14, Ports: 44, Input: 29, Output: 15, Inout: 0
+Module: DW01_sub_width14, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_add_width17, Ports: 53, Input: 35, Output: 18, Inout: 0
+Module: DW01_add_width17, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_add_width17, Ports: 53, Input: 35, Output: 18, Inout: 0
+Module: DW01_add_width17, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_cmp2_width11, Ports: 26, Input: 24, Output: 2, Inout: 0
+Module: DW01_cmp2_width11, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_inc_width2, Ports: 4, Input: 2, Output: 2, Inout: 0
+Module: DW01_inc_width2, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_cmp6_width8, Ports: 23, Input: 17, Output: 6, Inout: 0
+Module: DW01_cmp6_width8, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_dec_width12, Ports: 24, Input: 12, Output: 12, Inout: 0
+Module: DW01_dec_width12, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_add_width12, Ports: 38, Input: 25, Output: 13, Inout: 0
+Module: DW01_add_width12, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_add_width12, Ports: 38, Input: 25, Output: 13, Inout: 0
+Module: DW01_add_width12, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_sub_width12, Ports: 38, Input: 25, Output: 13, Inout: 0
+Module: DW01_sub_width12, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_sub_width12, Ports: 38, Input: 25, Output: 13, Inout: 0
+Module: DW01_sub_width12, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_cmp2_width12, Ports: 28, Input: 26, Output: 2, Inout: 0
+Module: DW01_cmp2_width12, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Changed wire load model for 'DW01_sub_width12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_12_9_12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_12_9_12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_12_1_12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_dec_width12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_12_1_12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_12_2_12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_12_12_12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*LT_UNS_OP_12_12_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*LT_UNS_OP_12_12_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*GEQ_UNS_OP_12_9_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*GEQ_UNS_OP_12_9_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp6_width4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*EQ_UNS_OP_4_4_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_12_9_12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_12_9_12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_12_1_12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_dec_width12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_12_1_12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_12_2_12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_12_12_12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*LT_UNS_OP_12_12_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*LT_UNS_OP_12_12_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*GEQ_UNS_OP_12_9_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*GEQ_UNS_OP_12_9_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp6_width4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*EQ_UNS_OP_4_4_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_12_9_12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_12_9_12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_12_1_12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_dec_width12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_12_1_12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_12_2_12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_12_12_12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*LT_UNS_OP_12_12_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*LT_UNS_OP_12_12_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*GEQ_UNS_OP_12_9_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*GEQ_UNS_OP_12_9_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp6_width4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*EQ_UNS_OP_4_4_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_12_9_12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_12_9_12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_12_1_12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_dec_width12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_12_1_12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_12_2_12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_12_12_12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*LT_UNS_OP_12_12_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*LT_UNS_OP_12_12_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*GEQ_UNS_OP_12_9_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*GEQ_UNS_OP_12_9_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp6_width4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*EQ_UNS_OP_4_4_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_4_1_4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width5' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_5_1_5' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_12_1_12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width17' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_17_14_17' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width14' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_14_14_14' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_2_1_2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_8_1_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_8_1_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp6_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*EQ_UNS_OP_8_8_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp6_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*EQ_UNS_OP_8_8_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width11' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*GT_UNS_OP_11_11_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width11' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*LT_UNS_OP_11_11_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp6_width11' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*NE_UNS_OP_11_11_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width14' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*GT_UNS_OP_11_14_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width14' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*LT_UNS_OP_14_11_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width14' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*LT_UNS_OP_14_11_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width14' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*LT_UNS_OP_14_11_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width14' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*LT_UNS_OP_14_11_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_dec_width14' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_14_1_14' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width11' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_11_1_11' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_15_1_15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_3_1_3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_15_14_15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp6_width15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*EQ_UNS_OP_15_15_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp6_width5' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*NE_UNS_OP_5_5_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp6_width4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*NE_UNS_OP_4_4_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp6_width7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*EQ_UNS_OP_7_7_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp6_width11' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*EQ_UNS_OP_11_11_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_8_1_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_4_1_4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_8_1_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_3_1_3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_8_1_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_8_1_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*GT_UNS_OP_8_2_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*GT_UNS_OP_8_2_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*GT_UNS_OP_8_4_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*GT_UNS_OP_8_6_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*GT_UNS_OP_8_7_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*GT_UNS_OP_8_6_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*LT_UNS_OP_8_6_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*GT_UNS_OP_8_4_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Updating design information... (UID-85)
+Warning: Design 'usbf_top' contains 9 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+
+Information: Checking generated_clocks...
+
+Information: Checking loops...
+
+Information: Checking no_input_delay...
+
+Information: Checking unconstrained_endpoints...
+
+Warning: There are 2771 end-points which are not constrained for maximum delay.
+
+Information: Checking pulse_clock_cell_type...
+
+Information: Checking no_driving_cell...
+
+Information: Checking partial_input_delay...
+1
+compile -area_effort medium -map_effort medium 
+CPU Load: 117%, Ram Free: 0 GB, Swap Free: 15 GB, Work Disk Free: 4330 GB, Tmp Disk Free: 136 GB
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | W-2024.09-DWBB_202409.4 |     *     |
+| Licensed DW Building Blocks        |                         |           |
+============================================================================
+
+====================================================================================================
+| Flow Information                                                                                 |
+----------------------------------------------------------------------------------------------------
+| Flow         | Design Compiler                                                                   |
+====================================================================================================
+| Design Information                                      | Value                                  |
+====================================================================================================
+| Number of Scenarios                                     | 0                                      |
+| Leaf Cell Count                                         | 5654                                   |
+| Number of User Hierarchies                              | 29                                     |
+| Sequential Cell Count                                   | 1766                                   |
+| Macro Count                                             | 0                                      |
+| Pad Count                                               | 0                                      |
+| Number of Power Domains                                 | 0                                      |
+| Number of Path Groups                                   | 2                                      |
+| Number of VT Class                                      | 1                                      |
+| Number of Clocks                                        | 1                                      |
+| Number of Dont Touch Cells                              | 1477                                   |
+| Number of Dont Touch Nets                               | 0                                      |
+| Number of Size Only Cells                               | 0                                      |
+| Design with Target Library Subset (with clock_path)     | false  (false )                        |
+| Design with UPF Data                                    | false                                  |
+====================================================================================================
+
+Information: There are 4563 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'usbf_wb'
+  Processing 'usbf_ep_rf_dummy_0'
+  Processing 'usbf_ep_rf_0'
+Module: DW01_cmp6_width4, Ports: 15, Input: 9, Output: 6, Inout: 0
+Module: DW01_cmp6_width4, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+  Processing 'usbf_rf'
+  Processing 'usbf_mem_arb_SSRAM_HADR14'
+  Processing 'usbf_pe_SSRAM_HADR14'
+Module: DW01_inc_width2, Ports: 4, Input: 2, Output: 2, Inout: 0
+Module: DW01_inc_width2, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: The register 'out_token_reg' will be removed. (OPT-1207)
+  Processing 'usbf_idma_SSRAM_HADR14'
+Module: DW01_inc_width3, Ports: 6, Input: 3, Output: 3, Inout: 0
+Module: DW01_inc_width3, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+  Processing 'usbf_crc16_0'
+  Processing 'usbf_pa'
+  Processing 'usbf_crc5'
+  Processing 'usbf_pd'
+  Processing 'usbf_pl_SSRAM_HADR14'
+Module: DW01_inc_width4, Ports: 8, Input: 4, Output: 4, Inout: 0
+Module: DW01_inc_width4, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+  Processing 'usbf_utmi_ls'
+Information: The register 'OpMode_reg[0]' is a constant and will be removed. (OPT-1206)
+  Processing 'usbf_utmi_if'
+  Processing 'usbf_top'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+Module: DW01_cmp2_width12, Ports: 28, Input: 26, Output: 2, Inout: 0
+Module: DW01_cmp2_width12, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+  Processing 'usbf_ep_rf_0_DW01_cmp2_0'
+Module: DW01_sub_width12, Ports: 38, Input: 25, Output: 13, Inout: 0
+Module: DW01_sub_width12, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+  Processing 'usbf_ep_rf_0_DW01_sub_0'
+  Processing 'usbf_ep_rf_0_DW01_cmp2_1'
+  Processing 'usbf_ep_rf_0_DW01_cmp2_2'
+  Processing 'usbf_ep_rf_0_DW01_sub_1'
+  Processing 'usbf_ep_rf_0_DW01_cmp2_3'
+  Processing 'usbf_ep_rf_0_DW01_sub_2'
+Module: DW01_inc_width12, Ports: 24, Input: 12, Output: 12, Inout: 0
+Module: DW01_inc_width12, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+  Processing 'usbf_ep_rf_0_DW01_inc_0_DW01_inc_5'
+Module: DW01_add_width12, Ports: 38, Input: 25, Output: 13, Inout: 0
+Module: DW01_add_width12, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+  Processing 'usbf_ep_rf_0_DW01_add_0'
+Module: DW01_dec_width12, Ports: 24, Input: 12, Output: 12, Inout: 0
+Module: DW01_dec_width12, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+  Processing 'usbf_ep_rf_0_DW01_dec_0'
+  Processing 'usbf_ep_rf_1_DW01_cmp2_0_DW01_cmp2_4'
+  Processing 'usbf_ep_rf_1_DW01_sub_0_DW01_sub_3'
+  Processing 'usbf_ep_rf_1_DW01_cmp2_1_DW01_cmp2_5'
+  Processing 'usbf_ep_rf_1_DW01_cmp2_2_DW01_cmp2_6'
+  Processing 'usbf_ep_rf_1_DW01_sub_1_DW01_sub_4'
+  Processing 'usbf_ep_rf_1_DW01_cmp2_3_DW01_cmp2_7'
+  Processing 'usbf_ep_rf_1_DW01_sub_2_DW01_sub_5'
+  Processing 'usbf_ep_rf_1_DW01_inc_0_DW01_inc_6'
+  Processing 'usbf_ep_rf_1_DW01_add_0_DW01_add_1'
+  Processing 'usbf_ep_rf_1_DW01_dec_0_DW01_dec_1'
+  Processing 'usbf_ep_rf_2_DW01_cmp2_0_DW01_cmp2_8'
+  Processing 'usbf_ep_rf_2_DW01_sub_0_DW01_sub_6'
+  Processing 'usbf_ep_rf_2_DW01_cmp2_1_DW01_cmp2_9'
+  Processing 'usbf_ep_rf_2_DW01_cmp2_2_DW01_cmp2_10'
+  Processing 'usbf_ep_rf_2_DW01_sub_1_DW01_sub_7'
+  Processing 'usbf_ep_rf_2_DW01_cmp2_3_DW01_cmp2_11'
+  Processing 'usbf_ep_rf_2_DW01_sub_2_DW01_sub_8'
+  Processing 'usbf_ep_rf_2_DW01_inc_0_DW01_inc_7'
+  Processing 'usbf_ep_rf_2_DW01_add_0_DW01_add_2'
+  Processing 'usbf_ep_rf_2_DW01_dec_0_DW01_dec_2'
+  Processing 'usbf_ep_rf_3_DW01_cmp2_0_DW01_cmp2_12'
+  Processing 'usbf_ep_rf_3_DW01_sub_0_DW01_sub_9'
+  Processing 'usbf_ep_rf_3_DW01_cmp2_1_DW01_cmp2_13'
+  Processing 'usbf_ep_rf_3_DW01_cmp2_2_DW01_cmp2_14'
+  Processing 'usbf_ep_rf_3_DW01_sub_1_DW01_sub_10'
+  Processing 'usbf_ep_rf_3_DW01_cmp2_3_DW01_cmp2_15'
+  Processing 'usbf_ep_rf_3_DW01_sub_2_DW01_sub_11'
+  Processing 'usbf_ep_rf_3_DW01_inc_0_DW01_inc_8'
+  Processing 'usbf_ep_rf_3_DW01_add_0_DW01_add_3'
+  Processing 'usbf_ep_rf_3_DW01_dec_0_DW01_dec_3'
+Module: DW01_cmp6_width7, Ports: 21, Input: 15, Output: 6, Inout: 0
+Module: DW01_cmp6_width7, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+  Processing 'usbf_pl_SSRAM_HADR14_DW01_cmp6_0_DW01_cmp6_2'
+Module: DW01_inc_width5, Ports: 10, Input: 5, Output: 5, Inout: 0
+Module: DW01_inc_width5, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+  Processing 'usbf_pl_SSRAM_HADR14_DW01_inc_0_DW01_inc_9'
+  Processing 'usbf_pl_SSRAM_HADR14_DW01_inc_1_DW01_inc_10'
+Module: DW01_cmp6_width11, Ports: 29, Input: 23, Output: 6, Inout: 0
+Module: DW01_cmp6_width11, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+  Processing 'usbf_pl_SSRAM_HADR14_DW01_cmp6_1_DW01_cmp6_3'
+Module: DW01_cmp6_width8, Ports: 23, Input: 17, Output: 6, Inout: 0
+Module: DW01_cmp6_width8, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+  Processing 'usbf_pe_SSRAM_HADR14_DW01_cmp6_0_DW01_cmp6_4'
+Module: DW01_inc_width8, Ports: 16, Input: 8, Output: 8, Inout: 0
+Module: DW01_inc_width8, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+  Processing 'usbf_pe_SSRAM_HADR14_DW01_inc_0_DW01_inc_11'
+  Processing 'usbf_pe_SSRAM_HADR14_DW01_cmp6_1_DW01_cmp6_5'
+  Processing 'usbf_pe_SSRAM_HADR14_DW01_inc_1_DW01_inc_12'
+Module: DW01_cmp2_width14, Ports: 32, Input: 30, Output: 2, Inout: 0
+Module: DW01_cmp2_width14, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+  Processing 'usbf_pe_SSRAM_HADR14_DW01_cmp2_0_DW01_cmp2_16'
+Module: DW01_add_width17, Ports: 53, Input: 35, Output: 18, Inout: 0
+Module: DW01_add_width17, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+  Processing 'usbf_pe_SSRAM_HADR14_DW01_add_0_DW01_add_4'
+Module: DW01_sub_width14, Ports: 44, Input: 29, Output: 15, Inout: 0
+Module: DW01_sub_width14, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+  Processing 'usbf_pe_SSRAM_HADR14_DW01_sub_0_DW01_sub_12'
+  Processing 'usbf_pe_SSRAM_HADR14_DW01_cmp2_1_DW01_cmp2_17'
+  Processing 'usbf_pe_SSRAM_HADR14_DW01_cmp2_2_DW01_cmp2_18'
+  Processing 'usbf_pe_SSRAM_HADR14_DW01_cmp2_3_DW01_cmp2_19'
+  Processing 'usbf_pe_SSRAM_HADR14_DW01_cmp2_4_DW01_cmp2_20'
+  Processing 'usbf_pe_SSRAM_HADR14_DW01_cmp6_2_DW01_cmp6_6'
+Module: DW01_inc_width11, Ports: 22, Input: 11, Output: 11, Inout: 0
+Module: DW01_inc_width11, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+  Processing 'usbf_idma_SSRAM_HADR14_DW01_inc_0_DW01_inc_13'
+Module: DW01_dec_width14, Ports: 28, Input: 14, Output: 14, Inout: 0
+Module: DW01_dec_width14, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+  Processing 'usbf_idma_SSRAM_HADR14_DW01_dec_0_DW01_dec_4'
+Module: DW01_cmp6_width15, Ports: 37, Input: 31, Output: 6, Inout: 0
+Module: DW01_cmp6_width15, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+  Processing 'usbf_idma_SSRAM_HADR14_DW01_cmp6_0_DW01_cmp6_7'
+Module: DW01_inc_width15, Ports: 30, Input: 15, Output: 15, Inout: 0
+Module: DW01_inc_width15, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+  Processing 'usbf_idma_SSRAM_HADR14_DW01_inc_1_DW01_inc_14'
+Module: DW01_add_width15, Ports: 47, Input: 31, Output: 16, Inout: 0
+Module: DW01_add_width15, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+  Processing 'usbf_idma_SSRAM_HADR14_DW01_add_0_DW01_add_5'
+Module: DW01_cmp6_width5, Ports: 17, Input: 11, Output: 6, Inout: 0
+Module: DW01_cmp6_width5, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+  Processing 'usbf_pd_DW01_cmp6_0_DW01_cmp6_8'
+Module: DW01_cmp2_width8, Ports: 20, Input: 18, Output: 2, Inout: 0
+Module: DW01_cmp2_width8, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+  Processing 'usbf_utmi_ls_DW01_cmp2_0_DW01_cmp2_21'
+  Processing 'usbf_utmi_ls_DW01_cmp2_1_DW01_cmp2_22'
+  Processing 'usbf_utmi_ls_DW01_inc_0_DW01_inc_15'
+  Processing 'usbf_utmi_ls_DW01_inc_1_DW01_inc_16'
+  Processing 'usbf_utmi_ls_DW01_inc_2_DW01_inc_17'
+  Processing 'usbf_utmi_ls_DW01_cmp2_2_DW01_cmp2_23'
+  Processing 'usbf_utmi_ls_DW01_cmp2_3_DW01_cmp2_24'
+  Processing 'usbf_utmi_ls_DW01_inc_3_DW01_inc_18'
+  Processing 'usbf_utmi_ls_DW01_cmp2_4_DW01_cmp2_25'
+  Processing 'usbf_utmi_ls_DW01_cmp6_0_DW01_cmp6_9'
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+Information: The register 'u1/u3/size_next_r_reg[11]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u1/u3/size_next_r_reg[12]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u1/u3/size_next_r_reg[13]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u1/u3/new_sizeb_reg[11]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u1/u3/new_sizeb_reg[12]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u1/u3/new_sizeb_reg[13]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u4/int_srca_reg[7]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u4/int_srca_reg[4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u4/int_srca_reg[5]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u4/int_srca_reg[6]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u4/int_srca_reg[8]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u4/int_srca_reg[9]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u4/int_srca_reg[10]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u4/int_srca_reg[11]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u4/int_srca_reg[12]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u4/int_srca_reg[13]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u4/int_srca_reg[14]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u4/int_srca_reg[15]' is a constant and will be removed. (OPT-1206)
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:01:07   32829.6      2.09     131.3     269.7                          
+    0:01:07   32806.9      2.09     131.2     269.7                          
+    0:01:07   32806.9      2.09     131.2     269.7                          
+    0:01:08   32806.2      2.09     130.7     269.7                          
+    0:01:08   32806.2      2.09     130.7     269.7                          
+    0:01:16   26885.4      2.30     130.5       0.0                          
+    0:01:17   26876.0      2.13     106.7       0.0                          
+    0:01:19   26865.6      2.09     105.6       0.0                          
+    0:01:20   26865.6      2.09     105.6       0.0                          
+    0:01:20   26865.6      2.09     105.6       0.0                          
+    0:01:20   26864.5      2.09     105.6       0.0                          
+    0:01:20   26864.5      2.09     105.6       0.0                          
+    0:01:20   26864.5      2.09     105.6       0.0                          
+    0:01:20   26864.5      2.09     105.6       0.0                          
+    0:01:20   26864.5      2.09     105.6       0.0                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:01:20   26864.5      2.09     105.6       0.0                          
+    0:01:20   26864.5      2.09     105.6       0.0                          
+    0:01:20   26864.5      2.09     105.6       0.0                          
+    0:01:21   26891.0      1.74      85.2       0.0 u4/intb_msk_reg[8]/D     
+    0:01:22   26897.6      1.03      31.0       0.0 u4/utmi_vend_wr_r_reg/D  
+    0:01:22   26905.0      0.76      26.0       0.0 u4/dout_reg[14]/D        
+    0:01:22   26927.6      0.69      24.0       0.0 u4/dout_reg[21]/D        
+    0:01:23   26932.4      0.00       0.0       0.0                          
+    0:01:23   26887.4      0.00       0.0       0.0                          
+
+
+  Beginning Area-Recovery Phase  (max_area 0)
+  -----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:01:23   26887.4      0.00       0.0       0.0                          
+    0:01:23   26887.4      0.00       0.0       0.0                          
+    0:01:25   25959.0      0.00       0.0       0.0                          
+    0:01:26   25482.5      0.00       0.0       0.0                          
+    0:01:26   25172.2      0.00       0.0       0.0                          
+    0:01:27   25073.3      0.00       0.0       0.0                          
+    0:01:28   25037.8      0.00       0.0       0.0                          
+    0:01:29   25012.9      0.00       0.0       0.0                          
+    0:01:29   25012.9      0.00       0.0       0.0                          
+    0:01:29   25012.9      0.00       0.0       0.0                          
+    0:01:30   24893.9      0.01       0.1       0.0                          
+    0:01:30   24879.4      0.03       0.3       0.0                          
+    0:01:30   24879.4      0.03       0.3       0.0                          
+    0:01:30   24879.4      0.03       0.3       0.0                          
+    0:01:30   24879.4      0.03       0.3       0.0                          
+    0:01:30   24879.4      0.03       0.3       0.0                          
+    0:01:31   24879.4      0.03       0.3       0.0                          
+    0:01:32   24881.0      0.00       0.0       0.0                          
+    0:01:33   24851.5      0.00       0.0       0.0                          
+    0:01:35   24825.5      0.00       0.0       0.0                          
+    0:01:36   24825.5      0.00       0.0       0.0                          
+    0:01:36   24823.8      0.00       0.0       0.0                          
+    0:01:36   24823.8      0.00       0.0       0.0                          
+    0:01:36   24823.8      0.00       0.0       0.0                          
+    0:01:36   24823.8      0.00       0.0       0.0                          
+    0:01:36   24823.8      0.00       0.0       0.0                          
+    0:01:37   24823.8      0.00       0.0       0.0                          
+    0:01:37   24823.3      0.00       0.0       0.0                          
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+CPU Load: 135%, Ram Free: 0 GB, Swap Free: 15 GB, Work Disk Free: 4330 GB, Tmp Disk Free: 136 GB
+Information: Total number of MV cells in the design.
+----------------------------------------------------------------------------------------------------
+ MV Cells                                           Total Number                                   
+----------------------------------------------------------------------------------------------------
+ Level Shifter:                                     0                                             
+ Enable Level Shifter:                              0                                             
+ Isolation Cell:                                    0                                             
+ Retention Cell:                                    0                                             
+ Retention Clamp Cell:                              0                                             
+ Switch Cell:                                       0                                             
+ Always-On Cell:                                    0                                             
+ Repeater Cell:                                     0                                             
+
+----------------------------------------------------------------------------------------------------
+Unmapped MV Cells 
+----------------------------------------------------------------------------------------------------
+0 Isolation Cells are unmapped 
+0 Retention Clamp Cells are unmapped 
+----------------------------------------------------------------------------------------------------
+1
+# Reports
+report_constraints -all > ./reports/usb_funct/usbf_top_constraints.rpt
+report_area > ./reports/usb_funct/usbf_top_area.rpt
+report_power > ./reports/usb_funct/usbf_top_power.rpt
+report_qor  > ./reports/usb_funct/usbf_top_qor.rpt
+report_cell > ./reports/usb_funct/usbf_top_cells.rpt
+report_resources > ./reports/usb_funct/usbf_top_resources.rpt
+report_timing -max_paths 10 > ./reports/usb_funct/usbf_top_timing.rpt
+# Output files
+write_sdc ./outputs/usb_funct/usbf_top.sdc
+1
+write -hier -f ddc -output ./outputs/usb_funct/usbf_top.ddc
+Writing ddc file './outputs/usb_funct/usbf_top.ddc'.
+1
+write -hierarchy -format verilog -output ./outputs/usb_funct/usbf_top.v
+Writing verilog file '/home/vi44@drexel.edu/iwls/scripts/outputs/usb_funct/usbf_top.v'.
+Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
+Warning: Verilog writer has added 1 nets to module usbf_utmi_if using SYNOPSYS_UNCONNECTED_ as prefix.  Please use the change_names command to make the correct changes before invoking the verilog writer.  (VO-11)
+Warning: Verilog writer has added 3 nets to module usbf_pl_SSRAM_HADR14 using SYNOPSYS_UNCONNECTED_ as prefix.  Please use the change_names command to make the correct changes before invoking the verilog writer.  (VO-11)
+Warning: Verilog writer has added 4 nets to module usbf_rf using SYNOPSYS_UNCONNECTED_ as prefix.  Please use the change_names command to make the correct changes before invoking the verilog writer.  (VO-11)
+Warning: Verilog writer has added 21 nets to module usbf_top using SYNOPSYS_UNCONNECTED_ as prefix.  Please use the change_names command to make the correct changes before invoking the verilog writer.  (VO-11)
+1
+quit
+
+Memory usage for this session 463 Mbytes.
+Memory usage for this session including child processes 463 Mbytes.
+CPU usage for this session 118 seconds ( 0.03 hours ).
+Elapsed time for this session 144 seconds ( 0.04 hours ).
+
+Thank you...

@@ -1,0 +1,68 @@
+ 
+****************************************
+Report : cell
+Design : wb_dma_top
+Version: W-2024.09-SP2
+Date   : Tue May  6 10:02:15 2025
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+U1                        NBUFFX2_RVT     saed32rvt_ss0p95v25c
+                                                          2.033152  
+U2                        NBUFFX2_RVT     saed32rvt_ss0p95v25c
+                                                          2.033152  
+U3                        INVX1_RVT       saed32rvt_ss0p95v25c
+                                                          1.270720  
+U4                        INVX4_RVT       saed32rvt_ss0p95v25c
+                                                          2.033152  
+U5                        INVX0_RVT       saed32rvt_ss0p95v25c
+                                                          1.270720  
+U6                        NBUFFX2_RVT     saed32rvt_ss0p95v25c
+                                                          2.033152  
+U7                        INVX2_RVT       saed32rvt_ss0p95v25c
+                                                          1.524864  
+U8                        NBUFFX2_RVT     saed32rvt_ss0p95v25c
+                                                          2.033152  
+U9                        INVX4_RVT       saed32rvt_ss0p95v25c
+                                                          2.033152  
+U10                       NBUFFX2_RVT     saed32rvt_ss0p95v25c
+                                                          2.033152  
+U11                       INVX2_RVT       saed32rvt_ss0p95v25c
+                                                          1.524864  
+U12                       NBUFFX2_RVT     saed32rvt_ss0p95v25c
+                                                          2.033152  
+U13                       INVX2_RVT       saed32rvt_ss0p95v25c
+                                                          1.524864  
+U14                       NBUFFX2_RVT     saed32rvt_ss0p95v25c
+                                                          2.033152  
+U15                       INVX2_RVT       saed32rvt_ss0p95v25c
+                                                          1.524864  
+U16                       NBUFFX2_RVT     saed32rvt_ss0p95v25c
+                                                          2.033152  
+U17                       INVX0_RVT       saed32rvt_ss0p95v25c
+                                                          1.270720  
+U18                       INVX4_RVT       saed32rvt_ss0p95v25c
+                                                          2.033152  
+u0                        wb_dma_rf_1_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0
+                                                          2502.810158
+                                                                    h, n
+u1                        wb_dma_ch_sel_0_1_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0
+                                                          38513.998659
+                                                                    h, n
+u2                        wb_dma_de                       3316.833390
+                                                                    h, n
+u3                        wb_dma_wb_if_rf_addr0_1         907.294098
+                                                                    h, n
+u4                        wb_dma_wb_if_rf_addr0_0         642.730185
+                                                                    h, n
+--------------------------------------------------------------------------------
+Total 23 cells                                            45915.942778
+1

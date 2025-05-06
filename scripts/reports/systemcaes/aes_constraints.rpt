@@ -1,0 +1,29 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : aes
+Version: W-2024.09-SP4-1
+Date   : Tue Apr 29 15:07:15 2025
+****************************************
+
+
+   min_delay/hold ('clk' group)
+
+                             Required        Actual
+   Endpoint                 Path Delay     Path Delay        Slack
+   -----------------------------------------------------------------
+   ready_o                      0.19           0.16 f        -0.03  (VIOLATED)
+   first_round_reg_reg/D        0.18           0.17 f        -0.01  (VIOLATED)
+
+
+   max_area
+
+                             Required        Actual
+   Design                      Area           Area           Slack
+   -----------------------------------------------------------------
+   aes                          0.00       17865.85       -17865.85 (VIOLATED)
+
+
+1

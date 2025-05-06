@@ -1,0 +1,71 @@
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : des3
+Version: W-2024.09-SP4-1
+Date   : Tue Apr 29 15:08:20 2025
+****************************************
+
+
+Library(s) Used:
+
+    saed32rvt_ss0p95v25c (File: /mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v25c.db)
+
+
+Operating Conditions: ss0p95v25c   Library: saed32rvt_ss0p95v25c
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+des3                   8000              saed32rvt_ss0p95v25c
+crp                    8000              saed32rvt_ss0p95v25c
+key_sel3               8000              saed32rvt_ss0p95v25c
+sbox1                  ForQA             saed32rvt_ss0p95v25c
+sbox2                  ForQA             saed32rvt_ss0p95v25c
+sbox3                  ForQA             saed32rvt_ss0p95v25c
+sbox4                  ForQA             saed32rvt_ss0p95v25c
+sbox5                  ForQA             saed32rvt_ss0p95v25c
+sbox6                  ForQA             saed32rvt_ss0p95v25c
+sbox7                  ForQA             saed32rvt_ss0p95v25c
+sbox8                  ForQA             saed32rvt_ss0p95v25c
+
+
+Global Operating Voltage = 0.95 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+Attributes
+----------
+i - Including register clock pin internal power
+
+
+  Cell Internal Power  = 146.8822 uW   (79%)
+  Net Switching Power  =  38.2573 uW   (21%)
+                         ---------
+Total Dynamic Power    = 185.1395 uW  (100%)
+
+Cell Leakage Power     = 138.5560 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network     85.7557            0.0000            0.0000           85.7557  (  26.49%)  i
+register           1.2702            1.3060        1.8025e+07           20.6015  (   6.36%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational     59.8563           36.9514        1.2053e+08          217.3383  (  67.14%)
+--------------------------------------------------------------------------------------------------
+Total            146.8822 uW        38.2573 uW     1.3856e+08 pW       323.6956 uW
+1

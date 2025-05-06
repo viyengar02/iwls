@@ -1,0 +1,11 @@
+set_user_match   -inverted   $svf_ref/aes/mix1/decrypt_i   $svf_impl/aes/mix1/decrypt_i
+set_user_match   -inverted   $svf_ref/aes/sub1/decrypt_i   $svf_impl/aes/sub1/decrypt_i
+guide_constraints -body { sub1 } -equivalent { sub1/decrypt_i  ~ sub1/IN0 }
+guide_constraints -body { mix1 } -equivalent { mix1/decrypt_i  ~ mix1/IN0 }
+guide_constraints -body { ks1 } -equivalent { ks1/reset    ks1/IN0   ks1/IN1   ks1/IN2   ks1/IN3   ks1/IN4   ks1/IN5   ks1/IN6   ks1/IN7 }
+guide_constraints -body { sbox1 } -equivalent { sbox1/reset    sbox1/IN0 }
+guide_constraints -body { sub1 } -equivalent { sub1/reset    sub1/IN1   sub1/IN2   sub1/IN3   sub1/IN4   sub1/IN5   sub1/IN6   sub1/IN7   sub1/IN8 }
+guide_constraints -body { mix1 } -equivalent { mix1/reset    mix1/IN1   mix1/IN2   mix1/IN3   mix1/IN4   mix1/IN5 }
+
+#-------------------------------------------------------------------
+

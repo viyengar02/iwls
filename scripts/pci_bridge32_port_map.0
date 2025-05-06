@@ -1,0 +1,304 @@
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_target_unit/fifos/pciw_fifo_ctrl/rallow_out   $svf_impl/pci_bridge32/pci_target_unit/fifos/pciw_fifo_ctrl/rallow_out
+set_user_match   -inverted   $svf_ref/pci_bridge32/wishbone_slave_unit/wishbone_slave/wbw_fifo_control_out[0]   $svf_impl/pci_bridge32/wishbone_slave_unit/wishbone_slave/wbw_fifo_control_out[0]
+set_user_match   -inverted   $svf_ref/pci_bridge32/wishbone_slave_unit/fifos/wbw_control_in[0]   $svf_impl/pci_bridge32/wishbone_slave_unit/fifos/wbw_control_in[0]
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/ad_iob5/dat_en_in   $svf_impl/pci_bridge32/pci_io_mux/ad_iob5/dat_en_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/ad_iob6/dat_en_in   $svf_impl/pci_bridge32/pci_io_mux/ad_iob6/dat_en_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/ad_iob7/dat_en_in   $svf_impl/pci_bridge32/pci_io_mux/ad_iob7/dat_en_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/ad_iob0/dat_en_in   $svf_impl/pci_bridge32/pci_io_mux/ad_iob0/dat_en_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/ad_iob1/dat_en_in   $svf_impl/pci_bridge32/pci_io_mux/ad_iob1/dat_en_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/ad_iob2/dat_en_in   $svf_impl/pci_bridge32/pci_io_mux/ad_iob2/dat_en_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/ad_iob3/dat_en_in   $svf_impl/pci_bridge32/pci_io_mux/ad_iob3/dat_en_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/ad_iob4/dat_en_in   $svf_impl/pci_bridge32/pci_io_mux/ad_iob4/dat_en_in
+guide_constraints -body { pci_io_mux/ad_iob1 } -equivalent { pci_io_mux/ad_iob1/dat_en_in  ~ pci_io_mux/ad_iob1/IN0 }
+guide_constraints -body { pci_io_mux/ad_iob2 } -equivalent { pci_io_mux/ad_iob2/dat_en_in  ~ pci_io_mux/ad_iob2/IN0 }
+guide_constraints -body { pci_io_mux/ad_iob6 } -equivalent { pci_io_mux/ad_iob6/dat_en_in  ~ pci_io_mux/ad_iob6/IN0 }
+guide_constraints -body { pci_io_mux/ad_iob5 } -equivalent { pci_io_mux/ad_iob5/dat_en_in  ~ pci_io_mux/ad_iob5/IN0 }
+guide_constraints -body { pci_io_mux/ad_iob7 } -equivalent { pci_io_mux/ad_iob7/dat_en_in  ~ pci_io_mux/ad_iob7/IN0 }
+guide_constraints -body { pci_io_mux/ad_iob4 } -equivalent { pci_io_mux/ad_iob4/dat_en_in  ~ pci_io_mux/ad_iob4/IN0 }
+guide_constraints -body { pci_io_mux/ad_iob0 } -equivalent { pci_io_mux/ad_iob0/dat_en_in  ~ pci_io_mux/ad_iob0/IN0 }
+guide_constraints -body { pci_io_mux/ad_iob3 } -equivalent { pci_io_mux/ad_iob3/dat_en_in  ~ pci_io_mux/ad_iob3/IN0 }
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/ad_iob29/dat_en_in   $svf_impl/pci_bridge32/pci_io_mux/ad_iob29/dat_en_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/ad_iob31/dat_en_in   $svf_impl/pci_bridge32/pci_io_mux/ad_iob31/dat_en_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/ad_iob25/dat_en_in   $svf_impl/pci_bridge32/pci_io_mux/ad_iob25/dat_en_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/ad_iob27/dat_en_in   $svf_impl/pci_bridge32/pci_io_mux/ad_iob27/dat_en_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/ad_iob30/dat_en_in   $svf_impl/pci_bridge32/pci_io_mux/ad_iob30/dat_en_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/ad_iob24/dat_en_in   $svf_impl/pci_bridge32/pci_io_mux/ad_iob24/dat_en_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/ad_iob26/dat_en_in   $svf_impl/pci_bridge32/pci_io_mux/ad_iob26/dat_en_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/ad_iob28/dat_en_in   $svf_impl/pci_bridge32/pci_io_mux/ad_iob28/dat_en_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/output_backup/ad_load_in   $svf_impl/pci_bridge32/output_backup/ad_load_in
+guide_constraints -body { pci_io_mux/ad_iob26 } -equivalent { pci_io_mux/ad_iob26/dat_en_in  ~ pci_io_mux/ad_iob26/IN0 }
+guide_constraints -body { pci_io_mux/ad_iob24 } -equivalent { pci_io_mux/ad_iob24/dat_en_in  ~ pci_io_mux/ad_iob24/IN0 }
+guide_constraints -body { pci_io_mux/ad_iob28 } -equivalent { pci_io_mux/ad_iob28/dat_en_in  ~ pci_io_mux/ad_iob28/IN0 }
+guide_constraints -body { pci_io_mux/ad_iob30 } -equivalent { pci_io_mux/ad_iob30/dat_en_in  ~ pci_io_mux/ad_iob30/IN0 }
+guide_constraints -body { pci_io_mux/ad_iob25 } -equivalent { pci_io_mux/ad_iob25/dat_en_in  ~ pci_io_mux/ad_iob25/IN0 }
+guide_constraints -body { pci_io_mux/ad_iob27 } -equivalent { pci_io_mux/ad_iob27/dat_en_in  ~ pci_io_mux/ad_iob27/IN0 }
+guide_constraints -body { pci_io_mux/ad_iob29 } -equivalent { pci_io_mux/ad_iob29/dat_en_in  ~ pci_io_mux/ad_iob29/IN0 }
+guide_constraints -body { pci_io_mux/ad_iob31 } -equivalent { pci_io_mux/ad_iob31/dat_en_in  ~ pci_io_mux/ad_iob31/IN0 }
+guide_constraints -body { output_backup } -equivalent { output_backup/ad_load_in  ~ output_backup/IN0 }
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/ad_iob21/dat_en_in   $svf_impl/pci_bridge32/pci_io_mux/ad_iob21/dat_en_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/ad_iob22/dat_en_in   $svf_impl/pci_bridge32/pci_io_mux/ad_iob22/dat_en_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/ad_iob23/dat_en_in   $svf_impl/pci_bridge32/pci_io_mux/ad_iob23/dat_en_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/ad_iob16/dat_en_in   $svf_impl/pci_bridge32/pci_io_mux/ad_iob16/dat_en_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/ad_iob17/dat_en_in   $svf_impl/pci_bridge32/pci_io_mux/ad_iob17/dat_en_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/ad_iob18/dat_en_in   $svf_impl/pci_bridge32/pci_io_mux/ad_iob18/dat_en_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/ad_iob19/dat_en_in   $svf_impl/pci_bridge32/pci_io_mux/ad_iob19/dat_en_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/ad_iob20/dat_en_in   $svf_impl/pci_bridge32/pci_io_mux/ad_iob20/dat_en_in
+guide_constraints -body { pci_io_mux/ad_iob18 } -equivalent { pci_io_mux/ad_iob18/dat_en_in  ~ pci_io_mux/ad_iob18/IN0 }
+guide_constraints -body { pci_io_mux/ad_iob19 } -equivalent { pci_io_mux/ad_iob19/dat_en_in  ~ pci_io_mux/ad_iob19/IN0 }
+guide_constraints -body { pci_io_mux/ad_iob20 } -equivalent { pci_io_mux/ad_iob20/dat_en_in  ~ pci_io_mux/ad_iob20/IN0 }
+guide_constraints -body { pci_io_mux/ad_iob21 } -equivalent { pci_io_mux/ad_iob21/dat_en_in  ~ pci_io_mux/ad_iob21/IN0 }
+guide_constraints -body { pci_io_mux/ad_iob23 } -equivalent { pci_io_mux/ad_iob23/dat_en_in  ~ pci_io_mux/ad_iob23/IN0 }
+guide_constraints -body { pci_io_mux/ad_iob22 } -equivalent { pci_io_mux/ad_iob22/dat_en_in  ~ pci_io_mux/ad_iob22/IN0 }
+guide_constraints -body { pci_io_mux/ad_iob17 } -equivalent { pci_io_mux/ad_iob17/dat_en_in  ~ pci_io_mux/ad_iob17/IN0 }
+guide_constraints -body { pci_io_mux/ad_iob16 } -equivalent { pci_io_mux/ad_iob16/dat_en_in  ~ pci_io_mux/ad_iob16/IN0 }
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/ad_iob13/dat_en_in   $svf_impl/pci_bridge32/pci_io_mux/ad_iob13/dat_en_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/ad_iob14/dat_en_in   $svf_impl/pci_bridge32/pci_io_mux/ad_iob14/dat_en_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/ad_iob15/dat_en_in   $svf_impl/pci_bridge32/pci_io_mux/ad_iob15/dat_en_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/ad_iob8/dat_en_in   $svf_impl/pci_bridge32/pci_io_mux/ad_iob8/dat_en_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/ad_iob9/dat_en_in   $svf_impl/pci_bridge32/pci_io_mux/ad_iob9/dat_en_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/ad_iob10/dat_en_in   $svf_impl/pci_bridge32/pci_io_mux/ad_iob10/dat_en_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/ad_iob11/dat_en_in   $svf_impl/pci_bridge32/pci_io_mux/ad_iob11/dat_en_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/ad_iob12/dat_en_in   $svf_impl/pci_bridge32/pci_io_mux/ad_iob12/dat_en_in
+guide_constraints -body { pci_io_mux/ad_iob12 } -equivalent { pci_io_mux/ad_iob12/dat_en_in  ~ pci_io_mux/ad_iob12/IN0 }
+guide_constraints -body { pci_io_mux/ad_iob11 } -equivalent { pci_io_mux/ad_iob11/dat_en_in  ~ pci_io_mux/ad_iob11/IN0 }
+guide_constraints -body { pci_io_mux/ad_iob8 } -equivalent { pci_io_mux/ad_iob8/dat_en_in  ~ pci_io_mux/ad_iob8/IN0 }
+guide_constraints -body { pci_io_mux/ad_iob9 } -equivalent { pci_io_mux/ad_iob9/dat_en_in  ~ pci_io_mux/ad_iob9/IN0 }
+guide_constraints -body { pci_io_mux/ad_iob10 } -equivalent { pci_io_mux/ad_iob10/dat_en_in  ~ pci_io_mux/ad_iob10/IN0 }
+guide_constraints -body { pci_io_mux/ad_iob13 } -equivalent { pci_io_mux/ad_iob13/dat_en_in  ~ pci_io_mux/ad_iob13/IN0 }
+guide_constraints -body { pci_io_mux/ad_iob14 } -equivalent { pci_io_mux/ad_iob14/dat_en_in  ~ pci_io_mux/ad_iob14/IN0 }
+guide_constraints -body { pci_io_mux/ad_iob15 } -equivalent { pci_io_mux/ad_iob15/dat_en_in  ~ pci_io_mux/ad_iob15/IN0 }
+guide_constraints -body { configuration } -equivalent { configuration/wb_error_sig    configuration/IN0 }
+set_user_match   -inverted   $svf_ref/pci_bridge32/wishbone_slave_unit/pci_initiator_sm/wait_out   $svf_impl/pci_bridge32/wishbone_slave_unit/pci_initiator_sm/wait_out
+set_user_match   -inverted   $svf_ref/pci_bridge32/wishbone_slave_unit/pci_initiator_if/wait_in   $svf_impl/pci_bridge32/wishbone_slave_unit/pci_initiator_if/wait_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/wishbone_slave_unit/pci_initiator_if/req_out   $svf_impl/pci_bridge32/wishbone_slave_unit/pci_initiator_if/req_out
+set_user_match   -inverted   $svf_ref/pci_bridge32/wishbone_slave_unit/pci_initiator_sm/pci_trdy_in   $svf_impl/pci_bridge32/wishbone_slave_unit/pci_initiator_sm/pci_trdy_in
+guide_constraints -body { wishbone_slave_unit/pci_initiator_sm } -equivalent { wishbone_slave_unit/pci_initiator_sm/pci_trdy_in  ~ wishbone_slave_unit/pci_initiator_sm/IN0 ~ wishbone_slave_unit/pci_initiator_sm/IN1 ~ wishbone_slave_unit/pci_initiator_sm/IN2 ~ wishbone_slave_unit/pci_initiator_sm/IN3 ~ wishbone_slave_unit/pci_initiator_sm/IN4 ~ wishbone_slave_unit/pci_initiator_sm/IN5 }
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_target_unit/fifos/pcir_fifo_ctrl/wallow_out   $svf_impl/pci_bridge32/pci_target_unit/fifos/pcir_fifo_ctrl/wallow_out
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_target_unit/pci_target_if/sel_conf_fifo_in   $svf_impl/pci_bridge32/pci_target_unit/pci_target_if/sel_conf_fifo_in
+guide_constraints -body { pci_target_unit/pci_target_if } -equivalent { pci_target_unit/pci_target_if/sel_conf_fifo_in  ~ pci_target_unit/pci_target_if/IN1 }
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_target_unit/pci_target_sm/addr_phase_out   $svf_impl/pci_bridge32/pci_target_unit/pci_target_sm/addr_phase_out
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_target_unit/pci_target_if/addr_phase_in   $svf_impl/pci_bridge32/pci_target_unit/pci_target_if/addr_phase_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_target_unit/pci_target_if/decoder0/bc_in[2]   $svf_impl/pci_bridge32/pci_target_unit/pci_target_if/decoder0/bc_in[2]
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_target_unit/pci_target_if/decoder1/bc_in[2]   $svf_impl/pci_bridge32/pci_target_unit/pci_target_if/decoder1/bc_in[2]
+guide_constraints -body { pci_target_unit/pci_target_if/decoder1 } -equivalent { pci_target_unit/pci_target_if/decoder1/bc_in[2]  ~ pci_target_unit/pci_target_if/decoder1/IN0 }
+guide_constraints -body { pci_target_unit/pci_target_if/decoder0 } -equivalent { pci_target_unit/pci_target_if/decoder0/bc_in[2]  ~ pci_target_unit/pci_target_if/decoder0/IN0 }
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_target_unit/pci_target_sm/pci_cbe_reg_in[0]   $svf_impl/pci_bridge32/pci_target_unit/pci_target_sm/pci_cbe_reg_in[0]
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_target_unit/pci_target_if/bc_in[0]   $svf_impl/pci_bridge32/pci_target_unit/pci_target_if/bc_in[0]
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_target_unit/pci_target_if/decoder0/bc_in[0]   $svf_impl/pci_bridge32/pci_target_unit/pci_target_if/decoder0/bc_in[0]
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_target_unit/pci_target_if/decoder1/bc_in[0]   $svf_impl/pci_bridge32/pci_target_unit/pci_target_if/decoder1/bc_in[0]
+guide_constraints -body { pci_target_unit/pci_target_sm } -equivalent { pci_target_unit/pci_target_sm/pci_cbe_reg_in[0]  ~ pci_target_unit/pci_target_sm/IN1 }
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_target_unit/pci_target_if/decoder0/bc_in[3]   $svf_impl/pci_bridge32/pci_target_unit/pci_target_if/decoder0/bc_in[3]
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_target_unit/pci_target_if/decoder1/bc_in[3]   $svf_impl/pci_bridge32/pci_target_unit/pci_target_if/decoder1/bc_in[3]
+guide_constraints -body { pci_target_unit/pci_target_if/decoder1 } -equivalent { pci_target_unit/pci_target_if/decoder1/bc_in[3]  ~ pci_target_unit/pci_target_if/decoder1/IN1 }
+guide_constraints -body { pci_target_unit/pci_target_if/decoder0 } -equivalent { pci_target_unit/pci_target_if/decoder0/bc_in[3]  ~ pci_target_unit/pci_target_if/decoder0/IN1 }
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_target_unit/pciu_pciif_cbe_reg_in[1]   $svf_impl/pci_bridge32/pci_target_unit/pciu_pciif_cbe_reg_in[1]
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_target_unit/pci_target_if/bc_in[1]   $svf_impl/pci_bridge32/pci_target_unit/pci_target_if/bc_in[1]
+set_user_match   -inverted   $svf_ref/pci_bridge32/parity_checker/pci_cbe_reg_in[1]   $svf_impl/pci_bridge32/parity_checker/pci_cbe_reg_in[1]
+guide_constraints -body { pci_target_unit } -equivalent { pci_target_unit/pciu_pciif_cbe_reg_in[1]  ~ pci_target_unit/IN0 ~ pci_target_unit/IN1 ~ pci_target_unit/IN2 }
+guide_constraints -body { parity_checker } -equivalent { parity_checker/pci_cbe_reg_in[1]  ~ parity_checker/IN0 }
+guide_constraints -body { pci_io_mux } -equivalent { pci_io_mux/tar_ad_en_reg_in    pci_io_mux/IN8 }
+set_user_match   -inverted   $svf_ref/pci_bridge32/parity_checker/pci_cbe_en_in   $svf_impl/pci_bridge32/parity_checker/pci_cbe_en_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/parity_checker/par_gen/pci_cbe_en_in   $svf_impl/pci_bridge32/parity_checker/par_gen/pci_cbe_en_in
+guide_constraints -body { parity_checker/par_gen } -equivalent { parity_checker/par_gen/pci_cbe_en_in  ~ parity_checker/par_gen/IN0 }
+guide_constraints -body { parity_checker } -equivalent { parity_checker/pci_cbe_en_in  ~ parity_checker/IN1 }
+guide_constraints -body { pci_target_unit/pci_target_if } -equivalent { pci_target_unit/pci_target_if/rdy_in    pci_target_unit/pci_target_if/IN2 }
+set_user_match   -inverted   $svf_ref/pci_bridge32/input_register/init_complete_in   $svf_impl/pci_bridge32/input_register/init_complete_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_resets_and_interrupts/init_complete_in   $svf_impl/pci_bridge32/pci_resets_and_interrupts/init_complete_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_resets_and_interrupts/inta/en_en_in   $svf_impl/pci_bridge32/pci_resets_and_interrupts/inta/en_en_in
+guide_constraints -body { input_register } -equivalent { input_register/init_complete_in  ~ input_register/IN0 ~ input_register/IN1 }
+guide_constraints -body { pci_resets_and_interrupts/inta } -equivalent { pci_resets_and_interrupts/inta/en_en_in  ~ pci_resets_and_interrupts/inta/IN0 }
+guide_constraints -body { pci_resets_and_interrupts } -equivalent { pci_resets_and_interrupts/init_complete_in  ~ pci_resets_and_interrupts/IN0 }
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_target_unit/fifos/pcir_fifo_ctrl/waddr_out[0]   $svf_impl/pci_bridge32/pci_target_unit/fifos/pcir_fifo_ctrl/waddr_out[0]
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_target_unit/fifos/pcir_fifo_storage/addr_a[0]   $svf_impl/pci_bridge32/pci_target_unit/fifos/pcir_fifo_storage/addr_a[0]
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_resets_and_interrupts/inta/reset_in   $svf_impl/pci_bridge32/pci_resets_and_interrupts/inta/reset_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/i_pci_wbs_wbb3_2_wbb2/wb_rst_i   $svf_impl/pci_bridge32/i_pci_wbs_wbb3_2_wbb2/wb_rst_i
+set_user_match   -inverted   $svf_ref/pci_bridge32/wishbone_slave_unit/wishbone_slave/reset_in   $svf_impl/pci_bridge32/wishbone_slave_unit/wishbone_slave/reset_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/wishbone_slave_unit/wishbone_slave/async_reset_as_wbr_flush/reset_in   $svf_impl/pci_bridge32/wishbone_slave_unit/wishbone_slave/async_reset_as_wbr_flush/reset_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/wishbone_slave_unit/fifos/wbw_fifo_ctrl/reset_in   $svf_impl/pci_bridge32/wishbone_slave_unit/fifos/wbw_fifo_ctrl/reset_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/wishbone_slave_unit/fifos/wbw_fifo_ctrl/i_synchronizer_reg_rgrey_minus1/async_reset   $svf_impl/pci_bridge32/wishbone_slave_unit/fifos/wbw_fifo_ctrl/i_synchronizer_reg_rgrey_minus1/async_reset
+set_user_match   -inverted   $svf_ref/pci_bridge32/wishbone_slave_unit/fifos/wbw_fifo_ctrl/i_synchronizer_reg_wgrey_next/async_reset   $svf_impl/pci_bridge32/wishbone_slave_unit/fifos/wbw_fifo_ctrl/i_synchronizer_reg_wgrey_next/async_reset
+set_user_match   -inverted   $svf_ref/pci_bridge32/wishbone_slave_unit/fifos/wbr_fifo_ctrl/reset_in   $svf_impl/pci_bridge32/wishbone_slave_unit/fifos/wbr_fifo_ctrl/reset_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/wishbone_slave_unit/fifos/wbr_fifo_ctrl/i_synchronizer_reg_wgrey_addr/async_reset   $svf_impl/pci_bridge32/wishbone_slave_unit/fifos/wbr_fifo_ctrl/i_synchronizer_reg_wgrey_addr/async_reset
+set_user_match   -inverted   $svf_ref/pci_bridge32/wishbone_slave_unit/fifos/i_synchronizer_reg_inGreyCount/async_reset   $svf_impl/pci_bridge32/wishbone_slave_unit/fifos/i_synchronizer_reg_inGreyCount/async_reset
+set_user_match   -inverted   $svf_ref/pci_bridge32/wishbone_slave_unit/del_sync/reset_in   $svf_impl/pci_bridge32/wishbone_slave_unit/del_sync/reset_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/wishbone_slave_unit/del_sync/req_sync/async_reset   $svf_impl/pci_bridge32/wishbone_slave_unit/del_sync/req_sync/async_reset
+set_user_match   -inverted   $svf_ref/pci_bridge32/wishbone_slave_unit/del_sync/comp_sync/async_reset   $svf_impl/pci_bridge32/wishbone_slave_unit/del_sync/comp_sync/async_reset
+set_user_match   -inverted   $svf_ref/pci_bridge32/wishbone_slave_unit/del_sync/done_sync/async_reset   $svf_impl/pci_bridge32/wishbone_slave_unit/del_sync/done_sync/async_reset
+set_user_match   -inverted   $svf_ref/pci_bridge32/wishbone_slave_unit/del_sync/rty_exp_sync/async_reset   $svf_impl/pci_bridge32/wishbone_slave_unit/del_sync/rty_exp_sync/async_reset
+set_user_match   -inverted   $svf_ref/pci_bridge32/wishbone_slave_unit/del_sync/rty_exp_back_prop_sync/async_reset   $svf_impl/pci_bridge32/wishbone_slave_unit/del_sync/rty_exp_back_prop_sync/async_reset
+set_user_match   -inverted   $svf_ref/pci_bridge32/wishbone_slave_unit/delayed_write_data/reset_in   $svf_impl/pci_bridge32/wishbone_slave_unit/delayed_write_data/reset_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/wishbone_slave_unit/pci_initiator_if/reset_in   $svf_impl/pci_bridge32/wishbone_slave_unit/pci_initiator_if/reset_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/wishbone_slave_unit/pci_initiator_sm/reset_in   $svf_impl/pci_bridge32/wishbone_slave_unit/pci_initiator_sm/reset_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_target_unit/wishbone_master/reset_in   $svf_impl/pci_bridge32/pci_target_unit/wishbone_master/reset_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_target_unit/fifos/pciw_fifo_ctrl/reset_in   $svf_impl/pci_bridge32/pci_target_unit/fifos/pciw_fifo_ctrl/reset_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_target_unit/fifos/pciw_fifo_ctrl/i_synchronizer_reg_rgrey_minus2/async_reset   $svf_impl/pci_bridge32/pci_target_unit/fifos/pciw_fifo_ctrl/i_synchronizer_reg_rgrey_minus2/async_reset
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_target_unit/fifos/pciw_fifo_ctrl/i_synchronizer_reg_wgrey_addr/async_reset   $svf_impl/pci_bridge32/pci_target_unit/fifos/pciw_fifo_ctrl/i_synchronizer_reg_wgrey_addr/async_reset
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_target_unit/fifos/pcir_fifo_ctrl/reset_in   $svf_impl/pci_bridge32/pci_target_unit/fifos/pcir_fifo_ctrl/reset_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_target_unit/fifos/pcir_fifo_ctrl/i_synchronizer_reg_rgrey_addr/async_reset   $svf_impl/pci_bridge32/pci_target_unit/fifos/pcir_fifo_ctrl/i_synchronizer_reg_rgrey_addr/async_reset
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_target_unit/fifos/pcir_fifo_ctrl/i_synchronizer_reg_wgrey_addr/async_reset   $svf_impl/pci_bridge32/pci_target_unit/fifos/pcir_fifo_ctrl/i_synchronizer_reg_wgrey_addr/async_reset
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_target_unit/fifos/i_synchronizer_reg_inGreyCount/async_reset   $svf_impl/pci_bridge32/pci_target_unit/fifos/i_synchronizer_reg_inGreyCount/async_reset
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_target_unit/del_sync/reset_in   $svf_impl/pci_bridge32/pci_target_unit/del_sync/reset_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_target_unit/del_sync/req_sync/async_reset   $svf_impl/pci_bridge32/pci_target_unit/del_sync/req_sync/async_reset
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_target_unit/del_sync/comp_sync/async_reset   $svf_impl/pci_bridge32/pci_target_unit/del_sync/comp_sync/async_reset
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_target_unit/del_sync/done_sync/async_reset   $svf_impl/pci_bridge32/pci_target_unit/del_sync/done_sync/async_reset
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_target_unit/del_sync/rty_exp_sync/async_reset   $svf_impl/pci_bridge32/pci_target_unit/del_sync/rty_exp_sync/async_reset
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_target_unit/del_sync/rty_exp_back_prop_sync/async_reset   $svf_impl/pci_bridge32/pci_target_unit/del_sync/rty_exp_back_prop_sync/async_reset
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_target_unit/pci_target_if/reset_in   $svf_impl/pci_bridge32/pci_target_unit/pci_target_if/reset_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_target_unit/pci_target_if/async_reset_as_pcir_flush/reset_in   $svf_impl/pci_bridge32/pci_target_unit/pci_target_if/async_reset_as_pcir_flush/reset_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_target_unit/pci_target_sm/reset_in   $svf_impl/pci_bridge32/pci_target_unit/pci_target_sm/reset_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/configuration/reset   $svf_impl/pci_bridge32/configuration/reset
+set_user_match   -inverted   $svf_ref/pci_bridge32/configuration/sync_pci_err_cs_8/reset_in   $svf_impl/pci_bridge32/configuration/sync_pci_err_cs_8/reset_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/configuration/sync_pci_err_cs_8/delete_sync/async_reset   $svf_impl/pci_bridge32/configuration/sync_pci_err_cs_8/delete_sync/async_reset
+set_user_match   -inverted   $svf_ref/pci_bridge32/configuration/sync_pci_err_cs_8/clear_delete_sync/async_reset   $svf_impl/pci_bridge32/configuration/sync_pci_err_cs_8/clear_delete_sync/async_reset
+set_user_match   -inverted   $svf_ref/pci_bridge32/configuration/pci_err_cs_bits_sync/async_reset   $svf_impl/pci_bridge32/configuration/pci_err_cs_bits_sync/async_reset
+set_user_match   -inverted   $svf_ref/pci_bridge32/configuration/sync_isr_2/reset_in   $svf_impl/pci_bridge32/configuration/sync_isr_2/reset_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/configuration/sync_isr_2/delete_sync/async_reset   $svf_impl/pci_bridge32/configuration/sync_isr_2/delete_sync/async_reset
+set_user_match   -inverted   $svf_ref/pci_bridge32/configuration/sync_isr_2/clear_delete_sync/async_reset   $svf_impl/pci_bridge32/configuration/sync_isr_2/clear_delete_sync/async_reset
+set_user_match   -inverted   $svf_ref/pci_bridge32/configuration/isr_bit2_sync/async_reset   $svf_impl/pci_bridge32/configuration/isr_bit2_sync/async_reset
+set_user_match   -inverted   $svf_ref/pci_bridge32/configuration/isr_bit0_sync/async_reset   $svf_impl/pci_bridge32/configuration/isr_bit0_sync/async_reset
+set_user_match   -inverted   $svf_ref/pci_bridge32/configuration/int_pin_sync/async_reset   $svf_impl/pci_bridge32/configuration/int_pin_sync/async_reset
+set_user_match   -inverted   $svf_ref/pci_bridge32/configuration/command_bit_sync/async_reset   $svf_impl/pci_bridge32/configuration/command_bit_sync/async_reset
+set_user_match   -inverted   $svf_ref/pci_bridge32/configuration/cache_lsize_to_wb_bits_sync/async_reset   $svf_impl/pci_bridge32/configuration/cache_lsize_to_wb_bits_sync/async_reset
+set_user_match   -inverted   $svf_ref/pci_bridge32/configuration/i_wb_init_complete_sync/async_reset   $svf_impl/pci_bridge32/configuration/i_wb_init_complete_sync/async_reset
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/reset_in   $svf_impl/pci_bridge32/pci_io_mux/reset_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/ad_iob5/reset_in   $svf_impl/pci_bridge32/pci_io_mux/ad_iob5/reset_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/ad_iob6/reset_in   $svf_impl/pci_bridge32/pci_io_mux/ad_iob6/reset_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/ad_iob7/reset_in   $svf_impl/pci_bridge32/pci_io_mux/ad_iob7/reset_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/ad_iob8/reset_in   $svf_impl/pci_bridge32/pci_io_mux/ad_iob8/reset_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/ad_iob9/reset_in   $svf_impl/pci_bridge32/pci_io_mux/ad_iob9/reset_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/ad_iob10/reset_in   $svf_impl/pci_bridge32/pci_io_mux/ad_iob10/reset_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/ad_iob11/reset_in   $svf_impl/pci_bridge32/pci_io_mux/ad_iob11/reset_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/ad_iob0/reset_in   $svf_impl/pci_bridge32/pci_io_mux/ad_iob0/reset_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/ad_iob1/reset_in   $svf_impl/pci_bridge32/pci_io_mux/ad_iob1/reset_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/ad_iob2/reset_in   $svf_impl/pci_bridge32/pci_io_mux/ad_iob2/reset_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/ad_iob3/reset_in   $svf_impl/pci_bridge32/pci_io_mux/ad_iob3/reset_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/ad_iob4/reset_in   $svf_impl/pci_bridge32/pci_io_mux/ad_iob4/reset_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/ad_iob21/reset_in   $svf_impl/pci_bridge32/pci_io_mux/ad_iob21/reset_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/ad_iob22/reset_in   $svf_impl/pci_bridge32/pci_io_mux/ad_iob22/reset_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/ad_iob13/reset_in   $svf_impl/pci_bridge32/pci_io_mux/ad_iob13/reset_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/ad_iob14/reset_in   $svf_impl/pci_bridge32/pci_io_mux/ad_iob14/reset_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/ad_iob15/reset_in   $svf_impl/pci_bridge32/pci_io_mux/ad_iob15/reset_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/ad_iob16/reset_in   $svf_impl/pci_bridge32/pci_io_mux/ad_iob16/reset_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/ad_iob17/reset_in   $svf_impl/pci_bridge32/pci_io_mux/ad_iob17/reset_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/ad_iob18/reset_in   $svf_impl/pci_bridge32/pci_io_mux/ad_iob18/reset_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/ad_iob19/reset_in   $svf_impl/pci_bridge32/pci_io_mux/ad_iob19/reset_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/ad_iob20/reset_in   $svf_impl/pci_bridge32/pci_io_mux/ad_iob20/reset_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/ad_iob12/reset_in   $svf_impl/pci_bridge32/pci_io_mux/ad_iob12/reset_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/ad_iob29/reset_in   $svf_impl/pci_bridge32/pci_io_mux/ad_iob29/reset_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/ad_iob30/reset_in   $svf_impl/pci_bridge32/pci_io_mux/ad_iob30/reset_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/ad_iob31/reset_in   $svf_impl/pci_bridge32/pci_io_mux/ad_iob31/reset_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/cbe_iob0/reset_in   $svf_impl/pci_bridge32/pci_io_mux/cbe_iob0/reset_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/cbe_iob1/reset_in   $svf_impl/pci_bridge32/pci_io_mux/cbe_iob1/reset_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/ad_iob23/reset_in   $svf_impl/pci_bridge32/pci_io_mux/ad_iob23/reset_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/ad_iob24/reset_in   $svf_impl/pci_bridge32/pci_io_mux/ad_iob24/reset_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/ad_iob25/reset_in   $svf_impl/pci_bridge32/pci_io_mux/ad_iob25/reset_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/ad_iob26/reset_in   $svf_impl/pci_bridge32/pci_io_mux/ad_iob26/reset_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/ad_iob27/reset_in   $svf_impl/pci_bridge32/pci_io_mux/ad_iob27/reset_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/ad_iob28/reset_in   $svf_impl/pci_bridge32/pci_io_mux/ad_iob28/reset_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/irdy_iob/reset_in   $svf_impl/pci_bridge32/pci_io_mux/irdy_iob/reset_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/trdy_iob/reset_in   $svf_impl/pci_bridge32/pci_io_mux/trdy_iob/reset_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/stop_iob/reset_in   $svf_impl/pci_bridge32/pci_io_mux/stop_iob/reset_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/devsel_iob/reset_in   $svf_impl/pci_bridge32/pci_io_mux/devsel_iob/reset_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/par_iob/reset_in   $svf_impl/pci_bridge32/pci_io_mux/par_iob/reset_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/perr_iob/reset_in   $svf_impl/pci_bridge32/pci_io_mux/perr_iob/reset_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/serr_iob/reset_in   $svf_impl/pci_bridge32/pci_io_mux/serr_iob/reset_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/req_iob/reset_in   $svf_impl/pci_bridge32/pci_io_mux/req_iob/reset_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/cbe_iob2/reset_in   $svf_impl/pci_bridge32/pci_io_mux/cbe_iob2/reset_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/cbe_iob3/reset_in   $svf_impl/pci_bridge32/pci_io_mux/cbe_iob3/reset_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/pci_io_mux/frame_iob/reset_in   $svf_impl/pci_bridge32/pci_io_mux/frame_iob/reset_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/output_backup/reset_in   $svf_impl/pci_bridge32/output_backup/reset_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/parity_checker/reset_in   $svf_impl/pci_bridge32/parity_checker/reset_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/parity_checker/perr_en_crit_gen/reset_in   $svf_impl/pci_bridge32/parity_checker/perr_en_crit_gen/reset_in
+set_user_match   -inverted   $svf_ref/pci_bridge32/input_register/reset_in   $svf_impl/pci_bridge32/input_register/reset_in
+guide_constraints -body { wishbone_slave_unit } -equivalent { wishbone_slave_unit/reset_in  ~ wishbone_slave_unit/IN1 ~ wishbone_slave_unit/IN2 ~ wishbone_slave_unit/IN3 ~ wishbone_slave_unit/IN4 ~ wishbone_slave_unit/IN5 ~ wishbone_slave_unit/IN6 ~ wishbone_slave_unit/IN7 ~ wishbone_slave_unit/IN8 ~ wishbone_slave_unit/IN9 ~ wishbone_slave_unit/IN10 ~ wishbone_slave_unit/IN11 ~ wishbone_slave_unit/IN12 ~ wishbone_slave_unit/IN13 ~ wishbone_slave_unit/IN14 ~ wishbone_slave_unit/IN15 ~ wishbone_slave_unit/IN16 ~ wishbone_slave_unit/IN17 ~ wishbone_slave_unit/IN18 ~ wishbone_slave_unit/IN19 ~ wishbone_slave_unit/IN20 ~ wishbone_slave_unit/IN21 ~ wishbone_slave_unit/IN22 ~ wishbone_slave_unit/IN23 ~ wishbone_slave_unit/IN24 ~ wishbone_slave_unit/IN25 ~ wishbone_slave_unit/IN26 ~ wishbone_slave_unit/IN27 ~ wishbone_slave_unit/IN28 ~ wishbone_slave_unit/IN29 ~ wishbone_slave_unit/IN30 ~ wishbone_slave_unit/IN31 ~ wishbone_slave_unit/IN32 ~ wishbone_slave_unit/IN33 ~ wishbone_slave_unit/IN34 ~ wishbone_slave_unit/IN35 ~ wishbone_slave_unit/IN36 ~ wishbone_slave_unit/IN37 }
+guide_constraints -body { pci_target_unit/fifos } -equivalent { pci_target_unit/fifos/reset_in  ~ pci_target_unit/fifos/IN0 ~ pci_target_unit/fifos/IN1 ~ pci_target_unit/fifos/IN2 ~ pci_target_unit/fifos/IN3 ~ pci_target_unit/fifos/IN4 ~ pci_target_unit/fifos/IN5 ~ pci_target_unit/fifos/IN6 ~ pci_target_unit/fifos/IN7 ~ pci_target_unit/fifos/IN8 ~ pci_target_unit/fifos/IN9 ~ pci_target_unit/fifos/IN10 ~ pci_target_unit/fifos/IN11 ~ pci_target_unit/fifos/IN12 }
+guide_constraints -body { pci_target_unit } -equivalent { pci_target_unit/reset_in  ~ pci_target_unit/IN3 ~ pci_target_unit/IN4 ~ pci_target_unit/IN5 ~ pci_target_unit/IN6 ~ pci_target_unit/IN7 ~ pci_target_unit/IN8 ~ pci_target_unit/IN9 ~ pci_target_unit/IN10 ~ pci_target_unit/IN11 ~ pci_target_unit/IN12 ~ pci_target_unit/IN13 ~ pci_target_unit/IN14 ~ pci_target_unit/IN15 ~ pci_target_unit/IN16 ~ pci_target_unit/IN17 ~ pci_target_unit/IN18 ~ pci_target_unit/IN19 ~ pci_target_unit/IN20 ~ pci_target_unit/IN21 ~ pci_target_unit/IN22 ~ pci_target_unit/IN23 ~ pci_target_unit/IN24 ~ pci_target_unit/IN25 ~ pci_target_unit/IN26 ~ pci_target_unit/IN27 ~ pci_target_unit/IN28 ~ pci_target_unit/IN29 ~ pci_target_unit/IN30 ~ pci_target_unit/IN31 ~ pci_target_unit/IN32 ~ pci_target_unit/IN33 ~ pci_target_unit/IN34 ~ pci_target_unit/IN35 ~ pci_target_unit/IN36 ~ pci_target_unit/IN37 ~ pci_target_unit/IN38 ~ pci_target_unit/IN39 ~ pci_target_unit/IN40 ~ pci_target_unit/IN41 ~ pci_target_unit/IN42 ~ pci_target_unit/IN43 ~ pci_target_unit/IN44 ~ pci_target_unit/IN45 ~ pci_target_unit/IN46 ~ pci_target_unit/IN47 ~ pci_target_unit/IN48 ~ pci_target_unit/IN49 ~ pci_target_unit/IN50 }
+guide_constraints -body { pci_target_unit/del_sync } -equivalent { pci_target_unit/del_sync/reset_in  ~ pci_target_unit/del_sync/IN0 ~ pci_target_unit/del_sync/IN1 ~ pci_target_unit/del_sync/IN2 ~ pci_target_unit/del_sync/IN3 ~ pci_target_unit/del_sync/IN4 ~ pci_target_unit/del_sync/IN5 ~ pci_target_unit/del_sync/IN6 ~ pci_target_unit/del_sync/IN7 ~ pci_target_unit/del_sync/IN8 ~ pci_target_unit/del_sync/IN9 ~ pci_target_unit/del_sync/IN10 ~ pci_target_unit/del_sync/IN11 ~ pci_target_unit/del_sync/IN12 ~ pci_target_unit/del_sync/IN13 ~ pci_target_unit/del_sync/IN14 }
+guide_constraints -body { pci_target_unit/pci_target_if } -equivalent { pci_target_unit/pci_target_if/reset_in  ~ pci_target_unit/pci_target_if/IN3 ~ pci_target_unit/pci_target_if/IN4 ~ pci_target_unit/pci_target_if/IN5 ~ pci_target_unit/pci_target_if/IN6 ~ pci_target_unit/pci_target_if/IN7 ~ pci_target_unit/pci_target_if/IN8 ~ pci_target_unit/pci_target_if/IN9 ~ pci_target_unit/pci_target_if/IN10 ~ pci_target_unit/pci_target_if/IN11 ~ pci_target_unit/pci_target_if/IN12 ~ pci_target_unit/pci_target_if/IN13 ~ pci_target_unit/pci_target_if/IN14 ~ pci_target_unit/pci_target_if/IN15 }
+guide_constraints -body { pci_target_unit/wishbone_master } -equivalent { pci_target_unit/wishbone_master/reset_in  ~ pci_target_unit/wishbone_master/IN0 ~ pci_target_unit/wishbone_master/IN1 ~ pci_target_unit/wishbone_master/IN2 ~ pci_target_unit/wishbone_master/IN3 ~ pci_target_unit/wishbone_master/IN4 ~ pci_target_unit/wishbone_master/IN5 ~ pci_target_unit/wishbone_master/IN6 ~ pci_target_unit/wishbone_master/IN7 ~ pci_target_unit/wishbone_master/IN8 ~ pci_target_unit/wishbone_master/IN9 ~ pci_target_unit/wishbone_master/IN10 ~ pci_target_unit/wishbone_master/IN11 ~ pci_target_unit/wishbone_master/IN12 }
+guide_constraints -body { pci_io_mux } -equivalent { pci_io_mux/reset_in  ~ pci_io_mux/IN9 ~ pci_io_mux/IN10 ~ pci_io_mux/IN11 ~ pci_io_mux/IN12 ~ pci_io_mux/IN13 ~ pci_io_mux/IN14 ~ pci_io_mux/IN15 ~ pci_io_mux/IN16 ~ pci_io_mux/IN17 ~ pci_io_mux/IN18 ~ pci_io_mux/IN19 ~ pci_io_mux/IN20 ~ pci_io_mux/IN21 ~ pci_io_mux/IN22 ~ pci_io_mux/IN23 ~ pci_io_mux/IN24 ~ pci_io_mux/IN25 ~ pci_io_mux/IN26 ~ pci_io_mux/IN27 ~ pci_io_mux/IN28 ~ pci_io_mux/IN29 ~ pci_io_mux/IN30 ~ pci_io_mux/IN31 ~ pci_io_mux/IN32 ~ pci_io_mux/IN33 ~ pci_io_mux/IN34 ~ pci_io_mux/IN35 ~ pci_io_mux/IN36 ~ pci_io_mux/IN37 ~ pci_io_mux/IN38 ~ pci_io_mux/IN39 ~ pci_io_mux/IN40 ~ pci_io_mux/IN41 ~ pci_io_mux/IN42 ~ pci_io_mux/IN43 ~ pci_io_mux/IN44 ~ pci_io_mux/IN45 ~ pci_io_mux/IN46 ~ pci_io_mux/IN47 ~ pci_io_mux/IN48 ~ pci_io_mux/IN49 ~ pci_io_mux/IN50 ~ pci_io_mux/IN51 ~ pci_io_mux/IN52 ~ pci_io_mux/IN53 ~ pci_io_mux/IN54 ~ pci_io_mux/IN55 ~ pci_io_mux/IN56 ~ pci_io_mux/IN57 ~ pci_io_mux/IN58 ~ pci_io_mux/IN59 ~ pci_io_mux/IN60 ~ pci_io_mux/IN61 ~ pci_io_mux/IN62 ~ pci_io_mux/IN63 ~ pci_io_mux/IN64 ~ pci_io_mux/IN65 ~ pci_io_mux/IN66 ~ pci_io_mux/IN67 ~ pci_io_mux/IN68 ~ pci_io_mux/IN69 ~ pci_io_mux/IN70 ~ pci_io_mux/IN71 ~ pci_io_mux/IN72 ~ pci_io_mux/IN73 ~ pci_io_mux/IN74 ~ pci_io_mux/IN75 ~ pci_io_mux/IN76 ~ pci_io_mux/IN77 }
+guide_constraints -body { pci_target_unit/fifos/pciw_fifo_ctrl } -equivalent { pci_target_unit/fifos/pciw_fifo_ctrl/reset_in  ~ pci_target_unit/fifos/pciw_fifo_ctrl/IN1 ~ pci_target_unit/fifos/pciw_fifo_ctrl/IN2 ~ pci_target_unit/fifos/pciw_fifo_ctrl/IN3 ~ pci_target_unit/fifos/pciw_fifo_ctrl/IN4 ~ pci_target_unit/fifos/pciw_fifo_ctrl/IN5 ~ pci_target_unit/fifos/pciw_fifo_ctrl/IN6 }
+guide_constraints -body { wishbone_slave_unit/del_sync } -equivalent { wishbone_slave_unit/del_sync/reset_in  ~ wishbone_slave_unit/del_sync/IN0 ~ wishbone_slave_unit/del_sync/IN1 ~ wishbone_slave_unit/del_sync/IN2 ~ wishbone_slave_unit/del_sync/IN3 ~ wishbone_slave_unit/del_sync/IN4 ~ wishbone_slave_unit/del_sync/IN5 ~ wishbone_slave_unit/del_sync/IN6 ~ wishbone_slave_unit/del_sync/IN7 ~ wishbone_slave_unit/del_sync/IN8 ~ wishbone_slave_unit/del_sync/IN9 ~ wishbone_slave_unit/del_sync/IN10 ~ wishbone_slave_unit/del_sync/IN11 ~ wishbone_slave_unit/del_sync/IN12 }
+guide_constraints -body { output_backup } -equivalent { output_backup/reset_in  ~ output_backup/IN2 ~ output_backup/IN3 ~ output_backup/IN4 ~ output_backup/IN5 ~ output_backup/IN6 ~ output_backup/IN7 }
+guide_constraints -body { configuration } -equivalent { configuration/reset  ~ configuration/IN3 ~ configuration/IN4 ~ configuration/IN5 ~ configuration/IN6 ~ configuration/IN7 ~ configuration/IN8 ~ configuration/IN9 ~ configuration/IN10 ~ configuration/IN11 ~ configuration/IN12 ~ configuration/IN13 ~ configuration/IN14 ~ configuration/IN15 ~ configuration/IN16 ~ configuration/IN17 ~ configuration/IN18 ~ configuration/IN19 ~ configuration/IN20 ~ configuration/IN21 ~ configuration/IN22 ~ configuration/IN23 }
+guide_constraints -body { i_pci_wbs_wbb3_2_wbb2 } -equivalent { i_pci_wbs_wbb3_2_wbb2/wb_rst_i  ~ i_pci_wbs_wbb3_2_wbb2/IN0 ~ i_pci_wbs_wbb3_2_wbb2/IN1 ~ i_pci_wbs_wbb3_2_wbb2/IN2 ~ i_pci_wbs_wbb3_2_wbb2/IN3 ~ i_pci_wbs_wbb3_2_wbb2/IN4 ~ i_pci_wbs_wbb3_2_wbb2/IN5 }
+guide_constraints -body { wishbone_slave_unit/fifos } -equivalent { wishbone_slave_unit/fifos/reset_in  ~ wishbone_slave_unit/fifos/IN0 ~ wishbone_slave_unit/fifos/IN1 ~ wishbone_slave_unit/fifos/IN2 ~ wishbone_slave_unit/fifos/IN3 ~ wishbone_slave_unit/fifos/IN4 ~ wishbone_slave_unit/fifos/IN5 }
+guide_constraints -body { input_register } -equivalent { input_register/reset_in  ~ input_register/IN2 ~ input_register/IN3 ~ input_register/IN4 ~ input_register/IN5 ~ input_register/IN6 ~ input_register/IN7 ~ input_register/IN8 ~ input_register/IN9 }
+guide_constraints -body { wishbone_slave_unit/delayed_write_data } -equivalent { wishbone_slave_unit/delayed_write_data/reset_in  ~ wishbone_slave_unit/delayed_write_data/IN0 ~ wishbone_slave_unit/delayed_write_data/IN1 }
+guide_constraints -body { wishbone_slave_unit/wishbone_slave } -equivalent { wishbone_slave_unit/wishbone_slave/reset_in  ~ wishbone_slave_unit/wishbone_slave/IN0 ~ wishbone_slave_unit/wishbone_slave/IN1 ~ wishbone_slave_unit/wishbone_slave/IN2 ~ wishbone_slave_unit/wishbone_slave/IN3 ~ wishbone_slave_unit/wishbone_slave/IN4 }
+guide_constraints -body { pci_io_mux/ad_iob8 } -equivalent { pci_io_mux/ad_iob8/reset_in  ~ pci_io_mux/ad_iob8/IN1 }
+guide_constraints -body { pci_io_mux/ad_iob12 } -equivalent { pci_io_mux/ad_iob12/reset_in  ~ pci_io_mux/ad_iob12/IN1 }
+guide_constraints -body { pci_io_mux/ad_iob9 } -equivalent { pci_io_mux/ad_iob9/reset_in  ~ pci_io_mux/ad_iob9/IN1 }
+guide_constraints -body { pci_io_mux/ad_iob6 } -equivalent { pci_io_mux/ad_iob6/reset_in  ~ pci_io_mux/ad_iob6/IN1 }
+guide_constraints -body { pci_io_mux/ad_iob11 } -equivalent { pci_io_mux/ad_iob11/reset_in  ~ pci_io_mux/ad_iob11/IN1 }
+guide_constraints -body { pci_io_mux/ad_iob10 } -equivalent { pci_io_mux/ad_iob10/reset_in  ~ pci_io_mux/ad_iob10/IN1 }
+guide_constraints -body { pci_io_mux/ad_iob7 } -equivalent { pci_io_mux/ad_iob7/reset_in  ~ pci_io_mux/ad_iob7/IN1 }
+guide_constraints -body { pci_io_mux/ad_iob5 } -equivalent { pci_io_mux/ad_iob5/reset_in  ~ pci_io_mux/ad_iob5/IN1 }
+guide_constraints -body { pci_io_mux/ad_iob4 } -equivalent { pci_io_mux/ad_iob4/reset_in  ~ pci_io_mux/ad_iob4/IN1 }
+guide_constraints -body { pci_io_mux/ad_iob3 } -equivalent { pci_io_mux/ad_iob3/reset_in  ~ pci_io_mux/ad_iob3/IN1 }
+guide_constraints -body { pci_target_unit/pci_target_sm } -equivalent { pci_target_unit/pci_target_sm/reset_in  ~ pci_target_unit/pci_target_sm/IN3 ~ pci_target_unit/pci_target_sm/IN4 ~ pci_target_unit/pci_target_sm/IN5 }
+guide_constraints -body { wishbone_slave_unit/fifos/wbr_fifo_ctrl } -equivalent { wishbone_slave_unit/fifos/wbr_fifo_ctrl/reset_in  ~ wishbone_slave_unit/fifos/wbr_fifo_ctrl/IN0 ~ wishbone_slave_unit/fifos/wbr_fifo_ctrl/IN1 }
+guide_constraints -body { wishbone_slave_unit/fifos/wbr_fifo_ctrl/i_synchronizer_reg_wgrey_addr } -equivalent { wishbone_slave_unit/fifos/wbr_fifo_ctrl/i_synchronizer_reg_wgrey_addr/async_reset  ~ wishbone_slave_unit/fifos/wbr_fifo_ctrl/i_synchronizer_reg_wgrey_addr/IN0 }
+guide_constraints -body { wishbone_slave_unit/pci_initiator_if } -equivalent { wishbone_slave_unit/pci_initiator_if/reset_in  ~ wishbone_slave_unit/pci_initiator_if/IN3 ~ wishbone_slave_unit/pci_initiator_if/IN4 ~ wishbone_slave_unit/pci_initiator_if/IN5 ~ wishbone_slave_unit/pci_initiator_if/IN6 ~ wishbone_slave_unit/pci_initiator_if/IN7 ~ wishbone_slave_unit/pci_initiator_if/IN8 }
+guide_constraints -body { parity_checker } -equivalent { parity_checker/reset_in  ~ parity_checker/IN2 ~ parity_checker/IN3 }
+guide_constraints -body { wishbone_slave_unit/pci_initiator_sm } -equivalent { wishbone_slave_unit/pci_initiator_sm/reset_in  ~ wishbone_slave_unit/pci_initiator_sm/IN6 ~ wishbone_slave_unit/pci_initiator_sm/IN7 }
+guide_constraints -body { pci_io_mux/cbe_iob3 } -equivalent { pci_io_mux/cbe_iob3/reset_in  ~ pci_io_mux/cbe_iob3/IN0 }
+guide_constraints -body { pci_io_mux/ad_iob13 } -equivalent { pci_io_mux/ad_iob13/reset_in  ~ pci_io_mux/ad_iob13/IN1 }
+guide_constraints -body { pci_resets_and_interrupts } -equivalent { pci_resets_and_interrupts/pci_rstn_in    pci_resets_and_interrupts/IN1 }
+guide_constraints -body { pci_io_mux/ad_iob14 } -equivalent { pci_io_mux/ad_iob14/reset_in  ~ pci_io_mux/ad_iob14/IN1 }
+guide_constraints -body { pci_io_mux/ad_iob17 } -equivalent { pci_io_mux/ad_iob17/reset_in  ~ pci_io_mux/ad_iob17/IN1 }
+guide_constraints -body { pci_target_unit/fifos/pcir_fifo_ctrl } -equivalent { pci_target_unit/fifos/pcir_fifo_ctrl/reset_in  ~ pci_target_unit/fifos/pcir_fifo_ctrl/IN1 }
+guide_constraints -body { pci_io_mux/ad_iob16 } -equivalent { pci_io_mux/ad_iob16/reset_in  ~ pci_io_mux/ad_iob16/IN1 }
+guide_constraints -body { pci_io_mux/ad_iob15 } -equivalent { pci_io_mux/ad_iob15/reset_in  ~ pci_io_mux/ad_iob15/IN1 }
+guide_constraints -body { pci_io_mux/frame_iob } -equivalent { pci_io_mux/frame_iob/reset_in  ~ pci_io_mux/frame_iob/IN0 }
+guide_constraints -body { pci_io_mux/cbe_iob0 } -equivalent { pci_io_mux/cbe_iob0/reset_in  ~ pci_io_mux/cbe_iob0/IN0 }
+guide_constraints -body { pci_io_mux/cbe_iob1 } -equivalent { pci_io_mux/cbe_iob1/reset_in  ~ pci_io_mux/cbe_iob1/IN0 }
+guide_constraints -body { pci_io_mux/ad_iob24 } -equivalent { pci_io_mux/ad_iob24/reset_in  ~ pci_io_mux/ad_iob24/IN1 }
+guide_constraints -body { pci_io_mux/ad_iob28 } -equivalent { pci_io_mux/ad_iob28/reset_in  ~ pci_io_mux/ad_iob28/IN1 }
+guide_constraints -body { pci_io_mux/ad_iob26 } -equivalent { pci_io_mux/ad_iob26/reset_in  ~ pci_io_mux/ad_iob26/IN1 }
+guide_constraints -body { pci_io_mux/ad_iob30 } -equivalent { pci_io_mux/ad_iob30/reset_in  ~ pci_io_mux/ad_iob30/IN1 }
+guide_constraints -body { pci_io_mux/ad_iob25 } -equivalent { pci_io_mux/ad_iob25/reset_in  ~ pci_io_mux/ad_iob25/IN1 }
+guide_constraints -body { pci_io_mux/ad_iob31 } -equivalent { pci_io_mux/ad_iob31/reset_in  ~ pci_io_mux/ad_iob31/IN1 }
+guide_constraints -body { pci_target_unit/pci_target_if } -equivalent { pci_target_unit/pci_target_if/clk_in    pci_target_unit/pci_target_if/IN16   pci_target_unit/pci_target_if/IN17   pci_target_unit/pci_target_if/IN18   pci_target_unit/pci_target_if/IN19   pci_target_unit/pci_target_if/IN20   pci_target_unit/pci_target_if/IN21   pci_target_unit/pci_target_if/IN22   pci_target_unit/pci_target_if/IN23   pci_target_unit/pci_target_if/IN24   pci_target_unit/pci_target_if/IN25   pci_target_unit/pci_target_if/IN26   pci_target_unit/pci_target_if/IN27 }
+guide_constraints -body { pci_target_unit/fifos/pciw_fifo_storage } -equivalent { pci_target_unit/fifos/pciw_fifo_storage/clk_a    pci_target_unit/fifos/pciw_fifo_storage/IN0   pci_target_unit/fifos/pciw_fifo_storage/IN1   pci_target_unit/fifos/pciw_fifo_storage/IN2   pci_target_unit/fifos/pciw_fifo_storage/IN3   pci_target_unit/fifos/pciw_fifo_storage/IN4 }
+guide_constraints -body { pci_target_unit/fifos } -equivalent { pci_target_unit/fifos/pci_clock_in    pci_target_unit/fifos/IN13   pci_target_unit/fifos/IN14   pci_target_unit/fifos/IN15   pci_target_unit/fifos/IN16   pci_target_unit/fifos/IN17   pci_target_unit/fifos/IN18   pci_target_unit/fifos/IN19   pci_target_unit/fifos/IN20   pci_target_unit/fifos/IN21   pci_target_unit/fifos/IN22   pci_target_unit/fifos/IN23 }
+guide_constraints -body { pci_target_unit } -equivalent { pci_target_unit/pci_clock_in    pci_target_unit/IN51   pci_target_unit/IN52   pci_target_unit/IN53   pci_target_unit/IN54   pci_target_unit/IN55   pci_target_unit/IN56   pci_target_unit/IN57   pci_target_unit/IN58   pci_target_unit/IN59   pci_target_unit/IN60   pci_target_unit/IN61   pci_target_unit/IN62   pci_target_unit/IN63   pci_target_unit/IN64   pci_target_unit/IN65   pci_target_unit/IN66   pci_target_unit/IN67   pci_target_unit/IN68   pci_target_unit/IN69   pci_target_unit/IN70   pci_target_unit/IN71   pci_target_unit/IN72   pci_target_unit/IN73   pci_target_unit/IN74   pci_target_unit/IN75   pci_target_unit/IN76   pci_target_unit/IN77   pci_target_unit/IN78 }
+guide_constraints -body { input_register } -equivalent { input_register/clk_in    input_register/IN10   input_register/IN11   input_register/IN12   input_register/IN13   input_register/IN14   input_register/IN15 }
+guide_constraints -body { wishbone_slave_unit } -equivalent { wishbone_slave_unit/pci_clock_in    wishbone_slave_unit/IN38   wishbone_slave_unit/IN39   wishbone_slave_unit/IN40   wishbone_slave_unit/IN41   wishbone_slave_unit/IN42   wishbone_slave_unit/IN43   wishbone_slave_unit/IN44   wishbone_slave_unit/IN45   wishbone_slave_unit/IN46   wishbone_slave_unit/IN47   wishbone_slave_unit/IN48   wishbone_slave_unit/IN49   wishbone_slave_unit/IN50   wishbone_slave_unit/IN51   wishbone_slave_unit/IN52   wishbone_slave_unit/IN53   wishbone_slave_unit/IN54   wishbone_slave_unit/IN55   wishbone_slave_unit/IN56 }
+guide_constraints -body { pci_io_mux } -equivalent { pci_io_mux/clk_in    pci_io_mux/IN78   pci_io_mux/IN79   pci_io_mux/IN80   pci_io_mux/IN81   pci_io_mux/IN82   pci_io_mux/IN83   pci_io_mux/IN84   pci_io_mux/IN85   pci_io_mux/IN86   pci_io_mux/IN87   pci_io_mux/IN88   pci_io_mux/IN89   pci_io_mux/IN90   pci_io_mux/IN91   pci_io_mux/IN92   pci_io_mux/IN93   pci_io_mux/IN94   pci_io_mux/IN95   pci_io_mux/IN96   pci_io_mux/IN97   pci_io_mux/IN98   pci_io_mux/IN99   pci_io_mux/IN100   pci_io_mux/IN101   pci_io_mux/IN102   pci_io_mux/IN103   pci_io_mux/IN104   pci_io_mux/IN105   pci_io_mux/IN106   pci_io_mux/IN107   pci_io_mux/IN108   pci_io_mux/IN109   pci_io_mux/IN110   pci_io_mux/IN111   pci_io_mux/IN112   pci_io_mux/IN113   pci_io_mux/IN114   pci_io_mux/IN115   pci_io_mux/IN116   pci_io_mux/IN117   pci_io_mux/IN118   pci_io_mux/IN119   pci_io_mux/IN120   pci_io_mux/IN121   pci_io_mux/IN122   pci_io_mux/IN123   pci_io_mux/IN124   pci_io_mux/IN125   pci_io_mux/IN126   pci_io_mux/IN127   pci_io_mux/IN128   pci_io_mux/IN129   pci_io_mux/IN130   pci_io_mux/IN131   pci_io_mux/IN132   pci_io_mux/IN133   pci_io_mux/IN134   pci_io_mux/IN135 }
+guide_constraints -body { output_backup } -equivalent { output_backup/clk_in    output_backup/IN8   output_backup/IN9   output_backup/IN10   output_backup/IN11   output_backup/IN12   output_backup/IN13 }
+guide_constraints -body { configuration } -equivalent { configuration/w_clock    configuration/IN24   configuration/IN25   configuration/IN26   configuration/IN27   configuration/IN28   configuration/IN29   configuration/IN30   configuration/IN31   configuration/IN32   configuration/IN33   configuration/IN34 }
+guide_constraints -body { pci_target_unit/del_sync } -equivalent { pci_target_unit/del_sync/req_clk_in    pci_target_unit/del_sync/IN15   pci_target_unit/del_sync/IN16   pci_target_unit/del_sync/IN17   pci_target_unit/del_sync/IN18   pci_target_unit/del_sync/IN19   pci_target_unit/del_sync/IN20 }
+guide_constraints -body { pci_target_unit/pci_target_sm } -equivalent { pci_target_unit/pci_target_sm/clk_in    pci_target_unit/pci_target_sm/IN6   pci_target_unit/pci_target_sm/IN7 }
+guide_constraints -body { wishbone_slave_unit/pci_initiator_if } -equivalent { wishbone_slave_unit/pci_initiator_if/clk_in    wishbone_slave_unit/pci_initiator_if/IN9   wishbone_slave_unit/pci_initiator_if/IN10   wishbone_slave_unit/pci_initiator_if/IN11   wishbone_slave_unit/pci_initiator_if/IN12 }
+guide_constraints -body { wishbone_slave_unit/del_sync } -equivalent { wishbone_slave_unit/del_sync/comp_clk_in    wishbone_slave_unit/del_sync/IN13 }
+guide_constraints -body { pci_io_mux/ad_iob8 } -equivalent { pci_io_mux/ad_iob8/clk_in    pci_io_mux/ad_iob8/IN2 }
+guide_constraints -body { pci_io_mux/ad_iob12 } -equivalent { pci_io_mux/ad_iob12/clk_in    pci_io_mux/ad_iob12/IN2 }
+guide_constraints -body { pci_io_mux/ad_iob11 } -equivalent { pci_io_mux/ad_iob11/clk_in    pci_io_mux/ad_iob11/IN2 }
+guide_constraints -body { pci_io_mux/ad_iob10 } -equivalent { pci_io_mux/ad_iob10/clk_in    pci_io_mux/ad_iob10/IN2 }
+guide_constraints -body { pci_io_mux/ad_iob7 } -equivalent { pci_io_mux/ad_iob7/clk_in    pci_io_mux/ad_iob7/IN2 }
+guide_constraints -body { pci_io_mux/ad_iob5 } -equivalent { pci_io_mux/ad_iob5/clk_in    pci_io_mux/ad_iob5/IN2 }
+guide_constraints -body { pci_io_mux/ad_iob4 } -equivalent { pci_io_mux/ad_iob4/clk_in    pci_io_mux/ad_iob4/IN2 }
+guide_constraints -body { pci_io_mux/ad_iob3 } -equivalent { pci_io_mux/ad_iob3/clk_in    pci_io_mux/ad_iob3/IN2 }
+guide_constraints -body { pci_io_mux/ad_iob13 } -equivalent { pci_io_mux/ad_iob13/clk_in    pci_io_mux/ad_iob13/IN2 }
+guide_constraints -body { wishbone_slave_unit/pci_initiator_sm } -equivalent { wishbone_slave_unit/pci_initiator_sm/clk_in    wishbone_slave_unit/pci_initiator_sm/IN8   wishbone_slave_unit/pci_initiator_sm/IN9 }
+guide_constraints -body { wishbone_slave_unit/fifos } -equivalent { wishbone_slave_unit/fifos/pci_clock_in    wishbone_slave_unit/fifos/IN6   wishbone_slave_unit/fifos/IN7   wishbone_slave_unit/fifos/IN8   wishbone_slave_unit/fifos/IN9   wishbone_slave_unit/fifos/IN10   wishbone_slave_unit/fifos/IN11   wishbone_slave_unit/fifos/IN12   wishbone_slave_unit/fifos/IN13   wishbone_slave_unit/fifos/IN14   wishbone_slave_unit/fifos/IN15 }
+guide_constraints -body { wishbone_slave_unit/fifos/wbr_fifo_storage } -equivalent { wishbone_slave_unit/fifos/wbr_fifo_storage/clk_a    wishbone_slave_unit/fifos/wbr_fifo_storage/IN0   wishbone_slave_unit/fifos/wbr_fifo_storage/IN1   wishbone_slave_unit/fifos/wbr_fifo_storage/IN2   wishbone_slave_unit/fifos/wbr_fifo_storage/IN3 }
+guide_constraints -body { pci_target_unit/fifos/pcir_fifo_storage } -equivalent { pci_target_unit/fifos/pcir_fifo_storage/clk_b    pci_target_unit/fifos/pcir_fifo_storage/IN0   pci_target_unit/fifos/pcir_fifo_storage/IN1 }
+guide_constraints -body { wishbone_slave_unit/fifos/wbw_fifo_storage } -equivalent { wishbone_slave_unit/fifos/wbw_fifo_storage/clk_b    wishbone_slave_unit/fifos/wbw_fifo_storage/IN0   wishbone_slave_unit/fifos/wbw_fifo_storage/IN1 }
+guide_constraints -body { parity_checker } -equivalent { parity_checker/clk_in    parity_checker/IN4   parity_checker/IN5 }
+guide_constraints -body { pci_io_mux/ad_iob9 } -equivalent { pci_io_mux/ad_iob9/clk_in    pci_io_mux/ad_iob9/IN2 }
+guide_constraints -body { pci_io_mux/ad_iob6 } -equivalent { pci_io_mux/ad_iob6/clk_in    pci_io_mux/ad_iob6/IN2 }
+guide_constraints -body { pci_io_mux/cbe_iob0 } -equivalent { pci_io_mux/cbe_iob0/clk_in    pci_io_mux/cbe_iob0/IN1 }
+guide_constraints -body { pci_io_mux/cbe_iob1 } -equivalent { pci_io_mux/cbe_iob1/clk_in    pci_io_mux/cbe_iob1/IN1 }
+guide_constraints -body { pci_io_mux/ad_iob24 } -equivalent { pci_io_mux/ad_iob24/clk_in    pci_io_mux/ad_iob24/IN2 }
+guide_constraints -body { pci_io_mux/ad_iob23 } -equivalent { pci_io_mux/ad_iob23/clk_in    pci_io_mux/ad_iob23/IN1 }
+guide_constraints -body { pci_io_mux/ad_iob28 } -equivalent { pci_io_mux/ad_iob28/clk_in    pci_io_mux/ad_iob28/IN2 }
+guide_constraints -body { pci_io_mux/ad_iob26 } -equivalent { pci_io_mux/ad_iob26/clk_in    pci_io_mux/ad_iob26/IN2 }
+guide_constraints -body { pci_io_mux/ad_iob30 } -equivalent { pci_io_mux/ad_iob30/clk_in    pci_io_mux/ad_iob30/IN2 }
+guide_constraints -body { pci_io_mux/ad_iob25 } -equivalent { pci_io_mux/ad_iob25/clk_in    pci_io_mux/ad_iob25/IN2 }
+guide_constraints -body { pci_io_mux/ad_iob29 } -equivalent { pci_io_mux/ad_iob29/clk_in    pci_io_mux/ad_iob29/IN1 }
+guide_constraints -body { pci_io_mux/ad_iob31 } -equivalent { pci_io_mux/ad_iob31/clk_in    pci_io_mux/ad_iob31/IN2 }
+
+#-------------------------------------------------------------------
+

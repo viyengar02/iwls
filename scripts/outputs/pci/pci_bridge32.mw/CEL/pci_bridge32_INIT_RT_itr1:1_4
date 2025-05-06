@@ -1,0 +1,4 @@
+set_object_boundary -boundary {  { 139.2000 89.4200 } { 215.8080 89.4200 } { 215.8080 17.5240 } { 139.2000 17.5240 } } [get_plan_groups { configuration } ]
+set_object_boundary -boundary {  { 139.2000 258.2920 } { 260.3440 258.2920 } { 260.3440 89.4200 } { 139.2000 89.4200 } } [get_plan_groups { pci_target_unit } ]
+set_object_boundary -boundary {  { 10.0000 258.2920 } { 139.2000 258.2920 } { 139.2000 24.2120 } { 10.0000 24.2120 } } [get_plan_groups { wishbone_slave_unit } ]
+

@@ -1,0 +1,34 @@
+set_user_match   -inverted   $svf_ref/ac97_top/u13/crac_we   $svf_impl/ac97_top/u13/crac_we
+set_user_match   -inverted   $svf_ref/ac97_top/u14/u1/valid   $svf_impl/ac97_top/u14/u1/valid
+set_user_match   -inverted   $svf_ref/ac97_top/u14/u2/valid   $svf_impl/ac97_top/u14/u2/valid
+set_user_match   -inverted   $svf_ref/ac97_top/u14/u3/valid   $svf_impl/ac97_top/u14/u3/valid
+set_user_match   -inverted   $svf_ref/ac97_top/u14/u4/valid   $svf_impl/ac97_top/u14/u4/valid
+set_user_match   -inverted   $svf_ref/ac97_top/u14/u5/valid   $svf_impl/ac97_top/u14/u5/valid
+set_user_match   -inverted   $svf_ref/ac97_top/u14/u0/valid   $svf_impl/ac97_top/u14/u0/valid
+guide_constraints -body { u14/u5 } -equivalent { u14/u5/valid  ~ u14/u5/IN0 }
+guide_constraints -body { u14/u0 } -equivalent { u14/u0/valid  ~ u14/u0/IN0 }
+guide_constraints -body { u14/u3 } -equivalent { u14/u3/valid  ~ u14/u3/IN0 }
+guide_constraints -body { u14/u4 } -equivalent { u14/u4/valid  ~ u14/u4/IN0 }
+guide_constraints -body { u14/u2 } -equivalent { u14/u2/valid  ~ u14/u2/IN0 }
+guide_constraints -body { u14/u1 } -equivalent { u14/u1/valid  ~ u14/u1/IN0 }
+set_user_match   -inverted   $svf_ref/ac97_top/u12/wb_addr_i[3]   $svf_impl/ac97_top/u12/wb_addr_i[3]
+set_user_match   -inverted   $svf_ref/ac97_top/u13/adr[1]   $svf_impl/ac97_top/u13/adr[1]
+guide_constraints -body { u13 } -equivalent { u13/adr[1]  ~ u13/IN1 }
+guide_constraints -body { u12 } -equivalent { u12/wb_addr_i[3]  ~ u12/IN0 }
+set_user_match   -inverted   $svf_ref/ac97_top/u12/wb_addr_i[2]   $svf_impl/ac97_top/u12/wb_addr_i[2]
+set_user_match   -inverted   $svf_ref/ac97_top/u13/adr[0]   $svf_impl/ac97_top/u13/adr[0]
+guide_constraints -body { u13 } -equivalent { u13/adr[0]  ~ u13/IN2 }
+guide_constraints -body { u12 } -equivalent { u12/wb_addr_i[2]  ~ u12/IN1 }
+set_user_match   -inverted   $svf_ref/ac97_top/u12/wb_addr_i[4]   $svf_impl/ac97_top/u12/wb_addr_i[4]
+set_user_match   -inverted   $svf_ref/ac97_top/u13/adr[2]   $svf_impl/ac97_top/u13/adr[2]
+guide_constraints -body { u13 } -equivalent { u13/adr[2]  ~ u13/IN3 }
+guide_constraints -body { u12 } -equivalent { u12/wb_addr_i[4]  ~ u12/IN2 }
+guide_constraints -body { u0 } -equivalent { u0/clk    u0/IN0 }
+guide_constraints -body { u2 } -equivalent { u2/clk    u2/IN0 }
+guide_constraints -body { u13 } -equivalent { u13/rst    u13/IN4   u13/IN5   u13/IN6   u13/IN7 }
+guide_constraints -body { u21 } -equivalent { u21/rst    u21/IN0 }
+guide_constraints -body { u15 } -equivalent { u15/rst    u15/IN0 }
+guide_constraints -body { u2 } -equivalent { u2/rst    u2/IN1 }
+
+#-------------------------------------------------------------------
+

@@ -1,0 +1,20 @@
+ 
+****************************************
+Report : resources
+Design : usb_phy
+Version: M-2016.12-SP1
+Date   : Tue Apr 15 10:33:39 2025
+****************************************
+
+Resource Sharing Report for design usb_phy in file ../rtl/usb_phy/usb_phy.v
+
+===============================================================================
+|          |              |            | Contained     |                      |
+| Resource | Module       | Parameters | Resources     | Contained Operations |
+===============================================================================
+| r55      | DW01_inc     | width=5    |               | add_178_S2           |
+===============================================================================
+
+
+No implementations to report
+1

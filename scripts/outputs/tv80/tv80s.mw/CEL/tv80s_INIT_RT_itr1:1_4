@@ -1,0 +1,4 @@
+set_object_boundary -boundary {  { 56.2080 122.8600 } { 124.0000 122.8600 } { 124.0000 101.1240 } { 56.2080 101.1240 } } [get_plan_groups { i_tv80_core/i_alu } ]
+set_object_boundary -boundary {  { 10.0000 122.8600 } { 56.2080 122.8600 } { 56.2080 59.3240 } { 10.0000 59.3240 } } [get_plan_groups { i_tv80_core/i_reg } ]
+set_object_boundary -boundary {  { 10.0000 59.3240 } { 56.2080 59.3240 } { 56.2080 10.8360 } { 10.0000 10.8360 } } [get_plan_groups { i_tv80_core/i_mcode } ]
+

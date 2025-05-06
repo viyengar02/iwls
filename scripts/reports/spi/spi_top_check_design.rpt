@@ -1,0 +1,26 @@
+ 
+****************************************
+check_design summary:
+Version:     M-2016.12-SP1
+Date:        Tue Apr 15 10:30:46 2025
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                      3
+    Unconnected ports (LINT-28)                                     2
+    Constant outputs (LINT-52)                                      1
+
+Cells                                                               5
+    Cells do not drive (LINT-1)                                     5
+--------------------------------------------------------------------------------
+
+Warning: In design 'spi_clgen', cell 'C136' does not drive any nets. (LINT-1)
+Warning: In design 'spi_shift', cell 'B_18' does not drive any nets. (LINT-1)
+Warning: In design 'spi_shift', cell 'C1279' does not drive any nets. (LINT-1)
+Warning: In design 'spi_shift', cell 'B_19' does not drive any nets. (LINT-1)
+Warning: In design 'spi_shift', cell 'C1320' does not drive any nets. (LINT-1)
+Warning: In design 'spi_top', port 'wb_adr_i[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'spi_top', port 'wb_adr_i[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'spi_top', output port 'wb_err_o' is connected directly to 'logic 0'. (LINT-52)
+1

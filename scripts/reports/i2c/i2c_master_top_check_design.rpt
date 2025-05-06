@@ -1,0 +1,23 @@
+ 
+****************************************
+check_design summary:
+Version:     W-2024.09-SP4-1
+Date:        Tue May  6 10:04:42 2025
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                      3
+    Shorted outputs (LINT-31)                                       1
+    Constant outputs (LINT-52)                                      2
+
+Cells                                                               2
+    Cells do not drive (LINT-1)                                     2
+--------------------------------------------------------------------------------
+
+Warning: In design 'i2c_master_byte_ctrl', cell 'C474' does not drive any nets. (LINT-1)
+Warning: In design 'i2c_master_bit_ctrl', cell 'C553' does not drive any nets. (LINT-1)
+Warning: In design 'i2c_master_bit_ctrl', output port 'scl_o' is connected directly to output port 'sda_o'. (LINT-31)
+Warning: In design 'i2c_master_bit_ctrl', output port 'scl_o' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'i2c_master_bit_ctrl', output port 'sda_o' is connected directly to 'logic 0'. (LINT-52)
+1

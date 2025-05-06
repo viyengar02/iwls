@@ -1,0 +1,21 @@
+ 
+****************************************
+Report : resources
+Design : sasc_top
+Version: M-2016.12-SP1
+Date   : Tue Apr 15 10:30:21 2025
+****************************************
+
+Resource Sharing Report for design sasc_top in file ../rtl/sasc/sasc_top.v
+
+===============================================================================
+|          |              |            | Contained     |                      |
+| Resource | Module       | Parameters | Resources     | Contained Operations |
+===============================================================================
+| r73      | DW01_inc     | width=4    |               | add_193_S2           |
+| r75      | DW01_inc     | width=4    |               | add_221_S2           |
+===============================================================================
+
+
+No implementations to report
+1

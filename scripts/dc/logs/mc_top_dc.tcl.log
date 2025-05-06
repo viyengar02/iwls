@@ -1,0 +1,1463 @@
+Info: [VCS_SAVE_RESTORE_INFO] ASLR (Address Space Layout Randomization) is detected on the machine. To enable $save functionality, ASLR will be switched off and simv re-executed.
+Please use '-no_save' simv switch to avoid this.
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+              Version W-2024.09-SP4-1 for linux64 - Mar 20, 2025 
+
+                    Copyright (c) 1988 - 2025 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+Initializing...
+Current time:       Tue Apr 29 11:20:57 2025
+Hostname:           xunil-03.coe.drexel.edu
+CPU Model:          AMD Opteron(tm) Processor 6344
+CPU Details:        Cores = 24 : Sockets = 2 : Cache Size = 2048 KB : Freq = 2.60 GHz
+OS:                 Linux 3.10.0-1160.119.1.el7.x86_64
+RAM:                125 GB (Free   1 GB)
+Swap:                15 GB (Free  15 GB)
+Work Filesystem:    /home mounted to ozark.coe.drexel.edu:/volume2/XunilNFS2/home
+Tmp Filesystem:     / mounted to /dev/mapper/vg_xunil03-lv_root
+Work Disk:          8034 GB (Free 4330 GB)
+Tmp Disk:           442 GB (Free 136 GB)
+
+CPU Load: 141%, Ram Free: 1 GB, Swap Free: 15 GB, Work Disk Free: 4330 GB, Tmp Disk Free: 136 GB
+# Auto-generated synthesis script for mc_top
+# Source files from: mem_ctrl
+lappend search_path ../src/
+. /mnt/class_data/ecec574-w2019/tools/synopsys/syn/W-2024.09-SP4-1/libraries/syn /mnt/class_data/ecec574-w2019/tools/synopsys/syn/W-2024.09-SP4-1/dw/syn_ver /mnt/class_data/ecec574-w2019/tools/synopsys/syn/W-2024.09-SP4-1/dw/sim_ver ../src/
+define_design_lib WORK -path "work"
+1
+# Library setup
+set link_library [ list /mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v125c.db /mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v25c.db /mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95vn40c.db]
+/mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v125c.db /mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v25c.db /mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95vn40c.db
+set target_library [ list /mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v25c.db ]
+/mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v25c.db
+# Analyze all Verilog files
+analyze -library WORK -format verilog ../rtl/mem_ctrl/mc_adr_sel.v
+Running PRESTO HDLC
+Compiling source file ../rtl/mem_ctrl/mc_adr_sel.v
+Opening include file ../rtl/mem_ctrl/mc_defines.v
+Warning:  ../rtl/mem_ctrl/mc_adr_sel.v:168: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_adr_sel.v:173: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_adr_sel.v:174: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_adr_sel.v:175: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_adr_sel.v:178: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_adr_sel.v:194: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_adr_sel.v:195: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_adr_sel.v:196: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_adr_sel.v:198: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_adr_sel.v:199: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_adr_sel.v:200: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_adr_sel.v:202: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_adr_sel.v:203: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_adr_sel.v:204: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_adr_sel.v:212: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_adr_sel.v:213: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_adr_sel.v:214: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_adr_sel.v:216: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_adr_sel.v:217: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_adr_sel.v:218: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_adr_sel.v:220: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_adr_sel.v:221: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_adr_sel.v:222: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_adr_sel.v:226: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_adr_sel.v:227: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_adr_sel.v:228: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_adr_sel.v:230: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_adr_sel.v:231: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_adr_sel.v:232: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_adr_sel.v:234: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_adr_sel.v:235: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_adr_sel.v:236: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_adr_sel.v:246: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_adr_sel.v:247: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_adr_sel.v:248: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_adr_sel.v:250: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_adr_sel.v:251: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_adr_sel.v:252: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_adr_sel.v:254: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_adr_sel.v:255: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_adr_sel.v:256: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_adr_sel.v:260: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_adr_sel.v:261: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_adr_sel.v:262: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_adr_sel.v:264: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_adr_sel.v:265: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_adr_sel.v:266: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_adr_sel.v:268: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_adr_sel.v:269: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_adr_sel.v:270: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Presto compilation completed successfully.
+Loading db file '/mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v125c.db'
+Information: Using CCS timing libraries. (TIM-024)
+Warning: Error occured in ccs delay calculation, results may not be accurate.
+Loading db file '/mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v25c.db'
+Loading db file '/mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95vn40c.db'
+1
+analyze -library WORK -format verilog ../rtl/mem_ctrl/mc_cs_rf.v
+Running PRESTO HDLC
+Compiling source file ../rtl/mem_ctrl/mc_cs_rf.v
+Opening include file ../rtl/mem_ctrl/mc_defines.v
+Warning:  ../rtl/mem_ctrl/mc_cs_rf.v:161: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_cs_rf.v:162: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_cs_rf.v:165: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_cs_rf.v:166: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_cs_rf.v:176: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_cs_rf.v:181: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_cs_rf.v:184: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_cs_rf.v:187: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_cs_rf.v:190: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_cs_rf.v:197: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_cs_rf.v:198: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_cs_rf.v:201: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_cs_rf.v:204: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_cs_rf.v:206: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_cs_rf.v:213: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_cs_rf.v:214: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_cs_rf.v:217: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_cs_rf.v:220: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_cs_rf.v:222: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_cs_rf.v:225: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_cs_rf.v:227: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Presto compilation completed successfully.
+1
+analyze -library WORK -format verilog ../rtl/mem_ctrl/mc_defines.v
+Running PRESTO HDLC
+Compiling source file ../rtl/mem_ctrl/mc_defines.v
+Presto compilation completed successfully.
+1
+analyze -library WORK -format verilog ../rtl/mem_ctrl/mc_dp.v
+Running PRESTO HDLC
+Compiling source file ../rtl/mem_ctrl/mc_dp.v
+Opening include file ../rtl/mem_ctrl/mc_defines.v
+Warning:  ../rtl/mem_ctrl/mc_dp.v:197: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_dp.v:205: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_dp.v:208: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_dp.v:210: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_dp.v:213: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_dp.v:228: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Presto compilation completed successfully.
+1
+analyze -library WORK -format verilog ../rtl/mem_ctrl/mc_incn_r.v
+Running PRESTO HDLC
+Compiling source file ../rtl/mem_ctrl/mc_incn_r.v
+Opening include file ../rtl/mem_ctrl/mc_defines.v
+Warning:  ../rtl/mem_ctrl/mc_incn_r.v:92: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Presto compilation completed successfully.
+1
+analyze -library WORK -format verilog ../rtl/mem_ctrl/mc_mem_if.v
+Running PRESTO HDLC
+Compiling source file ../rtl/mem_ctrl/mc_mem_if.v
+Opening include file ../rtl/mem_ctrl/mc_defines.v
+Warning:  ../rtl/mem_ctrl/mc_mem_if.v:220: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_mem_if.v:223: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_mem_if.v:226: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_mem_if.v:229: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_mem_if.v:232: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_mem_if.v:235: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_mem_if.v:238: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_mem_if.v:241: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_mem_if.v:244: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_mem_if.v:245: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_mem_if.v:248: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_mem_if.v:251: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_mem_if.v:254: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_mem_if.v:258: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_mem_if.v:262: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_mem_if.v:265: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_mem_if.v:270: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_mem_if.v:271: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_mem_if.v:274: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_mem_if.v:277: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_mem_if.v:280: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_mem_if.v:285: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_mem_if.v:287: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_mem_if.v:294: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_mem_if.v:296: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_mem_if.v:303: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_mem_if.v:305: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_mem_if.v:312: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_mem_if.v:314: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_mem_if.v:321: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_mem_if.v:323: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_mem_if.v:330: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_mem_if.v:332: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_mem_if.v:339: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_mem_if.v:341: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_mem_if.v:348: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_mem_if.v:350: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_mem_if.v:357: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_mem_if.v:360: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Presto compilation completed successfully.
+1
+analyze -library WORK -format verilog ../rtl/mem_ctrl/mc_obct.v
+Running PRESTO HDLC
+Compiling source file ../rtl/mem_ctrl/mc_obct.v
+Opening include file ../rtl/mem_ctrl/mc_defines.v
+Warning:  ../rtl/mem_ctrl/mc_obct.v:136: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_obct.v:138: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_obct.v:140: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_obct.v:142: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_obct.v:145: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_obct.v:147: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_obct.v:149: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_obct.v:151: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_obct.v:154: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_obct.v:156: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_obct.v:158: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_obct.v:160: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_obct.v:163: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_obct.v:165: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_obct.v:167: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_obct.v:169: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_obct.v:187: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_obct.v:190: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_obct.v:193: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_obct.v:196: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Presto compilation completed successfully.
+1
+analyze -library WORK -format verilog ../rtl/mem_ctrl/mc_obct_top.v
+Running PRESTO HDLC
+Compiling source file ../rtl/mem_ctrl/mc_obct_top.v
+Opening include file ../rtl/mem_ctrl/mc_defines.v
+Warning:  ../rtl/mem_ctrl/mc_obct_top.v:194: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_obct_top.v:200: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_obct_top.v:206: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Presto compilation completed successfully.
+1
+analyze -library WORK -format verilog ../rtl/mem_ctrl/mc_rd_fifo.v
+Running PRESTO HDLC
+Compiling source file ../rtl/mem_ctrl/mc_rd_fifo.v
+Opening include file ../rtl/mem_ctrl/mc_defines.v
+Warning:  ../rtl/mem_ctrl/mc_rd_fifo.v:97: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rd_fifo.v:99: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rd_fifo.v:101: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rd_fifo.v:104: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rd_fifo.v:106: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rd_fifo.v:108: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rd_fifo.v:111: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rd_fifo.v:114: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rd_fifo.v:117: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rd_fifo.v:120: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Presto compilation completed successfully.
+1
+analyze -library WORK -format verilog ../rtl/mem_ctrl/mc_refresh.v
+Running PRESTO HDLC
+Compiling source file ../rtl/mem_ctrl/mc_refresh.v
+Opening include file ../rtl/mem_ctrl/mc_defines.v
+Warning:  ../rtl/mem_ctrl/mc_refresh.v:159: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_refresh.v:160: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_refresh.v:163: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_refresh.v:165: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_refresh.v:167: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_refresh.v:172: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_refresh.v:173: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_refresh.v:181: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_refresh.v:182: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_refresh.v:185: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_refresh.v:187: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_refresh.v:189: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_refresh.v:193: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_refresh.v:194: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_refresh.v:195: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_refresh.v:196: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_refresh.v:197: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_refresh.v:198: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_refresh.v:199: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_refresh.v:200: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_refresh.v:204: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_refresh.v:206: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_refresh.v:208: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Presto compilation completed successfully.
+1
+analyze -library WORK -format verilog ../rtl/mem_ctrl/mc_rf.v
+Running PRESTO HDLC
+Compiling source file ../rtl/mem_ctrl/mc_rf.v
+Opening include file ../rtl/mem_ctrl/mc_defines.v
+Warning:  ../rtl/mem_ctrl/mc_rf.v:252: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:253: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:254: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:256: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:257: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:258: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:259: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:260: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:261: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:262: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:263: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:264: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:265: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:266: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:267: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:268: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:269: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:270: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:271: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:282: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:285: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:286: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:289: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:292: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:295: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:298: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:301: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:308: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:311: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:321: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:322: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:325: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:326: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:329: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:330: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:333: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:341: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:349: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:351: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:354: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:357: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:360: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:363: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:367: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:369: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:371: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:373: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:375: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:377: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:379: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:380: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:384: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:388: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:390: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:392: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:394: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:396: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:398: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:400: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:401: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:405: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:409: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:411: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:413: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:415: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:417: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:419: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:421: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:422: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:426: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:430: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:432: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:434: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:436: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:438: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:440: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:442: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:443: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:464: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:470: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:476: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:478: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:481: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:482: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:496: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:497: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:501: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:502: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Presto compilation completed successfully.
+1
+analyze -library WORK -format verilog ../rtl/mem_ctrl/mc_timing.v
+Running PRESTO HDLC
+Compiling source file ../rtl/mem_ctrl/mc_timing.v
+Opening include file ../rtl/mem_ctrl/mc_defines.v
+Warning:  ../rtl/mem_ctrl/mc_timing.v:323: Found an unknown pragma 'state_vector'; it will be ignored. (ELAB-994)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:458: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:463: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:466: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:469: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:472: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:473: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:476: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:477: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:481: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:482: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:485: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:486: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:489: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:492: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:495: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:498: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:500: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:503: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:505: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:518: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:519: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:525: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:526: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:529: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:530: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:536: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:538: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:541: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:543: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:547: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:548: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:552: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:553: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:556: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:557: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:560: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:561: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:565: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:568: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:572: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:575: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:578: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:582: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:585: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:591: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:592: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:595: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:596: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:600: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:602: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:604: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:608: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:610: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:612: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:618: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:619: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:623: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:625: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:627: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:629: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:637: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:641: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:642: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:645: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:646: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:649: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:650: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:653: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:654: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:660: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:662: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:664: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:679: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:681: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:683: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:685: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:687: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:689: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:691: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:693: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:700: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:701: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:709: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:712: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:714: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:716: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:718: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:720: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:722: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:724: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:726: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:728: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:730: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:732: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:737: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:738: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:742: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:744: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:747: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:762: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:764: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:766: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:769: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:771: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:775: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:777: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:782: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:785: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:786: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:789: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:798: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:801: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:803: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:805: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:809: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:813: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Presto compilation completed successfully.
+1
+analyze -library WORK -format verilog ../rtl/mem_ctrl/mc_top.v
+Running PRESTO HDLC
+Compiling source file ../rtl/mem_ctrl/mc_top.v
+Opening include file ../rtl/mem_ctrl/mc_defines.v
+Warning:  ../rtl/mem_ctrl/mc_top.v:315: the undeclared symbol 'mc_sts_ir' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  ../rtl/mem_ctrl/mc_top.v:319: the undeclared symbol 'cs_le_d' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  ../rtl/mem_ctrl/mc_top.v:290: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Presto compilation completed successfully.
+1
+analyze -library WORK -format verilog ../rtl/mem_ctrl/mc_wb_if.v
+Running PRESTO HDLC
+Compiling source file ../rtl/mem_ctrl/mc_wb_if.v
+Opening include file ../rtl/mem_ctrl/mc_defines.v
+Warning:  ../rtl/mem_ctrl/mc_wb_if.v:167: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_wb_if.v:169: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_wb_if.v:171: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_wb_if.v:174: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_wb_if.v:175: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_wb_if.v:180: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_wb_if.v:181: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_wb_if.v:185: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_wb_if.v:186: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_wb_if.v:191: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_wb_if.v:192: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_wb_if.v:196: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_wb_if.v:197: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_wb_if.v:207: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_wb_if.v:209: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_wb_if.v:211: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_wb_if.v:214: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_wb_if.v:216: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_wb_if.v:227: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_wb_if.v:228: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_wb_if.v:234: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_wb_if.v:235: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/mem_ctrl/mc_wb_if.v:250: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Presto compilation completed successfully.
+1
+# Elaborate the top design
+elaborate mc_top
+Loading db file '/mnt/class_data/ecec574-w2019/tools/synopsys/syn/W-2024.09-SP4-1/libraries/syn/gtech.db'
+Loading db file '/mnt/class_data/ecec574-w2019/tools/synopsys/syn/W-2024.09-SP4-1/libraries/syn/standard.sldb'
+  Loading link library 'saed32rvt_ss0p95v125c'
+  Loading link library 'saed32rvt_ss0p95v25c'
+  Loading link library 'saed32rvt_ss0p95vn40c'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+
+Inferred memory devices in process in routine 'mc_top' in file
+	 ../rtl/mem_ctrl/mc_top.v'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|    mem_ack_r_reg    | Flip-flop |   1   |  N  | N  | None  | None  | N  | 289  |
+==================================================================================
+Presto compilation completed successfully. (mc_top)
+Module: mc_top, Ports: 267, Input: 115, Output: 152, Inout: 0
+Module: mc_top, Registers: 1, Async set/reset: 0, Sync set/reset: 0
+Information: Module mc_top report end. (ELAB-965)
+Elaborated 1 design.
+Current design is now 'mc_top'.
+Information: Building the design 'mc_rf'. (HDL-193)
+Warning:  ../rtl/mem_ctrl/mc_rf.v:251: Case statement is not a full case. (ELAB-909)
+
+Statistics for case statements in always block in file
+	'../rtl/mem_ctrl/mc_rf.v'
+============================================================
+|    Line    |  full/ parallel  |      block location      |
+============================================================
+|    251     |    user/user     | always block at line 248 |
+============================================================
+
+Inferred memory devices in process in routine 'mc_rf' in file
+	 ../rtl/mem_ctrl/mc_rf.v'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|    wb_addr_r_reg    | Flip-flop |   5   |  Y  | N  | None  | None  | N  | 281  |
+|      rf_we_reg      | Flip-flop |   1   |  N  | N  | None  | Async | N  | 284  |
+|     csr_r2_reg      | Flip-flop |   8   |  Y  | N  | None  | Async | N  | 288  |
+|      csr_r_reg      | Flip-flop |  10   |  Y  | N  | None  | Async | N  | 294  |
+|      csr_r_reg      | Flip-flop |   1   |  N  | N  | None  | None  | N  | 300  |
+|   csc_mask_r_reg    | Flip-flop |  11   |  Y  | N  | Async | None  | N  | 307  |
+|     rst_r1_reg      | Flip-flop |   1   |  N  | N  | Async | None  | N  | 320  |
+|     rst_r2_reg      | Flip-flop |   1   |  N  | N  | Async | None  | N  | 324  |
+|     rst_r3_reg      | Flip-flop |   1   |  N  | N  | Async | None  | N  | 328  |
+|       poc_reg       | Flip-flop |  32   |  Y  | N  | None  | None  | N  | 332  |
+|    wb_ack_o_reg     | Flip-flop |   1   |  N  | N  | None  | None  | N  | 340  |
+|       cs_reg        | Flip-flop |   8   |  Y  | N  | None  | Async | N  | 348  |
+|     wp_err_reg      | Flip-flop |   1   |  N  | N  | None  | Async | N  | 353  |
+|       csc_reg       | Flip-flop |  32   |  Y  | N  | None  | Async | N  | 362  |
+|       tms_reg       | Flip-flop |  32   |  Y  | N  | Async | None  | N  | 383  |
+|     sp_csc_reg      | Flip-flop |  32   |  Y  | N  | None  | Async | N  | 404  |
+|     sp_tms_reg      | Flip-flop |  32   |  Y  | N  | Async | None  | N  | 425  |
+|   init_ack_r_reg    | Flip-flop |   1   |  N  | N  | None  | None  | N  | 463  |
+|    lmr_ack_r_reg    | Flip-flop |   1   |  N  | N  | None  | None  | N  | 469  |
+|   spec_req_cs_reg   | Flip-flop |   8   |  Y  | N  | None  | Async | N  | 475  |
+|   sreq_cs_le_reg    | Flip-flop |   1   |  N  | N  | None  | Async | N  | 480  |
+|    init_req_reg     | Flip-flop |   1   |  N  | N  | None  | Async | N  | 495  |
+|     lmr_req_reg     | Flip-flop |   1   |  N  | N  | None  | Async | N  | 500  |
+==================================================================================
+Presto compilation completed successfully. (mc_rf)
+Module: mc_rf, Ports: 339, Input: 106, Output: 233, Inout: 0
+Module: mc_rf, Registers: 222, Async set/reset: 181, Sync set/reset: 0
+Information: Module mc_rf report end. (ELAB-965)
+Information: Building the design 'mc_adr_sel'. (HDL-193)
+Warning:  ../rtl/mem_ctrl/mc_adr_sel.v:172: Case statement is not a full case. (ELAB-909)
+Warning:  ../rtl/mem_ctrl/mc_adr_sel.v:193: Case statement is not a full case. (ELAB-909)
+Warning:  ../rtl/mem_ctrl/mc_adr_sel.v:211: Case statement is not a full case. (ELAB-909)
+Warning:  ../rtl/mem_ctrl/mc_adr_sel.v:225: Case statement is not a full case. (ELAB-909)
+Warning:  ../rtl/mem_ctrl/mc_adr_sel.v:245: Case statement is not a full case. (ELAB-909)
+Warning:  ../rtl/mem_ctrl/mc_adr_sel.v:259: Case statement is not a full case. (ELAB-909)
+Warning:  ../rtl/mem_ctrl/mc_adr_sel.v:275: Case statement is not a full case. (ELAB-909)
+Warning:  ../rtl/mem_ctrl/mc_adr_sel.v:172: Case statement is not a full case. (ELAB-909)
+Warning:  ../rtl/mem_ctrl/mc_adr_sel.v:193: Case statement is not a full case. (ELAB-909)
+Warning:  ../rtl/mem_ctrl/mc_adr_sel.v:211: Case statement is not a full case. (ELAB-909)
+Warning:  ../rtl/mem_ctrl/mc_adr_sel.v:225: Case statement is not a full case. (ELAB-909)
+Warning:  ../rtl/mem_ctrl/mc_adr_sel.v:245: Case statement is not a full case. (ELAB-909)
+Warning:  ../rtl/mem_ctrl/mc_adr_sel.v:259: Case statement is not a full case. (ELAB-909)
+Warning:  ../rtl/mem_ctrl/mc_adr_sel.v:275: Case statement is not a full case. (ELAB-909)
+
+Statistics for case statements in always block in file
+	'../rtl/mem_ctrl/mc_adr_sel.v'
+============================================================
+|    Line    |  full/ parallel  |      block location      |
+============================================================
+|    172     |    user/user     | always block at line 170 |
+|    193     |    user/user     | always block at line 191 |
+|    211     |    user/user     | always block at line 207 |
+|    225     |    user/user     | always block at line 207 |
+|    245     |    user/user     | always block at line 241 |
+|    259     |    user/user     | always block at line 241 |
+|    275     |    user/user     | always block at line 274 |
+============================================================
+
+Inferred memory devices in process in routine 'mc_adr_sel' in file
+	 ../rtl/mem_ctrl/mc_adr_sel.v'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|    sram_addr_reg    | Flip-flop |  24   |  Y  | N  | None  | None  | N  | 167  |
+|    acs_addr_reg     | Flip-flop |  24   |  Y  | N  | None  | None  | N  | 170  |
+|     col_adr_reg     | Flip-flop |  10   |  Y  | N  | None  | None  | N  | 191  |
+|     row_adr_reg     | Flip-flop |  13   |  Y  | N  | None  | None  | N  | 207  |
+|    bank_adr_reg     | Flip-flop |   2   |  Y  | N  | None  | None  | N  | 241  |
+==================================================================================
+Presto compilation completed successfully. (mc_adr_sel)
+Module: mc_adr_sel, Ports: 160, Input: 110, Output: 50, Inout: 0
+Module: mc_adr_sel, Registers: 73, Async set/reset: 0, Sync set/reset: 0
+Information: Module mc_adr_sel report end. (ELAB-965)
+Information: Building the design 'mc_obct_top'. (HDL-193)
+
+Inferred memory devices in process in routine 'mc_obct_top' in file
+	 ../rtl/mem_ctrl/mc_obct_top.v'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|    bank_open_reg    | Flip-flop |   1   |  N  | N  | None  | None  | N  | 193  |
+|    row_same_reg     | Flip-flop |   1   |  N  | N  | None  | None  | N  | 199  |
+|  any_bank_open_reg  | Flip-flop |   1   |  N  | N  | None  | None  | N  | 205  |
+==================================================================================
+Presto compilation completed successfully. (mc_obct_top)
+Module: mc_obct_top, Ports: 32, Input: 29, Output: 3, Inout: 0
+Module: mc_obct_top, Registers: 3, Async set/reset: 0, Sync set/reset: 0
+Information: Module mc_obct_top report end. (ELAB-965)
+Information: Building the design 'mc_dp'. (HDL-193)
+
+Inferred memory devices in process in routine 'mc_dp' in file
+	 ../rtl/mem_ctrl/mc_dp.v'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|    mc_data_o_reg    | Flip-flop |  32   |  Y  | N  | None  | None  | N  | 195  |
+|      byte0_reg      | Flip-flop |   8   |  Y  | N  | None  | None  | N  | 204  |
+|      byte1_reg      | Flip-flop |   8   |  Y  | N  | None  | None  | N  | 207  |
+|      byte2_reg      | Flip-flop |   8   |  Y  | N  | None  | None  | N  | 212  |
+|     mc_dp_o_reg     | Flip-flop |   4   |  Y  | N  | None  | None  | N  | 226  |
+==================================================================================
+Presto compilation completed successfully. (mc_dp)
+Module: mc_dp, Ports: 190, Input: 121, Output: 69, Inout: 0
+Module: mc_dp, Registers: 60, Async set/reset: 0, Sync set/reset: 0
+Information: Module mc_dp report end. (ELAB-965)
+Information: Building the design 'mc_refresh'. (HDL-193)
+
+Statistics for case statements in always block in file
+	'../rtl/mem_ctrl/mc_refresh.v'
+============================================================
+|    Line    |  full/ parallel  |      block location      |
+============================================================
+|    192     |    user/user     | always block at line 191 |
+============================================================
+
+Inferred memory devices in process in routine 'mc_refresh' in file
+	 ../rtl/mem_ctrl/mc_refresh.v'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|     rfr_en_reg      | Flip-flop |   1   |  N  | N  | None  | Async | N  | 158  |
+|     ps_cnt_reg      | Flip-flop |   8   |  Y  | N  | None  | Async | N  | 162  |
+|    rfr_early_reg    | Flip-flop |   1   |  N  | N  | None  | Async | N  | 171  |
+|     rfr_ce_reg      | Flip-flop |   1   |  N  | N  | None  | Async | N  | 180  |
+|     rfr_cnt_reg     | Flip-flop |   8   |  Y  | N  | None  | Async | N  | 184  |
+|     rfr_clr_reg     | Flip-flop |   1   |  N  | N  | None  | None  | N  | 191  |
+|     rfr_req_reg     | Flip-flop |   1   |  N  | N  | None  | Async | N  | 203  |
+==================================================================================
+Presto compilation completed successfully. (mc_refresh)
+Module: mc_refresh, Ports: 23, Input: 22, Output: 1, Inout: 0
+Module: mc_refresh, Registers: 21, Async set/reset: 20, Sync set/reset: 0
+Information: Module mc_refresh report end. (ELAB-965)
+Information: Building the design 'mc_timing'. (HDL-193)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:751: Case statement is not a full case. (ELAB-909)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:893: Case statement is not a full case. (ELAB-909)
+Warning:  ../rtl/mem_ctrl/mc_timing.v:893: Case statement is not a full case. (ELAB-909)
+
+Statistics for case statements in always block in file
+	'../rtl/mem_ctrl/mc_timing.v'
+============================================================
+|    Line    |  full/ parallel  |      block location      |
+============================================================
+|    751     |    user/user     | always block at line 750 |
+|    893     |    user/user     | always block at line 815 |
+|    940     |    user/user     | always block at line 815 |
+============================================================
+
+Inferred memory devices in process in routine 'mc_timing' in file
+	 ../rtl/mem_ctrl/mc_timing.v'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|     lmr_ack_reg     | Flip-flop |   1   |  N  | N  | None  | None  | N  | 457  |
+|     cs_le_r_reg     | Flip-flop |   1   |  N  | N  | None  | None  | N  | 462  |
+|    cs_le_r1_reg     | Flip-flop |   1   |  N  | N  | None  | None  | N  | 465  |
+|      cs_le_reg      | Flip-flop |   1   |  N  | N  | None  | None  | N  | 468  |
+|      rsts1_reg      | Flip-flop |   1   |  N  | N  | Async | None  | N  | 471  |
+|      rsts_reg       | Flip-flop |   1   |  N  | N  | Async | None  | N  | 475  |
+|     mc_c_oe_reg     | Flip-flop |   1   |  N  | N  | None  | Async | N  | 480  |
+|      mc_le_reg      | Flip-flop |   1   |  N  | N  | None  | Async | N  | 484  |
+|    pack_le0_reg     | Flip-flop |   1   |  N  | N  | None  | None  | N  | 488  |
+|    pack_le1_reg     | Flip-flop |   1   |  N  | N  | None  | None  | N  | 491  |
+|    pack_le2_reg     | Flip-flop |   1   |  N  | N  | None  | None  | N  | 494  |
+|    mc_adv_r1_reg    | Flip-flop |   1   |  N  | N  | None  | Async | N  | 497  |
+|    mc_adv_r_reg     | Flip-flop |   1   |  N  | N  | None  | Async | N  | 502  |
+|    mem_ack_r_reg    | Flip-flop |   1   |  N  | N  | None  | Async | N  | 517  |
+|      cmd_r_reg      | Flip-flop |   2   |  Y  | N  | Async | Async | N  | 524  |
+|     cmd_del_reg     | Flip-flop |   2   |  Y  | N  | Async | Async | N  | 528  |
+|  cmd_asserted_reg   | Flip-flop |   1   |  N  | N  | None  | Async | N  | 535  |
+|  cmd_asserted2_reg  | Flip-flop |   1   |  N  | N  | None  | Async | N  | 540  |
+|       oe__reg       | Flip-flop |   1   |  N  | N  | Async | None  | N  | 546  |
+|    data_oe_r_reg    | Flip-flop |   1   |  N  | N  | None  | Async | N  | 551  |
+|   data_oe_r2_reg    | Flip-flop |   1   |  N  | N  | None  | Async | N  | 555  |
+|     data_oe_reg     | Flip-flop |   1   |  N  | N  | None  | Async | N  | 559  |
+|      cke_r_reg      | Flip-flop |   1   |  N  | N  | None  | None  | N  | 564  |
+|      cke__reg       | Flip-flop |   1   |  N  | N  | None  | None  | N  | 567  |
+|    cke_o_r1_reg     | Flip-flop |   1   |  N  | N  | None  | None  | N  | 571  |
+|    cke_o_r2_reg     | Flip-flop |   1   |  N  | N  | None  | None  | N  | 574  |
+|    cke_o_del_reg    | Flip-flop |   1   |  N  | N  | None  | None  | N  | 577  |
+|   wb_wait_r2_reg    | Flip-flop |   1   |  N  | N  | None  | None  | N  | 581  |
+|    wb_wait_r_reg    | Flip-flop |   1   |  N  | N  | None  | None  | N  | 584  |
+|  lookup_ready1_reg  | Flip-flop |   1   |  N  | N  | None  | Async | N  | 590  |
+|  lookup_ready2_reg  | Flip-flop |   1   |  N  | N  | None  | Async | N  | 594  |
+|    wr_cycle_reg     | Flip-flop |   1   |  N  | N  | None  | Async | N  | 599  |
+|    wb_cycle_reg     | Flip-flop |   1   |  N  | N  | None  | Async | N  | 607  |
+|   no_wb_cycle_reg   | Flip-flop |   1   |  N  | N  | None  | Async | N  | 617  |
+|     ack_cnt_reg     | Flip-flop |   4   |  Y  | N  | None  | Async | N  | 622  |
+|       cnt_reg       | Flip-flop |   1   |  N  | N  | None  | None  | N  | 636  |
+|   susp_req_r_reg    | Flip-flop |   1   |  N  | N  | None  | Async | N  | 640  |
+|  resume_req_r_reg   | Flip-flop |   1   |  N  | N  | None  | Async | N  | 644  |
+|    suspended_reg    | Flip-flop |   1   |  N  | N  | None  | Async | N  | 648  |
+|    rfr_ack_r_reg    | Flip-flop |   1   |  N  | N  | None  | Async | N  | 652  |
+|   susp_sel_r_reg    | Flip-flop |   1   |  N  | N  | None  | Async | N  | 659  |
+|     timer2_reg      | Flip-flop |   9   |  Y  | N  | None  | None  | N  | 678  |
+|    tmr2_done_reg    | Flip-flop |   1   |  N  | N  | None  | Async | N  | 699  |
+|      timer_reg      | Flip-flop |   8   |  Y  | N  | Async | Async | N  | 707  |
+|    tmr_done_reg     | Flip-flop |   1   |  N  | N  | None  | Async | N  | 736  |
+|     ir_cnt_reg      | Flip-flop |   4   |  Y  | N  | None  | None  | N  | 741  |
+|   ir_cnt_done_reg   | Flip-flop |   1   |  N  | N  | None  | None  | N  | 746  |
+|    burst_cnt_reg    | Flip-flop |  11   |  Y  | N  | None  | None  | N  | 761  |
+|      ap_en_reg      | Flip-flop |   1   |  N  | N  | None  | Async | N  | 774  |
+|  burst_act_rd_reg   | Flip-flop |   1   |  N  | N  | None  | None  | N  | 781  |
+|      dv_r_reg       | Flip-flop |   1   |  N  | N  | None  | Async | N  | 784  |
+|    cmd_a10_r_reg    | Flip-flop |   1   |  N  | N  | None  | None  | N  | 788  |
+|  wb_write_go_r_reg  | Flip-flop |   1   |  N  | N  | None  | None  | N  | 797  |
+|  wb_stb_first_reg   | Flip-flop |   1   |  N  | N  | None  | Async | N  | 800  |
+|      state_reg      | Flip-flop |  64   |  Y  | N  | Async | Async | N  | 807  |
+==================================================================================
+Presto compilation completed successfully. (mc_timing)
+Module: mc_timing, Ports: 137, Input: 105, Output: 32, Inout: 0
+Module: mc_timing, Registers: 157, Async set/reset: 114, Sync set/reset: 0
+Information: Module mc_timing report end. (ELAB-965)
+Information: Building the design 'mc_wb_if'. (HDL-193)
+
+Inferred memory devices in process in routine 'mc_wb_if' in file
+	 ../rtl/mem_ctrl/mc_wb_if.v'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|     rmw_en_reg      | Flip-flop |   1   |  N  | N  | None  | Async | N  | 166  |
+|      rmw_r_reg      | Flip-flop |   1   |  N  | N  | None  | Async | N  | 173  |
+|   read_go_r1_reg    | Flip-flop |   1   |  N  | N  | None  | Async | N  | 179  |
+|    read_go_r_reg    | Flip-flop |   1   |  N  | N  | None  | Async | N  | 184  |
+|   write_go_r1_reg   | Flip-flop |   1   |  N  | N  | None  | Async | N  | 190  |
+|   write_go_r_reg    | Flip-flop |   1   |  N  | N  | None  | Async | N  | 195  |
+|   wb_first_r_reg    | Flip-flop |   1   |  N  | N  | None  | Async | N  | 206  |
+|     wr_hold_reg     | Flip-flop |   1   |  N  | N  | None  | Async | N  | 213  |
+|    wb_ack_o_reg     | Flip-flop |   1   |  N  | N  | None  | Async | N  | 226  |
+|     wb_err_reg      | Flip-flop |   1   |  N  | N  | None  | Async | N  | 233  |
+|    wb_data_o_reg    | Flip-flop |  32   |  Y  | N  | None  | None  | N  | 249  |
+==================================================================================
+Presto compilation completed successfully. (mc_wb_if)
+Module: mc_wb_if, Ports: 144, Input: 105, Output: 39, Inout: 0
+Module: mc_wb_if, Registers: 42, Async set/reset: 10, Sync set/reset: 0
+Information: Module mc_wb_if report end. (ELAB-965)
+Information: Building the design 'mc_mem_if'. (HDL-193)
+
+Inferred memory devices in process in routine 'mc_mem_if' in file
+	 ../rtl/mem_ctrl/mc_mem_if.v'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|     mc_zz_o_reg     | Flip-flop |   1   |  N  | N  | None  | None  | N  | 219  |
+|    mc_sts_ir_reg    | Flip-flop |   1   |  N  | N  | None  | None  | N  | 222  |
+|   mc_data_ir_reg    | Flip-flop |  36   |  Y  | N  | None  | None  | N  | 225  |
+|     mc_c_oe_reg     | Flip-flop |   1   |  N  | N  | None  | None  | N  | 228  |
+|      mc_rp_reg      | Flip-flop |   1   |  N  | N  | None  | None  | N  | 231  |
+|     mc_br_r_reg     | Flip-flop |   1   |  N  | N  | None  | None  | N  | 234  |
+|    mc_ack_r_reg     | Flip-flop |   1   |  N  | N  | None  | None  | N  | 237  |
+|      mc_bg_reg      | Flip-flop |   1   |  N  | N  | None  | None  | N  | 240  |
+|   mc_data_oe_reg    | Flip-flop |   1   |  N  | N  | None  | Async | N  | 243  |
+|    mc_data_o_reg    | Flip-flop |  32   |  Y  | N  | None  | None  | N  | 247  |
+|     mc_dp_o_reg     | Flip-flop |   4   |  Y  | N  | None  | None  | N  | 250  |
+|     mc_addr_reg     | Flip-flop |  24   |  Y  | N  | None  | None  | N  | 253  |
+|    mc_dqm_r_reg     | Flip-flop |   4   |  Y  | N  | None  | None  | N  | 256  |
+|    mc_dqm_r2_reg    | Flip-flop |   4   |  Y  | N  | None  | None  | N  | 261  |
+|     mc_dqm_reg      | Flip-flop |   4   |  Y  | N  | None  | None  | N  | 264  |
+|     mc_oe__reg      | Flip-flop |   1   |  N  | N  | Async | None  | N  | 269  |
+|     mc_we__reg      | Flip-flop |   1   |  N  | N  | None  | None  | N  | 273  |
+|     mc_cas__reg     | Flip-flop |   1   |  N  | N  | None  | None  | N  | 276  |
+|     mc_ras__reg     | Flip-flop |   1   |  N  | N  | None  | None  | N  | 279  |
+|     mc_cs__reg      | Flip-flop |   1   |  N  | N  | Async | None  | N  | 284  |
+|     mc_cs__reg      | Flip-flop |   1   |  N  | N  | Async | None  | N  | 293  |
+|     mc_cs__reg      | Flip-flop |   1   |  N  | N  | Async | None  | N  | 302  |
+|     mc_cs__reg      | Flip-flop |   1   |  N  | N  | Async | None  | N  | 311  |
+|     mc_cs__reg      | Flip-flop |   1   |  N  | N  | Async | None  | N  | 320  |
+|     mc_cs__reg      | Flip-flop |   1   |  N  | N  | Async | None  | N  | 329  |
+|     mc_cs__reg      | Flip-flop |   1   |  N  | N  | Async | None  | N  | 338  |
+|     mc_cs__reg      | Flip-flop |   1   |  N  | N  | Async | None  | N  | 347  |
+|    mc_adsc__reg     | Flip-flop |   1   |  N  | N  | None  | None  | N  | 356  |
+|     mc_adv__reg     | Flip-flop |   1   |  N  | N  | None  | None  | N  | 359  |
+==================================================================================
+Presto compilation completed successfully. (mc_mem_if)
+Module: mc_mem_if, Ports: 273, Input: 150, Output: 123, Inout: 0
+Module: mc_mem_if, Registers: 130, Async set/reset: 10, Sync set/reset: 0
+Information: Module mc_mem_if report end. (ELAB-965)
+Information: Building the design 'mc_cs_rf' instantiated from design 'mc_rf' with
+	the parameters "3'h0". (HDL-193)
+
+Inferred memory devices in process in routine 'mc_cs_rf_0' in file
+	 ../rtl/mem_ctrl/mc_cs_rf.v'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|     rst_r1_reg      | Flip-flop |   1   |  N  | N  | Async | None  | N  | 160  |
+|     rst_r2_reg      | Flip-flop |   1   |  N  | N  | Async | None  | N  | 164  |
+|     addr_r_reg      | Flip-flop |   5   |  Y  | N  | None  | None  | N  | 175  |
+|       csc_reg       | Flip-flop |  32   |  Y  | N  | None  | None  | N  | 180  |
+|       tms_reg       | Flip-flop |  32   |  Y  | N  | None  | None  | N  | 186  |
+|   lmr_req_we_reg    | Flip-flop |   1   |  N  | N  | None  | Async | N  | 196  |
+|     lmr_req_reg     | Flip-flop |   1   |  N  | N  | None  | Async | N  | 200  |
+|   init_req_we_reg   | Flip-flop |   1   |  N  | N  | None  | Async | N  | 212  |
+|    init_req_reg     | Flip-flop |   1   |  N  | N  | None  | Async | N  | 216  |
+|     inited_reg      | Flip-flop |   1   |  N  | N  | None  | Async | N  | 224  |
+==================================================================================
+Presto compilation completed successfully. (mc_cs_rf_0)
+Module: mc_cs_rf_0, Ports: 202, Input: 134, Output: 68, Inout: 0
+Module: mc_cs_rf_0, Registers: 76, Async set/reset: 7, Sync set/reset: 0
+Information: Module mc_cs_rf_0 report end. (ELAB-965)
+Information: Building the design 'mc_cs_rf' instantiated from design 'mc_rf' with
+	the parameters "3'h1". (HDL-193)
+
+Inferred memory devices in process in routine 'mc_cs_rf_1' in file
+	 ../rtl/mem_ctrl/mc_cs_rf.v'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|     rst_r1_reg      | Flip-flop |   1   |  N  | N  | Async | None  | N  | 160  |
+|     rst_r2_reg      | Flip-flop |   1   |  N  | N  | Async | None  | N  | 164  |
+|     addr_r_reg      | Flip-flop |   5   |  Y  | N  | None  | None  | N  | 175  |
+|       csc_reg       | Flip-flop |  32   |  Y  | N  | None  | None  | N  | 180  |
+|       tms_reg       | Flip-flop |  32   |  Y  | N  | None  | None  | N  | 186  |
+|   lmr_req_we_reg    | Flip-flop |   1   |  N  | N  | None  | Async | N  | 196  |
+|     lmr_req_reg     | Flip-flop |   1   |  N  | N  | None  | Async | N  | 200  |
+|   init_req_we_reg   | Flip-flop |   1   |  N  | N  | None  | Async | N  | 212  |
+|    init_req_reg     | Flip-flop |   1   |  N  | N  | None  | Async | N  | 216  |
+|     inited_reg      | Flip-flop |   1   |  N  | N  | None  | Async | N  | 224  |
+==================================================================================
+Presto compilation completed successfully. (mc_cs_rf_1)
+Module: mc_cs_rf_1, Ports: 202, Input: 134, Output: 68, Inout: 0
+Module: mc_cs_rf_1, Registers: 76, Async set/reset: 7, Sync set/reset: 0
+Information: Module mc_cs_rf_1 report end. (ELAB-965)
+Information: Building the design 'mc_cs_rf_dummy' instantiated from design 'mc_rf' with
+	the parameters "3'h2". (HDL-193)
+Presto compilation completed successfully. (mc_cs_rf_dummy_2)
+Module: mc_cs_rf_dummy_2, Ports: 202, Input: 134, Output: 68, Inout: 0
+Module: mc_cs_rf_dummy_2, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Module mc_cs_rf_dummy_2 report end. (ELAB-965)
+Information: Building the design 'mc_cs_rf_dummy' instantiated from design 'mc_rf' with
+	the parameters "3'h3". (HDL-193)
+Presto compilation completed successfully. (mc_cs_rf_dummy_3)
+Module: mc_cs_rf_dummy_3, Ports: 202, Input: 134, Output: 68, Inout: 0
+Module: mc_cs_rf_dummy_3, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Module mc_cs_rf_dummy_3 report end. (ELAB-965)
+Information: Building the design 'mc_cs_rf_dummy' instantiated from design 'mc_rf' with
+	the parameters "3'h4". (HDL-193)
+Presto compilation completed successfully. (mc_cs_rf_dummy_4)
+Module: mc_cs_rf_dummy_4, Ports: 202, Input: 134, Output: 68, Inout: 0
+Module: mc_cs_rf_dummy_4, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Module mc_cs_rf_dummy_4 report end. (ELAB-965)
+Information: Building the design 'mc_cs_rf_dummy' instantiated from design 'mc_rf' with
+	the parameters "3'h5". (HDL-193)
+Presto compilation completed successfully. (mc_cs_rf_dummy_5)
+Module: mc_cs_rf_dummy_5, Ports: 202, Input: 134, Output: 68, Inout: 0
+Module: mc_cs_rf_dummy_5, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Module mc_cs_rf_dummy_5 report end. (ELAB-965)
+Information: Building the design 'mc_cs_rf_dummy' instantiated from design 'mc_rf' with
+	the parameters "3'h6". (HDL-193)
+Presto compilation completed successfully. (mc_cs_rf_dummy_6)
+Module: mc_cs_rf_dummy_6, Ports: 202, Input: 134, Output: 68, Inout: 0
+Module: mc_cs_rf_dummy_6, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Module mc_cs_rf_dummy_6 report end. (ELAB-965)
+Information: Building the design 'mc_cs_rf_dummy' instantiated from design 'mc_rf' with
+	the parameters "3'h7". (HDL-193)
+Presto compilation completed successfully. (mc_cs_rf_dummy_7)
+Module: mc_cs_rf_dummy_7, Ports: 202, Input: 134, Output: 68, Inout: 0
+Module: mc_cs_rf_dummy_7, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Module mc_cs_rf_dummy_7 report end. (ELAB-965)
+Information: Building the design 'mc_incn_r' instantiated from design 'mc_adr_sel' with
+	the parameters "24". (HDL-193)
+
+Inferred memory devices in process in routine 'mc_incn_r_incN_width24' in file
+	 ../rtl/mem_ctrl/mc_incn_r.v'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|      out_r_reg      | Flip-flop |  13   |  Y  | N  | None  | None  | N  |  91  |
+==================================================================================
+Presto compilation completed successfully. (mc_incn_r_incN_width24)
+Module: mc_incn_r_incN_width24, Ports: 49, Input: 25, Output: 24, Inout: 0
+Module: mc_incn_r_incN_width24, Registers: 13, Async set/reset: 0, Sync set/reset: 0
+Information: Module mc_incn_r_incN_width24 report end. (ELAB-965)
+Information: Building the design 'mc_obct'. (HDL-193)
+
+Statistics for case statements in always block in file
+	'../rtl/mem_ctrl/mc_obct.v'
+============================================================
+|    Line    |  full/ parallel  |      block location      |
+============================================================
+|    172     |    user/user     | always block at line 171 |
+|    209     |    user/user     | always block at line 208 |
+============================================================
+
+Inferred memory devices in process in routine 'mc_obct' in file
+	 ../rtl/mem_ctrl/mc_obct.v'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|   bank0_open_reg    | Flip-flop |   1   |  N  | N  | None  | Async | N  | 135  |
+|   bank1_open_reg    | Flip-flop |   1   |  N  | N  | None  | Async | N  | 144  |
+|   bank2_open_reg    | Flip-flop |   1   |  N  | N  | None  | Async | N  | 153  |
+|   bank3_open_reg    | Flip-flop |   1   |  N  | N  | None  | Async | N  | 162  |
+|   b0_last_row_reg   | Flip-flop |  13   |  Y  | N  | None  | None  | N  | 186  |
+|   b1_last_row_reg   | Flip-flop |  13   |  Y  | N  | None  | None  | N  | 189  |
+|   b2_last_row_reg   | Flip-flop |  13   |  Y  | N  | None  | None  | N  | 192  |
+|   b3_last_row_reg   | Flip-flop |  13   |  Y  | N  | None  | None  | N  | 195  |
+==================================================================================
+Presto compilation completed successfully. (mc_obct)
+Module: mc_obct, Ports: 23, Input: 20, Output: 3, Inout: 0
+Module: mc_obct, Registers: 56, Async set/reset: 4, Sync set/reset: 0
+Information: Module mc_obct report end. (ELAB-965)
+Information: Building the design 'mc_obct_dummy'. (HDL-193)
+Presto compilation completed successfully. (mc_obct_dummy)
+Module: mc_obct_dummy, Ports: 23, Input: 20, Output: 3, Inout: 0
+Module: mc_obct_dummy, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Module mc_obct_dummy report end. (ELAB-965)
+Information: Building the design 'mc_rd_fifo'. (HDL-193)
+Warning:  ../rtl/mem_ctrl/mc_rd_fifo.v:123: Case statement is not a full case. (ELAB-909)
+Warning:  ../rtl/mem_ctrl/mc_rd_fifo.v:123: Case statement is not a full case. (ELAB-909)
+
+Statistics for case statements in always block in file
+	'../rtl/mem_ctrl/mc_rd_fifo.v'
+============================================================
+|    Line    |  full/ parallel  |      block location      |
+============================================================
+|    123     |    user/user     | always block at line 122 |
+============================================================
+
+Inferred memory devices in process in routine 'mc_rd_fifo' in file
+	 ../rtl/mem_ctrl/mc_rd_fifo.v'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|     rd_adr_reg      | Flip-flop |   2   |  Y  | N  | Async | Async | N  |  96  |
+|     wr_adr_reg      | Flip-flop |   2   |  Y  | N  | Async | Async | N  | 103  |
+|       r0_reg        | Flip-flop |  36   |  Y  | N  | None  | None  | N  | 110  |
+|       r1_reg        | Flip-flop |  36   |  Y  | N  | None  | None  | N  | 113  |
+|       r2_reg        | Flip-flop |  36   |  Y  | N  | None  | None  | N  | 116  |
+|       r3_reg        | Flip-flop |  36   |  Y  | N  | None  | None  | N  | 119  |
+==================================================================================
+Presto compilation completed successfully. (mc_rd_fifo)
+Module: mc_rd_fifo, Ports: 77, Input: 41, Output: 36, Inout: 0
+Module: mc_rd_fifo, Registers: 152, Async set/reset: 8, Sync set/reset: 0
+Information: Module mc_rd_fifo report end. (ELAB-965)
+1
+link
+
+  Linking design 'mc_top'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  saed32rvt_ss0p95v125c (library) /mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v125c.db
+  saed32rvt_ss0p95v25c (library) /mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v25c.db
+  saed32rvt_ss0p95vn40c (library) /mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95vn40c.db
+
+1
+# Output files
+write -hier -f ddc -output ./outputs/mem_ctrl/mc_top.ddc
+Writing ddc file './outputs/mem_ctrl/mc_top.ddc'.
+1
+# Clock and constraints
+create_clock -name "clk" -period 10 [get_ports clk_i] 
+1
+set_input_delay 0.01 -clock clk [all_inputs] 
+1
+set_output_delay 0.01 -clock clk [all_outputs] 
+1
+set_clock_uncertainty 0.2 clk
+1
+set_max_area 0.0 
+1
+# Checks and compilation
+check_design  > ./reports/mem_ctrl/mc_top_check_design.rpt 
+uniquify 
+Information: Uniquified 2 instances of design 'mc_obct'. (OPT-1056)
+Information: Uniquified 6 instances of design 'mc_obct_dummy'. (OPT-1056)
+1
+check_timing 
+Information: Changed wire load model for 'mc_mem_if' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'mc_wb_if' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'mc_timing' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'mc_refresh' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'mc_rd_fifo' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'mc_dp' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'mc_obct_dummy_0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'mc_obct_dummy_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'mc_obct_dummy_2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'mc_obct_dummy_3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'mc_obct_dummy_4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'mc_obct_dummy_5' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'mc_obct_0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'mc_obct_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'mc_obct_top' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'mc_incn_r_incN_width24' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'mc_adr_sel' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'mc_cs_rf_dummy_7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'mc_cs_rf_dummy_6' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'mc_cs_rf_dummy_5' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'mc_cs_rf_dummy_4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'mc_cs_rf_dummy_3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'mc_cs_rf_dummy_2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'mc_cs_rf_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'mc_cs_rf_0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'mc_rf' from '(none)' to 'ForQA'. (OPT-170)
+Module: DW01_inc_width8, Ports: 16, Input: 8, Output: 8, Inout: 0
+Module: DW01_inc_width8, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_cmp6_width8, Ports: 23, Input: 17, Output: 6, Inout: 0
+Module: DW01_cmp6_width8, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_inc_width4, Ports: 8, Input: 4, Output: 4, Inout: 0
+Module: DW01_inc_width4, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_dec_width4, Ports: 8, Input: 4, Output: 4, Inout: 0
+Module: DW01_dec_width4, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_dec_width9, Ports: 18, Input: 9, Output: 9, Inout: 0
+Module: DW01_dec_width9, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_add_width4, Ports: 14, Input: 9, Output: 5, Inout: 0
+Module: DW01_add_width4, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_add_width4, Ports: 14, Input: 9, Output: 5, Inout: 0
+Module: DW01_add_width4, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_dec_width8, Ports: 16, Input: 8, Output: 8, Inout: 0
+Module: DW01_dec_width8, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_dec_width11, Ports: 22, Input: 11, Output: 11, Inout: 0
+Module: DW01_dec_width11, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_inc_width13, Ports: 26, Input: 13, Output: 13, Inout: 0
+Module: DW01_inc_width13, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_add_width12, Ports: 38, Input: 25, Output: 13, Inout: 0
+Module: DW01_add_width12, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_add_width12, Ports: 38, Input: 25, Output: 13, Inout: 0
+Module: DW01_add_width12, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_cmp6_width13, Ports: 33, Input: 27, Output: 6, Inout: 0
+Module: DW01_cmp6_width13, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Changed wire load model for 'DW01_dec_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_8_1_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_dec_width11' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_11_1_11' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_dec_width9' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_9_1_9' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_dec_width4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_4_1_4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_dec_width4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_4_1_4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_4_1_4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_2_4_4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_8_1_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_8_1_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp6_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*EQ_UNS_OP_8_8_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp6_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*EQ_UNS_OP_8_8_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp6_width13' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*EQ_UNS_OP_13_13_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp6_width13' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*EQ_UNS_OP_13_13_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp6_width13' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*EQ_UNS_OP_13_13_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp6_width13' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*EQ_UNS_OP_13_13_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp6_width13' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*EQ_UNS_OP_13_13_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp6_width13' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*EQ_UNS_OP_13_13_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp6_width13' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*EQ_UNS_OP_13_13_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp6_width13' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*EQ_UNS_OP_13_13_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_12_1_12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width13' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_12_1_13' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp6_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*EQ_UNS_OP_8_8_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp6_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*EQ_UNS_OP_8_8_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Updating design information... (UID-85)
+Warning: Design 'mc_top' contains 4 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+
+Information: Checking generated_clocks...
+
+Information: Checking loops...
+
+Information: Checking no_input_delay...
+
+Information: Checking unconstrained_endpoints...
+
+Warning: There are 399 end-points which are not constrained for maximum delay.
+
+Information: Checking pulse_clock_cell_type...
+
+Information: Checking no_driving_cell...
+
+Information: Checking partial_input_delay...
+1
+compile -area_effort medium -map_effort medium 
+CPU Load: 143%, Ram Free: 0 GB, Swap Free: 15 GB, Work Disk Free: 4330 GB, Tmp Disk Free: 136 GB
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | W-2024.09-DWBB_202409.4 |     *     |
+| Licensed DW Building Blocks        |                         |           |
+============================================================================
+
+====================================================================================================
+| Flow Information                                                                                 |
+----------------------------------------------------------------------------------------------------
+| Flow         | Design Compiler                                                                   |
+====================================================================================================
+| Design Information                                      | Value                                  |
+====================================================================================================
+| Number of Scenarios                                     | 0                                      |
+| Leaf Cell Count                                         | 7472                                   |
+| Number of User Hierarchies                              | 26                                     |
+| Sequential Cell Count                                   | 1138                                   |
+| Macro Count                                             | 0                                      |
+| Pad Count                                               | 0                                      |
+| Number of Power Domains                                 | 0                                      |
+| Number of Path Groups                                   | 2                                      |
+| Number of VT Class                                      | 1                                      |
+| Number of Clocks                                        | 1                                      |
+| Number of Dont Touch Cells                              | 5102                                   |
+| Number of Dont Touch Nets                               | 0                                      |
+| Number of Size Only Cells                               | 0                                      |
+| Design with Target Library Subset (with clock_path)     | false  (false )                        |
+| Design with UPF Data                                    | false                                  |
+====================================================================================================
+
+Information: There are 2236 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'mc_mem_if'
+  Processing 'mc_wb_if'
+  Processing 'mc_timing'
+Module: DW01_dec_width4, Ports: 8, Input: 4, Output: 4, Inout: 0
+Module: DW01_dec_width4, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_add_width4, Ports: 14, Input: 9, Output: 5, Inout: 0
+Module: DW01_add_width4, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_inc_width4, Ports: 8, Input: 4, Output: 4, Inout: 0
+Module: DW01_inc_width4, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+  Processing 'mc_refresh'
+  Processing 'mc_rd_fifo'
+  Processing 'mc_dp'
+  Processing 'mc_obct_dummy_0'
+  Processing 'mc_obct_0'
+  Processing 'mc_obct_top'
+  Processing 'mc_incn_r_incN_width24'
+  Processing 'mc_adr_sel'
+  Processing 'mc_cs_rf_dummy_7'
+  Processing 'mc_cs_rf_dummy_6'
+  Processing 'mc_cs_rf_dummy_5'
+  Processing 'mc_cs_rf_dummy_4'
+  Processing 'mc_cs_rf_dummy_3'
+  Processing 'mc_cs_rf_dummy_2'
+  Processing 'mc_cs_rf_1'
+  Processing 'mc_cs_rf_0'
+  Processing 'mc_rf'
+  Processing 'mc_top'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+Module: DW01_dec_width11, Ports: 22, Input: 11, Output: 11, Inout: 0
+Module: DW01_dec_width11, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+  Processing 'mc_timing_DW01_dec_0_DW01_dec_2'
+Module: DW01_dec_width8, Ports: 16, Input: 8, Output: 8, Inout: 0
+Module: DW01_dec_width8, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+  Processing 'mc_timing_DW01_dec_1_DW01_dec_3'
+Module: DW01_dec_width9, Ports: 18, Input: 9, Output: 9, Inout: 0
+Module: DW01_dec_width9, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+  Processing 'mc_timing_DW01_dec_2_DW01_dec_4'
+Module: DW01_inc_width8, Ports: 16, Input: 8, Output: 8, Inout: 0
+Module: DW01_inc_width8, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+  Processing 'mc_refresh_DW01_inc_0_DW01_inc_1'
+  Processing 'mc_refresh_DW01_inc_1_DW01_inc_2'
+Module: DW01_cmp6_width8, Ports: 23, Input: 17, Output: 6, Inout: 0
+Module: DW01_cmp6_width8, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+  Processing 'mc_refresh_DW01_cmp6_0'
+Module: DW01_cmp6_width13, Ports: 33, Input: 27, Output: 6, Inout: 0
+Module: DW01_cmp6_width13, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+  Processing 'mc_obct_0_DW01_cmp6_0_DW01_cmp6_1'
+  Processing 'mc_obct_0_DW01_cmp6_1_DW01_cmp6_2'
+  Processing 'mc_obct_0_DW01_cmp6_2_DW01_cmp6_3'
+  Processing 'mc_obct_0_DW01_cmp6_3_DW01_cmp6_4'
+  Processing 'mc_obct_1_DW01_cmp6_0_DW01_cmp6_5'
+  Processing 'mc_obct_1_DW01_cmp6_1_DW01_cmp6_6'
+  Processing 'mc_obct_1_DW01_cmp6_2_DW01_cmp6_7'
+  Processing 'mc_obct_1_DW01_cmp6_3_DW01_cmp6_8'
+Module: DW01_add_width12, Ports: 38, Input: 25, Output: 13, Inout: 0
+Module: DW01_add_width12, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+  Processing 'mc_incn_r_incN_width24_DW01_add_0_DW01_add_1'
+Module: DW01_inc_width13, Ports: 26, Input: 13, Output: 13, Inout: 0
+Module: DW01_inc_width13, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+  Processing 'mc_incn_r_incN_width24_DW01_inc_0_DW01_inc_3'
+  Processing 'mc_cs_rf_1_DW01_cmp6_0_DW01_cmp6_9'
+  Processing 'mc_cs_rf_0_DW01_cmp6_0_DW01_cmp6_10'
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+  Mapping Optimization (Phase 1)
+Information: The register 'u0/cs_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u0/cs_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u0/cs_reg[4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u0/cs_reg[5]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u0/cs_reg[6]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u0/cs_reg[7]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u0/spec_req_cs_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u0/spec_req_cs_reg[7]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u0/spec_req_cs_reg[6]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u0/spec_req_cs_reg[5]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u0/spec_req_cs_reg[4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u0/spec_req_cs_reg[3]' is a constant and will be removed. (OPT-1206)
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:01:01   21481.5      5.73    2300.6       0.0                          
+    0:01:02   21230.2      5.72    2221.6       0.0                          
+    0:01:02   21230.2      5.72    2221.6       0.0                          
+    0:01:02   21228.1      5.72    2221.7       0.0                          
+    0:01:03   21228.1      5.72    2221.7       0.0                          
+    0:01:06   17539.7      5.13    1983.8       0.0                          
+    0:01:07   17202.0      5.02    1865.7       0.0                          
+    0:01:07   17085.1      4.91    1829.2       0.0                          
+    0:01:07   17095.3      4.87    1819.4       0.0                          
+    0:01:08   17101.1      4.83    1627.3       0.0                          
+    0:01:08   17102.4      4.68    1600.8       0.0                          
+    0:01:08   17103.6      4.61    1512.4       0.0                          
+    0:01:08   17106.2      3.93    1479.2       0.0                          
+    0:01:08   17101.9      3.76    1413.9       0.0                          
+    0:01:08   17110.8      3.16     894.4       0.0                          
+    0:01:08   17112.0      3.11     807.9       0.0                          
+    0:01:08   17124.5      2.96     782.5       0.0                          
+    0:01:09   17133.4      2.94     635.8       0.0                          
+    0:01:09   17133.4      2.66     583.1       0.0                          
+    0:01:09   17146.8      2.43     465.6       0.0                          
+    0:01:09   17148.4      2.21     347.4       0.0                          
+    0:01:09   17144.0      1.78     269.2       0.0                          
+    0:01:09   17148.6      1.51     255.7       0.0                          
+    0:01:09   17148.1      1.33     219.7       0.0                          
+    0:01:09   17146.6      1.33     219.7       0.0                          
+    0:01:09   17146.6      1.33     219.7       0.0                          
+    0:01:10   17146.6      1.33     219.7       0.0                          
+    0:01:10   17146.6      1.33     219.7       0.0                          
+    0:01:10   17146.6      1.33     219.7       0.0                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:01:10   17146.6      1.33     219.7       0.0                          
+    0:01:10   17146.6      1.33     219.7       0.0                          
+    0:01:10   17146.6      1.33     219.7       0.0                          
+    0:01:10   17164.4      1.21     147.8       0.0 u0/sp_csc_reg[2]/D       
+    0:01:10   17206.6      1.00     122.7       0.0 u5/state_reg[38]/D       
+    0:01:11   17266.0      0.76     102.7       0.0 u5/state_reg[38]/D       
+    0:01:11   17260.7      0.68      97.3       0.0 u5/timer_reg[5]/D        
+    0:01:11   17268.6      0.43      25.6       0.0 u1/acs_addr_reg[0]/D     
+    0:01:12   17308.2      0.20       4.0       0.0 u5/timer_reg[4]/D        
+    0:01:12   17331.9      0.00       0.0       0.0                          
+    0:01:13   17059.9      0.00       0.0       8.5                          
+
+
+  Beginning Design Rule Fixing  (max_transition)
+  ----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:01:13   17059.9      0.00       0.0       8.5                          
+    0:01:13   17066.3      0.00       0.0       0.0                          
+
+
+  Beginning Area-Recovery Phase  (max_area 0)
+  -----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:01:13   17066.3      0.00       0.0       0.0                          
+    0:01:13   17066.3      0.00       0.0       0.0                          
+    0:01:14   16655.1      0.33       2.9       0.0                          
+    0:01:14   16521.4      0.22       1.5       0.0                          
+    0:01:14   16450.2      0.11       2.1       0.0                          
+    0:01:15   16412.4      0.11       0.6       0.0                          
+    0:01:15   16388.2      0.11       0.6       0.0                          
+    0:01:15   16370.2      0.11       0.6       0.0                          
+    0:01:15   16354.9      0.11       0.6       0.0                          
+    0:01:15   16342.2      0.11       0.6       0.0                          
+    0:01:15   16329.5      0.11       0.6       0.0                          
+    0:01:15   16321.9      0.11       0.6       0.0                          
+    0:01:15   16314.3      0.11       0.6       0.0                          
+    0:01:15   16314.3      0.11       0.6       0.0                          
+    0:01:15   16318.6      0.00       0.0       0.0                          
+    0:01:16   16033.4      0.07       2.2       0.0                          
+    0:01:16   15986.4      0.12       2.9       0.0                          
+    0:01:16   15976.3      0.07       2.2       0.0                          
+    0:01:16   15976.3      0.07       2.2       0.0                          
+    0:01:16   15976.3      0.07       2.2       0.0                          
+    0:01:16   15976.3      0.07       2.2       0.0                          
+    0:01:16   15976.3      0.07       2.2       0.0                          
+    0:01:16   15976.3      0.07       2.2       0.0                          
+    0:01:17   15750.6      0.00       0.0       0.0                          
+    0:01:17   15712.2      0.00       0.0       0.0                          
+    0:01:17   15690.9      0.00       0.0       0.0                          
+    0:01:18   15685.8      0.00       0.0       0.0                          
+    0:01:18   15678.1      0.07       2.0       0.0                          
+    0:01:18   15678.1      0.07       2.0       0.0                          
+    0:01:18   15678.1      0.07       2.0       0.0                          
+    0:01:18   15678.1      0.07       2.0       0.0                          
+    0:01:18   15678.1      0.07       2.0       0.0                          
+    0:01:18   15678.1      0.07       2.0       0.0                          
+    0:01:19   15676.4      0.00       0.0       0.0                          
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Warning: Design 'mc_top' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+     Net 'u2/u3/net1787': 1003 load(s), 1 driver(s)
+CPU Load: 67%, Ram Free: 2 GB, Swap Free: 15 GB, Work Disk Free: 4330 GB, Tmp Disk Free: 136 GB
+Information: Total number of MV cells in the design.
+----------------------------------------------------------------------------------------------------
+ MV Cells                                           Total Number                                   
+----------------------------------------------------------------------------------------------------
+ Level Shifter:                                     0                                             
+ Enable Level Shifter:                              0                                             
+ Isolation Cell:                                    0                                             
+ Retention Cell:                                    0                                             
+ Retention Clamp Cell:                              0                                             
+ Switch Cell:                                       0                                             
+ Always-On Cell:                                    0                                             
+ Repeater Cell:                                     0                                             
+
+----------------------------------------------------------------------------------------------------
+Unmapped MV Cells 
+----------------------------------------------------------------------------------------------------
+0 Isolation Cells are unmapped 
+0 Retention Clamp Cells are unmapped 
+----------------------------------------------------------------------------------------------------
+1
+# Reports
+report_constraints -all > ./reports/mem_ctrl/mc_top_constraints.rpt
+report_area > ./reports/mem_ctrl/mc_top_area.rpt
+report_power > ./reports/mem_ctrl/mc_top_power.rpt
+report_qor  > ./reports/mem_ctrl/mc_top_qor.rpt
+report_cell > ./reports/mem_ctrl/mc_top_cells.rpt
+report_resources > ./reports/mem_ctrl/mc_top_resources.rpt
+report_timing -max_paths 10 > ./reports/mem_ctrl/mc_top_timing.rpt
+# Output files
+write_sdc ./outputs/mem_ctrl/mc_top.sdc
+1
+write -hier -f ddc -output ./outputs/mem_ctrl/mc_top.ddc
+Writing ddc file './outputs/mem_ctrl/mc_top.ddc'.
+1
+write -hierarchy -format verilog -output ./outputs/mem_ctrl/mc_top.v
+Writing verilog file '/home/vi44@drexel.edu/iwls/scripts/outputs/mem_ctrl/mc_top.v'.
+Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
+Warning: Verilog writer has added 26 nets to module mc_top using SYNOPSYS_UNCONNECTED_ as prefix.  Please use the change_names command to make the correct changes before invoking the verilog writer.  (VO-11)
+1
+quit
+
+Memory usage for this session 571 Mbytes.
+Memory usage for this session including child processes 571 Mbytes.
+CPU usage for this session 101 seconds ( 0.03 hours ).
+Elapsed time for this session 116 seconds ( 0.03 hours ).
+
+Thank you...

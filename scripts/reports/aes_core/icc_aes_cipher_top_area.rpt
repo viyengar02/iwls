@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : aes_cipher_top
+Version: W-2024.09-SP2
+Date   : Tue May  6 09:21:04 2025
+****************************************
+
+Library(s) Used:
+
+    saed32rvt_ss0p95v25c (File: /mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v25c.db)
+
+Number of ports:                          390
+Number of nets:                          1867
+Number of cells:                         1364
+Number of combinational cells:            957
+Number of sequential cells:               390
+Number of macros/black boxes:               0
+Number of buf/inv:                         76
+Number of references:                      41
+
+Combinational area:              23382.264591
+Buf/Inv area:                     1378.477053
+Noncombinational area:            3504.645875
+Macro/Black Box area:                0.000000
+Net Interconnect area:            8382.093306
+
+Total cell area:                 26886.910466
+Total area:                      35269.003772
+1

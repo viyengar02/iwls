@@ -1,0 +1,7 @@
+set_user_match   -inverted   $svf_ref/usb_phy/i_rx_phy/rst   $svf_impl/usb_phy/i_rx_phy/rst
+set_user_match   -inverted   $svf_ref/usb_phy/i_tx_phy/rst   $svf_impl/usb_phy/i_tx_phy/rst
+guide_constraints -body { i_rx_phy } -equivalent { i_rx_phy/rst  ~ i_rx_phy/IN0 }
+guide_constraints -body { i_tx_phy } -equivalent { i_tx_phy/rst  ~ i_tx_phy/IN0 }
+
+#-------------------------------------------------------------------
+

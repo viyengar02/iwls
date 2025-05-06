@@ -1,0 +1,7 @@
+set_user_match   -inverted   $svf_ref/aes_cipher_top/u0/kld   $svf_impl/aes_cipher_top/u0/kld
+set_user_match   -inverted   $svf_ref/aes_cipher_top/u0/r0/kld   $svf_impl/aes_cipher_top/u0/r0/kld
+guide_constraints -body { u0/r0 } -equivalent { u0/r0/kld  ~ u0/r0/IN0 }
+guide_constraints -body { u0 } -equivalent { u0/kld  ~ u0/IN0 ~ u0/IN1 }
+
+#-------------------------------------------------------------------
+

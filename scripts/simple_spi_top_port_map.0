@@ -1,0 +1,7 @@
+set_user_match   -inverted   $svf_ref/simple_spi_top/rfifo/clr   $svf_impl/simple_spi_top/rfifo/clr
+set_user_match   -inverted   $svf_ref/simple_spi_top/wfifo/clr   $svf_impl/simple_spi_top/wfifo/clr
+guide_constraints -body { rfifo } -equivalent { rfifo/clr  ~ rfifo/IN0 }
+guide_constraints -body { wfifo } -equivalent { wfifo/clr  ~ wfifo/IN0 }
+
+#-------------------------------------------------------------------
+

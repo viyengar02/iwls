@@ -1,0 +1,91 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : usbf_top
+Version: M-2016.12-SP1
+Date   : Tue Apr 15 10:33:24 2025
+****************************************
+
+
+   min_delay/hold ('clk' group)
+
+                             Required        Actual
+   Endpoint                 Path Delay     Path Delay        Slack
+   -----------------------------------------------------------------
+   sram_adr_o[7]                0.19           0.07 f        -0.12  (VIOLATED)
+   sram_adr_o[8]                0.19           0.07 f        -0.12  (VIOLATED)
+   sram_adr_o[9]                0.19           0.07 f        -0.12  (VIOLATED)
+   sram_adr_o[10]               0.19           0.07 f        -0.12  (VIOLATED)
+   sram_adr_o[11]               0.19           0.07 f        -0.12  (VIOLATED)
+   sram_adr_o[12]               0.19           0.07 f        -0.12  (VIOLATED)
+   sram_adr_o[13]               0.19           0.07 f        -0.12  (VIOLATED)
+   sram_adr_o[14]               0.19           0.07 f        -0.12  (VIOLATED)
+   sram_data_o[25]              0.19           0.11 f        -0.08  (VIOLATED)
+   sram_data_o[26]              0.19           0.11 f        -0.08  (VIOLATED)
+   sram_data_o[27]              0.19           0.11 f        -0.08  (VIOLATED)
+   u4/u0/dma_ack_wr1_reg/SETB
+                                0.15           0.09 f        -0.06  (VIOLATED)
+   u4/u1/dma_ack_wr1_reg/SETB
+                                0.15           0.09 f        -0.06  (VIOLATED)
+   u4/u2/dma_ack_wr1_reg/SETB
+                                0.15           0.09 f        -0.06  (VIOLATED)
+   u4/u3/dma_ack_wr1_reg/SETB
+                                0.15           0.09 f        -0.06  (VIOLATED)
+   inta_o                       0.19           0.14 r        -0.05  (VIOLATED)
+   intb_o                       0.19           0.14 r        -0.05  (VIOLATED)
+   susp_o                       0.19           0.14 r        -0.05  (VIOLATED)
+   wb_ack_o                     0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[0]                 0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[1]                 0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[2]                 0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[3]                 0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[4]                 0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[5]                 0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[6]                 0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[7]                 0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[8]                 0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[9]                 0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[10]                0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[11]                0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[12]                0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[13]                0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[14]                0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[15]                0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[16]                0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[17]                0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[18]                0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[19]                0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[20]                0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[21]                0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[22]                0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[23]                0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[24]                0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[25]                0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[26]                0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[27]                0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[28]                0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[29]                0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[30]                0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[31]                0.19           0.14 r        -0.05  (VIOLATED)
+   resume_req_r_reg/SE          0.15           0.11 r        -0.04  (VIOLATED)
+   u4/u0/r2_reg/SETB            0.17           0.13 r        -0.04  (VIOLATED)
+   u4/u1/r2_reg/SETB            0.17           0.13 r        -0.04  (VIOLATED)
+   u4/u2/r2_reg/SETB            0.17           0.13 r        -0.04  (VIOLATED)
+   u4/u3/r2_reg/SETB            0.17           0.13 r        -0.04  (VIOLATED)
+   SuspendM_pad_o               0.19           0.16 f        -0.03  (VIOLATED)
+   u4/attach_r1_reg/D           0.18           0.16 f        -0.03  (VIOLATED)
+   u4/suspend_r1_reg/D          0.18           0.16 f        -0.03  (VIOLATED)
+   u5/wb_ack_s2_reg/D           0.18           0.16 f        -0.02  (VIOLATED)
+
+
+   max_area
+
+                             Required        Actual
+   Design                      Area           Area           Slack
+   -----------------------------------------------------------------
+   usbf_top                     0.00       29385.38       -29385.38 (VIOLATED)
+
+
+1

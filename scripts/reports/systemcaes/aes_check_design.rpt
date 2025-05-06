@@ -1,0 +1,25 @@
+ 
+****************************************
+check_design summary:
+Version:     W-2024.09-SP4-1
+Date:        Tue Apr 29 15:06:07 2025
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                      2
+    Feedthrough (LINT-29)                                           1
+    Constant outputs (LINT-52)                                      1
+
+Cells                                                               5
+    Cells do not drive (LINT-1)                                     5
+--------------------------------------------------------------------------------
+
+Warning: In design 'aes', cell 'C3304' does not drive any nets. (LINT-1)
+Warning: In design 'aes', cell 'C3305' does not drive any nets. (LINT-1)
+Warning: In design 'aes', cell 'C3315' does not drive any nets. (LINT-1)
+Warning: In design 'aes', cell 'C3602' does not drive any nets. (LINT-1)
+Warning: In design 'subbytes', cell 'B_26' does not drive any nets. (LINT-1)
+Warning: In design 'subbytes', input port 'decrypt_i' is connected directly to output port 'sbox_decrypt_o'. (LINT-29)
+Warning: In design 'keysched', output port 'sbox_decrypt_o' is connected directly to 'logic 0'. (LINT-52)
+1

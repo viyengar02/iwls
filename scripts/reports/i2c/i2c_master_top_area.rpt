@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : i2c_master_top
+Version: W-2024.09-SP4-1
+Date   : Tue May  6 10:04:49 2025
+****************************************
+
+Library(s) Used:
+
+    saed32rvt_ss0p95v25c (File: /mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v25c.db)
+
+Number of ports:                          151
+Number of nets:                           676
+Number of cells:                          498
+Number of combinational cells:            363
+Number of sequential cells:               128
+Number of macros/black boxes:               0
+Number of buf/inv:                         75
+Number of references:                      18
+
+Combinational area:                796.995594
+Buf/Inv area:                       96.066432
+Noncombinational area:             905.260945
+Macro/Black Box area:                0.000000
+Net Interconnect area:             365.323508
+
+Total cell area:                  1702.256539
+Total area:                       2067.580047
+1

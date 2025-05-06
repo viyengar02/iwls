@@ -1,0 +1,104 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'mc_top' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : mc_top
+Version: M-2016.12-SP1
+Date   : Tue Apr 15 10:28:08 2025
+****************************************
+
+
+   min_delay/hold ('clk' group)
+
+                             Required        Actual
+   Endpoint                 Path Delay     Path Delay        Slack
+   -----------------------------------------------------------------
+   u5/resume_req_r_reg/D        0.19           0.02 f        -0.17  (VIOLATED)
+   u5/susp_req_r_reg/D          0.19           0.02 f        -0.17  (VIOLATED)
+   u7/mc_dqm_r_reg[1]/D         0.19           0.10 f        -0.09  (VIOLATED)
+   u7/mc_dqm_r_reg[0]/D         0.19           0.10 f        -0.09  (VIOLATED)
+   u7/mc_dqm_r_reg[3]/D         0.19           0.10 f        -0.09  (VIOLATED)
+   u7/mc_dqm_r_reg[2]/D         0.19           0.10 f        -0.09  (VIOLATED)
+   wb_data_o[0]                 0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[1]                 0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[2]                 0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[3]                 0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[4]                 0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[5]                 0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[6]                 0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[7]                 0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[8]                 0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[9]                 0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[10]                0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[11]                0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[12]                0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[13]                0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[14]                0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[15]                0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[16]                0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[17]                0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[18]                0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[19]                0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[20]                0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[21]                0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[22]                0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[23]                0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[24]                0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[25]                0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[26]                0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[27]                0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[28]                0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[29]                0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[30]                0.19           0.14 r        -0.05  (VIOLATED)
+   wb_data_o[31]                0.19           0.14 r        -0.05  (VIOLATED)
+   poc_o[4]                     0.19           0.16 r        -0.03  (VIOLATED)
+   poc_o[5]                     0.19           0.16 r        -0.03  (VIOLATED)
+   poc_o[6]                     0.19           0.16 r        -0.03  (VIOLATED)
+   poc_o[7]                     0.19           0.16 r        -0.03  (VIOLATED)
+   poc_o[8]                     0.19           0.16 r        -0.03  (VIOLATED)
+   poc_o[9]                     0.19           0.16 r        -0.03  (VIOLATED)
+   poc_o[10]                    0.19           0.16 r        -0.03  (VIOLATED)
+   poc_o[11]                    0.19           0.16 r        -0.03  (VIOLATED)
+   poc_o[12]                    0.19           0.16 r        -0.03  (VIOLATED)
+   poc_o[13]                    0.19           0.16 r        -0.03  (VIOLATED)
+   poc_o[14]                    0.19           0.16 r        -0.03  (VIOLATED)
+   poc_o[15]                    0.19           0.16 r        -0.03  (VIOLATED)
+   poc_o[16]                    0.19           0.16 r        -0.03  (VIOLATED)
+   poc_o[17]                    0.19           0.16 r        -0.03  (VIOLATED)
+   poc_o[18]                    0.19           0.16 r        -0.03  (VIOLATED)
+   poc_o[19]                    0.19           0.16 r        -0.03  (VIOLATED)
+   poc_o[20]                    0.19           0.16 r        -0.03  (VIOLATED)
+   poc_o[21]                    0.19           0.16 r        -0.03  (VIOLATED)
+   poc_o[22]                    0.19           0.16 r        -0.03  (VIOLATED)
+   poc_o[23]                    0.19           0.16 r        -0.03  (VIOLATED)
+   poc_o[24]                    0.19           0.16 r        -0.03  (VIOLATED)
+   poc_o[25]                    0.19           0.16 r        -0.03  (VIOLATED)
+   poc_o[26]                    0.19           0.16 r        -0.03  (VIOLATED)
+   poc_o[27]                    0.19           0.16 r        -0.03  (VIOLATED)
+   poc_o[28]                    0.19           0.16 r        -0.03  (VIOLATED)
+   poc_o[29]                    0.19           0.16 r        -0.03  (VIOLATED)
+   poc_o[30]                    0.19           0.16 r        -0.03  (VIOLATED)
+   poc_o[31]                    0.19           0.16 r        -0.03  (VIOLATED)
+   u5/cke_o_del_reg/D           0.18           0.16 f        -0.02  (VIOLATED)
+   u5/cke_o_r2_reg/D            0.18           0.16 f        -0.02  (VIOLATED)
+   u5/cs_le_r_reg/D             0.18           0.16 f        -0.02  (VIOLATED)
+   u5/wb_wait_r_reg/D           0.18           0.16 f        -0.02  (VIOLATED)
+   mc_cke_pad_o_                0.19           0.18 r        -0.01  (VIOLATED)
+   mc_vpen_pad_o                0.19           0.18 f        -0.01  (VIOLATED)
+   u5/cmd_del_reg[3]/D          0.18           0.18 f        -0.01  (VIOLATED)
+   u5/data_oe_r2_reg/D          0.18           0.18 f        -0.01  (VIOLATED)
+   wb_ack_o                     0.19           0.19 f         0.00  (VIOLATED: increase significant digits)
+   wb_err_o                     0.19           0.19 f         0.00  (VIOLATED: increase significant digits)
+
+
+   max_area
+
+                             Required        Actual
+   Design                      Area           Area           Slack
+   -----------------------------------------------------------------
+   mc_top                       0.00       19070.66       -19070.66 (VIOLATED)
+
+
+1

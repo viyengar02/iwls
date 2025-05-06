@@ -1,0 +1,1016 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 10
+Design : pci_bridge32
+Version: M-2016.12-SP1
+Date   : Tue Apr 15 10:29:53 2025
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: ss0p95v25c   Library: saed32rvt_ss0p95v25c
+Wire Load Model Mode: enclosed
+
+  Startpoint: pci_target_unit/wishbone_master/addr_cnt_out_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: pci_target_unit/wishbone_master/addr_cnt_out_reg[31]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pci_bridge32       70000                 saed32rvt_ss0p95v25c
+  pci_wb_master_DW01_add_0
+                     ForQA                 saed32rvt_ss0p95v25c
+  pci_wb_master      8000                  saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  pci_target_unit/wishbone_master/addr_cnt_out_reg[2]/CLK (DFFARX1_RVT)
+                                                          0.00 #     0.00 r
+  pci_target_unit/wishbone_master/addr_cnt_out_reg[2]/Q (DFFARX1_RVT)
+                                                          0.19       0.19 r
+  pci_target_unit/wishbone_master/add_529/A[2] (pci_wb_master_DW01_add_0)
+                                                          0.00       0.19 r
+  pci_target_unit/wishbone_master/add_529/U15/Y (AND2X1_RVT)
+                                                          5.81       6.00 r
+  pci_target_unit/wishbone_master/add_529/U16/Y (AND2X1_RVT)
+                                                          0.15       6.15 r
+  pci_target_unit/wishbone_master/add_529/U17/Y (AND2X1_RVT)
+                                                          0.15       6.30 r
+  pci_target_unit/wishbone_master/add_529/U18/Y (AND2X1_RVT)
+                                                          0.15       6.46 r
+  pci_target_unit/wishbone_master/add_529/U19/Y (AND2X1_RVT)
+                                                          0.15       6.61 r
+  pci_target_unit/wishbone_master/add_529/U20/Y (AND2X1_RVT)
+                                                          0.15       6.76 r
+  pci_target_unit/wishbone_master/add_529/U21/Y (AND2X1_RVT)
+                                                          0.15       6.91 r
+  pci_target_unit/wishbone_master/add_529/U22/Y (AND2X1_RVT)
+                                                          0.15       7.06 r
+  pci_target_unit/wishbone_master/add_529/U23/Y (AND2X1_RVT)
+                                                          0.15       7.22 r
+  pci_target_unit/wishbone_master/add_529/U24/Y (AND2X1_RVT)
+                                                          0.15       7.37 r
+  pci_target_unit/wishbone_master/add_529/U25/Y (AND2X1_RVT)
+                                                          0.15       7.52 r
+  pci_target_unit/wishbone_master/add_529/U26/Y (AND2X1_RVT)
+                                                          0.15       7.67 r
+  pci_target_unit/wishbone_master/add_529/U27/Y (AND2X1_RVT)
+                                                          0.15       7.83 r
+  pci_target_unit/wishbone_master/add_529/U28/Y (AND2X1_RVT)
+                                                          0.15       7.98 r
+  pci_target_unit/wishbone_master/add_529/U29/Y (AND2X1_RVT)
+                                                          0.15       8.13 r
+  pci_target_unit/wishbone_master/add_529/U30/Y (AND2X1_RVT)
+                                                          0.15       8.28 r
+  pci_target_unit/wishbone_master/add_529/U9/Y (AND2X1_RVT)
+                                                          0.12       8.40 r
+  pci_target_unit/wishbone_master/add_529/U10/Y (AND2X1_RVT)
+                                                          0.07       8.47 r
+  pci_target_unit/wishbone_master/add_529/U3/Y (AND2X1_RVT)
+                                                          0.12       8.59 r
+  pci_target_unit/wishbone_master/add_529/U4/Y (AND2X1_RVT)
+                                                          0.07       8.67 r
+  pci_target_unit/wishbone_master/add_529/U36/Y (AND2X1_RVT)
+                                                          0.15       8.82 r
+  pci_target_unit/wishbone_master/add_529/U37/Y (AND2X1_RVT)
+                                                          0.15       8.97 r
+  pci_target_unit/wishbone_master/add_529/U38/Y (AND2X1_RVT)
+                                                          0.15       9.12 r
+  pci_target_unit/wishbone_master/add_529/U39/Y (AND2X1_RVT)
+                                                          0.15       9.27 r
+  pci_target_unit/wishbone_master/add_529/U12/Y (AND2X1_RVT)
+                                                          0.15       9.42 r
+  pci_target_unit/wishbone_master/add_529/U1/Y (XOR2X2_RVT)
+                                                          0.14       9.56 f
+  pci_target_unit/wishbone_master/add_529/SUM[31] (pci_wb_master_DW01_add_0)
+                                                          0.00       9.56 f
+  pci_target_unit/wishbone_master/U97/Y (AO22X1_RVT)      0.09       9.65 f
+  pci_target_unit/wishbone_master/U231/Y (AO221X1_RVT)
+                                                          0.07       9.72 f
+  pci_target_unit/wishbone_master/addr_cnt_out_reg[31]/D (DFFARX1_RVT)
+                                                          0.01       9.73 f
+  data arrival time                                                  9.73
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  pci_target_unit/wishbone_master/addr_cnt_out_reg[31]/CLK (DFFARX1_RVT)
+                                                          0.00       9.80 r
+  library setup time                                     -0.06       9.74
+  data required time                                                 9.74
+  --------------------------------------------------------------------------
+  data required time                                                 9.74
+  data arrival time                                                 -9.73
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+  Startpoint: pci_target_unit/del_sync/comp_req_pending_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: pci_target_unit/fifos/pciw_fifo_storage/do_reg_b_reg[11]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pci_bridge32       70000                 saed32rvt_ss0p95v25c
+  pci_target_unit    16000                 saed32rvt_ss0p95v25c
+  pci_wb_master      8000                  saed32rvt_ss0p95v25c
+  pci_pciw_fifo_control_ADDR_LENGTH3
+                     8000                  saed32rvt_ss0p95v25c
+  pci_pciw_pcir_fifos
+                     16000                 saed32rvt_ss0p95v25c
+  pci_pci_tpram_aw3_dw40_1
+                     8000                  saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  pci_target_unit/del_sync/comp_req_pending_reg/CLK (DFFARX1_RVT)
+                                                          0.00 #     0.00 r
+  pci_target_unit/del_sync/comp_req_pending_reg/Q (DFFARX1_RVT)
+                                                          0.20       0.20 r
+  pci_target_unit/del_sync/comp_req_pending_out (pci_delayed_sync_0)
+                                                          0.00       0.20 r
+  pci_target_unit/wishbone_master/pci_tar_read_request (pci_wb_master)
+                                                          0.00       0.20 r
+  pci_target_unit/wishbone_master/U178/Y (NAND3X0_RVT)
+                                                          0.85       1.05 f
+  pci_target_unit/wishbone_master/U116/Y (INVX0_RVT)      0.10       1.15 r
+  pci_target_unit/wishbone_master/U108/Y (NAND3X0_RVT)
+                                                          0.21       1.36 f
+  pci_target_unit/wishbone_master/U111/Y (NAND2X0_RVT)
+                                                          0.33       1.69 r
+  pci_target_unit/wishbone_master/U106/Y (INVX0_RVT)      0.20       1.89 f
+  pci_target_unit/wishbone_master/U89/Y (NAND4X0_RVT)     0.30       2.19 r
+  pci_target_unit/wishbone_master/U120/Y (NAND3X0_RVT)
+                                                          0.10       2.28 f
+  pci_target_unit/wishbone_master/U177/Y (NAND2X0_RVT)
+                                                          0.33       2.61 r
+  pci_target_unit/wishbone_master/U121/Y (NAND3X0_RVT)
+                                                          0.07       2.68 f
+  pci_target_unit/wishbone_master/U28/Y (AO21X1_RVT)      0.15       2.83 f
+  pci_target_unit/wishbone_master/U96/Y (NAND4X0_RVT)     0.10       2.93 r
+  pci_target_unit/wishbone_master/pciw_fifo_renable_out (pci_wb_master)
+                                                          0.00       2.93 r
+  pci_target_unit/fifos/pciw_renable_in (pci_pciw_pcir_fifos)
+                                                          0.00       2.93 r
+  pci_target_unit/fifos/pciw_fifo_ctrl/renable_in (pci_pciw_fifo_control_ADDR_LENGTH3)
+                                                          0.00       2.93 r
+  pci_target_unit/fifos/pciw_fifo_ctrl/U11/Y (NAND2X0_RVT)
+                                                          0.06       2.99 f
+  pci_target_unit/fifos/pciw_fifo_ctrl/U10/Y (INVX0_RVT)
+                                                          0.12       3.12 r
+  pci_target_unit/fifos/pciw_fifo_ctrl/U9/Y (INVX0_RVT)
+                                                          0.34       3.46 f
+  pci_target_unit/fifos/pciw_fifo_ctrl/U5/Y (NOR2X0_RVT)
+                                                          1.42       4.88 r
+  pci_target_unit/fifos/pciw_fifo_ctrl/U94/Y (AO21X1_RVT)
+                                                          0.23       5.11 r
+  pci_target_unit/fifos/pciw_fifo_ctrl/raddr_out[0] (pci_pciw_fifo_control_ADDR_LENGTH3)
+                                                          0.00       5.11 r
+  pci_target_unit/fifos/pciw_fifo_storage/addr_b[0] (pci_pci_tpram_aw3_dw40_1)
+                                                          0.00       5.11 r
+  pci_target_unit/fifos/pciw_fifo_storage/U51/Y (NBUFFX2_RVT)
+                                                          0.18       5.29 r
+  pci_target_unit/fifos/pciw_fifo_storage/U94/Y (NAND2X0_RVT)
+                                                          0.29       5.58 f
+  pci_target_unit/fifos/pciw_fifo_storage/U54/Y (INVX0_RVT)
+                                                          0.35       5.93 r
+  pci_target_unit/fifos/pciw_fifo_storage/U631/Y (AO22X1_RVT)
+                                                          3.56       9.49 r
+  pci_target_unit/fifos/pciw_fifo_storage/U240/Y (AOI221X1_RVT)
+                                                          0.10       9.60 f
+  pci_target_unit/fifos/pciw_fifo_storage/U238/Y (NAND2X0_RVT)
+                                                          0.05       9.64 r
+  pci_target_unit/fifos/pciw_fifo_storage/U49/Y (AO22X1_RVT)
+                                                          0.08       9.72 r
+  pci_target_unit/fifos/pciw_fifo_storage/do_reg_b_reg[11]/D (DFFX1_RVT)
+                                                          0.01       9.73 r
+  data arrival time                                                  9.73
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  pci_target_unit/fifos/pciw_fifo_storage/do_reg_b_reg[11]/CLK (DFFX1_RVT)
+                                                          0.00       9.80 r
+  library setup time                                     -0.06       9.74
+  data required time                                                 9.74
+  --------------------------------------------------------------------------
+  data required time                                                 9.74
+  data arrival time                                                 -9.73
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+  Startpoint: pci_target_unit/del_sync/comp_req_pending_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: pci_target_unit/fifos/pciw_fifo_storage/do_reg_b_reg[10]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pci_bridge32       70000                 saed32rvt_ss0p95v25c
+  pci_target_unit    16000                 saed32rvt_ss0p95v25c
+  pci_wb_master      8000                  saed32rvt_ss0p95v25c
+  pci_pciw_fifo_control_ADDR_LENGTH3
+                     8000                  saed32rvt_ss0p95v25c
+  pci_pciw_pcir_fifos
+                     16000                 saed32rvt_ss0p95v25c
+  pci_pci_tpram_aw3_dw40_1
+                     8000                  saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  pci_target_unit/del_sync/comp_req_pending_reg/CLK (DFFARX1_RVT)
+                                                          0.00 #     0.00 r
+  pci_target_unit/del_sync/comp_req_pending_reg/Q (DFFARX1_RVT)
+                                                          0.20       0.20 r
+  pci_target_unit/del_sync/comp_req_pending_out (pci_delayed_sync_0)
+                                                          0.00       0.20 r
+  pci_target_unit/wishbone_master/pci_tar_read_request (pci_wb_master)
+                                                          0.00       0.20 r
+  pci_target_unit/wishbone_master/U178/Y (NAND3X0_RVT)
+                                                          0.85       1.05 f
+  pci_target_unit/wishbone_master/U116/Y (INVX0_RVT)      0.10       1.15 r
+  pci_target_unit/wishbone_master/U108/Y (NAND3X0_RVT)
+                                                          0.21       1.36 f
+  pci_target_unit/wishbone_master/U111/Y (NAND2X0_RVT)
+                                                          0.33       1.69 r
+  pci_target_unit/wishbone_master/U106/Y (INVX0_RVT)      0.20       1.89 f
+  pci_target_unit/wishbone_master/U89/Y (NAND4X0_RVT)     0.30       2.19 r
+  pci_target_unit/wishbone_master/U120/Y (NAND3X0_RVT)
+                                                          0.10       2.28 f
+  pci_target_unit/wishbone_master/U177/Y (NAND2X0_RVT)
+                                                          0.33       2.61 r
+  pci_target_unit/wishbone_master/U121/Y (NAND3X0_RVT)
+                                                          0.07       2.68 f
+  pci_target_unit/wishbone_master/U28/Y (AO21X1_RVT)      0.15       2.83 f
+  pci_target_unit/wishbone_master/U96/Y (NAND4X0_RVT)     0.10       2.93 r
+  pci_target_unit/wishbone_master/pciw_fifo_renable_out (pci_wb_master)
+                                                          0.00       2.93 r
+  pci_target_unit/fifos/pciw_renable_in (pci_pciw_pcir_fifos)
+                                                          0.00       2.93 r
+  pci_target_unit/fifos/pciw_fifo_ctrl/renable_in (pci_pciw_fifo_control_ADDR_LENGTH3)
+                                                          0.00       2.93 r
+  pci_target_unit/fifos/pciw_fifo_ctrl/U11/Y (NAND2X0_RVT)
+                                                          0.06       2.99 f
+  pci_target_unit/fifos/pciw_fifo_ctrl/U10/Y (INVX0_RVT)
+                                                          0.12       3.12 r
+  pci_target_unit/fifos/pciw_fifo_ctrl/U9/Y (INVX0_RVT)
+                                                          0.34       3.46 f
+  pci_target_unit/fifos/pciw_fifo_ctrl/U5/Y (NOR2X0_RVT)
+                                                          1.42       4.88 r
+  pci_target_unit/fifos/pciw_fifo_ctrl/U94/Y (AO21X1_RVT)
+                                                          0.23       5.11 r
+  pci_target_unit/fifos/pciw_fifo_ctrl/raddr_out[0] (pci_pciw_fifo_control_ADDR_LENGTH3)
+                                                          0.00       5.11 r
+  pci_target_unit/fifos/pciw_fifo_storage/addr_b[0] (pci_pci_tpram_aw3_dw40_1)
+                                                          0.00       5.11 r
+  pci_target_unit/fifos/pciw_fifo_storage/U51/Y (NBUFFX2_RVT)
+                                                          0.18       5.29 r
+  pci_target_unit/fifos/pciw_fifo_storage/U94/Y (NAND2X0_RVT)
+                                                          0.29       5.58 f
+  pci_target_unit/fifos/pciw_fifo_storage/U54/Y (INVX0_RVT)
+                                                          0.35       5.93 r
+  pci_target_unit/fifos/pciw_fifo_storage/U629/Y (AO22X1_RVT)
+                                                          3.56       9.49 r
+  pci_target_unit/fifos/pciw_fifo_storage/U237/Y (AOI221X1_RVT)
+                                                          0.10       9.60 f
+  pci_target_unit/fifos/pciw_fifo_storage/U235/Y (NAND2X0_RVT)
+                                                          0.05       9.64 r
+  pci_target_unit/fifos/pciw_fifo_storage/U48/Y (AO22X1_RVT)
+                                                          0.08       9.72 r
+  pci_target_unit/fifos/pciw_fifo_storage/do_reg_b_reg[10]/D (DFFX1_RVT)
+                                                          0.01       9.73 r
+  data arrival time                                                  9.73
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  pci_target_unit/fifos/pciw_fifo_storage/do_reg_b_reg[10]/CLK (DFFX1_RVT)
+                                                          0.00       9.80 r
+  library setup time                                     -0.06       9.74
+  data required time                                                 9.74
+  --------------------------------------------------------------------------
+  data required time                                                 9.74
+  data arrival time                                                 -9.73
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+  Startpoint: pci_target_unit/del_sync/comp_req_pending_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: pci_target_unit/fifos/pciw_fifo_storage/do_reg_b_reg[9]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pci_bridge32       70000                 saed32rvt_ss0p95v25c
+  pci_target_unit    16000                 saed32rvt_ss0p95v25c
+  pci_wb_master      8000                  saed32rvt_ss0p95v25c
+  pci_pciw_fifo_control_ADDR_LENGTH3
+                     8000                  saed32rvt_ss0p95v25c
+  pci_pciw_pcir_fifos
+                     16000                 saed32rvt_ss0p95v25c
+  pci_pci_tpram_aw3_dw40_1
+                     8000                  saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  pci_target_unit/del_sync/comp_req_pending_reg/CLK (DFFARX1_RVT)
+                                                          0.00 #     0.00 r
+  pci_target_unit/del_sync/comp_req_pending_reg/Q (DFFARX1_RVT)
+                                                          0.20       0.20 r
+  pci_target_unit/del_sync/comp_req_pending_out (pci_delayed_sync_0)
+                                                          0.00       0.20 r
+  pci_target_unit/wishbone_master/pci_tar_read_request (pci_wb_master)
+                                                          0.00       0.20 r
+  pci_target_unit/wishbone_master/U178/Y (NAND3X0_RVT)
+                                                          0.85       1.05 f
+  pci_target_unit/wishbone_master/U116/Y (INVX0_RVT)      0.10       1.15 r
+  pci_target_unit/wishbone_master/U108/Y (NAND3X0_RVT)
+                                                          0.21       1.36 f
+  pci_target_unit/wishbone_master/U111/Y (NAND2X0_RVT)
+                                                          0.33       1.69 r
+  pci_target_unit/wishbone_master/U106/Y (INVX0_RVT)      0.20       1.89 f
+  pci_target_unit/wishbone_master/U89/Y (NAND4X0_RVT)     0.30       2.19 r
+  pci_target_unit/wishbone_master/U120/Y (NAND3X0_RVT)
+                                                          0.10       2.28 f
+  pci_target_unit/wishbone_master/U177/Y (NAND2X0_RVT)
+                                                          0.33       2.61 r
+  pci_target_unit/wishbone_master/U121/Y (NAND3X0_RVT)
+                                                          0.07       2.68 f
+  pci_target_unit/wishbone_master/U28/Y (AO21X1_RVT)      0.15       2.83 f
+  pci_target_unit/wishbone_master/U96/Y (NAND4X0_RVT)     0.10       2.93 r
+  pci_target_unit/wishbone_master/pciw_fifo_renable_out (pci_wb_master)
+                                                          0.00       2.93 r
+  pci_target_unit/fifos/pciw_renable_in (pci_pciw_pcir_fifos)
+                                                          0.00       2.93 r
+  pci_target_unit/fifos/pciw_fifo_ctrl/renable_in (pci_pciw_fifo_control_ADDR_LENGTH3)
+                                                          0.00       2.93 r
+  pci_target_unit/fifos/pciw_fifo_ctrl/U11/Y (NAND2X0_RVT)
+                                                          0.06       2.99 f
+  pci_target_unit/fifos/pciw_fifo_ctrl/U10/Y (INVX0_RVT)
+                                                          0.12       3.12 r
+  pci_target_unit/fifos/pciw_fifo_ctrl/U9/Y (INVX0_RVT)
+                                                          0.34       3.46 f
+  pci_target_unit/fifos/pciw_fifo_ctrl/U5/Y (NOR2X0_RVT)
+                                                          1.42       4.88 r
+  pci_target_unit/fifos/pciw_fifo_ctrl/U94/Y (AO21X1_RVT)
+                                                          0.23       5.11 r
+  pci_target_unit/fifos/pciw_fifo_ctrl/raddr_out[0] (pci_pciw_fifo_control_ADDR_LENGTH3)
+                                                          0.00       5.11 r
+  pci_target_unit/fifos/pciw_fifo_storage/addr_b[0] (pci_pci_tpram_aw3_dw40_1)
+                                                          0.00       5.11 r
+  pci_target_unit/fifos/pciw_fifo_storage/U51/Y (NBUFFX2_RVT)
+                                                          0.18       5.29 r
+  pci_target_unit/fifos/pciw_fifo_storage/U94/Y (NAND2X0_RVT)
+                                                          0.29       5.58 f
+  pci_target_unit/fifos/pciw_fifo_storage/U54/Y (INVX0_RVT)
+                                                          0.35       5.93 r
+  pci_target_unit/fifos/pciw_fifo_storage/U627/Y (AO22X1_RVT)
+                                                          3.56       9.49 r
+  pci_target_unit/fifos/pciw_fifo_storage/U234/Y (AOI221X1_RVT)
+                                                          0.10       9.60 f
+  pci_target_unit/fifos/pciw_fifo_storage/U232/Y (NAND2X0_RVT)
+                                                          0.05       9.64 r
+  pci_target_unit/fifos/pciw_fifo_storage/U47/Y (AO22X1_RVT)
+                                                          0.08       9.72 r
+  pci_target_unit/fifos/pciw_fifo_storage/do_reg_b_reg[9]/D (DFFX1_RVT)
+                                                          0.01       9.73 r
+  data arrival time                                                  9.73
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  pci_target_unit/fifos/pciw_fifo_storage/do_reg_b_reg[9]/CLK (DFFX1_RVT)
+                                                          0.00       9.80 r
+  library setup time                                     -0.06       9.74
+  data required time                                                 9.74
+  --------------------------------------------------------------------------
+  data required time                                                 9.74
+  data arrival time                                                 -9.73
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+  Startpoint: pci_target_unit/del_sync/comp_req_pending_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: pci_target_unit/fifos/pciw_fifo_storage/do_reg_b_reg[8]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pci_bridge32       70000                 saed32rvt_ss0p95v25c
+  pci_target_unit    16000                 saed32rvt_ss0p95v25c
+  pci_wb_master      8000                  saed32rvt_ss0p95v25c
+  pci_pciw_fifo_control_ADDR_LENGTH3
+                     8000                  saed32rvt_ss0p95v25c
+  pci_pciw_pcir_fifos
+                     16000                 saed32rvt_ss0p95v25c
+  pci_pci_tpram_aw3_dw40_1
+                     8000                  saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  pci_target_unit/del_sync/comp_req_pending_reg/CLK (DFFARX1_RVT)
+                                                          0.00 #     0.00 r
+  pci_target_unit/del_sync/comp_req_pending_reg/Q (DFFARX1_RVT)
+                                                          0.20       0.20 r
+  pci_target_unit/del_sync/comp_req_pending_out (pci_delayed_sync_0)
+                                                          0.00       0.20 r
+  pci_target_unit/wishbone_master/pci_tar_read_request (pci_wb_master)
+                                                          0.00       0.20 r
+  pci_target_unit/wishbone_master/U178/Y (NAND3X0_RVT)
+                                                          0.85       1.05 f
+  pci_target_unit/wishbone_master/U116/Y (INVX0_RVT)      0.10       1.15 r
+  pci_target_unit/wishbone_master/U108/Y (NAND3X0_RVT)
+                                                          0.21       1.36 f
+  pci_target_unit/wishbone_master/U111/Y (NAND2X0_RVT)
+                                                          0.33       1.69 r
+  pci_target_unit/wishbone_master/U106/Y (INVX0_RVT)      0.20       1.89 f
+  pci_target_unit/wishbone_master/U89/Y (NAND4X0_RVT)     0.30       2.19 r
+  pci_target_unit/wishbone_master/U120/Y (NAND3X0_RVT)
+                                                          0.10       2.28 f
+  pci_target_unit/wishbone_master/U177/Y (NAND2X0_RVT)
+                                                          0.33       2.61 r
+  pci_target_unit/wishbone_master/U121/Y (NAND3X0_RVT)
+                                                          0.07       2.68 f
+  pci_target_unit/wishbone_master/U28/Y (AO21X1_RVT)      0.15       2.83 f
+  pci_target_unit/wishbone_master/U96/Y (NAND4X0_RVT)     0.10       2.93 r
+  pci_target_unit/wishbone_master/pciw_fifo_renable_out (pci_wb_master)
+                                                          0.00       2.93 r
+  pci_target_unit/fifos/pciw_renable_in (pci_pciw_pcir_fifos)
+                                                          0.00       2.93 r
+  pci_target_unit/fifos/pciw_fifo_ctrl/renable_in (pci_pciw_fifo_control_ADDR_LENGTH3)
+                                                          0.00       2.93 r
+  pci_target_unit/fifos/pciw_fifo_ctrl/U11/Y (NAND2X0_RVT)
+                                                          0.06       2.99 f
+  pci_target_unit/fifos/pciw_fifo_ctrl/U10/Y (INVX0_RVT)
+                                                          0.12       3.12 r
+  pci_target_unit/fifos/pciw_fifo_ctrl/U9/Y (INVX0_RVT)
+                                                          0.34       3.46 f
+  pci_target_unit/fifos/pciw_fifo_ctrl/U5/Y (NOR2X0_RVT)
+                                                          1.42       4.88 r
+  pci_target_unit/fifos/pciw_fifo_ctrl/U94/Y (AO21X1_RVT)
+                                                          0.23       5.11 r
+  pci_target_unit/fifos/pciw_fifo_ctrl/raddr_out[0] (pci_pciw_fifo_control_ADDR_LENGTH3)
+                                                          0.00       5.11 r
+  pci_target_unit/fifos/pciw_fifo_storage/addr_b[0] (pci_pci_tpram_aw3_dw40_1)
+                                                          0.00       5.11 r
+  pci_target_unit/fifos/pciw_fifo_storage/U51/Y (NBUFFX2_RVT)
+                                                          0.18       5.29 r
+  pci_target_unit/fifos/pciw_fifo_storage/U94/Y (NAND2X0_RVT)
+                                                          0.29       5.58 f
+  pci_target_unit/fifos/pciw_fifo_storage/U54/Y (INVX0_RVT)
+                                                          0.35       5.93 r
+  pci_target_unit/fifos/pciw_fifo_storage/U625/Y (AO22X1_RVT)
+                                                          3.56       9.49 r
+  pci_target_unit/fifos/pciw_fifo_storage/U231/Y (AOI221X1_RVT)
+                                                          0.10       9.60 f
+  pci_target_unit/fifos/pciw_fifo_storage/U229/Y (NAND2X0_RVT)
+                                                          0.05       9.64 r
+  pci_target_unit/fifos/pciw_fifo_storage/U46/Y (AO22X1_RVT)
+                                                          0.08       9.72 r
+  pci_target_unit/fifos/pciw_fifo_storage/do_reg_b_reg[8]/D (DFFX1_RVT)
+                                                          0.01       9.73 r
+  data arrival time                                                  9.73
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  pci_target_unit/fifos/pciw_fifo_storage/do_reg_b_reg[8]/CLK (DFFX1_RVT)
+                                                          0.00       9.80 r
+  library setup time                                     -0.06       9.74
+  data required time                                                 9.74
+  --------------------------------------------------------------------------
+  data required time                                                 9.74
+  data arrival time                                                 -9.73
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+  Startpoint: pci_target_unit/del_sync/comp_req_pending_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: pci_target_unit/fifos/pciw_fifo_storage/do_reg_b_reg[7]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pci_bridge32       70000                 saed32rvt_ss0p95v25c
+  pci_target_unit    16000                 saed32rvt_ss0p95v25c
+  pci_wb_master      8000                  saed32rvt_ss0p95v25c
+  pci_pciw_fifo_control_ADDR_LENGTH3
+                     8000                  saed32rvt_ss0p95v25c
+  pci_pciw_pcir_fifos
+                     16000                 saed32rvt_ss0p95v25c
+  pci_pci_tpram_aw3_dw40_1
+                     8000                  saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  pci_target_unit/del_sync/comp_req_pending_reg/CLK (DFFARX1_RVT)
+                                                          0.00 #     0.00 r
+  pci_target_unit/del_sync/comp_req_pending_reg/Q (DFFARX1_RVT)
+                                                          0.20       0.20 r
+  pci_target_unit/del_sync/comp_req_pending_out (pci_delayed_sync_0)
+                                                          0.00       0.20 r
+  pci_target_unit/wishbone_master/pci_tar_read_request (pci_wb_master)
+                                                          0.00       0.20 r
+  pci_target_unit/wishbone_master/U178/Y (NAND3X0_RVT)
+                                                          0.85       1.05 f
+  pci_target_unit/wishbone_master/U116/Y (INVX0_RVT)      0.10       1.15 r
+  pci_target_unit/wishbone_master/U108/Y (NAND3X0_RVT)
+                                                          0.21       1.36 f
+  pci_target_unit/wishbone_master/U111/Y (NAND2X0_RVT)
+                                                          0.33       1.69 r
+  pci_target_unit/wishbone_master/U106/Y (INVX0_RVT)      0.20       1.89 f
+  pci_target_unit/wishbone_master/U89/Y (NAND4X0_RVT)     0.30       2.19 r
+  pci_target_unit/wishbone_master/U120/Y (NAND3X0_RVT)
+                                                          0.10       2.28 f
+  pci_target_unit/wishbone_master/U177/Y (NAND2X0_RVT)
+                                                          0.33       2.61 r
+  pci_target_unit/wishbone_master/U121/Y (NAND3X0_RVT)
+                                                          0.07       2.68 f
+  pci_target_unit/wishbone_master/U28/Y (AO21X1_RVT)      0.15       2.83 f
+  pci_target_unit/wishbone_master/U96/Y (NAND4X0_RVT)     0.10       2.93 r
+  pci_target_unit/wishbone_master/pciw_fifo_renable_out (pci_wb_master)
+                                                          0.00       2.93 r
+  pci_target_unit/fifos/pciw_renable_in (pci_pciw_pcir_fifos)
+                                                          0.00       2.93 r
+  pci_target_unit/fifos/pciw_fifo_ctrl/renable_in (pci_pciw_fifo_control_ADDR_LENGTH3)
+                                                          0.00       2.93 r
+  pci_target_unit/fifos/pciw_fifo_ctrl/U11/Y (NAND2X0_RVT)
+                                                          0.06       2.99 f
+  pci_target_unit/fifos/pciw_fifo_ctrl/U10/Y (INVX0_RVT)
+                                                          0.12       3.12 r
+  pci_target_unit/fifos/pciw_fifo_ctrl/U9/Y (INVX0_RVT)
+                                                          0.34       3.46 f
+  pci_target_unit/fifos/pciw_fifo_ctrl/U5/Y (NOR2X0_RVT)
+                                                          1.42       4.88 r
+  pci_target_unit/fifos/pciw_fifo_ctrl/U94/Y (AO21X1_RVT)
+                                                          0.23       5.11 r
+  pci_target_unit/fifos/pciw_fifo_ctrl/raddr_out[0] (pci_pciw_fifo_control_ADDR_LENGTH3)
+                                                          0.00       5.11 r
+  pci_target_unit/fifos/pciw_fifo_storage/addr_b[0] (pci_pci_tpram_aw3_dw40_1)
+                                                          0.00       5.11 r
+  pci_target_unit/fifos/pciw_fifo_storage/U51/Y (NBUFFX2_RVT)
+                                                          0.18       5.29 r
+  pci_target_unit/fifos/pciw_fifo_storage/U94/Y (NAND2X0_RVT)
+                                                          0.29       5.58 f
+  pci_target_unit/fifos/pciw_fifo_storage/U54/Y (INVX0_RVT)
+                                                          0.35       5.93 r
+  pci_target_unit/fifos/pciw_fifo_storage/U623/Y (AO22X1_RVT)
+                                                          3.56       9.49 r
+  pci_target_unit/fifos/pciw_fifo_storage/U228/Y (AOI221X1_RVT)
+                                                          0.10       9.60 f
+  pci_target_unit/fifos/pciw_fifo_storage/U226/Y (NAND2X0_RVT)
+                                                          0.05       9.64 r
+  pci_target_unit/fifos/pciw_fifo_storage/U45/Y (AO22X1_RVT)
+                                                          0.08       9.72 r
+  pci_target_unit/fifos/pciw_fifo_storage/do_reg_b_reg[7]/D (DFFX1_RVT)
+                                                          0.01       9.73 r
+  data arrival time                                                  9.73
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  pci_target_unit/fifos/pciw_fifo_storage/do_reg_b_reg[7]/CLK (DFFX1_RVT)
+                                                          0.00       9.80 r
+  library setup time                                     -0.06       9.74
+  data required time                                                 9.74
+  --------------------------------------------------------------------------
+  data required time                                                 9.74
+  data arrival time                                                 -9.73
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+  Startpoint: pci_target_unit/del_sync/comp_req_pending_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: pci_target_unit/fifos/pciw_fifo_storage/do_reg_b_reg[6]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pci_bridge32       70000                 saed32rvt_ss0p95v25c
+  pci_target_unit    16000                 saed32rvt_ss0p95v25c
+  pci_wb_master      8000                  saed32rvt_ss0p95v25c
+  pci_pciw_fifo_control_ADDR_LENGTH3
+                     8000                  saed32rvt_ss0p95v25c
+  pci_pciw_pcir_fifos
+                     16000                 saed32rvt_ss0p95v25c
+  pci_pci_tpram_aw3_dw40_1
+                     8000                  saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  pci_target_unit/del_sync/comp_req_pending_reg/CLK (DFFARX1_RVT)
+                                                          0.00 #     0.00 r
+  pci_target_unit/del_sync/comp_req_pending_reg/Q (DFFARX1_RVT)
+                                                          0.20       0.20 r
+  pci_target_unit/del_sync/comp_req_pending_out (pci_delayed_sync_0)
+                                                          0.00       0.20 r
+  pci_target_unit/wishbone_master/pci_tar_read_request (pci_wb_master)
+                                                          0.00       0.20 r
+  pci_target_unit/wishbone_master/U178/Y (NAND3X0_RVT)
+                                                          0.85       1.05 f
+  pci_target_unit/wishbone_master/U116/Y (INVX0_RVT)      0.10       1.15 r
+  pci_target_unit/wishbone_master/U108/Y (NAND3X0_RVT)
+                                                          0.21       1.36 f
+  pci_target_unit/wishbone_master/U111/Y (NAND2X0_RVT)
+                                                          0.33       1.69 r
+  pci_target_unit/wishbone_master/U106/Y (INVX0_RVT)      0.20       1.89 f
+  pci_target_unit/wishbone_master/U89/Y (NAND4X0_RVT)     0.30       2.19 r
+  pci_target_unit/wishbone_master/U120/Y (NAND3X0_RVT)
+                                                          0.10       2.28 f
+  pci_target_unit/wishbone_master/U177/Y (NAND2X0_RVT)
+                                                          0.33       2.61 r
+  pci_target_unit/wishbone_master/U121/Y (NAND3X0_RVT)
+                                                          0.07       2.68 f
+  pci_target_unit/wishbone_master/U28/Y (AO21X1_RVT)      0.15       2.83 f
+  pci_target_unit/wishbone_master/U96/Y (NAND4X0_RVT)     0.10       2.93 r
+  pci_target_unit/wishbone_master/pciw_fifo_renable_out (pci_wb_master)
+                                                          0.00       2.93 r
+  pci_target_unit/fifos/pciw_renable_in (pci_pciw_pcir_fifos)
+                                                          0.00       2.93 r
+  pci_target_unit/fifos/pciw_fifo_ctrl/renable_in (pci_pciw_fifo_control_ADDR_LENGTH3)
+                                                          0.00       2.93 r
+  pci_target_unit/fifos/pciw_fifo_ctrl/U11/Y (NAND2X0_RVT)
+                                                          0.06       2.99 f
+  pci_target_unit/fifos/pciw_fifo_ctrl/U10/Y (INVX0_RVT)
+                                                          0.12       3.12 r
+  pci_target_unit/fifos/pciw_fifo_ctrl/U9/Y (INVX0_RVT)
+                                                          0.34       3.46 f
+  pci_target_unit/fifos/pciw_fifo_ctrl/U5/Y (NOR2X0_RVT)
+                                                          1.42       4.88 r
+  pci_target_unit/fifos/pciw_fifo_ctrl/U94/Y (AO21X1_RVT)
+                                                          0.23       5.11 r
+  pci_target_unit/fifos/pciw_fifo_ctrl/raddr_out[0] (pci_pciw_fifo_control_ADDR_LENGTH3)
+                                                          0.00       5.11 r
+  pci_target_unit/fifos/pciw_fifo_storage/addr_b[0] (pci_pci_tpram_aw3_dw40_1)
+                                                          0.00       5.11 r
+  pci_target_unit/fifos/pciw_fifo_storage/U51/Y (NBUFFX2_RVT)
+                                                          0.18       5.29 r
+  pci_target_unit/fifos/pciw_fifo_storage/U94/Y (NAND2X0_RVT)
+                                                          0.29       5.58 f
+  pci_target_unit/fifos/pciw_fifo_storage/U54/Y (INVX0_RVT)
+                                                          0.35       5.93 r
+  pci_target_unit/fifos/pciw_fifo_storage/U621/Y (AO22X1_RVT)
+                                                          3.56       9.49 r
+  pci_target_unit/fifos/pciw_fifo_storage/U225/Y (AOI221X1_RVT)
+                                                          0.10       9.60 f
+  pci_target_unit/fifos/pciw_fifo_storage/U223/Y (NAND2X0_RVT)
+                                                          0.05       9.64 r
+  pci_target_unit/fifos/pciw_fifo_storage/U44/Y (AO22X1_RVT)
+                                                          0.08       9.72 r
+  pci_target_unit/fifos/pciw_fifo_storage/do_reg_b_reg[6]/D (DFFX1_RVT)
+                                                          0.01       9.73 r
+  data arrival time                                                  9.73
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  pci_target_unit/fifos/pciw_fifo_storage/do_reg_b_reg[6]/CLK (DFFX1_RVT)
+                                                          0.00       9.80 r
+  library setup time                                     -0.06       9.74
+  data required time                                                 9.74
+  --------------------------------------------------------------------------
+  data required time                                                 9.74
+  data arrival time                                                 -9.73
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+  Startpoint: pci_target_unit/del_sync/comp_req_pending_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: pci_target_unit/fifos/pciw_fifo_storage/do_reg_b_reg[5]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pci_bridge32       70000                 saed32rvt_ss0p95v25c
+  pci_target_unit    16000                 saed32rvt_ss0p95v25c
+  pci_wb_master      8000                  saed32rvt_ss0p95v25c
+  pci_pciw_fifo_control_ADDR_LENGTH3
+                     8000                  saed32rvt_ss0p95v25c
+  pci_pciw_pcir_fifos
+                     16000                 saed32rvt_ss0p95v25c
+  pci_pci_tpram_aw3_dw40_1
+                     8000                  saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  pci_target_unit/del_sync/comp_req_pending_reg/CLK (DFFARX1_RVT)
+                                                          0.00 #     0.00 r
+  pci_target_unit/del_sync/comp_req_pending_reg/Q (DFFARX1_RVT)
+                                                          0.20       0.20 r
+  pci_target_unit/del_sync/comp_req_pending_out (pci_delayed_sync_0)
+                                                          0.00       0.20 r
+  pci_target_unit/wishbone_master/pci_tar_read_request (pci_wb_master)
+                                                          0.00       0.20 r
+  pci_target_unit/wishbone_master/U178/Y (NAND3X0_RVT)
+                                                          0.85       1.05 f
+  pci_target_unit/wishbone_master/U116/Y (INVX0_RVT)      0.10       1.15 r
+  pci_target_unit/wishbone_master/U108/Y (NAND3X0_RVT)
+                                                          0.21       1.36 f
+  pci_target_unit/wishbone_master/U111/Y (NAND2X0_RVT)
+                                                          0.33       1.69 r
+  pci_target_unit/wishbone_master/U106/Y (INVX0_RVT)      0.20       1.89 f
+  pci_target_unit/wishbone_master/U89/Y (NAND4X0_RVT)     0.30       2.19 r
+  pci_target_unit/wishbone_master/U120/Y (NAND3X0_RVT)
+                                                          0.10       2.28 f
+  pci_target_unit/wishbone_master/U177/Y (NAND2X0_RVT)
+                                                          0.33       2.61 r
+  pci_target_unit/wishbone_master/U121/Y (NAND3X0_RVT)
+                                                          0.07       2.68 f
+  pci_target_unit/wishbone_master/U28/Y (AO21X1_RVT)      0.15       2.83 f
+  pci_target_unit/wishbone_master/U96/Y (NAND4X0_RVT)     0.10       2.93 r
+  pci_target_unit/wishbone_master/pciw_fifo_renable_out (pci_wb_master)
+                                                          0.00       2.93 r
+  pci_target_unit/fifos/pciw_renable_in (pci_pciw_pcir_fifos)
+                                                          0.00       2.93 r
+  pci_target_unit/fifos/pciw_fifo_ctrl/renable_in (pci_pciw_fifo_control_ADDR_LENGTH3)
+                                                          0.00       2.93 r
+  pci_target_unit/fifos/pciw_fifo_ctrl/U11/Y (NAND2X0_RVT)
+                                                          0.06       2.99 f
+  pci_target_unit/fifos/pciw_fifo_ctrl/U10/Y (INVX0_RVT)
+                                                          0.12       3.12 r
+  pci_target_unit/fifos/pciw_fifo_ctrl/U9/Y (INVX0_RVT)
+                                                          0.34       3.46 f
+  pci_target_unit/fifos/pciw_fifo_ctrl/U5/Y (NOR2X0_RVT)
+                                                          1.42       4.88 r
+  pci_target_unit/fifos/pciw_fifo_ctrl/U94/Y (AO21X1_RVT)
+                                                          0.23       5.11 r
+  pci_target_unit/fifos/pciw_fifo_ctrl/raddr_out[0] (pci_pciw_fifo_control_ADDR_LENGTH3)
+                                                          0.00       5.11 r
+  pci_target_unit/fifos/pciw_fifo_storage/addr_b[0] (pci_pci_tpram_aw3_dw40_1)
+                                                          0.00       5.11 r
+  pci_target_unit/fifos/pciw_fifo_storage/U51/Y (NBUFFX2_RVT)
+                                                          0.18       5.29 r
+  pci_target_unit/fifos/pciw_fifo_storage/U94/Y (NAND2X0_RVT)
+                                                          0.29       5.58 f
+  pci_target_unit/fifos/pciw_fifo_storage/U54/Y (INVX0_RVT)
+                                                          0.35       5.93 r
+  pci_target_unit/fifos/pciw_fifo_storage/U619/Y (AO22X1_RVT)
+                                                          3.56       9.49 r
+  pci_target_unit/fifos/pciw_fifo_storage/U222/Y (AOI221X1_RVT)
+                                                          0.10       9.60 f
+  pci_target_unit/fifos/pciw_fifo_storage/U220/Y (NAND2X0_RVT)
+                                                          0.05       9.64 r
+  pci_target_unit/fifos/pciw_fifo_storage/U43/Y (AO22X1_RVT)
+                                                          0.08       9.72 r
+  pci_target_unit/fifos/pciw_fifo_storage/do_reg_b_reg[5]/D (DFFX1_RVT)
+                                                          0.01       9.73 r
+  data arrival time                                                  9.73
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  pci_target_unit/fifos/pciw_fifo_storage/do_reg_b_reg[5]/CLK (DFFX1_RVT)
+                                                          0.00       9.80 r
+  library setup time                                     -0.06       9.74
+  data required time                                                 9.74
+  --------------------------------------------------------------------------
+  data required time                                                 9.74
+  data arrival time                                                 -9.73
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+  Startpoint: pci_target_unit/del_sync/comp_req_pending_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: pci_target_unit/fifos/pciw_fifo_storage/do_reg_b_reg[4]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pci_bridge32       70000                 saed32rvt_ss0p95v25c
+  pci_target_unit    16000                 saed32rvt_ss0p95v25c
+  pci_wb_master      8000                  saed32rvt_ss0p95v25c
+  pci_pciw_fifo_control_ADDR_LENGTH3
+                     8000                  saed32rvt_ss0p95v25c
+  pci_pciw_pcir_fifos
+                     16000                 saed32rvt_ss0p95v25c
+  pci_pci_tpram_aw3_dw40_1
+                     8000                  saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  pci_target_unit/del_sync/comp_req_pending_reg/CLK (DFFARX1_RVT)
+                                                          0.00 #     0.00 r
+  pci_target_unit/del_sync/comp_req_pending_reg/Q (DFFARX1_RVT)
+                                                          0.20       0.20 r
+  pci_target_unit/del_sync/comp_req_pending_out (pci_delayed_sync_0)
+                                                          0.00       0.20 r
+  pci_target_unit/wishbone_master/pci_tar_read_request (pci_wb_master)
+                                                          0.00       0.20 r
+  pci_target_unit/wishbone_master/U178/Y (NAND3X0_RVT)
+                                                          0.85       1.05 f
+  pci_target_unit/wishbone_master/U116/Y (INVX0_RVT)      0.10       1.15 r
+  pci_target_unit/wishbone_master/U108/Y (NAND3X0_RVT)
+                                                          0.21       1.36 f
+  pci_target_unit/wishbone_master/U111/Y (NAND2X0_RVT)
+                                                          0.33       1.69 r
+  pci_target_unit/wishbone_master/U106/Y (INVX0_RVT)      0.20       1.89 f
+  pci_target_unit/wishbone_master/U89/Y (NAND4X0_RVT)     0.30       2.19 r
+  pci_target_unit/wishbone_master/U120/Y (NAND3X0_RVT)
+                                                          0.10       2.28 f
+  pci_target_unit/wishbone_master/U177/Y (NAND2X0_RVT)
+                                                          0.33       2.61 r
+  pci_target_unit/wishbone_master/U121/Y (NAND3X0_RVT)
+                                                          0.07       2.68 f
+  pci_target_unit/wishbone_master/U28/Y (AO21X1_RVT)      0.15       2.83 f
+  pci_target_unit/wishbone_master/U96/Y (NAND4X0_RVT)     0.10       2.93 r
+  pci_target_unit/wishbone_master/pciw_fifo_renable_out (pci_wb_master)
+                                                          0.00       2.93 r
+  pci_target_unit/fifos/pciw_renable_in (pci_pciw_pcir_fifos)
+                                                          0.00       2.93 r
+  pci_target_unit/fifos/pciw_fifo_ctrl/renable_in (pci_pciw_fifo_control_ADDR_LENGTH3)
+                                                          0.00       2.93 r
+  pci_target_unit/fifos/pciw_fifo_ctrl/U11/Y (NAND2X0_RVT)
+                                                          0.06       2.99 f
+  pci_target_unit/fifos/pciw_fifo_ctrl/U10/Y (INVX0_RVT)
+                                                          0.12       3.12 r
+  pci_target_unit/fifos/pciw_fifo_ctrl/U9/Y (INVX0_RVT)
+                                                          0.34       3.46 f
+  pci_target_unit/fifos/pciw_fifo_ctrl/U5/Y (NOR2X0_RVT)
+                                                          1.42       4.88 r
+  pci_target_unit/fifos/pciw_fifo_ctrl/U94/Y (AO21X1_RVT)
+                                                          0.23       5.11 r
+  pci_target_unit/fifos/pciw_fifo_ctrl/raddr_out[0] (pci_pciw_fifo_control_ADDR_LENGTH3)
+                                                          0.00       5.11 r
+  pci_target_unit/fifos/pciw_fifo_storage/addr_b[0] (pci_pci_tpram_aw3_dw40_1)
+                                                          0.00       5.11 r
+  pci_target_unit/fifos/pciw_fifo_storage/U51/Y (NBUFFX2_RVT)
+                                                          0.18       5.29 r
+  pci_target_unit/fifos/pciw_fifo_storage/U94/Y (NAND2X0_RVT)
+                                                          0.29       5.58 f
+  pci_target_unit/fifos/pciw_fifo_storage/U54/Y (INVX0_RVT)
+                                                          0.35       5.93 r
+  pci_target_unit/fifos/pciw_fifo_storage/U617/Y (AO22X1_RVT)
+                                                          3.56       9.49 r
+  pci_target_unit/fifos/pciw_fifo_storage/U219/Y (AOI221X1_RVT)
+                                                          0.10       9.60 f
+  pci_target_unit/fifos/pciw_fifo_storage/U217/Y (NAND2X0_RVT)
+                                                          0.05       9.64 r
+  pci_target_unit/fifos/pciw_fifo_storage/U42/Y (AO22X1_RVT)
+                                                          0.08       9.72 r
+  pci_target_unit/fifos/pciw_fifo_storage/do_reg_b_reg[4]/D (DFFX1_RVT)
+                                                          0.01       9.73 r
+  data arrival time                                                  9.73
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  pci_target_unit/fifos/pciw_fifo_storage/do_reg_b_reg[4]/CLK (DFFX1_RVT)
+                                                          0.00       9.80 r
+  library setup time                                     -0.06       9.74
+  data required time                                                 9.74
+  --------------------------------------------------------------------------
+  data required time                                                 9.74
+  data arrival time                                                 -9.73
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+  Startpoint: pci_target_unit/del_sync/comp_req_pending_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: pci_target_unit/fifos/pciw_fifo_storage/do_reg_b_reg[12]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pci_bridge32       70000                 saed32rvt_ss0p95v25c
+  pci_target_unit    16000                 saed32rvt_ss0p95v25c
+  pci_wb_master      8000                  saed32rvt_ss0p95v25c
+  pci_pciw_fifo_control_ADDR_LENGTH3
+                     8000                  saed32rvt_ss0p95v25c
+  pci_pciw_pcir_fifos
+                     16000                 saed32rvt_ss0p95v25c
+  pci_pci_tpram_aw3_dw40_1
+                     8000                  saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  pci_target_unit/del_sync/comp_req_pending_reg/CLK (DFFARX1_RVT)
+                                                          0.00 #     0.00 r
+  pci_target_unit/del_sync/comp_req_pending_reg/Q (DFFARX1_RVT)
+                                                          0.20       0.20 r
+  pci_target_unit/del_sync/comp_req_pending_out (pci_delayed_sync_0)
+                                                          0.00       0.20 r
+  pci_target_unit/wishbone_master/pci_tar_read_request (pci_wb_master)
+                                                          0.00       0.20 r
+  pci_target_unit/wishbone_master/U178/Y (NAND3X0_RVT)
+                                                          0.85       1.05 f
+  pci_target_unit/wishbone_master/U116/Y (INVX0_RVT)      0.10       1.15 r
+  pci_target_unit/wishbone_master/U108/Y (NAND3X0_RVT)
+                                                          0.21       1.36 f
+  pci_target_unit/wishbone_master/U111/Y (NAND2X0_RVT)
+                                                          0.33       1.69 r
+  pci_target_unit/wishbone_master/U106/Y (INVX0_RVT)      0.20       1.89 f
+  pci_target_unit/wishbone_master/U89/Y (NAND4X0_RVT)     0.30       2.19 r
+  pci_target_unit/wishbone_master/U120/Y (NAND3X0_RVT)
+                                                          0.10       2.28 f
+  pci_target_unit/wishbone_master/U177/Y (NAND2X0_RVT)
+                                                          0.33       2.61 r
+  pci_target_unit/wishbone_master/U121/Y (NAND3X0_RVT)
+                                                          0.07       2.68 f
+  pci_target_unit/wishbone_master/U28/Y (AO21X1_RVT)      0.15       2.83 f
+  pci_target_unit/wishbone_master/U96/Y (NAND4X0_RVT)     0.10       2.93 r
+  pci_target_unit/wishbone_master/pciw_fifo_renable_out (pci_wb_master)
+                                                          0.00       2.93 r
+  pci_target_unit/fifos/pciw_renable_in (pci_pciw_pcir_fifos)
+                                                          0.00       2.93 r
+  pci_target_unit/fifos/pciw_fifo_ctrl/renable_in (pci_pciw_fifo_control_ADDR_LENGTH3)
+                                                          0.00       2.93 r
+  pci_target_unit/fifos/pciw_fifo_ctrl/U11/Y (NAND2X0_RVT)
+                                                          0.06       2.99 f
+  pci_target_unit/fifos/pciw_fifo_ctrl/U10/Y (INVX0_RVT)
+                                                          0.12       3.12 r
+  pci_target_unit/fifos/pciw_fifo_ctrl/U9/Y (INVX0_RVT)
+                                                          0.34       3.46 f
+  pci_target_unit/fifos/pciw_fifo_ctrl/U5/Y (NOR2X0_RVT)
+                                                          1.42       4.88 r
+  pci_target_unit/fifos/pciw_fifo_ctrl/U94/Y (AO21X1_RVT)
+                                                          0.23       5.11 r
+  pci_target_unit/fifos/pciw_fifo_ctrl/raddr_out[0] (pci_pciw_fifo_control_ADDR_LENGTH3)
+                                                          0.00       5.11 r
+  pci_target_unit/fifos/pciw_fifo_storage/addr_b[0] (pci_pci_tpram_aw3_dw40_1)
+                                                          0.00       5.11 r
+  pci_target_unit/fifos/pciw_fifo_storage/U51/Y (NBUFFX2_RVT)
+                                                          0.18       5.29 r
+  pci_target_unit/fifos/pciw_fifo_storage/U94/Y (NAND2X0_RVT)
+                                                          0.29       5.58 f
+  pci_target_unit/fifos/pciw_fifo_storage/U54/Y (INVX0_RVT)
+                                                          0.35       5.93 r
+  pci_target_unit/fifos/pciw_fifo_storage/U633/Y (AO22X1_RVT)
+                                                          3.56       9.49 r
+  pci_target_unit/fifos/pciw_fifo_storage/U147/Y (AOI221X1_RVT)
+                                                          0.10       9.60 f
+  pci_target_unit/fifos/pciw_fifo_storage/U145/Y (NAND2X0_RVT)
+                                                          0.05       9.64 r
+  pci_target_unit/fifos/pciw_fifo_storage/U23/Y (AO22X1_RVT)
+                                                          0.08       9.72 r
+  pci_target_unit/fifos/pciw_fifo_storage/do_reg_b_reg[12]/D (DFFX1_RVT)
+                                                          0.01       9.73 r
+  data arrival time                                                  9.73
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  pci_target_unit/fifos/pciw_fifo_storage/do_reg_b_reg[12]/CLK (DFFX1_RVT)
+                                                          0.00       9.80 r
+  library setup time                                     -0.06       9.74
+  data required time                                                 9.74
+  --------------------------------------------------------------------------
+  data required time                                                 9.74
+  data arrival time                                                 -9.73
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+1

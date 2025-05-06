@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : tv80s
+Version: M-2016.12-SP1
+Date   : Tue Apr 15 10:32:14 2025
+****************************************
+
+Library(s) Used:
+
+    saed32rvt_ss0p95v25c (File: /mnt/class_data/ecec574-w2019/PDKs/SAED32nm/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v25c.db)
+
+Number of ports:                          377
+Number of nets:                          3893
+Number of cells:                         3358
+Number of combinational cells:           2988
+Number of sequential cells:               364
+Number of macros/black boxes:               0
+Number of buf/inv:                        653
+Number of references:                      17
+
+Combinational area:               6722.362974
+Buf/Inv area:                      860.785735
+Noncombinational area:            2375.992333
+Macro/Black Box area:                0.000000
+Net Interconnect area:            2171.696999
+
+Total cell area:                  9098.355307
+Total area:                      11270.052306
+1

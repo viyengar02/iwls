@@ -1,0 +1,422 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 10
+Design : sasc_top
+Version: W-2024.09-SP2
+Date   : Tue May  6 09:31:55 2025
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+Operating Conditions: ss0p95v125c   Library: saed32rvt_ss0p95v125c
+	Parasitic source    : LPE
+	Parasitic mode      : RealRC
+	Extraction mode     : MAX
+	Extraction derating : 125/125/125
+
+Information: Percent of Arnoldi-based delays = 13.73%
+
+  Startpoint: rx_fifo/rp_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: rx_fifo/mem_reg[2][3]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  rx_fifo/rp_reg[0]/CLK (DFFARX1_RVT)      0.00       0.00 r
+  rx_fifo/rp_reg[0]/Q (DFFARX1_RVT)        0.21       0.21 r
+  rx_fifo/U46/Y (XNOR2X1_RVT)              0.14 &     0.35 r
+  rx_fifo/U7/Y (INVX1_RVT)                 0.03 &     0.38 f
+  rx_fifo/U26/Y (AND3X1_RVT)               0.09 &     0.47 f
+  rx_fifo/full (sasc_fifo4_0)              0.00       0.47 f
+  U106/Y (NOR3X0_RVT)                      0.14 &     0.62 r
+  rx_fifo/we (sasc_fifo4_0)                0.00       0.62 r
+  rx_fifo/U45/Y (AND2X1_RVT)               0.08 &     0.69 r
+  rx_fifo/U48/Y (NAND2X0_RVT)              0.17 &     0.86 f
+  rx_fifo/U3/Y (INVX1_RVT)                 0.15 &     1.02 r
+  rx_fifo/U33/Y (AO22X1_RVT)               0.12 &     1.13 r
+  rx_fifo/mem_reg[2][3]/D (DFFX1_RVT)      0.00 &     1.13 r
+  data arrival time                                   1.13
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  rx_fifo/mem_reg[2][3]/CLK (DFFX1_RVT)
+                                           0.00       9.80 r
+  library setup time                      -0.07       9.73
+  data required time                                  9.73
+  -----------------------------------------------------------
+  data required time                                  9.73
+  data arrival time                                  -1.13
+  -----------------------------------------------------------
+  slack (MET)                                         8.60
+
+
+  Startpoint: rx_fifo/rp_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: rx_fifo/mem_reg[2][6]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  rx_fifo/rp_reg[0]/CLK (DFFARX1_RVT)      0.00       0.00 r
+  rx_fifo/rp_reg[0]/Q (DFFARX1_RVT)        0.21       0.21 r
+  rx_fifo/U46/Y (XNOR2X1_RVT)              0.14 &     0.35 r
+  rx_fifo/U7/Y (INVX1_RVT)                 0.03 &     0.38 f
+  rx_fifo/U26/Y (AND3X1_RVT)               0.09 &     0.47 f
+  rx_fifo/full (sasc_fifo4_0)              0.00       0.47 f
+  U106/Y (NOR3X0_RVT)                      0.14 &     0.62 r
+  rx_fifo/we (sasc_fifo4_0)                0.00       0.62 r
+  rx_fifo/U45/Y (AND2X1_RVT)               0.08 &     0.69 r
+  rx_fifo/U48/Y (NAND2X0_RVT)              0.17 &     0.86 f
+  rx_fifo/U3/Y (INVX1_RVT)                 0.15 &     1.02 r
+  rx_fifo/U36/Y (AO22X1_RVT)               0.12 &     1.13 r
+  rx_fifo/mem_reg[2][6]/D (DFFX1_RVT)      0.00 &     1.13 r
+  data arrival time                                   1.13
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  rx_fifo/mem_reg[2][6]/CLK (DFFX1_RVT)
+                                           0.00       9.80 r
+  library setup time                      -0.07       9.73
+  data required time                                  9.73
+  -----------------------------------------------------------
+  data required time                                  9.73
+  data arrival time                                  -1.13
+  -----------------------------------------------------------
+  slack (MET)                                         8.60
+
+
+  Startpoint: rx_fifo/rp_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: rx_fifo/mem_reg[2][5]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  rx_fifo/rp_reg[0]/CLK (DFFARX1_RVT)      0.00       0.00 r
+  rx_fifo/rp_reg[0]/Q (DFFARX1_RVT)        0.21       0.21 r
+  rx_fifo/U46/Y (XNOR2X1_RVT)              0.14 &     0.35 r
+  rx_fifo/U7/Y (INVX1_RVT)                 0.03 &     0.38 f
+  rx_fifo/U26/Y (AND3X1_RVT)               0.09 &     0.47 f
+  rx_fifo/full (sasc_fifo4_0)              0.00       0.47 f
+  U106/Y (NOR3X0_RVT)                      0.14 &     0.62 r
+  rx_fifo/we (sasc_fifo4_0)                0.00       0.62 r
+  rx_fifo/U45/Y (AND2X1_RVT)               0.08 &     0.69 r
+  rx_fifo/U48/Y (NAND2X0_RVT)              0.17 &     0.86 f
+  rx_fifo/U3/Y (INVX1_RVT)                 0.15 &     1.02 r
+  rx_fifo/U35/Y (AO22X1_RVT)               0.12 &     1.13 r
+  rx_fifo/mem_reg[2][5]/D (DFFX1_RVT)      0.00 &     1.13 r
+  data arrival time                                   1.13
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  rx_fifo/mem_reg[2][5]/CLK (DFFX1_RVT)
+                                           0.00       9.80 r
+  library setup time                      -0.07       9.73
+  data required time                                  9.73
+  -----------------------------------------------------------
+  data required time                                  9.73
+  data arrival time                                  -1.13
+  -----------------------------------------------------------
+  slack (MET)                                         8.60
+
+
+  Startpoint: rx_fifo/rp_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: rx_fifo/mem_reg[2][7]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  rx_fifo/rp_reg[0]/CLK (DFFARX1_RVT)      0.00       0.00 r
+  rx_fifo/rp_reg[0]/Q (DFFARX1_RVT)        0.21       0.21 r
+  rx_fifo/U46/Y (XNOR2X1_RVT)              0.14 &     0.35 r
+  rx_fifo/U7/Y (INVX1_RVT)                 0.03 &     0.38 f
+  rx_fifo/U26/Y (AND3X1_RVT)               0.09 &     0.47 f
+  rx_fifo/full (sasc_fifo4_0)              0.00       0.47 f
+  U106/Y (NOR3X0_RVT)                      0.14 &     0.62 r
+  rx_fifo/we (sasc_fifo4_0)                0.00       0.62 r
+  rx_fifo/U45/Y (AND2X1_RVT)               0.08 &     0.69 r
+  rx_fifo/U48/Y (NAND2X0_RVT)              0.17 &     0.86 f
+  rx_fifo/U3/Y (INVX1_RVT)                 0.15 &     1.02 r
+  rx_fifo/U37/Y (AO22X1_RVT)               0.12 &     1.13 r
+  rx_fifo/mem_reg[2][7]/D (DFFX1_RVT)      0.00 &     1.13 r
+  data arrival time                                   1.13
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  rx_fifo/mem_reg[2][7]/CLK (DFFX1_RVT)
+                                           0.00       9.80 r
+  library setup time                      -0.07       9.73
+  data required time                                  9.73
+  -----------------------------------------------------------
+  data required time                                  9.73
+  data arrival time                                  -1.13
+  -----------------------------------------------------------
+  slack (MET)                                         8.60
+
+
+  Startpoint: rx_fifo/rp_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: rx_fifo/mem_reg[2][0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  rx_fifo/rp_reg[0]/CLK (DFFARX1_RVT)      0.00       0.00 r
+  rx_fifo/rp_reg[0]/Q (DFFARX1_RVT)        0.21       0.21 r
+  rx_fifo/U46/Y (XNOR2X1_RVT)              0.14 &     0.35 r
+  rx_fifo/U7/Y (INVX1_RVT)                 0.03 &     0.38 f
+  rx_fifo/U26/Y (AND3X1_RVT)               0.09 &     0.47 f
+  rx_fifo/full (sasc_fifo4_0)              0.00       0.47 f
+  U106/Y (NOR3X0_RVT)                      0.14 &     0.62 r
+  rx_fifo/we (sasc_fifo4_0)                0.00       0.62 r
+  rx_fifo/U45/Y (AND2X1_RVT)               0.08 &     0.69 r
+  rx_fifo/U48/Y (NAND2X0_RVT)              0.17 &     0.86 f
+  rx_fifo/U3/Y (INVX1_RVT)                 0.15 &     1.02 r
+  rx_fifo/U29/Y (AO22X1_RVT)               0.12 &     1.13 r
+  rx_fifo/mem_reg[2][0]/D (DFFX1_RVT)      0.00 &     1.13 r
+  data arrival time                                   1.13
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  rx_fifo/mem_reg[2][0]/CLK (DFFX1_RVT)
+                                           0.00       9.80 r
+  library setup time                      -0.07       9.73
+  data required time                                  9.73
+  -----------------------------------------------------------
+  data required time                                  9.73
+  data arrival time                                  -1.13
+  -----------------------------------------------------------
+  slack (MET)                                         8.60
+
+
+  Startpoint: rx_fifo/rp_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: rx_fifo/mem_reg[2][2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  rx_fifo/rp_reg[0]/CLK (DFFARX1_RVT)      0.00       0.00 r
+  rx_fifo/rp_reg[0]/Q (DFFARX1_RVT)        0.21       0.21 r
+  rx_fifo/U46/Y (XNOR2X1_RVT)              0.14 &     0.35 r
+  rx_fifo/U7/Y (INVX1_RVT)                 0.03 &     0.38 f
+  rx_fifo/U26/Y (AND3X1_RVT)               0.09 &     0.47 f
+  rx_fifo/full (sasc_fifo4_0)              0.00       0.47 f
+  U106/Y (NOR3X0_RVT)                      0.14 &     0.62 r
+  rx_fifo/we (sasc_fifo4_0)                0.00       0.62 r
+  rx_fifo/U45/Y (AND2X1_RVT)               0.08 &     0.69 r
+  rx_fifo/U48/Y (NAND2X0_RVT)              0.17 &     0.86 f
+  rx_fifo/U3/Y (INVX1_RVT)                 0.15 &     1.02 r
+  rx_fifo/U32/Y (AO22X1_RVT)               0.12 &     1.13 r
+  rx_fifo/mem_reg[2][2]/D (DFFX1_RVT)      0.00 &     1.13 r
+  data arrival time                                   1.13
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  rx_fifo/mem_reg[2][2]/CLK (DFFX1_RVT)
+                                           0.00       9.80 r
+  library setup time                      -0.07       9.73
+  data required time                                  9.73
+  -----------------------------------------------------------
+  data required time                                  9.73
+  data arrival time                                  -1.13
+  -----------------------------------------------------------
+  slack (MET)                                         8.60
+
+
+  Startpoint: rx_fifo/rp_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: rx_fifo/mem_reg[2][1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  rx_fifo/rp_reg[0]/CLK (DFFARX1_RVT)      0.00       0.00 r
+  rx_fifo/rp_reg[0]/Q (DFFARX1_RVT)        0.21       0.21 r
+  rx_fifo/U46/Y (XNOR2X1_RVT)              0.14 &     0.35 r
+  rx_fifo/U7/Y (INVX1_RVT)                 0.03 &     0.38 f
+  rx_fifo/U26/Y (AND3X1_RVT)               0.09 &     0.47 f
+  rx_fifo/full (sasc_fifo4_0)              0.00       0.47 f
+  U106/Y (NOR3X0_RVT)                      0.14 &     0.62 r
+  rx_fifo/we (sasc_fifo4_0)                0.00       0.62 r
+  rx_fifo/U45/Y (AND2X1_RVT)               0.08 &     0.69 r
+  rx_fifo/U48/Y (NAND2X0_RVT)              0.17 &     0.86 f
+  rx_fifo/U3/Y (INVX1_RVT)                 0.15 &     1.02 r
+  rx_fifo/U31/Y (AO22X1_RVT)               0.12 &     1.13 r
+  rx_fifo/mem_reg[2][1]/D (DFFX1_RVT)      0.00 &     1.13 r
+  data arrival time                                   1.13
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  rx_fifo/mem_reg[2][1]/CLK (DFFX1_RVT)
+                                           0.00       9.80 r
+  library setup time                      -0.07       9.73
+  data required time                                  9.73
+  -----------------------------------------------------------
+  data required time                                  9.73
+  data arrival time                                  -1.13
+  -----------------------------------------------------------
+  slack (MET)                                         8.60
+
+
+  Startpoint: rx_fifo/rp_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: rx_fifo/mem_reg[2][4]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  rx_fifo/rp_reg[0]/CLK (DFFARX1_RVT)      0.00       0.00 r
+  rx_fifo/rp_reg[0]/Q (DFFARX1_RVT)        0.21       0.21 r
+  rx_fifo/U46/Y (XNOR2X1_RVT)              0.14 &     0.35 r
+  rx_fifo/U7/Y (INVX1_RVT)                 0.03 &     0.38 f
+  rx_fifo/U26/Y (AND3X1_RVT)               0.09 &     0.47 f
+  rx_fifo/full (sasc_fifo4_0)              0.00       0.47 f
+  U106/Y (NOR3X0_RVT)                      0.14 &     0.62 r
+  rx_fifo/we (sasc_fifo4_0)                0.00       0.62 r
+  rx_fifo/U45/Y (AND2X1_RVT)               0.08 &     0.69 r
+  rx_fifo/U48/Y (NAND2X0_RVT)              0.17 &     0.86 f
+  rx_fifo/U3/Y (INVX1_RVT)                 0.15 &     1.02 r
+  rx_fifo/U34/Y (AO22X1_RVT)               0.12 &     1.13 r
+  rx_fifo/mem_reg[2][4]/D (DFFX1_RVT)      0.00 &     1.13 r
+  data arrival time                                   1.13
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  rx_fifo/mem_reg[2][4]/CLK (DFFX1_RVT)
+                                           0.00       9.80 r
+  library setup time                      -0.07       9.73
+  data required time                                  9.73
+  -----------------------------------------------------------
+  data required time                                  9.73
+  data arrival time                                  -1.13
+  -----------------------------------------------------------
+  slack (MET)                                         8.60
+
+
+  Startpoint: rx_fifo/rp_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: rx_fifo/mem_reg[0][4]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  rx_fifo/rp_reg[0]/CLK (DFFARX1_RVT)      0.00       0.00 r
+  rx_fifo/rp_reg[0]/Q (DFFARX1_RVT)        0.21       0.21 r
+  rx_fifo/U46/Y (XNOR2X1_RVT)              0.14 &     0.35 r
+  rx_fifo/U7/Y (INVX1_RVT)                 0.03 &     0.38 f
+  rx_fifo/U26/Y (AND3X1_RVT)               0.09 &     0.47 f
+  rx_fifo/full (sasc_fifo4_0)              0.00       0.47 f
+  U106/Y (NOR3X0_RVT)                      0.14 &     0.62 r
+  rx_fifo/we (sasc_fifo4_0)                0.00       0.62 r
+  rx_fifo/U45/Y (AND2X1_RVT)               0.08 &     0.69 r
+  rx_fifo/U49/Y (NAND2X1_RVT)              0.12 &     0.82 f
+  rx_fifo/U4/Y (INVX1_RVT)                 0.10 &     0.91 r
+  rx_fifo/U41/Y (AO22X1_RVT)               0.11 &     1.02 r
+  rx_fifo/mem_reg[0][4]/D (DFFX1_RVT)      0.00 &     1.02 r
+  data arrival time                                   1.02
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  rx_fifo/mem_reg[0][4]/CLK (DFFX1_RVT)
+                                           0.00       9.80 r
+  library setup time                      -0.06       9.74
+  data required time                                  9.74
+  -----------------------------------------------------------
+  data required time                                  9.74
+  data arrival time                                  -1.02
+  -----------------------------------------------------------
+  slack (MET)                                         8.72
+
+
+  Startpoint: rx_fifo/rp_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: rx_fifo/mem_reg[0][7]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  rx_fifo/rp_reg[0]/CLK (DFFARX1_RVT)      0.00       0.00 r
+  rx_fifo/rp_reg[0]/Q (DFFARX1_RVT)        0.21       0.21 r
+  rx_fifo/U46/Y (XNOR2X1_RVT)              0.14 &     0.35 r
+  rx_fifo/U7/Y (INVX1_RVT)                 0.03 &     0.38 f
+  rx_fifo/U26/Y (AND3X1_RVT)               0.09 &     0.47 f
+  rx_fifo/full (sasc_fifo4_0)              0.00       0.47 f
+  U106/Y (NOR3X0_RVT)                      0.14 &     0.62 r
+  rx_fifo/we (sasc_fifo4_0)                0.00       0.62 r
+  rx_fifo/U45/Y (AND2X1_RVT)               0.08 &     0.69 r
+  rx_fifo/U49/Y (NAND2X1_RVT)              0.12 &     0.82 f
+  rx_fifo/U4/Y (INVX1_RVT)                 0.10 &     0.91 r
+  rx_fifo/U44/Y (AO22X1_RVT)               0.10 &     1.02 r
+  rx_fifo/mem_reg[0][7]/D (DFFX1_RVT)      0.00 &     1.02 r
+  data arrival time                                   1.02
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  rx_fifo/mem_reg[0][7]/CLK (DFFX1_RVT)
+                                           0.00       9.80 r
+  library setup time                      -0.06       9.74
+  data required time                                  9.74
+  -----------------------------------------------------------
+  data required time                                  9.74
+  data arrival time                                  -1.02
+  -----------------------------------------------------------
+  slack (MET)                                         8.72
+
+
+1

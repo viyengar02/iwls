@@ -1,0 +1,366 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 10
+Design : ac97_top
+Version: W-2024.09-SP2
+Date   : Tue May  6 09:17:54 2025
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: ss0p95v125c   Library: saed32rvt_ss0p95v125c
+	Parasitic source    : LPE
+	Parasitic mode      : RealRC
+	Extraction mode     : MAX
+	Extraction derating : 125/125/125
+
+Information: Percent of Arnoldi-based delays = 11.25%
+
+Information: Percent of CCS-based delays = 10.64%
+
+  Startpoint: u12/dout_reg[20]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u4/mem_reg[0][20]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  u12/dout_reg[20]/CLK (DFFX1_RVT)         0.00 #     0.00 r
+  u12/dout_reg[20]/Q (DFFX1_RVT)           0.15       0.15 r
+  u12/dout[20] (ac97_wb_if)                0.00       0.15 r
+  U21/Y (NBUFFX4_RVT)                      9.45 c     9.60 r
+  u4/din[20] (ac97_out_fifo_4)             0.00       9.60 r
+  u4/U338/Y (AO22X1_RVT)                   0.97 c    10.58 r
+  u4/U261/Y (NBUFFX2_RVT)                  0.09 &    10.67 r
+  u4/mem_reg[0][20]/D (DFFX1_RVT)          0.00 &    10.67 r
+  data arrival time                                  10.67
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  u4/mem_reg[0][20]/CLK (DFFX1_RVT)        0.00       9.80 r
+  library setup time                      -0.10       9.70
+  data required time                                  9.70
+  -----------------------------------------------------------
+  data required time                                  9.70
+  data arrival time                                 -10.67
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.97
+
+
+  Startpoint: u12/dout_reg[20]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u5/mem_reg[2][20]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  u12/dout_reg[20]/CLK (DFFX1_RVT)         0.00 #     0.00 r
+  u12/dout_reg[20]/Q (DFFX1_RVT)           0.15       0.15 r
+  u12/dout[20] (ac97_wb_if)                0.00       0.15 r
+  U21/Y (NBUFFX4_RVT)                      9.45 c     9.60 r
+  u5/din[20] (ac97_out_fifo_3)             0.00       9.60 r
+  u5/U325/Y (AO22X1_RVT)                   0.95 c    10.55 r
+  u5/U261/Y (NBUFFX2_RVT)                  0.09 &    10.64 r
+  u5/mem_reg[2][20]/D (DFFX1_RVT)          0.00 &    10.64 r
+  data arrival time                                  10.64
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  u5/mem_reg[2][20]/CLK (DFFX1_RVT)        0.00       9.80 r
+  library setup time                      -0.10       9.70
+  data required time                                  9.70
+  -----------------------------------------------------------
+  data required time                                  9.70
+  data arrival time                                 -10.64
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.93
+
+
+  Startpoint: u12/dout_reg[20]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u8/mem_reg[1][20]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  u12/dout_reg[20]/CLK (DFFX1_RVT)         0.00 #     0.00 r
+  u12/dout_reg[20]/Q (DFFX1_RVT)           0.15       0.15 r
+  u12/dout[20] (ac97_wb_if)                0.00       0.15 r
+  U21/Y (NBUFFX4_RVT)                      9.45 c     9.60 r
+  u8/din[20] (ac97_out_fifo_0)             0.00       9.60 r
+  u8/U331/Y (AO22X1_RVT)                   0.94 c    10.54 r
+  u8/U262/Y (NBUFFX2_RVT)                  0.10 &    10.63 r
+  u8/mem_reg[1][20]/D (DFFX1_RVT)          0.00 &    10.63 r
+  data arrival time                                  10.63
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  u8/mem_reg[1][20]/CLK (DFFX1_RVT)        0.00       9.80 r
+  library setup time                      -0.10       9.70
+  data required time                                  9.70
+  -----------------------------------------------------------
+  data required time                                  9.70
+  data arrival time                                 -10.63
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.93
+
+
+  Startpoint: u12/dout_reg[20]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u8/mem_reg[0][20]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  u12/dout_reg[20]/CLK (DFFX1_RVT)         0.00 #     0.00 r
+  u12/dout_reg[20]/Q (DFFX1_RVT)           0.15       0.15 r
+  u12/dout[20] (ac97_wb_if)                0.00       0.15 r
+  U21/Y (NBUFFX4_RVT)                      9.45 c     9.60 r
+  u8/din[20] (ac97_out_fifo_0)             0.00       9.60 r
+  u8/U338/Y (AO22X1_RVT)                   0.94 c    10.54 r
+  u8/U261/Y (NBUFFX2_RVT)                  0.09 &    10.63 r
+  u8/mem_reg[0][20]/D (DFFX1_RVT)          0.00 &    10.63 r
+  data arrival time                                  10.63
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  u8/mem_reg[0][20]/CLK (DFFX1_RVT)        0.00       9.80 r
+  library setup time                      -0.10       9.70
+  data required time                                  9.70
+  -----------------------------------------------------------
+  data required time                                  9.70
+  data arrival time                                 -10.63
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.93
+
+
+  Startpoint: u12/dout_reg[20]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u6/mem_reg[1][20]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  u12/dout_reg[20]/CLK (DFFX1_RVT)         0.00 #     0.00 r
+  u12/dout_reg[20]/Q (DFFX1_RVT)           0.15       0.15 r
+  u12/dout[20] (ac97_wb_if)                0.00       0.15 r
+  U21/Y (NBUFFX4_RVT)                      9.45 c     9.60 r
+  u6/din[20] (ac97_out_fifo_2)             0.00       9.60 r
+  u6/U331/Y (AO22X1_RVT)                   0.93 c    10.54 r
+  u6/U256/Y (NBUFFX2_RVT)                  0.09 &    10.63 r
+  u6/mem_reg[1][20]/D (DFFX1_RVT)          0.00 &    10.63 r
+  data arrival time                                  10.63
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  u6/mem_reg[1][20]/CLK (DFFX1_RVT)        0.00       9.80 r
+  library setup time                      -0.10       9.70
+  data required time                                  9.70
+  -----------------------------------------------------------
+  data required time                                  9.70
+  data arrival time                                 -10.63
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.93
+
+
+  Startpoint: u12/dout_reg[20]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u13/occ0_r_reg[20]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  u12/dout_reg[20]/CLK (DFFX1_RVT)         0.00 #     0.00 r
+  u12/dout_reg[20]/Q (DFFX1_RVT)           0.15       0.15 r
+  u12/dout[20] (ac97_wb_if)                0.00       0.15 r
+  U21/Y (NBUFFX4_RVT)                      9.45 c     9.60 r
+  u13/rf_din[20] (ac97_rf)                 0.00       9.60 r
+  u13/U319/Y (AO22X1_RVT)                  0.92 c    10.52 r
+  u13/U13/Y (NBUFFX2_RVT)                  0.09 &    10.62 r
+  u13/occ0_r_reg[20]/D (DFFARX1_RVT)       0.00 &    10.62 r
+  data arrival time                                  10.62
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  u13/occ0_r_reg[20]/CLK (DFFARX1_RVT)     0.00       9.80 r
+  library setup time                      -0.10       9.70
+  data required time                                  9.70
+  -----------------------------------------------------------
+  data required time                                  9.70
+  data arrival time                                 -10.62
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.92
+
+
+  Startpoint: u12/dout_reg[20]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u13/icc_r_reg[20]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  u12/dout_reg[20]/CLK (DFFX1_RVT)         0.00 #     0.00 r
+  u12/dout_reg[20]/Q (DFFX1_RVT)           0.15       0.15 r
+  u12/dout[20] (ac97_wb_if)                0.00       0.15 r
+  U21/Y (NBUFFX4_RVT)                      9.45 c     9.60 r
+  u13/rf_din[20] (ac97_rf)                 0.00       9.60 r
+  u13/U313/Y (AO22X1_RVT)                  0.92 c    10.52 r
+  u13/U15/Y (NBUFFX2_RVT)                  0.09 &    10.62 r
+  u13/icc_r_reg[20]/D (DFFARX1_RVT)        0.00 &    10.62 r
+  data arrival time                                  10.62
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  u13/icc_r_reg[20]/CLK (DFFARX1_RVT)      0.00       9.80 r
+  library setup time                      -0.10       9.70
+  data required time                                  9.70
+  -----------------------------------------------------------
+  data required time                                  9.70
+  data arrival time                                 -10.62
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.92
+
+
+  Startpoint: u12/dout_reg[20]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u13/crac_r_reg[4]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  u12/dout_reg[20]/CLK (DFFX1_RVT)         0.00 #     0.00 r
+  u12/dout_reg[20]/Q (DFFX1_RVT)           0.15       0.15 r
+  u12/dout[20] (ac97_wb_if)                0.00       0.15 r
+  U21/Y (NBUFFX4_RVT)                      9.45 c     9.60 r
+  u13/rf_din[20] (ac97_rf)                 0.00       9.60 r
+  u13/U306/Y (AO22X1_RVT)                  0.92 c    10.52 r
+  u13/U14/Y (NBUFFX2_RVT)                  0.09 &    10.61 r
+  u13/crac_r_reg[4]/D (DFFARX1_RVT)        0.00 &    10.61 r
+  data arrival time                                  10.61
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  u13/crac_r_reg[4]/CLK (DFFARX1_RVT)      0.00       9.80 r
+  library setup time                      -0.10       9.70
+  data required time                                  9.70
+  -----------------------------------------------------------
+  data required time                                  9.70
+  data arrival time                                 -10.61
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.91
+
+
+  Startpoint: u12/dout_reg[20]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u8/mem_reg[2][20]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  u12/dout_reg[20]/CLK (DFFX1_RVT)         0.00 #     0.00 r
+  u12/dout_reg[20]/Q (DFFX1_RVT)           0.15       0.15 r
+  u12/dout[20] (ac97_wb_if)                0.00       0.15 r
+  U21/Y (NBUFFX4_RVT)                      9.45 c     9.60 r
+  u8/din[20] (ac97_out_fifo_0)             0.00       9.60 r
+  u8/U324/Y (AO22X1_RVT)                   0.92 c    10.52 r
+  u8/U260/Y (NBUFFX2_RVT)                  0.09 &    10.62 r
+  u8/mem_reg[2][20]/D (DFFX1_RVT)          0.00 &    10.62 r
+  data arrival time                                  10.62
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  u8/mem_reg[2][20]/CLK (DFFX1_RVT)        0.00       9.80 r
+  library setup time                      -0.10       9.70
+  data required time                                  9.70
+  -----------------------------------------------------------
+  data required time                                  9.70
+  data arrival time                                 -10.62
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.91
+
+
+  Startpoint: u12/dout_reg[20]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u6/mem_reg[0][20]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  u12/dout_reg[20]/CLK (DFFX1_RVT)         0.00 #     0.00 r
+  u12/dout_reg[20]/Q (DFFX1_RVT)           0.15       0.15 r
+  u12/dout[20] (ac97_wb_if)                0.00       0.15 r
+  U21/Y (NBUFFX4_RVT)                      9.45 c     9.60 r
+  u6/din[20] (ac97_out_fifo_2)             0.00       9.60 r
+  u6/U338/Y (AO22X1_RVT)                   0.92 c    10.52 r
+  u6/U257/Y (NBUFFX2_RVT)                  0.09 &    10.61 r
+  u6/mem_reg[0][20]/D (DFFX1_RVT)          0.00 &    10.61 r
+  data arrival time                                  10.61
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  u6/mem_reg[0][20]/CLK (DFFX1_RVT)        0.00       9.80 r
+  library setup time                      -0.10       9.70
+  data required time                                  9.70
+  -----------------------------------------------------------
+  data required time                                  9.70
+  data arrival time                                 -10.61
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.91
+
+
+1

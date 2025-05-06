@@ -1,0 +1,69 @@
+set_user_match   -inverted   $svf_ref/usbf_top/u1/u3/dma_en   $svf_impl/usbf_top/u1/u3/dma_en
+set_user_match   -inverted   $svf_ref/usbf_top/u1/u2/dma_en   $svf_impl/usbf_top/u1/u2/dma_en
+set_user_match   -inverted   $svf_ref/usbf_top/u1/u3/mode_hs   $svf_impl/usbf_top/u1/u3/mode_hs
+guide_constraints -body { u1/u3 } -equivalent { u1/u3/mode_hs  ~ u1/u3/IN0 }
+set_user_match   -inverted   $svf_ref/usbf_top/u4/u0/buf0_rl   $svf_impl/usbf_top/u4/u0/buf0_rl
+set_user_match   -inverted   $svf_ref/usbf_top/u4/u1/buf0_rl   $svf_impl/usbf_top/u4/u1/buf0_rl
+set_user_match   -inverted   $svf_ref/usbf_top/u4/u2/buf0_rl   $svf_impl/usbf_top/u4/u2/buf0_rl
+set_user_match   -inverted   $svf_ref/usbf_top/u4/u3/buf0_rl   $svf_impl/usbf_top/u4/u3/buf0_rl
+guide_constraints -body { u4/u2 } -equivalent { u4/u2/buf0_rl  ~ u4/u2/IN0 }
+guide_constraints -body { u4/u1 } -equivalent { u4/u1/buf0_rl  ~ u4/u1/IN0 }
+guide_constraints -body { u4/u3 } -equivalent { u4/u3/buf0_rl  ~ u4/u3/IN0 }
+guide_constraints -body { u4/u0 } -equivalent { u4/u0/buf0_rl  ~ u4/u0/IN1 }
+set_user_match   -inverted   $svf_ref/usbf_top/u4/u0/buf0_set   $svf_impl/usbf_top/u4/u0/buf0_set
+set_user_match   -inverted   $svf_ref/usbf_top/u4/u1/buf0_set   $svf_impl/usbf_top/u4/u1/buf0_set
+set_user_match   -inverted   $svf_ref/usbf_top/u4/u2/buf0_set   $svf_impl/usbf_top/u4/u2/buf0_set
+set_user_match   -inverted   $svf_ref/usbf_top/u4/u3/buf0_set   $svf_impl/usbf_top/u4/u3/buf0_set
+guide_constraints -body { u4/u2 } -equivalent { u4/u2/buf0_set  ~ u4/u2/IN1 }
+guide_constraints -body { u4/u1 } -equivalent { u4/u1/buf0_set  ~ u4/u1/IN1 }
+guide_constraints -body { u4/u3 } -equivalent { u4/u3/buf0_set  ~ u4/u3/IN1 }
+guide_constraints -body { u4/u0 } -equivalent { u4/u0/buf0_set  ~ u4/u0/IN2 }
+set_user_match   -inverted   $svf_ref/usbf_top/u5/rf_we   $svf_impl/usbf_top/u5/rf_we
+set_user_match   -inverted   $svf_ref/usbf_top/u4/we   $svf_impl/usbf_top/u4/we
+set_user_match   -inverted   $svf_ref/usbf_top/u1/u3/r148/B[10]   $svf_impl/usbf_top/u1/u3/r148/B[10]
+guide_constraints -body { u1/u3/r148 } -equivalent { u1/u3/r148/B[10]  ~ u1/u3/r148/IN0 }
+set_user_match   -inverted   $svf_ref/usbf_top/u1/u0/rx_active   $svf_impl/usbf_top/u1/u0/rx_active
+set_user_match   -inverted   $svf_ref/usbf_top/u1/u3/rx_active   $svf_impl/usbf_top/u1/u3/rx_active
+guide_constraints -body { u1/u0 } -equivalent { u1/u0/rx_active  ~ u1/u0/IN0 }
+set_user_match   -inverted   $svf_ref/usbf_top/u4/u0/adr[1]   $svf_impl/usbf_top/u4/u0/adr[1]
+set_user_match   -inverted   $svf_ref/usbf_top/u4/u1/adr[1]   $svf_impl/usbf_top/u4/u1/adr[1]
+set_user_match   -inverted   $svf_ref/usbf_top/u4/u2/adr[1]   $svf_impl/usbf_top/u4/u2/adr[1]
+set_user_match   -inverted   $svf_ref/usbf_top/u4/u3/adr[1]   $svf_impl/usbf_top/u4/u3/adr[1]
+guide_constraints -body { u4/u2 } -equivalent { u4/u2/adr[1]  ~ u4/u2/IN2 }
+guide_constraints -body { u4/u1 } -equivalent { u4/u1/adr[1]  ~ u4/u1/IN2 }
+guide_constraints -body { u4/u3 } -equivalent { u4/u3/adr[1]  ~ u4/u3/IN2 }
+guide_constraints -body { u4/u0 } -equivalent { u4/u0/adr[1]  ~ u4/u0/IN3 }
+set_user_match   -inverted   $svf_ref/usbf_top/u4/u2/adr[0]   $svf_impl/usbf_top/u4/u2/adr[0]
+set_user_match   -inverted   $svf_ref/usbf_top/u4/u3/adr[0]   $svf_impl/usbf_top/u4/u3/adr[0]
+set_user_match   -inverted   $svf_ref/usbf_top/u4/u0/adr[0]   $svf_impl/usbf_top/u4/u0/adr[0]
+set_user_match   -inverted   $svf_ref/usbf_top/u4/u1/adr[0]   $svf_impl/usbf_top/u4/u1/adr[0]
+guide_constraints -body { u4/u2 } -equivalent { u4/u2/adr[0]  ~ u4/u2/IN3 }
+guide_constraints -body { u4/u1 } -equivalent { u4/u1/adr[0]  ~ u4/u1/IN3 }
+guide_constraints -body { u4/u3 } -equivalent { u4/u3/adr[0]  ~ u4/u3/IN3 }
+guide_constraints -body { u4/u0 } -equivalent { u4/u0/adr[0]  ~ u4/u0/IN4 }
+guide_constraints -body { u4/u1 } -equivalent { u4/u1/clk    u4/u1/IN4   u4/u1/IN5   u4/u1/IN6   u4/u1/IN7   u4/u1/IN8   u4/u1/IN9   u4/u1/IN10   u4/u1/IN11   u4/u1/IN12   u4/u1/IN13 }
+guide_constraints -body { u1/u2 } -equivalent { u1/u2/clk    u1/u2/IN0   u1/u2/IN1   u1/u2/IN2   u1/u2/IN3   u1/u2/IN4   u1/u2/IN5   u1/u2/IN6   u1/u2/IN7   u1/u2/IN8   u1/u2/IN9   u1/u2/IN10   u1/u2/IN11   u1/u2/IN12   u1/u2/IN13 }
+guide_constraints -body { u1 } -equivalent { u1/clk    u1/IN0   u1/IN1   u1/IN2   u1/IN3   u1/IN4   u1/IN5   u1/IN6   u1/IN7   u1/IN8   u1/IN9   u1/IN10   u1/IN11   u1/IN12   u1/IN13   u1/IN14   u1/IN15   u1/IN16   u1/IN17   u1/IN18   u1/IN19   u1/IN20   u1/IN21   u1/IN22 }
+guide_constraints -body { u4/u2 } -equivalent { u4/u2/clk    u4/u2/IN4   u4/u2/IN5   u4/u2/IN6   u4/u2/IN7   u4/u2/IN8   u4/u2/IN9   u4/u2/IN10   u4/u2/IN11   u4/u2/IN12   u4/u2/IN13 }
+guide_constraints -body { u4/u0 } -equivalent { u4/u0/clk    u4/u0/IN5   u4/u0/IN6   u4/u0/IN7   u4/u0/IN8   u4/u0/IN9   u4/u0/IN10   u4/u0/IN11   u4/u0/IN12   u4/u0/IN13 }
+guide_constraints -body { u4/u3 } -equivalent { u4/u3/clk    u4/u3/IN4   u4/u3/IN5   u4/u3/IN6   u4/u3/IN7   u4/u3/IN8   u4/u3/IN9   u4/u3/IN10   u4/u3/IN11   u4/u3/IN12   u4/u3/IN13   u4/u3/IN14   u4/u3/IN15 }
+guide_constraints -body { u1/u3 } -equivalent { u1/u3/clk    u1/u3/IN1   u1/u3/IN2   u1/u3/IN3   u1/u3/IN4   u1/u3/IN5   u1/u3/IN6 }
+guide_constraints -body { u0/u0 } -equivalent { u0/u0/clk    u0/u0/IN0   u0/u0/IN1   u0/u0/IN2 }
+guide_constraints -body { u0 } -equivalent { u0/phy_clk    u0/IN0   u0/IN1   u0/IN2   u0/IN3   u0/IN4   u0/IN5 }
+guide_constraints -body { u4 } -equivalent { u4/clk    u4/IN0   u4/IN1   u4/IN2   u4/IN3   u4/IN4   u4/IN5   u4/IN6   u4/IN7   u4/IN8   u4/IN9   u4/IN10   u4/IN11 }
+guide_constraints -body { u1/u1 } -equivalent { u1/u1/clk    u1/u1/IN0   u1/u1/IN1 }
+guide_constraints -body { u1/u0 } -equivalent { u1/u0/clk    u1/u0/IN1   u1/u0/IN2   u1/u0/IN3 }
+guide_constraints -body { u5 } -equivalent { u5/phy_clk    u5/IN0 }
+set_user_match   -inverted   $svf_ref/usbf_top/u4/u3/rst   $svf_impl/usbf_top/u4/u3/rst
+set_user_match   -inverted   $svf_ref/usbf_top/u4/u1/rst   $svf_impl/usbf_top/u4/u1/rst
+set_user_match   -inverted   $svf_ref/usbf_top/u4/u0/rst   $svf_impl/usbf_top/u4/u0/rst
+guide_constraints -body { u4/u3 } -equivalent { u4/u3/rst  ~ u4/u3/IN16 ~ u4/u3/IN17 ~ u4/u3/IN18 ~ u4/u3/IN19 ~ u4/u3/IN20 }
+guide_constraints -body { u4/u0 } -equivalent { u4/u0/rst  ~ u4/u0/IN14 ~ u4/u0/IN15 ~ u4/u0/IN16 ~ u4/u0/IN17 ~ u4/u0/IN18 }
+guide_constraints -body { u4/u1 } -equivalent { u4/u1/rst  ~ u4/u1/IN14 ~ u4/u1/IN15 ~ u4/u1/IN16 ~ u4/u1/IN17 ~ u4/u1/IN18 ~ u4/u1/IN19 }
+guide_constraints -body { u4 } -equivalent { u4/rst    u4/IN12   u4/IN13   u4/IN14   u4/IN15 }
+guide_constraints -body { u4/u2 } -equivalent { u4/u2/rst  ~ u4/u2/IN14   u4/u2/IN15 ~ u4/u2/IN16 }
+guide_constraints -body { u1 } -equivalent { u1/rst    u1/IN23   u1/IN24 }
+guide_constraints -body { u0 } -equivalent { u0/rst    u0/IN6   u0/IN7 }
+
+#-------------------------------------------------------------------
+

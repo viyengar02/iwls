@@ -1,0 +1,4 @@
+set_object_boundary -boundary {  { 88.8880 151.2840 } { 152.4240 151.2840 } { 152.4240 62.6680 } { 88.8880 62.6680 } } [get_plan_groups { mix1 } ]
+set_object_boundary -boundary {  { 88.8880 62.6680 } { 152.4240 62.6680 } { 152.4240 10.8360 } { 88.8880 10.8360 } } [get_plan_groups { ks1 } ]
+set_object_boundary -boundary {  { 10.0000 47.6200 } { 88.8880 47.6200 } { 88.8880 10.8360 } { 10.0000 10.8360 } } [get_plan_groups { sub1 } ]
+

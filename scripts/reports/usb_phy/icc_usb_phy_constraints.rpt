@@ -1,0 +1,114 @@
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : usb_phy
+Version: W-2024.09-SP2
+Date   : Tue May  6 09:38:05 2025
+****************************************
+
+	Parasitic source    : LPE
+	Parasitic mode      : RealRC
+	Extraction mode     : MAX
+	Extraction derating : 125/125/125
+
+   min_delay/hold ('clk' group)
+
+                             Required        Actual
+   Endpoint                 Path Delay     Path Delay        Slack
+   -----------------------------------------------------------------
+   i_rx_phy/rxdp_s0_reg/D       0.20           0.01 f        -0.19  (VIOLATED)
+   i_rx_phy/rxdn_s0_reg/D       0.20           0.01 f        -0.19  (VIOLATED)
+   i_rx_phy/rxd_s0_reg/D        0.20           0.01 f        -0.19  (VIOLATED)
+   i_rx_phy/dpll_state_reg[1]/RSTB
+                                0.16           0.01 f        -0.15  (VIOLATED)
+   i_tx_phy/tx_ip_reg/RSTB      0.16           0.01 f        -0.15  (VIOLATED)
+   i_tx_phy/append_eop_reg/RSTB
+                                0.16           0.01 f        -0.15  (VIOLATED)
+   i_rx_phy/sd_nrzi_reg/D       0.19           0.05 f        -0.13  (VIOLATED)
+   i_tx_phy/data_done_reg/D     0.19           0.05 f        -0.13  (VIOLATED)
+   i_tx_phy/TxReady_o_reg/D     0.18           0.06 f        -0.12  (VIOLATED)
+   i_tx_phy/hold_reg_reg[4]/D
+                                0.19           0.07 f        -0.12  (VIOLATED)
+   i_tx_phy/hold_reg_reg[2]/D
+                                0.19           0.07 f        -0.12  (VIOLATED)
+   i_tx_phy/hold_reg_reg[1]/D
+                                0.19           0.07 f        -0.11  (VIOLATED)
+   i_tx_phy/hold_reg_reg[0]/D
+                                0.19           0.07 f        -0.11  (VIOLATED)
+   i_tx_phy/hold_reg_reg[3]/D
+                                0.18           0.07 f        -0.11  (VIOLATED)
+   i_tx_phy/hold_reg_reg[5]/D
+                                0.18           0.07 f        -0.11  (VIOLATED)
+   i_tx_phy/hold_reg_reg[6]/D
+                                0.18           0.07 f        -0.11  (VIOLATED)
+   i_tx_phy/hold_reg_reg[7]/D
+                                0.18           0.09 f        -0.10  (VIOLATED)
+   i_tx_phy/tx_ip_reg/SETB      0.18           0.08 r        -0.09  (VIOLATED)
+   i_rx_phy/dpll_state_reg[0]/D
+                                0.18           0.10 f        -0.09  (VIOLATED)
+   i_rx_phy/rx_active_reg/D     0.18           0.11 f        -0.08  (VIOLATED)
+   i_tx_phy/txdn_reg/D          0.19           0.12 f        -0.07  (VIOLATED)
+   i_tx_phy/state_reg[1]/D      0.18           0.12 f        -0.07  (VIOLATED)
+   i_tx_phy/state_reg[0]/D      0.18           0.12 f        -0.07  (VIOLATED)
+   i_tx_phy/state_reg[2]/D      0.18           0.12 f        -0.06  (VIOLATED)
+   TxReady_o                    0.19           0.15 r        -0.04  (VIOLATED)
+   i_tx_phy/txdp_reg/D          0.18           0.14 f        -0.04  (VIOLATED)
+   i_tx_phy/txoe_reg/D          0.18           0.15 f        -0.04  (VIOLATED)
+   txdn                         0.19           0.15 r        -0.04  (VIOLATED)
+   i_rx_phy/rx_valid1_reg/D     0.19           0.15 f        -0.03  (VIOLATED)
+   DataIn_o[5]                  0.19           0.16 r        -0.03  (VIOLATED)
+   i_rx_phy/fs_ce_reg/D         0.18           0.15 f        -0.03  (VIOLATED)
+   DataIn_o[3]                  0.19           0.16 r        -0.03  (VIOLATED)
+   DataIn_o[6]                  0.19           0.16 r        -0.03  (VIOLATED)
+   txdp                         0.19           0.16 r        -0.03  (VIOLATED)
+   DataIn_o[2]                  0.19           0.16 r        -0.03  (VIOLATED)
+   txoe                         0.19           0.16 r        -0.03  (VIOLATED)
+   i_tx_phy/hold_reg_d_reg[3]/D
+                                0.18           0.15 f        -0.03  (VIOLATED)
+   i_tx_phy/hold_reg_d_reg[7]/D
+                                0.18           0.15 f        -0.03  (VIOLATED)
+   DataIn_o[7]                  0.19           0.16 r        -0.03  (VIOLATED)
+   i_tx_phy/hold_reg_d_reg[5]/D
+                                0.18           0.16 f        -0.03  (VIOLATED)
+   i_tx_phy/sft_done_r_reg/D
+                                0.18           0.16 f        -0.03  (VIOLATED)
+   i_tx_phy/hold_reg_d_reg[6]/D
+                                0.18           0.16 f        -0.03  (VIOLATED)
+   i_tx_phy/hold_reg_d_reg[0]/D
+                                0.18           0.16 f        -0.02  (VIOLATED)
+   DataIn_o[4]                  0.19           0.17 r        -0.02  (VIOLATED)
+   i_tx_phy/hold_reg_d_reg[4]/D
+                                0.18           0.16 f        -0.02  (VIOLATED)
+   i_tx_phy/hold_reg_d_reg[1]/D
+                                0.18           0.16 f        -0.02  (VIOLATED)
+   usb_rst                      0.19           0.17 r        -0.02  (VIOLATED)
+   i_rx_phy/fs_ce_r2_reg/D      0.18           0.16 f        -0.02  (VIOLATED)
+   rst_cnt_reg[2]/D             0.19           0.16 f        -0.02  (VIOLATED)
+   rst_cnt_reg[4]/D             0.19           0.16 f        -0.02  (VIOLATED)
+   i_tx_phy/hold_reg_d_reg[2]/D
+                                0.18           0.16 f        -0.02  (VIOLATED)
+   rst_cnt_reg[3]/D             0.18           0.17 f        -0.02  (VIOLATED)
+   rst_cnt_reg[0]/D             0.18           0.17 f        -0.02  (VIOLATED)
+   rst_cnt_reg[1]/D             0.18           0.17 f        -0.02  (VIOLATED)
+   DataIn_o[1]                  0.19           0.18 r        -0.01  (VIOLATED)
+   i_rx_phy/rxd_s1_reg/D        0.18           0.16 f        -0.01  (VIOLATED)
+   DataIn_o[0]                  0.19           0.18 r        -0.01  (VIOLATED)
+   i_rx_phy/se0_r_reg/D         0.14           0.13 f        -0.01  (VIOLATED)
+   RxValid_o                    0.19           0.18 r        -0.01  (VIOLATED)
+   i_rx_phy/rx_en_reg/D         0.17           0.17 f        -0.01  (VIOLATED)
+   i_tx_phy/ld_data_reg/SE      0.14           0.13 r        -0.01  (VIOLATED)
+   RxActive_o                   0.19           0.18 r        -0.01  (VIOLATED)
+   LineState_o[1]               0.19           0.19 r         0.00  (VIOLATED: increase significant digits)
+   i_rx_phy/rxdp_s1_reg/D       0.17           0.17 f         0.00  (VIOLATED: increase significant digits)
+
+
+   max_area
+
+                             Required        Actual
+   Design                      Area           Area           Slack
+   -----------------------------------------------------------------
+   usb_phy                      0.00        1265.38       -1265.38  (VIOLATED)
+
+
+1

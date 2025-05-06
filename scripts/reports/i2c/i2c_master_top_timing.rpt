@@ -1,0 +1,375 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 10
+Design : i2c_master_top
+Version: W-2024.09-SP4-1
+Date   : Tue May  6 10:04:49 2025
+****************************************
+
+Operating Conditions: ss0p95v25c   Library: saed32rvt_ss0p95v25c
+Wire Load Model Mode: enclosed
+
+  Startpoint: wb_rst_i (input port clocked by clk)
+  Endpoint: ctr_reg[7] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  i2c_master_top     8000                  saed32rvt_ss0p95v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 r
+  wb_rst_i (in)                            0.00       0.01 r
+  U155/Y (INVX1_RVT)                       1.52       1.53 f
+  U230/Y (INVX1_RVT)                       1.30       2.82 r
+  U125/Y (AO21X1_RVT)                      4.75       7.58 r
+  U127/Y (AND2X1_RVT)                      0.15       7.72 r
+  U171/Y (AO22X1_RVT)                      1.35       9.07 r
+  ctr_reg[7]/D (DFFARX1_RVT)               0.01       9.08 r
+  data arrival time                                   9.08
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  ctr_reg[7]/CLK (DFFARX1_RVT)             0.00       9.80 r
+  library setup time                      -0.06       9.74
+  data required time                                  9.74
+  -----------------------------------------------------------
+  data required time                                  9.74
+  data arrival time                                  -9.08
+  -----------------------------------------------------------
+  slack (MET)                                         0.65
+
+
+  Startpoint: wb_rst_i (input port clocked by clk)
+  Endpoint: txr_reg[7] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  i2c_master_top     8000                  saed32rvt_ss0p95v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 r
+  wb_rst_i (in)                            0.00       0.01 r
+  U155/Y (INVX1_RVT)                       1.52       1.53 f
+  U230/Y (INVX1_RVT)                       1.30       2.82 r
+  U124/Y (AO21X1_RVT)                      4.75       7.58 r
+  U126/Y (AND2X1_RVT)                      0.15       7.72 r
+  U163/Y (AO22X1_RVT)                      1.35       9.07 r
+  txr_reg[7]/D (DFFARX1_RVT)               0.01       9.08 r
+  data arrival time                                   9.08
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  txr_reg[7]/CLK (DFFARX1_RVT)             0.00       9.80 r
+  library setup time                      -0.06       9.74
+  data required time                                  9.74
+  -----------------------------------------------------------
+  data required time                                  9.74
+  data arrival time                                  -9.08
+  -----------------------------------------------------------
+  slack (MET)                                         0.65
+
+
+  Startpoint: wb_rst_i (input port clocked by clk)
+  Endpoint: txr_reg[6] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  i2c_master_top     8000                  saed32rvt_ss0p95v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 r
+  wb_rst_i (in)                            0.00       0.01 r
+  U155/Y (INVX1_RVT)                       1.52       1.53 f
+  U230/Y (INVX1_RVT)                       1.30       2.82 r
+  U124/Y (AO21X1_RVT)                      4.75       7.58 r
+  U126/Y (AND2X1_RVT)                      0.15       7.72 r
+  U162/Y (AO22X1_RVT)                      1.35       9.07 r
+  txr_reg[6]/D (DFFARX1_RVT)               0.01       9.08 r
+  data arrival time                                   9.08
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  txr_reg[6]/CLK (DFFARX1_RVT)             0.00       9.80 r
+  library setup time                      -0.06       9.74
+  data required time                                  9.74
+  -----------------------------------------------------------
+  data required time                                  9.74
+  data arrival time                                  -9.08
+  -----------------------------------------------------------
+  slack (MET)                                         0.65
+
+
+  Startpoint: wb_rst_i (input port clocked by clk)
+  Endpoint: txr_reg[5] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  i2c_master_top     8000                  saed32rvt_ss0p95v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 r
+  wb_rst_i (in)                            0.00       0.01 r
+  U155/Y (INVX1_RVT)                       1.52       1.53 f
+  U230/Y (INVX1_RVT)                       1.30       2.82 r
+  U124/Y (AO21X1_RVT)                      4.75       7.58 r
+  U126/Y (AND2X1_RVT)                      0.15       7.72 r
+  U161/Y (AO22X1_RVT)                      1.35       9.07 r
+  txr_reg[5]/D (DFFARX1_RVT)               0.01       9.08 r
+  data arrival time                                   9.08
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  txr_reg[5]/CLK (DFFARX1_RVT)             0.00       9.80 r
+  library setup time                      -0.06       9.74
+  data required time                                  9.74
+  -----------------------------------------------------------
+  data required time                                  9.74
+  data arrival time                                  -9.08
+  -----------------------------------------------------------
+  slack (MET)                                         0.65
+
+
+  Startpoint: wb_rst_i (input port clocked by clk)
+  Endpoint: txr_reg[1] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  i2c_master_top     8000                  saed32rvt_ss0p95v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 r
+  wb_rst_i (in)                            0.00       0.01 r
+  U155/Y (INVX1_RVT)                       1.52       1.53 f
+  U230/Y (INVX1_RVT)                       1.30       2.82 r
+  U124/Y (AO21X1_RVT)                      4.75       7.58 r
+  U126/Y (AND2X1_RVT)                      0.15       7.72 r
+  U157/Y (AO22X1_RVT)                      1.35       9.07 r
+  txr_reg[1]/D (DFFARX1_RVT)               0.01       9.08 r
+  data arrival time                                   9.08
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  txr_reg[1]/CLK (DFFARX1_RVT)             0.00       9.80 r
+  library setup time                      -0.06       9.74
+  data required time                                  9.74
+  -----------------------------------------------------------
+  data required time                                  9.74
+  data arrival time                                  -9.08
+  -----------------------------------------------------------
+  slack (MET)                                         0.65
+
+
+  Startpoint: wb_rst_i (input port clocked by clk)
+  Endpoint: txr_reg[0] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  i2c_master_top     8000                  saed32rvt_ss0p95v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 r
+  wb_rst_i (in)                            0.00       0.01 r
+  U155/Y (INVX1_RVT)                       1.52       1.53 f
+  U230/Y (INVX1_RVT)                       1.30       2.82 r
+  U124/Y (AO21X1_RVT)                      4.75       7.58 r
+  U126/Y (AND2X1_RVT)                      0.15       7.72 r
+  U156/Y (AO22X1_RVT)                      1.35       9.07 r
+  txr_reg[0]/D (DFFARX1_RVT)               0.01       9.08 r
+  data arrival time                                   9.08
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  txr_reg[0]/CLK (DFFARX1_RVT)             0.00       9.80 r
+  library setup time                      -0.06       9.74
+  data required time                                  9.74
+  -----------------------------------------------------------
+  data required time                                  9.74
+  data arrival time                                  -9.08
+  -----------------------------------------------------------
+  slack (MET)                                         0.65
+
+
+  Startpoint: wb_rst_i (input port clocked by clk)
+  Endpoint: txr_reg[4] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  i2c_master_top     8000                  saed32rvt_ss0p95v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 r
+  wb_rst_i (in)                            0.00       0.01 r
+  U155/Y (INVX1_RVT)                       1.52       1.53 f
+  U230/Y (INVX1_RVT)                       1.30       2.82 r
+  U124/Y (AO21X1_RVT)                      4.75       7.58 r
+  U126/Y (AND2X1_RVT)                      0.15       7.72 r
+  U160/Y (AO22X1_RVT)                      1.35       9.07 r
+  txr_reg[4]/D (DFFARX1_RVT)               0.01       9.08 r
+  data arrival time                                   9.08
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  txr_reg[4]/CLK (DFFARX1_RVT)             0.00       9.80 r
+  library setup time                      -0.06       9.74
+  data required time                                  9.74
+  -----------------------------------------------------------
+  data required time                                  9.74
+  data arrival time                                  -9.08
+  -----------------------------------------------------------
+  slack (MET)                                         0.65
+
+
+  Startpoint: wb_rst_i (input port clocked by clk)
+  Endpoint: txr_reg[3] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  i2c_master_top     8000                  saed32rvt_ss0p95v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 r
+  wb_rst_i (in)                            0.00       0.01 r
+  U155/Y (INVX1_RVT)                       1.52       1.53 f
+  U230/Y (INVX1_RVT)                       1.30       2.82 r
+  U124/Y (AO21X1_RVT)                      4.75       7.58 r
+  U126/Y (AND2X1_RVT)                      0.15       7.72 r
+  U159/Y (AO22X1_RVT)                      1.35       9.07 r
+  txr_reg[3]/D (DFFARX1_RVT)               0.01       9.08 r
+  data arrival time                                   9.08
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  txr_reg[3]/CLK (DFFARX1_RVT)             0.00       9.80 r
+  library setup time                      -0.06       9.74
+  data required time                                  9.74
+  -----------------------------------------------------------
+  data required time                                  9.74
+  data arrival time                                  -9.08
+  -----------------------------------------------------------
+  slack (MET)                                         0.65
+
+
+  Startpoint: wb_rst_i (input port clocked by clk)
+  Endpoint: txr_reg[2] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  i2c_master_top     8000                  saed32rvt_ss0p95v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 r
+  wb_rst_i (in)                            0.00       0.01 r
+  U155/Y (INVX1_RVT)                       1.52       1.53 f
+  U230/Y (INVX1_RVT)                       1.30       2.82 r
+  U124/Y (AO21X1_RVT)                      4.75       7.58 r
+  U126/Y (AND2X1_RVT)                      0.15       7.72 r
+  U158/Y (AO22X1_RVT)                      1.35       9.07 r
+  txr_reg[2]/D (DFFARX1_RVT)               0.01       9.08 r
+  data arrival time                                   9.08
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  txr_reg[2]/CLK (DFFARX1_RVT)             0.00       9.80 r
+  library setup time                      -0.06       9.74
+  data required time                                  9.74
+  -----------------------------------------------------------
+  data required time                                  9.74
+  data arrival time                                  -9.08
+  -----------------------------------------------------------
+  slack (MET)                                         0.65
+
+
+  Startpoint: wb_rst_i (input port clocked by clk)
+  Endpoint: ctr_reg[6] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  i2c_master_top     8000                  saed32rvt_ss0p95v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 r
+  wb_rst_i (in)                            0.00       0.01 r
+  U155/Y (INVX1_RVT)                       1.52       1.53 f
+  U230/Y (INVX1_RVT)                       1.30       2.82 r
+  U125/Y (AO21X1_RVT)                      4.75       7.58 r
+  U127/Y (AND2X1_RVT)                      0.15       7.72 r
+  U170/Y (AO22X1_RVT)                      1.35       9.07 r
+  ctr_reg[6]/D (DFFARX1_RVT)               0.01       9.08 r
+  data arrival time                                   9.08
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  ctr_reg[6]/CLK (DFFARX1_RVT)             0.00       9.80 r
+  library setup time                      -0.06       9.74
+  data required time                                  9.74
+  -----------------------------------------------------------
+  data required time                                  9.74
+  data arrival time                                  -9.08
+  -----------------------------------------------------------
+  slack (MET)                                         0.65
+
+
+1

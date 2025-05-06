@@ -1,0 +1,571 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 10
+Design : des3
+Version: W-2024.09-SP2
+Date   : Tue May  6 09:23:48 2025
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+Operating Conditions: ss0p95v125c   Library: saed32rvt_ss0p95v125c
+	Parasitic source    : LPE
+	Parasitic mode      : RealRC
+	Extraction mode     : MAX
+	Extraction derating : 125/125/125
+
+Information: Percent of Arnoldi-based delays = 23.52%
+
+Information: Percent of CCS-based delays = 14.57%
+
+  Startpoint: roundSel[5]
+              (input port clocked by clk)
+  Endpoint: R_reg[17] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 f
+  roundSel[5] (in)                         0.00 @     0.01 f
+  u1/roundSel[5] (key_sel3)                0.00       0.01 f
+  u1/U119/Y (INVX0_RVT)                    0.02 @     0.03 r
+  u1/U98/Y (NAND2X0_RVT)                   0.09 &     0.12 f
+  u1/U686/Y (XOR2X1_RVT)                   0.24 &     0.36 r
+  u1/U15/Y (INVX1_RVT)                     0.14 &     0.50 f
+  u1/U306/Y (AO22X1_RVT)                   0.17 &     0.67 f
+  u1/U121/Y (INVX8_RVT)                    0.07 c     0.74 r
+  u1/U61/Y (OA22X1_RVT)                    0.10 c     0.84 r
+  u1/U324/Y (OA221X1_RVT)                  0.08 &     0.92 r
+  u1/U627/Y (NAND4X0_RVT)                  0.13 &     1.06 f
+  u1/K_sub[3] (key_sel3)                   0.00       1.06 f
+  u0/K_sub[3] (crp)                        0.00       1.06 f
+  u0/U48/Y (XOR2X1_RVT)                    0.20 &     1.25 r
+  u0/u0/addr[3] (sbox1)                    0.00       1.25 r
+  u0/u0/U84/Y (INVX0_RVT)                  0.04 &     1.30 f
+  u0/u0/U83/Y (AND2X1_RVT)                 0.08 &     1.38 f
+  u0/u0/U20/Y (AND2X1_RVT)                 0.07 &     1.45 f
+  u0/u0/U71/Y (AOI21X1_RVT)                0.10 &     1.54 r
+  u0/u0/U12/Y (NAND3X0_RVT)                0.07 &     1.62 f
+  u0/u0/U78/Y (AOI222X1_RVT)               0.17 &     1.79 r
+  u0/u0/U81/Y (AND3X1_RVT)                 0.08 &     1.87 r
+  u0/u0/U80/Y (OA221X1_RVT)                0.08 &     1.95 r
+  u0/u0/U21/Y (NAND3X0_RVT)                0.19 &     2.14 f
+  u0/u0/dout[2] (sbox1)                    0.00       2.14 f
+  u0/P[17] (crp)                           0.00       2.14 f
+  U136/Y (XOR2X1_RVT)                      0.23 &     2.37 r
+  R_reg[17]/D (DFFX1_RVT)                  0.00 &     2.37 r
+  data arrival time                                   2.37
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  R_reg[17]/CLK (DFFX1_RVT)                0.00       9.80 r
+  library setup time                      -0.09       9.71
+  data required time                                  9.71
+  -----------------------------------------------------------
+  data required time                                  9.71
+  data arrival time                                  -2.37
+  -----------------------------------------------------------
+  slack (MET)                                         7.34
+
+
+  Startpoint: roundSel[5]
+              (input port clocked by clk)
+  Endpoint: FP_R_reg[17]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 f
+  roundSel[5] (in)                         0.00 @     0.01 f
+  u1/roundSel[5] (key_sel3)                0.00       0.01 f
+  u1/U119/Y (INVX0_RVT)                    0.02 @     0.03 r
+  u1/U98/Y (NAND2X0_RVT)                   0.09 &     0.12 f
+  u1/U686/Y (XOR2X1_RVT)                   0.24 &     0.36 r
+  u1/U15/Y (INVX1_RVT)                     0.14 &     0.50 f
+  u1/U306/Y (AO22X1_RVT)                   0.17 &     0.67 f
+  u1/U121/Y (INVX8_RVT)                    0.07 c     0.74 r
+  u1/U61/Y (OA22X1_RVT)                    0.10 c     0.84 r
+  u1/U324/Y (OA221X1_RVT)                  0.08 &     0.92 r
+  u1/U627/Y (NAND4X0_RVT)                  0.13 &     1.06 f
+  u1/K_sub[3] (key_sel3)                   0.00       1.06 f
+  u0/K_sub[3] (crp)                        0.00       1.06 f
+  u0/U48/Y (XOR2X1_RVT)                    0.20 &     1.25 r
+  u0/u0/addr[3] (sbox1)                    0.00       1.25 r
+  u0/u0/U84/Y (INVX0_RVT)                  0.04 &     1.30 f
+  u0/u0/U83/Y (AND2X1_RVT)                 0.08 &     1.38 f
+  u0/u0/U20/Y (AND2X1_RVT)                 0.07 &     1.45 f
+  u0/u0/U71/Y (AOI21X1_RVT)                0.10 &     1.54 r
+  u0/u0/U12/Y (NAND3X0_RVT)                0.07 &     1.62 f
+  u0/u0/U78/Y (AOI222X1_RVT)               0.17 &     1.79 r
+  u0/u0/U81/Y (AND3X1_RVT)                 0.08 &     1.87 r
+  u0/u0/U80/Y (OA221X1_RVT)                0.08 &     1.95 r
+  u0/u0/U21/Y (NAND3X0_RVT)                0.19 &     2.14 f
+  u0/u0/dout[2] (sbox1)                    0.00       2.14 f
+  u0/P[17] (crp)                           0.00       2.14 f
+  U136/Y (XOR2X1_RVT)                      0.23 &     2.37 r
+  FP_R_reg[17]/D (DFFX1_RVT)               0.00 &     2.37 r
+  data arrival time                                   2.37
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  FP_R_reg[17]/CLK (DFFX1_RVT)             0.00       9.80 r
+  library setup time                      -0.09       9.71
+  data required time                                  9.71
+  -----------------------------------------------------------
+  data required time                                  9.71
+  data arrival time                                  -2.37
+  -----------------------------------------------------------
+  slack (MET)                                         7.34
+
+
+  Startpoint: roundSel[5]
+              (input port clocked by clk)
+  Endpoint: R_reg[10] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 f
+  roundSel[5] (in)                         0.00 @     0.01 f
+  u1/roundSel[5] (key_sel3)                0.00       0.01 f
+  u1/U119/Y (INVX0_RVT)                    0.02 @     0.03 r
+  u1/U98/Y (NAND2X0_RVT)                   0.09 &     0.12 f
+  u1/U686/Y (XOR2X1_RVT)                   0.24 &     0.36 r
+  u1/U15/Y (INVX1_RVT)                     0.14 &     0.50 f
+  u1/U309/Y (AO22X1_RVT)                   0.17 &     0.67 f
+  u1/U74/Y (INVX8_RVT)                     0.06 c     0.74 r
+  u1/U56/Y (OA22X1_RVT)                    0.10 c     0.84 r
+  u1/U689/Y (OA221X1_RVT)                  0.08 &     0.92 r
+  u1/U99/Y (AND2X1_RVT)                    0.07 &     0.99 r
+  u1/U110/Y (NAND3X0_RVT)                  0.12 &     1.10 f
+  u1/K_sub[22] (key_sel3)                  0.00       1.10 f
+  u0/K_sub[22] (crp)                       0.00       1.10 f
+  u0/U7/Y (XOR2X1_RVT)                     0.23 &     1.33 r
+  u0/u3/addr[4] (sbox4)                    0.00       1.33 r
+  u0/u3/U92/Y (INVX0_RVT)                  0.04 &     1.38 f
+  u0/u3/U99/Y (NAND2X0_RVT)                0.10 &     1.48 r
+  u0/u3/U94/Y (NBUFFX2_RVT)                0.08 &     1.56 r
+  u0/u3/U39/Y (INVX0_RVT)                  0.04 &     1.61 f
+  u0/u3/U17/Y (NOR2X0_RVT)                 0.10 &     1.71 r
+  u0/u3/U103/Y (NAND2X0_RVT)               0.06 &     1.76 f
+  u0/u3/U102/Y (INVX0_RVT)                 0.05 &     1.81 r
+  u0/u3/U101/Y (OA221X1_RVT)               0.10 &     1.91 r
+  u0/u3/U91/Y (OA221X1_RVT)                0.08 &     1.99 r
+  u0/u3/U25/Y (NAND3X0_RVT)                0.14 &     2.13 f
+  u0/u3/dout[3] (sbox4)                    0.00       2.13 f
+  u0/P[10] (crp)                           0.00       2.13 f
+  U119/Y (XOR2X1_RVT)                      0.22 &     2.35 f
+  R_reg[10]/D (DFFX1_RVT)                  0.00 &     2.35 f
+  data arrival time                                   2.35
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  R_reg[10]/CLK (DFFX1_RVT)                0.00       9.80 r
+  library setup time                      -0.08       9.72
+  data required time                                  9.72
+  -----------------------------------------------------------
+  data required time                                  9.72
+  data arrival time                                  -2.35
+  -----------------------------------------------------------
+  slack (MET)                                         7.37
+
+
+  Startpoint: roundSel[5]
+              (input port clocked by clk)
+  Endpoint: FP_R_reg[10]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 f
+  roundSel[5] (in)                         0.00 @     0.01 f
+  u1/roundSel[5] (key_sel3)                0.00       0.01 f
+  u1/U119/Y (INVX0_RVT)                    0.02 @     0.03 r
+  u1/U98/Y (NAND2X0_RVT)                   0.09 &     0.12 f
+  u1/U686/Y (XOR2X1_RVT)                   0.24 &     0.36 r
+  u1/U15/Y (INVX1_RVT)                     0.14 &     0.50 f
+  u1/U309/Y (AO22X1_RVT)                   0.17 &     0.67 f
+  u1/U74/Y (INVX8_RVT)                     0.06 c     0.74 r
+  u1/U56/Y (OA22X1_RVT)                    0.10 c     0.84 r
+  u1/U689/Y (OA221X1_RVT)                  0.08 &     0.92 r
+  u1/U99/Y (AND2X1_RVT)                    0.07 &     0.99 r
+  u1/U110/Y (NAND3X0_RVT)                  0.12 &     1.10 f
+  u1/K_sub[22] (key_sel3)                  0.00       1.10 f
+  u0/K_sub[22] (crp)                       0.00       1.10 f
+  u0/U7/Y (XOR2X1_RVT)                     0.23 &     1.33 r
+  u0/u3/addr[4] (sbox4)                    0.00       1.33 r
+  u0/u3/U92/Y (INVX0_RVT)                  0.04 &     1.38 f
+  u0/u3/U99/Y (NAND2X0_RVT)                0.10 &     1.48 r
+  u0/u3/U94/Y (NBUFFX2_RVT)                0.08 &     1.56 r
+  u0/u3/U39/Y (INVX0_RVT)                  0.04 &     1.61 f
+  u0/u3/U17/Y (NOR2X0_RVT)                 0.10 &     1.71 r
+  u0/u3/U103/Y (NAND2X0_RVT)               0.06 &     1.76 f
+  u0/u3/U102/Y (INVX0_RVT)                 0.05 &     1.81 r
+  u0/u3/U101/Y (OA221X1_RVT)               0.10 &     1.91 r
+  u0/u3/U91/Y (OA221X1_RVT)                0.08 &     1.99 r
+  u0/u3/U25/Y (NAND3X0_RVT)                0.14 &     2.13 f
+  u0/u3/dout[3] (sbox4)                    0.00       2.13 f
+  u0/P[10] (crp)                           0.00       2.13 f
+  U119/Y (XOR2X1_RVT)                      0.22 &     2.35 f
+  FP_R_reg[10]/D (DFFX1_RVT)               0.00 &     2.35 f
+  data arrival time                                   2.35
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  FP_R_reg[10]/CLK (DFFX1_RVT)             0.00       9.80 r
+  library setup time                      -0.08       9.72
+  data required time                                  9.72
+  -----------------------------------------------------------
+  data required time                                  9.72
+  data arrival time                                  -2.35
+  -----------------------------------------------------------
+  slack (MET)                                         7.37
+
+
+  Startpoint: roundSel[5]
+              (input port clocked by clk)
+  Endpoint: R_reg[20] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 r
+  roundSel[5] (in)                         0.00 @     0.01 r
+  u1/roundSel[5] (key_sel3)                0.00       0.01 r
+  u1/U119/Y (INVX0_RVT)                    0.02 @     0.03 f
+  u1/U98/Y (NAND2X0_RVT)                   0.09 &     0.12 r
+  u1/U686/Y (XOR2X1_RVT)                   0.24 &     0.36 f
+  u1/U15/Y (INVX1_RVT)                     0.15 &     0.52 r
+  u1/U307/Y (AO22X1_RVT)                   0.16 &     0.67 r
+  u1/U122/Y (INVX8_RVT)                    0.06 c     0.73 f
+  u1/U181/Y (OA22X1_RVT)                   0.13 c     0.86 f
+  u1/U116/Y (OAI221X1_RVT)                 0.11 &     0.97 r
+  u1/U114/Y (NOR2X0_RVT)                   0.08 &     1.05 f
+  u1/U113/Y (AND2X1_RVT)                   0.05 &     1.10 f
+  u1/U112/Y (NAND2X0_RVT)                  0.10 &     1.20 r
+  u1/K_sub[23] (key_sel3)                  0.00       1.20 r
+  u0/K_sub[23] (crp)                       0.00       1.20 r
+  u0/U8/Y (XOR2X1_RVT)                     0.15 &     1.35 f
+  u0/u3/addr[5] (sbox4)                    0.00       1.35 f
+  u0/u3/U108/Y (INVX0_RVT)                 0.05 &     1.40 r
+  u0/u3/U4/Y (NAND2X2_RVT)                 0.09 &     1.50 f
+  u0/u3/U107/Y (NAND2X0_RVT)               0.07 &     1.57 r
+  u0/u3/U31/Y (INVX1_RVT)                  0.06 &     1.63 f
+  u0/u3/U88/Y (OA222X1_RVT)                0.15 &     1.77 f
+  u0/u3/U30/Y (AND3X1_RVT)                 0.10 &     1.87 f
+  u0/u3/U27/Y (NAND2X0_RVT)                0.05 &     1.92 r
+  u0/u3/U100/Y (AOI221X1_RVT)              0.11 &     2.03 f
+  u0/u3/U19/Y (NAND2X0_RVT)                0.12 &     2.15 r
+  u0/u3/dout[2] (sbox4)                    0.00       2.15 r
+  u0/P[20] (crp)                           0.00       2.15 r
+  U139/Y (XOR2X1_RVT)                      0.19 &     2.34 f
+  R_reg[20]/D (DFFX1_RVT)                  0.00 &     2.34 f
+  data arrival time                                   2.34
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  R_reg[20]/CLK (DFFX1_RVT)                0.00       9.80 r
+  library setup time                      -0.09       9.71
+  data required time                                  9.71
+  -----------------------------------------------------------
+  data required time                                  9.71
+  data arrival time                                  -2.34
+  -----------------------------------------------------------
+  slack (MET)                                         7.38
+
+
+  Startpoint: roundSel[5]
+              (input port clocked by clk)
+  Endpoint: FP_R_reg[20]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 r
+  roundSel[5] (in)                         0.00 @     0.01 r
+  u1/roundSel[5] (key_sel3)                0.00       0.01 r
+  u1/U119/Y (INVX0_RVT)                    0.02 @     0.03 f
+  u1/U98/Y (NAND2X0_RVT)                   0.09 &     0.12 r
+  u1/U686/Y (XOR2X1_RVT)                   0.24 &     0.36 f
+  u1/U15/Y (INVX1_RVT)                     0.15 &     0.52 r
+  u1/U307/Y (AO22X1_RVT)                   0.16 &     0.67 r
+  u1/U122/Y (INVX8_RVT)                    0.06 c     0.73 f
+  u1/U181/Y (OA22X1_RVT)                   0.13 c     0.86 f
+  u1/U116/Y (OAI221X1_RVT)                 0.11 &     0.97 r
+  u1/U114/Y (NOR2X0_RVT)                   0.08 &     1.05 f
+  u1/U113/Y (AND2X1_RVT)                   0.05 &     1.10 f
+  u1/U112/Y (NAND2X0_RVT)                  0.10 &     1.20 r
+  u1/K_sub[23] (key_sel3)                  0.00       1.20 r
+  u0/K_sub[23] (crp)                       0.00       1.20 r
+  u0/U8/Y (XOR2X1_RVT)                     0.15 &     1.35 f
+  u0/u3/addr[5] (sbox4)                    0.00       1.35 f
+  u0/u3/U108/Y (INVX0_RVT)                 0.05 &     1.40 r
+  u0/u3/U4/Y (NAND2X2_RVT)                 0.09 &     1.50 f
+  u0/u3/U107/Y (NAND2X0_RVT)               0.07 &     1.57 r
+  u0/u3/U31/Y (INVX1_RVT)                  0.06 &     1.63 f
+  u0/u3/U88/Y (OA222X1_RVT)                0.15 &     1.77 f
+  u0/u3/U30/Y (AND3X1_RVT)                 0.10 &     1.87 f
+  u0/u3/U27/Y (NAND2X0_RVT)                0.05 &     1.92 r
+  u0/u3/U100/Y (AOI221X1_RVT)              0.11 &     2.03 f
+  u0/u3/U19/Y (NAND2X0_RVT)                0.12 &     2.15 r
+  u0/u3/dout[2] (sbox4)                    0.00       2.15 r
+  u0/P[20] (crp)                           0.00       2.15 r
+  U139/Y (XOR2X1_RVT)                      0.19 &     2.34 f
+  FP_R_reg[20]/D (DFFX1_RVT)               0.00 &     2.34 f
+  data arrival time                                   2.34
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  FP_R_reg[20]/CLK (DFFX1_RVT)             0.00       9.80 r
+  library setup time                      -0.09       9.71
+  data required time                                  9.71
+  -----------------------------------------------------------
+  data required time                                  9.71
+  data arrival time                                  -2.34
+  -----------------------------------------------------------
+  slack (MET)                                         7.38
+
+
+  Startpoint: roundSel[5]
+              (input port clocked by clk)
+  Endpoint: R_reg[8] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 f
+  roundSel[5] (in)                         0.00 @     0.01 f
+  u1/roundSel[5] (key_sel3)                0.00       0.01 f
+  u1/U119/Y (INVX0_RVT)                    0.02 @     0.03 r
+  u1/U98/Y (NAND2X0_RVT)                   0.09 &     0.12 f
+  u1/U686/Y (XOR2X1_RVT)                   0.24 &     0.36 r
+  u1/U15/Y (INVX1_RVT)                     0.14 &     0.50 f
+  u1/U307/Y (AO22X1_RVT)                   0.17 &     0.67 f
+  u1/U122/Y (INVX8_RVT)                    0.07 c     0.74 r
+  u1/U293/Y (OA22X1_RVT)                   0.11 c     0.85 r
+  u1/U614/Y (OA221X1_RVT)                  0.09 &     0.93 r
+  u1/U613/Y (NAND4X0_RVT)                  0.15 &     1.08 f
+  u1/K_sub[28] (key_sel3)                  0.00       1.08 f
+  u0/K_sub[28] (crp)                       0.00       1.08 f
+  u0/U43/Y (XOR2X1_RVT)                    0.20 &     1.28 r
+  u0/u4/addr[4] (sbox5)                    0.00       1.28 r
+  u0/u4/U84/Y (INVX0_RVT)                  0.04 &     1.32 f
+  u0/u4/U61/Y (NAND2X0_RVT)                0.10 &     1.42 r
+  u0/u4/U50/Y (NAND2X0_RVT)                0.14 &     1.56 f
+  u0/u4/U15/Y (INVX0_RVT)                  0.08 &     1.64 r
+  u0/u4/U3/Y (OA222X1_RVT)                 0.12 &     1.76 r
+  u0/u4/U102/Y (OA221X1_RVT)               0.09 &     1.85 r
+  u0/u4/U96/Y (NAND4X0_RVT)                0.21 &     2.05 f
+  u0/u4/dout[1] (sbox5)                    0.00       2.05 f
+  u0/P[8] (crp)                            0.00       2.05 f
+  U117/Y (XOR2X1_RVT)                      0.27 &     2.32 f
+  R_reg[8]/D (DFFX1_RVT)                   0.00 &     2.32 f
+  data arrival time                                   2.32
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  R_reg[8]/CLK (DFFX1_RVT)                 0.00       9.80 r
+  library setup time                      -0.08       9.72
+  data required time                                  9.72
+  -----------------------------------------------------------
+  data required time                                  9.72
+  data arrival time                                  -2.32
+  -----------------------------------------------------------
+  slack (MET)                                         7.40
+
+
+  Startpoint: roundSel[5]
+              (input port clocked by clk)
+  Endpoint: FP_R_reg[8]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 f
+  roundSel[5] (in)                         0.00 @     0.01 f
+  u1/roundSel[5] (key_sel3)                0.00       0.01 f
+  u1/U119/Y (INVX0_RVT)                    0.02 @     0.03 r
+  u1/U98/Y (NAND2X0_RVT)                   0.09 &     0.12 f
+  u1/U686/Y (XOR2X1_RVT)                   0.24 &     0.36 r
+  u1/U15/Y (INVX1_RVT)                     0.14 &     0.50 f
+  u1/U307/Y (AO22X1_RVT)                   0.17 &     0.67 f
+  u1/U122/Y (INVX8_RVT)                    0.07 c     0.74 r
+  u1/U293/Y (OA22X1_RVT)                   0.11 c     0.85 r
+  u1/U614/Y (OA221X1_RVT)                  0.09 &     0.93 r
+  u1/U613/Y (NAND4X0_RVT)                  0.15 &     1.08 f
+  u1/K_sub[28] (key_sel3)                  0.00       1.08 f
+  u0/K_sub[28] (crp)                       0.00       1.08 f
+  u0/U43/Y (XOR2X1_RVT)                    0.20 &     1.28 r
+  u0/u4/addr[4] (sbox5)                    0.00       1.28 r
+  u0/u4/U84/Y (INVX0_RVT)                  0.04 &     1.32 f
+  u0/u4/U61/Y (NAND2X0_RVT)                0.10 &     1.42 r
+  u0/u4/U50/Y (NAND2X0_RVT)                0.14 &     1.56 f
+  u0/u4/U15/Y (INVX0_RVT)                  0.08 &     1.64 r
+  u0/u4/U3/Y (OA222X1_RVT)                 0.12 &     1.76 r
+  u0/u4/U102/Y (OA221X1_RVT)               0.09 &     1.85 r
+  u0/u4/U96/Y (NAND4X0_RVT)                0.21 &     2.05 f
+  u0/u4/dout[1] (sbox5)                    0.00       2.05 f
+  u0/P[8] (crp)                            0.00       2.05 f
+  U117/Y (XOR2X1_RVT)                      0.27 &     2.32 f
+  FP_R_reg[8]/D (DFFX1_RVT)                0.00 &     2.32 f
+  data arrival time                                   2.32
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  FP_R_reg[8]/CLK (DFFX1_RVT)              0.00       9.80 r
+  library setup time                      -0.08       9.72
+  data required time                                  9.72
+  -----------------------------------------------------------
+  data required time                                  9.72
+  data arrival time                                  -2.32
+  -----------------------------------------------------------
+  slack (MET)                                         7.40
+
+
+  Startpoint: roundSel[5]
+              (input port clocked by clk)
+  Endpoint: R_reg[9] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 f
+  roundSel[5] (in)                         0.00 @     0.01 f
+  u1/roundSel[5] (key_sel3)                0.00       0.01 f
+  u1/U119/Y (INVX0_RVT)                    0.02 @     0.03 r
+  u1/U98/Y (NAND2X0_RVT)                   0.09 &     0.12 f
+  u1/U686/Y (XOR2X1_RVT)                   0.24 &     0.36 r
+  u1/U15/Y (INVX1_RVT)                     0.14 &     0.50 f
+  u1/U308/Y (AO22X1_RVT)                   0.17 &     0.67 f
+  u1/U123/Y (INVX8_RVT)                    0.07 c     0.74 r
+  u1/U267/Y (OA22X2_RVT)                   0.11 c     0.84 r
+  u1/U668/Y (OA221X1_RVT)                  0.09 &     0.93 r
+  u1/U593/Y (NAND4X0_RVT)                  0.14 &     1.07 f
+  u1/K_sub[1] (key_sel3)                   0.00       1.07 f
+  u0/K_sub[1] (crp)                        0.00       1.07 f
+  u0/U40/Y (XOR2X1_RVT)                    0.20 &     1.27 r
+  u0/u0/addr[1] (sbox1)                    0.00       1.27 r
+  u0/u0/U60/Y (INVX0_RVT)                  0.04 &     1.32 f
+  u0/u0/U61/Y (AND2X1_RVT)                 0.08 &     1.40 f
+  u0/u0/U44/Y (NAND2X0_RVT)                0.08 &     1.47 r
+  u0/u0/U27/Y (AND2X1_RVT)                 0.09 &     1.56 r
+  u0/u0/U13/Y (NAND3X0_RVT)                0.06 &     1.63 f
+  u0/u0/U70/Y (NAND2X0_RVT)                0.07 &     1.69 r
+  u0/u0/U43/Y (AND4X1_RVT)                 0.12 &     1.81 r
+  u0/u0/U64/Y (NAND4X0_RVT)                0.20 &     2.01 f
+  u0/u0/dout[1] (sbox1)                    0.00       2.01 f
+  u0/P[9] (crp)                            0.00       2.01 f
+  U118/Y (XOR2X1_RVT)                      0.29 &     2.30 f
+  R_reg[9]/D (DFFX1_RVT)                   0.00 &     2.30 f
+  data arrival time                                   2.30
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  R_reg[9]/CLK (DFFX1_RVT)                 0.00       9.80 r
+  library setup time                      -0.09       9.71
+  data required time                                  9.71
+  -----------------------------------------------------------
+  data required time                                  9.71
+  data arrival time                                  -2.30
+  -----------------------------------------------------------
+  slack (MET)                                         7.40
+
+
+  Startpoint: roundSel[5]
+              (input port clocked by clk)
+  Endpoint: FP_R_reg[9]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 f
+  roundSel[5] (in)                         0.00 @     0.01 f
+  u1/roundSel[5] (key_sel3)                0.00       0.01 f
+  u1/U119/Y (INVX0_RVT)                    0.02 @     0.03 r
+  u1/U98/Y (NAND2X0_RVT)                   0.09 &     0.12 f
+  u1/U686/Y (XOR2X1_RVT)                   0.24 &     0.36 r
+  u1/U15/Y (INVX1_RVT)                     0.14 &     0.50 f
+  u1/U308/Y (AO22X1_RVT)                   0.17 &     0.67 f
+  u1/U123/Y (INVX8_RVT)                    0.07 c     0.74 r
+  u1/U267/Y (OA22X2_RVT)                   0.11 c     0.84 r
+  u1/U668/Y (OA221X1_RVT)                  0.09 &     0.93 r
+  u1/U593/Y (NAND4X0_RVT)                  0.14 &     1.07 f
+  u1/K_sub[1] (key_sel3)                   0.00       1.07 f
+  u0/K_sub[1] (crp)                        0.00       1.07 f
+  u0/U40/Y (XOR2X1_RVT)                    0.20 &     1.27 r
+  u0/u0/addr[1] (sbox1)                    0.00       1.27 r
+  u0/u0/U60/Y (INVX0_RVT)                  0.04 &     1.32 f
+  u0/u0/U61/Y (AND2X1_RVT)                 0.08 &     1.40 f
+  u0/u0/U44/Y (NAND2X0_RVT)                0.08 &     1.47 r
+  u0/u0/U27/Y (AND2X1_RVT)                 0.09 &     1.56 r
+  u0/u0/U13/Y (NAND3X0_RVT)                0.06 &     1.63 f
+  u0/u0/U70/Y (NAND2X0_RVT)                0.07 &     1.69 r
+  u0/u0/U43/Y (AND4X1_RVT)                 0.12 &     1.81 r
+  u0/u0/U64/Y (NAND4X0_RVT)                0.20 &     2.01 f
+  u0/u0/dout[1] (sbox1)                    0.00       2.01 f
+  u0/P[9] (crp)                            0.00       2.01 f
+  U118/Y (XOR2X1_RVT)                      0.29 &     2.30 f
+  FP_R_reg[9]/D (DFFX1_RVT)                0.00 &     2.30 f
+  data arrival time                                   2.30
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  FP_R_reg[9]/CLK (DFFX1_RVT)              0.00       9.80 r
+  library setup time                      -0.09       9.71
+  data required time                                  9.71
+  -----------------------------------------------------------
+  data required time                                  9.71
+  data arrival time                                  -2.30
+  -----------------------------------------------------------
+  slack (MET)                                         7.40
+
+
+1

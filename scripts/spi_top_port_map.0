@@ -1,0 +1,10 @@
+set_user_match   -inverted   $svf_ref/spi_top/shift/sub_82/B[0]   $svf_impl/spi_top/shift/sub_82/B[0]
+set_user_match   -inverted   $svf_ref/spi_top/clgen/enable   $svf_impl/spi_top/clgen/enable
+guide_constraints -body { clgen } -equivalent { clgen/enable  ~ clgen/IN0 }
+set_user_match   -inverted   $svf_ref/spi_top/clgen/rst   $svf_impl/spi_top/clgen/rst
+set_user_match   -inverted   $svf_ref/spi_top/shift/rst   $svf_impl/spi_top/shift/rst
+guide_constraints -body { shift } -equivalent { shift/rst  ~ shift/IN0 ~ shift/IN1 ~ shift/IN2 ~ shift/IN3 }
+guide_constraints -body { clgen } -equivalent { clgen/rst  ~ clgen/IN1 }
+
+#-------------------------------------------------------------------
+

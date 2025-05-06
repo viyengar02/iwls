@@ -1,0 +1,504 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 10
+Design : spi_top
+Version: W-2024.09-SP2
+Date   : Tue May  6 09:33:32 2025
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+Operating Conditions: ss0p95v125c   Library: saed32rvt_ss0p95v125c
+	Parasitic source    : LPE
+	Parasitic mode      : RealRC
+	Extraction mode     : MAX
+	Extraction derating : 125/125/125
+
+Information: Percent of Arnoldi-based delays = 23.23%
+
+Information: Percent of CCS-based delays = 13.98%
+
+  Startpoint: ctrl_reg[9]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: shift/data_reg[50]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ctrl_reg[9]/CLK (DFFARX1_RVT)                           0.00       0.00 r
+  ctrl_reg[9]/Q (DFFARX1_RVT)                             0.26       0.26 r
+  shift/rx_negedge (spi_shift)                            0.00       0.26 r
+  shift/U8/Y (INVX1_RVT)                                  0.11 &     0.38 f
+  shift/U536/Y (AO22X1_RVT)                               0.13 &     0.51 f
+  shift/sub_83/B[0] (spi_shift_DW01_sub_0)                0.00       0.51 f
+  shift/sub_83/U7/Y (INVX1_RVT)                           0.04 &     0.54 r
+  shift/sub_83/U2_0/CO (FADDX1_RVT)                       0.10 &     0.65 r
+  shift/sub_83/U2_1/CO (FADDX1_RVT)                       0.11 &     0.76 r
+  shift/sub_83/U2_2/CO (FADDX1_RVT)                       0.11 &     0.87 r
+  shift/sub_83/U2_3/CO (FADDX1_RVT)                       0.10 &     0.97 r
+  shift/sub_83/U2_4/CO (FADDX1_RVT)                       0.11 &     1.08 r
+  shift/sub_83/U2_5/CO (FADDX1_RVT)                       0.11 &     1.18 r
+  shift/sub_83/U2_6/Y (XOR3X1_RVT)                        0.08 &     1.27 r
+  shift/sub_83/DIFF[6] (spi_shift_DW01_sub_0)             0.00       1.27 r
+  shift/U539/Y (AO222X1_RVT)                              0.13 &     1.39 r
+  shift/U538/Y (INVX0_RVT)                                0.06 &     1.45 f
+  shift/U15/Y (AND4X1_RVT)                                0.21 &     1.66 f
+  shift/U315/Y (AO21X1_RVT)                               0.16 &     1.82 f
+  shift/U804/Y (INVX0_RVT)                                0.04 &     1.86 r
+  shift/U598/Y (AO22X1_RVT)                               0.08 &     1.94 r
+  shift/data_reg[50]/D (DFFARX1_RVT)                      0.00 &     1.94 r
+  data arrival time                                                  1.94
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  shift/data_reg[50]/CLK (DFFARX1_RVT)                    0.00       9.80 r
+  library setup time                                     -0.07       9.73
+  data required time                                                 9.73
+  --------------------------------------------------------------------------
+  data required time                                                 9.73
+  data arrival time                                                 -1.94
+  --------------------------------------------------------------------------
+  slack (MET)                                                        7.79
+
+
+  Startpoint: ctrl_reg[9]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: shift/data_reg[59]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ctrl_reg[9]/CLK (DFFARX1_RVT)                           0.00       0.00 r
+  ctrl_reg[9]/Q (DFFARX1_RVT)                             0.26       0.26 r
+  shift/rx_negedge (spi_shift)                            0.00       0.26 r
+  shift/U8/Y (INVX1_RVT)                                  0.11 &     0.38 f
+  shift/U536/Y (AO22X1_RVT)                               0.13 &     0.51 f
+  shift/sub_83/B[0] (spi_shift_DW01_sub_0)                0.00       0.51 f
+  shift/sub_83/U7/Y (INVX1_RVT)                           0.04 &     0.54 r
+  shift/sub_83/U2_0/CO (FADDX1_RVT)                       0.10 &     0.65 r
+  shift/sub_83/U2_1/CO (FADDX1_RVT)                       0.11 &     0.76 r
+  shift/sub_83/U2_2/CO (FADDX1_RVT)                       0.11 &     0.87 r
+  shift/sub_83/U2_3/CO (FADDX1_RVT)                       0.10 &     0.97 r
+  shift/sub_83/U2_4/CO (FADDX1_RVT)                       0.11 &     1.08 r
+  shift/sub_83/U2_5/CO (FADDX1_RVT)                       0.11 &     1.18 r
+  shift/sub_83/U2_6/Y (XOR3X1_RVT)                        0.08 &     1.27 r
+  shift/sub_83/DIFF[6] (spi_shift_DW01_sub_0)             0.00       1.27 r
+  shift/U539/Y (AO222X1_RVT)                              0.13 &     1.39 r
+  shift/U538/Y (INVX0_RVT)                                0.06 &     1.45 f
+  shift/U15/Y (AND4X1_RVT)                                0.21 &     1.66 f
+  shift/U324/Y (AO21X1_RVT)                               0.15 &     1.81 f
+  shift/U770/Y (INVX0_RVT)                                0.04 &     1.85 r
+  shift/U769/Y (AO22X1_RVT)                               0.09 &     1.94 r
+  shift/data_reg[59]/D (DFFARX1_RVT)                      0.00 &     1.94 r
+  data arrival time                                                  1.94
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  shift/data_reg[59]/CLK (DFFARX1_RVT)                    0.00       9.80 r
+  library setup time                                     -0.07       9.73
+  data required time                                                 9.73
+  --------------------------------------------------------------------------
+  data required time                                                 9.73
+  data arrival time                                                 -1.94
+  --------------------------------------------------------------------------
+  slack (MET)                                                        7.80
+
+
+  Startpoint: ctrl_reg[9]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: shift/data_reg[48]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ctrl_reg[9]/CLK (DFFARX1_RVT)                           0.00       0.00 r
+  ctrl_reg[9]/Q (DFFARX1_RVT)                             0.26       0.26 r
+  shift/rx_negedge (spi_shift)                            0.00       0.26 r
+  shift/U8/Y (INVX1_RVT)                                  0.11 &     0.38 f
+  shift/U536/Y (AO22X1_RVT)                               0.13 &     0.51 f
+  shift/sub_83/B[0] (spi_shift_DW01_sub_0)                0.00       0.51 f
+  shift/sub_83/U7/Y (INVX1_RVT)                           0.04 &     0.54 r
+  shift/sub_83/U2_0/CO (FADDX1_RVT)                       0.10 &     0.65 r
+  shift/sub_83/U2_1/CO (FADDX1_RVT)                       0.11 &     0.76 r
+  shift/sub_83/U2_2/CO (FADDX1_RVT)                       0.11 &     0.87 r
+  shift/sub_83/U2_3/CO (FADDX1_RVT)                       0.10 &     0.97 r
+  shift/sub_83/U2_4/CO (FADDX1_RVT)                       0.11 &     1.08 r
+  shift/sub_83/U2_5/CO (FADDX1_RVT)                       0.11 &     1.18 r
+  shift/sub_83/U2_6/Y (XOR3X1_RVT)                        0.08 &     1.27 r
+  shift/sub_83/DIFF[6] (spi_shift_DW01_sub_0)             0.00       1.27 r
+  shift/U539/Y (AO222X1_RVT)                              0.13 &     1.39 r
+  shift/U538/Y (INVX0_RVT)                                0.06 &     1.45 f
+  shift/U15/Y (AND4X1_RVT)                                0.21 &     1.66 f
+  shift/U313/Y (AO21X1_RVT)                               0.15 &     1.81 f
+  shift/U807/Y (INVX0_RVT)                                0.03 &     1.85 r
+  shift/U599/Y (AO22X1_RVT)                               0.09 &     1.93 r
+  shift/data_reg[48]/D (DFFARX1_RVT)                      0.00 &     1.93 r
+  data arrival time                                                  1.93
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  shift/data_reg[48]/CLK (DFFARX1_RVT)                    0.00       9.80 r
+  library setup time                                     -0.07       9.73
+  data required time                                                 9.73
+  --------------------------------------------------------------------------
+  data required time                                                 9.73
+  data arrival time                                                 -1.93
+  --------------------------------------------------------------------------
+  slack (MET)                                                        7.80
+
+
+  Startpoint: ctrl_reg[9]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: shift/data_reg[53]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ctrl_reg[9]/CLK (DFFARX1_RVT)                           0.00       0.00 r
+  ctrl_reg[9]/Q (DFFARX1_RVT)                             0.26       0.26 r
+  shift/rx_negedge (spi_shift)                            0.00       0.26 r
+  shift/U8/Y (INVX1_RVT)                                  0.11 &     0.38 f
+  shift/U536/Y (AO22X1_RVT)                               0.13 &     0.51 f
+  shift/sub_83/B[0] (spi_shift_DW01_sub_0)                0.00       0.51 f
+  shift/sub_83/U7/Y (INVX1_RVT)                           0.04 &     0.54 r
+  shift/sub_83/U2_0/CO (FADDX1_RVT)                       0.10 &     0.65 r
+  shift/sub_83/U2_1/CO (FADDX1_RVT)                       0.11 &     0.76 r
+  shift/sub_83/U2_2/CO (FADDX1_RVT)                       0.11 &     0.87 r
+  shift/sub_83/U2_3/CO (FADDX1_RVT)                       0.10 &     0.97 r
+  shift/sub_83/U2_4/CO (FADDX1_RVT)                       0.11 &     1.08 r
+  shift/sub_83/U2_5/CO (FADDX1_RVT)                       0.11 &     1.18 r
+  shift/sub_83/U2_6/Y (XOR3X1_RVT)                        0.08 &     1.27 r
+  shift/sub_83/DIFF[6] (spi_shift_DW01_sub_0)             0.00       1.27 r
+  shift/U539/Y (AO222X1_RVT)                              0.13 &     1.39 r
+  shift/U538/Y (INVX0_RVT)                                0.06 &     1.45 f
+  shift/U15/Y (AND4X1_RVT)                                0.21 &     1.66 f
+  shift/U319/Y (AO21X1_RVT)                               0.15 &     1.81 f
+  shift/U809/Y (INVX0_RVT)                                0.03 &     1.84 r
+  shift/U808/Y (AO22X1_RVT)                               0.09 &     1.93 r
+  shift/data_reg[53]/D (DFFARX1_RVT)                      0.00 &     1.93 r
+  data arrival time                                                  1.93
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  shift/data_reg[53]/CLK (DFFARX1_RVT)                    0.00       9.80 r
+  library setup time                                     -0.07       9.73
+  data required time                                                 9.73
+  --------------------------------------------------------------------------
+  data required time                                                 9.73
+  data arrival time                                                 -1.93
+  --------------------------------------------------------------------------
+  slack (MET)                                                        7.80
+
+
+  Startpoint: ctrl_reg[9]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: shift/data_reg[54]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ctrl_reg[9]/CLK (DFFARX1_RVT)                           0.00       0.00 r
+  ctrl_reg[9]/Q (DFFARX1_RVT)                             0.26       0.26 r
+  shift/rx_negedge (spi_shift)                            0.00       0.26 r
+  shift/U8/Y (INVX1_RVT)                                  0.11 &     0.38 f
+  shift/U536/Y (AO22X1_RVT)                               0.13 &     0.51 f
+  shift/sub_83/B[0] (spi_shift_DW01_sub_0)                0.00       0.51 f
+  shift/sub_83/U7/Y (INVX1_RVT)                           0.04 &     0.54 r
+  shift/sub_83/U2_0/CO (FADDX1_RVT)                       0.10 &     0.65 r
+  shift/sub_83/U2_1/CO (FADDX1_RVT)                       0.11 &     0.76 r
+  shift/sub_83/U2_2/CO (FADDX1_RVT)                       0.11 &     0.87 r
+  shift/sub_83/U2_3/CO (FADDX1_RVT)                       0.10 &     0.97 r
+  shift/sub_83/U2_4/CO (FADDX1_RVT)                       0.11 &     1.08 r
+  shift/sub_83/U2_5/CO (FADDX1_RVT)                       0.11 &     1.18 r
+  shift/sub_83/U2_6/Y (XOR3X1_RVT)                        0.08 &     1.27 r
+  shift/sub_83/DIFF[6] (spi_shift_DW01_sub_0)             0.00       1.27 r
+  shift/U539/Y (AO222X1_RVT)                              0.13 &     1.39 r
+  shift/U538/Y (INVX0_RVT)                                0.06 &     1.45 f
+  shift/U15/Y (AND4X1_RVT)                                0.21 &     1.66 f
+  shift/U320/Y (AO21X1_RVT)                               0.15 &     1.81 f
+  shift/U813/Y (INVX0_RVT)                                0.03 &     1.84 r
+  shift/U601/Y (AO22X1_RVT)                               0.09 &     1.93 r
+  shift/data_reg[54]/D (DFFARX1_RVT)                      0.00 &     1.93 r
+  data arrival time                                                  1.93
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  shift/data_reg[54]/CLK (DFFARX1_RVT)                    0.00       9.80 r
+  library setup time                                     -0.07       9.73
+  data required time                                                 9.73
+  --------------------------------------------------------------------------
+  data required time                                                 9.73
+  data arrival time                                                 -1.93
+  --------------------------------------------------------------------------
+  slack (MET)                                                        7.80
+
+
+  Startpoint: ctrl_reg[9]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: shift/data_reg[51]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ctrl_reg[9]/CLK (DFFARX1_RVT)                           0.00       0.00 r
+  ctrl_reg[9]/Q (DFFARX1_RVT)                             0.26       0.26 r
+  shift/rx_negedge (spi_shift)                            0.00       0.26 r
+  shift/U8/Y (INVX1_RVT)                                  0.11 &     0.38 f
+  shift/U536/Y (AO22X1_RVT)                               0.13 &     0.51 f
+  shift/sub_83/B[0] (spi_shift_DW01_sub_0)                0.00       0.51 f
+  shift/sub_83/U7/Y (INVX1_RVT)                           0.04 &     0.54 r
+  shift/sub_83/U2_0/CO (FADDX1_RVT)                       0.10 &     0.65 r
+  shift/sub_83/U2_1/CO (FADDX1_RVT)                       0.11 &     0.76 r
+  shift/sub_83/U2_2/CO (FADDX1_RVT)                       0.11 &     0.87 r
+  shift/sub_83/U2_3/CO (FADDX1_RVT)                       0.10 &     0.97 r
+  shift/sub_83/U2_4/CO (FADDX1_RVT)                       0.11 &     1.08 r
+  shift/sub_83/U2_5/CO (FADDX1_RVT)                       0.11 &     1.18 r
+  shift/sub_83/U2_6/Y (XOR3X1_RVT)                        0.08 &     1.27 r
+  shift/sub_83/DIFF[6] (spi_shift_DW01_sub_0)             0.00       1.27 r
+  shift/U539/Y (AO222X1_RVT)                              0.13 &     1.39 r
+  shift/U538/Y (INVX0_RVT)                                0.06 &     1.45 f
+  shift/U15/Y (AND4X1_RVT)                                0.21 &     1.66 f
+  shift/U317/Y (AO21X1_RVT)                               0.15 &     1.81 f
+  shift/U812/Y (INVX0_RVT)                                0.03 &     1.84 r
+  shift/U811/Y (AO22X1_RVT)                               0.09 &     1.93 r
+  shift/data_reg[51]/D (DFFARX1_RVT)                      0.00 &     1.93 r
+  data arrival time                                                  1.93
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  shift/data_reg[51]/CLK (DFFARX1_RVT)                    0.00       9.80 r
+  library setup time                                     -0.07       9.73
+  data required time                                                 9.73
+  --------------------------------------------------------------------------
+  data required time                                                 9.73
+  data arrival time                                                 -1.93
+  --------------------------------------------------------------------------
+  slack (MET)                                                        7.80
+
+
+  Startpoint: ctrl_reg[9]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: shift/data_reg[58]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ctrl_reg[9]/CLK (DFFARX1_RVT)                           0.00       0.00 r
+  ctrl_reg[9]/Q (DFFARX1_RVT)                             0.26       0.26 r
+  shift/rx_negedge (spi_shift)                            0.00       0.26 r
+  shift/U8/Y (INVX1_RVT)                                  0.11 &     0.38 f
+  shift/U536/Y (AO22X1_RVT)                               0.13 &     0.51 f
+  shift/sub_83/B[0] (spi_shift_DW01_sub_0)                0.00       0.51 f
+  shift/sub_83/U7/Y (INVX1_RVT)                           0.04 &     0.54 r
+  shift/sub_83/U2_0/CO (FADDX1_RVT)                       0.10 &     0.65 r
+  shift/sub_83/U2_1/CO (FADDX1_RVT)                       0.11 &     0.76 r
+  shift/sub_83/U2_2/CO (FADDX1_RVT)                       0.11 &     0.87 r
+  shift/sub_83/U2_3/CO (FADDX1_RVT)                       0.10 &     0.97 r
+  shift/sub_83/U2_4/CO (FADDX1_RVT)                       0.11 &     1.08 r
+  shift/sub_83/U2_5/CO (FADDX1_RVT)                       0.11 &     1.18 r
+  shift/sub_83/U2_6/Y (XOR3X1_RVT)                        0.08 &     1.27 r
+  shift/sub_83/DIFF[6] (spi_shift_DW01_sub_0)             0.00       1.27 r
+  shift/U539/Y (AO222X1_RVT)                              0.13 &     1.39 r
+  shift/U538/Y (INVX0_RVT)                                0.06 &     1.45 f
+  shift/U15/Y (AND4X1_RVT)                                0.21 &     1.66 f
+  shift/U323/Y (AO21X1_RVT)                               0.16 &     1.81 f
+  shift/U782/Y (INVX0_RVT)                                0.03 &     1.85 r
+  shift/U781/Y (AO22X1_RVT)                               0.08 &     1.93 r
+  shift/data_reg[58]/D (DFFARX1_RVT)                      0.00 &     1.93 r
+  data arrival time                                                  1.93
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  shift/data_reg[58]/CLK (DFFARX1_RVT)                    0.00       9.80 r
+  library setup time                                     -0.07       9.73
+  data required time                                                 9.73
+  --------------------------------------------------------------------------
+  data required time                                                 9.73
+  data arrival time                                                 -1.93
+  --------------------------------------------------------------------------
+  slack (MET)                                                        7.80
+
+
+  Startpoint: ctrl_reg[9]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: shift/data_reg[57]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ctrl_reg[9]/CLK (DFFARX1_RVT)                           0.00       0.00 r
+  ctrl_reg[9]/Q (DFFARX1_RVT)                             0.26       0.26 r
+  shift/rx_negedge (spi_shift)                            0.00       0.26 r
+  shift/U8/Y (INVX1_RVT)                                  0.11 &     0.38 f
+  shift/U536/Y (AO22X1_RVT)                               0.13 &     0.51 f
+  shift/sub_83/B[0] (spi_shift_DW01_sub_0)                0.00       0.51 f
+  shift/sub_83/U7/Y (INVX1_RVT)                           0.04 &     0.54 r
+  shift/sub_83/U2_0/CO (FADDX1_RVT)                       0.10 &     0.65 r
+  shift/sub_83/U2_1/CO (FADDX1_RVT)                       0.11 &     0.76 r
+  shift/sub_83/U2_2/CO (FADDX1_RVT)                       0.11 &     0.87 r
+  shift/sub_83/U2_3/CO (FADDX1_RVT)                       0.10 &     0.97 r
+  shift/sub_83/U2_4/CO (FADDX1_RVT)                       0.11 &     1.08 r
+  shift/sub_83/U2_5/CO (FADDX1_RVT)                       0.11 &     1.18 r
+  shift/sub_83/U2_6/Y (XOR3X1_RVT)                        0.08 &     1.27 r
+  shift/sub_83/DIFF[6] (spi_shift_DW01_sub_0)             0.00       1.27 r
+  shift/U539/Y (AO222X1_RVT)                              0.13 &     1.39 r
+  shift/U538/Y (INVX0_RVT)                                0.06 &     1.45 f
+  shift/U15/Y (AND4X1_RVT)                                0.21 &     1.66 f
+  shift/U390/Y (AO21X1_RVT)                               0.15 &     1.81 f
+  shift/U783/Y (INVX0_RVT)                                0.03 &     1.84 r
+  shift/U595/Y (AO22X1_RVT)                               0.08 &     1.93 r
+  shift/data_reg[57]/D (DFFARX1_RVT)                      0.00 &     1.93 r
+  data arrival time                                                  1.93
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  shift/data_reg[57]/CLK (DFFARX1_RVT)                    0.00       9.80 r
+  library setup time                                     -0.07       9.73
+  data required time                                                 9.73
+  --------------------------------------------------------------------------
+  data required time                                                 9.73
+  data arrival time                                                 -1.93
+  --------------------------------------------------------------------------
+  slack (MET)                                                        7.81
+
+
+  Startpoint: ctrl_reg[9]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: shift/data_reg[42]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ctrl_reg[9]/CLK (DFFARX1_RVT)                           0.00       0.00 r
+  ctrl_reg[9]/Q (DFFARX1_RVT)                             0.26       0.26 r
+  shift/rx_negedge (spi_shift)                            0.00       0.26 r
+  shift/U8/Y (INVX1_RVT)                                  0.11 &     0.38 f
+  shift/U536/Y (AO22X1_RVT)                               0.13 &     0.51 f
+  shift/sub_83/B[0] (spi_shift_DW01_sub_0)                0.00       0.51 f
+  shift/sub_83/U7/Y (INVX1_RVT)                           0.04 &     0.54 r
+  shift/sub_83/U2_0/CO (FADDX1_RVT)                       0.10 &     0.65 r
+  shift/sub_83/U2_1/CO (FADDX1_RVT)                       0.11 &     0.76 r
+  shift/sub_83/U2_2/CO (FADDX1_RVT)                       0.11 &     0.87 r
+  shift/sub_83/U2_3/CO (FADDX1_RVT)                       0.10 &     0.97 r
+  shift/sub_83/U2_4/CO (FADDX1_RVT)                       0.11 &     1.08 r
+  shift/sub_83/U2_5/CO (FADDX1_RVT)                       0.11 &     1.18 r
+  shift/sub_83/U2_6/Y (XOR3X1_RVT)                        0.08 &     1.27 r
+  shift/sub_83/DIFF[6] (spi_shift_DW01_sub_0)             0.00       1.27 r
+  shift/U539/Y (AO222X1_RVT)                              0.13 &     1.39 r
+  shift/U538/Y (INVX0_RVT)                                0.06 &     1.45 f
+  shift/U68/Y (AND4X1_RVT)                                0.20 &     1.65 f
+  shift/U310/Y (AO21X1_RVT)                               0.15 &     1.80 f
+  shift/U800/Y (INVX0_RVT)                                0.04 &     1.84 r
+  shift/U799/Y (AO22X1_RVT)                               0.09 &     1.93 r
+  shift/data_reg[42]/D (DFFARX1_RVT)                      0.00 &     1.93 r
+  data arrival time                                                  1.93
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  shift/data_reg[42]/CLK (DFFARX1_RVT)                    0.00       9.80 r
+  library setup time                                     -0.07       9.73
+  data required time                                                 9.73
+  --------------------------------------------------------------------------
+  data required time                                                 9.73
+  data arrival time                                                 -1.93
+  --------------------------------------------------------------------------
+  slack (MET)                                                        7.81
+
+
+  Startpoint: ctrl_reg[9]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: shift/data_reg[43]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ctrl_reg[9]/CLK (DFFARX1_RVT)                           0.00       0.00 r
+  ctrl_reg[9]/Q (DFFARX1_RVT)                             0.26       0.26 r
+  shift/rx_negedge (spi_shift)                            0.00       0.26 r
+  shift/U8/Y (INVX1_RVT)                                  0.11 &     0.38 f
+  shift/U536/Y (AO22X1_RVT)                               0.13 &     0.51 f
+  shift/sub_83/B[0] (spi_shift_DW01_sub_0)                0.00       0.51 f
+  shift/sub_83/U7/Y (INVX1_RVT)                           0.04 &     0.54 r
+  shift/sub_83/U2_0/CO (FADDX1_RVT)                       0.10 &     0.65 r
+  shift/sub_83/U2_1/CO (FADDX1_RVT)                       0.11 &     0.76 r
+  shift/sub_83/U2_2/CO (FADDX1_RVT)                       0.11 &     0.87 r
+  shift/sub_83/U2_3/CO (FADDX1_RVT)                       0.10 &     0.97 r
+  shift/sub_83/U2_4/CO (FADDX1_RVT)                       0.11 &     1.08 r
+  shift/sub_83/U2_5/CO (FADDX1_RVT)                       0.11 &     1.18 r
+  shift/sub_83/U2_6/Y (XOR3X1_RVT)                        0.08 &     1.27 r
+  shift/sub_83/DIFF[6] (spi_shift_DW01_sub_0)             0.00       1.27 r
+  shift/U539/Y (AO222X1_RVT)                              0.13 &     1.39 r
+  shift/U538/Y (INVX0_RVT)                                0.06 &     1.45 f
+  shift/U68/Y (AND4X1_RVT)                                0.20 &     1.65 f
+  shift/U311/Y (AO21X1_RVT)                               0.15 &     1.80 f
+  shift/U773/Y (INVX0_RVT)                                0.03 &     1.84 r
+  shift/U772/Y (AO22X1_RVT)                               0.09 &     1.92 r
+  shift/data_reg[43]/D (DFFARX1_RVT)                      0.00 &     1.92 r
+  data arrival time                                                  1.92
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  shift/data_reg[43]/CLK (DFFARX1_RVT)                    0.00       9.80 r
+  library setup time                                     -0.07       9.73
+  data required time                                                 9.73
+  --------------------------------------------------------------------------
+  data required time                                                 9.73
+  data arrival time                                                 -1.92
+  --------------------------------------------------------------------------
+  slack (MET)                                                        7.81
+
+
+1

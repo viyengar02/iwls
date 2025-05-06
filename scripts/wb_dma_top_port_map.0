@@ -1,0 +1,31 @@
+set_user_match   -inverted   $svf_ref/wb_dma_top/u1/de_start   $svf_impl/wb_dma_top/u1/de_start
+guide_constraints -body { u2 } -equivalent { u2/de_start  ~ u2/IN0 }
+set_user_match   -inverted   $svf_ref/wb_dma_top/u1/ch_sel[2]   $svf_impl/wb_dma_top/u1/ch_sel[2]
+guide_constraints -body { u0 } -equivalent { u0/ch_sel[2]  ~ u0/IN0 }
+set_user_match   -inverted   $svf_ref/wb_dma_top/u4/u1/pt_sel   $svf_impl/wb_dma_top/u4/u1/pt_sel
+set_user_match   -inverted   $svf_ref/wb_dma_top/u4/pt_sel_o   $svf_impl/wb_dma_top/u4/pt_sel_o
+guide_constraints -body { u3/u0 } -equivalent { u3/u0/pt_sel  ~ u3/u0/IN0 ~ u3/u0/IN1 }
+guide_constraints -body { u3 } -equivalent { u3/pt_sel_i  ~ u3/IN0 ~ u3/IN1 }
+set_user_match   -inverted   $svf_ref/wb_dma_top/u3/u1/pt_sel   $svf_impl/wb_dma_top/u3/u1/pt_sel
+set_user_match   -inverted   $svf_ref/wb_dma_top/u3/pt_sel_o   $svf_impl/wb_dma_top/u3/pt_sel_o
+guide_constraints -body { u4/u0 } -equivalent { u4/u0/pt_sel  ~ u4/u0/IN0   u4/u0/IN1 ~ u4/u0/IN2   u4/u0/IN3 ~ u4/u0/IN4   u4/u0/IN5 ~ u4/u0/IN6 ~ u4/u0/IN7 }
+guide_constraints -body { u4 } -equivalent { u4/pt_sel_i  ~ u4/IN1   u4/IN2 ~ u4/IN3   u4/IN4 ~ u4/IN5   u4/IN6 ~ u4/IN7 ~ u4/IN8 }
+set_user_match   -inverted   $svf_ref/wb_dma_top/u0/u0/wb_rf_adr[1]   $svf_impl/wb_dma_top/u0/u0/wb_rf_adr[1]
+guide_constraints -body { u0/u0 } -equivalent { u0/u0/wb_rf_adr[1]  ~ u0/u0/IN0 }
+set_user_match   -inverted   $svf_ref/wb_dma_top/u0/u0/wb_rf_adr[2]   $svf_impl/wb_dma_top/u0/u0/wb_rf_adr[2]
+guide_constraints -body { u0/u0 } -equivalent { u0/u0/wb_rf_adr[2]  ~ u0/u0/IN1 }
+set_user_match   -inverted   $svf_ref/wb_dma_top/u0/u0/wb_rf_adr[0]   $svf_impl/wb_dma_top/u0/u0/wb_rf_adr[0]
+guide_constraints -body { u0/u0 } -equivalent { u0/u0/wb_rf_adr[0]  ~ u0/u0/IN2 }
+set_user_match   -inverted   $svf_ref/wb_dma_top/u1/u3/rst   $svf_impl/wb_dma_top/u1/u3/rst
+guide_constraints -body { u0/u0 } -equivalent { u0/u0/rst    u0/u0/IN3 }
+guide_constraints -body { u0 } -equivalent { u0/rst    u0/IN1   u0/IN2 ~ u0/IN3 }
+guide_constraints -body { u1 } -equivalent { u1/rst  ~ u1/IN3 ~ u1/IN4 }
+set_user_match   -inverted   $svf_ref/wb_dma_top/u3/wb_ack_i   $svf_impl/wb_dma_top/u3/wb_ack_i
+set_user_match   -inverted   $svf_ref/wb_dma_top/u3/u0/wb_ack_i   $svf_impl/wb_dma_top/u3/u0/wb_ack_i
+set_user_match   -inverted   $svf_ref/wb_dma_top/u2/mast0_drdy   $svf_impl/wb_dma_top/u2/mast0_drdy
+guide_constraints -body { u3/u0 } -equivalent { u3/u0/wb_ack_i  ~ u3/u0/IN2 ~ u3/u0/IN3 }
+guide_constraints -body { u3 } -equivalent { u3/wb_ack_i  ~ u3/IN9 ~ u3/IN10 }
+guide_constraints -body { u2 } -equivalent { u2/mast0_drdy  ~ u2/IN1 }
+
+#-------------------------------------------------------------------
+

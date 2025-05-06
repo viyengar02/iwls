@@ -1,0 +1,9 @@
+guide_constraints -body { byte_controller } -equivalent { byte_controller/nReset    byte_controller/IN0   byte_controller/IN1   byte_controller/IN2 }
+guide_constraints -body { byte_controller/bit_controller } -equivalent { byte_controller/bit_controller/nReset    byte_controller/bit_controller/IN0   byte_controller/bit_controller/IN1 }
+set_user_match   -inverted   $svf_ref/i2c_master_top/byte_controller/rst   $svf_impl/i2c_master_top/byte_controller/rst
+set_user_match   -inverted   $svf_ref/i2c_master_top/byte_controller/bit_controller/rst   $svf_impl/i2c_master_top/byte_controller/bit_controller/rst
+guide_constraints -body { byte_controller } -equivalent { byte_controller/rst  ~ byte_controller/IN3 ~ byte_controller/IN4 }
+guide_constraints -body { byte_controller/bit_controller } -equivalent { byte_controller/bit_controller/rst  ~ byte_controller/bit_controller/IN2 }
+
+#-------------------------------------------------------------------
+

@@ -1,0 +1,51 @@
+set_user_match   -inverted   $svf_ref/mc_top/u1/csc[1]   $svf_impl/mc_top/u1/csc[1]
+set_user_match   -inverted   $svf_ref/mc_top/u5/csc[1]   $svf_impl/mc_top/u5/csc[1]
+guide_constraints -body { u5 } -equivalent { u5/csc[1]  ~ u5/IN0 }
+guide_constraints -body { u1 } -equivalent { u1/csc[1]  ~ u1/IN0 }
+set_user_match   -inverted   $svf_ref/mc_top/u1/csc[2]   $svf_impl/mc_top/u1/csc[2]
+set_user_match   -inverted   $svf_ref/mc_top/u5/csc[2]   $svf_impl/mc_top/u5/csc[2]
+guide_constraints -body { u5 } -equivalent { u5/csc[2]  ~ u5/IN1 }
+guide_constraints -body { u1 } -equivalent { u1/csc[2]  ~ u1/IN1 }
+set_user_match   -inverted   $svf_ref/mc_top/u1/csc[5]   $svf_impl/mc_top/u1/csc[5]
+set_user_match   -inverted   $svf_ref/mc_top/u5/csc[5]   $svf_impl/mc_top/u5/csc[5]
+guide_constraints -body { u5 } -equivalent { u5/csc[5]  ~ u5/IN2 }
+guide_constraints -body { u1 } -equivalent { u1/csc[5]  ~ u1/IN2 }
+set_user_match   -inverted   $svf_ref/mc_top/u0/cs_le   $svf_impl/mc_top/u0/cs_le
+set_user_match   -inverted   $svf_ref/mc_top/u1/cs_le   $svf_impl/mc_top/u1/cs_le
+guide_constraints -body { u0 } -equivalent { u0/cs_le  ~ u0/IN0 }
+guide_constraints -body { u1 } -equivalent { u1/cs_le  ~ u1/IN3 }
+set_user_match   -inverted   $svf_ref/mc_top/u2/u0/bank_adr[0]   $svf_impl/mc_top/u2/u0/bank_adr[0]
+set_user_match   -inverted   $svf_ref/mc_top/u2/u1/bank_adr[0]   $svf_impl/mc_top/u2/u1/bank_adr[0]
+guide_constraints -body { u2/u0 } -equivalent { u2/u0/bank_adr[0]  ~ u2/u0/IN0 }
+guide_constraints -body { u2/u1 } -equivalent { u2/u1/bank_adr[0]  ~ u2/u1/IN0 }
+set_user_match   -inverted   $svf_ref/mc_top/u2/u0/bank_adr[1]   $svf_impl/mc_top/u2/u0/bank_adr[1]
+set_user_match   -inverted   $svf_ref/mc_top/u2/u1/bank_adr[1]   $svf_impl/mc_top/u2/u1/bank_adr[1]
+guide_constraints -body { u2/u0 } -equivalent { u2/u0/bank_adr[1]  ~ u2/u0/IN1 }
+guide_constraints -body { u2/u1 } -equivalent { u2/u1/bank_adr[1]  ~ u2/u1/IN1 }
+set_user_match   -inverted   $svf_ref/mc_top/u1/wr_cycle   $svf_impl/mc_top/u1/wr_cycle
+set_user_match   -inverted   $svf_ref/mc_top/u7/wr_cycle   $svf_impl/mc_top/u7/wr_cycle
+guide_constraints -body { u1 } -equivalent { u1/wr_cycle  ~ u1/IN4 }
+set_user_match   -inverted   $svf_ref/mc_top/u5/wb_cycle   $svf_impl/mc_top/u5/wb_cycle
+set_user_match   -inverted   $svf_ref/mc_top/u0/rst   $svf_impl/mc_top/u0/rst
+set_user_match   -inverted   $svf_ref/mc_top/u0/u0/rst   $svf_impl/mc_top/u0/u0/rst
+set_user_match   -inverted   $svf_ref/mc_top/u0/u1/rst   $svf_impl/mc_top/u0/u1/rst
+set_user_match   -inverted   $svf_ref/mc_top/u2/u0/rst   $svf_impl/mc_top/u2/u0/rst
+set_user_match   -inverted   $svf_ref/mc_top/u2/u1/rst   $svf_impl/mc_top/u2/u1/rst
+set_user_match   -inverted   $svf_ref/mc_top/u3/rst   $svf_impl/mc_top/u3/rst
+set_user_match   -inverted   $svf_ref/mc_top/u3/u0/rst   $svf_impl/mc_top/u3/u0/rst
+set_user_match   -inverted   $svf_ref/mc_top/u4/rst   $svf_impl/mc_top/u4/rst
+set_user_match   -inverted   $svf_ref/mc_top/u5/rst   $svf_impl/mc_top/u5/rst
+set_user_match   -inverted   $svf_ref/mc_top/u6/rst   $svf_impl/mc_top/u6/rst
+set_user_match   -inverted   $svf_ref/mc_top/u7/rst   $svf_impl/mc_top/u7/rst
+guide_constraints -body { u0 } -equivalent { u0/rst  ~ u0/IN1 ~ u0/IN2 ~ u0/IN3 ~ u0/IN4 ~ u0/IN5 }
+guide_constraints -body { u4 } -equivalent { u4/rst  ~ u4/IN0 ~ u4/IN1 }
+guide_constraints -body { u7 } -equivalent { u7/rst  ~ u7/IN0 ~ u7/IN1 }
+guide_constraints -body { u5 } -equivalent { u5/rst  ~ u5/IN4 ~ u5/IN5 ~ u5/IN6 }
+guide_constraints -body { u7 } -equivalent { u7/mc_clk    u7/IN2 }
+set_user_match   -inverted   $svf_ref/mc_top/u0/wb_stb_i   $svf_impl/mc_top/u0/wb_stb_i
+set_user_match   -inverted   $svf_ref/mc_top/u6/wb_stb_i   $svf_impl/mc_top/u6/wb_stb_i
+guide_constraints -body { u6 } -equivalent { u6/wb_stb_i  ~ u6/IN0 }
+guide_constraints -body { u0 } -equivalent { u0/wb_stb_i  ~ u0/IN6 }
+
+#-------------------------------------------------------------------
+

@@ -1,0 +1,63 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : spi_top
+Version: M-2016.12-SP1
+Date   : Tue Apr 15 10:30:58 2025
+****************************************
+
+
+   min_delay/hold ('clk' group)
+
+                             Required        Actual
+   Endpoint                 Path Delay     Path Delay        Slack
+   -----------------------------------------------------------------
+   wb_ack_o_reg/D               0.18           0.11 f        -0.08  (VIOLATED)
+   wb_ack_o                     0.19           0.16 f        -0.03  (VIOLATED)
+   wb_dat_o[14]                 0.19           0.16 f        -0.03  (VIOLATED)
+   wb_dat_o[15]                 0.19           0.16 f        -0.03  (VIOLATED)
+   wb_dat_o[16]                 0.19           0.16 f        -0.03  (VIOLATED)
+   wb_dat_o[17]                 0.19           0.16 f        -0.03  (VIOLATED)
+   wb_dat_o[18]                 0.19           0.16 f        -0.03  (VIOLATED)
+   wb_dat_o[19]                 0.19           0.16 f        -0.03  (VIOLATED)
+   wb_dat_o[20]                 0.19           0.16 f        -0.03  (VIOLATED)
+   wb_dat_o[21]                 0.19           0.16 f        -0.03  (VIOLATED)
+   wb_dat_o[22]                 0.19           0.16 f        -0.03  (VIOLATED)
+   wb_dat_o[23]                 0.19           0.16 f        -0.03  (VIOLATED)
+   wb_dat_o[24]                 0.19           0.16 f        -0.03  (VIOLATED)
+   wb_dat_o[25]                 0.19           0.16 f        -0.03  (VIOLATED)
+   wb_dat_o[26]                 0.19           0.16 f        -0.03  (VIOLATED)
+   wb_dat_o[27]                 0.19           0.16 f        -0.03  (VIOLATED)
+   wb_dat_o[28]                 0.19           0.16 f        -0.03  (VIOLATED)
+   wb_dat_o[29]                 0.19           0.16 f        -0.03  (VIOLATED)
+   wb_dat_o[30]                 0.19           0.16 f        -0.03  (VIOLATED)
+   wb_dat_o[31]                 0.19           0.16 f        -0.03  (VIOLATED)
+   wb_dat_o[0]                  0.19           0.16 f        -0.03  (VIOLATED)
+   wb_dat_o[1]                  0.19           0.16 f        -0.03  (VIOLATED)
+   wb_dat_o[2]                  0.19           0.16 f        -0.03  (VIOLATED)
+   wb_dat_o[3]                  0.19           0.16 f        -0.03  (VIOLATED)
+   wb_dat_o[4]                  0.19           0.16 f        -0.03  (VIOLATED)
+   wb_dat_o[5]                  0.19           0.16 f        -0.03  (VIOLATED)
+   wb_dat_o[6]                  0.19           0.16 f        -0.03  (VIOLATED)
+   wb_dat_o[7]                  0.19           0.16 f        -0.03  (VIOLATED)
+   wb_dat_o[8]                  0.19           0.16 f        -0.03  (VIOLATED)
+   wb_dat_o[9]                  0.19           0.16 f        -0.03  (VIOLATED)
+   wb_dat_o[10]                 0.19           0.16 f        -0.03  (VIOLATED)
+   wb_dat_o[11]                 0.19           0.16 f        -0.03  (VIOLATED)
+   wb_dat_o[12]                 0.19           0.16 f        -0.03  (VIOLATED)
+   wb_dat_o[13]                 0.19           0.16 f        -0.03  (VIOLATED)
+   wb_int_o                     0.19           0.18 f        -0.01  (VIOLATED)
+   mosi_pad_o                   0.19           0.18 f        -0.01  (VIOLATED)
+
+
+   max_area
+
+                             Required        Actual
+   Design                      Area           Area           Slack
+   -----------------------------------------------------------------
+   spi_top                      0.00        5187.22       -5187.22  (VIOLATED)
+
+
+1

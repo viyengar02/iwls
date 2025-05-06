@@ -1,0 +1,6 @@
+set_object_boundary -boundary {  { 104.3920 81.0600 } { 159.1120 81.0600 } { 159.1120 10.8360 } { 104.3920 10.8360 } } [get_plan_groups { u3 } ]
+set_object_boundary -boundary {  { 44.3520 157.9720 } { 70.9520 157.9720 } { 70.9520 81.0600 } { 44.3520 81.0600 } } [get_plan_groups { u1 } ]
+set_object_boundary -boundary {  { 10.0000 157.9720 } { 44.3520 157.9720 } { 44.3520 81.0600 } { 10.0000 81.0600 } } [get_plan_groups { u2 } ]
+set_object_boundary -boundary {  { 70.9520 157.9720 } { 159.1120 157.9720 } { 159.1120 81.0600 } { 70.9520 81.0600 } } [get_plan_groups { u0 } ]
+set_object_boundary -boundary {  { 10.0000 81.0600 } { 70.9520 81.0600 } { 70.9520 10.8360 } { 10.0000 10.8360 } } [get_plan_groups { u5 } ]
+

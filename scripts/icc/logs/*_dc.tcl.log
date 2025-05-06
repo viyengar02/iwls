@@ -1,0 +1,65 @@
+Using the license keys ICCompilerIIs-Shell and ICCompilerII-NX in this mode.
+
+                                IC Compiler (TM)
+                              IC Compiler-PC (TM)
+                              IC Compiler-XP (TM)
+                              IC Compiler-DP (TM)
+                              IC Compiler-AG (TM)
+
+               Version W-2024.09-SP2 for linux64 - Nov 28, 2024 
+
+                    Copyright (c) 1988 - 2024 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+Initializing...
+Starting shell in Shared License mode...
+Warning: bus naming style '' is not valid. (UCN-32)
+Initializing gui preferences from file  /home/cag383@drexel.edu/.synopsys_icc_prefs.tcl
+Current time:       Tue Apr 22 10:01:40 2025
+Hostname:           xunil-03.coe.drexel.edu
+CPU Model:          AMD Opteron(tm) Processor 6344
+CPU Details:        Cores = 24 : Sockets = 2 : Cache Size = 2048 KB : Freq = 1.40 GHz
+OS:                 Linux 3.10.0-1160.119.1.el7.x86_64
+RAM:                125 GB (Free   2 GB)
+Swap:                15 GB (Free  15 GB)
+Work Filesystem:    /home mounted to ozark.coe.drexel.edu:/volume2/XunilNFS2/home
+Tmp Filesystem:     / mounted to /dev/mapper/vg_xunil03-lv_root
+Work Disk:          8034 GB (Free 4405 GB)
+Tmp Disk:           442 GB (Free 136 GB)
+
+CPU Load: 6%, Ram Free: 2 GB, Swap Free: 15 GB, Work Disk Free: 4405 GB, Tmp Disk Free: 136 GB
+Current time:       Tue Apr 22 10:01:40 2025
+Hostname:           xunil-03.coe.drexel.edu
+CPU Model:          AMD Opteron(tm) Processor 6344
+CPU Details:        Cores = 24 : Sockets = 2 : Cache Size = 2048 KB : Freq = 1.40 GHz
+OS:                 Linux 3.10.0-1160.119.1.el7.x86_64
+RAM:                125 GB (Free   2 GB)
+Swap:                15 GB (Free  15 GB)
+Work Filesystem:    /home mounted to ozark.coe.drexel.edu:/volume2/XunilNFS2/home
+Tmp Filesystem:     / mounted to /dev/mapper/vg_xunil03-lv_root
+Work Disk:          8034 GB (Free 4405 GB)
+Tmp Disk:           442 GB (Free 136 GB)
+
+CPU Load: 6%, Ram Free: 2 GB, Swap Free: 15 GB, Work Disk Free: 4405 GB, Tmp Disk Free: 136 GB
+Error: could not open script file "/home/cag383@drexel.edu/ecec575/project/iwls/scripts/./icc/*_dc.tcl" (CMD-015)
+icc_shell> quit
+
+Memory usage for this session 110 Mbytes.
+Memory usage for this session including child processes 110 Mbytes.
+CPU usage for this session 4 seconds ( 0.00 hours ).
+Elapsed time for this session 32 seconds ( 0.01 hours ).
+
+Thank you...
+Exit IC Compiler!

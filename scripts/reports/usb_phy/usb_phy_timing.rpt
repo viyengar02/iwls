@@ -1,0 +1,401 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 10
+Design : usb_phy
+Version: M-2016.12-SP1
+Date   : Tue Apr 15 10:33:39 2025
+****************************************
+
+Operating Conditions: ss0p95v25c   Library: saed32rvt_ss0p95v25c
+Wire Load Model Mode: enclosed
+
+  Startpoint: rst (input port clocked by clk)
+  Endpoint: i_tx_phy/txdp_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  usb_phy            8000                  saed32rvt_ss0p95v25c
+  usb_tx_phy         8000                  saed32rvt_ss0p95v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 r
+  rst (in)                                 0.00       0.01 r
+  U33/Y (NBUFFX2_RVT)                      0.81       0.82 r
+  i_tx_phy/rst (usb_tx_phy)                0.00       0.82 r
+  i_tx_phy/U104/Y (NAND2X0_RVT)            6.23       7.05 f
+  i_tx_phy/U95/Y (INVX0_RVT)               0.22       7.27 r
+  i_tx_phy/U36/Y (OA21X1_RVT)              2.32       9.59 r
+  i_tx_phy/U35/Y (AO221X1_RVT)             0.11       9.70 r
+  i_tx_phy/txdp_reg/D (DFFX1_RVT)          0.01       9.71 r
+  data arrival time                                   9.71
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  i_tx_phy/txdp_reg/CLK (DFFX1_RVT)        0.00       9.80 r
+  library setup time                      -0.06       9.74
+  data required time                                  9.74
+  -----------------------------------------------------------
+  data required time                                  9.74
+  data arrival time                                  -9.71
+  -----------------------------------------------------------
+  slack (MET)                                         0.03
+
+
+  Startpoint: rst (input port clocked by clk)
+  Endpoint: i_tx_phy/append_eop_sync3_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  usb_phy            8000                  saed32rvt_ss0p95v25c
+  usb_tx_phy         8000                  saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.01       0.01 r
+  rst (in)                                                0.00       0.01 r
+  U33/Y (NBUFFX2_RVT)                                     0.81       0.82 r
+  i_tx_phy/rst (usb_tx_phy)                               0.00       0.82 r
+  i_tx_phy/U104/Y (NAND2X0_RVT)                           6.23       7.05 f
+  i_tx_phy/U95/Y (INVX0_RVT)                              0.22       7.27 r
+  i_tx_phy/U63/Y (AO21X1_RVT)                             2.33       9.60 r
+  i_tx_phy/U97/Y (AO22X1_RVT)                             0.08       9.68 r
+  i_tx_phy/append_eop_sync3_reg/D (DFFX1_RVT)             0.01       9.70 r
+  data arrival time                                                  9.70
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  i_tx_phy/append_eop_sync3_reg/CLK (DFFX1_RVT)           0.00       9.80 r
+  library setup time                                     -0.06       9.74
+  data required time                                                 9.74
+  --------------------------------------------------------------------------
+  data required time                                                 9.74
+  data arrival time                                                 -9.70
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.04
+
+
+  Startpoint: rst (input port clocked by clk)
+  Endpoint: i_tx_phy/txoe_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  usb_phy            8000                  saed32rvt_ss0p95v25c
+  usb_tx_phy         8000                  saed32rvt_ss0p95v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 r
+  rst (in)                                 0.00       0.01 r
+  U33/Y (NBUFFX2_RVT)                      0.81       0.82 r
+  i_tx_phy/rst (usb_tx_phy)                0.00       0.82 r
+  i_tx_phy/U104/Y (NAND2X0_RVT)            6.23       7.05 f
+  i_tx_phy/U95/Y (INVX0_RVT)               0.22       7.27 r
+  i_tx_phy/U98/Y (AO221X1_RVT)             2.36       9.63 r
+  i_tx_phy/txoe_reg/D (DFFX1_RVT)          0.01       9.64 r
+  data arrival time                                   9.64
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  i_tx_phy/txoe_reg/CLK (DFFX1_RVT)        0.00       9.80 r
+  library setup time                      -0.06       9.74
+  data required time                                  9.74
+  -----------------------------------------------------------
+  data required time                                  9.74
+  data arrival time                                  -9.64
+  -----------------------------------------------------------
+  slack (MET)                                         0.09
+
+
+  Startpoint: rst (input port clocked by clk)
+  Endpoint: i_tx_phy/append_eop_sync2_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  usb_phy            8000                  saed32rvt_ss0p95v25c
+  usb_tx_phy         8000                  saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.01       0.01 r
+  rst (in)                                                0.00       0.01 r
+  U33/Y (NBUFFX2_RVT)                                     0.81       0.82 r
+  i_tx_phy/rst (usb_tx_phy)                               0.00       0.82 r
+  i_tx_phy/U104/Y (NAND2X0_RVT)                           6.23       7.05 f
+  i_tx_phy/U95/Y (INVX0_RVT)                              0.22       7.27 r
+  i_tx_phy/U47/Y (AO22X1_RVT)                             2.33       9.60 r
+  i_tx_phy/append_eop_sync2_reg/D (DFFX1_RVT)             0.01       9.61 r
+  data arrival time                                                  9.61
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  i_tx_phy/append_eop_sync2_reg/CLK (DFFX1_RVT)           0.00       9.80 r
+  library setup time                                     -0.06       9.74
+  data required time                                                 9.74
+  --------------------------------------------------------------------------
+  data required time                                                 9.74
+  data arrival time                                                 -9.61
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.13
+
+
+  Startpoint: rst (input port clocked by clk)
+  Endpoint: i_tx_phy/append_eop_sync1_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  usb_phy            8000                  saed32rvt_ss0p95v25c
+  usb_tx_phy         8000                  saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.01       0.01 r
+  rst (in)                                                0.00       0.01 r
+  U33/Y (NBUFFX2_RVT)                                     0.81       0.82 r
+  i_tx_phy/rst (usb_tx_phy)                               0.00       0.82 r
+  i_tx_phy/U104/Y (NAND2X0_RVT)                           6.23       7.05 f
+  i_tx_phy/U95/Y (INVX0_RVT)                              0.22       7.27 r
+  i_tx_phy/U40/Y (AO22X1_RVT)                             2.33       9.60 r
+  i_tx_phy/append_eop_sync1_reg/D (DFFX1_RVT)             0.01       9.61 r
+  data arrival time                                                  9.61
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  i_tx_phy/append_eop_sync1_reg/CLK (DFFX1_RVT)           0.00       9.80 r
+  library setup time                                     -0.06       9.74
+  data required time                                                 9.74
+  --------------------------------------------------------------------------
+  data required time                                                 9.74
+  data arrival time                                                 -9.61
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.13
+
+
+  Startpoint: rst (input port clocked by clk)
+  Endpoint: i_tx_phy/txoe_r2_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  usb_phy            8000                  saed32rvt_ss0p95v25c
+  usb_tx_phy         8000                  saed32rvt_ss0p95v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 r
+  rst (in)                                 0.00       0.01 r
+  U33/Y (NBUFFX2_RVT)                      0.81       0.82 r
+  i_tx_phy/rst (usb_tx_phy)                0.00       0.82 r
+  i_tx_phy/U104/Y (NAND2X0_RVT)            6.23       7.05 f
+  i_tx_phy/U95/Y (INVX0_RVT)               0.22       7.27 r
+  i_tx_phy/U42/Y (AO22X1_RVT)              2.33       9.60 r
+  i_tx_phy/txoe_r2_reg/D (DFFX1_RVT)       0.01       9.61 r
+  data arrival time                                   9.61
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  i_tx_phy/txoe_r2_reg/CLK (DFFX1_RVT)     0.00       9.80 r
+  library setup time                      -0.06       9.74
+  data required time                                  9.74
+  -----------------------------------------------------------
+  data required time                                  9.74
+  data arrival time                                  -9.61
+  -----------------------------------------------------------
+  slack (MET)                                         0.13
+
+
+  Startpoint: rst (input port clocked by clk)
+  Endpoint: i_tx_phy/tx_ip_sync_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  usb_phy            8000                  saed32rvt_ss0p95v25c
+  usb_tx_phy         8000                  saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.01       0.01 r
+  rst (in)                                                0.00       0.01 r
+  U33/Y (NBUFFX2_RVT)                                     0.81       0.82 r
+  i_tx_phy/rst (usb_tx_phy)                               0.00       0.82 r
+  i_tx_phy/U104/Y (NAND2X0_RVT)                           6.23       7.05 f
+  i_tx_phy/U95/Y (INVX0_RVT)                              0.22       7.27 r
+  i_tx_phy/U48/Y (AO22X1_RVT)                             2.33       9.60 r
+  i_tx_phy/tx_ip_sync_reg/D (DFFX1_RVT)                   0.01       9.61 r
+  data arrival time                                                  9.61
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  i_tx_phy/tx_ip_sync_reg/CLK (DFFX1_RVT)                 0.00       9.80 r
+  library setup time                                     -0.06       9.74
+  data required time                                                 9.74
+  --------------------------------------------------------------------------
+  data required time                                                 9.74
+  data arrival time                                                 -9.61
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.13
+
+
+  Startpoint: rst (input port clocked by clk)
+  Endpoint: i_tx_phy/txdn_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  usb_phy            8000                  saed32rvt_ss0p95v25c
+  usb_tx_phy         8000                  saed32rvt_ss0p95v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 r
+  rst (in)                                 0.00       0.01 r
+  U33/Y (NBUFFX2_RVT)                      0.81       0.82 r
+  i_tx_phy/rst (usb_tx_phy)                0.00       0.82 r
+  i_tx_phy/U104/Y (NAND2X0_RVT)            6.23       7.05 f
+  i_tx_phy/U95/Y (INVX0_RVT)               0.22       7.27 r
+  i_tx_phy/U43/Y (AO22X1_RVT)              2.32       9.59 r
+  i_tx_phy/txdn_reg/D (DFFX1_RVT)          0.01       9.60 r
+  data arrival time                                   9.60
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  i_tx_phy/txdn_reg/CLK (DFFX1_RVT)        0.00       9.80 r
+  library setup time                      -0.06       9.74
+  data required time                                  9.74
+  -----------------------------------------------------------
+  data required time                                  9.74
+  data arrival time                                  -9.60
+  -----------------------------------------------------------
+  slack (MET)                                         0.14
+
+
+  Startpoint: rst (input port clocked by clk)
+  Endpoint: i_tx_phy/append_eop_sync4_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  usb_phy            8000                  saed32rvt_ss0p95v25c
+  usb_tx_phy         8000                  saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.01       0.01 r
+  rst (in)                                                0.00       0.01 r
+  U33/Y (NBUFFX2_RVT)                                     0.81       0.82 r
+  i_tx_phy/rst (usb_tx_phy)                               0.00       0.82 r
+  i_tx_phy/U104/Y (NAND2X0_RVT)                           6.23       7.05 f
+  i_tx_phy/U95/Y (INVX0_RVT)                              0.22       7.27 r
+  i_tx_phy/U46/Y (AO22X1_RVT)                             2.32       9.59 r
+  i_tx_phy/append_eop_sync4_reg/D (DFFX1_RVT)             0.01       9.60 r
+  data arrival time                                                  9.60
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  i_tx_phy/append_eop_sync4_reg/CLK (DFFX1_RVT)           0.00       9.80 r
+  library setup time                                     -0.06       9.74
+  data required time                                                 9.74
+  --------------------------------------------------------------------------
+  data required time                                                 9.74
+  data arrival time                                                 -9.60
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.14
+
+
+  Startpoint: rst (input port clocked by clk)
+  Endpoint: i_tx_phy/one_cnt_reg[2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  usb_phy            8000                  saed32rvt_ss0p95v25c
+  usb_tx_phy         8000                  saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.01       0.01 r
+  rst (in)                                                0.00       0.01 r
+  U33/Y (NBUFFX2_RVT)                                     0.81       0.82 r
+  i_tx_phy/rst (usb_tx_phy)                               0.00       0.82 r
+  i_tx_phy/U104/Y (NAND2X0_RVT)                           6.23       7.05 f
+  i_tx_phy/U28/Y (OR2X1_RVT)                              0.20       7.26 f
+  i_tx_phy/U103/Y (INVX0_RVT)                             0.09       7.35 r
+  i_tx_phy/U102/Y (AND3X1_RVT)                            0.33       7.68 r
+  i_tx_phy/U101/Y (AO21X1_RVT)                            0.70       8.38 r
+  i_tx_phy/U99/Y (AO21X1_RVT)                             0.10       8.48 r
+  i_tx_phy/U27/Y (AO21X1_RVT)                             0.09       8.57 r
+  i_tx_phy/one_cnt_reg[2]/D (DFFX1_RVT)                   0.01       8.58 r
+  data arrival time                                                  8.58
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  i_tx_phy/one_cnt_reg[2]/CLK (DFFX1_RVT)                 0.00       9.80 r
+  library setup time                                     -0.06       9.74
+  data required time                                                 9.74
+  --------------------------------------------------------------------------
+  data required time                                                 9.74
+  data arrival time                                                 -8.58
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.16
+
+
+1

@@ -1,0 +1,13 @@
+set_user_match   -inverted   $svf_ref/tv80s/i_tv80_core/i_mcode/JumpE   $svf_impl/tv80s/i_tv80_core/i_mcode/JumpE
+set_user_match   -inverted   $svf_ref/tv80s/i_tv80_core/i_mcode/I_RRD   $svf_impl/tv80s/i_tv80_core/i_mcode/I_RRD
+guide_constraints -body { i_tv80_core/i_alu } -equivalent { i_tv80_core/i_alu/IR[4]  ~ i_tv80_core/i_alu/IN0 }
+guide_constraints -body { i_tv80_core/i_alu } -equivalent { i_tv80_core/i_alu/IR[5]  ~ i_tv80_core/i_alu/IN1 }
+set_user_match   -inverted   $svf_ref/tv80s/i_tv80_core/i_mcode/IR[3]   $svf_impl/tv80s/i_tv80_core/i_mcode/IR[3]
+set_user_match   -inverted   $svf_ref/tv80s/i_tv80_core/i_alu/IR[3]   $svf_impl/tv80s/i_tv80_core/i_alu/IR[3]
+guide_constraints -body { i_tv80_core/i_alu } -equivalent { i_tv80_core/i_alu/IR[3]  ~ i_tv80_core/i_alu/IN2 }
+guide_constraints -body { i_tv80_core/i_mcode } -equivalent { i_tv80_core/i_mcode/IR[3]  ~ i_tv80_core/i_mcode/IN0 }
+set_user_match   -inverted   $svf_ref/tv80s/i_tv80_core/mc[1]   $svf_impl/tv80s/i_tv80_core/mc[1]
+guide_constraints -body { i_tv80_core } -equivalent { i_tv80_core/reset_n  ~ i_tv80_core/IN1   i_tv80_core/IN2 }
+
+#-------------------------------------------------------------------
+

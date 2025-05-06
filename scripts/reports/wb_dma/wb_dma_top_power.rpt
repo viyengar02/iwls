@@ -1,0 +1,202 @@
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : wb_dma_top
+Version: M-2016.12-SP1
+Date   : Tue Apr 15 10:39:25 2025
+****************************************
+
+
+Library(s) Used:
+
+    saed32rvt_ss0p95v25c (File: /mnt/class_data/ecec574-w2019/PDKs/SAED32nm/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v25c.db)
+
+
+Operating Conditions: ss0p95v25c   Library: saed32rvt_ss0p95v25c
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+wb_dma_top             70000             saed32rvt_ss0p95v25c
+wb_dma_rf_1_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0
+                       8000              saed32rvt_ss0p95v25c
+wb_dma_ch_sel_0_1_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0
+                       70000             saed32rvt_ss0p95v25c
+wb_dma_de              8000              saed32rvt_ss0p95v25c
+wb_dma_wb_if_rf_addr0_1
+                       8000              saed32rvt_ss0p95v25c
+wb_dma_ch_rf_0_1_0_0_0 8000              saed32rvt_ss0p95v25c
+wb_dma_ch_rf_1_0_0_0_0 ForQA             saed32rvt_ss0p95v25c
+wb_dma_ch_rf_2_0_0_0_0 ForQA             saed32rvt_ss0p95v25c
+wb_dma_ch_rf_3_0_0_0_0 ForQA             saed32rvt_ss0p95v25c
+wb_dma_ch_rf_4_0_0_0_0 ForQA             saed32rvt_ss0p95v25c
+wb_dma_ch_rf_5_0_0_0_0 ForQA             saed32rvt_ss0p95v25c
+wb_dma_ch_rf_6_0_0_0_0 ForQA             saed32rvt_ss0p95v25c
+wb_dma_ch_rf_7_0_0_0_0 ForQA             saed32rvt_ss0p95v25c
+wb_dma_ch_rf_8_0_0_0_0 ForQA             saed32rvt_ss0p95v25c
+wb_dma_ch_rf_9_0_0_0_0 ForQA             saed32rvt_ss0p95v25c
+wb_dma_ch_rf_10_0_0_0_0
+                       ForQA             saed32rvt_ss0p95v25c
+wb_dma_ch_rf_11_0_0_0_0
+                       ForQA             saed32rvt_ss0p95v25c
+wb_dma_ch_rf_12_0_0_0_0
+                       ForQA             saed32rvt_ss0p95v25c
+wb_dma_ch_rf_13_0_0_0_0
+                       ForQA             saed32rvt_ss0p95v25c
+wb_dma_ch_rf_14_0_0_0_0
+                       ForQA             saed32rvt_ss0p95v25c
+wb_dma_ch_rf_15_0_0_0_0
+                       ForQA             saed32rvt_ss0p95v25c
+wb_dma_ch_rf_16_0_0_0_0
+                       ForQA             saed32rvt_ss0p95v25c
+wb_dma_ch_rf_17_0_0_0_0
+                       ForQA             saed32rvt_ss0p95v25c
+wb_dma_ch_rf_18_0_0_0_0
+                       ForQA             saed32rvt_ss0p95v25c
+wb_dma_ch_rf_19_0_0_0_0
+                       ForQA             saed32rvt_ss0p95v25c
+wb_dma_ch_rf_20_0_0_0_0
+                       ForQA             saed32rvt_ss0p95v25c
+wb_dma_ch_rf_21_0_0_0_0
+                       ForQA             saed32rvt_ss0p95v25c
+wb_dma_ch_rf_22_0_0_0_0
+                       ForQA             saed32rvt_ss0p95v25c
+wb_dma_ch_rf_23_0_0_0_0
+                       ForQA             saed32rvt_ss0p95v25c
+wb_dma_ch_rf_24_0_0_0_0
+                       ForQA             saed32rvt_ss0p95v25c
+wb_dma_ch_rf_25_0_0_0_0
+                       ForQA             saed32rvt_ss0p95v25c
+wb_dma_ch_rf_26_0_0_0_0
+                       ForQA             saed32rvt_ss0p95v25c
+wb_dma_ch_rf_27_0_0_0_0
+                       ForQA             saed32rvt_ss0p95v25c
+wb_dma_ch_rf_28_0_0_0_0
+                       ForQA             saed32rvt_ss0p95v25c
+wb_dma_ch_rf_29_0_0_0_0
+                       ForQA             saed32rvt_ss0p95v25c
+wb_dma_ch_rf_30_0_0_0_0
+                       ForQA             saed32rvt_ss0p95v25c
+wb_dma_ch_pri_enc_0_1_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0
+                       ForQA             saed32rvt_ss0p95v25c
+wb_dma_ch_arb_7        8000              saed32rvt_ss0p95v25c
+wb_dma_inc30r_1        8000              saed32rvt_ss0p95v25c
+wb_dma_wb_mast_1       8000              saed32rvt_ss0p95v25c
+wb_dma_wb_slv_rf_addr0_1
+                       8000              saed32rvt_ss0p95v25c
+wb_dma_pri_enc_sub_0_0_30
+                       ForQA             saed32rvt_ss0p95v25c
+wb_dma_wb_if_rf_addr0_0
+                       8000              saed32rvt_ss0p95v25c
+wb_dma_ch_arb_0        8000              saed32rvt_ss0p95v25c
+wb_dma_ch_arb_1        8000              saed32rvt_ss0p95v25c
+wb_dma_ch_arb_2        8000              saed32rvt_ss0p95v25c
+wb_dma_ch_arb_3        8000              saed32rvt_ss0p95v25c
+wb_dma_ch_arb_4        8000              saed32rvt_ss0p95v25c
+wb_dma_ch_arb_5        8000              saed32rvt_ss0p95v25c
+wb_dma_ch_arb_6        8000              saed32rvt_ss0p95v25c
+wb_dma_inc30r_0        8000              saed32rvt_ss0p95v25c
+wb_dma_wb_mast_0       8000              saed32rvt_ss0p95v25c
+wb_dma_wb_slv_rf_addr0_0
+                       8000              saed32rvt_ss0p95v25c
+wb_dma_pri_enc_sub_0_0_0
+                       ForQA             saed32rvt_ss0p95v25c
+wb_dma_pri_enc_sub_0_0_1
+                       ForQA             saed32rvt_ss0p95v25c
+wb_dma_pri_enc_sub_0_0_2
+                       ForQA             saed32rvt_ss0p95v25c
+wb_dma_pri_enc_sub_0_0_3
+                       ForQA             saed32rvt_ss0p95v25c
+wb_dma_pri_enc_sub_0_0_4
+                       ForQA             saed32rvt_ss0p95v25c
+wb_dma_pri_enc_sub_0_0_5
+                       ForQA             saed32rvt_ss0p95v25c
+wb_dma_pri_enc_sub_0_0_6
+                       ForQA             saed32rvt_ss0p95v25c
+wb_dma_pri_enc_sub_0_0_7
+                       ForQA             saed32rvt_ss0p95v25c
+wb_dma_pri_enc_sub_0_0_8
+                       ForQA             saed32rvt_ss0p95v25c
+wb_dma_pri_enc_sub_0_0_9
+                       ForQA             saed32rvt_ss0p95v25c
+wb_dma_pri_enc_sub_0_0_10
+                       ForQA             saed32rvt_ss0p95v25c
+wb_dma_pri_enc_sub_0_0_11
+                       ForQA             saed32rvt_ss0p95v25c
+wb_dma_pri_enc_sub_0_0_12
+                       ForQA             saed32rvt_ss0p95v25c
+wb_dma_pri_enc_sub_0_0_13
+                       ForQA             saed32rvt_ss0p95v25c
+wb_dma_pri_enc_sub_0_0_14
+                       ForQA             saed32rvt_ss0p95v25c
+wb_dma_pri_enc_sub_0_0_15
+                       ForQA             saed32rvt_ss0p95v25c
+wb_dma_pri_enc_sub_0_0_16
+                       ForQA             saed32rvt_ss0p95v25c
+wb_dma_pri_enc_sub_0_0_17
+                       ForQA             saed32rvt_ss0p95v25c
+wb_dma_pri_enc_sub_0_0_18
+                       ForQA             saed32rvt_ss0p95v25c
+wb_dma_pri_enc_sub_0_0_19
+                       ForQA             saed32rvt_ss0p95v25c
+wb_dma_pri_enc_sub_0_0_20
+                       ForQA             saed32rvt_ss0p95v25c
+wb_dma_pri_enc_sub_0_0_21
+                       ForQA             saed32rvt_ss0p95v25c
+wb_dma_pri_enc_sub_0_0_22
+                       ForQA             saed32rvt_ss0p95v25c
+wb_dma_pri_enc_sub_0_0_23
+                       ForQA             saed32rvt_ss0p95v25c
+wb_dma_pri_enc_sub_0_0_24
+                       ForQA             saed32rvt_ss0p95v25c
+wb_dma_pri_enc_sub_0_0_25
+                       ForQA             saed32rvt_ss0p95v25c
+wb_dma_pri_enc_sub_0_0_26
+                       ForQA             saed32rvt_ss0p95v25c
+wb_dma_pri_enc_sub_0_0_27
+                       ForQA             saed32rvt_ss0p95v25c
+wb_dma_pri_enc_sub_0_0_28
+                       ForQA             saed32rvt_ss0p95v25c
+wb_dma_pri_enc_sub_0_0_29
+                       ForQA             saed32rvt_ss0p95v25c
+wb_dma_de_DW01_dec_0   ForQA             saed32rvt_ss0p95v25c
+wb_dma_inc30r_0_DW01_inc_0
+                       ForQA             saed32rvt_ss0p95v25c
+wb_dma_inc30r_1_DW01_inc_0
+                       ForQA             saed32rvt_ss0p95v25c
+
+
+Global Operating Voltage = 0.95 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  =   0.0000 uW    (0%)
+  Net Switching Power  =   3.4505 uW  (100%)
+                         ---------
+Total Dynamic Power    =   3.4505 uW  (100%)
+
+Cell Leakage Power     =   1.6673 mW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           0.0000            0.7956        1.0754e+08          108.3349  (   6.48%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      0.0000            2.6549        1.5598e+09        1.5624e+03  (  93.52%)
+--------------------------------------------------------------------------------------------------
+Total              0.0000 uW         3.4505 uW     1.6673e+09 pW     1.6707e+03 uW
+1
