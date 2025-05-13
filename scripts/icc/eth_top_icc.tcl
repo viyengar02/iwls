@@ -60,16 +60,16 @@ preroute_standard_cells -mode net -nets VSS -v_layer M6
 ### Placement
 ###########################################################################
 place_opt 
-##-power -congestion
+#-power -congestion
 set_fix_hold [all_clocks]
 clock_opt ##
 -only_cts -no_clock_route
 #clock_opt -only_psyn -area_recovery -no_clock_route
 route_zrt_group -all_clock_nets -reuse_existing_global_route true
 route_opt 
-###-initial_route_only
-###create_qor_snapshot
-###route_opt -skip_initial_route -power
+#-initial_route_only
+#create_qor_snapshot
+#route_opt -skip_initial_route -power
 
 extract_rc  -coupling_cap -incremental
 write_parasitics -output ./outputs/eth_top_extracted.spef -format SPEF
@@ -85,7 +85,13 @@ report_cell > ./reports/ethernet/icc_eth_top_cells.rpt
 report_resources > ./reports/ethernet/icc_eth_top_resources.rpt
 report_timing -max_paths 10 > ./reports/ethernet/icc_eth_top_timing.rpt
 report_placement_utilization > ./reports/ethernet/icc_eth_top_cts.rpt
-report_port -annotated > ./reports/ethernet/icc_eth_top_ports.rpt
+report_port > ./reports/ethernet/icc_eth_top_ports.rpt
+sizeof_collection [get_ports [all_inputs]] >> ./reports/ethernet/icc_eth_top_ports.rpt
+sizeof_collection [get_ports [all_outputs]] >> ./reports/ethernet/icc_eth_top_ports.rpt
+# can also generate histograms
+report_clock_tree -summary > ./reports/ethernet/icc_eth_top_clock_tree.rpt
+sizeof_collection [get_cells -filter "ref_name=~*INV*" -clock_tree] >> ./reports/ethernet/icc_eth_top_clock_tree.rpt
+
 
 save_mw_cel -as eth_top_extracted
 quit

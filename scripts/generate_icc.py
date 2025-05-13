@@ -82,16 +82,16 @@ preroute_standard_cells -mode net -nets VSS -v_layer M6
 ### Placement
 ###########################################################################
 place_opt 
-##-power -congestion
+#-power -congestion
 set_fix_hold [all_clocks]
 clock_opt ##
 -only_cts -no_clock_route
 #clock_opt -only_psyn -area_recovery -no_clock_route
 route_zrt_group -all_clock_nets -reuse_existing_global_route true
 route_opt 
-###-initial_route_only
-###create_qor_snapshot
-###route_opt -skip_initial_route -power
+#-initial_route_only
+#create_qor_snapshot
+#route_opt -skip_initial_route -power
 
 extract_rc  -coupling_cap -incremental
 write_parasitics -output ./outputs/{design_name}_extracted.spef -format SPEF
@@ -107,7 +107,13 @@ report_cell > ./reports/{design_dir}/icc_{design_name}_cells.rpt
 report_resources > ./reports/{design_dir}/icc_{design_name}_resources.rpt
 report_timing -max_paths 10 > ./reports/{design_dir}/icc_{design_name}_timing.rpt
 report_placement_utilization > ./reports/{design_dir}/icc_{design_name}_cts.rpt
-report_port -annotated > ./reports/{design_dir}/icc_{design_name}_ports.rpt
+report_port > ./reports/{design_dir}/icc_{design_name}_ports.rpt
+sizeof_collection [get_ports [all_inputs]] >> ./reports/{design_dir}/icc_{design_name}_ports.rpt
+sizeof_collection [get_ports [all_outputs]] >> ./reports/{design_dir}/icc_{design_name}_ports.rpt
+# can also generate histograms
+report_clock_tree -summary > ./reports/{design_dir}/icc_{design_name}_clock_tree.rpt
+sizeof_collection [get_cells -filter "ref_name=~*INV*" -clock_tree] >> ./reports/{design_dir}/icc_{design_name}_clock_tree.rpt
+
 
 save_mw_cel -as {design_name}_extracted
 quit

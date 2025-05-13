@@ -3,7 +3,7 @@
 Report : qor
 Design : i2c_master_top
 Version: W-2024.09-SP2
-Date   : Tue May 13 13:51:04 2025
+Date   : Tue May 13 14:24:28 2025
 ****************************************
 
 
@@ -68,10 +68,10 @@ Date   : Tue May 13 13:51:04 2025
   -----------------------------------------
   Resource Sharing:                    0.00
   Logic Optimization:                  0.00
-  Mapping Optimization:                1.37
+  Mapping Optimization:                1.42
   -----------------------------------------
-  Overall Compile Time:                1.45
-  Overall Compile Wall Clock Time:     1.70
+  Overall Compile Time:                1.49
+  Overall Compile Wall Clock Time:     1.82
 
   --------------------------------------------------------------------
 

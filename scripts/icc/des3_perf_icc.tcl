@@ -60,16 +60,16 @@ preroute_standard_cells -mode net -nets VSS -v_layer M6
 ### Placement
 ###########################################################################
 place_opt 
-##-power -congestion
+#-power -congestion
 set_fix_hold [all_clocks]
 clock_opt ##
 -only_cts -no_clock_route
 #clock_opt -only_psyn -area_recovery -no_clock_route
 route_zrt_group -all_clock_nets -reuse_existing_global_route true
 route_opt 
-###-initial_route_only
-###create_qor_snapshot
-###route_opt -skip_initial_route -power
+#-initial_route_only
+#create_qor_snapshot
+#route_opt -skip_initial_route -power
 
 extract_rc  -coupling_cap -incremental
 write_parasitics -output ./outputs/des3_perf_extracted.spef -format SPEF
@@ -85,7 +85,13 @@ report_cell > ./reports/des3_perf/icc_des3_perf_cells.rpt
 report_resources > ./reports/des3_perf/icc_des3_perf_resources.rpt
 report_timing -max_paths 10 > ./reports/des3_perf/icc_des3_perf_timing.rpt
 report_placement_utilization > ./reports/des3_perf/icc_des3_perf_cts.rpt
-report_port -annotated > ./reports/des3_perf/icc_des3_perf_ports.rpt
+report_port > ./reports/des3_perf/icc_des3_perf_ports.rpt
+sizeof_collection [get_ports [all_inputs]] >> ./reports/des3_perf/icc_des3_perf_ports.rpt
+sizeof_collection [get_ports [all_outputs]] >> ./reports/des3_perf/icc_des3_perf_ports.rpt
+# can also generate histograms
+report_clock_tree -summary > ./reports/des3_perf/icc_des3_perf_clock_tree.rpt
+sizeof_collection [get_cells -filter "ref_name=~*INV*" -clock_tree] >> ./reports/des3_perf/icc_des3_perf_clock_tree.rpt
+
 
 save_mw_cel -as des3_perf_extracted
 quit
