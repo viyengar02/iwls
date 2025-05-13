@@ -3,7 +3,7 @@
 Report : qor
 Design : tv80s
 Version: W-2024.09-SP4-1
-Date   : Tue Apr 29 11:29:12 2025
+Date   : Tue May 13 10:51:23 2025
 ****************************************
 
 
@@ -63,12 +63,12 @@ Date   : Tue Apr 29 11:29:12 2025
 
   Compile CPU Statistics
   -----------------------------------------
-  Resource Sharing:                   41.40
-  Logic Optimization:                 21.64
-  Mapping Optimization:               18.83
+  Resource Sharing:                   39.22
+  Logic Optimization:                 15.45
+  Mapping Optimization:               13.72
   -----------------------------------------
-  Overall Compile Time:               85.94
-  Overall Compile Wall Clock Time:    95.83
+  Overall Compile Time:               72.08
+  Overall Compile Wall Clock Time:    73.31
 
   --------------------------------------------------------------------
 

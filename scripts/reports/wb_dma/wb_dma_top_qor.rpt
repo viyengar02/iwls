@@ -3,7 +3,7 @@
 Report : qor
 Design : wb_dma_top
 Version: W-2024.09-SP4-1
-Date   : Tue Apr 29 13:05:04 2025
+Date   : Tue May 13 12:31:55 2025
 ****************************************
 
 
@@ -63,12 +63,12 @@ Date   : Tue Apr 29 13:05:04 2025
 
   Compile CPU Statistics
   -----------------------------------------
-  Resource Sharing:                    0.06
-  Logic Optimization:                  0.11
-  Mapping Optimization:               29.83
+  Resource Sharing:                    0.07
+  Logic Optimization:                  0.12
+  Mapping Optimization:               34.09
   -----------------------------------------
-  Overall Compile Time:               33.92
-  Overall Compile Wall Clock Time:    34.03
+  Overall Compile Time:               39.50
+  Overall Compile Wall Clock Time:    40.37
 
   --------------------------------------------------------------------
 

@@ -3,7 +3,7 @@
 Report : qor
 Design : simple_spi_top
 Version: W-2024.09-SP4-1
-Date   : Tue Apr 29 11:26:31 2025
+Date   : Tue May 13 10:49:11 2025
 ****************************************
 
 
@@ -63,12 +63,12 @@ Date   : Tue Apr 29 11:26:31 2025
 
   Compile CPU Statistics
   -----------------------------------------
-  Resource Sharing:                    0.47
-  Logic Optimization:                  0.97
-  Mapping Optimization:                1.55
+  Resource Sharing:                    0.52
+  Logic Optimization:                  0.92
+  Mapping Optimization:                1.25
   -----------------------------------------
-  Overall Compile Time:                5.15
-  Overall Compile Wall Clock Time:     5.49
+  Overall Compile Time:                4.71
+  Overall Compile Wall Clock Time:     4.97
 
   --------------------------------------------------------------------
 

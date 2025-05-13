@@ -3,7 +3,7 @@
 Report : qor
 Design : mc_top
 Version: W-2024.09-SP4-1
-Date   : Tue Apr 29 11:22:41 2025
+Date   : Tue May 13 10:45:37 2025
 ****************************************
 
 
@@ -63,12 +63,12 @@ Date   : Tue Apr 29 11:22:41 2025
 
   Compile CPU Statistics
   -----------------------------------------
-  Resource Sharing:                   24.57
-  Logic Optimization:                 24.56
-  Mapping Optimization:               18.75
+  Resource Sharing:                   19.94
+  Logic Optimization:                 23.84
+  Mapping Optimization:               19.77
   -----------------------------------------
-  Overall Compile Time:               74.51
-  Overall Compile Wall Clock Time:    78.75
+  Overall Compile Time:               69.77
+  Overall Compile Wall Clock Time:    70.77
 
   --------------------------------------------------------------------
 

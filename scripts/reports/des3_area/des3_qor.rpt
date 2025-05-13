@@ -3,7 +3,7 @@
 Report : qor
 Design : des3
 Version: W-2024.09-SP4-1
-Date   : Tue Apr 29 11:19:20 2025
+Date   : Tue May 13 10:43:11 2025
 ****************************************
 
 
@@ -63,12 +63,12 @@ Date   : Tue Apr 29 11:19:20 2025
 
   Compile CPU Statistics
   -----------------------------------------
-  Resource Sharing:                    5.24
-  Logic Optimization:                  9.54
-  Mapping Optimization:               13.67
+  Resource Sharing:                    3.55
+  Logic Optimization:                  6.71
+  Mapping Optimization:               10.37
   -----------------------------------------
-  Overall Compile Time:               31.52
-  Overall Compile Wall Clock Time:    35.06
+  Overall Compile Time:               23.17
+  Overall Compile Wall Clock Time:    23.42
 
   --------------------------------------------------------------------
 

@@ -3,7 +3,7 @@
 Report : qor
 Design : pci_bridge32
 Version: W-2024.09-SP4-1
-Date   : Tue Apr 29 11:25:19 2025
+Date   : Tue May 13 10:48:06 2025
 ****************************************
 
 
@@ -63,12 +63,12 @@ Date   : Tue Apr 29 11:25:19 2025
 
   Compile CPU Statistics
   -----------------------------------------
-  Resource Sharing:                   12.11
-  Logic Optimization:                 29.24
-  Mapping Optimization:               66.87
+  Resource Sharing:                   10.92
+  Logic Optimization:                 25.89
+  Mapping Optimization:               68.09
   -----------------------------------------
-  Overall Compile Time:              118.49
-  Overall Compile Wall Clock Time:   123.98
+  Overall Compile Time:              114.21
+  Overall Compile Wall Clock Time:   118.13
 
   --------------------------------------------------------------------
 

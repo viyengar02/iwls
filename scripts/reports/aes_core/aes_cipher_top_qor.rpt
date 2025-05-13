@@ -3,7 +3,7 @@
 Report : qor
 Design : aes_cipher_top
 Version: W-2024.09-SP4-1
-Date   : Tue Apr 29 11:16:46 2025
+Date   : Tue May 13 10:41:19 2025
 ****************************************
 
 
@@ -63,12 +63,12 @@ Date   : Tue Apr 29 11:16:46 2025
 
   Compile CPU Statistics
   -----------------------------------------
-  Resource Sharing:                    1.15
-  Logic Optimization:                 31.38
-  Mapping Optimization:               29.37
+  Resource Sharing:                    1.11
+  Logic Optimization:                 30.41
+  Mapping Optimization:               26.85
   -----------------------------------------
-  Overall Compile Time:               67.49
-  Overall Compile Wall Clock Time:    72.26
+  Overall Compile Time:               63.34
+  Overall Compile Wall Clock Time:    64.12
 
   --------------------------------------------------------------------
 

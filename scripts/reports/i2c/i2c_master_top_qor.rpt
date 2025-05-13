@@ -4,7 +4,7 @@ Warning: Design 'i2c_master_top' has '1' unresolved references. For more detaile
 Report : qor
 Design : i2c_master_top
 Version: W-2024.09-SP4-1
-Date   : Tue Apr 29 11:20:44 2025
+Date   : Tue May 13 10:44:01 2025
 ****************************************
 
 
@@ -64,12 +64,12 @@ Date   : Tue Apr 29 11:20:44 2025
 
   Compile CPU Statistics
   -----------------------------------------
-  Resource Sharing:                    0.36
-  Logic Optimization:                  1.15
-  Mapping Optimization:                0.88
+  Resource Sharing:                    0.30
+  Logic Optimization:                  0.89
+  Mapping Optimization:                0.65
   -----------------------------------------
-  Overall Compile Time:                4.67
-  Overall Compile Wall Clock Time:     7.24
+  Overall Compile Time:                3.70
+  Overall Compile Wall Clock Time:     3.92
 
   --------------------------------------------------------------------
 

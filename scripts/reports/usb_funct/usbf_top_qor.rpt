@@ -3,7 +3,7 @@
 Report : qor
 Design : usbf_top
 Version: W-2024.09-SP4-1
-Date   : Tue Apr 29 11:31:36 2025
+Date   : Tue May 13 12:28:26 2025
 ****************************************
 
 
@@ -63,12 +63,12 @@ Date   : Tue Apr 29 11:31:36 2025
 
   Compile CPU Statistics
   -----------------------------------------
-  Resource Sharing:                   14.49
-  Logic Optimization:                 26.30
-  Mapping Optimization:               31.36
+  Resource Sharing:                   18.30
+  Logic Optimization:                 23.80
+  Mapping Optimization:               32.47
   -----------------------------------------
-  Overall Compile Time:               86.38
-  Overall Compile Wall Clock Time:    97.95
+  Overall Compile Time:               88.59
+  Overall Compile Wall Clock Time:    93.31
 
   --------------------------------------------------------------------
 

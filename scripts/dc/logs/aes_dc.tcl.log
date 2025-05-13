@@ -31,19 +31,19 @@ Please use '-no_save' simv switch to avoid this.
             Inclusivity and Diversity" (Refer to article 000036315 at
                         https://solvnetplus.synopsys.com)
 Initializing...
-Current time:       Tue Apr 29 11:16:56 2025
+Current time:       Tue May 13 10:41:27 2025
 Hostname:           xunil-03.coe.drexel.edu
 CPU Model:          AMD Opteron(tm) Processor 6344
 CPU Details:        Cores = 24 : Sockets = 2 : Cache Size = 2048 KB : Freq = 1.40 GHz
 OS:                 Linux 3.10.0-1160.119.1.el7.x86_64
-RAM:                125 GB (Free   0 GB)
+RAM:                125 GB (Free 106 GB)
 Swap:                15 GB (Free  15 GB)
 Work Filesystem:    /home mounted to ozark.coe.drexel.edu:/volume2/XunilNFS2/home
 Tmp Filesystem:     / mounted to /dev/mapper/vg_xunil03-lv_root
-Work Disk:          8034 GB (Free 4330 GB)
+Work Disk:          8034 GB (Free 4316 GB)
 Tmp Disk:           442 GB (Free 136 GB)
 
-CPU Load: 39%, Ram Free: 0 GB, Swap Free: 15 GB, Work Disk Free: 4330 GB, Tmp Disk Free: 136 GB
+CPU Load: 13%, Ram Free: 106 GB, Swap Free: 15 GB, Work Disk Free: 4316 GB, Tmp Disk Free: 136 GB
 # Auto-generated synthesis script for aes
 # Source files from: systemcaes
 lappend search_path ../src/
@@ -343,7 +343,7 @@ Information: Checking no_driving_cell...
 Information: Checking partial_input_delay...
 1
 compile -area_effort medium -map_effort medium 
-CPU Load: 34%, Ram Free: 0 GB, Swap Free: 15 GB, Work Disk Free: 4330 GB, Tmp Disk Free: 136 GB
+CPU Load: 13%, Ram Free: 106 GB, Swap Free: 15 GB, Work Disk Free: 4316 GB, Tmp Disk Free: 136 GB
 Information: Evaluating DesignWare library utilization. (UISN-27)
 
 ============================================================================
@@ -414,27 +414,27 @@ Module: DW01_inc_width5, Registers: 0, Async set/reset: 0, Sync set/reset: 0
    ELAPSED            WORST NEG   SETUP    DESIGN                            
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
   --------- --------- --------- --------- --------- -------------------------
-    0:00:26   17009.3      2.89     973.1    2465.4                          
-    0:00:28   16678.5      2.89     972.6    2543.0                          
-    0:00:28   16678.5      2.89     972.6    2543.0                          
-    0:00:28   16675.4      2.89     972.6    2543.0                          
-    0:00:28   16675.4      2.89     972.6    2543.0                          
-    0:00:32   14725.6      3.34    1120.7       0.0                          
-    0:00:35   14791.4      2.60     679.2       0.0                          
-    0:00:36   14739.6      2.43     664.2       0.0                          
-    0:00:36   14740.6      2.31     659.6       0.0                          
-    0:00:37   14739.6      2.29     655.4       0.0                          
-    0:00:38   14746.2      2.21     649.0       0.0                          
-    0:00:38   14746.2      2.15     636.2       0.0                          
-    0:00:38   14749.5      2.15     636.2       0.0                          
-    0:00:39   14745.7      2.15     636.2       0.0                          
-    0:00:39   14749.5      2.15     636.2       0.0                          
-    0:00:39   14749.5      2.15     636.2       0.0                          
-    0:00:39   14749.5      2.15     636.2       0.0                          
-    0:00:39   14749.5      2.15     636.2       0.0                          
-    0:00:39   14749.5      2.15     636.2       0.0                          
-    0:00:39   14749.5      2.15     636.2       0.0                          
-    0:00:39   14749.5      2.15     636.2       0.0                          
+    0:00:22   17009.3      2.89     973.1    2465.4                          
+    0:00:23   16678.5      2.89     972.6    2543.0                          
+    0:00:23   16678.5      2.89     972.6    2543.0                          
+    0:00:23   16675.4      2.89     972.6    2543.0                          
+    0:00:23   16675.4      2.89     972.6    2543.0                          
+    0:00:26   14725.6      3.34    1120.7       0.0                          
+    0:00:27   14791.4      2.60     679.2       0.0                          
+    0:00:28   14739.6      2.43     664.2       0.0                          
+    0:00:28   14740.6      2.31     659.6       0.0                          
+    0:00:28   14739.6      2.29     655.4       0.0                          
+    0:00:29   14746.2      2.21     649.0       0.0                          
+    0:00:29   14746.2      2.15     636.2       0.0                          
+    0:00:29   14749.5      2.15     636.2       0.0                          
+    0:00:29   14745.7      2.15     636.2       0.0                          
+    0:00:30   14749.5      2.15     636.2       0.0                          
+    0:00:30   14749.5      2.15     636.2       0.0                          
+    0:00:30   14749.5      2.15     636.2       0.0                          
+    0:00:30   14749.5      2.15     636.2       0.0                          
+    0:00:30   14749.5      2.15     636.2       0.0                          
+    0:00:30   14749.5      2.15     636.2       0.0                          
+    0:00:30   14749.5      2.15     636.2       0.0                          
 
 
 
@@ -445,28 +445,28 @@ Module: DW01_inc_width5, Registers: 0, Async set/reset: 0, Sync set/reset: 0
    ELAPSED            WORST NEG   SETUP    DESIGN                            
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
   --------- --------- --------- --------- --------- -------------------------
-    0:00:40   14749.5      1.75     434.2       0.0                          
-    0:00:40   14749.5      1.75     434.2       0.0                          
-    0:00:40   14749.5      1.75     434.2       0.0                          
-    0:00:40   14759.7      1.73     432.1       0.0 mix1/data_o_reg_reg[94]/D
-    0:00:41   14768.3      1.50     345.4       0.0 mix1/data_o_reg_reg[4]/D 
-    0:00:42   14809.5      1.06     143.2       0.0 mix1/data_o_reg_reg[19]/D
-    0:00:43   14852.9      0.71      73.7       0.0 mix1/data_o_reg_reg[4]/D 
-    0:00:43   14857.3      0.64      65.1       0.0 mix1/data_o_reg_reg[4]/D 
-    0:00:44   14873.8      0.63      64.6       0.0 mix1/data_o_reg_reg[5]/D 
-    0:00:44   14878.4      0.62      58.6       0.0 mix1/data_reg_reg[38]/D  
-    0:00:44   14887.2      0.56      52.5       0.0 sbox1/to_invert_reg[0]/D 
-    0:00:45   14896.4      0.40      43.6       0.0 mix1/data_o_reg_reg[20]/D
-    0:00:45   14922.3      0.34      38.7       0.0 mix1/data_o_reg_reg[20]/D
-    0:00:46   14928.9      0.29      28.1       0.0 mix1/data_o_reg_reg[13]/D
-    0:00:47   14965.5      0.19      13.2       0.0 mix1/data_o_reg_reg[20]/D
-    0:00:47   14976.7      0.15      12.0       0.0 mix1/data_reg_reg[46]/D  
-    0:00:47   14986.1      0.08       2.9       0.0 mix1/data_o_reg_reg[13]/D
-    0:00:48   15020.4      0.03       0.3       0.0 mix1/data_o_reg_reg[12]/D
-    0:00:48   15032.1      0.01       0.1       0.0 mix1/data_o_reg_reg[12]/D
-    0:00:49   15031.1      0.00       0.0       0.0 sbox1/to_invert_reg[2]/D 
-    0:00:49   15031.1      0.00       0.0       0.0                          
-    0:00:52   14785.6      0.00       0.0       0.0                          
+    0:00:30   14749.5      1.75     434.2       0.0                          
+    0:00:30   14749.5      1.75     434.2       0.0                          
+    0:00:30   14749.5      1.75     434.2       0.0                          
+    0:00:30   14759.7      1.73     432.1       0.0 mix1/data_o_reg_reg[94]/D
+    0:00:31   14768.3      1.50     345.4       0.0 mix1/data_o_reg_reg[4]/D 
+    0:00:31   14809.5      1.06     143.2       0.0 mix1/data_o_reg_reg[19]/D
+    0:00:32   14852.9      0.71      73.7       0.0 mix1/data_o_reg_reg[4]/D 
+    0:00:32   14857.3      0.64      65.1       0.0 mix1/data_o_reg_reg[4]/D 
+    0:00:33   14873.8      0.63      64.6       0.0 mix1/data_o_reg_reg[5]/D 
+    0:00:33   14878.4      0.62      58.6       0.0 mix1/data_reg_reg[38]/D  
+    0:00:33   14887.2      0.56      52.5       0.0 sbox1/to_invert_reg[0]/D 
+    0:00:33   14896.4      0.40      43.6       0.0 mix1/data_o_reg_reg[20]/D
+    0:00:34   14922.3      0.34      38.7       0.0 mix1/data_o_reg_reg[20]/D
+    0:00:34   14928.9      0.29      28.1       0.0 mix1/data_o_reg_reg[13]/D
+    0:00:35   14965.5      0.19      13.2       0.0 mix1/data_o_reg_reg[20]/D
+    0:00:35   14976.7      0.15      12.0       0.0 mix1/data_reg_reg[46]/D  
+    0:00:35   14986.1      0.08       2.9       0.0 mix1/data_o_reg_reg[13]/D
+    0:00:35   15020.4      0.03       0.3       0.0 mix1/data_o_reg_reg[12]/D
+    0:00:36   15032.1      0.01       0.1       0.0 mix1/data_o_reg_reg[12]/D
+    0:00:36   15031.1      0.00       0.0       0.0 sbox1/to_invert_reg[2]/D 
+    0:00:36   15031.1      0.00       0.0       0.0                          
+    0:00:38   14785.6      0.00       0.0       0.0                          
 
 
   Beginning Area-Recovery Phase  (max_area 0)
@@ -476,38 +476,38 @@ Module: DW01_inc_width5, Registers: 0, Async set/reset: 0, Sync set/reset: 0
    ELAPSED            WORST NEG   SETUP    DESIGN                            
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
   --------- --------- --------- --------- --------- -------------------------
-    0:00:52   14785.6      0.00       0.0       0.0                          
-    0:00:52   14785.6      0.00       0.0       0.0                          
-    0:00:53   14627.0      0.21       1.0       0.0                          
-    0:00:53   14591.9      0.21       5.0       0.0                          
-    0:00:54   14578.5      0.21       4.7       0.0                          
-    0:00:54   14566.8      0.21       4.9       0.0                          
-    0:00:54   14559.1      0.21       4.9       0.0                          
-    0:00:54   14551.3      0.21       4.9       0.0                          
-    0:00:54   14545.4      0.21       4.9       0.0                          
-    0:00:54   14545.4      0.21       4.9       0.0                          
-    0:00:55   14550.8      0.00       0.0       0.0                          
-    0:00:56   14347.7      1.11      91.4       0.0                          
-    0:00:56   14292.6      1.11      92.9       0.0                          
-    0:00:56   14274.8      1.11      93.0       0.0                          
-    0:00:56   14274.8      1.11      93.0       0.0                          
-    0:00:56   14274.8      1.11      93.0       0.0                          
-    0:00:56   14274.8      1.11      93.0       0.0                          
-    0:00:56   14274.8      1.11      93.0       0.0                          
-    0:00:56   14274.8      1.11      93.0       0.0                          
-    0:00:58   14280.6      0.00       0.0       0.0                          
-    0:00:59   14243.8      0.00       0.0       0.0                          
-    0:01:01   14227.2      0.00       0.0       0.0                          
-    0:01:03   14225.2      0.00       0.0       0.0                          
-    0:01:03   14213.5      0.02       0.3       0.0                          
-    0:01:03   14211.5      0.02       0.3       0.0                          
-    0:01:03   14210.2      0.02       0.3       0.0                          
-    0:01:03   14210.2      0.02       0.3       0.0                          
-    0:01:03   14210.2      0.02       0.3       0.0                          
-    0:01:03   14210.2      0.02       0.3       0.0                          
-    0:01:03   14210.2      0.02       0.3       0.0                          
-    0:01:03   14210.2      0.02       0.3       0.0                          
-    0:01:04   14213.8      0.00       0.0       0.0                          
+    0:00:38   14785.6      0.00       0.0       0.0                          
+    0:00:38   14785.6      0.00       0.0       0.0                          
+    0:00:39   14627.0      0.21       1.0       0.0                          
+    0:00:39   14591.9      0.21       5.0       0.0                          
+    0:00:40   14578.5      0.21       4.7       0.0                          
+    0:00:40   14566.8      0.21       4.9       0.0                          
+    0:00:40   14559.1      0.21       4.9       0.0                          
+    0:00:40   14551.3      0.21       4.9       0.0                          
+    0:00:40   14545.4      0.21       4.9       0.0                          
+    0:00:40   14545.4      0.21       4.9       0.0                          
+    0:00:40   14550.8      0.00       0.0       0.0                          
+    0:00:41   14347.7      1.11      91.4       0.0                          
+    0:00:41   14292.6      1.11      92.9       0.0                          
+    0:00:41   14274.8      1.11      93.0       0.0                          
+    0:00:41   14274.8      1.11      93.0       0.0                          
+    0:00:41   14274.8      1.11      93.0       0.0                          
+    0:00:41   14274.8      1.11      93.0       0.0                          
+    0:00:41   14274.8      1.11      93.0       0.0                          
+    0:00:41   14274.8      1.11      93.0       0.0                          
+    0:00:43   14280.6      0.00       0.0       0.0                          
+    0:00:44   14243.8      0.00       0.0       0.0                          
+    0:00:45   14227.2      0.00       0.0       0.0                          
+    0:00:46   14225.2      0.00       0.0       0.0                          
+    0:00:46   14213.5      0.02       0.3       0.0                          
+    0:00:46   14211.5      0.02       0.3       0.0                          
+    0:00:46   14210.2      0.02       0.3       0.0                          
+    0:00:46   14210.2      0.02       0.3       0.0                          
+    0:00:46   14210.2      0.02       0.3       0.0                          
+    0:00:46   14210.2      0.02       0.3       0.0                          
+    0:00:46   14210.2      0.02       0.3       0.0                          
+    0:00:46   14210.2      0.02       0.3       0.0                          
+    0:00:47   14213.8      0.00       0.0       0.0                          
 
 
 Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
@@ -515,7 +515,7 @@ Note: Symbol # after min delay cost means estimated hold TNS across all active s
 
   Optimization Complete
   ---------------------
-CPU Load: 88%, Ram Free: 0 GB, Swap Free: 15 GB, Work Disk Free: 4330 GB, Tmp Disk Free: 136 GB
+CPU Load: 14%, Ram Free: 106 GB, Swap Free: 15 GB, Work Disk Free: 4316 GB, Tmp Disk Free: 136 GB
 Information: Total number of MV cells in the design.
 ----------------------------------------------------------------------------------------------------
  MV Cells                                           Total Number                                   
@@ -558,7 +558,7 @@ quit
 
 Memory usage for this session 443 Mbytes.
 Memory usage for this session including child processes 443 Mbytes.
-CPU usage for this session 77 seconds ( 0.02 hours ).
-Elapsed time for this session 86 seconds ( 0.02 hours ).
+CPU usage for this session 64 seconds ( 0.02 hours ).
+Elapsed time for this session 66 seconds ( 0.02 hours ).
 
 Thank you...

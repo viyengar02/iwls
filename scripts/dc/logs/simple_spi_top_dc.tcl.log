@@ -31,19 +31,19 @@ Please use '-no_save' simv switch to avoid this.
             Inclusivity and Diversity" (Refer to article 000036315 at
                         https://solvnetplus.synopsys.com)
 Initializing...
-Current time:       Tue Apr 29 11:26:16 2025
+Current time:       Tue May 13 10:48:57 2025
 Hostname:           xunil-03.coe.drexel.edu
 CPU Model:          AMD Opteron(tm) Processor 6344
-CPU Details:        Cores = 24 : Sockets = 2 : Cache Size = 2048 KB : Freq = 2.00 GHz
+CPU Details:        Cores = 24 : Sockets = 2 : Cache Size = 2048 KB : Freq = 1.40 GHz
 OS:                 Linux 3.10.0-1160.119.1.el7.x86_64
-RAM:                125 GB (Free   2 GB)
+RAM:                125 GB (Free 105 GB)
 Swap:                15 GB (Free  15 GB)
 Work Filesystem:    /home mounted to ozark.coe.drexel.edu:/volume2/XunilNFS2/home
 Tmp Filesystem:     / mounted to /dev/mapper/vg_xunil03-lv_root
-Work Disk:          8034 GB (Free 4330 GB)
+Work Disk:          8034 GB (Free 4316 GB)
 Tmp Disk:           442 GB (Free 136 GB)
 
-CPU Load: 57%, Ram Free: 2 GB, Swap Free: 15 GB, Work Disk Free: 4330 GB, Tmp Disk Free: 136 GB
+CPU Load: 25%, Ram Free: 105 GB, Swap Free: 15 GB, Work Disk Free: 4316 GB, Tmp Disk Free: 136 GB
 # Auto-generated synthesis script for simple_spi_top
 # Source files from: simple_spi
 lappend search_path ../src/
@@ -295,7 +295,7 @@ Information: Checking no_driving_cell...
 Information: Checking partial_input_delay...
 1
 compile -area_effort medium -map_effort medium 
-CPU Load: 53%, Ram Free: 1 GB, Swap Free: 15 GB, Work Disk Free: 4330 GB, Tmp Disk Free: 136 GB
+CPU Load: 24%, Ram Free: 105 GB, Swap Free: 15 GB, Work Disk Free: 4316 GB, Tmp Disk Free: 136 GB
 Information: Evaluating DesignWare library utilization. (UISN-27)
 
 ============================================================================
@@ -429,7 +429,7 @@ Note: Symbol # after min delay cost means estimated hold TNS across all active s
 
   Optimization Complete
   ---------------------
-CPU Load: 52%, Ram Free: 1 GB, Swap Free: 15 GB, Work Disk Free: 4330 GB, Tmp Disk Free: 136 GB
+CPU Load: 24%, Ram Free: 105 GB, Swap Free: 15 GB, Work Disk Free: 4316 GB, Tmp Disk Free: 136 GB
 Information: Total number of MV cells in the design.
 ----------------------------------------------------------------------------------------------------
  MV Cells                                           Total Number                                   
@@ -471,7 +471,7 @@ quit
 
 Memory usage for this session 443 Mbytes.
 Memory usage for this session including child processes 443 Mbytes.
-CPU usage for this session 20 seconds ( 0.01 hours ).
-Elapsed time for this session 24 seconds ( 0.01 hours ).
+CPU usage for this session 19 seconds ( 0.01 hours ).
+Elapsed time for this session 21 seconds ( 0.01 hours ).
 
 Thank you...

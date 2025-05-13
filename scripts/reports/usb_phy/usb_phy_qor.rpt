@@ -3,7 +3,7 @@
 Report : qor
 Design : usb_phy
 Version: W-2024.09-SP4-1
-Date   : Tue Apr 29 11:32:10 2025
+Date   : Tue May 13 12:29:06 2025
 ****************************************
 
 
@@ -63,12 +63,12 @@ Date   : Tue Apr 29 11:32:10 2025
 
   Compile CPU Statistics
   -----------------------------------------
-  Resource Sharing:                    0.67
-  Logic Optimization:                  1.61
-  Mapping Optimization:                1.10
+  Resource Sharing:                    1.18
+  Logic Optimization:                  2.59
+  Mapping Optimization:                1.56
   -----------------------------------------
-  Overall Compile Time:                5.95
-  Overall Compile Wall Clock Time:     7.09
+  Overall Compile Time:                8.53
+  Overall Compile Wall Clock Time:     9.15
 
   --------------------------------------------------------------------
 

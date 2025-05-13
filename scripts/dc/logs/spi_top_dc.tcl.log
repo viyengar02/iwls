@@ -31,19 +31,19 @@ Please use '-no_save' simv switch to avoid this.
             Inclusivity and Diversity" (Refer to article 000036315 at
                         https://solvnetplus.synopsys.com)
 Initializing...
-Current time:       Tue Apr 29 11:26:41 2025
+Current time:       Tue May 13 10:49:18 2025
 Hostname:           xunil-03.coe.drexel.edu
 CPU Model:          AMD Opteron(tm) Processor 6344
-CPU Details:        Cores = 24 : Sockets = 2 : Cache Size = 2048 KB : Freq = 1.70 GHz
+CPU Details:        Cores = 24 : Sockets = 2 : Cache Size = 2048 KB : Freq = 2.30 GHz
 OS:                 Linux 3.10.0-1160.119.1.el7.x86_64
-RAM:                125 GB (Free   2 GB)
+RAM:                125 GB (Free 105 GB)
 Swap:                15 GB (Free  15 GB)
 Work Filesystem:    /home mounted to ozark.coe.drexel.edu:/volume2/XunilNFS2/home
 Tmp Filesystem:     / mounted to /dev/mapper/vg_xunil03-lv_root
-Work Disk:          8034 GB (Free 4330 GB)
+Work Disk:          8034 GB (Free 4316 GB)
 Tmp Disk:           442 GB (Free 136 GB)
 
-CPU Load: 56%, Ram Free: 2 GB, Swap Free: 15 GB, Work Disk Free: 4330 GB, Tmp Disk Free: 136 GB
+CPU Load: 23%, Ram Free: 105 GB, Swap Free: 15 GB, Work Disk Free: 4316 GB, Tmp Disk Free: 136 GB
 # Auto-generated synthesis script for spi_top
 # Source files from: spi
 lappend search_path ../src/
@@ -294,7 +294,7 @@ Information: Checking no_driving_cell...
 Information: Checking partial_input_delay...
 1
 compile -area_effort medium -map_effort medium 
-CPU Load: 69%, Ram Free: 1 GB, Swap Free: 15 GB, Work Disk Free: 4330 GB, Tmp Disk Free: 136 GB
+CPU Load: 22%, Ram Free: 105 GB, Swap Free: 15 GB, Work Disk Free: 4316 GB, Tmp Disk Free: 136 GB
 Information: Evaluating DesignWare library utilization. (UISN-27)
 
 ============================================================================
@@ -374,7 +374,7 @@ Module: DW01_dec_width16, Registers: 0, Async set/reset: 0, Sync set/reset: 0
     0:00:11    5207.7      1.63     132.4       0.0                          
     0:00:11    5207.7      1.63     132.4       0.0                          
     0:00:12    4432.8      1.62      96.8       0.0                          
-    0:00:12    4494.3      1.54      88.1       0.0                          
+    0:00:13    4494.3      1.54      88.1       0.0                          
     0:00:13    4464.8      1.50      82.4       0.0                          
     0:00:13    4464.8      1.40      80.1       0.0                          
     0:00:13    4464.8      1.40      80.1       0.0                          
@@ -397,7 +397,7 @@ Module: DW01_dec_width16, Registers: 0, Async set/reset: 0, Sync set/reset: 0
     0:00:13    4464.8      1.40      80.1       0.0                          
     0:00:13    4464.8      1.40      80.1       0.0                          
     0:00:13    4464.8      1.40      80.1       0.0                          
-    0:00:13    4479.8      0.89      39.0       0.0 shift/data_reg[50]/D     
+    0:00:14    4479.8      0.89      39.0       0.0 shift/data_reg[50]/D     
     0:00:14    4484.9      0.00       0.0       0.0 shift/data_reg[0]/D      
     0:00:14    4484.9      0.00       0.0       0.0                          
     0:00:14    4447.5      0.00       0.0       0.0                          
@@ -412,13 +412,13 @@ Module: DW01_dec_width16, Registers: 0, Async set/reset: 0, Sync set/reset: 0
   --------- --------- --------- --------- --------- -------------------------
     0:00:14    4447.5      0.00       0.0       0.0                          
     0:00:14    4447.5      0.00       0.0       0.0                          
-    0:00:14    4394.9      0.02       0.6       0.0                          
-    0:00:14    4377.1      0.02       0.6       0.0                          
-    0:00:14    4353.2      0.02       0.6       0.0                          
-    0:00:14    4351.2      0.02       0.6       0.0                          
-    0:00:14    4348.7      0.02       0.6       0.0                          
-    0:00:14    4348.7      0.02       0.6       0.0                          
-    0:00:14    4354.0      0.00       0.0       0.0                          
+    0:00:15    4394.9      0.02       0.6       0.0                          
+    0:00:15    4377.1      0.02       0.6       0.0                          
+    0:00:15    4353.2      0.02       0.6       0.0                          
+    0:00:15    4351.2      0.02       0.6       0.0                          
+    0:00:15    4348.7      0.02       0.6       0.0                          
+    0:00:15    4348.7      0.02       0.6       0.0                          
+    0:00:15    4354.0      0.00       0.0       0.0                          
     0:00:15    4292.5      0.13       8.1       0.0                          
     0:00:15    4279.5      0.13       8.1       0.0                          
     0:00:15    4278.3      0.13       8.1       0.0                          
@@ -442,7 +442,7 @@ Note: Symbol # after min delay cost means estimated hold TNS across all active s
 
   Optimization Complete
   ---------------------
-CPU Load: 62%, Ram Free: 1 GB, Swap Free: 15 GB, Work Disk Free: 4330 GB, Tmp Disk Free: 136 GB
+CPU Load: 25%, Ram Free: 105 GB, Swap Free: 15 GB, Work Disk Free: 4316 GB, Tmp Disk Free: 136 GB
 Information: Total number of MV cells in the design.
 ----------------------------------------------------------------------------------------------------
  MV Cells                                           Total Number                                   
@@ -486,6 +486,6 @@ quit
 Memory usage for this session 441 Mbytes.
 Memory usage for this session including child processes 441 Mbytes.
 CPU usage for this session 31 seconds ( 0.01 hours ).
-Elapsed time for this session 36 seconds ( 0.01 hours ).
+Elapsed time for this session 33 seconds ( 0.01 hours ).
 
 Thank you...

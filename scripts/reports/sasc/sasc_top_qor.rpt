@@ -3,7 +3,7 @@
 Report : qor
 Design : sasc_top
 Version: W-2024.09-SP4-1
-Date   : Tue Apr 29 11:26:06 2025
+Date   : Tue May 13 10:48:49 2025
 ****************************************
 
 
@@ -63,12 +63,12 @@ Date   : Tue Apr 29 11:26:06 2025
 
   Compile CPU Statistics
   -----------------------------------------
-  Resource Sharing:                    0.36
-  Logic Optimization:                  1.16
-  Mapping Optimization:                1.22
+  Resource Sharing:                    0.29
+  Logic Optimization:                  0.96
+  Mapping Optimization:                0.99
   -----------------------------------------
-  Overall Compile Time:                5.07
-  Overall Compile Wall Clock Time:     6.16
+  Overall Compile Time:                4.21
+  Overall Compile Wall Clock Time:     4.36
 
   --------------------------------------------------------------------
 

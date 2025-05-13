@@ -1,6 +1,6 @@
 #@ # 
 #@ # Running dc_shell Version W-2024.09-SP4-1 for linux64 -- Mar 19, 2025
-#@ # Date:   Tue Apr 29 13:03:22 2025
+#@ # Date:   Tue May 13 12:29:13 2025
 #@ # Run by: vi44@xunil-03.coe.drexel.edu
 #@ 
 
@@ -9257,8 +9257,8 @@ source /home/vi44@drexel.edu/.synopsys_dc.setup
 
 #@ # -- End source /home/vi44@drexel.edu/.synopsys_dc.setup
 
-source -echo -verbose /home/vi44@drexel.edu/iwls/scripts/dc/wb_dma_top_dc.tcl
-#@ # -- Starting source /home/vi44@drexel.edu/iwls/scripts/dc/wb_dma_top_dc.tcl
+source -echo -verbose /home/vi44@drexel.edu/iwls/scripts/./dc/wb_dma_top_dc.tcl
+#@ # -- Starting source /home/vi44@drexel.edu/iwls/scripts/./dc/wb_dma_top_dc.tcl
 
 #@ # Auto-generated synthesis script for wb_dma_top
 #@ # Source files from: wb_dma
@@ -9294,6 +9294,7 @@ source -echo -verbose /home/vi44@drexel.edu/iwls/scripts/dc/wb_dma_top_dc.tcl
 #@ 
 #@ # Clock and constraints
 #@ ungroup -all -flatten
+#@ #Reduces synthesis runtime by simplifying the design structure.
 #@ create_clock -name "clk" -period 10 [get_ports clk_i] 
 #@ set_input_delay -clock clk 2.5 [remove_from_collection [all_inputs] [get_ports clk_i]]
 #@ set_output_delay -clock clk 2.5 [all_outputs]
@@ -9303,7 +9304,9 @@ source -echo -verbose /home/vi44@drexel.edu/iwls/scripts/dc/wb_dma_top_dc.tcl
 #@ set_critical_range 1.0 [current_design]
 #@ set_max_fanout 12 [current_design]
 #@ set compile_ultra_enable_multibit_selection true
+#@ #auto selection of multi bit flip flops
 #@ set compile_ultra_enable_low_vt_opt true
+#@ #low voltage threshold for speed
 #@ set physopt_enable_critical_range_physopt true
 #@ 
 #@ # Checks and compilation
@@ -9312,6 +9315,7 @@ source -echo -verbose /home/vi44@drexel.edu/iwls/scripts/dc/wb_dma_top_dc.tcl
 #@ check_timing 
 #@ compile_ultra -retime -no_autoungroup -no_boundary_optimization
 #@ compile_ultra -retime -no_autoungroup -incremental
+#@ #refines first compilation, hopefully keeping old optimizations while fixing timing violations
 #@ physopt -preserve_footprint -critical_range 0.5
 #@ 
 #@ # Reports
