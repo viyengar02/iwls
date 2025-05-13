@@ -27,32 +27,32 @@ Initializing...
 Starting shell in Shared License mode...
 Warning: bus naming style '' is not valid. (UCN-32)
 Initializing gui preferences from file  /home/cag383@drexel.edu/.synopsys_icc_prefs.tcl
-Current time:       Tue May 13 09:49:45 2025
+Current time:       Tue May 13 12:02:15 2025
 Hostname:           xunil-03.coe.drexel.edu
 CPU Model:          AMD Opteron(tm) Processor 6344
 CPU Details:        Cores = 24 : Sockets = 2 : Cache Size = 2048 KB : Freq = 2.60 GHz
 OS:                 Linux 3.10.0-1160.119.1.el7.x86_64
-RAM:                125 GB (Free 109 GB)
+RAM:                125 GB (Free 101 GB)
 Swap:                15 GB (Free  15 GB)
 Work Filesystem:    /home mounted to ozark.coe.drexel.edu:/volume2/XunilNFS2/home
 Tmp Filesystem:     / mounted to /dev/mapper/vg_xunil03-lv_root
 Work Disk:          8034 GB (Free 4315 GB)
 Tmp Disk:           442 GB (Free 136 GB)
 
-CPU Load: 139%, Ram Free: 109 GB, Swap Free: 15 GB, Work Disk Free: 4315 GB, Tmp Disk Free: 136 GB
-Current time:       Tue May 13 09:49:45 2025
+CPU Load: 78%, Ram Free: 101 GB, Swap Free: 15 GB, Work Disk Free: 4315 GB, Tmp Disk Free: 136 GB
+Current time:       Tue May 13 12:02:15 2025
 Hostname:           xunil-03.coe.drexel.edu
 CPU Model:          AMD Opteron(tm) Processor 6344
 CPU Details:        Cores = 24 : Sockets = 2 : Cache Size = 2048 KB : Freq = 2.60 GHz
 OS:                 Linux 3.10.0-1160.119.1.el7.x86_64
-RAM:                125 GB (Free 109 GB)
+RAM:                125 GB (Free 101 GB)
 Swap:                15 GB (Free  15 GB)
 Work Filesystem:    /home mounted to ozark.coe.drexel.edu:/volume2/XunilNFS2/home
 Tmp Filesystem:     / mounted to /dev/mapper/vg_xunil03-lv_root
 Work Disk:          8034 GB (Free 4315 GB)
 Tmp Disk:           442 GB (Free 136 GB)
 
-CPU Load: 139%, Ram Free: 109 GB, Swap Free: 15 GB, Work Disk Free: 4315 GB, Tmp Disk Free: 136 GB
+CPU Load: 78%, Ram Free: 101 GB, Swap Free: 15 GB, Work Disk Free: 4315 GB, Tmp Disk Free: 136 GB
 # Auto-generated ICC2 script for i2c_master_top
 # Configuration: i2c
 ###########################################################################
@@ -114,31 +114,35 @@ Warning: /mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/li
 
 *****    Start Pass 1 *****
 Compiling source file /home/cag383@drexel.edu/ecec575/project/iwls/scripts/outputs/i2c/i2c_master_top.v
+Warning: Lineno 38, change net type from TRI to Wire. (MWNL-117)
+Warning: Lineno 39, change net type from TRI to Wire. (MWNL-117)
+Warning: Lineno 40, change net type from TRI to Wire. (MWNL-117)
+Warning: Lineno 41, change net type from TRI to Wire. (MWNL-117)
 Warning: Lineno 42, change net type from TRI to Wire. (MWNL-117)
 Warning: Lineno 43, change net type from TRI to Wire. (MWNL-117)
 Warning: Lineno 44, change net type from TRI to Wire. (MWNL-117)
 Warning: Lineno 45, change net type from TRI to Wire. (MWNL-117)
-Warning: Lineno 328, change net type from TRI to Wire. (MWNL-117)
-Warning: Lineno 329, change net type from TRI to Wire. (MWNL-117)
 
 *****  Pass 1 Complete *****
-Elapsed =    0:00:05, CPU =    0:00:04
+Elapsed =    0:00:06, CPU =    0:00:05
 
 *****  Verilog HDL translation! *****
 
 *****    Start Pass 2 *****
 Compiling source file /home/cag383@drexel.edu/ecec575/project/iwls/scripts/outputs/i2c/i2c_master_top.v
+Warning: Lineno 38, change net type from TRI to Wire. (MWNL-117)
+Warning: Lineno 39, change net type from TRI to Wire. (MWNL-117)
+Warning: Lineno 40, change net type from TRI to Wire. (MWNL-117)
+Warning: Lineno 41, change net type from TRI to Wire. (MWNL-117)
 Warning: Lineno 42, change net type from TRI to Wire. (MWNL-117)
 Warning: Lineno 43, change net type from TRI to Wire. (MWNL-117)
 Warning: Lineno 44, change net type from TRI to Wire. (MWNL-117)
 Warning: Lineno 45, change net type from TRI to Wire. (MWNL-117)
-Error:   /home/cag383@drexel.edu/ecec575/project/iwls/scripts/outputs/i2c/i2c_master_top.v:51:  module i2c_master_bit_ctrl is not defined.
+Error:   /home/cag383@drexel.edu/ecec575/project/iwls/scripts/outputs/i2c/i2c_master_top.v:53:  module i2c_master_byte_ctrl is not defined.
  (VER-500)
-Error: Module 'i2c_master_bit_ctrl' is not defined.  (MWNL-297)
-Error:   /home/cag383@drexel.edu/ecec575/project/iwls/scripts/outputs/i2c/i2c_master_top.v:51: ERROR: near line 51: Port connection failed.
+Error: Module 'i2c_master_byte_ctrl' is not defined.  (MWNL-297)
+Error:   /home/cag383@drexel.edu/ecec575/project/iwls/scripts/outputs/i2c/i2c_master_top.v:53: ERROR: near line 53: Port connection failed.
  (VER-500)
-Warning: Lineno 328, change net type from TRI to Wire. (MWNL-117)
-Warning: Lineno 329, change net type from TRI to Wire. (MWNL-117)
 
 Error: Verilog parser cannot parse the /home/cag383@drexel.edu/ecec575/project/iwls/scripts/outputs/i2c/i2c_master_top.v source file. (MWNL-047)
 0
@@ -239,7 +243,7 @@ quit
 
 Memory usage for this session 331 Mbytes.
 Memory usage for this session including child processes 331 Mbytes.
-CPU usage for this session 12 seconds ( 0.00 hours ).
+CPU usage for this session 14 seconds ( 0.00 hours ).
 Elapsed time for this session 16 seconds ( 0.00 hours ).
 
 Thank you...

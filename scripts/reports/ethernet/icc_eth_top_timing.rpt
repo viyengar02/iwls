@@ -1,2 +1,545 @@
-Error: Current design is not defined. (UID-4)
-0
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 10
+Design : eth_top
+Version: W-2024.09-SP2
+Date   : Tue May 13 12:01:58 2025
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: ss0p95v125c   Library: saed32rvt_ss0p95v125c
+	Parasitic source    : LPE
+	Parasitic mode      : RealRC
+	Extraction mode     : MAX
+	Extraction derating : 125/125/125
+
+Information: Percent of Arnoldi-based delays = 18.20%
+
+Information: Percent of CCS-based delays = 17.41%
+
+  Startpoint: wishbone/bd_ram/raddr_reg[3]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: wishbone/TxPointerMSB_reg[2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  wishbone/bd_ram/raddr_reg[3]/CLK (DFFX1_RVT)            0.00 #     0.00 r
+  wishbone/bd_ram/raddr_reg[3]/Q (DFFX1_RVT)              0.16       0.16 f
+  wishbone/bd_ram/U49/Y (NOR2X0_RVT)                      0.08 &     0.24 r
+  wishbone/bd_ram/U13960/Y (NBUFFX4_RVT)                  0.05 &     0.29 r
+  wishbone/bd_ram/U2999/Y (AND2X1_RVT)                    0.05 &     0.35 r
+  wishbone/bd_ram/U3743/Y (NBUFFX4_RVT)                  15.62 c    15.96 r
+  wishbone/bd_ram/U3814/Y (NBUFFX2_RVT)                   1.92 c    17.89 r
+  wishbone/bd_ram/U21806/Y (AO22X1_RVT)                   0.30 &    18.19 r
+  wishbone/bd_ram/U21807/Y (AO221X1_RVT)                  0.16 &    18.35 r
+  wishbone/bd_ram/U21812/Y (NOR4X0_RVT)                   0.17 &    18.52 f
+  wishbone/bd_ram/U21822/Y (OA22X1_RVT)                   0.12 &    18.64 f
+  wishbone/bd_ram/U21823/Y (OA221X1_RVT)                  0.11 &    18.74 f
+  wishbone/bd_ram/U21824/Y (NAND4X1_RVT)                  0.27 c    19.01 r
+  wishbone/bd_ram/U20511/Y (AND2X1_RVT)                   0.10 c    19.10 r
+  wishbone/bd_ram/do_tri[2]/Y (TNBUFFX4_RVT)              0.15 &    19.26 r
+  wishbone/bd_ram/U10680/Y (INVX32_RVT)                  -0.09 &    19.17 f
+  wishbone/bd_ram/U10754/Y (NBUFFX8_RVT)                 -0.63 &    18.53 f
+  wishbone/bd_ram/U10755/Y (IBUFFX8_RVT)                  0.23 &    18.77 r
+  wishbone/bd_ram/do[2] (eth_spram_256x32)                0.00      18.77 r
+  wishbone/U377/Y (NBUFFX4_RVT)                           0.03 &    18.80 r
+  wishbone/U378/Y (NBUFFX4_RVT)                           0.04 &    18.84 r
+  wishbone/U375/Y (NBUFFX4_RVT)                           0.04 &    18.89 r
+  wishbone/U376/Y (NBUFFX4_RVT)                           0.07 &    18.96 r
+  wishbone/U373/Y (NBUFFX4_RVT)                           0.08 &    19.04 r
+  wishbone/U374/Y (NBUFFX4_RVT)                           0.05 &    19.09 r
+  wishbone/U370/Y (NBUFFX4_RVT)                           0.05 &    19.14 r
+  wishbone/U372/Y (NBUFFX4_RVT)                           0.05 &    19.19 r
+  wishbone/U371/Y (NBUFFX4_RVT)                           0.07 c    19.26 r
+  wishbone/U1312/Y (AO222X1_RVT)                          0.11 c    19.37 r
+  wishbone/U386/Y (NBUFFX16_RVT)                          0.06 &    19.44 r
+  wishbone/U384/Y (NBUFFX4_RVT)                          -0.24 &    19.20 r
+  wishbone/U385/Y (NBUFFX4_RVT)                           0.04 &    19.23 r
+  wishbone/U381/Y (NBUFFX4_RVT)                           0.04 &    19.28 r
+  wishbone/U382/Y (NBUFFX4_RVT)                           0.05 &    19.32 r
+  wishbone/U383/Y (NBUFFX4_RVT)                           0.05 &    19.37 r
+  wishbone/U387/Y (NBUFFX4_RVT)                           0.05 &    19.41 r
+  wishbone/U388/Y (NBUFFX4_RVT)                           0.32 &    19.73 r
+  wishbone/TxPointerMSB_reg[2]/D (DFFARX1_RVT)            0.00 &    19.73 r
+  data arrival time                                                 19.73
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  wishbone/TxPointerMSB_reg[2]/CLK (DFFARX1_RVT)          0.00       9.80 r
+  library setup time                                     -0.25       9.55
+  data required time                                                 9.55
+  --------------------------------------------------------------------------
+  data required time                                                 9.55
+  data arrival time                                                -19.73
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -10.18
+
+
+  Startpoint: wishbone/bd_ram/raddr_reg[3]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: wishbone/TxPointerMSB_reg[30]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  wishbone/bd_ram/raddr_reg[3]/CLK (DFFX1_RVT)            0.00 #     0.00 r
+  wishbone/bd_ram/raddr_reg[3]/Q (DFFX1_RVT)              0.16       0.16 f
+  wishbone/bd_ram/U49/Y (NOR2X0_RVT)                      0.08 &     0.24 r
+  wishbone/bd_ram/U13960/Y (NBUFFX4_RVT)                  0.05 &     0.29 r
+  wishbone/bd_ram/U2999/Y (AND2X1_RVT)                    0.05 &     0.35 r
+  wishbone/bd_ram/U3743/Y (NBUFFX4_RVT)                  15.62 c    15.96 r
+  wishbone/bd_ram/U3773/Y (NBUFFX4_RVT)                   0.24 c    16.20 r
+  wishbone/bd_ram/U13134/Y (AOI22X1_RVT)                  0.18 c    16.38 f
+  wishbone/bd_ram/U13133/Y (OA221X1_RVT)                  0.13 &    16.51 f
+  wishbone/bd_ram/U20694/Y (AND4X1_RVT)                   0.14 &    16.65 f
+  wishbone/bd_ram/U24433/Y (OA22X1_RVT)                   0.09 &    16.74 f
+  wishbone/bd_ram/U24434/Y (OA221X1_RVT)                  0.13 &    16.87 f
+  wishbone/bd_ram/U6069/Y (AND4X4_RVT)                    0.19 &    17.06 f
+  wishbone/bd_ram/U8955/Y (INVX8_RVT)                     0.03 c    17.10 r
+  wishbone/bd_ram/U20475/Y (AND2X1_RVT)                   0.06 c    17.15 r
+  wishbone/bd_ram/do_tri[30]/Y (TNBUFFX4_RVT)             0.15 &    17.31 r
+  wishbone/bd_ram/U10692/Y (INVX32_RVT)                  -0.09 &    17.22 f
+  wishbone/bd_ram/U10666/Y (INVX4_RVT)                    0.08 &    17.30 r
+  wishbone/bd_ram/do[30] (eth_spram_256x32)               0.00      17.30 r
+  wishbone/U349/Y (NBUFFX4_RVT)                           0.10 &    17.40 r
+  wishbone/U348/Y (NBUFFX4_RVT)                          -0.04 &    17.36 r
+  wishbone/U63/Y (NBUFFX4_RVT)                           -0.29 &    17.06 r
+  wishbone/U70/Y (NBUFFX4_RVT)                            0.04 &    17.10 r
+  wishbone/U323/Y (NBUFFX4_RVT)                           0.06 &    17.16 r
+  wishbone/U324/Y (NBUFFX4_RVT)                           0.08 &    17.24 r
+  wishbone/U346/Y (NBUFFX4_RVT)                           0.69 &    17.93 r
+  wishbone/U322/Y (DELLN1X2_RVT)                          0.50 &    18.43 r
+  wishbone/U1360/Y (AO222X1_RVT)                          0.09 &    18.52 r
+  wishbone/U325/Y (NBUFFX4_RVT)                           0.06 &    18.57 r
+  wishbone/U327/Y (NBUFFX4_RVT)                           0.05 &    18.63 r
+  wishbone/U326/Y (NBUFFX4_RVT)                           0.45 &    19.08 r
+  wishbone/U328/Y (NBUFFX4_RVT)                           0.65 &    19.73 r
+  wishbone/TxPointerMSB_reg[30]/D (DFFARX1_RVT)           0.00 &    19.73 r
+  data arrival time                                                 19.73
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  wishbone/TxPointerMSB_reg[30]/CLK (DFFARX1_RVT)         0.00       9.80 r
+  library setup time                                     -0.21       9.59
+  data required time                                                 9.59
+  --------------------------------------------------------------------------
+  data required time                                                 9.59
+  data arrival time                                                -19.73
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -10.14
+
+
+  Startpoint: wishbone/bd_ram/raddr_reg[3]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: temp_wb_dat_o_reg_reg[15]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  wishbone/bd_ram/raddr_reg[3]/CLK (DFFX1_RVT)            0.00 #     0.00 r
+  wishbone/bd_ram/raddr_reg[3]/Q (DFFX1_RVT)              0.16       0.16 f
+  wishbone/bd_ram/U49/Y (NOR2X0_RVT)                      0.08 &     0.24 r
+  wishbone/bd_ram/U13960/Y (NBUFFX4_RVT)                  0.05 &     0.29 r
+  wishbone/bd_ram/U2999/Y (AND2X1_RVT)                    0.05 &     0.35 r
+  wishbone/bd_ram/U3743/Y (NBUFFX4_RVT)                  15.62 c    15.96 r
+  wishbone/bd_ram/U3823/Y (NBUFFX2_RVT)                   2.27 c    18.23 r
+  wishbone/bd_ram/U12948/Y (AOI22X1_RVT)                  0.38 &    18.62 f
+  wishbone/bd_ram/U13449/Y (OAI221X2_RVT)                 0.17 &    18.79 r
+  wishbone/bd_ram/U23217/Y (NOR4X0_RVT)                   0.13 &    18.91 f
+  wishbone/bd_ram/U23225/Y (OA221X2_RVT)                  0.13 &    19.04 f
+  wishbone/bd_ram/U23249/Y (NAND4X0_RVT)                  0.19 &    19.23 r
+  wishbone/bd_ram/U20474/Y (AND2X1_RVT)                   0.08 &    19.32 r
+  wishbone/bd_ram/do_tri[15]/Y (TNBUFFX2_RVT)             0.11 &    19.43 r
+  wishbone/bd_ram/do[15] (eth_spram_256x32)               0.00      19.43 r
+  wishbone/U362/Y (NBUFFX8_RVT)                           0.06 c    19.49 r
+  wishbone/WB_DAT_O[15] (eth_wishbone)                    0.00      19.49 r
+  U196/Y (AO22X1_RVT)                                     0.14 c    19.63 r
+  U80/Y (NBUFFX4_RVT)                                     0.08 c    19.71 r
+  temp_wb_dat_o_reg_reg[15]/D (DFFARX1_RVT)               0.00 c    19.71 r
+  data arrival time                                                 19.71
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  temp_wb_dat_o_reg_reg[15]/CLK (DFFARX1_RVT)             0.00       9.80 r
+  library setup time                                     -0.07       9.73
+  data required time                                                 9.73
+  --------------------------------------------------------------------------
+  data required time                                                 9.73
+  data arrival time                                                -19.71
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -9.98
+
+
+  Startpoint: wishbone/bd_ram/raddr_reg[3]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: wishbone/TxPointerMSB_reg[15]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  wishbone/bd_ram/raddr_reg[3]/CLK (DFFX1_RVT)            0.00 #     0.00 r
+  wishbone/bd_ram/raddr_reg[3]/Q (DFFX1_RVT)              0.16       0.16 f
+  wishbone/bd_ram/U49/Y (NOR2X0_RVT)                      0.08 &     0.24 r
+  wishbone/bd_ram/U13960/Y (NBUFFX4_RVT)                  0.05 &     0.29 r
+  wishbone/bd_ram/U2999/Y (AND2X1_RVT)                    0.05 &     0.35 r
+  wishbone/bd_ram/U3743/Y (NBUFFX4_RVT)                  15.62 c    15.96 r
+  wishbone/bd_ram/U3823/Y (NBUFFX2_RVT)                   2.27 c    18.23 r
+  wishbone/bd_ram/U12948/Y (AOI22X1_RVT)                  0.38 &    18.62 f
+  wishbone/bd_ram/U13449/Y (OAI221X2_RVT)                 0.17 &    18.79 r
+  wishbone/bd_ram/U23217/Y (NOR4X0_RVT)                   0.13 &    18.91 f
+  wishbone/bd_ram/U23225/Y (OA221X2_RVT)                  0.13 &    19.04 f
+  wishbone/bd_ram/U23249/Y (NAND4X0_RVT)                  0.19 &    19.23 r
+  wishbone/bd_ram/U20474/Y (AND2X1_RVT)                   0.08 &    19.32 r
+  wishbone/bd_ram/do_tri[15]/Y (TNBUFFX2_RVT)             0.11 &    19.43 r
+  wishbone/bd_ram/do[15] (eth_spram_256x32)               0.00      19.43 r
+  wishbone/U362/Y (NBUFFX8_RVT)                           0.06 c    19.49 r
+  wishbone/U1340/Y (AO222X1_RVT)                          0.15 c    19.65 r
+  wishbone/TxPointerMSB_reg[15]/D (DFFARX1_RVT)           0.00 &    19.65 r
+  data arrival time                                                 19.65
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  wishbone/TxPointerMSB_reg[15]/CLK (DFFARX1_RVT)         0.00       9.80 r
+  library setup time                                     -0.08       9.72
+  data required time                                                 9.72
+  --------------------------------------------------------------------------
+  data required time                                                 9.72
+  data arrival time                                                -19.65
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -9.93
+
+
+  Startpoint: wishbone/bd_ram/raddr_reg[3]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: wishbone/RxPointerMSB_reg[15]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  wishbone/bd_ram/raddr_reg[3]/CLK (DFFX1_RVT)            0.00 #     0.00 r
+  wishbone/bd_ram/raddr_reg[3]/Q (DFFX1_RVT)              0.16       0.16 f
+  wishbone/bd_ram/U49/Y (NOR2X0_RVT)                      0.08 &     0.24 r
+  wishbone/bd_ram/U13960/Y (NBUFFX4_RVT)                  0.05 &     0.29 r
+  wishbone/bd_ram/U2999/Y (AND2X1_RVT)                    0.05 &     0.35 r
+  wishbone/bd_ram/U3743/Y (NBUFFX4_RVT)                  15.62 c    15.96 r
+  wishbone/bd_ram/U3823/Y (NBUFFX2_RVT)                   2.27 c    18.23 r
+  wishbone/bd_ram/U12948/Y (AOI22X1_RVT)                  0.38 &    18.62 f
+  wishbone/bd_ram/U13449/Y (OAI221X2_RVT)                 0.17 &    18.79 r
+  wishbone/bd_ram/U23217/Y (NOR4X0_RVT)                   0.13 &    18.91 f
+  wishbone/bd_ram/U23225/Y (OA221X2_RVT)                  0.13 &    19.04 f
+  wishbone/bd_ram/U23249/Y (NAND4X0_RVT)                  0.19 &    19.23 r
+  wishbone/bd_ram/U20474/Y (AND2X1_RVT)                   0.08 &    19.32 r
+  wishbone/bd_ram/do_tri[15]/Y (TNBUFFX2_RVT)             0.11 &    19.43 r
+  wishbone/bd_ram/do[15] (eth_spram_256x32)               0.00      19.43 r
+  wishbone/U362/Y (NBUFFX8_RVT)                           0.06 c    19.49 r
+  wishbone/U1341/Y (AO222X1_RVT)                          0.15 c    19.64 r
+  wishbone/RxPointerMSB_reg[15]/D (DFFARX1_RVT)           0.00 &    19.64 r
+  data arrival time                                                 19.64
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  wishbone/RxPointerMSB_reg[15]/CLK (DFFARX1_RVT)         0.00       9.80 r
+  library setup time                                     -0.08       9.72
+  data required time                                                 9.72
+  --------------------------------------------------------------------------
+  data required time                                                 9.72
+  data arrival time                                                -19.64
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -9.92
+
+
+  Startpoint: wishbone/bd_ram/raddr_reg[3]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: wishbone/TxPointerMSB_reg[7]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  wishbone/bd_ram/raddr_reg[3]/CLK (DFFX1_RVT)            0.00 #     0.00 r
+  wishbone/bd_ram/raddr_reg[3]/Q (DFFX1_RVT)              0.16       0.16 f
+  wishbone/bd_ram/U49/Y (NOR2X0_RVT)                      0.08 &     0.24 r
+  wishbone/bd_ram/U13960/Y (NBUFFX4_RVT)                  0.05 &     0.29 r
+  wishbone/bd_ram/U2999/Y (AND2X1_RVT)                    0.05 &     0.35 r
+  wishbone/bd_ram/U3743/Y (NBUFFX4_RVT)                  15.62 c    15.96 r
+  wishbone/bd_ram/U3814/Y (NBUFFX2_RVT)                   1.92 c    17.89 r
+  wishbone/bd_ram/U22361/Y (AO22X1_RVT)                   0.31 &    18.19 r
+  wishbone/bd_ram/U22362/Y (AO221X1_RVT)                  0.15 &    18.34 r
+  wishbone/bd_ram/U22367/Y (NOR4X0_RVT)                   0.16 &    18.50 f
+  wishbone/bd_ram/U22377/Y (OA22X1_RVT)                   0.11 &    18.61 f
+  wishbone/bd_ram/U5927/Y (OAI221X1_RVT)                  0.12 &    18.73 r
+  wishbone/bd_ram/U5908/Y (NOR3X0_RVT)                    0.10 &    18.83 f
+  wishbone/bd_ram/U6058/Y (NAND2X4_RVT)                   0.13 c    18.97 r
+  wishbone/bd_ram/U20509/Y (AND2X1_RVT)                   0.08 c    19.05 r
+  wishbone/bd_ram/do_tri[7]/Y (TNBUFFX4_RVT)              0.16 &    19.20 r
+  wishbone/bd_ram/U10685/Y (INVX32_RVT)                  -0.09 &    19.11 f
+  wishbone/bd_ram/U10750/Y (NBUFFX8_RVT)                 -0.67 &    18.45 f
+  wishbone/bd_ram/U10751/Y (IBUFFX8_RVT)                 -0.19 c    18.25 r
+  wishbone/bd_ram/do[7] (eth_spram_256x32)                0.00      18.25 r
+  wishbone/U1308/Y (AO222X2_RVT)                          0.34 c    18.59 r
+  wishbone/U363/Y (NBUFFX4_RVT)                          -0.11 &    18.48 r
+  wishbone/U365/Y (NBUFFX4_RVT)                           0.03 &    18.52 r
+  wishbone/U364/Y (NBUFFX4_RVT)                           0.04 &    18.56 r
+  wishbone/U64/Y (NBUFFX4_RVT)                            0.04 &    18.60 r
+  wishbone/U366/Y (NBUFFX4_RVT)                           0.21 &    18.81 r
+  wishbone/U367/Y (NBUFFX4_RVT)                           0.11 &    18.93 r
+  wishbone/U368/Y (NBUFFX4_RVT)                           0.08 &    19.01 r
+  wishbone/U369/Y (NBUFFX4_RVT)                           0.37 &    19.37 r
+  wishbone/TxPointerMSB_reg[7]/D (DFFARX1_RVT)            0.00 &    19.37 r
+  data arrival time                                                 19.37
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  wishbone/TxPointerMSB_reg[7]/CLK (DFFARX1_RVT)          0.00       9.80 r
+  library setup time                                     -0.28       9.52
+  data required time                                                 9.52
+  --------------------------------------------------------------------------
+  data required time                                                 9.52
+  data arrival time                                                -19.37
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -9.85
+
+
+  Startpoint: wishbone/bd_ram/raddr_reg[3]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: temp_wb_dat_o_reg_reg[14]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  wishbone/bd_ram/raddr_reg[3]/CLK (DFFX1_RVT)            0.00 #     0.00 r
+  wishbone/bd_ram/raddr_reg[3]/Q (DFFX1_RVT)              0.16       0.16 f
+  wishbone/bd_ram/U49/Y (NOR2X0_RVT)                      0.08 &     0.24 r
+  wishbone/bd_ram/U13960/Y (NBUFFX4_RVT)                  0.05 &     0.29 r
+  wishbone/bd_ram/U2999/Y (AND2X1_RVT)                    0.05 &     0.35 r
+  wishbone/bd_ram/U3743/Y (NBUFFX4_RVT)                  15.62 c    15.96 r
+  wishbone/bd_ram/U3823/Y (NBUFFX2_RVT)                   2.27 c    18.23 r
+  wishbone/bd_ram/U23071/Y (AO22X1_RVT)                   0.41 &    18.64 r
+  wishbone/bd_ram/U14829/Y (AOI221X1_RVT)                 0.19 &    18.83 f
+  wishbone/bd_ram/U20566/Y (AND4X1_RVT)                   0.16 &    18.99 f
+  wishbone/bd_ram/U23073/Y (OA22X1_RVT)                   0.08 &    19.07 f
+  wishbone/bd_ram/U23074/Y (OA221X1_RVT)                  0.12 &    19.19 f
+  wishbone/bd_ram/U23149/Y (NAND4X0_RVT)                  0.09 &    19.28 r
+  wishbone/bd_ram/U10808/Y (NBUFFX8_RVT)                  0.07 &    19.35 r
+  wishbone/bd_ram/U10811/Y (NBUFFX8_RVT)                 -0.15 &    19.21 r
+  wishbone/bd_ram/U20470/Y (AND2X1_RVT)                   0.08 &    19.29 r
+  wishbone/bd_ram/do_tri[14]/Y (TNBUFFX4_RVT)             0.14 &    19.43 r
+  wishbone/bd_ram/U10686/Y (INVX32_RVT)                  -0.09 &    19.33 f
+  wishbone/bd_ram/U10777/Y (NBUFFX8_RVT)                 -0.69 &    18.65 f
+  wishbone/bd_ram/U10778/Y (IBUFFX8_RVT)                  0.23 &    18.88 r
+  wishbone/bd_ram/U10679/Y (NBUFFX4_RVT)                  0.03 &    18.91 r
+  wishbone/bd_ram/U10725/Y (NBUFFX4_RVT)                  0.04 &    18.96 r
+  wishbone/bd_ram/do[14] (eth_spram_256x32)               0.00      18.96 r
+  wishbone/U401/Y (NBUFFX4_RVT)                           0.04 &    19.00 r
+  wishbone/U402/Y (NBUFFX4_RVT)                           0.16 &    19.16 r
+  wishbone/U191/Y (NBUFFX2_RVT)                           0.17 &    19.33 r
+  wishbone/WB_DAT_O[14] (eth_wishbone)                    0.00      19.33 r
+  U194/Y (AO22X1_RVT)                                     0.19 &    19.52 r
+  temp_wb_dat_o_reg_reg[14]/D (DFFARX1_RVT)               0.00 &    19.52 r
+  data arrival time                                                 19.52
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  temp_wb_dat_o_reg_reg[14]/CLK (DFFARX1_RVT)             0.00       9.80 r
+  library setup time                                     -0.10       9.70
+  data required time                                                 9.70
+  --------------------------------------------------------------------------
+  data required time                                                 9.70
+  data arrival time                                                -19.52
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -9.83
+
+
+  Startpoint: wishbone/bd_ram/raddr_reg[3]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: temp_wb_dat_o_reg_reg[10]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  wishbone/bd_ram/raddr_reg[3]/CLK (DFFX1_RVT)            0.00 #     0.00 r
+  wishbone/bd_ram/raddr_reg[3]/Q (DFFX1_RVT)              0.16       0.16 f
+  wishbone/bd_ram/U49/Y (NOR2X0_RVT)                      0.08 &     0.24 r
+  wishbone/bd_ram/U13960/Y (NBUFFX4_RVT)                  0.05 &     0.29 r
+  wishbone/bd_ram/U2999/Y (AND2X1_RVT)                    0.05 &     0.35 r
+  wishbone/bd_ram/U3743/Y (NBUFFX4_RVT)                  15.62 c    15.96 r
+  wishbone/bd_ram/U3823/Y (NBUFFX2_RVT)                   2.27 c    18.23 r
+  wishbone/bd_ram/U22643/Y (AO22X1_RVT)                   0.41 &    18.65 r
+  wishbone/bd_ram/U6360/Y (AOI221X1_RVT)                  0.18 &    18.83 f
+  wishbone/bd_ram/U10740/Y (NAND4X0_RVT)                  0.09 &    18.92 r
+  wishbone/bd_ram/U10741/Y (INVX2_RVT)                    0.04 &    18.96 f
+  wishbone/bd_ram/U22646/Y (OA22X1_RVT)                   0.07 &    19.03 f
+  wishbone/bd_ram/U22647/Y (OA221X2_RVT)                  0.11 &    19.14 f
+  wishbone/bd_ram/U22730/Y (NAND4X0_RVT)                  0.07 &    19.21 r
+  wishbone/bd_ram/U10814/Y (NBUFFX8_RVT)                  0.07 &    19.28 r
+  wishbone/bd_ram/U10815/Y (NBUFFX8_RVT)                 -0.11 &    19.17 r
+  wishbone/bd_ram/U10798/Y (NBUFFX4_RVT)                 -0.04 &    19.13 r
+  wishbone/bd_ram/U20510/Y (AND2X1_RVT)                   0.06 &    19.20 r
+  wishbone/bd_ram/do_tri[10]/Y (TNBUFFX4_RVT)             0.14 &    19.34 r
+  wishbone/bd_ram/U10773/Y (INVX32_RVT)                  -0.08 &    19.26 f
+  wishbone/bd_ram/U10774/Y (INVX16_RVT)                   0.08 c    19.34 r
+  wishbone/bd_ram/do[10] (eth_spram_256x32)               0.00      19.34 r
+  wishbone/WB_DAT_O[10] (eth_wishbone)                    0.00      19.34 r
+  U184/Y (AO22X2_RVT)                                     0.17 c    19.51 r
+  temp_wb_dat_o_reg_reg[10]/D (DFFARX1_RVT)               0.00 &    19.51 r
+  data arrival time                                                 19.51
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  temp_wb_dat_o_reg_reg[10]/CLK (DFFARX1_RVT)             0.00       9.80 r
+  library setup time                                     -0.09       9.71
+  data required time                                                 9.71
+  --------------------------------------------------------------------------
+  data required time                                                 9.71
+  data arrival time                                                -19.51
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -9.80
+
+
+  Startpoint: wishbone/bd_ram/raddr_reg[3]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: wishbone/RxPointerMSB_reg[10]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  wishbone/bd_ram/raddr_reg[3]/CLK (DFFX1_RVT)            0.00 #     0.00 r
+  wishbone/bd_ram/raddr_reg[3]/Q (DFFX1_RVT)              0.16       0.16 f
+  wishbone/bd_ram/U49/Y (NOR2X0_RVT)                      0.08 &     0.24 r
+  wishbone/bd_ram/U13960/Y (NBUFFX4_RVT)                  0.05 &     0.29 r
+  wishbone/bd_ram/U2999/Y (AND2X1_RVT)                    0.05 &     0.35 r
+  wishbone/bd_ram/U3743/Y (NBUFFX4_RVT)                  15.62 c    15.96 r
+  wishbone/bd_ram/U3823/Y (NBUFFX2_RVT)                   2.27 c    18.23 r
+  wishbone/bd_ram/U22643/Y (AO22X1_RVT)                   0.41 &    18.65 r
+  wishbone/bd_ram/U6360/Y (AOI221X1_RVT)                  0.18 &    18.83 f
+  wishbone/bd_ram/U10740/Y (NAND4X0_RVT)                  0.09 &    18.92 r
+  wishbone/bd_ram/U10741/Y (INVX2_RVT)                    0.04 &    18.96 f
+  wishbone/bd_ram/U22646/Y (OA22X1_RVT)                   0.07 &    19.03 f
+  wishbone/bd_ram/U22647/Y (OA221X2_RVT)                  0.11 &    19.14 f
+  wishbone/bd_ram/U22730/Y (NAND4X0_RVT)                  0.07 &    19.21 r
+  wishbone/bd_ram/U10814/Y (NBUFFX8_RVT)                  0.07 &    19.28 r
+  wishbone/bd_ram/U10815/Y (NBUFFX8_RVT)                 -0.11 &    19.17 r
+  wishbone/bd_ram/U10798/Y (NBUFFX4_RVT)                 -0.04 &    19.13 r
+  wishbone/bd_ram/U20510/Y (AND2X1_RVT)                   0.06 &    19.20 r
+  wishbone/bd_ram/do_tri[10]/Y (TNBUFFX4_RVT)             0.14 &    19.34 r
+  wishbone/bd_ram/U10773/Y (INVX32_RVT)                  -0.08 &    19.26 f
+  wishbone/bd_ram/U10774/Y (INVX16_RVT)                   0.08 c    19.34 r
+  wishbone/bd_ram/do[10] (eth_spram_256x32)               0.00      19.34 r
+  wishbone/U1310/Y (AO222X1_RVT)                          0.12 c    19.47 r
+  wishbone/RxPointerMSB_reg[10]/D (DFFARX1_RVT)           0.00 &    19.47 r
+  data arrival time                                                 19.47
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  wishbone/RxPointerMSB_reg[10]/CLK (DFFARX1_RVT)         0.00       9.80 r
+  library setup time                                     -0.07       9.73
+  data required time                                                 9.73
+  --------------------------------------------------------------------------
+  data required time                                                 9.73
+  data arrival time                                                -19.47
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -9.74
+
+
+  Startpoint: wishbone/bd_ram/raddr_reg[3]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: wishbone/TxPointerMSB_reg[10]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  wishbone/bd_ram/raddr_reg[3]/CLK (DFFX1_RVT)            0.00 #     0.00 r
+  wishbone/bd_ram/raddr_reg[3]/Q (DFFX1_RVT)              0.16       0.16 f
+  wishbone/bd_ram/U49/Y (NOR2X0_RVT)                      0.08 &     0.24 r
+  wishbone/bd_ram/U13960/Y (NBUFFX4_RVT)                  0.05 &     0.29 r
+  wishbone/bd_ram/U2999/Y (AND2X1_RVT)                    0.05 &     0.35 r
+  wishbone/bd_ram/U3743/Y (NBUFFX4_RVT)                  15.62 c    15.96 r
+  wishbone/bd_ram/U3823/Y (NBUFFX2_RVT)                   2.27 c    18.23 r
+  wishbone/bd_ram/U22643/Y (AO22X1_RVT)                   0.41 &    18.65 r
+  wishbone/bd_ram/U6360/Y (AOI221X1_RVT)                  0.18 &    18.83 f
+  wishbone/bd_ram/U10740/Y (NAND4X0_RVT)                  0.09 &    18.92 r
+  wishbone/bd_ram/U10741/Y (INVX2_RVT)                    0.04 &    18.96 f
+  wishbone/bd_ram/U22646/Y (OA22X1_RVT)                   0.07 &    19.03 f
+  wishbone/bd_ram/U22647/Y (OA221X2_RVT)                  0.11 &    19.14 f
+  wishbone/bd_ram/U22730/Y (NAND4X0_RVT)                  0.07 &    19.21 r
+  wishbone/bd_ram/U10814/Y (NBUFFX8_RVT)                  0.07 &    19.28 r
+  wishbone/bd_ram/U10815/Y (NBUFFX8_RVT)                 -0.11 &    19.17 r
+  wishbone/bd_ram/U10798/Y (NBUFFX4_RVT)                 -0.04 &    19.13 r
+  wishbone/bd_ram/U20510/Y (AND2X1_RVT)                   0.06 &    19.20 r
+  wishbone/bd_ram/do_tri[10]/Y (TNBUFFX4_RVT)             0.14 &    19.34 r
+  wishbone/bd_ram/U10773/Y (INVX32_RVT)                  -0.08 &    19.26 f
+  wishbone/bd_ram/U10774/Y (INVX16_RVT)                   0.08 c    19.34 r
+  wishbone/bd_ram/do[10] (eth_spram_256x32)               0.00      19.34 r
+  wishbone/U1311/Y (AO222X1_RVT)                          0.12 c    19.47 r
+  wishbone/TxPointerMSB_reg[10]/D (DFFARX1_RVT)           0.00 &    19.47 r
+  data arrival time                                                 19.47
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  wishbone/TxPointerMSB_reg[10]/CLK (DFFARX1_RVT)         0.00       9.80 r
+  library setup time                                     -0.07       9.73
+  data required time                                                 9.73
+  --------------------------------------------------------------------------
+  data required time                                                 9.73
+  data arrival time                                                -19.47
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -9.74
+
+
+1

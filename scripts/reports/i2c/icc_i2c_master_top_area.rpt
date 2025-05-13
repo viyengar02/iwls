@@ -1,2 +1,30 @@
-Error: Current design is not defined. (UID-4)
-0
+ 
+****************************************
+Report : area
+Design : i2c_master_top
+Version: W-2024.09-SP2
+Date   : Tue May 13 12:13:14 2025
+****************************************
+
+Library(s) Used:
+
+    saed32rvt_ss0p95v25c (File: /mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v25c.db)
+
+Number of ports:                           35
+Number of nets:                           206
+Number of cells:                          169
+Number of combinational cells:            114
+Number of sequential cells:                54
+Number of macros/black boxes:               0
+Number of buf/inv:                         13
+Number of references:                      20
+
+Combinational area:                776.664074
+Buf/Inv area:                       75.734912
+Noncombinational area:             905.260945
+Macro/Black Box area:                0.000000
+Net Interconnect area:             344.611818
+
+Total cell area:                  1681.925019
+Total area:                       2026.536837
+1

@@ -1,2 +1,137 @@
-Error: Current design is not defined. (UID-4)
-0
+ 
+****************************************
+Report : cell
+Design : ac97_top
+Version: W-2024.09-SP2
+Date   : Tue May 13 11:17:12 2025
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+U1                        NBUFFX2_RVT     saed32rvt_ss0p95v25c
+                                                          2.033152  
+U2                        NBUFFX2_RVT     saed32rvt_ss0p95v25c
+                                                          2.033152  
+U3                        NBUFFX2_RVT     saed32rvt_ss0p95v25c
+                                                          2.033152  
+U4                        NBUFFX2_RVT     saed32rvt_ss0p95v25c
+                                                          2.033152  
+U5                        NBUFFX2_RVT     saed32rvt_ss0p95v25c
+                                                          2.033152  
+U6                        NBUFFX2_RVT     saed32rvt_ss0p95v25c
+                                                          2.033152  
+U7                        NBUFFX2_RVT     saed32rvt_ss0p95v25c
+                                                          2.033152  
+U8                        INVX1_RVT       saed32rvt_ss0p95v25c
+                                                          1.270720  
+U9                        INVX1_RVT       saed32rvt_ss0p95v25c
+                                                          1.270720  
+U10                       INVX1_RVT       saed32rvt_ss0p95v25c
+                                                          1.270720  
+U11                       NBUFFX4_RVT     saed32rvt_ss0p95v25c
+                                                          2.541440  
+U14                       NBUFFX4_RVT     saed32rvt_ss0p95v25c
+                                                          2.541440  
+U15                       NBUFFX4_RVT     saed32rvt_ss0p95v25c
+                                                          2.541440  
+U18                       NBUFFX4_RVT     saed32rvt_ss0p95v25c
+                                                          2.541440  
+U19                       NBUFFX4_RVT     saed32rvt_ss0p95v25c
+                                                          2.541440  
+U21                       NBUFFX4_RVT     saed32rvt_ss0p95v25c
+                                                          2.541440  
+U23                       NBUFFX4_RVT     saed32rvt_ss0p95v25c
+                                                          2.541440  
+U24                       NBUFFX4_RVT     saed32rvt_ss0p95v25c
+                                                          2.541440  
+U27                       NBUFFX4_RVT     saed32rvt_ss0p95v25c
+                                                          2.541440  
+U28                       NBUFFX4_RVT     saed32rvt_ss0p95v25c
+                                                          2.541440  
+U33                       NBUFFX4_RVT     saed32rvt_ss0p95v25c
+                                                          2.541440  
+U34                       NBUFFX4_RVT     saed32rvt_ss0p95v25c
+                                                          2.541440  
+U35                       NBUFFX4_RVT     saed32rvt_ss0p95v25c
+                                                          2.541440  
+U37                       NBUFFX4_RVT     saed32rvt_ss0p95v25c
+                                                          2.541440  
+U39                       NBUFFX4_RVT     saed32rvt_ss0p95v25c
+                                                          2.541440  
+U40                       NBUFFX4_RVT     saed32rvt_ss0p95v25c
+                                                          2.541440  
+U41                       NBUFFX4_RVT     saed32rvt_ss0p95v25c
+                                                          2.541440  
+U43                       INVX2_RVT       saed32rvt_ss0p95v25c
+                                                          1.524864  
+in_valid_s1_reg[0]        DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+in_valid_s1_reg[1]        DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+in_valid_s1_reg[2]        DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+in_valid_s_reg[0]         DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+in_valid_s_reg[1]         DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+in_valid_s_reg[2]         DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+u0                        ac97_sout                       1822.720816
+                                                                    h, n
+u1                        ac97_sin                        1215.316639
+                                                                    h, n
+u2                        ac97_soc                        430.774091
+                                                                    h, n
+u3                        ac97_out_fifo_5                 1900.743013
+                                                                    h, n
+u4                        ac97_out_fifo_4                 1903.030309
+                                                                    h, n
+u5                        ac97_out_fifo_3                 1917.008229
+                                                                    h, n
+u6                        ac97_out_fifo_2                 1910.400485
+                                                                    h, n
+u7                        ac97_out_fifo_1                 1910.908773
+                                                                    h, n
+u8                        ac97_out_fifo_0                 1905.571749
+                                                                    h, n
+u9                        ac97_in_fifo_2                  1989.185130
+                                                                    h, n
+u10                       ac97_in_fifo_1                  1987.660266
+                                                                    h, n
+u11                       ac97_in_fifo_0                  1996.301162
+                                                                    h, n
+u12                       ac97_wb_if                      778.697232
+                                                                    h, n
+u13                       ac97_rf                         1846.864479
+                                                                    h, n
+u14                       ac97_prc                        350.718728
+                                                                    h, n
+u15                       ac97_cra                        240.674372
+                                                                    h, n
+u16                       ac97_dma_if                     317.934148
+                                                                    h, n
+u17                       ac97_int_8                      38.121600 h, n
+u18                       ac97_int_7                      38.121600 h, n
+u19                       ac97_int_6                      38.121600 h, n
+u20                       ac97_int_5                      38.121600 h, n
+u21                       ac97_int_4                      38.121600 h, n
+u22                       ac97_int_3                      38.121600 h, n
+u23                       ac97_int_2                      38.121600 h, n
+u24                       ac97_int_1                      38.121600 h, n
+u25                       ac97_int_0                      38.121600 h, n
+u26                       ac97_rst                        140.541635
+                                                                    h, n
+valid_s1_reg              DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+valid_s_reg               DFFX1_RVT       saed32rvt_ss0p95v25c
+                                                          6.607744  n
+--------------------------------------------------------------------------------
+Total 63 cells                                            25023.781183
+1

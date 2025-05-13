@@ -1,2 +1,67 @@
-Error: Current design is not defined. (UID-4)
-0
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : eth_top
+Version: W-2024.09-SP2
+Date   : Tue May 13 12:01:55 2025
+****************************************
+
+
+Library(s) Used:
+
+    saed32rvt_ss0p95v25c (File: /mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v25c.db)
+
+Information: The library cell 'IBUFFX4_RVT' in the library 'saed32rvt_ss0p95v25c' is not characterized for internal power. (PWR-227)
+Information: The library cell 'IBUFFX8_RVT' in the library 'saed32rvt_ss0p95v25c' is not characterized for internal power. (PWR-227)
+Information: The library cell 'NBUFFX16_RVT' in the library 'saed32rvt_ss0p95v25c' is not characterized for internal power. (PWR-227)
+Information: The library cell 'NBUFFX4_RVT' in the library 'saed32rvt_ss0p95v25c' is not characterized for internal power. (PWR-227)
+Information: The library cell 'NBUFFX8_RVT' in the library 'saed32rvt_ss0p95v25c' is not characterized for internal power. (PWR-227)
+Information: The design contains cells, other than constants and black boxes, that are not characterized for internal power. (PWR-228)
+
+Operating Conditions: ss0p95v125c   Library: saed32rvt_ss0p95v125c
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+eth_top                ForQA             saed32rvt_ss0p95v125c
+
+
+Global Operating Voltage = 0.95 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+Attributes
+----------
+i - Including register clock pin internal power
+
+
+  Cell Internal Power  =   5.0308 mW   (98%)
+  Net Switching Power  =  91.1019 uW    (2%)
+                         ---------
+Total Dynamic Power    =   5.1219 mW  (100%)
+
+Cell Leakage Power     =   3.0543 mW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network  5.4530e+03            0.0000            0.0000        5.4530e+03  (  66.70%)  i
+register       -4.3900e+02            2.1424        1.4277e+09          990.8036 (  12.12%)
+sequential         3.5950            0.1993        8.5802e+07           89.5966  (   1.10%)
+combinational     12.8945           88.7607        1.5408e+09        1.6425e+03  (  20.09%)
+--------------------------------------------------------------------------------------------------
+Total          5.0305e+03 uW        91.1024 uW     3.0543e+09 pW     8.1759e+03 uW
+1

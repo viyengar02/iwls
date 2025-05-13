@@ -178,12 +178,7 @@ module i2c_master_bit_ctrl(
 	reg [15:0] cnt;             // clock divider counter (synthesis)
 
 	// state machine variable
-<<<<<<< HEAD
 	reg [16:0] c_state; 
-=======
-	reg [16:0] c_state; // synopsys enum_state
->>>>>>> 289def634b9e26d054d0ce3276860c7b35141f17
-
 	//
 	// module body
 	//

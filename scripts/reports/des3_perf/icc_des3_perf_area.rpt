@@ -1,2 +1,30 @@
-Error: Current design is not defined. (UID-4)
-0
+ 
+****************************************
+Report : area
+Design : des3_perf
+Version: W-2024.09-SP2
+Date   : Tue May 13 11:44:13 2025
+****************************************
+
+Library(s) Used:
+
+    saed32rvt_ss0p95v25c (File: /mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v25c.db)
+
+Number of ports:                          300
+Number of nets:                          3423
+Number of cells:                         3000
+Number of combinational cells:            141
+Number of sequential cells:              2856
+Number of macros/black boxes:               0
+Number of buf/inv:                         29
+Number of references:                      11
+
+Combinational area:              90768.546352
+Buf/Inv area:                     8661.227569
+Noncombinational area:           58201.011063
+Macro/Black Box area:                0.000000
+Net Interconnect area:           40393.130220
+
+Total cell area:                148969.557415
+Total area:                     189362.687634
+1

@@ -1,33 +1,30 @@
-Warning: Design 'i2c_master_top' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
  
 ****************************************
 Report : area
 Design : i2c_master_top
 Version: W-2024.09-SP4-1
-Date   : Tue May 13 10:44:54 2025
+Date   : Tue May 13 12:12:01 2025
 ****************************************
 
 Library(s) Used:
 
     saed32rvt_ss0p95v25c (File: /mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v25c.db)
 
-Number of ports:                           33
-Number of nets:                           211
-Number of cells:                          175
-Number of combinational cells:            119
-Number of sequential cells:                55
+Number of ports:                          151
+Number of nets:                           676
+Number of cells:                          498
+Number of combinational cells:            363
+Number of sequential cells:               128
 Number of macros/black boxes:               0
-Number of buf/inv:                         18
-Number of references:                      24
+Number of buf/inv:                         75
+Number of references:                      18
 
-Combinational area:                283.116417
-Buf/Inv area:                       25.160256
-Noncombinational area:             380.199431
+Combinational area:                796.995594
+Buf/Inv area:                       96.066432
+Noncombinational area:             905.260945
 Macro/Black Box area:                0.000000
-Net Interconnect area:             169.753140
+Net Interconnect area:             365.323508
 
-Total cell area:                   663.315849
-Total area:                        833.068989
-
-Information: This design contains black box (unknown) components. (RPT-8)
+Total cell area:                  1702.256539
+Total area:                       2067.580047
 1

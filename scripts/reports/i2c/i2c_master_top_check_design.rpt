@@ -1,53 +1,23 @@
-Warning: Design 'i2c_master_top' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
  
 ****************************************
 check_design summary:
 Version:     W-2024.09-SP4-1
-Date:        Tue May 13 10:44:51 2025
+Date:        Tue May 13 12:11:53 2025
 ****************************************
 
                    Name                                            Total
 --------------------------------------------------------------------------------
-Inputs/Outputs                                                      5
-    Multiply driven inputs (LINT-6)                                 5
+Inputs/Outputs                                                      3
+    Shorted outputs (LINT-31)                                       1
+    Constant outputs (LINT-52)                                      2
 
-Tristate                                                           30
-    A tristate bus has a non tri-state driver (LINT-34)            30
+Cells                                                               2
+    Cells do not drive (LINT-1)                                     2
 --------------------------------------------------------------------------------
 
-Warning: In design 'i2c_master_top', input port 'wb_clk_i' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
-Warning: In design 'i2c_master_top', input port 'wb_rst_i' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
-Warning: In design 'i2c_master_top', input port 'arst_i' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
-Warning: In design 'i2c_master_top', input port 'scl_pad_i' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
-Warning: In design 'i2c_master_top', input port 'sda_pad_i' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
-Warning: In design 'i2c_master_top', three-state bus 'cr[3]' has non three-state driver 'cr_reg[3]/Q'. (LINT-34)
-Warning: In design 'i2c_master_top', three-state bus 'cr[4]' has non three-state driver 'cr_reg[4]/Q'. (LINT-34)
-Warning: In design 'i2c_master_top', three-state bus 'cr[5]' has non three-state driver 'cr_reg[5]/Q'. (LINT-34)
-Warning: In design 'i2c_master_top', three-state bus 'cr[6]' has non three-state driver 'cr_reg[6]/Q'. (LINT-34)
-Warning: In design 'i2c_master_top', three-state bus 'cr[7]' has non three-state driver 'cr_reg[7]/Q'. (LINT-34)
-Warning: In design 'i2c_master_top', three-state bus 'txr[0]' has non three-state driver 'txr_reg[0]/Q'. (LINT-34)
-Warning: In design 'i2c_master_top', three-state bus 'txr[1]' has non three-state driver 'txr_reg[1]/Q'. (LINT-34)
-Warning: In design 'i2c_master_top', three-state bus 'txr[2]' has non three-state driver 'txr_reg[2]/Q'. (LINT-34)
-Warning: In design 'i2c_master_top', three-state bus 'txr[3]' has non three-state driver 'txr_reg[3]/Q'. (LINT-34)
-Warning: In design 'i2c_master_top', three-state bus 'txr[4]' has non three-state driver 'txr_reg[4]/Q'. (LINT-34)
-Warning: In design 'i2c_master_top', three-state bus 'txr[5]' has non three-state driver 'txr_reg[5]/Q'. (LINT-34)
-Warning: In design 'i2c_master_top', three-state bus 'txr[6]' has non three-state driver 'txr_reg[6]/Q'. (LINT-34)
-Warning: In design 'i2c_master_top', three-state bus 'txr[7]' has non three-state driver 'txr_reg[7]/Q'. (LINT-34)
-Warning: In design 'i2c_master_top', three-state bus 'ctr[7]' has non three-state driver 'ctr_reg[7]/Q'. (LINT-34)
-Warning: In design 'i2c_master_top', three-state bus 'prer[0]' has non three-state driver 'prer_reg[0]/Q'. (LINT-34)
-Warning: In design 'i2c_master_top', three-state bus 'prer[1]' has non three-state driver 'prer_reg[1]/Q'. (LINT-34)
-Warning: In design 'i2c_master_top', three-state bus 'prer[2]' has non three-state driver 'prer_reg[2]/Q'. (LINT-34)
-Warning: In design 'i2c_master_top', three-state bus 'prer[3]' has non three-state driver 'prer_reg[3]/Q'. (LINT-34)
-Warning: In design 'i2c_master_top', three-state bus 'prer[4]' has non three-state driver 'prer_reg[4]/Q'. (LINT-34)
-Warning: In design 'i2c_master_top', three-state bus 'prer[5]' has non three-state driver 'prer_reg[5]/Q'. (LINT-34)
-Warning: In design 'i2c_master_top', three-state bus 'prer[6]' has non three-state driver 'prer_reg[6]/Q'. (LINT-34)
-Warning: In design 'i2c_master_top', three-state bus 'prer[7]' has non three-state driver 'prer_reg[7]/Q'. (LINT-34)
-Warning: In design 'i2c_master_top', three-state bus 'prer[8]' has non three-state driver 'prer_reg[8]/Q'. (LINT-34)
-Warning: In design 'i2c_master_top', three-state bus 'prer[9]' has non three-state driver 'prer_reg[9]/Q'. (LINT-34)
-Warning: In design 'i2c_master_top', three-state bus 'prer[10]' has non three-state driver 'prer_reg[10]/Q'. (LINT-34)
-Warning: In design 'i2c_master_top', three-state bus 'prer[11]' has non three-state driver 'prer_reg[11]/Q'. (LINT-34)
-Warning: In design 'i2c_master_top', three-state bus 'prer[12]' has non three-state driver 'prer_reg[12]/Q'. (LINT-34)
-Warning: In design 'i2c_master_top', three-state bus 'prer[13]' has non three-state driver 'prer_reg[13]/Q'. (LINT-34)
-Warning: In design 'i2c_master_top', three-state bus 'prer[14]' has non three-state driver 'prer_reg[14]/Q'. (LINT-34)
-Warning: In design 'i2c_master_top', three-state bus 'prer[15]' has non three-state driver 'prer_reg[15]/Q'. (LINT-34)
+Warning: In design 'i2c_master_byte_ctrl', cell 'C474' does not drive any nets. (LINT-1)
+Warning: In design 'i2c_master_bit_ctrl', cell 'C553' does not drive any nets. (LINT-1)
+Warning: In design 'i2c_master_bit_ctrl', output port 'scl_o' is connected directly to output port 'sda_o'. (LINT-31)
+Warning: In design 'i2c_master_bit_ctrl', output port 'scl_o' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'i2c_master_bit_ctrl', output port 'sda_o' is connected directly to 'logic 0'. (LINT-52)
 1
