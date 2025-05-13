@@ -52,6 +52,13 @@ set_input_delay 0.01 -clock clk [all_inputs]
 set_output_delay 0.01 -clock clk [all_outputs] 
 set_clock_uncertainty 0.2 clk
 set_max_area 0.0 
+set_critical_range 1.0 [current_design]
+set_max_fanout 12 [current_design]
+set compile_ultra_enable_multibit_selection true
+#auto selection of multi bit flip flops
+set compile_ultra_enable_low_vt_opt true
+#low voltage threshold for speed
+set physopt_enable_critical_range_physopt true
 
 # Checks and compilation
 check_design  > ./reports/ethernet/eth_top_check_design.rpt 

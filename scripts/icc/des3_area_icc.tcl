@@ -84,6 +84,8 @@ report_qor  > ./reports/des3_area/icc_des3_area_qor.rpt
 report_cell > ./reports/des3_area/icc_des3_area_cells.rpt
 report_resources > ./reports/des3_area/icc_des3_area_resources.rpt
 report_timing -max_paths 10 > ./reports/des3_area/icc_des3_area_timing.rpt
+report_placement_utilization > ./reports/des3_area/icc_des3_area_cts.rpt
+report_port -annotated > ./reports/des3_area/icc_des3_area_ports.rpt
 
 save_mw_cel -as des3_area_extracted
 quit

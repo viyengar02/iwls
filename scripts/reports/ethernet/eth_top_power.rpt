@@ -7,7 +7,7 @@ Report : power
         -analysis_effort low
 Design : eth_top
 Version: W-2024.09-SP4-1
-Date   : Tue May 13 10:44:29 2025
+Date   : Tue May 13 13:25:29 2025
 ****************************************
 
 
@@ -132,12 +132,12 @@ Attributes
 i - Including register clock pin internal power
 
 
-  Cell Internal Power  =   5.0665 mW   (99%)
-  Net Switching Power  =  38.7906 uW    (1%)
+  Cell Internal Power  =   5.0758 mW   (99%)
+  Net Switching Power  =  39.9501 uW    (1%)
                          ---------
-Total Dynamic Power    =   5.1053 mW  (100%)
+Total Dynamic Power    =   5.1158 mW  (100%)
 
-Cell Leakage Power     =   3.7739 mW
+Cell Leakage Power     =   3.7773 mW
 
 
                  Internal         Switching           Leakage            Total
@@ -146,10 +146,10 @@ Power Group      Power            Power               Power              Power  
 io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
 memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
 black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
-clock_network  5.3134e+03            0.0000            0.0000        5.3134e+03  (  59.84%)  i
-register       -2.9837e+02            0.6243        1.4277e+09        1.1300e+03 (  12.73%)
-sequential         3.3965            0.1164        8.5802e+07           89.3152  (   1.01%)
-combinational     47.7289           38.0505        2.2604e+09        2.3462e+03  (  26.42%)
+clock_network  5.3091e+03            0.0000            0.0000        5.3091e+03  (  59.70%)  i
+register       -2.9555e+02            0.5852        1.4276e+09        1.1326e+03 (  12.74%)
+sequential         3.3905            0.1162        8.5802e+07           89.3090  (   1.00%)
+combinational     58.5639           39.2491        2.2640e+09        2.3618e+03  (  26.56%)
 --------------------------------------------------------------------------------------------------
-Total          5.0661e+03 uW        38.7912 uW     3.7739e+09 pW     8.8788e+03 uW
+Total          5.0755e+03 uW        39.9505 uW     3.7773e+09 pW     8.8928e+03 uW
 1

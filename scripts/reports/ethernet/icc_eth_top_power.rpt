@@ -7,7 +7,7 @@ Report : power
         -analysis_effort low
 Design : eth_top
 Version: W-2024.09-SP2
-Date   : Tue May 13 12:01:55 2025
+Date   : Tue May 13 13:38:15 2025
 ****************************************
 
 
@@ -17,7 +17,6 @@ Library(s) Used:
 
 Information: The library cell 'IBUFFX4_RVT' in the library 'saed32rvt_ss0p95v25c' is not characterized for internal power. (PWR-227)
 Information: The library cell 'IBUFFX8_RVT' in the library 'saed32rvt_ss0p95v25c' is not characterized for internal power. (PWR-227)
-Information: The library cell 'NBUFFX16_RVT' in the library 'saed32rvt_ss0p95v25c' is not characterized for internal power. (PWR-227)
 Information: The library cell 'NBUFFX4_RVT' in the library 'saed32rvt_ss0p95v25c' is not characterized for internal power. (PWR-227)
 Information: The library cell 'NBUFFX8_RVT' in the library 'saed32rvt_ss0p95v25c' is not characterized for internal power. (PWR-227)
 Information: The design contains cells, other than constants and black boxes, that are not characterized for internal power. (PWR-228)
@@ -44,12 +43,12 @@ Attributes
 i - Including register clock pin internal power
 
 
-  Cell Internal Power  =   5.0308 mW   (98%)
-  Net Switching Power  =  91.1019 uW    (2%)
+  Cell Internal Power  =   5.0327 mW   (98%)
+  Net Switching Power  = 100.5438 uW    (2%)
                          ---------
-Total Dynamic Power    =   5.1219 mW  (100%)
+Total Dynamic Power    =   5.1332 mW  (100%)
 
-Cell Leakage Power     =   3.0543 mW
+Cell Leakage Power     =   3.0753 mW
 
 
                  Internal         Switching           Leakage            Total
@@ -58,10 +57,10 @@ Power Group      Power            Power               Power              Power  
 io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
 memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
 black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
-clock_network  5.4530e+03            0.0000            0.0000        5.4530e+03  (  66.70%)  i
-register       -4.3900e+02            2.1424        1.4277e+09          990.8036 (  12.12%)
-sequential         3.5950            0.1993        8.5802e+07           89.5966  (   1.10%)
-combinational     12.8945           88.7607        1.5408e+09        1.6425e+03  (  20.09%)
+clock_network  5.4252e+03            0.0000            0.0000        5.4252e+03  (  66.09%)  i
+register       -4.1172e+02            2.3311        1.4276e+09        1.0182e+03 (  12.40%)
+sequential         3.5501            0.2016        8.5802e+07           89.5541  (   1.09%)
+combinational     15.3437           98.0115        1.5619e+09        1.6753e+03  (  20.41%)
 --------------------------------------------------------------------------------------------------
-Total          5.0305e+03 uW        91.1024 uW     3.0543e+09 pW     8.1759e+03 uW
+Total          5.0323e+03 uW       100.5442 uW     3.0753e+09 pW     8.2082e+03 uW
 1

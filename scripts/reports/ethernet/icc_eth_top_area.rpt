@@ -3,7 +3,7 @@
 Report : area
 Design : eth_top
 Version: W-2024.09-SP2
-Date   : Tue May 13 12:01:44 2025
+Date   : Tue May 13 13:38:09 2025
 ****************************************
 
 Library(s) Used:
@@ -11,20 +11,20 @@ Library(s) Used:
     saed32rvt_ss0p95v25c (File: /mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v25c.db)
 
 Number of ports:                          213
-Number of nets:                           849
-Number of cells:                          218
-Number of combinational cells:            157
+Number of nets:                           840
+Number of cells:                          209
+Number of combinational cells:            148
 Number of sequential cells:                54
 Number of macros/black boxes:               0
-Number of buf/inv:                         88
-Number of references:                      32
+Number of buf/inv:                         77
+Number of references:                      33
 
-Combinational area:              59987.895395
-Buf/Inv area:                     5916.218235
-Noncombinational area:           70439.569790
+Combinational area:              59784.834340
+Buf/Inv area:                     5499.422092
+Noncombinational area:           70416.442686
 Macro/Black Box area:                0.000000
-Net Interconnect area:           56440.966241
+Net Interconnect area:           55879.239320
 
-Total cell area:                130427.465186
-Total area:                     186868.431426
+Total cell area:                130201.277025
+Total area:                     186080.516345
 1

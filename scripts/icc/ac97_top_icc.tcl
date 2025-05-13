@@ -84,6 +84,8 @@ report_qor  > ./reports/ac97_ctrl/icc_ac97_top_qor.rpt
 report_cell > ./reports/ac97_ctrl/icc_ac97_top_cells.rpt
 report_resources > ./reports/ac97_ctrl/icc_ac97_top_resources.rpt
 report_timing -max_paths 10 > ./reports/ac97_ctrl/icc_ac97_top_timing.rpt
+report_placement_utilization > ./reports/ac97_ctrl/icc_ac97_top_cts.rpt
+report_port -annotated > ./reports/ac97_ctrl/icc_ac97_top_ports.rpt
 
 save_mw_cel -as ac97_top_extracted
 quit

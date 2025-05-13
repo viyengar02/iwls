@@ -1,6 +1,6 @@
 #@ # 
 #@ # Running icc_shell Version W-2024.09-SP2 for linux64 -- Nov 28, 2024
-#@ # Date:   Tue May 13 12:12:32 2025
+#@ # Date:   Tue May 13 13:50:26 2025
 #@ # Run by: cag383@xunil-03.coe.drexel.edu
 #@ 
 
@@ -41,7 +41,6 @@ source -echo -verbose /home/cag383@drexel.edu/ecec575/project/iwls/scripts/icc/i
 #@ 
 #@ open_mw_lib ./outputs/i2c/$lib_name.mw
 #@ read_verilog ./outputs/i2c/i2c_master_top.v
-#@ 
 #@ uniquify_fp_mw_cel
 #@ link
 #@ read_sdc ./outputs/i2c/i2c_master_top.sdc
@@ -212,6 +211,8 @@ source -echo -verbose /home/cag383@drexel.edu/ecec575/project/iwls/scripts/icc/i
 #@ report_cell > ./reports/i2c/icc_i2c_master_top_cells.rpt
 #@ report_resources > ./reports/i2c/icc_i2c_master_top_resources.rpt
 #@ report_timing -max_paths 10 > ./reports/i2c/icc_i2c_master_top_timing.rpt
+#@ report_placement_utilization > ./reports/i2c/icc_i2c_master_top_cts.rpt
+#@ report_port -annotated > ./reports/i2c/icc_i2c_master_top_ports.rpt
 #@ 
 #@ save_mw_cel -as i2c_master_top_extracted
 #@ quit

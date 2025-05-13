@@ -106,6 +106,8 @@ report_qor  > ./reports/{design_dir}/icc_{design_name}_qor.rpt
 report_cell > ./reports/{design_dir}/icc_{design_name}_cells.rpt
 report_resources > ./reports/{design_dir}/icc_{design_name}_resources.rpt
 report_timing -max_paths 10 > ./reports/{design_dir}/icc_{design_name}_timing.rpt
+report_placement_utilization > ./reports/{design_dir}/icc_{design_name}_cts.rpt
+report_port -annotated > ./reports/{design_dir}/icc_{design_name}_ports.rpt
 
 save_mw_cel -as {design_name}_extracted
 quit

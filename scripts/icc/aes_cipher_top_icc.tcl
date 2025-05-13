@@ -84,6 +84,8 @@ report_qor  > ./reports/aes_core/icc_aes_cipher_top_qor.rpt
 report_cell > ./reports/aes_core/icc_aes_cipher_top_cells.rpt
 report_resources > ./reports/aes_core/icc_aes_cipher_top_resources.rpt
 report_timing -max_paths 10 > ./reports/aes_core/icc_aes_cipher_top_timing.rpt
+report_placement_utilization > ./reports/aes_core/icc_aes_cipher_top_cts.rpt
+report_port -annotated > ./reports/aes_core/icc_aes_cipher_top_ports.rpt
 
 save_mw_cel -as aes_cipher_top_extracted
 quit

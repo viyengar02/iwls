@@ -84,6 +84,8 @@ report_qor  > ./reports/des3_perf/icc_des3_perf_qor.rpt
 report_cell > ./reports/des3_perf/icc_des3_perf_cells.rpt
 report_resources > ./reports/des3_perf/icc_des3_perf_resources.rpt
 report_timing -max_paths 10 > ./reports/des3_perf/icc_des3_perf_timing.rpt
+report_placement_utilization > ./reports/des3_perf/icc_des3_perf_cts.rpt
+report_port -annotated > ./reports/des3_perf/icc_des3_perf_ports.rpt
 
 save_mw_cel -as des3_perf_extracted
 quit

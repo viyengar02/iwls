@@ -84,6 +84,8 @@ report_qor  > ./reports/ethernet/icc_eth_top_qor.rpt
 report_cell > ./reports/ethernet/icc_eth_top_cells.rpt
 report_resources > ./reports/ethernet/icc_eth_top_resources.rpt
 report_timing -max_paths 10 > ./reports/ethernet/icc_eth_top_timing.rpt
+report_placement_utilization > ./reports/ethernet/icc_eth_top_cts.rpt
+report_port -annotated > ./reports/ethernet/icc_eth_top_ports.rpt
 
 save_mw_cel -as eth_top_extracted
 quit

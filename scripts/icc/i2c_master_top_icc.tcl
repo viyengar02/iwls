@@ -32,7 +32,6 @@ create_mw_lib ./outputs/i2c/$lib_name.mw \
 
 open_mw_lib ./outputs/i2c/$lib_name.mw
 read_verilog ./outputs/i2c/i2c_master_top.v
-
 uniquify_fp_mw_cel
 link
 read_sdc ./outputs/i2c/i2c_master_top.sdc
@@ -85,6 +84,8 @@ report_qor  > ./reports/i2c/icc_i2c_master_top_qor.rpt
 report_cell > ./reports/i2c/icc_i2c_master_top_cells.rpt
 report_resources > ./reports/i2c/icc_i2c_master_top_resources.rpt
 report_timing -max_paths 10 > ./reports/i2c/icc_i2c_master_top_timing.rpt
+report_placement_utilization > ./reports/i2c/icc_i2c_master_top_cts.rpt
+report_port -annotated > ./reports/i2c/icc_i2c_master_top_ports.rpt
 
 save_mw_cel -as i2c_master_top_extracted
 quit
