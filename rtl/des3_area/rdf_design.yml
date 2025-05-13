@@ -1,4 +1,4 @@
-name: des3
+name: des3_area
 clock_port: clk
 
 verilog:

@@ -3,7 +3,7 @@
 Report : qor
 Design : ac97_top
 Version: W-2024.09-SP4-1
-Date   : Tue Apr 29 15:03:39 2025
+Date   : Tue May 13 10:12:26 2025
 ****************************************
 
 
@@ -63,12 +63,12 @@ Date   : Tue Apr 29 15:03:39 2025
 
   Compile CPU Statistics
   -----------------------------------------
-  Resource Sharing:                    6.90
-  Logic Optimization:                 30.63
-  Mapping Optimization:               25.22
+  Resource Sharing:                    6.71
+  Logic Optimization:                 30.28
+  Mapping Optimization:               25.27
   -----------------------------------------
-  Overall Compile Time:               69.50
-  Overall Compile Wall Clock Time:    77.65
+  Overall Compile Time:               69.05
+  Overall Compile Wall Clock Time:    83.74
 
   --------------------------------------------------------------------
 

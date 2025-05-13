@@ -1,3 +1,0 @@
-set_object_boundary -boundary {  { 29.0000 47.6200 } { 49.9760 47.6200 } { 49.9760 17.5240 } { 29.0000 17.5240 } } [get_plan_groups { i_rx_phy } ]
-set_object_boundary -boundary {  { 10.0000 47.6200 } { 29.0000 47.6200 } { 29.0000 10.8360 } { 10.0000 10.8360 } } [get_plan_groups { i_tx_phy } ]
-

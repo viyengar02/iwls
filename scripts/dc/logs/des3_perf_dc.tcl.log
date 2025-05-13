@@ -1,0 +1,1745 @@
+Info: [VCS_SAVE_RESTORE_INFO] ASLR (Address Space Layout Randomization) is detected on the machine. To enable $save functionality, ASLR will be switched off and simv re-executed.
+Please use '-no_save' simv switch to avoid this.
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+              Version W-2024.09-SP4-1 for linux64 - Mar 20, 2025 
+
+                    Copyright (c) 1988 - 2025 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+Initializing...
+Current time:       Tue May 13 10:15:57 2025
+Hostname:           xunil-03.coe.drexel.edu
+CPU Model:          AMD Opteron(tm) Processor 6344
+CPU Details:        Cores = 24 : Sockets = 2 : Cache Size = 2048 KB : Freq = 2.60 GHz
+OS:                 Linux 3.10.0-1160.119.1.el7.x86_64
+RAM:                125 GB (Free 107 GB)
+Swap:                15 GB (Free  15 GB)
+Work Filesystem:    /home mounted to ozark.coe.drexel.edu:/volume2/XunilNFS2/home
+Tmp Filesystem:     / mounted to /dev/mapper/vg_xunil03-lv_root
+Work Disk:          8034 GB (Free 4315 GB)
+Tmp Disk:           442 GB (Free 136 GB)
+
+CPU Load: 144%, Ram Free: 107 GB, Swap Free: 15 GB, Work Disk Free: 4315 GB, Tmp Disk Free: 136 GB
+# Auto-generated synthesis script for des3_perf
+# Source files from: des3_perf
+lappend search_path ../src/
+. /mnt/class_data/ecec574-w2019/tools/synopsys/syn/W-2024.09-SP4-1/libraries/syn /mnt/class_data/ecec574-w2019/tools/synopsys/syn/W-2024.09-SP4-1/dw/syn_ver /mnt/class_data/ecec574-w2019/tools/synopsys/syn/W-2024.09-SP4-1/dw/sim_ver ../src/
+define_design_lib WORK -path "work"
+1
+set sdc_version 2.1
+Information: Setting sdc_version outside of an SDC file has no effect (SDC-1)
+2.1
+# Library setup
+set link_library [ list /mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v125c.db /mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v25c.db /mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95vn40c.db]
+/mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v125c.db /mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v25c.db /mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95vn40c.db
+set target_library [ list /mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v25c.db ]
+/mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v25c.db
+# Analyze all Verilog files
+analyze -library WORK -format verilog ../rtl/des3_perf/des3.v
+Running PRESTO HDLC
+Compiling source file ../rtl/des3_perf/des3.v
+Warning:  ../rtl/des3_perf/des3.v:57: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/des3_perf/des3.v:61: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/des3_perf/des3.v:65: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/des3_perf/des3.v:69: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Presto compilation completed successfully.
+Loading db file '/mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v125c.db'
+Information: Using CCS timing libraries. (TIM-024)
+Warning: Error occured in ccs delay calculation, results may not be accurate.
+Loading db file '/mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v25c.db'
+Loading db file '/mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95vn40c.db'
+1
+analyze -library WORK -format verilog ../rtl/des3_perf/des.v
+Running PRESTO HDLC
+Compiling source file ../rtl/des3_perf/des.v
+Warning:  ../rtl/des3_perf/des.v:54: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/des3_perf/des.v:58: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/des3_perf/des.v:109: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/des3_perf/des.v:113: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/des3_perf/des.v:117: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/des3_perf/des.v:121: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/des3_perf/des.v:125: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/des3_perf/des.v:129: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/des3_perf/des.v:132: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/des3_perf/des.v:135: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/des3_perf/des.v:138: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/des3_perf/des.v:141: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/des3_perf/des.v:144: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/des3_perf/des.v:147: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/des3_perf/des.v:150: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/des3_perf/des.v:153: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/des3_perf/des.v:156: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/des3_perf/des.v:159: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/des3_perf/des.v:162: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/des3_perf/des.v:165: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/des3_perf/des.v:168: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/des3_perf/des.v:171: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/des3_perf/des.v:174: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/des3_perf/des.v:177: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/des3_perf/des.v:180: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/des3_perf/des.v:183: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/des3_perf/des.v:186: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/des3_perf/des.v:189: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/des3_perf/des.v:192: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/des3_perf/des.v:195: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/des3_perf/des.v:198: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/des3_perf/des.v:201: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/des3_perf/des.v:205: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/des3_perf/des.v:209: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/des3_perf/des.v:226: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Presto compilation completed successfully.
+1
+analyze -library WORK -format verilog ../rtl/des3_perf/key_sel.v
+Running PRESTO HDLC
+Compiling source file ../rtl/des3_perf/key_sel.v
+Warning:  ../rtl/des3_perf/key_sel.v:51: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/des3_perf/key_sel.v:52: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/des3_perf/key_sel.v:53: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/des3_perf/key_sel.v:54: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/des3_perf/key_sel.v:55: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/des3_perf/key_sel.v:56: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/des3_perf/key_sel.v:57: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/des3_perf/key_sel.v:58: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/des3_perf/key_sel.v:59: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/des3_perf/key_sel.v:60: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/des3_perf/key_sel.v:61: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/des3_perf/key_sel.v:62: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/des3_perf/key_sel.v:63: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/des3_perf/key_sel.v:64: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/des3_perf/key_sel.v:65: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Presto compilation completed successfully.
+1
+analyze -library WORK -format verilog ../rtl/des3_perf/crp.v
+Running PRESTO HDLC
+Compiling source file ../rtl/des3_perf/crp.v
+Presto compilation completed successfully.
+1
+analyze -library WORK -format verilog ../rtl/des3_perf/sbox1.v
+Running PRESTO HDLC
+Compiling source file ../rtl/des3_perf/sbox1.v
+Presto compilation completed successfully.
+1
+analyze -library WORK -format verilog ../rtl/des3_perf/sbox2.v
+Running PRESTO HDLC
+Compiling source file ../rtl/des3_perf/sbox2.v
+Presto compilation completed successfully.
+1
+analyze -library WORK -format verilog ../rtl/des3_perf/sbox3.v
+Running PRESTO HDLC
+Compiling source file ../rtl/des3_perf/sbox3.v
+Presto compilation completed successfully.
+1
+analyze -library WORK -format verilog ../rtl/des3_perf/sbox4.v
+Running PRESTO HDLC
+Compiling source file ../rtl/des3_perf/sbox4.v
+Presto compilation completed successfully.
+1
+analyze -library WORK -format verilog ../rtl/des3_perf/sbox5.v
+Running PRESTO HDLC
+Compiling source file ../rtl/des3_perf/sbox5.v
+Presto compilation completed successfully.
+1
+analyze -library WORK -format verilog ../rtl/des3_perf/sbox6.v
+Running PRESTO HDLC
+Compiling source file ../rtl/des3_perf/sbox6.v
+Presto compilation completed successfully.
+1
+analyze -library WORK -format verilog ../rtl/des3_perf/sbox7.v
+Running PRESTO HDLC
+Compiling source file ../rtl/des3_perf/sbox7.v
+Presto compilation completed successfully.
+1
+analyze -library WORK -format verilog ../rtl/des3_perf/sbox8.v
+Running PRESTO HDLC
+Compiling source file ../rtl/des3_perf/sbox8.v
+Presto compilation completed successfully.
+1
+# Elaborate the top design
+elaborate des3_perf
+Loading db file '/mnt/class_data/ecec574-w2019/tools/synopsys/syn/W-2024.09-SP4-1/libraries/syn/gtech.db'
+Loading db file '/mnt/class_data/ecec574-w2019/tools/synopsys/syn/W-2024.09-SP4-1/libraries/syn/standard.sldb'
+  Loading link library 'saed32rvt_ss0p95v125c'
+  Loading link library 'saed32rvt_ss0p95v25c'
+  Loading link library 'saed32rvt_ss0p95vn40c'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+
+Inferred memory devices in process in routine 'des3_perf' in file
+	 ../rtl/des3_perf/des3.v'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|     key_b_r_reg     | Flip-flop |  56   |  Y  | N  | None  | None  | N  |  56  |
+|     key_b_r_reg     | Flip-flop |  896  |  Y  | N  | None  | None  | N  |  59  |
+|     key_c_r_reg     | Flip-flop |  56   |  Y  | N  | None  | None  | N  |  64  |
+|     key_c_r_reg     | Flip-flop | 1848  |  Y  | N  | None  | None  | N  |  67  |
+==================================================================================
+Presto compilation completed successfully. (des3_perf)
+Module: des3_perf, Ports: 298, Input: 234, Output: 64, Inout: 0
+Module: des3_perf, Registers: 2856, Async set/reset: 0, Sync set/reset: 0
+Information: Module des3_perf report end. (ELAB-965)
+Elaborated 1 design.
+Current design is now 'des3_perf'.
+Information: Building the design 'des'. (HDL-193)
+
+Inferred memory devices in process in routine 'des' in file
+	 ../rtl/des3_perf/des.v'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|      key_r_reg      | Flip-flop |  56   |  Y  | N  | None  | None  | N  |  53  |
+|     desIn_r_reg     | Flip-flop |  64   |  Y  | N  | None  | None  | N  |  57  |
+|       L0_reg        | Flip-flop |  32   |  Y  | N  | None  | None  | N  | 108  |
+|       R0_reg        | Flip-flop |  32   |  Y  | N  | None  | None  | N  | 112  |
+|       L1_reg        | Flip-flop |  32   |  Y  | N  | None  | None  | N  | 116  |
+|       R1_reg        | Flip-flop |  32   |  Y  | N  | None  | None  | N  | 120  |
+|       L2_reg        | Flip-flop |  32   |  Y  | N  | None  | None  | N  | 124  |
+|       R2_reg        | Flip-flop |  32   |  Y  | N  | None  | None  | N  | 128  |
+|       L3_reg        | Flip-flop |  32   |  Y  | N  | None  | None  | N  | 131  |
+|       R3_reg        | Flip-flop |  32   |  Y  | N  | None  | None  | N  | 134  |
+|       L4_reg        | Flip-flop |  32   |  Y  | N  | None  | None  | N  | 137  |
+|       R4_reg        | Flip-flop |  32   |  Y  | N  | None  | None  | N  | 140  |
+|       L5_reg        | Flip-flop |  32   |  Y  | N  | None  | None  | N  | 143  |
+|       R5_reg        | Flip-flop |  32   |  Y  | N  | None  | None  | N  | 146  |
+|       L6_reg        | Flip-flop |  32   |  Y  | N  | None  | None  | N  | 149  |
+|       R6_reg        | Flip-flop |  32   |  Y  | N  | None  | None  | N  | 152  |
+|       L7_reg        | Flip-flop |  32   |  Y  | N  | None  | None  | N  | 155  |
+|       R7_reg        | Flip-flop |  32   |  Y  | N  | None  | None  | N  | 158  |
+|       L8_reg        | Flip-flop |  32   |  Y  | N  | None  | None  | N  | 161  |
+|       R8_reg        | Flip-flop |  32   |  Y  | N  | None  | None  | N  | 164  |
+|       L9_reg        | Flip-flop |  32   |  Y  | N  | None  | None  | N  | 167  |
+|       R9_reg        | Flip-flop |  32   |  Y  | N  | None  | None  | N  | 170  |
+|       L10_reg       | Flip-flop |  32   |  Y  | N  | None  | None  | N  | 173  |
+|       R10_reg       | Flip-flop |  32   |  Y  | N  | None  | None  | N  | 176  |
+|       L11_reg       | Flip-flop |  32   |  Y  | N  | None  | None  | N  | 179  |
+|       R11_reg       | Flip-flop |  32   |  Y  | N  | None  | None  | N  | 182  |
+|       L12_reg       | Flip-flop |  32   |  Y  | N  | None  | None  | N  | 185  |
+|       R12_reg       | Flip-flop |  32   |  Y  | N  | None  | None  | N  | 188  |
+|       L13_reg       | Flip-flop |  32   |  Y  | N  | None  | None  | N  | 191  |
+|       R13_reg       | Flip-flop |  32   |  Y  | N  | None  | None  | N  | 194  |
+|       L14_reg       | Flip-flop |  32   |  Y  | N  | None  | None  | N  | 197  |
+|       R14_reg       | Flip-flop |  32   |  Y  | N  | None  | None  | N  | 200  |
+|     desOut_reg      | Flip-flop |  64   |  Y  | N  | None  | None  | N  | 225  |
+==================================================================================
+Presto compilation completed successfully. (des)
+Module: des, Ports: 186, Input: 122, Output: 64, Inout: 0
+Module: des, Registers: 1144, Async set/reset: 0, Sync set/reset: 0
+Information: Module des report end. (ELAB-965)
+Information: Building the design 'key_sel'. (HDL-193)
+
+Inferred memory devices in process in routine 'key_sel' in file
+	 ../rtl/des3_perf/key_sel.v'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|      K_r13_reg      | Flip-flop |  56   |  Y  | N  | None  | None  | N  |  49  |
+|      K_r12_reg      | Flip-flop |  56   |  Y  | N  | None  | None  | N  |  49  |
+|      K_r11_reg      | Flip-flop |  56   |  Y  | N  | None  | None  | N  |  49  |
+|      K_r10_reg      | Flip-flop |  56   |  Y  | N  | None  | None  | N  |  49  |
+|      K_r9_reg       | Flip-flop |  56   |  Y  | N  | None  | None  | N  |  49  |
+|      K_r8_reg       | Flip-flop |  56   |  Y  | N  | None  | None  | N  |  49  |
+|      K_r7_reg       | Flip-flop |  56   |  Y  | N  | None  | None  | N  |  49  |
+|      K_r6_reg       | Flip-flop |  56   |  Y  | N  | None  | None  | N  |  49  |
+|      K_r5_reg       | Flip-flop |  56   |  Y  | N  | None  | None  | N  |  49  |
+|      K_r4_reg       | Flip-flop |  56   |  Y  | N  | None  | None  | N  |  49  |
+|      K_r3_reg       | Flip-flop |  56   |  Y  | N  | None  | None  | N  |  49  |
+|      K_r2_reg       | Flip-flop |  56   |  Y  | N  | None  | None  | N  |  49  |
+|      K_r1_reg       | Flip-flop |  56   |  Y  | N  | None  | None  | N  |  49  |
+|      K_r0_reg       | Flip-flop |  56   |  Y  | N  | None  | None  | N  |  49  |
+|      K_r14_reg      | Flip-flop |  56   |  Y  | N  | None  | None  | N  |  49  |
+==================================================================================
+Presto compilation completed successfully. (key_sel)
+Module: key_sel, Ports: 826, Input: 58, Output: 768, Inout: 0
+Module: key_sel, Registers: 840, Async set/reset: 0, Sync set/reset: 0
+Information: Module key_sel report end. (ELAB-965)
+Information: Building the design 'crp'. (HDL-193)
+Presto compilation completed successfully. (crp)
+Module: crp, Ports: 112, Input: 80, Output: 32, Inout: 0
+Module: crp, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Module crp report end. (ELAB-965)
+Information: Building the design 'sbox1'. (HDL-193)
+
+Statistics for case statements in always block in file
+	'../rtl/des3_perf/sbox1.v'
+===========================================================
+|    Line    |  full/ parallel  |      block location     |
+===========================================================
+|     41     |    user/user     | always block at line 40 |
+===========================================================
+Presto compilation completed successfully. (sbox1)
+Module: sbox1, Ports: 10, Input: 6, Output: 4, Inout: 0
+Module: sbox1, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Module sbox1 report end. (ELAB-965)
+Information: Building the design 'sbox2'. (HDL-193)
+
+Statistics for case statements in always block in file
+	'../rtl/des3_perf/sbox2.v'
+===========================================================
+|    Line    |  full/ parallel  |      block location     |
+===========================================================
+|     41     |    user/user     | always block at line 40 |
+===========================================================
+Presto compilation completed successfully. (sbox2)
+Module: sbox2, Ports: 10, Input: 6, Output: 4, Inout: 0
+Module: sbox2, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Module sbox2 report end. (ELAB-965)
+Information: Building the design 'sbox3'. (HDL-193)
+
+Statistics for case statements in always block in file
+	'../rtl/des3_perf/sbox3.v'
+===========================================================
+|    Line    |  full/ parallel  |      block location     |
+===========================================================
+|     41     |    user/user     | always block at line 40 |
+===========================================================
+Presto compilation completed successfully. (sbox3)
+Module: sbox3, Ports: 10, Input: 6, Output: 4, Inout: 0
+Module: sbox3, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Module sbox3 report end. (ELAB-965)
+Information: Building the design 'sbox4'. (HDL-193)
+
+Statistics for case statements in always block in file
+	'../rtl/des3_perf/sbox4.v'
+===========================================================
+|    Line    |  full/ parallel  |      block location     |
+===========================================================
+|     41     |    user/user     | always block at line 40 |
+===========================================================
+Presto compilation completed successfully. (sbox4)
+Module: sbox4, Ports: 10, Input: 6, Output: 4, Inout: 0
+Module: sbox4, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Module sbox4 report end. (ELAB-965)
+Information: Building the design 'sbox5'. (HDL-193)
+
+Statistics for case statements in always block in file
+	'../rtl/des3_perf/sbox5.v'
+===========================================================
+|    Line    |  full/ parallel  |      block location     |
+===========================================================
+|     41     |    user/user     | always block at line 40 |
+===========================================================
+Presto compilation completed successfully. (sbox5)
+Module: sbox5, Ports: 10, Input: 6, Output: 4, Inout: 0
+Module: sbox5, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Module sbox5 report end. (ELAB-965)
+Information: Building the design 'sbox6'. (HDL-193)
+
+Statistics for case statements in always block in file
+	'../rtl/des3_perf/sbox6.v'
+===========================================================
+|    Line    |  full/ parallel  |      block location     |
+===========================================================
+|     41     |    user/user     | always block at line 40 |
+===========================================================
+Presto compilation completed successfully. (sbox6)
+Module: sbox6, Ports: 10, Input: 6, Output: 4, Inout: 0
+Module: sbox6, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Module sbox6 report end. (ELAB-965)
+Information: Building the design 'sbox7'. (HDL-193)
+
+Statistics for case statements in always block in file
+	'../rtl/des3_perf/sbox7.v'
+===========================================================
+|    Line    |  full/ parallel  |      block location     |
+===========================================================
+|     41     |    user/user     | always block at line 40 |
+===========================================================
+Presto compilation completed successfully. (sbox7)
+Module: sbox7, Ports: 10, Input: 6, Output: 4, Inout: 0
+Module: sbox7, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Module sbox7 report end. (ELAB-965)
+Information: Building the design 'sbox8'. (HDL-193)
+
+Statistics for case statements in always block in file
+	'../rtl/des3_perf/sbox8.v'
+===========================================================
+|    Line    |  full/ parallel  |      block location     |
+===========================================================
+|     41     |    user/user     | always block at line 40 |
+===========================================================
+Presto compilation completed successfully. (sbox8)
+Module: sbox8, Ports: 10, Input: 6, Output: 4, Inout: 0
+Module: sbox8, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Module sbox8 report end. (ELAB-965)
+1
+link
+
+  Linking design 'des3_perf'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  saed32rvt_ss0p95v125c (library) /mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v125c.db
+  saed32rvt_ss0p95v25c (library) /mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v25c.db
+  saed32rvt_ss0p95vn40c (library) /mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95vn40c.db
+
+1
+# Output files
+write -hier -f ddc -output ./outputs/des3_perf/des3_perf.ddc
+Writing ddc file './outputs/des3_perf/des3_perf.ddc'.
+1
+# Clock and constraints
+create_clock -name "clk" -period 10 [get_ports clk] 
+1
+set_input_delay 0.01 -clock clk [all_inputs] 
+1
+set_output_delay 0.01 -clock clk [all_outputs] 
+1
+set_clock_uncertainty 0.2 clk
+1
+set_max_area 0.0 
+1
+# Checks and compilation
+check_design  > ./reports/des3_perf/des3_perf_check_design.rpt 
+uniquify 
+Information: Uniquified 3 instances of design 'des'. (OPT-1056)
+Information: Uniquified 3 instances of design 'key_sel'. (OPT-1056)
+Information: Uniquified 48 instances of design 'crp'. (OPT-1056)
+Information: Uniquified 48 instances of design 'sbox1'. (OPT-1056)
+Information: Uniquified 48 instances of design 'sbox2'. (OPT-1056)
+Information: Uniquified 48 instances of design 'sbox3'. (OPT-1056)
+Information: Uniquified 48 instances of design 'sbox4'. (OPT-1056)
+Information: Uniquified 48 instances of design 'sbox5'. (OPT-1056)
+Information: Uniquified 48 instances of design 'sbox6'. (OPT-1056)
+Information: Uniquified 48 instances of design 'sbox7'. (OPT-1056)
+Information: Uniquified 48 instances of design 'sbox8'. (OPT-1056)
+1
+check_timing 
+Information: Changed wire load model for 'sbox8_0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox7_0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox6_0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox5_0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox4_0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox3_0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox2_0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox1_0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'crp_0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox8_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox7_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox6_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox5_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox4_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox3_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox2_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox1_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'crp_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox8_2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox7_2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox6_2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox5_2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox4_2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox3_2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox2_2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox1_2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'crp_2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox8_3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox7_3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox6_3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox5_3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox4_3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox3_3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox2_3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox1_3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'crp_3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox8_4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox7_4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox6_4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox5_4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox4_4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox3_4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox2_4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox1_4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'crp_4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox8_5' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox7_5' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox6_5' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox5_5' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox4_5' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox3_5' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox2_5' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox1_5' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'crp_5' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox8_6' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox7_6' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox6_6' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox5_6' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox4_6' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox3_6' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox2_6' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox1_6' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'crp_6' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox8_7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox7_7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox6_7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox5_7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox4_7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox3_7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox2_7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox1_7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'crp_7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox8_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox7_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox6_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox5_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox4_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox3_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox2_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox1_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'crp_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox8_9' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox7_9' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox6_9' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox5_9' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox4_9' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox3_9' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox2_9' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox1_9' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'crp_9' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox8_10' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox7_10' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox6_10' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox5_10' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox4_10' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox3_10' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox2_10' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox1_10' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'crp_10' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox8_11' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox7_11' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox6_11' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox5_11' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox4_11' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox3_11' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox2_11' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox1_11' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'crp_11' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox8_12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox7_12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox6_12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox5_12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox4_12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox3_12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox2_12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox1_12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'crp_12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox8_13' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox7_13' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox6_13' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox5_13' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox4_13' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox3_13' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox2_13' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox1_13' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'crp_13' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox8_14' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox7_14' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox6_14' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox5_14' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox4_14' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox3_14' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox2_14' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox1_14' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'crp_14' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox8_15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox7_15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox6_15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox5_15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox4_15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox3_15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox2_15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox1_15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'crp_15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'key_sel_0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'des_0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox8_16' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox7_16' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox6_16' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox5_16' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox4_16' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox3_16' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox2_16' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox1_16' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'crp_16' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox8_17' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox7_17' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox6_17' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox5_17' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox4_17' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox3_17' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox2_17' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox1_17' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'crp_17' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox8_18' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox7_18' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox6_18' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox5_18' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox4_18' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox3_18' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox2_18' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox1_18' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'crp_18' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox8_19' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox7_19' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox6_19' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox5_19' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox4_19' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox3_19' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox2_19' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox1_19' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'crp_19' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox8_20' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox7_20' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox6_20' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox5_20' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox4_20' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox3_20' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox2_20' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox1_20' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'crp_20' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox8_21' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox7_21' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox6_21' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox5_21' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox4_21' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox3_21' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox2_21' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox1_21' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'crp_21' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox8_22' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox7_22' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox6_22' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox5_22' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox4_22' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox3_22' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox2_22' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox1_22' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'crp_22' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox8_23' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox7_23' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox6_23' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox5_23' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox4_23' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox3_23' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox2_23' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox1_23' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'crp_23' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox8_24' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox7_24' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox6_24' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox5_24' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox4_24' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox3_24' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox2_24' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox1_24' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'crp_24' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox8_25' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox7_25' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox6_25' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox5_25' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox4_25' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox3_25' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox2_25' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox1_25' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'crp_25' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox8_26' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox7_26' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox6_26' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox5_26' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox4_26' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox3_26' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox2_26' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox1_26' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'crp_26' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox8_27' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox7_27' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox6_27' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox5_27' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox4_27' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox3_27' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox2_27' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox1_27' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'crp_27' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox8_28' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox7_28' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox6_28' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox5_28' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox4_28' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox3_28' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox2_28' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox1_28' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'crp_28' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox8_29' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox7_29' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox6_29' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox5_29' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox4_29' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox3_29' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox2_29' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox1_29' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'crp_29' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox8_30' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox7_30' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox6_30' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox5_30' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox4_30' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox3_30' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox2_30' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox1_30' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'crp_30' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox8_31' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox7_31' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox6_31' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox5_31' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox4_31' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox3_31' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox2_31' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox1_31' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'crp_31' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'key_sel_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'des_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox8_32' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox7_32' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox6_32' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox5_32' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox4_32' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox3_32' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox2_32' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox1_32' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'crp_32' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox8_33' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox7_33' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox6_33' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox5_33' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox4_33' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox3_33' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox2_33' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox1_33' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'crp_33' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox8_34' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox7_34' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox6_34' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox5_34' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox4_34' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox3_34' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox2_34' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox1_34' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'crp_34' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox8_35' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox7_35' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox6_35' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox5_35' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox4_35' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox3_35' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox2_35' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox1_35' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'crp_35' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox8_36' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox7_36' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox6_36' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox5_36' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox4_36' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox3_36' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox2_36' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox1_36' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'crp_36' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox8_37' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox7_37' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox6_37' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox5_37' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox4_37' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox3_37' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox2_37' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox1_37' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'crp_37' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox8_38' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox7_38' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox6_38' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox5_38' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox4_38' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox3_38' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox2_38' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox1_38' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'crp_38' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox8_39' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox7_39' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox6_39' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox5_39' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox4_39' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox3_39' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox2_39' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox1_39' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'crp_39' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox8_40' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox7_40' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox6_40' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox5_40' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox4_40' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox3_40' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox2_40' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox1_40' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'crp_40' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox8_41' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox7_41' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox6_41' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox5_41' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox4_41' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox3_41' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox2_41' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox1_41' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'crp_41' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox8_42' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox7_42' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox6_42' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox5_42' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox4_42' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox3_42' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox2_42' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox1_42' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'crp_42' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox8_43' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox7_43' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox6_43' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox5_43' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox4_43' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox3_43' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox2_43' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox1_43' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'crp_43' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox8_44' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox7_44' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox6_44' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox5_44' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox4_44' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox3_44' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox2_44' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox1_44' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'crp_44' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox8_45' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox7_45' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox6_45' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox5_45' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox4_45' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox3_45' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox2_45' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox1_45' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'crp_45' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox8_46' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox7_46' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox6_46' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox5_46' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox4_46' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox3_46' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox2_46' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox1_46' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'crp_46' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox8_47' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox7_47' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox6_47' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox5_47' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox4_47' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox3_47' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox2_47' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'sbox1_47' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'crp_47' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'key_sel_2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'des_2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Updating graph... (UID-83)
+Warning: Design 'des3_perf' contains 12 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Information: Updating design information... (UID-85)
+Warning: Design 'des3_perf' contains 12 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+
+Information: Checking generated_clocks...
+
+Information: Checking loops...
+
+Information: Checking no_input_delay...
+
+Information: Checking unconstrained_endpoints...
+
+Information: Checking pulse_clock_cell_type...
+
+Information: Checking no_driving_cell...
+
+Information: Checking partial_input_delay...
+1
+compile -area_effort medium -map_effort medium 
+CPU Load: 144%, Ram Free: 106 GB, Swap Free: 15 GB, Work Disk Free: 4315 GB, Tmp Disk Free: 136 GB
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | W-2024.09-DWBB_202409.4 |     *     |
+| Licensed DW Building Blocks        |                         |           |
+============================================================================
+
+====================================================================================================
+| Flow Information                                                                                 |
+----------------------------------------------------------------------------------------------------
+| Flow         | Design Compiler                                                                   |
+====================================================================================================
+| Design Information                                      | Value                                  |
+====================================================================================================
+| Number of Scenarios                                     | 0                                      |
+| Leaf Cell Count                                         | 104444                                 |
+| Number of User Hierarchies                              | 438                                    |
+| Sequential Cell Count                                   | 8808                                   |
+| Macro Count                                             | 0                                      |
+| Pad Count                                               | 0                                      |
+| Number of Power Domains                                 | 0                                      |
+| Number of Path Groups                                   | 2                                      |
+| Number of VT Class                                      | 1                                      |
+| Number of Clocks                                        | 1                                      |
+| Number of Dont Touch Cells                              | 49162                                  |
+| Number of Dont Touch Nets                               | 0                                      |
+| Number of Size Only Cells                               | 0                                      |
+| Design with Target Library Subset (with clock_path)     | false  (false )                        |
+| Design with UPF Data                                    | false                                  |
+====================================================================================================
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'sbox8_0'
+  Processing 'sbox7_0'
+  Processing 'sbox6_0'
+  Processing 'sbox5_0'
+  Processing 'sbox4_0'
+  Processing 'sbox3_0'
+  Processing 'sbox2_0'
+  Processing 'sbox1_0'
+  Processing 'crp_0'
+  Processing 'key_sel_0'
+  Processing 'des_0'
+  Processing 'des3_perf'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:01:52  203095.4     16.11   47913.6       0.0                          
+    0:01:55  203095.4     16.11   47913.6       0.0                          
+    0:01:55  203095.4     16.11   47913.6       0.0                          
+    0:01:58  203094.9     16.11   47913.6       0.0                          
+    0:01:58  203094.9     16.11   47913.6       0.0                          
+    0:01:59  203094.9     16.11   23272.5       0.0                          
+    0:02:42  152006.3     21.73   25682.4       0.0                          
+    0:03:08  153076.5     18.07   24161.5       0.0                          
+    0:03:13  151996.2     18.84   24264.5       0.0                          
+    0:03:17  151882.0     17.64   24030.7       0.0                          
+    0:03:20  151841.4     15.53   22969.4       0.0                          
+    0:03:24  151862.2     15.58   22354.1       0.0                          
+    0:03:26  151843.2     15.06   20241.9       0.0                          
+    0:03:28  151859.7     14.64   19451.2       0.0                          
+    0:03:31  151872.1     14.19   18832.1       0.0                          
+    0:03:34  151879.3     13.52   18195.4       0.0                          
+    0:03:36  151878.0     12.99   18211.2       0.0                          
+    0:03:40  151880.5     12.83   18207.4       0.0                          
+    0:03:46  151881.8     12.83   18207.1       0.0                          
+    0:03:50  151883.8     12.39   17741.1       0.0                          
+    0:03:53  151883.8     12.39   17741.1       0.0                          
+    0:03:54  151883.8     12.39   17741.1       0.0                          
+    0:03:54  151883.8     12.39   17741.1       0.0                          
+    0:03:54  151883.8     12.39   17741.1       0.0                          
+    0:03:54  151883.8     12.39   17741.1       0.0                          
+    0:03:54  151883.8     12.39   17741.1       0.0                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:03:54  151883.8     12.39   17742.2       0.0                          
+    0:03:54  151883.8     12.39   17742.2       0.0                          
+    0:03:54  151883.8     12.39   17742.2       0.0                          
+    0:03:56  151943.0     11.91   17244.2       0.0 key_c_r_reg[0][13]/D     
+    0:03:57  151949.6     11.45   15531.9       0.0 u1/R0_reg[19]/D          
+    0:03:59  151958.3     10.97   14474.0       0.0 u1/R11_reg[19]/D         
+    0:04:00  152036.1     10.00   14005.9       0.0 u2/R8_reg[19]/D          
+    0:04:02  152053.6      9.68   13765.6       0.0 u2/desOut_reg[26]/D      
+    0:04:03  152064.0      9.43   13479.0       0.0 u2/R10_reg[20]/D         
+    0:04:05  152088.2      9.33   13379.8       0.0 u0/R8_reg[20]/D          
+    0:04:06  152106.5      9.07   12637.3       0.0 u1/R0_reg[20]/D          
+    0:04:06  152133.9      9.03   12537.4       0.0 u1/R14_reg[19]/D         
+    0:04:07  152142.0      8.95   12527.4       0.0 u1/R2_reg[20]/D          
+    0:04:07  152155.0      8.92   12523.9       0.0 u1/R0_reg[19]/D          
+    0:04:07  152163.9      8.89   12507.5       0.0 u2/R9_reg[19]/D          
+    0:04:08  152168.7      8.88   12507.3       0.0 u1/R14_reg[19]/D         
+    0:04:08  152175.8      8.85   12489.8       0.0 u1/R5_reg[20]/D          
+    0:04:08  152179.7      8.83   12485.9       0.0 u1/R14_reg[19]/D         
+    0:04:08  152194.4      8.82   12476.8       0.0 u1/R9_reg[20]/D          
+    0:04:09  152202.0      8.81   12475.0       0.0 u1/desOut_reg[26]/D      
+    0:04:09  152206.6      8.80   12455.7       0.0 u2/R9_reg[19]/D          
+    0:04:09  152185.0      8.75   12444.0       0.0 u1/R1_reg[19]/D          
+    0:04:09  152195.9      8.71   12368.9       0.0 u1/R2_reg[20]/D          
+    0:04:10  152202.3      8.68   12340.5       0.0 u2/R8_reg[13]/D          
+    0:04:10  152215.0      8.65   12339.1       0.0 u2/R4_reg[13]/D          
+    0:04:12  152213.5      8.61   12180.4       0.0 u2/R5_reg[19]/D          
+    0:04:12  152223.9      8.58   12179.6       0.0 u2/R4_reg[2]/D           
+    0:04:12  152187.5      8.56   12165.5       0.0 u2/desOut_reg[26]/D      
+    0:04:12  152200.2      8.55   12160.1       0.0 u2/desOut_reg[26]/D      
+    0:04:13  152224.4      8.52   12156.4       0.0 u1/desOut_reg[26]/D      
+    0:04:13  152239.1      8.50   12111.1       0.0 u0/R5_reg[20]/D          
+    0:04:14  152255.9      8.49   12097.8       0.0 u0/R10_reg[20]/D         
+    0:04:14  152239.6      8.48   12095.7       0.0 u0/R9_reg[20]/D          
+    0:04:14  152239.6      8.47   12084.6       0.0 u0/R0_reg[19]/D          
+    0:04:14  152246.2      8.45   12081.1       0.0 u1/R11_reg[20]/D         
+    0:04:15  152263.0      8.43   12070.0       0.0 u1/R8_reg[13]/D          
+    0:04:15  152268.6      8.43   12068.3       0.0 u1/desOut_reg[26]/D      
+    0:04:15  152278.3      8.41   12067.3       0.0 u1/R6_reg[20]/D          
+    0:04:15  152292.5      8.39   12063.3       0.0 u1/R7_reg[20]/D          
+    0:04:16  152301.1      8.39   12049.8       0.0 u1/R3_reg[19]/D          
+    0:04:16  152300.9      8.37   12045.2       0.0 u0/R10_reg[20]/D         
+    0:04:16  152304.2      8.36   12044.7       0.0 u0/R9_reg[20]/D          
+    0:04:17  152332.9      8.34   12027.0       0.0 u2/R5_reg[19]/D          
+    0:04:18  152338.5      8.32   12021.7       0.0 u1/R14_reg[13]/D         
+    0:04:18  152353.7      8.31   12018.8       0.0 u2/R4_reg[20]/D          
+    0:04:18  152354.8      8.30   12015.6       0.0 u1/R13_reg[3]/D          
+    0:04:19  152340.3      8.29   11979.9       0.0 u1/R11_reg[19]/D         
+    0:04:20  152342.6      8.28   11973.1       0.0 u2/R6_reg[19]/D          
+    0:04:20  152351.2      8.27   11969.4       0.0 u1/R13_reg[17]/D         
+    0:04:20  152358.1      8.26   11962.7       0.0 u2/R7_reg[19]/D          
+    0:04:20  152365.2      8.25   11961.0       0.0 u1/R9_reg[3]/D           
+    0:04:20  152373.6      8.23   11951.8       0.0 u2/R6_reg[19]/D          
+    0:04:21  152367.7      8.21   11943.9       0.0 u0/R5_reg[13]/D          
+    0:04:21  152359.1      8.21   11928.7       0.0 u2/R4_reg[19]/D          
+    0:04:21  152360.9      8.19   11923.4       0.0 u1/R10_reg[17]/D         
+    0:04:22  152369.7      8.18   11918.5       0.0 u0/R8_reg[13]/D          
+    0:04:22  152373.8      8.18   11895.6       0.0 u1/R10_reg[17]/D         
+    0:04:22  152381.2      8.16   11881.1       0.0 u1/R8_reg[20]/D          
+    0:04:22  152395.4      8.15   11876.8       0.0 u0/R6_reg[18]/D          
+    0:04:23  152399.7      8.14   11830.8       0.0 u1/R4_reg[19]/D          
+    0:04:23  152411.4      8.13   11829.8       0.0 u1/R1_reg[3]/D           
+    0:04:24  152416.5      8.13   11788.6       0.0 u2/R3_reg[19]/D          
+    0:04:25  152426.9      8.12   11778.4       0.0 u1/R9_reg[17]/D          
+    0:04:25  152443.5      8.11   11776.1       0.0 u0/R9_reg[18]/D          
+    0:04:25  152452.1      8.10   11766.4       0.0 u1/R12_reg[19]/D         
+    0:04:26  152458.7      8.08   11714.6       0.0 u0/R13_reg[13]/D         
+    0:04:27  152460.7      8.07   11713.7       0.0 u2/R10_reg[20]/D         
+    0:04:27  152467.1      8.04   11705.5       0.0 u1/desOut_reg[18]/D      
+    0:04:27  152472.7      8.04   11704.3       0.0 u1/R8_reg[19]/D          
+    0:04:28  152476.7      8.03   11699.6       0.0 u2/R6_reg[20]/D          
+    0:04:29  152465.8      8.02   11698.7       0.0 u1/R3_reg[19]/D          
+    0:04:30  152455.4      8.01   11625.1       0.0 u2/R7_reg[19]/D          
+    0:04:31  152450.6      8.00   11620.0       0.0 u0/R3_reg[15]/D          
+    0:04:31  152453.4      7.98   11616.6       0.0 u1/R5_reg[19]/D          
+    0:04:31  152455.7      7.97   11614.8       0.0 u1/R4_reg[20]/D          
+    0:04:32  152467.3      7.97   11613.8       0.0 u1/R14_reg[20]/D         
+    0:04:32  152465.1      7.96   11468.9       0.0 u0/R3_reg[19]/D          
+    0:04:33  152467.1      7.96   11468.8       0.0 u1/R13_reg[20]/D         
+    0:04:34  152475.2      7.96   11457.5       0.0 u1/R3_reg[19]/D          
+    0:04:34  152479.8      7.95   11447.4       0.0 u1/R3_reg[20]/D          
+    0:04:35  152484.6      7.95   11444.9       0.0 u1/R14_reg[17]/D         
+    0:04:35  152496.3      7.94   11438.8       0.0 u1/R12_reg[24]/D         
+    0:04:36  152493.8      7.93   11438.4       0.0 u1/R14_reg[20]/D         
+    0:04:37  152507.5      7.92   11432.6       0.0 u1/R14_reg[16]/D         
+    0:04:37  152511.1      7.92   11432.5       0.0 u1/R13_reg[20]/D         
+    0:04:38  152522.5      7.90   11431.3       0.0 u1/R14_reg[17]/D         
+    0:04:38  152526.0      7.89   11430.8       0.0 u1/R14_reg[17]/D         
+    0:04:38  152529.6      7.88   11429.8       0.0 u1/R9_reg[19]/D          
+    0:04:38  152537.5      7.88   11426.8       0.0 u2/R4_reg[16]/D          
+    0:04:38  152546.4      7.87   11423.7       0.0 u1/desOut_reg[58]/D      
+    0:04:39  152548.9      7.86   11422.5       0.0 u1/R14_reg[19]/D         
+    0:04:39  152560.1      7.85   11413.3       0.0 u2/R4_reg[16]/D          
+    0:04:39  152570.8      7.83   11410.0       0.0 u1/R0_reg[17]/D          
+    0:04:39  152564.4      7.82   11407.7       0.0 u1/R4_reg[13]/D          
+    0:04:40  152545.9      7.81   11405.3       0.0 u1/desOut_reg[52]/D      
+    0:04:40  152553.0      7.80   11404.2       0.0 u1/R4_reg[13]/D          
+    0:04:41  152555.5      7.80   11372.7       0.0 u2/R8_reg[32]/D          
+    0:04:41  152583.7      7.79   11353.7       0.0 u2/R2_reg[17]/D          
+    0:04:41  152589.6      7.78   11339.7       0.0 u1/R0_reg[17]/D          
+    0:04:41  152583.0      7.77   11326.0       0.0 u1/R6_reg[17]/D          
+    0:04:42  152571.0      7.77   11272.1       0.0 key_c_r_reg[0][48]/D     
+    0:04:42  152567.7      7.75   11264.1       0.0 u1/R8_reg[20]/D          
+    0:04:42  152581.2      7.74   11258.6       0.0 u1/R9_reg[16]/D          
+    0:04:43  152576.6      7.74   11254.0       0.0 u1/R0_reg[17]/D          
+    0:04:44  152572.8      7.73   11043.6       0.0 u0/R11_reg[13]/D         
+    0:04:44  152580.9      7.73   11043.0       0.0 u1/R11_reg[24]/D         
+    0:04:45  152586.0      7.72   11040.9       0.0 u1/R1_reg[20]/D          
+    0:04:45  152608.4      7.71   11027.4       0.0 u1/R13_reg[20]/D         
+    0:04:46  152610.9      7.70   11024.3       0.0 u1/R13_reg[17]/D         
+    0:04:47  152620.1      7.69   11005.9       0.0 u2/R9_reg[19]/D          
+    0:04:48  152632.5      7.68   11000.4       0.0 u1/R4_reg[20]/D          
+    0:04:49  152647.5      7.67   10817.3       0.0 u2/R11_reg[2]/D          
+    0:04:49  152647.8      7.64   10726.7       0.0 u2/R4_reg[24]/D          
+    0:04:50  152649.3      7.62   10670.6       0.0 u2/R4_reg[2]/D           
+    0:04:51  152661.8      7.62   10646.2       0.0 u2/R0_reg[20]/D          
+    0:04:51  152670.9      7.61   10642.3       0.0 u1/R5_reg[18]/D          
+    0:04:51  152655.7      7.59   10633.5       0.0 u2/R13_reg[17]/D         
+    0:04:51  152671.9      7.56   10619.8       0.0 u1/R11_reg[13]/D         
+    0:04:52  152654.6      7.53   10606.3       0.0 u1/R3_reg[15]/D          
+    0:04:52  152652.6      7.50   10603.7       0.0 u2/R6_reg[13]/D          
+    0:04:52  152688.2      7.48   10552.6       0.0 u2/R1_reg[19]/D          
+    0:04:53  152691.0      7.46   10549.5       0.0 u2/R0_reg[13]/D          
+    0:04:54  152693.3      7.45   10512.0       0.0 u1/R11_reg[13]/D         
+    0:04:55  152697.6      7.43   10472.2       0.0 u1/R11_reg[13]/D         
+    0:04:55  152705.7      7.42   10461.2       0.0 u2/R13_reg[2]/D          
+    0:04:55  152716.1      7.38   10450.9       0.0 u2/R0_reg[13]/D          
+    0:04:56  152726.3      7.36   10448.2       0.0 u1/R1_reg[20]/D          
+    0:04:56  152722.2      7.31   10442.6       0.0 u1/R12_reg[2]/D          
+    0:04:57  152740.8      7.29   10432.0       0.0 u0/R11_reg[13]/D         
+    0:04:57  152734.2      7.28   10424.4       0.0 u2/R9_reg[15]/D          
+    0:04:58  152740.0      7.27   10411.5       0.0 u0/R3_reg[20]/D          
+    0:04:59  152741.6      7.27   10397.6       0.0 u1/R4_reg[3]/D           
+    0:05:00  152733.9      7.24   10388.2       0.0 u1/R2_reg[3]/D           
+    0:05:00  152738.3      7.23   10384.4       0.0 u0/R2_reg[19]/D          
+    0:05:01  152738.5      7.22   10383.3       0.0 u0/R7_reg[19]/D          
+    0:05:01  152749.9      7.21   10376.8       0.0 u1/R10_reg[16]/D         
+    0:05:02  152752.7      7.20   10361.0       0.0 u0/R11_reg[13]/D         
+    0:05:03  152776.6      7.17   10216.6       0.0 u1/R6_reg[3]/D           
+    0:05:04  152787.6      7.15   10200.0       0.0 u0/R8_reg[3]/D           
+    0:05:04  152788.3      7.15   10197.1       0.0 u0/R10_reg[3]/D          
+    0:05:05  152808.1      7.13   10041.9       0.0 u2/R5_reg[20]/D          
+    0:05:05  152812.7      7.11   10038.1       0.0 u0/R4_reg[3]/D           
+    0:05:06  152813.2      7.10   10036.6       0.0 u2/R12_reg[3]/D          
+    0:05:06  152827.5      7.08   10024.4       0.0 u0/R10_reg[3]/D          
+    0:05:08  152828.0      7.08    9909.6       0.0 u2/R14_reg[3]/D          
+    0:05:08  152819.3      7.04    9880.7       0.0 u2/R11_reg[20]/D         
+    0:05:08  152814.2      7.03    9879.3       0.0 u2/R10_reg[15]/D         
+    0:05:09  152829.5      6.99    9851.6       0.0 u1/R4_reg[19]/D          
+    0:05:09  152825.7      6.98    9850.4       0.0 u1/R12_reg[18]/D         
+    0:05:09  152834.8      6.97    9779.6       0.0 u1/R12_reg[20]/D         
+    0:05:10  152840.4      6.95    9771.5       0.0 u1/R1_reg[17]/D          
+    0:05:10  152854.4      6.93    9770.2       0.0 u0/R13_reg[2]/D          
+    0:05:11  152854.9      6.91    9747.3       0.0 u2/R11_reg[20]/D         
+    0:05:12  152856.9      6.88    9555.2       0.0 u2/R1_reg[19]/D          
+    0:05:12  152858.2      6.87    9551.9       0.0 u2/R7_reg[20]/D          
+    0:05:13  152858.5      6.86    9551.1       0.0 u0/R14_reg[20]/D         
+    0:05:13  152874.2      6.84    9543.5       0.0 u2/R7_reg[20]/D          
+    0:05:13  152891.3      6.80    9541.7       0.0 u0/R8_reg[19]/D          
+    0:05:13  152894.3      6.79    9533.8       0.0 u1/R8_reg[19]/D          
+    0:05:15  152887.7      6.75    9496.6       0.0 u2/desOut_reg[36]/D      
+    0:05:15  152881.6      6.73    9487.4       0.0 u0/desOut_reg[18]/D      
+    0:05:17  152883.6      6.72    9470.8       0.0 u2/R7_reg[15]/D          
+    0:05:17  152865.8      6.70    9465.3       0.0 u2/R13_reg[20]/D         
+    0:05:17  152866.6      6.68    9461.2       0.0 u0/R4_reg[17]/D          
+    0:05:18  152866.9      6.67    9458.4       0.0 u0/desOut_reg[52]/D      
+    0:05:18  152869.1      6.65    9451.7       0.0 u0/R7_reg[20]/D          
+    0:05:18  152876.8      6.64    9448.9       0.0 u0/R10_reg[13]/D         
+    0:05:19  152868.9      6.62    9402.3       0.0 u0/R10_reg[13]/D         
+    0:05:19  152865.8      6.60    9379.5       0.0 u2/R11_reg[16]/D         
+    0:05:20  152880.8      6.58    9329.5       0.0 u0/R1_reg[13]/D          
+    0:05:20  152893.3      6.56    9287.8       0.0 u1/R3_reg[13]/D          
+    0:05:21  152890.0      6.54    9256.3       0.0 u2/R7_reg[17]/D          
+    0:05:23  152885.7      6.53    9199.0       0.0 u2/R6_reg[20]/D          
+    0:05:23  152890.0      6.52    9194.1       0.0 u0/R14_reg[13]/D         
+    0:05:24  152895.1      6.48    9175.1       0.0 u2/R9_reg[13]/D          
+    0:05:24  152915.1      6.46    9169.5       0.0 u0/R11_reg[19]/D         
+    0:05:25  152922.0      6.43    9158.5       0.0 u1/R3_reg[13]/D          
+    0:05:27  152925.1      6.42    9144.7       0.0 u0/R14_reg[13]/D         
+    0:05:27  152943.9      6.40    9140.3       0.0 u2/R3_reg[13]/D          
+    0:05:28  152953.3      6.37    9134.0       0.0 u1/R3_reg[19]/D          
+    0:05:29  152966.7      6.34    9097.2       0.0 u0/desOut_reg[26]/D      
+    0:05:30  152972.1      6.33    9086.7       0.0 u2/R0_reg[20]/D          
+    0:05:31  152988.1      6.33    9075.1       0.0 u1/R7_reg[3]/D           
+    0:05:31  152994.4      6.32    9034.9       0.0 u1/R4_reg[3]/D           
+    0:05:32  152999.0      6.30    8979.2       0.0 u0/R1_reg[3]/D           
+    0:05:32  152994.2      6.28    8963.0       0.0 u2/R1_reg[20]/D          
+    0:05:33  153001.3      6.28    8956.6       0.0 u1/R3_reg[19]/D          
+    0:05:34  153024.9      6.27    8935.9       0.0 u2/R12_reg[17]/D         
+    0:05:34  153036.1      6.26    8935.6       0.0 u2/R14_reg[17]/D         
+    0:05:35  153043.5      6.25    8920.3       0.0 u2/R12_reg[17]/D         
+    0:05:35  153056.7      6.23    8914.8       0.0 u2/R0_reg[3]/D           
+    0:05:37  153059.2      6.21    8907.5       0.0 u2/R12_reg[17]/D         
+    0:05:38  153060.8      6.18    8767.7       0.0 u1/R14_reg[17]/D         
+    0:05:39  153068.4      6.17    8757.5       0.0 u2/R14_reg[13]/D         
+    0:05:40  153070.9      6.14    8660.6       0.0 u1/R0_reg[13]/D          
+    0:05:42  153087.7      6.12    8646.0       0.0 u2/R2_reg[17]/D          
+    0:05:43  153091.0      6.11    8631.8       0.0 u0/R11_reg[20]/D         
+    0:05:43  153107.8      6.09    8622.2       0.0 u0/R3_reg[20]/D          
+    0:05:44  153115.9      6.06    8593.8       0.0 u0/R11_reg[17]/D         
+    0:05:45  153115.4      6.05    8593.0       0.0 u0/key_r_reg[48]/D       
+    0:05:45  153134.2      6.04    8570.2       0.0 u2/R4_reg[24]/D          
+    0:05:45  153134.0      6.03    8551.7       0.0 u2/R9_reg[18]/D          
+    0:05:45  153139.0      6.00    8548.3       0.0 u1/R5_reg[17]/D          
+    0:05:46  153168.5      5.99    8512.0       0.0 u2/R12_reg[14]/D         
+    0:05:47  153177.7      5.98    8504.2       0.0 u0/R3_reg[2]/D           
+    0:05:48  153182.8      5.98    8495.4       0.0 u1/R3_reg[20]/D          
+    0:05:48  153192.9      5.97    8489.6       0.0 u1/R0_reg[17]/D          
+    0:05:50  153197.5      5.95    8458.3       0.0 u1/R5_reg[17]/D          
+    0:05:50  153200.8      5.93    8457.7       0.0 u1/R6_reg[20]/D          
+    0:05:52  153202.8      5.93    7627.5       0.0 u2/R5_reg[19]/D          
+    0:05:53  153207.2      5.92    7606.6       0.0 u1/R4_reg[20]/D          
+    0:05:53  153221.6      5.91    7576.8       0.0 u1/R14_reg[20]/D         
+    0:05:55  153225.2      5.90    7572.3       0.0 u1/R4_reg[20]/D          
+    0:05:55  153229.3      5.86    7532.9       0.0 u1/R4_reg[20]/D          
+    0:05:55  153229.0      5.84    7520.6       0.0 u1/R4_reg[19]/D          
+    0:05:56  153215.5      5.83    7516.8       0.0 u1/R10_reg[16]/D         
+    0:05:57  153213.0      5.83    7299.4       0.0 u1/R12_reg[20]/D         
+    0:05:57  153213.3      5.81    7298.9       0.0 u0/R3_reg[19]/D          
+    0:05:58  153219.1      5.75    7215.7       0.0 u0/R14_reg[19]/D         
+    0:05:59  153226.7      5.69    7209.9       0.0 u0/R6_reg[19]/D          
+    0:06:00  153180.7      5.64    7182.0       0.0 u0/R1_reg[15]/D          
+    0:06:00  153169.0      5.61    7177.0       0.0 u0/R12_reg[15]/D         
+    0:06:02  153175.1      5.56    7162.4       0.0 u1/R0_reg[20]/D          
+    0:06:02  153180.5      5.53    7144.4       0.0 u0/R13_reg[17]/D         
+    0:06:03  153183.5      5.50    7144.9       0.0 u1/R5_reg[3]/D           
+    0:06:03  153192.9      5.45    7143.6       0.0 u0/R9_reg[17]/D          
+    0:06:03  153209.2      5.43    7136.7       0.0 u0/R4_reg[19]/D          
+    0:06:03  153220.9      5.41    7119.2       0.0 u0/R0_reg[3]/D           
+    0:06:04  153226.5      5.39    7115.8       0.0 u1/R0_reg[13]/D          
+    0:06:04  153228.8      5.38    7089.7       0.0 u0/R12_reg[24]/D         
+    0:06:06  153245.3      5.35    7021.2       0.0 u0/R12_reg[3]/D          
+    0:06:06  153240.2      5.27    7011.8       0.0 u0/R0_reg[3]/D           
+    0:06:07  153252.6      5.26    7010.3       0.0 u0/desOut_reg[60]/D      
+    0:06:09  153281.4      5.22    6713.8       0.0 u1/R10_reg[16]/D         
+    0:06:09  153295.1      5.21    6712.3       0.0 u1/R9_reg[17]/D          
+    0:06:09  153300.4      5.18    6711.7       0.0 u1/R14_reg[13]/D         
+    0:06:10  153321.3      5.16    6699.1       0.0 u0/R8_reg[15]/D          
+    0:06:10  153320.2      5.15    6696.0       0.0 u0/R2_reg[13]/D          
+    0:06:11  153308.6      5.12    6690.5       0.0 u0/R10_reg[20]/D         
+    0:06:11  153314.7      5.10    6683.7       0.0 u0/R10_reg[19]/D         
+    0:06:11  153320.5      5.10    6682.3       0.0 u0/R3_reg[19]/D          
+    0:06:11  153330.9      5.08    6681.3       0.0 u0/R10_reg[19]/D         
+    0:06:11  153338.0      5.07    6678.6       0.0 u0/R6_reg[14]/D          
+    0:06:12  153349.7      5.04    6662.5       0.0 u0/R1_reg[17]/D          
+    0:06:12  153357.1      5.03    6652.7       0.0 u0/R1_reg[17]/D          
+    0:06:12  153357.9      5.02    6652.7       0.0 u1/R1_reg[20]/D          
+    0:06:12  153370.3      5.00    6652.2       0.0 u0/R9_reg[17]/D          
+    0:06:13  153382.3      4.99    6651.4       0.0 u0/R0_reg[24]/D          
+    0:06:13  153382.5      4.98    6648.5       0.0 u1/R11_reg[22]/D         
+    0:06:13  153394.0      4.97    6638.8       0.0 u0/R7_reg[24]/D          
+    0:06:13  153402.8      4.96    6634.9       0.0 u1/R6_reg[21]/D          
+    0:06:13  153407.4      4.95    6633.8       0.0 u0/R7_reg[17]/D          
+    0:06:14  153411.2      4.94    6618.5       0.0 u1/R7_reg[13]/D          
+    0:06:14  153404.1      4.93    6615.9       0.0 u1/desOut_reg[14]/D      
+    0:06:14  153398.8      4.93    6615.6       0.0 u0/R12_reg[13]/D         
+    0:06:14  153401.8      4.92    6613.4       0.0 u0/R1_reg[13]/D          
+    0:06:15  153409.5      4.92    6608.6       0.0 u1/R9_reg[17]/D          
+    0:06:15  153410.5      4.91    6606.6       0.0 u1/R7_reg[24]/D          
+    0:06:15  153413.8      4.90    6596.1       0.0 u0/R13_reg[16]/D         
+    0:06:16  153417.3      4.89    6588.6       0.0 u0/desOut_reg[2]/D       
+    0:06:16  153435.9      4.88    6581.3       0.0 u1/R0_reg[24]/D          
+    0:06:17  153444.8      4.87    6543.0       0.0 u1/R0_reg[24]/D          
+    0:06:19  153460.8      4.86    6646.8       0.0 u0/key_r_reg[4]/D        
+    0:06:21  153463.3      4.86    6645.2       0.0 u0/R6_reg[17]/D          
+    0:06:22  153465.6      4.85    6562.4       0.0 u0/R0_reg[20]/D          
+    0:06:23  153473.0      4.84    6553.9       0.0 u2/R2_reg[19]/D          
+    0:06:24  153482.1      4.83    6479.8       0.0 u0/R13_reg[18]/D         
+    0:06:24  153488.2      4.82    6479.7       0.0 u0/R1_reg[13]/D          
+    0:06:25  153496.6      4.80    6463.0       0.0 u0/R2_reg[17]/D          
+    0:06:26  153500.4      4.78    6401.5       0.0 u1/R0_reg[20]/D          
+    0:06:26  153520.8      4.72    6376.7       0.0 u0/R11_reg[3]/D          
+    0:06:28  153521.8      4.70    6312.3       0.0 u1/R7_reg[20]/D          
+    0:06:29  153525.3      4.68    6310.6       0.0 u2/R8_reg[17]/D          
+    0:06:29  153528.1      4.67    6309.1       0.0 u0/desOut_reg[22]/D      
+    0:06:30  153543.4      4.66    6281.0       0.0 u2/R5_reg[19]/D          
+    0:06:31  153542.9      4.66    6266.3       0.0 u2/R5_reg[19]/D          
+    0:06:32  153552.3      4.64    6196.8       0.0 u1/R5_reg[16]/D          
+    0:06:33  153550.5      4.63    6192.2       0.0 u2/R7_reg[17]/D          
+    0:06:34  153568.0      4.62    6181.2       0.0 u2/R7_reg[17]/D          
+    0:06:34  153567.5      4.57    6163.0       0.0 u2/R7_reg[14]/D          
+    0:06:35  153582.8      4.55    6147.6       0.0 u2/R10_reg[19]/D         
+    0:06:36  153593.2      4.53    5922.1       0.0 u2/R7_reg[3]/D           
+    0:06:36  153582.0      4.52    5905.3       0.0 u0/R8_reg[3]/D           
+    0:06:37  153583.5      4.51    5885.5       0.0 u2/R7_reg[3]/D           
+    0:06:37  153596.5      4.49    5885.1       0.0 u2/R12_reg[19]/D         
+    0:06:37  153600.8      4.48    5875.3       0.0 u2/R12_reg[3]/D          
+    0:06:39  153608.2      4.48    5828.7       0.0 u0/desOut_reg[22]/D      
+    0:06:39  153608.4      4.45    5822.1       0.0 u2/R14_reg[32]/D         
+    0:06:39  153604.9      4.44    5821.7       0.0 u2/R7_reg[32]/D          
+    0:06:40  153620.1      4.43    5819.3       0.0 u0/R3_reg[24]/D          
+    0:06:40  153624.5      4.41    5818.5       0.0 u2/R7_reg[20]/D          
+    0:06:40  153646.6      4.37    5809.6       0.0 u2/R8_reg[20]/D          
+    0:06:41  153651.9      4.36    5789.0       0.0 u2/R8_reg[14]/D          
+    0:06:41  153651.9      4.34    5785.6       0.0 u2/R2_reg[27]/D          
+    0:06:41  153664.6      4.33    5758.2       0.0 u2/R13_reg[17]/D         
+    0:06:42  153670.2      4.30    5738.3       0.0 u2/R2_reg[27]/D          
+    0:06:43  153668.4      4.29    5693.1       0.0 u2/R2_reg[27]/D          
+    0:06:43  153687.2      4.25    5673.3       0.0 u2/R9_reg[24]/D          
+    0:06:44  153699.2      4.24    5444.1       0.0 u2/R9_reg[24]/D          
+    0:06:45  153699.9      4.24    5443.5       0.0 u0/R14_reg[19]/D         
+    0:06:46  153706.5      4.22    5422.0       0.0 u0/R14_reg[19]/D         
+    0:06:46  153708.3      4.20    5420.8       0.0 u2/R4_reg[17]/D          
+    0:06:47  153708.6      4.18    5420.5       0.0 u2/R0_reg[17]/D          
+    0:06:47  153708.6      4.16    5420.0       0.0 u2/R5_reg[24]/D          
+    0:06:49  153714.9      4.14    5352.5       0.0 u2/R0_reg[17]/D          
+    0:06:49  153718.7      4.08    5332.3       0.0 u1/R2_reg[2]/D           
+    0:06:50  153728.1      4.05    5321.2       0.0 u2/R12_reg[21]/D         
+    0:06:51  153737.6      4.03    5313.1       0.0 u0/R14_reg[19]/D         
+    0:06:52  153741.9      4.02    5306.4       0.0 u0/R5_reg[3]/D           
+    0:06:54  153748.5      4.01    5249.9       0.0 u0/R9_reg[16]/D          
+    0:06:54  153762.5      4.00    5249.1       0.0 u0/R7_reg[19]/D          
+    0:06:55  153770.8      3.98    5238.5       0.0 u2/R14_reg[13]/D         
+    0:06:55  153779.0      3.95    5233.0       0.0 u0/R1_reg[17]/D          
+    0:06:55  153782.0      3.93    5229.2       0.0 u0/R6_reg[20]/D          
+    0:06:58  153788.4      3.89    5197.0       0.0 u1/R2_reg[2]/D           
+    0:06:58  153803.9      3.88    5188.7       0.0 u0/R8_reg[17]/D          
+    0:07:00  153801.3      3.87    5187.2       0.0 u0/R9_reg[20]/D          
+    0:07:01  153818.4      3.86    5173.3       0.0 u0/R9_reg[20]/D          
+    0:07:01  153843.0      3.85    5146.5       0.0 u0/R9_reg[16]/D          
+    0:07:02  153837.9      3.84    5132.1       0.0 u0/R0_reg[20]/D          
+    0:07:03  153837.9      3.84    5132.1       0.0 u0/R6_reg[17]/D          
+    0:07:04  153848.6      3.83    5132.3       0.0 u0/R7_reg[20]/D          
+    0:07:05  153837.9      3.82    5122.3       0.0 u0/R6_reg[17]/D          
+    0:07:05  153846.1      3.81    5115.6       0.0 u0/R1_reg[19]/D          
+    0:07:06  153846.8      3.81    5108.6       0.0 u0/R5_reg[17]/D          
+    0:07:07  153858.0      3.79    5098.4       0.0 u0/R11_reg[22]/D         
+    0:07:08  153867.2      3.78    5085.9       0.0 u0/R2_reg[10]/D          
+    0:07:08  153876.1      3.76    5081.7       0.0 u0/R10_reg[22]/D         
+    0:07:09  153879.4      3.75    5076.6       0.0 u0/R8_reg[16]/D          
+    0:07:09  153888.8      3.73    5075.9       0.0 u1/R11_reg[17]/D         
+    0:07:09  153897.2      3.71    5072.4       0.0 u0/R8_reg[17]/D          
+    0:07:10  153899.7      3.71    5071.3       0.0 u0/desOut_reg[26]/D      
+    0:07:10  153899.7      3.70    5070.7       0.0 u1/R2_reg[17]/D          
+    0:07:11  153905.8      3.70    5055.1       0.0 u0/R6_reg[20]/D          
+    0:07:12  153913.4      3.70    5045.3       0.0 u0/R14_reg[13]/D         
+    0:07:13  153922.6      3.69    5043.9       0.0 u0/R11_reg[17]/D         
+    0:07:13  153928.9      3.67    5040.9       0.0 u0/R9_reg[32]/D          
+    0:07:13  153931.2      3.67    5036.0       0.0 u0/R9_reg[32]/D          
+    0:07:14  153934.3      3.66    5034.5       0.0 u0/R8_reg[20]/D          
+    0:07:14  153944.9      3.65    5014.3       0.0 u0/R4_reg[9]/D           
+    0:07:14  153976.2      3.64    4996.7       0.0 u0/R4_reg[17]/D          
+    0:07:15  153985.3      3.64    4995.0       0.0 u0/desOut_reg[26]/D      
+    0:07:15  153990.7      3.63    4993.6       0.0 u0/R4_reg[30]/D          
+    0:07:15  153988.1      3.62    4982.8       0.0 u1/R12_reg[30]/D         
+    0:07:17  153999.1      3.62    4956.5       0.0 u0/R14_reg[13]/D         
+    0:07:18  154012.0      3.61    4912.4       0.0 u0/key_r_reg[26]/D       
+    0:07:18  154015.1      3.60    4907.2       0.0 u0/R5_reg[19]/D          
+    0:07:19  154016.9      3.59    4896.0       0.0 u2/R7_reg[15]/D          
+    0:07:19  154035.9      3.58    4888.2       0.0 u2/R3_reg[17]/D          
+    0:07:20  154050.1      3.57    4886.3       0.0 u0/R2_reg[17]/D          
+    0:07:20  154042.5      3.57    4885.4       0.0 u0/R5_reg[2]/D           
+    0:07:20  154046.8      3.56    4877.6       0.0 u0/R6_reg[17]/D          
+    0:07:20  154055.5      3.55    4874.3       0.0 u1/R10_reg[2]/D          
+    0:07:21  154051.2      3.54    4855.4       0.0 u0/R3_reg[19]/D          
+    0:07:21  154060.3      3.53    4843.7       0.0 u0/R8_reg[13]/D          
+    0:07:21  154067.4      3.52    4843.5       0.0 u0/R7_reg[17]/D          
+    0:07:22  154066.9      3.51    4823.8       0.0 u0/desOut_reg[2]/D       
+    0:07:23  154080.1      3.50    4822.5       0.0 u1/R10_reg[3]/D          
+    0:07:24  154094.9      3.50    4788.8       0.0 u2/R13_reg[17]/D         
+    0:07:25  154097.9      3.50    4766.8       0.0 u0/R7_reg[17]/D          
+    0:07:25  154096.4      3.50    4766.6       0.0 u0/R7_reg[17]/D          
+    0:07:37  154101.0      3.49    4753.5       0.0 u0/R7_reg[17]/D          
+    0:07:38  154119.0      3.48    4736.3       0.0 u0/R7_reg[20]/D          
+    0:07:39  154120.0      3.48    4663.5       0.0 u1/R14_reg[19]/D         
+    0:07:40  154123.9      3.48    4661.6       0.0 u0/R11_reg[20]/D         
+    0:07:41  154137.6      3.45    4657.0       0.0 u0/R5_reg[24]/D          
+    0:07:42  154143.4      3.44    4647.9       0.0 u0/R4_reg[3]/D           
+    0:07:43  154146.7      3.42    4606.9       0.0 u0/R1_reg[19]/D          
+    0:07:44  154166.8      3.40    4579.1       0.0 u2/R0_reg[3]/D           
+    0:07:44  154176.2      3.38    4575.4       0.0 u0/R11_reg[17]/D         
+    0:07:46  154181.5      3.37    4570.0       0.0 u0/R1_reg[19]/D          
+    0:07:47  154201.1      3.34    4565.1       0.0 u2/R8_reg[17]/D          
+    0:07:48  154201.4      3.34    4547.7       0.0 u0/R6_reg[14]/D          
+    0:07:48  154211.5      3.32    4542.9       0.0 u2/R1_reg[24]/D          
+    0:07:49  154228.1      3.30    4540.9       0.0 u0/R11_reg[20]/D         
+    0:07:49  154233.1      3.30    4512.3       0.0 u0/R14_reg[4]/D          
+    0:07:49  154257.3      3.28    4509.9       0.0 u0/R11_reg[17]/D         
+    0:07:51  154263.6      3.28    4479.4       0.0 u2/R5_reg[30]/D          
+    0:07:51  154272.3      3.27    4462.8       0.0 u1/R5_reg[3]/D           
+    0:07:53  154287.8      3.25    4448.7       0.0 u0/R9_reg[24]/D          
+    0:07:53  154302.5      3.24    4445.1       0.0 u0/R11_reg[14]/D         
+    0:07:53  154317.3      3.23    4441.7       0.0 u0/R11_reg[20]/D         
+    0:07:54  154316.0      3.22    4426.8       0.0 u1/R2_reg[3]/D           
+    0:07:55  154327.9      3.22    4418.9       0.0 u0/R12_reg[17]/D         
+    0:07:56  154323.9      3.21    4418.3       0.0 u2/R14_reg[24]/D         
+    0:07:57  154329.2      3.21    4398.7       0.0 u0/R4_reg[15]/D          
+    0:07:58  154331.7      3.20    4386.2       0.0 u2/R9_reg[24]/D          
+    0:07:59  154337.3      3.19    4384.9       0.0 u0/R11_reg[9]/D          
+    0:07:59  154339.6      3.18    4383.3       0.0 u0/R2_reg[19]/D          
+    0:07:59  154355.9      3.17    4380.0       0.0 u0/R1_reg[9]/D           
+    0:08:00  154350.3      3.17    4357.6       0.0 u0/R11_reg[9]/D          
+    0:08:02  154351.6      3.15    4353.5       0.0 u2/desOut_reg[14]/D      
+    0:08:03  154336.8      3.15    4349.2       0.0 u2/R13_reg[17]/D         
+    0:08:04  154341.7      3.15    4337.5       0.0 u2/R8_reg[24]/D          
+    0:08:05  154344.2      3.15    4327.6       0.0 u2/R11_reg[16]/D         
+    0:08:07  154346.7      3.14    4314.4       0.0 u2/R9_reg[24]/D          
+    0:08:08  154378.8      3.13    4299.1       0.0 u2/R12_reg[17]/D         
+    0:08:09  154393.5      3.11    4292.8       0.0 u0/R7_reg[14]/D          
+    0:08:10  154398.1      3.11    4272.7       0.0 u1/R10_reg[16]/D         
+    0:08:11  154415.4      3.09    4245.9       0.0 u2/R11_reg[15]/D         
+    0:08:12  154417.9      3.09    4215.5       0.0 u1/R12_reg[24]/D         
+    0:08:14  154423.0      3.09    4183.9       0.0 u0/R8_reg[20]/D          
+    0:09:23  154425.8      3.08    4183.2       0.0                          
+    0:09:35  154425.8      3.08    4183.2       0.0                          
+    0:09:38  154429.3      2.97    3732.0       0.0                          
+    0:09:39  154448.1      2.90    3720.0       0.0                          
+    0:09:40  154452.2      2.90    3719.0       0.0                          
+    0:09:42  154454.7      2.81    3701.9       0.0                          
+    0:09:44  154451.2      2.81    3701.3       0.0                          
+    0:09:46  154451.7      2.80    3286.6       0.0                          
+    0:09:46  154466.7      2.80    3284.8       0.0                          
+    0:09:47  154471.0      2.80    3282.4       0.0                          
+    0:09:49  154474.6      2.80    3275.6       0.0                          
+    0:09:49  154470.5      2.79    3272.8       0.0                          
+    0:09:51  154477.6      2.79    3265.1       0.0                          
+    0:09:51  154489.1      2.79    3264.3       0.0                          
+    0:09:52  154494.1      2.79    3257.2       0.0                          
+    0:09:53  154502.3      2.70    3243.7       0.0                          
+    0:09:53  154508.1      2.70    3241.3       0.0                          
+    0:09:55  154502.3      2.70    3140.1       0.0                          
+    0:09:55  154491.9      2.69    3137.4       0.0                          
+    0:09:55  154500.7      2.69    3132.1       0.0                          
+    0:09:56  154508.4      2.68    3131.5       0.0                          
+    0:09:57  154518.5      2.66    3128.8       0.0                          
+    0:09:58  154510.9      2.66    3091.7       0.0                          
+    0:09:58  154514.0      2.66    3091.2       0.0                          
+    0:09:58  154518.0      2.65    3082.0       0.0                          
+    0:09:59  154525.4      2.65    3075.7       0.0                          
+    0:10:00  154530.2      2.65    3056.3       0.0                          
+    0:10:00  154537.6      2.64    3054.6       0.0                          
+    0:10:01  154552.3      2.57    3033.2       0.0                          
+    0:10:02  154561.0      2.57    3028.2       0.0                          
+    0:10:04  154562.3      2.57    3014.7       0.0                          
+    0:10:05  154559.5      2.57    2992.1       0.0                          
+    0:10:07  154562.0      2.57    2987.0       0.0                          
+    0:10:08  154565.8      2.57    2940.9       0.0                          
+    0:10:09  154576.2      2.56    2938.1       0.0                          
+    0:10:10  154576.2      2.56    2927.9       0.0                          
+    0:10:10  154569.4      2.56    2913.2       0.0                          
+    0:10:11  154571.9      2.53    2876.9       0.0                          
+    0:10:11  154567.6      2.53    2874.5       0.0                          
+    0:10:12  154571.9      2.53    2840.4       0.0                          
+    0:10:12  154565.6      2.52    2833.4       0.0                          
+    0:10:14  154569.9      2.52    2805.6       0.0                          
+    0:10:15  154575.5      2.48    2775.6       0.0                          
+    0:10:15  154568.1      2.48    2768.6       0.0                          
+    0:10:15  154572.4      2.43    2760.9       0.0                          
+    0:10:17  154586.9      2.43    2738.6       0.0                          
+    0:10:17  154585.1      2.43    2733.1       0.0                          
+    0:10:19  154582.8      2.43    2711.7       0.0                          
+    0:10:20  154581.3      2.40    2659.2       0.0                          
+    0:10:21  154568.9      2.40    2639.1       0.0                          
+    0:10:21  154573.9      2.40    2638.1       0.0                          
+    0:10:23  154573.9      2.22    2602.5       0.0                          
+    0:10:23  154585.1      2.22    2560.3       0.0                          
+    0:10:24  154584.6      2.22    2554.0       0.0                          
+    0:10:24  154581.8      2.22    2547.8       0.0                          
+    0:10:26  154580.0      2.21    2528.6       0.0                          
+    0:10:27  154582.3      2.21    2490.7       0.0                          
+    0:10:28  154573.7      2.15    2383.1       0.0                          
+    0:10:28  154570.9      2.15    2382.4       0.0                          
+    0:10:28  154578.3      2.15    2381.8       0.0                          
+    0:10:30  154575.5      2.06    2375.1       0.0                          
+    0:10:30  154572.7      2.06    2371.9       0.0                          
+    0:10:31  154573.9      2.06    2363.6       0.0                          
+    0:10:31  154561.2      2.06    2360.4       0.0                          
+    0:10:32  154539.6      2.06    2353.1       0.0                          
+    0:10:34  154526.2      2.06    2324.5       0.0                          
+    0:10:36  154526.2      2.06    2158.3       0.0                          
+    0:10:38  154466.9      2.06    1836.7       0.0                          
+    0:10:38  154464.2      2.06    1833.1       0.0                          
+    0:10:39  154466.4      2.06    1822.6       0.0                          
+    0:10:39  154469.5      1.98    1796.4       0.0                          
+    0:10:40  154463.9      1.98    1773.9       0.0                          
+    0:10:40  154474.3      1.98    1768.5       0.0                          
+    0:10:41  154485.5      1.98    1766.3       0.0                          
+    0:10:41  154496.7      1.98    1763.2       0.0                          
+    0:10:42  154499.2      1.98    1746.7       0.0                          
+    0:10:42  154508.4      1.98    1731.3       0.0                          
+    0:10:43  154517.3      1.98    1719.4       0.0                          
+    0:10:44  154519.0      1.98    1643.9       0.0                          
+    0:10:45  154532.5      1.98    1634.1       0.0                          
+    0:10:45  154536.6      1.98    1613.4       0.0                          
+    0:10:46  154539.9      1.98    1549.3       0.0                          
+    0:10:48  154549.8      1.98    1507.1       0.0                          
+    0:10:49  154551.6      1.98    1496.2       0.0                          
+    0:10:50  154558.4      1.98    1490.6       0.0                          
+    0:10:50  154560.7      1.98    1489.3       0.0                          
+    0:10:52  154564.5      1.98    1462.7       0.0                          
+    0:10:53  154567.1      1.98    1450.7       0.0                          
+    0:10:55  154571.9      1.98    1320.9       0.0                          
+    0:10:55  154571.7      1.98    1323.2       0.0                          
+
+
+  Beginning Area-Recovery Phase  (max_area 0)
+  -----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:10:55  154571.7      1.98    1323.2       0.0                          
+    0:10:56  154571.7      1.98    1323.2       0.0                          
+    0:11:00  153930.2      1.98    1317.4       0.0                          
+    0:11:02  153844.8      1.98    1286.2       0.0                          
+    0:11:03  153826.5      1.98    1285.1       0.0                          
+    0:11:04  153814.6      1.98    1283.0       0.0                          
+    0:11:05  153797.5      1.98    1280.8       0.0                          
+    0:11:06  153784.8      1.98    1276.5       0.0                          
+    0:11:07  153770.8      1.98    1270.0       0.0                          
+    0:11:09  153764.0      1.98    1260.8       0.0                          
+    0:11:10  153757.1      1.98    1260.0       0.0                          
+    0:11:11  153746.4      1.98    1260.4       0.0                          
+    0:11:13  153738.8      1.98    1254.3       0.0                          
+    0:11:13  153727.4      1.98    1239.8       0.0                          
+    0:11:14  153717.2      1.98    1212.1       0.0                          
+    0:11:15  153712.1      1.98    1212.1       0.0                          
+    0:11:15  153704.5      1.98    1207.6       0.0                          
+    0:11:16  153695.6      1.98    1204.8       0.0                          
+    0:11:17  153686.7      1.98    1199.0       0.0                          
+    0:11:18  153679.9      1.98    1185.6       0.0                          
+    0:11:18  153673.5      1.98    1177.7       0.0                          
+    0:11:19  153667.2      1.98    1181.6       0.0                          
+    0:11:20  153660.8      1.98    1166.8       0.0                          
+    0:11:20  153658.3      1.98    1161.4       0.0                          
+    0:11:21  153653.7      1.98    1087.4       0.0                          
+    0:11:21  153651.1      1.98    1080.7       0.0                          
+    0:11:22  153649.9      1.98    1080.5       0.0                          
+    0:11:22  153649.9      1.98    1080.5       0.0                          
+    0:11:23  153649.9      1.98    1087.4       0.0                          
+    0:11:28  152525.5      1.53    1106.0       0.0                          
+    0:11:30  152222.6      1.53    1112.7       0.0                          
+    0:11:30  152195.9      1.53    1112.7       0.0                          
+    0:11:31  152195.9      1.53    1112.7       0.0                          
+    0:11:31  152195.9      1.53    1112.7       0.0                          
+    0:11:31  152195.9      1.53    1112.7       0.0                          
+    0:11:31  152195.9      1.53    1112.7       0.0                          
+    0:11:31  152195.9      1.53    1112.7       0.0                          
+    0:11:33  152211.7      1.68    1526.1       0.0                          
+    0:11:34  152240.4      1.60    1518.8       0.0                          
+    0:11:35  152244.7      1.59    1500.9       0.0                          
+    0:11:35  152247.8      1.58    1488.7       0.0                          
+    0:11:36  152249.5      1.56    1488.5       0.0                          
+    0:11:36  152255.9      1.55    1487.0       0.0                          
+    0:11:36  152262.5      1.54    1486.5       0.0                          
+    0:11:36  152268.1      1.54    1486.4       0.0                          
+    0:11:36  152288.9      1.52    1454.7       0.0                          
+    0:11:38  152308.0      1.49    1381.7       0.0                          
+    0:11:38  152311.6      1.46    1371.2       0.0                          
+    0:11:39  152312.8      1.45    1349.5       0.0                          
+    0:11:39  152327.1      1.40    1339.5       0.0                          
+    0:11:40  152339.8      1.39    1317.9       0.0                          
+    0:11:40  152360.6      1.37    1304.0       0.0                          
+    0:11:40  152378.6      1.34    1291.2       0.0                          
+    0:11:41  152379.4      1.33    1274.6       0.0                          
+    0:11:42  152387.0      1.30    1257.4       0.0                          
+    0:11:42  152388.3      1.29    1252.3       0.0                          
+    0:11:44  152394.4      1.28    1250.6       0.0                          
+    0:11:45  152389.1      1.28    1235.9       0.0                          
+    0:11:50  152409.7      1.25    1201.2       0.0                          
+    0:11:51  152419.6      1.25    1179.4       0.0                          
+    0:11:52  152423.6      1.25    1169.6       0.0                          
+    0:11:52  152420.6      1.25    1162.4       0.0                          
+    0:11:52  152433.3      1.25    1156.3       0.0                          
+    0:11:54  152440.7      1.25    1144.9       0.0                          
+    0:11:55  152473.7      1.25    1131.8       0.0                          
+    0:11:56  152475.7      1.25    1124.7       0.0                          
+    0:11:57  152475.0      1.14    1110.1       0.0 u0/key_r_reg[18]/D       
+    0:11:58  152478.5      1.13    1094.3       0.0 u0/R13_reg[20]/D         
+    0:11:59  152503.4      1.09    1071.7       0.0 u0/key_r_reg[39]/D       
+    0:12:01  152531.1      1.08    1061.3       0.0 u2/R7_reg[20]/D          
+    0:12:02  152535.5      1.07     728.6       0.0 u0/R13_reg[10]/D         
+    0:12:03  152541.8      1.06     727.2       0.0 u2/R3_reg[3]/D           
+    0:12:04  152546.1      1.04     724.1       0.0 u2/R3_reg[19]/D          
+    0:12:04  152556.0      1.01     719.8       0.0 u2/R2_reg[20]/D          
+    0:12:05  152580.4      1.00     704.6       0.0 key_c_r_reg[0][0]/D      
+    0:12:05  152585.5      0.98     702.7       0.0 u2/R13_reg[24]/D         
+    0:12:06  152591.4      0.98     702.0       0.0 u2/R0_reg[24]/D          
+    0:12:06  152600.3      0.97     700.3       0.0 u1/R7_reg[19]/D          
+    0:12:06  152605.1      0.97     696.1       0.0 u0/key_r_reg[8]/D        
+    0:12:07  152608.1      0.97     689.9       0.0 u1/R7_reg[19]/D          
+    0:12:08  152609.7      0.96     658.1       0.0 u1/R3_reg[30]/D          
+    0:12:08  152626.2      0.94     646.3       0.0 u2/R5_reg[3]/D           
+    0:12:09  152628.7      0.93     643.0       0.0 u2/R6_reg[21]/D          
+    0:12:10  152630.2      0.93     641.2       0.0 u2/R3_reg[3]/D           
+    0:12:10  152629.5      0.92     615.5       0.0 u1/R5_reg[19]/D          
+    0:12:11  152636.3      0.91     615.1       0.0 u2/R7_reg[24]/D          
+    0:12:11  152661.8      0.91     593.3       0.0 key_c_r_reg[0][12]/D     
+    0:12:12  152679.3      0.90     591.1       0.0 u1/R0_reg[17]/D          
+    0:12:12  152687.7      0.89     588.5       0.0 u2/desOut_reg[34]/D      
+    0:12:12  152699.1      0.88     586.9       0.0 u2/R0_reg[24]/D          
+    0:12:12  152710.0      0.87     585.9       0.0 u1/R1_reg[21]/D          
+    0:12:13  152715.4      0.86     583.6       0.0 u1/R10_reg[25]/D         
+    0:12:13  152720.5      0.86     582.2       0.0 u2/R5_reg[17]/D          
+    0:12:13  152728.9      0.85     578.4       0.0 u2/R5_reg[17]/D          
+    0:12:14  152736.5      0.85     560.5       0.0 u1/R2_reg[17]/D          
+    0:12:15  152751.0      0.84     556.5       0.0 u1/R7_reg[20]/D          
+    0:12:15  152755.8      0.83     555.7       0.0 u1/R8_reg[3]/D           
+    0:12:15  152757.6      0.82     553.0       0.0 u2/R5_reg[17]/D          
+    0:12:15  152780.4      0.81     551.1       0.0 u2/R7_reg[21]/D          
+    0:12:16  152783.8      0.81     550.1       0.0 u2/R9_reg[20]/D          
+    0:12:17  152797.7      0.80     544.1       0.0 u1/R11_reg[3]/D          
+    0:12:17  152799.0      0.80     541.7       0.0 u2/R10_reg[20]/D         
+    0:12:18  152801.5      0.79     541.0       0.0 u2/R8_reg[11]/D          
+    0:12:20  152809.7      0.76     501.7       0.0 u2/R8_reg[11]/D          
+    0:12:21  152809.4      0.75     500.8       0.0 u2/R7_reg[24]/D          
+    0:12:22  152817.0      0.75     498.1       0.0 u2/R9_reg[20]/D          
+    0:12:23  152818.3      0.75     488.5       0.0 u2/R11_reg[17]/D         
+    0:12:23  152833.1      0.75     487.2       0.0 u2/R6_reg[17]/D          
+    0:12:24  152842.5      0.74     467.2       0.0 u1/R11_reg[13]/D         
+    0:12:26  152853.6      0.73     458.6       0.0 u1/R11_reg[3]/D          
+    0:12:27  152859.7      0.72     454.6       0.0 u2/R9_reg[3]/D           
+    0:12:27  152877.8      0.71     448.2       0.0 u2/R0_reg[24]/D          
+    0:12:28  152884.6      0.71     441.6       0.0 u2/R0_reg[24]/D          
+    0:12:28  152895.3      0.70     408.7       0.0 u2/R6_reg[25]/D          
+    0:12:29  152898.4      0.70     405.4       0.0 u0/key_r_reg[3]/D        
+    0:12:30  152906.2      0.68     401.9       0.0 u2/R14_reg[20]/D         
+    0:12:30  152924.8      0.68     396.4       0.0 u2/R13_reg[6]/D          
+    0:12:31  152940.6      0.67     395.0       0.0 u2/R14_reg[20]/D         
+    0:12:31  152941.6      0.66     383.4       0.0 u2/R2_reg[27]/D          
+    0:12:31  152957.3      0.65     381.0       0.0 u2/R0_reg[13]/D          
+    0:12:32  152961.4      0.64     375.2       0.0 u2/R2_reg[21]/D          
+    0:12:33  152959.1      0.63     367.7       0.0 u1/R6_reg[3]/D           
+    0:12:33  152966.0      0.63     367.3       0.0 u1/R2_reg[3]/D           
+    0:12:33  152972.8      0.62     365.9       0.0 u2/desOut_reg[58]/D      
+    0:12:34  152973.3      0.62     362.7       0.0 u0/key_r_reg[49]/D       
+    0:12:35  152976.9      0.62     360.2       0.0 u2/R9_reg[24]/D          
+    0:12:35  152982.5      0.61     356.0       0.0 u1/R11_reg[3]/D          
+    0:12:36  152997.5      0.60     352.9       0.0 u2/desOut_reg[26]/D      
+    0:12:36  153019.1      0.60     345.8       0.0 u1/R7_reg[19]/D          
+    0:12:36  153030.0      0.59     341.3       0.0 u1/R6_reg[19]/D          
+    0:12:37  153027.7      0.59     333.7       0.0 u2/R2_reg[22]/D          
+    0:12:38  153031.5      0.58     329.3       0.0 u2/desOut_reg[58]/D      
+    0:12:38  153050.3      0.58     329.0       0.0 u2/R8_reg[21]/D          
+    0:12:38  153057.7      0.57     327.0       0.0 u1/R3_reg[3]/D           
+    0:12:39  153070.4      0.56     326.3       0.0 u2/desOut_reg[2]/D       
+    0:12:39  153081.6      0.56     325.0       0.0 u2/R2_reg[32]/D          
+    0:12:40  153086.7      0.56     321.3       0.0 u1/R3_reg[21]/D          
+    0:12:41  153094.1      0.55     320.5       0.0 u1/R7_reg[17]/D          
+    0:12:41  153112.6      0.55     319.0       0.0 u2/R2_reg[20]/D          
+    0:12:41  153120.0      0.54     316.7       0.0 u2/R14_reg[24]/D         
+    0:12:42  153131.7      0.54     315.7       0.0 u2/R2_reg[32]/D          
+    0:12:42  153144.6      0.53     312.2       0.0 u2/R3_reg[21]/D          
+    0:12:43  153150.2      0.53     304.8       0.0 u2/R12_reg[3]/D          
+    0:12:43  153158.4      0.52     301.9       0.0 u1/R10_reg[24]/D         
+    0:12:44  153168.5      0.51     298.5       0.0 u2/R3_reg[15]/D          
+    0:12:44  153185.3      0.51     292.7       0.0 u2/R3_reg[21]/D          
+    0:12:45  153200.3      0.50     285.8       0.0 u1/R8_reg[16]/D          
+    0:12:49  153218.1      0.50     131.8       0.0 u0/key_r_reg[41]/D       
+    0:12:52  153226.0      0.38     108.5       0.0 u2/R13_reg[17]/D         
+    0:12:53  153232.3      0.23       7.0       0.0 u0/key_r_reg[6]/D        
+    0:12:53  153228.2      0.10       2.1       0.0 key_c_r_reg[0][0]/D      
+    0:12:53  153228.0      0.06       1.5       0.0 u0/R13_reg[10]/D         
+    0:12:54  153225.7      0.03       0.4       0.0 u0/key_r_reg[15]/D       
+    0:12:54  153227.7      0.01       0.3       0.0 u0/key_r_reg[14]/D       
+    0:12:55  153227.5      0.01       0.2       0.0 u0/key_r_reg[25]/D       
+    0:12:55  153187.8      0.00       0.0       0.0                          
+    0:12:55  153067.6      0.00       0.0       0.0                          
+    0:12:55  152952.8      0.00       0.0       0.0                          
+    0:12:56  152861.8      0.00       0.0       0.0                          
+    0:12:56  152762.7      0.00       0.0       0.0                          
+    0:12:56  152682.9      0.00       0.0       0.0                          
+    0:12:56  152603.6      0.00       0.0       0.0                          
+    0:12:57  152507.2      0.00       0.0       0.0                          
+    0:12:57  152425.4      0.00       0.0       0.0                          
+    0:12:57  152346.4      0.00       0.0       0.0                          
+    0:12:57  152262.2      0.00       0.0       0.0                          
+    0:12:57  152204.6      0.00       0.0       0.0                          
+    0:13:04  152149.2      0.00       0.0       0.0                          
+    0:13:14  152100.9      0.00       0.0       0.0                          
+    0:13:20  152061.2      0.00       0.0       0.0                          
+    0:13:20  151876.7      0.00       0.0       0.0                          
+    0:13:21  151752.7      0.00       0.0       0.0                          
+    0:13:21  151628.2      0.00       0.0       0.0                          
+    0:13:21  151562.1      0.00       0.0       0.0                          
+    0:13:21  151494.5      0.00       0.0       0.0                          
+    0:13:22  151413.4      0.00       0.0       0.0                          
+    0:13:22  151381.4      0.00       0.0       0.0                          
+    0:13:23  151377.3      0.00       0.0       0.0                          
+    0:13:23  151372.7      0.00       0.0       0.0                          
+    0:13:29  151370.2      0.00       0.0       0.0                          
+    0:13:33  151368.9      0.00       0.0       0.0                          
+    0:13:33  151361.3      0.00       0.0       0.0                          
+    0:13:34  151361.3      0.00       0.0       0.0                          
+    0:13:40  150415.9      0.23      11.3       0.0                          
+    0:13:43  149725.6      0.31      13.8       0.0                          
+    0:13:44  149537.1      0.31      14.4       0.0                          
+    0:13:44  149529.4      0.31      14.4       0.0                          
+    0:13:45  149529.4      0.31      14.4       0.0                          
+    0:13:45  149529.4      0.31      14.4       0.0                          
+    0:13:45  149529.4      0.31      14.4       0.0                          
+    0:13:45  149529.4      0.31      14.4       0.0                          
+    0:13:46  149597.3      0.10       6.0       0.0 u0/R11_reg[20]/D         
+    0:13:47  149634.9      0.05       3.0       0.0 u2/R11_reg[17]/D         
+    0:13:48  149665.1      0.03       1.2       0.0 u1/R13_reg[20]/D         
+    0:13:49  149683.2      0.02       0.8       0.0 u0/key_r_reg[18]/D       
+    0:13:50  149690.3      0.02       0.6       0.0 u0/R10_reg[17]/D         
+    0:13:51  149693.4      0.02       0.6       0.0 u1/R4_reg[3]/D           
+    0:13:52  149701.0      0.02       0.4       0.0 u2/R5_reg[20]/D          
+    0:13:54  149709.4      0.01       0.3       0.0 u2/R3_reg[17]/D          
+    0:13:55  149718.3      0.01       0.3       0.0 u1/R10_reg[19]/D         
+    0:13:56  149720.0      0.01       0.2       0.0 u0/R13_reg[17]/D         
+    0:13:57  149721.8      0.01       0.1       0.0 u0/key_r_reg[44]/D       
+    0:13:58  149726.1      0.01       0.1       0.0 u2/R2_reg[29]/D          
+    0:13:58  149727.2      0.01       0.1       0.0 u0/key_r_reg[27]/D       
+    0:13:59  149732.8      0.00       0.0       0.0                          
+    0:14:01  149733.8      0.00       0.0       0.0                          
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Warning: Design 'des3_perf' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+     Net 'u1/uk/clk': 8808 load(s), 1 driver(s)
+CPU Load: 148%, Ram Free: 105 GB, Swap Free: 15 GB, Work Disk Free: 4316 GB, Tmp Disk Free: 136 GB
+Information: Total number of MV cells in the design.
+----------------------------------------------------------------------------------------------------
+ MV Cells                                           Total Number                                   
+----------------------------------------------------------------------------------------------------
+ Level Shifter:                                     0                                             
+ Enable Level Shifter:                              0                                             
+ Isolation Cell:                                    0                                             
+ Retention Cell:                                    0                                             
+ Retention Clamp Cell:                              0                                             
+ Switch Cell:                                       0                                             
+ Always-On Cell:                                    0                                             
+ Repeater Cell:                                     0                                             
+
+----------------------------------------------------------------------------------------------------
+Unmapped MV Cells 
+----------------------------------------------------------------------------------------------------
+0 Isolation Cells are unmapped 
+0 Retention Clamp Cells are unmapped 
+----------------------------------------------------------------------------------------------------
+1
+# Reports
+report_constraints -all > ./reports/des3_perf/des3_perf_constraints.rpt
+report_area > ./reports/des3_perf/des3_perf_area.rpt
+report_power > ./reports/des3_perf/des3_perf_power.rpt
+report_qor  > ./reports/des3_perf/des3_perf_qor.rpt
+report_cell > ./reports/des3_perf/des3_perf_cells.rpt
+report_resources > ./reports/des3_perf/des3_perf_resources.rpt
+report_timing -max_paths 10 > ./reports/des3_perf/des3_perf_timing.rpt
+# Output files
+write_sdc ./outputs/des3_perf/des3_perf.sdc
+1
+write -hier -f ddc -output ./outputs/des3_perf/des3_perf.ddc
+Writing ddc file './outputs/des3_perf/des3_perf.ddc'.
+1
+write -hierarchy -format verilog -output ./outputs/des3_perf/des3_perf.v
+Writing verilog file '/home/cag383@drexel.edu/ecec575/project/iwls/scripts/outputs/des3_perf/des3_perf.v'.
+1
+quit
+
+Memory usage for this session 588 Mbytes.
+Memory usage for this session including child processes 588 Mbytes.
+CPU usage for this session 821 seconds ( 0.23 hours ).
+Elapsed time for this session 924 seconds ( 0.26 hours ).
+
+Thank you...

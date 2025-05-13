@@ -1,0 +1,155 @@
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : eth_top
+Version: W-2024.09-SP4-1
+Date   : Tue May 13 10:44:29 2025
+****************************************
+
+
+Library(s) Used:
+
+    saed32rvt_ss0p95v25c (File: /mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v25c.db)
+
+
+Operating Conditions: ss0p95v25c   Library: saed32rvt_ss0p95v25c
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+eth_top                280000            saed32rvt_ss0p95v25c
+eth_miim               8000              saed32rvt_ss0p95v25c
+eth_registers          8000              saed32rvt_ss0p95v25c
+eth_maccontrol         8000              saed32rvt_ss0p95v25c
+eth_txethmac           8000              saed32rvt_ss0p95v25c
+eth_rxethmac           8000              saed32rvt_ss0p95v25c
+eth_wishbone           140000            saed32rvt_ss0p95v25c
+eth_macstatus          8000              saed32rvt_ss0p95v25c
+eth_clockgen           ForQA             saed32rvt_ss0p95v25c
+eth_shiftreg           8000              saed32rvt_ss0p95v25c
+eth_outputcontrol      ForQA             saed32rvt_ss0p95v25c
+eth_register_8_00_20   ForQA             saed32rvt_ss0p95v25c
+eth_register_8_a0      ForQA             saed32rvt_ss0p95v25c
+eth_register_1_0_2     ForQA             saed32rvt_ss0p95v25c
+eth_register_7_00      ForQA             saed32rvt_ss0p95v25c
+eth_register_7_12_1    ForQA             saed32rvt_ss0p95v25c
+eth_register_7_0c      ForQA             saed32rvt_ss0p95v25c
+eth_register_8_06      ForQA             saed32rvt_ss0p95v25c
+eth_register_8_40_1    ForQA             saed32rvt_ss0p95v25c
+eth_register_6_3f      ForQA             saed32rvt_ss0p95v25c
+eth_register_4_f       ForQA             saed32rvt_ss0p95v25c
+eth_register_3_0       ForQA             saed32rvt_ss0p95v25c
+eth_register_8_64      ForQA             saed32rvt_ss0p95v25c
+eth_register_WIDTH1_RESET_VALUE0_2
+                       ForQA             saed32rvt_ss0p95v25c
+eth_register_5_00_1    ForQA             saed32rvt_ss0p95v25c
+eth_register_16_0000   ForQA             saed32rvt_ss0p95v25c
+eth_receivecontrol     8000              saed32rvt_ss0p95v25c
+eth_transmitcontrol    8000              saed32rvt_ss0p95v25c
+eth_txcounters         8000              saed32rvt_ss0p95v25c
+eth_txstatem           8000              saed32rvt_ss0p95v25c
+eth_crc_1              8000              saed32rvt_ss0p95v25c
+eth_random             8000              saed32rvt_ss0p95v25c
+eth_rxstatem           ForQA             saed32rvt_ss0p95v25c
+eth_rxcounters         8000              saed32rvt_ss0p95v25c
+eth_rxaddrcheck        8000              saed32rvt_ss0p95v25c
+eth_spram_256x32       140000            saed32rvt_ss0p95v25c
+eth_fifo_DATA_WIDTH32_DEPTH16_CNT_WIDTH5_1
+                       8000              saed32rvt_ss0p95v25c
+eth_register_8_00_0    ForQA             saed32rvt_ss0p95v25c
+eth_register_8_00_1    ForQA             saed32rvt_ss0p95v25c
+eth_register_8_00_2    ForQA             saed32rvt_ss0p95v25c
+eth_register_8_00_3    ForQA             saed32rvt_ss0p95v25c
+eth_register_8_00_4    ForQA             saed32rvt_ss0p95v25c
+eth_register_8_00_5    ForQA             saed32rvt_ss0p95v25c
+eth_register_8_00_6    ForQA             saed32rvt_ss0p95v25c
+eth_register_8_00_7    ForQA             saed32rvt_ss0p95v25c
+eth_register_8_00_8    ForQA             saed32rvt_ss0p95v25c
+eth_register_8_00_9    ForQA             saed32rvt_ss0p95v25c
+eth_register_8_00_10   ForQA             saed32rvt_ss0p95v25c
+eth_register_8_00_11   ForQA             saed32rvt_ss0p95v25c
+eth_register_8_00_12   ForQA             saed32rvt_ss0p95v25c
+eth_register_8_00_13   ForQA             saed32rvt_ss0p95v25c
+eth_register_8_00_14   ForQA             saed32rvt_ss0p95v25c
+eth_register_8_00_15   ForQA             saed32rvt_ss0p95v25c
+eth_register_8_00_16   ForQA             saed32rvt_ss0p95v25c
+eth_register_8_00_17   ForQA             saed32rvt_ss0p95v25c
+eth_register_8_00_18   ForQA             saed32rvt_ss0p95v25c
+eth_register_8_00_19   ForQA             saed32rvt_ss0p95v25c
+eth_register_1_0_0     ForQA             saed32rvt_ss0p95v25c
+eth_register_1_0_1     ForQA             saed32rvt_ss0p95v25c
+eth_register_7_12_0    ForQA             saed32rvt_ss0p95v25c
+eth_register_8_40_0    ForQA             saed32rvt_ss0p95v25c
+eth_register_WIDTH1_RESET_VALUE0_0
+                       ForQA             saed32rvt_ss0p95v25c
+eth_register_WIDTH1_RESET_VALUE0_1
+                       ForQA             saed32rvt_ss0p95v25c
+eth_register_5_00_0    ForQA             saed32rvt_ss0p95v25c
+eth_crc_0              8000              saed32rvt_ss0p95v25c
+eth_fifo_DATA_WIDTH32_DEPTH16_CNT_WIDTH5_0
+                       8000              saed32rvt_ss0p95v25c
+eth_wishbone_DW01_inc_0_DW01_inc_12
+                       ForQA             saed32rvt_ss0p95v25c
+eth_wishbone_DW01_inc_1_DW01_inc_13
+                       ForQA             saed32rvt_ss0p95v25c
+eth_wishbone_DW01_inc_2_DW01_inc_14
+                       ForQA             saed32rvt_ss0p95v25c
+eth_wishbone_DW01_inc_3_DW01_inc_15
+                       ForQA             saed32rvt_ss0p95v25c
+eth_wishbone_DW01_dec_0
+                       ForQA             saed32rvt_ss0p95v25c
+eth_wishbone_DW01_inc_4_DW01_inc_16
+                       ForQA             saed32rvt_ss0p95v25c
+eth_rxcounters_DW01_inc_1_DW01_inc_20
+                       ForQA             saed32rvt_ss0p95v25c
+eth_txcounters_DW01_inc_0_DW01_inc_21
+                       ForQA             saed32rvt_ss0p95v25c
+eth_txcounters_DW01_inc_1_DW01_inc_22
+                       ForQA             saed32rvt_ss0p95v25c
+eth_receivecontrol_DW01_dec_0_DW01_dec_3
+                       ForQA             saed32rvt_ss0p95v25c
+eth_miim_DW01_inc_0_DW01_inc_26
+                       ForQA             saed32rvt_ss0p95v25c
+eth_txcounters_DW01_dec_0_DW01_dec_6
+                       ForQA             saed32rvt_ss0p95v25c
+
+
+Global Operating Voltage = 0.95 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+Attributes
+----------
+i - Including register clock pin internal power
+
+
+  Cell Internal Power  =   5.0665 mW   (99%)
+  Net Switching Power  =  38.7906 uW    (1%)
+                         ---------
+Total Dynamic Power    =   5.1053 mW  (100%)
+
+Cell Leakage Power     =   3.7739 mW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network  5.3134e+03            0.0000            0.0000        5.3134e+03  (  59.84%)  i
+register       -2.9837e+02            0.6243        1.4277e+09        1.1300e+03 (  12.73%)
+sequential         3.3965            0.1164        8.5802e+07           89.3152  (   1.01%)
+combinational     47.7289           38.0505        2.2604e+09        2.3462e+03  (  26.42%)
+--------------------------------------------------------------------------------------------------
+Total          5.0661e+03 uW        38.7912 uW     3.7739e+09 pW     8.8788e+03 uW
+1

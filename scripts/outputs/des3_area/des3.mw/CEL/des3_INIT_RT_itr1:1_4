@@ -1,3 +1,0 @@
-set_object_boundary -boundary {  { 10.0000 57.6520 } { 59.7040 57.6520 } { 59.7040 10.8360 } { 10.0000 10.8360 } } [get_plan_groups { u0 } ]
-set_object_boundary -boundary {  { 59.7040 89.4200 } { 91.4720 89.4200 } { 91.4720 10.8360 } { 59.7040 10.8360 } } [get_plan_groups { u1 } ]
-

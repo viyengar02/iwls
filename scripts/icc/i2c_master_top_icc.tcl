@@ -32,6 +32,7 @@ create_mw_lib ./outputs/i2c/$lib_name.mw \
 
 open_mw_lib ./outputs/i2c/$lib_name.mw
 read_verilog ./outputs/i2c/i2c_master_top.v
+
 uniquify_fp_mw_cel
 link
 read_sdc ./outputs/i2c/i2c_master_top.sdc

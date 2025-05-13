@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : des3_area
+Version: W-2024.09-SP4-1
+Date   : Tue May 13 10:15:44 2025
+****************************************
+
+Library(s) Used:
+
+    saed32rvt_ss0p95v25c (File: /mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v25c.db)
+
+Number of ports:                          719
+Number of nets:                          2428
+Number of cells:                         1783
+Number of combinational cells:           1645
+Number of sequential cells:               128
+Number of macros/black boxes:               0
+Number of buf/inv:                        327
+Number of references:                      11
+
+Combinational area:               3814.193162
+Buf/Inv area:                      458.221638
+Noncombinational area:             845.791260
+Macro/Black Box area:                0.000000
+Net Interconnect area:            1054.306752
+
+Total cell area:                  4659.984422
+Total area:                       5714.291174
+1

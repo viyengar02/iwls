@@ -1,0 +1,273 @@
+ 
+****************************************
+check_design summary:
+Version:     W-2024.09-SP4-1
+Date:        Tue May 13 10:31:46 2025
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     19
+    Unconnected ports (LINT-28)                                    15
+    Shorted outputs (LINT-31)                                       2
+    Constant outputs (LINT-52)                                      2
+
+Cells                                                              92
+    Cells do not drive (LINT-1)                                    51
+    Connected to power or ground (LINT-32)                         40
+    Nets connected to multiple pins on same cell (LINT-33)          1
+
+Nets                                                               62
+    Unloaded nets (LINT-2)                                         62
+
+Tristate                                                           32
+    Single tristate driver drives an input pin (LINT-63)           32
+--------------------------------------------------------------------------------
+
+Warning: In design 'eth_miim', cell 'C492' does not drive any nets. (LINT-1)
+Warning: In design 'eth_txethmac', cell 'B_12' does not drive any nets. (LINT-1)
+Warning: In design 'eth_txethmac', cell 'C482' does not drive any nets. (LINT-1)
+Warning: In design 'eth_wishbone', cell 'C4580' does not drive any nets. (LINT-1)
+Warning: In design 'eth_wishbone', cell 'C4652' does not drive any nets. (LINT-1)
+Warning: In design 'eth_wishbone', cell 'C4656' does not drive any nets. (LINT-1)
+Warning: In design 'eth_wishbone', cell 'C4660' does not drive any nets. (LINT-1)
+Warning: In design 'eth_wishbone', cell 'C4664' does not drive any nets. (LINT-1)
+Warning: In design 'eth_wishbone', cell 'C4696' does not drive any nets. (LINT-1)
+Warning: In design 'eth_wishbone', cell 'B_130' does not drive any nets. (LINT-1)
+Warning: In design 'eth_wishbone', cell 'C4862' does not drive any nets. (LINT-1)
+Warning: In design 'eth_wishbone', cell 'C4867' does not drive any nets. (LINT-1)
+Warning: In design 'eth_wishbone', cell 'C4869' does not drive any nets. (LINT-1)
+Warning: In design 'eth_wishbone', cell 'C4877' does not drive any nets. (LINT-1)
+Warning: In design 'eth_wishbone', cell 'C5246' does not drive any nets. (LINT-1)
+Warning: In design 'eth_wishbone', cell 'C5328' does not drive any nets. (LINT-1)
+Warning: In design 'eth_wishbone', cell 'C5420' does not drive any nets. (LINT-1)
+Warning: In design 'eth_wishbone', cell 'C5444' does not drive any nets. (LINT-1)
+Warning: In design 'eth_macstatus', cell 'C372' does not drive any nets. (LINT-1)
+Warning: In design 'eth_macstatus', cell 'C388' does not drive any nets. (LINT-1)
+Warning: In design 'eth_clockgen', cell 'C97' does not drive any nets. (LINT-1)
+Warning: In design 'eth_receivecontrol', cell 'C883' does not drive any nets. (LINT-1)
+Warning: In design 'eth_receivecontrol', cell 'C902' does not drive any nets. (LINT-1)
+Warning: In design 'eth_receivecontrol', cell 'C906' does not drive any nets. (LINT-1)
+Warning: In design 'eth_receivecontrol', cell 'C910' does not drive any nets. (LINT-1)
+Warning: In design 'eth_receivecontrol', cell 'C914' does not drive any nets. (LINT-1)
+Warning: In design 'eth_receivecontrol', cell 'C918' does not drive any nets. (LINT-1)
+Warning: In design 'eth_receivecontrol', cell 'C988' does not drive any nets. (LINT-1)
+Warning: In design 'eth_receivecontrol', cell 'C1003' does not drive any nets. (LINT-1)
+Warning: In design 'eth_receivecontrol', cell 'C1045' does not drive any nets. (LINT-1)
+Warning: In design 'eth_receivecontrol', cell 'C1098' does not drive any nets. (LINT-1)
+Warning: In design 'eth_transmitcontrol', cell 'C547' does not drive any nets. (LINT-1)
+Warning: In design 'eth_transmitcontrol', cell 'C580' does not drive any nets. (LINT-1)
+Warning: In design 'eth_transmitcontrol', cell 'C584' does not drive any nets. (LINT-1)
+Warning: In design 'eth_txcounters', cell 'C280' does not drive any nets. (LINT-1)
+Warning: In design 'eth_txcounters', cell 'C312' does not drive any nets. (LINT-1)
+Warning: In design 'eth_txcounters', cell 'C345' does not drive any nets. (LINT-1)
+Warning: In design 'eth_rxcounters', cell 'C401' does not drive any nets. (LINT-1)
+Warning: In design 'eth_rxcounters', cell 'I_24' does not drive any nets. (LINT-1)
+Warning: In design 'eth_rxcounters', cell 'C424' does not drive any nets. (LINT-1)
+Warning: In design 'eth_rxcounters', cell 'C443' does not drive any nets. (LINT-1)
+Warning: In design 'eth_rxaddrcheck', cell 'C251' does not drive any nets. (LINT-1)
+Warning: In design 'eth_rxaddrcheck', cell 'C264' does not drive any nets. (LINT-1)
+Warning: In design 'eth_rxaddrcheck', cell 'C268' does not drive any nets. (LINT-1)
+Warning: In design 'eth_rxaddrcheck', cell 'C272' does not drive any nets. (LINT-1)
+Warning: In design 'eth_rxaddrcheck', cell 'C276' does not drive any nets. (LINT-1)
+Warning: In design 'eth_rxaddrcheck', cell 'C280' does not drive any nets. (LINT-1)
+Warning: In design 'eth_fifo_DATA_WIDTH32_DEPTH16_CNT_WIDTH5', cell 'C1268' does not drive any nets. (LINT-1)
+Warning: In design 'eth_fifo_DATA_WIDTH32_DEPTH16_CNT_WIDTH5', cell 'C1269' does not drive any nets. (LINT-1)
+Warning: In design 'eth_fifo_DATA_WIDTH32_DEPTH16_CNT_WIDTH5', cell 'C1282' does not drive any nets. (LINT-1)
+Warning: In design 'eth_fifo_DATA_WIDTH32_DEPTH16_CNT_WIDTH5', cell 'C1290' does not drive any nets. (LINT-1)
+Warning: In design 'eth_top', net 'r_NoPre' driven by pin 'ethreg1/r_NoPre' has no loads. (LINT-2)
+Warning: In design 'eth_top', net 'txethmac1/CrcError' driven by pin 'txethmac1/txcrc/CrcError' has no loads. (LINT-2)
+Warning: In design 'eth_top', net 'txethmac1/Crc[0]' driven by pin 'txethmac1/txcrc/Crc[0]' has no loads. (LINT-2)
+Warning: In design 'eth_top', net 'txethmac1/Crc[1]' driven by pin 'txethmac1/txcrc/Crc[1]' has no loads. (LINT-2)
+Warning: In design 'eth_top', net 'txethmac1/Crc[2]' driven by pin 'txethmac1/txcrc/Crc[2]' has no loads. (LINT-2)
+Warning: In design 'eth_top', net 'txethmac1/Crc[3]' driven by pin 'txethmac1/txcrc/Crc[3]' has no loads. (LINT-2)
+Warning: In design 'eth_top', net 'txethmac1/Crc[4]' driven by pin 'txethmac1/txcrc/Crc[4]' has no loads. (LINT-2)
+Warning: In design 'eth_top', net 'txethmac1/Crc[5]' driven by pin 'txethmac1/txcrc/Crc[5]' has no loads. (LINT-2)
+Warning: In design 'eth_top', net 'txethmac1/Crc[6]' driven by pin 'txethmac1/txcrc/Crc[6]' has no loads. (LINT-2)
+Warning: In design 'eth_top', net 'txethmac1/Crc[7]' driven by pin 'txethmac1/txcrc/Crc[7]' has no loads. (LINT-2)
+Warning: In design 'eth_top', net 'txethmac1/Crc[8]' driven by pin 'txethmac1/txcrc/Crc[8]' has no loads. (LINT-2)
+Warning: In design 'eth_top', net 'txethmac1/Crc[9]' driven by pin 'txethmac1/txcrc/Crc[9]' has no loads. (LINT-2)
+Warning: In design 'eth_top', net 'txethmac1/Crc[10]' driven by pin 'txethmac1/txcrc/Crc[10]' has no loads. (LINT-2)
+Warning: In design 'eth_top', net 'txethmac1/Crc[11]' driven by pin 'txethmac1/txcrc/Crc[11]' has no loads. (LINT-2)
+Warning: In design 'eth_top', net 'txethmac1/Crc[12]' driven by pin 'txethmac1/txcrc/Crc[12]' has no loads. (LINT-2)
+Warning: In design 'eth_top', net 'txethmac1/Crc[13]' driven by pin 'txethmac1/txcrc/Crc[13]' has no loads. (LINT-2)
+Warning: In design 'eth_top', net 'txethmac1/Crc[14]' driven by pin 'txethmac1/txcrc/Crc[14]' has no loads. (LINT-2)
+Warning: In design 'eth_top', net 'txethmac1/Crc[15]' driven by pin 'txethmac1/txcrc/Crc[15]' has no loads. (LINT-2)
+Warning: In design 'eth_top', net 'txethmac1/Crc[16]' driven by pin 'txethmac1/txcrc/Crc[16]' has no loads. (LINT-2)
+Warning: In design 'eth_top', net 'txethmac1/Crc[17]' driven by pin 'txethmac1/txcrc/Crc[17]' has no loads. (LINT-2)
+Warning: In design 'eth_top', net 'txethmac1/Crc[18]' driven by pin 'txethmac1/txcrc/Crc[18]' has no loads. (LINT-2)
+Warning: In design 'eth_top', net 'txethmac1/Crc[19]' driven by pin 'txethmac1/txcrc/Crc[19]' has no loads. (LINT-2)
+Warning: In design 'eth_top', net 'txethmac1/Crc[20]' driven by pin 'txethmac1/txcrc/Crc[20]' has no loads. (LINT-2)
+Warning: In design 'eth_top', net 'txethmac1/Crc[21]' driven by pin 'txethmac1/txcrc/Crc[21]' has no loads. (LINT-2)
+Warning: In design 'eth_top', net 'txethmac1/Crc[22]' driven by pin 'txethmac1/txcrc/Crc[22]' has no loads. (LINT-2)
+Warning: In design 'eth_top', net 'txethmac1/Crc[23]' driven by pin 'txethmac1/txcrc/Crc[23]' has no loads. (LINT-2)
+Warning: In design 'eth_top', net 'txethmac1/Crc[24]' driven by pin 'txethmac1/txcrc/Crc[24]' has no loads. (LINT-2)
+Warning: In design 'eth_top', net 'txethmac1/Crc[25]' driven by pin 'txethmac1/txcrc/Crc[25]' has no loads. (LINT-2)
+Warning: In design 'eth_top', net 'txethmac1/Crc[26]' driven by pin 'txethmac1/txcrc/Crc[26]' has no loads. (LINT-2)
+Warning: In design 'eth_top', net 'txethmac1/Crc[27]' driven by pin 'txethmac1/txcrc/Crc[27]' has no loads. (LINT-2)
+Warning: In design 'eth_top', net 'txethmac1/ByteCnt[10]' driven by pin 'txethmac1/txcounters1/ByteCnt[10]' has no loads. (LINT-2)
+Warning: In design 'eth_top', net 'txethmac1/ByteCnt[11]' driven by pin 'txethmac1/txcounters1/ByteCnt[11]' has no loads. (LINT-2)
+Warning: In design 'eth_top', net 'txethmac1/ByteCnt[12]' driven by pin 'txethmac1/txcounters1/ByteCnt[12]' has no loads. (LINT-2)
+Warning: In design 'eth_top', net 'txethmac1/ByteCnt[13]' driven by pin 'txethmac1/txcounters1/ByteCnt[13]' has no loads. (LINT-2)
+Warning: In design 'eth_top', net 'txethmac1/ByteCnt[14]' driven by pin 'txethmac1/txcounters1/ByteCnt[14]' has no loads. (LINT-2)
+Warning: In design 'eth_top', net 'txethmac1/ByteCnt[15]' driven by pin 'txethmac1/txcounters1/ByteCnt[15]' has no loads. (LINT-2)
+Warning: In design 'eth_top', net 'rxethmac1/Crc[0]' driven by pin 'rxethmac1/crcrx/Crc[0]' has no loads. (LINT-2)
+Warning: In design 'eth_top', net 'rxethmac1/Crc[1]' driven by pin 'rxethmac1/crcrx/Crc[1]' has no loads. (LINT-2)
+Warning: In design 'eth_top', net 'rxethmac1/Crc[2]' driven by pin 'rxethmac1/crcrx/Crc[2]' has no loads. (LINT-2)
+Warning: In design 'eth_top', net 'rxethmac1/Crc[3]' driven by pin 'rxethmac1/crcrx/Crc[3]' has no loads. (LINT-2)
+Warning: In design 'eth_top', net 'rxethmac1/Crc[4]' driven by pin 'rxethmac1/crcrx/Crc[4]' has no loads. (LINT-2)
+Warning: In design 'eth_top', net 'rxethmac1/Crc[5]' driven by pin 'rxethmac1/crcrx/Crc[5]' has no loads. (LINT-2)
+Warning: In design 'eth_top', net 'rxethmac1/Crc[6]' driven by pin 'rxethmac1/crcrx/Crc[6]' has no loads. (LINT-2)
+Warning: In design 'eth_top', net 'rxethmac1/Crc[7]' driven by pin 'rxethmac1/crcrx/Crc[7]' has no loads. (LINT-2)
+Warning: In design 'eth_top', net 'rxethmac1/Crc[8]' driven by pin 'rxethmac1/crcrx/Crc[8]' has no loads. (LINT-2)
+Warning: In design 'eth_top', net 'rxethmac1/Crc[9]' driven by pin 'rxethmac1/crcrx/Crc[9]' has no loads. (LINT-2)
+Warning: In design 'eth_top', net 'rxethmac1/Crc[10]' driven by pin 'rxethmac1/crcrx/Crc[10]' has no loads. (LINT-2)
+Warning: In design 'eth_top', net 'rxethmac1/Crc[11]' driven by pin 'rxethmac1/crcrx/Crc[11]' has no loads. (LINT-2)
+Warning: In design 'eth_top', net 'rxethmac1/Crc[12]' driven by pin 'rxethmac1/crcrx/Crc[12]' has no loads. (LINT-2)
+Warning: In design 'eth_top', net 'rxethmac1/Crc[13]' driven by pin 'rxethmac1/crcrx/Crc[13]' has no loads. (LINT-2)
+Warning: In design 'eth_top', net 'rxethmac1/Crc[14]' driven by pin 'rxethmac1/crcrx/Crc[14]' has no loads. (LINT-2)
+Warning: In design 'eth_top', net 'rxethmac1/Crc[15]' driven by pin 'rxethmac1/crcrx/Crc[15]' has no loads. (LINT-2)
+Warning: In design 'eth_top', net 'rxethmac1/Crc[16]' driven by pin 'rxethmac1/crcrx/Crc[16]' has no loads. (LINT-2)
+Warning: In design 'eth_top', net 'rxethmac1/Crc[17]' driven by pin 'rxethmac1/crcrx/Crc[17]' has no loads. (LINT-2)
+Warning: In design 'eth_top', net 'rxethmac1/Crc[18]' driven by pin 'rxethmac1/crcrx/Crc[18]' has no loads. (LINT-2)
+Warning: In design 'eth_top', net 'rxethmac1/Crc[19]' driven by pin 'rxethmac1/crcrx/Crc[19]' has no loads. (LINT-2)
+Warning: In design 'eth_top', net 'rxethmac1/Crc[20]' driven by pin 'rxethmac1/crcrx/Crc[20]' has no loads. (LINT-2)
+Warning: In design 'eth_top', net 'rxethmac1/Crc[21]' driven by pin 'rxethmac1/crcrx/Crc[21]' has no loads. (LINT-2)
+Warning: In design 'eth_top', net 'rxethmac1/Crc[22]' driven by pin 'rxethmac1/crcrx/Crc[22]' has no loads. (LINT-2)
+Warning: In design 'eth_top', net 'rxethmac1/Crc[23]' driven by pin 'rxethmac1/crcrx/Crc[23]' has no loads. (LINT-2)
+Warning: In design 'eth_top', net 'rxethmac1/Crc[24]' driven by pin 'rxethmac1/crcrx/Crc[24]' has no loads. (LINT-2)
+Warning: In design 'eth_top', net 'rxethmac1/Crc[25]' driven by pin 'rxethmac1/crcrx/Crc[25]' has no loads. (LINT-2)
+Warning: In design 'eth_wishbone', port 'r_TxBDNum[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'eth_macstatus', port 'RxByteCntGreat2' is not connected to any nets. (LINT-28)
+Warning: In design 'eth_macstatus', port 'TxUsedData' is not connected to any nets. (LINT-28)
+Warning: In design 'eth_clockgen', port 'Divider[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'eth_random', port 'NibCnt[15]' is not connected to any nets. (LINT-28)
+Warning: In design 'eth_random', port 'NibCnt[14]' is not connected to any nets. (LINT-28)
+Warning: In design 'eth_random', port 'NibCnt[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'eth_random', port 'NibCnt[12]' is not connected to any nets. (LINT-28)
+Warning: In design 'eth_random', port 'NibCnt[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'eth_random', port 'NibCnt[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'eth_random', port 'NibCnt[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'eth_random', port 'NibCnt[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'eth_random', port 'NibCnt[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'eth_rxstatem', port 'ByteCntEq0' is not connected to any nets. (LINT-28)
+Warning: In design 'eth_rxstatem', port 'ByteCntGreat2' is not connected to any nets. (LINT-28)
+Warning: In design 'eth_top', output port 'm_wb_adr_o[1]' is connected directly to output port 'm_wb_adr_o[0]'. (LINT-31)
+Warning: In design 'eth_wishbone', output port 'm_wb_cyc_o' is connected directly to output port 'm_wb_stb_o'. (LINT-31)
+Warning: In design 'eth_registers', a pin on submodule 'MODER_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'SyncReset' is connected to logic 0. 
+Warning: In design 'eth_registers', a pin on submodule 'MODER_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'SyncReset' is connected to logic 0. 
+Warning: In design 'eth_registers', a pin on submodule 'MODER_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'SyncReset' is connected to logic 0. 
+Warning: In design 'eth_registers', a pin on submodule 'INT_MASK_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'SyncReset' is connected to logic 0. 
+Warning: In design 'eth_registers', a pin on submodule 'IPGT_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'SyncReset' is connected to logic 0. 
+Warning: In design 'eth_registers', a pin on submodule 'IPGR1_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'SyncReset' is connected to logic 0. 
+Warning: In design 'eth_registers', a pin on submodule 'IPGR2_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'SyncReset' is connected to logic 0. 
+Warning: In design 'eth_registers', a pin on submodule 'PACKETLEN_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'SyncReset' is connected to logic 0. 
+Warning: In design 'eth_registers', a pin on submodule 'PACKETLEN_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'SyncReset' is connected to logic 0. 
+Warning: In design 'eth_registers', a pin on submodule 'PACKETLEN_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'SyncReset' is connected to logic 0. 
+Warning: In design 'eth_registers', a pin on submodule 'PACKETLEN_3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'SyncReset' is connected to logic 0. 
+Warning: In design 'eth_registers', a pin on submodule 'COLLCONF_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'SyncReset' is connected to logic 0. 
+Warning: In design 'eth_registers', a pin on submodule 'COLLCONF_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'SyncReset' is connected to logic 0. 
+Warning: In design 'eth_registers', a pin on submodule 'TX_BD_NUM_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'SyncReset' is connected to logic 0. 
+Warning: In design 'eth_registers', a pin on submodule 'CTRLMODER_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'SyncReset' is connected to logic 0. 
+Warning: In design 'eth_registers', a pin on submodule 'MIIMODER_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'SyncReset' is connected to logic 0. 
+Warning: In design 'eth_registers', a pin on submodule 'MIIMODER_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'SyncReset' is connected to logic 0. 
+Warning: In design 'eth_registers', a pin on submodule 'MIICOMMAND0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'SyncReset' is connected to logic 0. 
+Warning: In design 'eth_registers', a pin on submodule 'MIIADDRESS_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'SyncReset' is connected to logic 0. 
+Warning: In design 'eth_registers', a pin on submodule 'MIIADDRESS_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'SyncReset' is connected to logic 0. 
+Warning: In design 'eth_registers', a pin on submodule 'MIITX_DATA_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'SyncReset' is connected to logic 0. 
+Warning: In design 'eth_registers', a pin on submodule 'MIITX_DATA_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'SyncReset' is connected to logic 0. 
+Warning: In design 'eth_registers', a pin on submodule 'MIIRX_DATA' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'SyncReset' is connected to logic 0. 
+Warning: In design 'eth_registers', a pin on submodule 'MAC_ADDR0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'SyncReset' is connected to logic 0. 
+Warning: In design 'eth_registers', a pin on submodule 'MAC_ADDR0_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'SyncReset' is connected to logic 0. 
+Warning: In design 'eth_registers', a pin on submodule 'MAC_ADDR0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'SyncReset' is connected to logic 0. 
+Warning: In design 'eth_registers', a pin on submodule 'MAC_ADDR0_3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'SyncReset' is connected to logic 0. 
+Warning: In design 'eth_registers', a pin on submodule 'MAC_ADDR1_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'SyncReset' is connected to logic 0. 
+Warning: In design 'eth_registers', a pin on submodule 'MAC_ADDR1_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'SyncReset' is connected to logic 0. 
+Warning: In design 'eth_registers', a pin on submodule 'RXHASH0_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'SyncReset' is connected to logic 0. 
+Warning: In design 'eth_registers', a pin on submodule 'RXHASH0_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'SyncReset' is connected to logic 0. 
+Warning: In design 'eth_registers', a pin on submodule 'RXHASH0_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'SyncReset' is connected to logic 0. 
+Warning: In design 'eth_registers', a pin on submodule 'RXHASH0_3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'SyncReset' is connected to logic 0. 
+Warning: In design 'eth_registers', a pin on submodule 'RXHASH1_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'SyncReset' is connected to logic 0. 
+Warning: In design 'eth_registers', a pin on submodule 'RXHASH1_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'SyncReset' is connected to logic 0. 
+Warning: In design 'eth_registers', a pin on submodule 'RXHASH1_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'SyncReset' is connected to logic 0. 
+Warning: In design 'eth_registers', a pin on submodule 'RXHASH1_3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'SyncReset' is connected to logic 0. 
+Warning: In design 'eth_registers', a pin on submodule 'TXCTRL_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'SyncReset' is connected to logic 0. 
+Warning: In design 'eth_registers', a pin on submodule 'TXCTRL_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'SyncReset' is connected to logic 0. 
+Warning: In design 'eth_wishbone', a pin on submodule 'bd_ram' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ce' is connected to logic 1. 
+Warning: In design 'eth_top', the same net is connected to more than one pin on submodule 'maccontrol1'. (LINT-33)
+   Net 'wb_rst_i' is connected to pins 'TxReset', 'RxReset''.
+Warning: In design 'eth_top', output port 'm_wb_adr_o[1]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'eth_top', output port 'm_wb_adr_o[0]' is connected directly to 'logic 0'. (LINT-52)
+Warning: Net 'BD_WB_DAT_O[0]' has a single tri-state driver.  (LINT-63)
+Warning: Net 'BD_WB_DAT_O[1]' has a single tri-state driver.  (LINT-63)
+Warning: Net 'BD_WB_DAT_O[2]' has a single tri-state driver.  (LINT-63)
+Warning: Net 'BD_WB_DAT_O[3]' has a single tri-state driver.  (LINT-63)
+Warning: Net 'BD_WB_DAT_O[4]' has a single tri-state driver.  (LINT-63)
+Warning: Net 'BD_WB_DAT_O[5]' has a single tri-state driver.  (LINT-63)
+Warning: Net 'BD_WB_DAT_O[6]' has a single tri-state driver.  (LINT-63)
+Warning: Net 'BD_WB_DAT_O[7]' has a single tri-state driver.  (LINT-63)
+Warning: Net 'BD_WB_DAT_O[8]' has a single tri-state driver.  (LINT-63)
+Warning: Net 'BD_WB_DAT_O[9]' has a single tri-state driver.  (LINT-63)
+Warning: Net 'BD_WB_DAT_O[10]' has a single tri-state driver.  (LINT-63)
+Warning: Net 'BD_WB_DAT_O[11]' has a single tri-state driver.  (LINT-63)
+Warning: Net 'BD_WB_DAT_O[12]' has a single tri-state driver.  (LINT-63)
+Warning: Net 'BD_WB_DAT_O[13]' has a single tri-state driver.  (LINT-63)
+Warning: Net 'BD_WB_DAT_O[14]' has a single tri-state driver.  (LINT-63)
+Warning: Net 'BD_WB_DAT_O[15]' has a single tri-state driver.  (LINT-63)
+Warning: Net 'BD_WB_DAT_O[16]' has a single tri-state driver.  (LINT-63)
+Warning: Net 'BD_WB_DAT_O[17]' has a single tri-state driver.  (LINT-63)
+Warning: Net 'BD_WB_DAT_O[18]' has a single tri-state driver.  (LINT-63)
+Warning: Net 'BD_WB_DAT_O[19]' has a single tri-state driver.  (LINT-63)
+Warning: Net 'BD_WB_DAT_O[20]' has a single tri-state driver.  (LINT-63)
+Warning: Net 'BD_WB_DAT_O[21]' has a single tri-state driver.  (LINT-63)
+Warning: Net 'BD_WB_DAT_O[22]' has a single tri-state driver.  (LINT-63)
+Warning: Net 'BD_WB_DAT_O[23]' has a single tri-state driver.  (LINT-63)
+Warning: Net 'BD_WB_DAT_O[24]' has a single tri-state driver.  (LINT-63)
+Warning: Net 'BD_WB_DAT_O[25]' has a single tri-state driver.  (LINT-63)
+Warning: Net 'BD_WB_DAT_O[26]' has a single tri-state driver.  (LINT-63)
+Warning: Net 'BD_WB_DAT_O[27]' has a single tri-state driver.  (LINT-63)
+Warning: Net 'BD_WB_DAT_O[28]' has a single tri-state driver.  (LINT-63)
+Warning: Net 'BD_WB_DAT_O[29]' has a single tri-state driver.  (LINT-63)
+Warning: Net 'BD_WB_DAT_O[30]' has a single tri-state driver.  (LINT-63)
+Warning: Net 'BD_WB_DAT_O[31]' has a single tri-state driver.  (LINT-63)
+1

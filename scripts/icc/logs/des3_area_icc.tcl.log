@@ -1,0 +1,246 @@
+Using the license keys ICCompilerIIs-Shell and ICCompilerII-NX in this mode.
+
+                                IC Compiler (TM)
+                              IC Compiler-PC (TM)
+                              IC Compiler-XP (TM)
+                              IC Compiler-DP (TM)
+                              IC Compiler-AG (TM)
+
+               Version W-2024.09-SP2 for linux64 - Nov 28, 2024 
+
+                    Copyright (c) 1988 - 2024 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+Initializing...
+Starting shell in Shared License mode...
+Warning: bus naming style '' is not valid. (UCN-32)
+Initializing gui preferences from file  /home/cag383@drexel.edu/.synopsys_icc_prefs.tcl
+Current time:       Tue May 13 09:48:36 2025
+Hostname:           xunil-03.coe.drexel.edu
+CPU Model:          AMD Opteron(tm) Processor 6344
+CPU Details:        Cores = 24 : Sockets = 2 : Cache Size = 2048 KB : Freq = 2.60 GHz
+OS:                 Linux 3.10.0-1160.119.1.el7.x86_64
+RAM:                125 GB (Free 109 GB)
+Swap:                15 GB (Free  15 GB)
+Work Filesystem:    /home mounted to ozark.coe.drexel.edu:/volume2/XunilNFS2/home
+Tmp Filesystem:     / mounted to /dev/mapper/vg_xunil03-lv_root
+Work Disk:          8034 GB (Free 4315 GB)
+Tmp Disk:           442 GB (Free 136 GB)
+
+CPU Load: 138%, Ram Free: 109 GB, Swap Free: 15 GB, Work Disk Free: 4315 GB, Tmp Disk Free: 136 GB
+Current time:       Tue May 13 09:48:36 2025
+Hostname:           xunil-03.coe.drexel.edu
+CPU Model:          AMD Opteron(tm) Processor 6344
+CPU Details:        Cores = 24 : Sockets = 2 : Cache Size = 2048 KB : Freq = 2.60 GHz
+OS:                 Linux 3.10.0-1160.119.1.el7.x86_64
+RAM:                125 GB (Free 109 GB)
+Swap:                15 GB (Free  15 GB)
+Work Filesystem:    /home mounted to ozark.coe.drexel.edu:/volume2/XunilNFS2/home
+Tmp Filesystem:     / mounted to /dev/mapper/vg_xunil03-lv_root
+Work Disk:          8034 GB (Free 4315 GB)
+Tmp Disk:           442 GB (Free 136 GB)
+
+CPU Load: 138%, Ram Free: 109 GB, Swap Free: 15 GB, Work Disk Free: 4315 GB, Tmp Disk Free: 136 GB
+# Auto-generated ICC2 script for des3_area
+# Configuration: des3_area
+###########################################################################
+### Initialize
+###########################################################################
+##start_gui
+set search_path "$search_path /mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs
+../src/ "
+. /mnt/class_data/ecec574-w2019/tools/synopsys/icc/W-2024.09-SP2/libraries/syn /mnt/class_data/ecec574-w2019/tools/synopsys/icc/W-2024.09-SP2/dw/syn_ver /mnt/class_data/ecec574-w2019/tools/synopsys/icc/W-2024.09-SP2/dw/sim_ver /mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs
+../src/ 
+# Library setup
+set link_library [ list /mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v125c.db /mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v25c.db /mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95vn40c.db]
+/mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v125c.db /mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v25c.db /mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95vn40c.db
+set target_library [ list /mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v25c.db ]
+/mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v25c.db
+set libdir "/mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/tech/star_rcxt"
+/mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/tech/star_rcxt
+set tlupmax "$libdir/saed32nm_1p9m_Cmax.tluplus"
+/mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/tech/star_rcxt/saed32nm_1p9m_Cmax.tluplus
+set tlunom "$libdir/saed32nm_1p9m_nominal.tluplus"
+/mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/tech/star_rcxt/saed32nm_1p9m_nominal.tluplus
+set tlupmin "$libdir/saed32nm_1p9m_Cmin.tluplus"
+/mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/tech/star_rcxt/saed32nm_1p9m_Cmin.tluplus
+set tech2itf "$libdir/saed32nm_tf_itf_tluplus.map"
+/mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/tech/star_rcxt/saed32nm_tf_itf_tluplus.map
+set_tlu_plus_files -max_tluplus $tlunom -tech2itf_map $tech2itf
+1
+set lib_name "des3_area"
+des3_area
+set mw_logic0_net VSS
+VSS
+set mw_logic1_net VDD
+VDD
+set design_data ./outputs/des3_area/des3_area.ddc
+./outputs/des3_area/des3_area.ddc
+set cell_name "des3_area"
+des3_area
+import_designs $design_data -format ddc -top $cell_name
+Error: No Milkyway library is open. (UID-666)
+0
+create_mw_lib ./outputs/des3_area/$lib_name.mw \
+	-technology "/mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/tech/milkyway/saed32nm_1p9m_mw.tf" \
+	-mw_reference_library "/mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/milkyway/saed32nm_rvt_1p9m"
+Start to load technology file /mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/tech/milkyway/saed32nm_1p9m_mw.tf.
+Warning: Layer 'M1' has a pitch 0.152 that does not match the recommended wire-to-via pitch 0.13 or 0.105. (TFCHK-049)
+Warning: Layer 'M2' has a pitch 0.152 that does not match the recommended wire-to-via pitch 0.139. (TFCHK-049)
+Warning: Layer 'M3' has a pitch 0.304 that does not match the recommended wire-to-via pitch 0.139. (TFCHK-049)
+Warning: Layer 'M4' has a pitch 0.304 that does not match the recommended wire-to-via pitch 0.139. (TFCHK-049)
+Warning: Layer 'M5' has a pitch 0.608 that does not match the recommended wire-to-via pitch 0.139. (TFCHK-049)
+Warning: Layer 'M6' has a pitch 0.608 that does not match the recommended wire-to-via pitch 0.139. (TFCHK-049)
+Warning: Layer 'M7' has a pitch 1.216 that does not match the recommended wire-to-via pitch 0.139. (TFCHK-049)
+Warning: Layer 'M8' has a pitch 1.216 that does not match the recommended wire-to-via pitch 0.179 or 0.164. (TFCHK-049)
+Warning: Layer 'M9' has a pitch 2.432 that does not match the recommended wire-to-via pitch 1.74. (TFCHK-049)
+Warning: Layer 'MRDL' has a pitch 4.864 that does not match the recommended wire-to-via pitch 4.5. (TFCHK-049)
+Warning: Layer 'MRDL' has a pitch 4.864 that does not match the doubled pitch 2.432 or tripled pitch 3.648. (TFCHK-050)
+Warning: CapModel sections are missing. Capacitance models should be loaded with a TLU+ file later. (TFCHK-084)
+Technology file /mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/tech/milkyway/saed32nm_1p9m_mw.tf has been loaded successfully.
+open_mw_lib ./outputs/des3_area/$lib_name.mw
+{des3_area.mw}
+read_verilog ./outputs/des3_area/des3_area.v
+Loading db file '/mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v125c.db'
+Information: Using CCS timing libraries. (TIM-024)
+Warning: Unit conflict found: Milkyway technology file resistance unit is kOhm; main library resistance unit is MOhm. (IFS-007)
+Loading db file '/mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v25c.db'
+Loading db file '/mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95vn40c.db'
+Loading db file '/mnt/class_data/ecec574-w2019/tools/synopsys/icc/W-2024.09-SP2/libraries/syn/gtech.db'
+Loading db file '/mnt/class_data/ecec574-w2019/tools/synopsys/icc/W-2024.09-SP2/libraries/syn/standard.sldb'
+Warning: /mnt/class_data/ecec574-w2019/PDKs/_archived/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/milkyway/saed32nm_rvt_1p9m: bus naming style _<%d> is not consistent with main lib. (MWNL-111)
+
+*****  Verilog HDL translation! *****
+
+*****    Start Pass 1 *****
+Compiling source file /home/cag383@drexel.edu/ecec575/project/iwls/scripts/outputs/des3_area/des3_area.v
+
+*****  Pass 1 Complete *****
+Elapsed =    0:00:06, CPU =    0:00:04
+
+*****  Verilog HDL translation! *****
+
+*****    Start Pass 2 *****
+Compiling source file /home/cag383@drexel.edu/ecec575/project/iwls/scripts/outputs/des3_area/des3_area.v
+Error:   /home/cag383@drexel.edu/ecec575/project/iwls/scripts/outputs/des3_area/des3_area.v:31:  module GTECH_AND2 is not defined.
+ (VER-500)
+Error: Module 'GTECH_AND2' is not defined.  (MWNL-297)
+Error:   /home/cag383@drexel.edu/ecec575/project/iwls/scripts/outputs/des3_area/des3_area.v:31: ERROR: near line 31: Port connection failed.
+ (VER-500)
+
+Error: Verilog parser cannot parse the /home/cag383@drexel.edu/ecec575/project/iwls/scripts/outputs/des3_area/des3_area.v source file. (MWNL-047)
+0
+uniquify_fp_mw_cel
+Error: Current design is not defined. (UID-4)
+Error: 0
+	Use error_info for more info. (CMD-013)
+link
+Error: Current design is not defined. (UID-4)
+0
+read_sdc ./outputs/des3_area/des3_area.sdc
+0
+############################################################################
+#### Floorplanning
+############################################################################
+create_floorplan -core_utilization 0.7 -left_io2core 10 -bottom_io2core 10 -right_io2core 10 -top_io2core 10 -core_aspect_ratio 1.0
+Error: Current design is not defined. (UID-4)
+derive_pg_connection -power_net VDD -ground_net VSS -tie
+0
+##Create VSS ring
+create_rectangular_rings  -nets  {VSS}  -left_offset 0.5  -left_segment_layer M6 -left_segment_width 1.0 -extend_ll -extend_lh -right_offset 0.5 -right_segment_layer M6 -right_segment_width 1.0 -extend_rl -extend_rh -bottom_offset 0.5  -bottom_segment_layer  M7 -bottom_segment_width 1.0 -extend_bl -extend_bh -top_offset 0.5 -top_segment_layer M7 -top_segment_width 1.0 -extend_tl -extend_th
+Error: Current design is not defined. (UID-4)
+## Create VDD Ring
+create_rectangular_rings  -nets  {VDD}  -left_offset 1.8  -left_segment_layer M6 -left_segment_width 1.0 -extend_ll -extend_lh -right_offset 1.8 -right_segment_layer M6 -right_segment_width 1.0 -extend_rl -extend_rh -bottom_offset 1.8  -bottom_segment_layer M7 -bottom_segment_width 1.0 -extend_bl -extend_bh -top_offset 1.8 -top_segment_layer M7 -top_segment_width 1.0 -extend_tl -extend_th
+Error: Current design is not defined. (UID-4)
+## Creates Power Strap
+create_power_strap -nets { VDD } -layer M6 -direction vertical -width 3
+Error: Current design is not defined. (UID-4)
+create_power_strap -nets { VSS } -layer M6 -direction vertical  -width 3
+Error: Current design is not defined. (UID-4)
+create_fp_placement -effort high -timing_driven
+Error: No design is loaded. (VFP-003)
+0
+insert_stdcell_filler
+Can not get cellId for current design
+preroute_standard_cells -mode net -nets VDD -v_layer M6
+Error: Current design is not defined. (UID-4)
+preroute_standard_cells -mode net -nets VSS -v_layer M6
+Error: Current design is not defined. (UID-4)
+###########################################################################
+### Placement
+###########################################################################
+place_opt 
+Error: Current design is not defined. (UID-4)
+0
+##-power -congestion
+set_fix_hold [all_clocks]
+Error: Current design is not defined. (UID-4)
+Error: Value for list '<clock_list>' must have 1 elements. (CMD-036)
+0
+clock_opt ##
+Error: extra positional option '##' (CMD-012)
+-only_cts -no_clock_route
+Error: unknown command '-only_cts' (CMD-005)
+#clock_opt -only_psyn -area_recovery -no_clock_route
+route_zrt_group -all_clock_nets -reuse_existing_global_route true
+Error: Top cell not open. (ZRT-072)
+Error: Could not find any nets in the design that match the specification. (ZRT-070)
+0
+route_opt 
+Error: Current design is not defined. (UID-4)
+Error: Current design is not defined. (UID-4)
+0
+###-initial_route_only
+###create_qor_snapshot
+###route_opt -skip_initial_route -power
+extract_rc  -coupling_cap -incremental
+Error: Current design is not defined. (UID-4)
+0
+write_parasitics -output ./outputs/des3_area_extracted.spef -format SPEF
+Information: design not extracted; do extract_rc or read_parasitics before write_parasitics.
+Error: Writing parasitics file failed. (RCEX-036)
+0
+write_sdf ./outputs/des3_area_extracted.sdf
+Error: Current design is not defined. (UID-4)
+0
+write_sdc ./outputs/des3_area_extracted.sdc
+Error: Current design is not defined. (UID-4)
+0
+write_verilog ./outputs/des3_area_extracted.v
+Error: Current design is not defined. (UID-4)
+Current design is not set
+0
+report_constraints -all > ./reports/des3_area/icc_des3_area_constraints.rpt
+report_area > ./reports/des3_area/icc_des3_area_area.rpt
+report_power > ./reports/des3_area/icc_des3_area_power.rpt
+report_qor  > ./reports/des3_area/icc_des3_area_qor.rpt
+report_cell > ./reports/des3_area/icc_des3_area_cells.rpt
+report_resources > ./reports/des3_area/icc_des3_area_resources.rpt
+Warning: Command 'report_resources' is disabled. (CMD-080)
+Error: disabled command report_resources encountered
+	Use error_info for more info. (CMD-013)
+report_timing -max_paths 10 > ./reports/des3_area/icc_des3_area_timing.rpt
+save_mw_cel -as des3_area_extracted
+Error: Cannot get cellId for the current design. (UIG-2)
+0
+quit
+
+Memory usage for this session 331 Mbytes.
+Memory usage for this session including child processes 331 Mbytes.
+CPU usage for this session 13 seconds ( 0.00 hours ).
+Elapsed time for this session 18 seconds ( 0.00 hours ).
+
+Thank you...
+Exit IC Compiler!

@@ -6,7 +6,7 @@ Report : timing
         -max_paths 10
 Design : ac97_top
 Version: W-2024.09-SP4-1
-Date   : Tue Apr 29 15:03:39 2025
+Date   : Tue May 13 10:12:26 2025
 ****************************************
 
  # A fanout number of 1000 was used for high fanout net computations.

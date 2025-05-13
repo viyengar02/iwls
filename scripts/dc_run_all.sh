@@ -1,6 +1,10 @@
 #!/bin/bash
 
+#<<<<<<< HEAD
 source ../../../../sensei
+#=======
+#source ../../../../sensei_new
+#>>>>>>> 289def634b9e26d054d0ce3276860c7b35141f17
 
 TCL_DIR="./dc"
 
