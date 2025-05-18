@@ -38,11 +38,33 @@ set_output_delay 0.01 -clock clk [all_outputs]
 set_clock_uncertainty 0.2 clk
 set_max_area 0.0 
 
+# Timing optimization settings
+set_critical_range 0.5 [current_design]
+set_max_fanout 8 [current_design]
+set_auto_disable_timing false
+set_fix_multiple_port_nets -all -buffer_constants
+set_compile_clock_gating_through_hierarchy true
+set_optimize_registers true -design [current_design]
+
+# Advanced optimization
+set_ultra_optimization true
+set_clock_gating_style -sequential_cell latch -positive_edge_logic integrated
+set_compile_ultra_ungroup_dw true
+set_compile_ultra_timing true
+
+# Buffer insertion
+set_buffer_opt_strategy -effort high
+set_dynamic_optimization true
+set_host_options -max_cores 4
+
 # Checks and compilation
 check_design  > ./reports/des3_perf/des3_perf_check_design.rpt 
 uniquify 
 check_timing 
-compile -area_effort medium -map_effort medium 
+set_app_var compile_retiming_skip_area_recovery true
+set_retiming_effort medium
+compile_ultra -no_retiming
+
 
 # Reports
 report_constraints -all > ./reports/des3_perf/des3_perf_constraints.rpt
@@ -52,6 +74,13 @@ report_qor  > ./reports/des3_perf/des3_perf_qor.rpt
 report_cell > ./reports/des3_perf/des3_perf_cells.rpt
 report_resources > ./reports/des3_perf/des3_perf_resources.rpt
 report_timing -max_paths 10 > ./reports/des3_perf/des3_perf_timing.rpt
+
+report_port -verbose > ./reports/des3_perf/des3_perf_ports.rpt
+report_constraints -all_violators -nosplit > ./reports/des3_perf/des3_perf_constraint_violations.rpt
+report_cell -nosplit > ./reports/des3_perf/des3_perf_clock_cells.rpt
+
+all_inputs > ./reports/des3_perf/des3_perf_inputs.rpt
+all_outputs > ./reports/des3_perf/des3_perf_output.rpt
 
 # Output files
 write_sdc ./outputs/des3_perf/des3_perf.sdc
