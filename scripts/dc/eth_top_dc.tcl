@@ -38,7 +38,6 @@ analyze -library WORK -format verilog ../rtl/ethernet/eth_txstatem.v
 analyze -library WORK -format verilog ../rtl/ethernet/eth_wishbone.v
 analyze -library WORK -format verilog ../rtl/ethernet/timescale.v
 analyze -library WORK -format verilog ../rtl/ethernet/xilinx_dist_ram_16x32.v
-
 # Elaborate the top design
 elaborate eth_top
 link
@@ -52,19 +51,30 @@ set_input_delay 0.01 -clock clk [all_inputs]
 set_output_delay 0.01 -clock clk [all_outputs] 
 set_clock_uncertainty 0.2 clk
 set_max_area 0.0 
+# Timing optimization settings
 set_critical_range 1.0 [current_design]
 set_max_fanout 12 [current_design]
-set compile_ultra_enable_multibit_selection true
-#auto selection of multi bit flip flops
-set compile_ultra_enable_low_vt_opt true
-#low voltage threshold for speed
-set physopt_enable_critical_range_physopt true
+set_auto_disable_timing false
+set_fix_multiple_port_nets -all -buffer_constants
+set_compile_clock_gating_through_hierarchy true
+set_optimize_registers true -design [current_design]
+set_optimize_timing true
+set_ultra_optimization true
+set_clock_gating_style -sequential_cell latch -positive_edge_logic integrated
+
+# Buffer insertion and optimization
+set_buffer_opt_strategy -effort high
+set_optimize_pre_cts_power false
+set_dynamic_optimization true
+set_leakage_optimization false
+set_host_options -max_cores 4
 
 # Checks and compilation
 check_design  > ./reports/ethernet/eth_top_check_design.rpt 
 uniquify 
 check_timing 
-compile -area_effort medium -map_effort medium 
+compile_ultra -retime -no_autoungroup -timing_high_effort_script
+
 
 # Reports
 report_constraints -all > ./reports/ethernet/eth_top_constraints.rpt
@@ -74,6 +84,14 @@ report_qor  > ./reports/ethernet/eth_top_qor.rpt
 report_cell > ./reports/ethernet/eth_top_cells.rpt
 report_resources > ./reports/ethernet/eth_top_resources.rpt
 report_timing -max_paths 10 > ./reports/ethernet/eth_top_timing.rpt
+
+report_port -verbose > ./reports/ethernet/eth_top_ports.rpt
+report_constraints -all_violators -nosplit > ./reports/ethernet/eth_top_constraint_violations.rpt
+report_cell -nosplit > ./reports/ethernet/eth_top_clock_cells.rpt
+
+all_inputs > ./reports/ethernet/eth_top_inputs.rpt
+all_outputs > ./reports/ethernet/eth_top_output.rpt
+
 
 # Output files
 write_sdc ./outputs/ethernet/eth_top.sdc
